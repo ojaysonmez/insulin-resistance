@@ -73,9 +73,9 @@ Timings are suggestions. They depend on usage limits (one skeptic run already hi
 - Per weekly run: about 150,000 to 300,000 tokens. Four to five runs a month plus a triage: roughly 1 to 2 million tokens a month, before any trigger reviews.
 - Review these figures after the dry run and after the first month, and cut queries that produce only "no trigger".
 
-## Open decisions for the user
-1. Cadence: weekly watch with monthly triage as drafted, or monthly only?
-2. Notification: how and when should urgent items reach you (message in the app, or only in `PENDING.md`)?
-3. Budget: are the token budgets above acceptable?
-4. Scope: should the watch also cover the use-case list (rows 1-47) or only the IR conclusion? As drafted it covers both.
-5. Start date: after the prerequisites above, or run the dry run first?
+## Decisions (settled 2026-10-19, user accepted the defaults; recorded as D-28 in `DECISIONS.md`)
+1. ~~Cadence~~ **Changed by the user the same day: the watch runs once a day during a tuning pilot (about two weeks; two-day PubMed window; log tokens per run), then weekly. Triage is weekly (monthly triage in the cadence table is replaced by weekly while the pilot runs).** Urgent items are flagged the day they are found.
+2. ~~Notification~~ **`PENDING.md` only.** The session-start brief prints the pending count, so the user sees it at the start of any chat. No push messages.
+3. ~~Budget~~ **Caps as drafted, but the first weekly runs start with the PubMed screening at about 150,000 tokens**; the retraction check and registry check are scripts (no model cost) where possible.
+4. ~~Scope~~ **Both** the IR conclusion and the use-case list (rows 1-47).
+5. ~~Start date~~ **Dry run first**, after a scheduling test. Order: scheduling test, dry run, then schedule the weekly run.
