@@ -2,6 +2,8 @@
 
 Question: is measuring insulin resistance (fasting insulin, HOMA-IR, TyG) clinically useful, and what are the uses of insulin and C-peptide measurement? Coverage and reimbursement are out of scope. This folder holds the findings, the work behind them, and the plans for keeping them current.
 
+**Read this first:** These are AI-assisted research notes, not medical advice and not peer reviewed. Claims were checked by skeptic reviews, but many rest on abstracts or single sources, some items are marked unverified, and the latest corrections have had only one review. Citations were checked for identity and retractions by hand, not exhaustively. Confidence figures are judgements, not computations. Use `merged-conclusion.md` with its stated caveats and verify anything you rely on against the primary sources.
+
 ## Read these first
 | File | What it is |
 |---|---|
