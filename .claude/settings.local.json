@@ -15,6 +15,14 @@
           { "type": "command", "command": "python tools/log_session.py" }
         ]
       }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          { "type": "command", "command": "python tools/deliverable_reminder.py" }
+        ]
+      }
     ]
   }
 }
