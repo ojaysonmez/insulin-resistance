@@ -1,6 +1,6 @@
 # Handoff
 
-Updated: 2026-10-19 (end of the first long working session)
+Updated: 2026-10-19 (end of the first long working session; brief checked in a new session the same evening)
 
 The current state and the next step, written by hand at the end of a working session. It is overwritten each time (history lives in `CHANGELOG.md` and git). `tools/session_start_context.py` prints this note's main sections at the start of each session. Update it at the end of every working session.
 
@@ -12,11 +12,11 @@ The current state and the next step, written by hand at the end of a working ses
 
 ## Next step
 - Run the scoring pilot on rows 6, 5 and 13 (needs searching for US commonality) once the user agrees, then score about 30 candidates by dimension.
-- Start a new session and confirm the session-start brief appears once at the top.
+- Test the memory rule: in a new session ask it to save a test note and confirm it lands in `memory/` (the session-start brief was verified on 2026-10-19: delivered once, 52 lines, all sections). Delete the test note afterwards.
 - Then, as the user chooses: specialty reviews (cardiology first), summary editor, claim ledger build, update-watch dry run.
 
 ## Waiting on the user
-- Whether to push the unpushed commits, and whether to move the hook from `.claude/settings.local.json` to the shared `settings.json`.
+- Whether to move the hook from `.claude/settings.local.json` to the shared `settings.json`. (All commits to date are pushed.)
 - Whether to supply PDFs for the 20-30 load-bearing papers that were read only at abstract level (user said not yet).
 - Permission to start search-heavy agent runs (the user is watching a usage limit).
 
