@@ -47,3 +47,12 @@ Appends one line per session start to `.claude/sessions.log` (git-ignored): time
 ## deliverable_reminder.py (PostToolUse hook, added 2026-10-19)
 
 After each Edit, Write or MultiEdit, checks whether the edited file is `merged-conclusion.md`, `usecases-verified.md` or `claims/claims.csv`. If so, it returns a short reminder to the session as extra context: only the main session edits deliverables, a substantive change needs a skeptic review, log it in `CHANGELOG.md`, keep the scope wording and the identifier rule. It never blocks an edit and never fails the tool call. Limit: edits made through shell commands (sed, a Python script run from Bash) are not caught. Registered under `PostToolUse` in `.claude/settings.local.json`; takes effect in the next new session.
+
+## precommit_check.py and tools/githooks/pre-commit (added 2026-10-19)
+
+A git pre-commit check for the public repository. It examines only what a commit would add and blocks the commit on: PDF, EPUB or Word files; a `local_...` session ID; an absolute Windows or Unix user path (except in the documentation files that discuss history: `CHANGELOG.md`, `CONVENTIONS.md`, `DECISIONS.md`, `HANDOFF.md`, `CLAUDE.md`, this README and `memory/`); and strings that look like API keys, tokens or private keys. It only warns about email addresses and files over 1 MB. Dry run on history: `python tools/precommit_check.py --range A..B`. Enable the hook once per clone with `git config core.hooksPath tools/githooks` (done on this machine 2026-10-19). Skipping it with `--no-verify` is against the project rules. Tested on the staged test file (all four kinds blocked) and on the commit that once carried a session ID (blocked); the last eleven normal commits pass.
+
+## Permission rules (added 2026-10-19)
+
+`.claude/settings.local.json` also holds permission rules: read-only git commands and the two local check scripts are allowed without a prompt; `git push`, `git remote add/set-url` and `gh repo ...` ask each time; force pushes, `git reset --hard` and commits that skip hooks are denied. The rule syntax and the effect inside this app were not tested in a live session; if a rule does nothing or blocks something it should not, edit the file.
+

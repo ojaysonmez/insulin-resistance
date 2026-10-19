@@ -1,4 +1,27 @@
 {
+  "permissions": {
+    "allow": [
+      "Bash(git status*)",
+      "Bash(git log*)",
+      "Bash(git diff*)",
+      "Bash(git check-ignore*)",
+      "Bash(python tools/precommit_check.py*)",
+      "Bash(python tools/session_start_context.py)"
+    ],
+    "ask": [
+      "Bash(git push)",
+      "Bash(git push *)",
+      "Bash(git remote add *)",
+      "Bash(git remote set-url *)",
+      "Bash(gh repo *)"
+    ],
+    "deny": [
+      "Bash(git push --force*)",
+      "Bash(git push -f*)",
+      "Bash(git commit *--no-verify*)",
+      "Bash(git reset --hard*)"
+    ]
+  },
   "hooks": {
     "SessionStart": [
       {
