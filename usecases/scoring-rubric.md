@@ -42,12 +42,12 @@ Scored 0-4 unless stated. Each score needs: the number, one or two sentences of 
 
 **Commonality base (agreed 2026-10-19): the United States only.** A "patient" means a patient in whom the clinical situation arises in a year: new cases plus patients who need the test again that year. It is not the number of tests and not everyone who has the underlying disease (for example, classification of adult-onset diabetes counts newly diagnosed adults each year, not all people with diabetes). Use US sources (CDC, NHANES, national registries, published US incidence and prevalence); no global column is scored.
 
-**Stakes (S, reported, not in the default composite):** how serious the condition is if missed (0 minor to 4 life-threatening). Some rare uses, such as insulinoma and congenital hyperinsulinism, matter because of stakes and not commonality.
+**Stakes (S, part of the composite; decided 2026-10-19):** how serious the harm is when the right decision is not made, so how much the use case matters to each patient, as a second dimension beside commonality. Score the consequence of *not having the information* in that clinical situation, not the severity of the disease in general. 0: minor or self-limited; 1: symptomatic but reversible; 2: moderate morbidity or delayed harm; 3: serious morbidity (hospitalisation, organ injury, permanent disability); 4: life-threatening or irreversible. Rare uses such as insulinoma and congenital hyperinsulinism score low on commonality but high on stakes.
 
 ## Combining the scores
-- **UQ** = mean of D1, D2 and D8. **R** = mean of D3 to D6. **C** = D7.
-- **Primary output is a map, not a single number:** C on one axis, UQ on the other, point size or colour = R, with S noted. Quadrants: common and strong; rare but strong; common but weak; rare and weak.
-- **Optional composite:** Impact = C-score weighted with UQ, with R as a modifier. The default weights are for the user to set (suggested start: UQ 0.5, C 0.3, R 0.2, all on a 0-to-1 scale). Report a sensitivity check showing which candidates stay in the top group when weights change.
+- **UQ** = mean of D1, D2 and D8. **R** = mean of D3 to D6. **C** = D7. **S** = stakes. Each is rescaled to 0-1 before weighting (C = D7/5; S = S/4; the others /4).
+- **Primary output is a map, not a single number:** C on one axis, UQ on the other, point size or colour = R, with colour or a label = S. A second view plots need (C and S together) against UQ. Quadrants: common and strong; rare but strong; common but weak; rare and weak; and a high-stakes marker on any of them.
+- **Optional composite:** Impact = C-score weighted with UQ, with R as a modifier. The default weights are for the user to set (updated 2026-10-19 to include stakes: UQ 0.40, C 0.25, S 0.20, R 0.15, all on a 0-to-1 scale). Report a sensitivity check showing which candidates stay in the top group when weights change.
 - **Never hide a low dimension behind an average:** the table shows every dimension, and a use case with D2 of 0 or 1 is labelled "weak evidence" regardless of its composite.
 
 ## Process
@@ -68,8 +68,8 @@ Scored 0-4 unless stated. Each score needs: the number, one or two sentences of 
 
 ## Open decisions for the user
 1. ~~Population base for commonality~~ **Decided 2026-10-19: United States only.**
-2. ~~Weights~~ **Decided 2026-10-19:** use the suggested start (UQ 0.5, C 0.3, R 0.2), shown with the map and a sensitivity check.
-3. ~~Stakes~~ **Default adopted 2026-10-19 (user delegated):** S stays a reported label, not part of the composite, so rare but serious uses stay visible on the map without mixing seriousness with test quality. Change only if the user asks.
+2. ~~Weights~~ **Decided 2026-10-19:** use the suggested start, revised on the same day to include stakes (UQ 0.40, C 0.25, S 0.20, R 0.15), shown with the map and a sensitivity check.
+3. ~~Stakes~~ **Decided 2026-10-19 (user):** stakes is a scored dimension in the composite, a second dimension beside commonality. The map still shows S separately so a high-stakes use is never hidden by an average.
 4. ~~Candidate set~~ **Default adopted 2026-10-19:** the triage rule above (about 30 candidates). The pilot rows are three of these candidates scored first to test the rubric; they are not a separate set. Near-duplicate rows (4 and 24, 9 and 27) are scored separately and merged later only if the scores are identical in substance.
 5. ~~Workflow scope~~ **Decided 2026-10-19 (user: either is fine if it is useful):** rank all candidates and tag each with its setting (routine care, specialist outpatient, inpatient or procedural), so the map can be filtered to routine-care uses.
 6. ~~Pilot rows~~ **Decided 2026-10-19 (user delegated):** rows 6, 5 and 13. Row 6: diabetes type classification by random C-peptide (common, established, consensus-backed: high end). Row 5: hypoglycaemia after bariatric surgery by insulin during symptoms (limited, moderately common: middle). Row 13: pioglitazone selection after stroke or TIA by HOMA-IR above 3.0 (single-trial basis, guideline-embedded, no assay named: weak, IR-specific end).
