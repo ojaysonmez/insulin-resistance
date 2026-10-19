@@ -20,7 +20,37 @@ Insulin resistance (IR) is measured in research and in some clinics with fasting
 4. **A review that can be kept current.** The plan in `update-system/` describes a weekly watch for retractions, trial results and guideline changes, with nothing changing the conclusion until a skeptic has reviewed it.
 
 ## How it works
-Roles are defined in `.claude/agents/` and run with Claude Code. Each role has one job:
+
+### Architecture
+```
+                        main session (orchestrator)
+     launches roles, merges their reports, applies corrections, logs every change
+                                    |
+        +---------------------------+----------------------------+
+        |                           |                            |
+  Analysis track              Use-case track               Review layer
+  evidence searcher           3 use-case reviewers         skeptic (checks every output)
+        |                     (one per clinical area)      steelman (finds what was missed)
+  analysts: endocrinologist,        |                      specialty reviewers (planned)
+  PCP, biostatistician,       consolidated list
+  clinical chemist,                 |
+  scientist (on call)         skeptic review
+        |                           |
+  merged-conclusion.md       usecases-verified.md
+        \___________________________/
+                      |
+          summary editor -> summary.md (planned)
+```
+
+- **Roles are agent definitions.** Each role is one markdown file in `.claude/agents/` (name, description, instructions): what it does, what it reads, what it must verify, what it writes. There is no application code; the files are the instruction sets.
+- **The main session is the orchestrator.** A Claude Code session launches each role, saves its report, reconciles disagreements, applies corrections and records them in `CHANGELOG.md`. It is the only place where results are combined, so agents work from files and do not message each other (one early experiment let two sessions exchange messages; it helped modestly and is not the default).
+- **Subagents are the default way to run a role.** Each run is a background subagent started from the role's definition; it returns a report that is saved to a file. Separate sessions are used only when someone wants to watch or talk to a run, or for peer messaging. The first round was run both ways to compare them; neither was clearly better, so the cheaper subagent mode is the default.
+- **Independence.** Analysis-stage runs do not read one another's files, so agreement means something. The skeptic reviews an output without reading other skeptics' reviews. Independent runs of the same role are compared, not blended.
+- **Two tracks.** The analysis track answers whether measuring IR is useful. The use-case track lists where insulin and C-peptide measurement is used and how well each use is supported.
+- **Verification layers.** (1) Every role records identifiers (PMID and DOI), the read level (full text, abstract, title) and caveats for each claim. (2) A skeptic checks each output against primary sources and verifies citations and retractions. (3) A steelman argues the opposite case and looks for evidence the team did not search for. (4) A script (`update-system/check_citations.py`) checks identifiers and retraction or correction notices. (5) Corrections get their own skeptic pass. (6) Every change is logged and kept in git history.
+- **Tools the roles use.** PubMed, Crossref, clinical trial registries, and guideline full texts from PMC or Europe PMC. A citation verification service was tried but was unavailable, so verification was done with PubMed and Crossref directly.
+
+### The roles
 
 | Role | Job |
 |---|---|
@@ -34,7 +64,7 @@ Roles are defined in `.claude/agents/` and run with Claude Code. Each role has o
 | Use-case reviewers | Verify and extend the list of insulin and C-peptide uses by patient area |
 | Specialty reviewer, summary editor | Defined, not yet run: specialty checks of the conclusion, and a plain-language summary |
 
-Flow: searcher, then analysts, then skeptic and steelman, then a merged conclusion that a skeptic reviews again. Analysis-stage runs are kept independent of one another; all coordination goes through a main session. Every correction is logged in `CHANGELOG.md`. Details are in `CONVENTIONS.md`.
+Flow: searcher, then analysts, then skeptic and steelman, then a merged conclusion that a skeptic reviews again. Details and file locations are in `CONVENTIONS.md`.
 
 ## What to read
 | File | What it is |

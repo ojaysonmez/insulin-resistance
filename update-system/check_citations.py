@@ -221,15 +221,30 @@ def main():
             urgent.append(f"PMID {p}: PubMed marks it as a RETRACTED PUBLICATION ({r['first_author']} {r['year']}, {r['title'][:90]}); used at {', '.join(where[('pmid', p)][:3])}")
         if r.get("doi") and r["doi"] not in {d for k, d in where if k == "doi"}:
             fill.append((p, r["doi"], r["first_author"], r["year"], r["title"]))
-    for d in all_doi:
+    # Evaluate every DOI fetched from Crossref: the ones written in the files AND the ones
+    # PubMed knows for the listed PMIDs (a first version only evaluated the former, which
+    # missed corrections and errata on papers cited by PMID alone).
+    doi_to_pmid = {v["doi"]: p for p, v in pubmed.items() if v.get("found") and v.get("doi")}
+
+    def used_at(d):
+        locs = where.get(("doi", d)) or where.get(("pmid", doi_to_pmid.get(d, "")), [])
+        via = "" if where.get(("doi", d)) else f" (via PMID {doi_to_pmid.get(d, '?')})"
+        return ", ".join(locs[:3]) + via
+
+    for d in sorted(crossref):
         r = crossref.get(d, {})
         if r.get("found"):
+            seen_notices = set()
             for n in r.get("notices", []):
                 t = n["type"]
-                line = f"DOI {d}: Crossref notice '{t}' ({n.get('label','')}, notice DOI {n.get('doi','')}); used at {', '.join(where[('doi', d)][:3])}"
+                key = (t, n.get("doi", ""))
+                if key in seen_notices:  # Crossref sometimes lists the same notice twice
+                    continue
+                seen_notices.add(key)
+                line = f"DOI {d}: Crossref notice '{t}' ({n.get('label','')}, notice DOI {n.get('doi','')}); used at {used_at(d)}"
                 (urgent if t in URGENT_TYPES else notes).append(line)
         elif not r.get("uncached"):
-            notes.append(f"DOI {d}: not found in Crossref (may be a non-Crossref DOI or a typo); used at {', '.join(where[('doi', d)][:3])}")
+            notes.append(f"DOI {d}: not found in Crossref (may be a non-Crossref DOI or a typo); used at {used_at(d)}")
     for f, ln, p, d in pairs:
         r = pubmed.get(p, {})
         if r.get("found") and r.get("doi") and r["doi"] != d:
