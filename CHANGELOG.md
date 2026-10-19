@@ -1,0 +1,66 @@
+# CHANGELOG: IR project
+
+Reconstructed on 2026-10-19 from the working conversation and file modification times. File times show only the last time a file changed, so intermediate edits to a file are not all recorded, and some times below are approximate or "after X" where the order is known but the time is not. From now on, add an entry here whenever a file is created, run, corrected or moved. Role files live in `.claude/agents/` (project root); reports in the project root (sessions) and `subagents/` (subagents). Before 2026-10-19 the reports were in an `ir-team/` subfolder, and older entries below still use that name.
+
+Format: date, time (if known), what changed, why.
+
+## 2026-10-18
+
+**Roles defined**
+- Early draft roles (literature, guidelines/coverage, skeptic) written, then deleted when the user asked for control over names and roles. Coverage was dropped from scope.
+- Five roles written (about 18:04): `ir-endocrinologist`, `ir-scientist` (physiology), `ir-pcp`, `ir-biostatistician`, `ir-skeptic`.
+
+**First run of the five roles, two ways**
+- Set A, separate sessions: endocrinologist, scientist, PCP, biostatistician (18:08-18:11), then skeptic review of them `ir-skeptic.md` (18:16).
+- Set B, subagents: the same four analysts (18:13-18:14). Skeptic round 2 of Set B by the skeptic session, later moved to `subagents/ir-skeptic-session-review.md` (18:25). Independent skeptic subagent on Set B, `subagents/ir-skeptic.md` (18:41).
+- `comparison.md` (18:19): side-by-side comparison of Set A and Set B. Finding: neither set clearly better; its per-role "more reliable set" rankings held only for the biostatistician.
+- Several runs found a wrong or overstated claim in the draft analysis (for example the IRAS/San Antonio mislabel, the EASL MASLD full-text recommendation missed by abstract-only reads).
+
+**First merged conclusion**
+- `merged-conclusion.md` created, then updated several times with skeptic corrections (EASL "may be considered" recommendation, IRIS NNT and harms, lipodystrophy, Liu 2022, Bonora kappa).
+- `ir-skeptic.md` and `ir-skeptic-set-b.md` reviews fed these corrections. `ir-skeptic-set-b.md` was moved into `subagents/` and renamed `ir-skeptic-session-review.md`.
+
+**Roster changed after review**
+- Added `ir-evidence-searcher` and `ir-clinical-chemist`; narrowed `ir-scientist` to on-call physiology; tightened `ir-endocrinologist` (every niche must cite a recommendation or trial; guideline full text required; "not tested" grade).
+- Both new roles run twice (session and subagent) for consistency. A folder `new-roles/` was created by mistake and removed; files moved to the existing folders (`ir-team/`, `ir-team/subagents/`).
+- Reports: chemist (19:01 session, 19:06 subagent), searcher (19:21 subagent), skeptic reviews of them (`ir-skeptic-new-roles.md` 19:28, `subagents/ir-skeptic-new-roles.md` 19:29).
+
+**Skeptic review of the merged conclusion**
+- `ir-skeptic-merged.md` (19:36). Found a transcription of CV claims, omitted guideline items (Endocrine Society paediatric obesity, ADA 3.13, JDS 2022), dropped randomized interaction evidence, and confidence figures attached to different quantities. `merged-conclusion.md` rewritten with corrections.
+
+**Steelman added**
+- `ir-steelman` role created. Run: `ir-steelman.md` (19:45). Skeptic review of it: `ir-skeptic-steelman.md` (19:59), which found errors in the steelman's additions (PERSON mislabelled as "matched", presurgical metformin 0.07 not a replication, MA.32 72 unadjusted tests, ATTICA qualifiers). `merged-conclusion.md` corrected again; "shown not to add value" set at about 45-50%.
+
+**Use-case track**
+- `usecases-draft.md` (19-row draft, 20:05) and `ir-usecase-reviewer` role created. Three area reviewers run as subagents (hypoglycaemia/pancreas/transplant; classification/paediatrics; metabolic/liver/IR), outputs in `subagents/ir-usecase-*.md` (20:10-20:14).
+- `usecases-verified.md` produced by a consolidation agent (45 rows). Skeptic session started; stopped by a usage limit, partial review.
+
+## 2026-10-19
+
+- Usage-limit skeptic resumed by message; finished: `ir-skeptic-usecases.md` (07:30). `usecases-verified.md` corrected (07:34): row 4 cutoffs, rows 20 and 21 downgraded to limited, attribution fixes, two Japanese classification rows added (rows 46, 47), counts now 47 rows (11 established, 15 limited, 10 research-only, 11 unsupported).
+- `merged-conclusion.md` updated with use-case review findings (JDS wording, Endocrine Society verbatim, IRIS "top quartile" cited, AASLD complete, ADA/AACE verbatim, Delphi paper, teplizumab and Igls C-peptide uses). Main verdict unchanged.
+- Peer-exchange experiment between the chemist and searcher sessions (4 messages): `ir-clinical-chemist-round2.md` (08:20), `archive/ir-evidence-searcher-round2.md` (08:21; content merged into `ir-evidence-searcher.md` section 12 at 08:27 by the searcher session). Finding: the exchange helped modestly; full-text verification did more. It caught that Rosli 2022's 1.7-23.2% is within-kit spread.
+- `README.md` created by the searcher session (file index, proposed citation rule); `archive/` folder created by it.
+- `merged-conclusion.md` updated with round 2 corrections (Rosli, 20-25% imprecision, asymmetric reference change value, reference-method wording) (09:10). Not skeptic-reviewed.
+- Identifier rule (record both PMID and DOI) added to 8 role files (09:20). Reason: 453 unique PMIDs vs 290 DOIs came from PMID-only recording, not missing DOIs.
+- `ir-summary-editor` and `ir-specialty-reviewer` drafted (09:49, 10:00). Specialty reviewer first scoped to specialties outside the use-case reviewers, then rewritten as analyst-side (checks the merged conclusion's IR claims; no use-case extension); never asks questions, defaults to cardiology.
+- `README.md` "Running convention" added (10:15) and then changed: subagents are the default for every role; sessions only when the user wants to watch or for peer messaging. Evidence for mode choice recorded as weak.
+- This `CHANGELOG.md` created.
+- Skeptic subagent (`subagents/ir-skeptic-round2.md`, first run through the registered `ir-skeptic` agent type) reviewed the round 2 corrections in `merged-conclusion.md`. Found errors in my wording: Rosli spread (8.3-fold by range, 5.8-fold by inter-run means; three of seven kits are automated CLIA, not manual ELISAs), Zhou CVs are means over pools that range from about 8% to 64%, Tohidi reports no CV, Rohlfing extremes come from very low and very high samples, reference-method wording blended two meanings, QUICKI RCV assumption, Jayagopal's figure from 12 women. Corrections applied to the three Measurement bullets (and one phrase in the steelman section). Backup of the pre-correction file kept at /tmp/merged-conclusion.before-round2-skeptic.md (temporary).
+- Drafted without running: `CLAIM-LEDGER.md` (claim ledger design: columns, rules, how it feeds merge, summary editor and update watch, plan for building the first version), `claims.csv` (header only) and `check_citations.py` (standard-library script that extracts PMIDs and DOIs from markdown, checks PubMed and Crossref for identity, DOI mismatches, retractions and corrections, and suggests missing DOIs; syntax-checked only, never executed). Reason: the user plans to repeat and update the searches, and the changelog, ledger and citation check are prerequisites in `UPDATE-PLAN.md`.
+- Made file paths relative: replaced the six hard-coded absolute paths under the old project folder (CHANGELOG, README, comparison, usecases-draft, ir-evidence-searcher, subagents/ir-evidence-searcher) with project-root-relative paths, so the project folder can be renamed (for example to `ir`). Role files and `check_citations.py` already used relative paths. Convention added to README: no absolute paths in files or agent prompts.
+- Project folder renamed from `C:\dev\common` to `C:\dev\ir` (the user, with the Claude app closed; transcript folder renamed to match), and the `ir-team/` subfolder flattened into the project root (everything moved up one level; `subagents/` and `archive/` kept). Active references updated (README, UPDATE-PLAN, check_citations.py, two role files); older entries and reports still say `ir-team/`, meaning the project root. Reason: the root had nothing else in it, and all paths are relative.
+- Reorganised the project root into folders by purpose (2026-10-19): `analysis/` and `analysis/subagent-runs/` (analyst reports), `reviews/` and `reviews/subagent-runs/` (skeptic reviews, steelman, comparison), `usecases/` and `usecases/reviewers/` (draft list, area reviewer reports), `update-system/` (plan, watchlist, pending queue, claim ledger design, `claims.csv`, `check_citations.py`); `archive/` unchanged; the old `subagents/` folder removed. Final documents (`merged-conclusion.md`, `usecases-verified.md`), `README.md` and `CHANGELOG.md` stay in the root. Updated references in the three role files that named moved files (specialty reviewer, summary editor, use-case reviewer), the README (rewritten as an index and folder map), the four `update-system` files (path note) and the script's usage line and default output paths. Older reports and changelog entries still name the former `ir-team/` and `subagents/` folders and bare file names; the README explains where those files live now. The evidence searcher's output went to `analysis/`, not a separate `evidence/` folder.
+- Removed the `ir-` prefix from 27 report file names (2026-10-19) in `analysis/`, `analysis/subagent-runs/`, `reviews/`, `reviews/subagent-runs/`, `usecases/reviewers/` and `archive/` (for example `ir-endocrinologist.md` is now `analysis/endocrinologist.md`; `ir-usecase-hypo-pancreas.md` is now `usecases/reviewers/usecase-hypo-pancreas.md`). Role definitions in `.claude/agents/` keep the `ir-` prefix because agent names share one namespace across projects. References updated in the README and the two role files that named review files; older reports and changelog entries still use the old names.
+- Git repo initialised in the project root (branch `main`, 2026-10-19) with a `.gitignore` (citation script outputs and cache, Python cache, local Claude settings, scratch). 51 files are ready to track; no commit yet.
+- Draft update plan written (not running): `UPDATE-PLAN.md` (weekly watch, monthly triage, trigger reviews, gate before any edit, prerequisites, budget, open decisions), `WATCHLIST.md` (tracked registry IDs, documents, 13 short PubMed queries, triggers) and `PENDING.md` (empty template). Reason: the user plans to continue the work, repeat searches after improvements, and possibly schedule weekly updates.
+
+## Decisions and corrections to earlier statements
+- Subagents default for all roles (README). Do not run the same role in both modes on the same question.
+- I (main session) said earlier there was no "team agents" feature; wrong or incomplete. This session reports "Team agents enabled"; team agents here are peer sessions that can message by ID.
+- Role files were not registered as agent types in the session where they were written; early runs used `general-purpose` agents told to read the role file. They appear as agent types after a restart.
+- Coverage and reimbursement are out of scope for every role.
+
+## Not yet run or done
+- `ir-summary-editor`, `ir-specialty-reviewer` (cardiology first), a skeptic review of the round 2 corrections in `merged-conclusion.md`.
+- Proposed, not drafted: claim ledger, citation-check script, full-text reader helper, formal appraisal tools (PROBAST, QUADAS-2, GRADE) for the biostatistician, a negative-claim protocol, analysts starting from the searcher's evidence set, a stopping rule.

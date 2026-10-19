@@ -1,0 +1,13 @@
+# Citation checker outputs and cache (regenerated on each run)
+update-system/citation-report.md
+update-system/citation-report.json
+update-system/.citation-cache.json
+
+# Python
+__pycache__/
+*.pyc
+
+# Local Claude Code settings and scratch
+.claude/settings.local.json
+scratch/
+*.tmp
