@@ -31,4 +31,4 @@ The current state and the next step, written by hand at the end of a working ses
 - Advice given when the working chat reached about 96% context: start a new chat for the next task (the scoring pilot) instead of continuing in a compacted one, because a long context costs more per message against the usage limit.
 
 ## Earlier chats
-- The long working chat that built all of this can be searched from a new session with the transcript search tool (it searches other sessions' transcripts by text). Its session ID is in `memory/reference_working_chat.md`.
+- The long working chat that built all of this can be searched from a new session with the transcript search tool (it searches other sessions' transcripts by text). Its session ID is in the git-ignored local file `.claude/working-chat-id.txt`; `memory/reference_working_chat.md` explains how to find it.

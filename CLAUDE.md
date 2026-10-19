@@ -14,7 +14,7 @@ This repository is an AI-assisted evidence review of whether measuring insulin r
 - **Run mode:** subagents by default; sessions only when the user wants to watch or for peer messaging (`CONVENTIONS.md`).
 - **Decisions:** record each decision in `DECISIONS.md` when it is made (what, why, alternatives, who decided), and read the relevant entry before changing a settled decision.
 - **Handoff:** at the end of a working session, update `HANDOFF.md` (where we are, next step, waiting on the user, watch out for); the session-start brief prints it.
-- **Earlier chats:** to find past discussion, search other sessions' transcripts with the transcript search tool (it matches text and returns session IDs); `memory/reference_working_chat.md` holds the ID of the long working chat.
+- **Earlier chats:** to find past discussion, search other sessions' transcripts with the transcript search tool (it matches text and returns session IDs); `memory/reference_working_chat.md` explains how to find the long working chat; its session ID is in the git-ignored local file `.claude/working-chat-id.txt`.
 - **Memory:** save notes for future sessions in the `memory/` folder of this repository, not in the private Claude memory folder. One note per file with frontmatter (name, description, type: user, feedback, project or reference), plus a one-line entry in `memory/MEMORY.md`. Record user preferences, lessons learned and pointers there. The repository is public, so write nothing sensitive. The session-start brief prints the memory index.
 - **Usage limit:** the user watches a usage limit. Do not start search-heavy agent runs without asking; prefer file-only work.
 - **Changes:** log every change in `CHANGELOG.md`. Commit and push only when the user asks; the repository is public.
