@@ -26,3 +26,4 @@ Lessons from the first long session (2026-10-18 and 10-19). Each is a failure th
 - **Create files where they belong** (see the file-locations note); parked drafts confused the user.
 - **Hooks and `CLAUDE.md` take effect in the next session, not the current one.**
 - **Paywalled papers cannot be read.** Only open-access text is available; supplements and detail behind paywalls remain unseen unless the user supplies PDFs (not committed to the public repo).
+- **Do not `cd` inside shell commands.** A `cd` into a subfolder moved the session's working folder, and the hooks, which used relative paths like `python tools/...`, then failed with a file-not-found error. Hook commands now use the project-folder variable (`$CLAUDE_PROJECT_DIR`); keep commands anchored at the project root and use `git -C` or full relative paths instead of `cd`.

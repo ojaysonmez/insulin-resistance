@@ -27,15 +27,24 @@
       {
         "matcher": "startup|resume|clear|compact",
         "hooks": [
-          { "type": "command", "command": "python tools/session_start_context.py" },
-          { "type": "command", "command": "python tools/log_session.py" }
+          {
+            "type": "command",
+            "command": "python \"$CLAUDE_PROJECT_DIR/tools/session_start_context.py\""
+          },
+          {
+            "type": "command",
+            "command": "python \"$CLAUDE_PROJECT_DIR/tools/log_session.py\""
+          }
         ]
       }
     ],
     "SessionEnd": [
       {
         "hooks": [
-          { "type": "command", "command": "python tools/log_session.py" }
+          {
+            "type": "command",
+            "command": "python \"$CLAUDE_PROJECT_DIR/tools/log_session.py\""
+          }
         ]
       }
     ],
@@ -43,7 +52,10 @@
       {
         "matcher": "Edit|Write|MultiEdit",
         "hooks": [
-          { "type": "command", "command": "python tools/deliverable_reminder.py" }
+          {
+            "type": "command",
+            "command": "python \"$CLAUDE_PROJECT_DIR/tools/deliverable_reminder.py\""
+          }
         ]
       }
     ]
