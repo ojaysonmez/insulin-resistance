@@ -10,7 +10,7 @@ Status: DRAFT written 2026-10-19. Nothing here is scheduled or running. It descr
 3. **Unattended means no questions.** Scheduled runs never stop to ask. They record assumptions and failures in the run log and continue.
 4. **Short searches.** The project's own lesson: long conjunctive strings returned zero hits and broke. Use the short strings in `WATCHLIST.md`, date-limited, and read the full result set when it is under about 60 records (at least the top 25 otherwise), and say so.
 5. **Identifiers.** Record both PMID and DOI for every paper (role-file identifier rule).
-6. **Do not run the same role in both modes** (README running convention): all update runs are subagents.
+6. **Do not run the same role in both modes** (see `CONVENTIONS.md`): all update runs are subagents.
 
 ## Cadence
 | Run | When | What | Agent | Output | Budget (tokens) |

@@ -1,49 +1,64 @@
-# IR project: file index
+# Is measuring insulin resistance clinically useful?
 
-Question: is measuring insulin resistance (fasting insulin, HOMA-IR, TyG) clinically useful, and what are the uses of insulin and C-peptide measurement? Coverage and reimbursement are out of scope. This folder holds the findings, the work behind them, and the plans for keeping them current.
+An AI-assisted evidence review of one question, built as a team of specialised AI roles that check each other, with every step kept as an audit trail.
 
-**Read this first:** These are AI-assisted research notes, not medical advice and not peer reviewed. Claims were checked by skeptic reviews, but many rest on abstracts or single sources, some items are marked unverified, and the latest corrections have had only one review. Citations were checked for identity and retractions by hand, not exhaustively. Confidence figures are judgements, not computations. Use `merged-conclusion.md` with its stated caveats and verify anything you rely on against the primary sources.
+> **Read this first:** These are AI-assisted research notes, not medical advice and not peer reviewed. Claims were checked by skeptic reviews, but many rest on abstracts or single sources, some items are marked unverified, and the latest corrections have had only one review. Citations were checked for identity and retractions by hand, not exhaustively. Confidence figures are judgements, not computations. Use `merged-conclusion.md` with its stated caveats and verify anything you rely on against the primary sources.
 
-## Read these first
+## The question
+Insulin resistance (IR) is measured in research and in some clinics with fasting insulin, HOMA-IR or surrogate indices such as the triglyceride-glucose (TyG) index. Does measuring it change what a clinician does or improve patient outcomes? And, separately, when are insulin and C-peptide measurements useful for other clinical questions? Coverage and reimbursement are out of scope.
+
+## Short answer (with caveats)
+- **No established clinical utility today for routine IR measurement** (fasting insulin, HOMA-IR, TyG) in primary care, prediabetes, type 2 diabetes, PCOS, MASLD or obesity. Judged at about 80-85%; this is a judgement of how well the verdict survives further checking, not a calculation.
+- **"Shown not to add value" is a weaker claim,** about 45-50%. The evidence is thin and narrow, and the searches that would find a decisive study were incomplete.
+- **The strongest finding is about measurement:** a single fasting insulin or HOMA-IR value cannot reliably classify a person near a cutoff or detect individual change (within-person variation is roughly 25-30%, assays disagree, cutoffs do not transfer).
+- **Insulin and C-peptide do have established uses, mostly not as IR screening:** hypoglycaemia work-up, diabetes classification, and some specialist settings. `usecases-verified.md` lists 47 uses by patient type: 11 established, 15 limited, 10 research-only, 11 unsupported. All established uses are secretion, hypersecretion or classification uses; no IR-measurement use is established.
+
+## Why this exists
+1. **The question is contested and the evidence is scattered** across prediction studies, guidelines, trials, laboratory standardisation papers and registries. A reader needs one place that says what each source actually shows and how strong it is.
+2. **A single AI pass over the literature is unreliable for this.** In this project, independent reviewers repeatedly found abstract-only reading, studies attached to the wrong claim, evidence graded more strongly than its source allowed, "not found" claims built on searches that could not have found anything, and caveats lost when claims were copied into the summary. The system is built to catch these failures, not to trust the first answer.
+3. **A test of the method.** The same roles were run twice (as separate sessions and as subagents) to see whether a second run adds confidence. It mostly measured how incomplete a single search is; the conclusions agreed.
+4. **A review that can be kept current.** The plan in `update-system/` describes a weekly watch for retractions, trial results and guideline changes, with nothing changing the conclusion until a skeptic has reviewed it.
+
+## How it works
+Roles are defined in `.claude/agents/` and run with Claude Code. Each role has one job:
+
+| Role | Job |
+|---|---|
+| Evidence searcher | Builds a documented evidence set with reproducible searches, registry checks and guideline full texts; does not grade |
+| Endocrinologist, PCP | Judge whether measuring IR would change specialist or everyday care |
+| Biostatistician | Appraises prediction, cutoff and bias evidence |
+| Clinical chemist | Owns assay quality, variability and cutoffs |
+| Scientist | On-call physiology |
+| Skeptic | Checks claims against sources, verifies citations, challenges overreach |
+| Steelman | Builds the strongest case for utility and finds what the team missed |
+| Use-case reviewers | Verify and extend the list of insulin and C-peptide uses by patient area |
+| Specialty reviewer, summary editor | Defined, not yet run: specialty checks of the conclusion, and a plain-language summary |
+
+Flow: searcher, then analysts, then skeptic and steelman, then a merged conclusion that a skeptic reviews again. Analysis-stage runs are kept independent of one another; all coordination goes through a main session. Every correction is logged in `CHANGELOG.md`. Details are in `CONVENTIONS.md`.
+
+## What to read
 | File | What it is |
 |---|---|
-| `merged-conclusion.md` | The main findings, with confidence figures and open gaps |
+| `merged-conclusion.md` | The main findings, with confidence figures, caveats and open gaps |
 | `usecases-verified.md` | Uses of insulin and C-peptide measurement by patient type (47 rows) |
-| `summary.md` | Plain-language summary (not written yet; see the summary editor role) |
 | `CHANGELOG.md` | What changed, when and why |
+| `CONVENTIONS.md` | How runs are organised, where files go, the citation rule |
 
-## Folder map
+The folders hold interim working material and the audit trail, not documents to read for the findings:
+
 | Folder | Contents |
 |---|---|
-| `analysis/` | Interim analyst reports from session runs: endocrinologist, scientist, PCP, biostatistician, clinical chemist (and its round 2), and the evidence searcher's evidence base (retrieval only, no grading; section 12 holds the round 2 additions) |
-| `analysis/subagent-runs/` | The matching reports from subagent runs of the same roles |
-| `reviews/` | Skeptic reviews, the steelman and the comparison of the two runs |
-| `reviews/subagent-runs/` | Skeptic reviews run as subagents, including the review of the round 2 corrections |
-| `usecases/` | The unverified draft list (`usecases-draft.md`) and `reviewers/`, the three area reviewer reports behind `usecases-verified.md` |
-| `update-system/` | Plan, watchlist and pending queue for keeping the conclusion current, the claim ledger design and its empty `claims.csv`, and `check_citations.py` (not yet run) |
-| `archive/` | Superseded or audit-trail files (the searcher's round 2 file, content merged into `analysis/evidence-searcher.md`) |
-| `.claude/agents/` | The role definitions (evidence searcher, endocrinologist, PCP, biostatistician, clinical chemist, scientist, skeptic, steelman, use-case reviewer, specialty reviewer, summary editor) |
+| `analysis/` | Analyst reports from session runs; the evidence searcher's evidence base; `subagent-runs/` has the matching subagent reports |
+| `reviews/` | Skeptic reviews, the steelman, the comparison of the two runs; `subagent-runs/` has subagent reviews |
+| `usecases/` | The unverified draft list and `reviewers/`, the area reviewer reports behind the verified list |
+| `update-system/` | Update plan, watchlist, pending queue, claim ledger design, citation checker script (not yet run) |
+| `archive/` | Superseded files |
+| `.claude/agents/` | The role definitions |
 
-Everything under `analysis/`, `reviews/` and `usecases/reviewers/` is interim working material and audit trail, not documents to read for the findings.
+## Status
+- **Done:** the merged conclusion and the 47-row use-case list, each through skeptic review and corrections; the draft update system.
+- **Not done:** specialty reviews (cardiology first), the plain-language summary, the claim ledger build, a first run of the citation script, the update watch dry run. The most recent corrections to the measurement section have had one review.
+- **Known limits:** searches used PubMed and registries only (no Embase, Cochrane or non-English literature); several guideline texts could not be read in full; many sources were read at abstract level only; the two-run comparison was one pair per role with no control.
 
-## Convention
-One current report per role per run mode; further rounds update the file or go to `archive/`. Add new files here when created, and log them in `CHANGELOG.md`.
-
-## Running convention (agreed 2026-10-19)
-Role definitions are in `.claude/agents/`. All paths in these files are relative to the project root (the folder that contains `.claude/` and these files); do not write absolute paths in files or agent prompts, so the folder can be renamed or moved. Each run of a role is either a subagent or a separate session.
-
-- **Default: subagents for every role** (launched in the background, report handed back to the main session). This includes the evidence searcher, endocrinologist, PCP, biostatistician, clinical chemist, scientist, use-case reviewers, specialty reviewers, summary editor, skeptic and steelman. Reasons: reports arrive directly, they are cheaper and parallel, they are easy to keep independent, and a named subagent can be resumed with a follow-up message, so follow-up alone does not need a session. The skeptic subagents run so far (Set B and the new roles) delivered reports of the same kind as the session skeptics.
-- **Sessions only on request or when needed:** the user wants to watch or talk to a run, or the run needs peer-to-peer messaging (that needs session IDs). Skeptic and steelman were run as sessions earlier only by the first pattern we used, not because they need peer messaging. A long source-heavy review can hit a usage limit in either mode; recover by sending a follow-up message to resume it.
-- **Evidence for the choice is weak.** The one comparison of the two modes (session set vs subagent set, `reviews/comparison.md`) found neither clearly better; differences came from prompts, tools and instructions, not from the mode. Do not run the same role in both modes on the same question; that only measured search incompleteness and cost 150,000 to 400,000 tokens per run.
-- **Independence:** analysis-stage runs do not read each other's files. All coordination goes through the main session. Peer messaging is allowed only for specific conflicts or handoffs, with at most two messages each, and anything received must be verified before use.
-- **Specialty reviewers:** the main session names the specialty in the prompt (cardiology, hepatology, reproductive and obstetric medicine, nephrology, oncology, psychiatry). If none is named, the role defaults to cardiology and records that.
-- **Order:** evidence searcher, then analysts, then skeptic and steelman, then merge (`merged-conclusion.md`), then specialty reviewers, then a skeptic on the new findings, then the summary editor. The use-case track (use-case reviewers, then `usecases-verified.md`, then a skeptic) runs separately.
-- **Where files go:** session-run analyst reports in `analysis/`, subagent-run reports in `analysis/subagent-runs/`; session-run skeptic and steelman reviews in `reviews/`, subagent-run reviews in `reviews/subagent-runs/`; use-case reviewer reports in `usecases/reviewers/`; plans and tools in `update-system/`; final documents in the project root. No other new folders without a changelog entry. The project root was flattened and reorganised on 2026-10-19: older reports and changelog entries still mention the former `ir-team/` and `subagents/` folders, and bare file names in older documents (for example `ir-skeptic.md`) now live in `analysis/`, `reviews/` or `usecases/`, without the `ir-` prefix (that one is now `reviews/skeptic.md`). Report files have no `ir-` prefix; the role definitions in `.claude/agents/` keep theirs. Agents record both PMID and DOI for every paper (see the citation rule below).
-
-## Citation rule (proposed 2026-10-19)
-One link per source, with the identifier shown beside it:
-1. Paper with a DOI: `https://doi.org/<DOI>` plus the PMID if it has one.
-2. Paper with a PMID but no DOI: `https://pubmed.ncbi.nlm.nih.gov/<PMID>/`.
-3. Trial: registry ID plus its registry link (e.g. `https://clinicaltrials.gov/study/NCT00091949`, `https://www.isrctn.com/ISRCTN11215387`).
-4. Report or document with neither: source URL plus title, issuing body and date (URLs can move or break).
-A link is an address, not a check: verify that the title on the record matches the claim. State the read level (full text / abstract / title only) for every item. Publisher pages often block automated readers; doi.org and PubMed links are the safest for agents.
+## Reusing the approach
+To apply it to another clinical question: edit the role files in `.claude/agents/` for the new topic, keep the independence and verification rules, run the searcher first, then the analysts and skeptic, and require every claim to carry its source, read level and caveats. `update-system/CLAIM-LEDGER.md` describes a structure for tracking claims.
