@@ -12,6 +12,7 @@ The current state and the next step, written by hand at the end of a working ses
 
 ## Next step
 - Run the scoring pilot on rows 6, 5 and 13 (needs searching for US commonality) once the user agrees, then score about 30 candidates by dimension.
+- The pilot is drafted as a workflow script, `usecases/pilot-scoring.workflow.js` (six agents, not run, review first). Running it needs the user's explicit go-ahead for the Workflow tool and room under the usage limit.
 - The session-start brief and the in-repo memory rule were both verified in a new session on 2026-10-19; nothing is pending there.
 - Then, as the user chooses: specialty reviews (cardiology first), summary editor, claim ledger build, update-watch dry run.
 
