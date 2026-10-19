@@ -5,7 +5,7 @@ Scripts and hook setup for the project. Nothing here changes the findings; the s
 ## session_start_context.py (session-start hook, installed 2026-10-19)
 Prints a short, read-only context brief for the start of each session: the hand-written handoff note (`HANDOFF.md`), a one-line index of the decisions in `DECISIONS.md`, the project memory index (`memory/MEMORY.md`), the last five commits, the branch and uncommitted changes (with a warning when local commits are not pushed), the pending update items, the open items from `CHANGELOG.md`, and the conventions in two lines. Read-only and standard-library only; it does not call the network. Output is capped at 70 lines.
 
-How it is wired: the hook entry is in `.claude/settings.local.json` (git-ignored, so it stays on this machine and is not shipped to clones of the public repo). To share it, put the same block in `.claude/settings.json`:
+How it is wired: the hook entry is in `.claude/settings.local.json` (tracked in git since 2026-10-19, so a clone of the public repo gets the hooks; they run the scripts in `tools/` at session start, so read them before trusting a clone). The same block would also work in `.claude/settings.json`:
 
 ```json
 {
@@ -39,3 +39,7 @@ python tools/check_citations.py merged-conclusion.md usecases-verified.md
 ```
 
 Defaults write `tools/citation-report.md`, `tools/citation-report.json` and `tools/.citation-cache.json` (all git-ignored). Optional environment variables: `NCBI_API_KEY` (higher rate limit) and `CROSSREF_MAILTO` (Crossref's polite pool; never hard-coded). Exit code 1 means an urgent flag (a retracted paper or mismatch), 2 a network failure. Use `--max 10` for a small test run.
+
+## log_session.py (second session-start hook, added 2026-10-19)
+
+Appends one line per session start to `.claude/sessions.log` (git-ignored): time, source (startup, resume, clear or compact), session ID, transcript file name and the keys of the hook input. Prints the ID so the new session can tell the user. It is registered next to `session_start_context.py` in `.claude/settings.local.json`. Not yet verified: whether the hook's ID matches the `local_...` IDs used by the transcript search tools. To remove, delete its entry from the hook list.

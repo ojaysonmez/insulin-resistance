@@ -1,0 +1,13 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume|clear|compact",
+        "hooks": [
+          { "type": "command", "command": "python tools/session_start_context.py" },
+          { "type": "command", "command": "python tools/log_session.py" }
+        ]
+      }
+    ]
+  }
+}

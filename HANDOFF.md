@@ -16,7 +16,7 @@ The current state and the next step, written by hand at the end of a working ses
 - Then, as the user chooses: specialty reviews (cardiology first), summary editor, claim ledger build, update-watch dry run.
 
 ## Waiting on the user
-- Whether to move the hook from `.claude/settings.local.json` to the shared `settings.json`. (All commits to date are pushed.)
+- Whether to move the hook from `.claude/settings.local.json` to the shared `settings.json`. (The local file is now tracked in git, so this matters less.)
 - Whether to supply PDFs for the 20-30 load-bearing papers that were read only at abstract level (user said not yet).
 - Permission to start search-heavy agent runs (the user is watching a usage limit).
 
