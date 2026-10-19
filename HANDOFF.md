@@ -12,7 +12,7 @@ The current state and the next step, written by hand at the end of a working ses
 
 ## Next step
 - Run the scoring pilot on rows 6, 5 and 13 (needs searching for US commonality) once the user agrees, then score about 30 candidates by dimension.
-- Test the memory rule: in a new session ask it to save a test note and confirm it lands in `memory/` (the session-start brief was verified on 2026-10-19: delivered once, 52 lines, all sections). Delete the test note afterwards.
+- The session-start brief and the in-repo memory rule were both verified in a new session on 2026-10-19; nothing is pending there.
 - Then, as the user chooses: specialty reviews (cardiology first), summary editor, claim ledger build, update-watch dry run.
 
 ## Waiting on the user
