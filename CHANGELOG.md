@@ -63,6 +63,8 @@ Format: date, time (if known), what changed, why.
 - Scoring rubric decision 1 settled by the user (2026-10-19): commonality is counted for the United States only; a patient means a patient in whom the clinical situation arises in a year (new cases plus those needing the test again), not tests and not everyone with the disease. Five open decisions remain (weights, stakes, candidate set, workflow scope, pilot rows).
 - Scoring rubric decisions settled (2026-10-19): weights adopted (utility 0.5, commonality 0.3, readiness 0.2); stakes kept as a reported label outside the composite (default); candidate set = the triage rule (default); workflow scope = rank all with a setting tag (routine care, specialist outpatient, inpatient or procedural); pilot rows 6, 5 and 13. All open decisions in `usecases/scoring-rubric.md` are now resolved; nothing has been scored.
 - Scoring rubric revised (2026-10-19, user decision): stakes is now a scored dimension in the composite, beside commonality, with a 0-4 scale for the consequence of not having the information (not general disease severity); default weights changed from UQ 0.5, C 0.3, R 0.2 to UQ 0.40, C 0.25, S 0.20, R 0.15; the map shows S as colour or label and a second view plots need (commonality and stakes) against utility quality. Candidate set and the rank-all-with-setting-tag approach confirmed. Not yet committed.
+- Drafted a session-start hook and project rules (2026-10-19, not installed): `update-system/session_brief.py` (read-only status brief: last commits, branch and uncommitted changes, unpushed warning, pending update items, open items from this changelog), `update-system/CLAUDE.md.draft` (static rules for the project root) and `update-system/SESSION-HOOK.md` (install and removal steps). Test run of the script worked (18 lines); it showed the 'Not yet run or done' section was stale, which was then updated.
+- Installed the project `CLAUDE.md` (project root) and the session-start hook (`.claude/settings.local.json`, git-ignored; runs `python update-system/session_brief.py`), at the user's request (2026-10-19). Both take effect from the next new session. Added a rule to `CLAUDE.md` that files are created at their intended location, not parked as drafts elsewhere (user preference).
 - Draft update plan written (not running): `UPDATE-PLAN.md` (weekly watch, monthly triage, trigger reviews, gate before any edit, prerequisites, budget, open decisions), `WATCHLIST.md` (tracked registry IDs, documents, 13 short PubMed queries, triggers) and `PENDING.md` (empty template). Reason: the user plans to continue the work, repeat searches after improvements, and possibly schedule weekly updates.
 
 ## Decisions and corrections to earlier statements
@@ -72,5 +74,11 @@ Format: date, time (if known), what changed, why.
 - Coverage and reimbursement are out of scope for every role.
 
 ## Not yet run or done
-- `ir-summary-editor`, `ir-specialty-reviewer` (cardiology first), a skeptic review of the round 2 corrections in `merged-conclusion.md`.
-- Proposed, not drafted: claim ledger, citation-check script, full-text reader helper, formal appraisal tools (PROBAST, QUADAS-2, GRADE) for the biostatistician, a negative-claim protocol, analysts starting from the searcher's evidence set, a stopping rule.
+- Specialty reviewers (cardiology first, then others as chosen) and a skeptic on their findings; then the summary editor.
+- Use-case scoring: the pilot on rows 6, 5 and 13 (needs searching for US commonality), then scoring of about 30 candidates (`usecases/scoring-rubric.md`; all rubric decisions are settled, nothing is scored).
+- Claim ledger build (design in `update-system/CLAIM-LEDGER.md`; `claims.csv` is empty).
+- Update system: dry run and scheduling test (`update-system/UPDATE-PLAN.md`); the citation script has been run and fixed, and a pre-commit check is not written.
+- Deferred wording items from the scope review: about ten remaining generic "IR" statements, relabelling use-case rows 17, 35 and 45, and a check of whether WBISI is the Matsuda index.
+- Check after the next new session that the session-start brief appears once at the start (hook output handling not yet verified on this platform).
+- Proposed, not drafted: full-text reader helper, formal appraisal tools (PROBAST, QUADAS-2, GRADE) for the biostatistician, a negative-claim protocol, analysts starting from the searcher's evidence set, a stopping rule.
+- Unpushed: commits after `2e8865f` (the scoring rubric and its stakes revision) are local only.
