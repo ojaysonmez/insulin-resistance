@@ -26,6 +26,9 @@ The current state and the next step, written by hand at the end of a working ses
 - Deferred wording items from the scope review: about ten generic "IR" statements, rows 17, 35 and 45 relabelling, and a check of whether WBISI is the Matsuda index.
 - Confidence figures (80-85% and 45-50%) were not re-derived after the measure-type rescoping.
 - Read `DECISIONS.md` before changing a settled decision.
+- Constraints from the user: coverage and reimbursement are out of scope; nothing is published or pushed without a request; PDFs are "not yet"; the memory folder is tracked in the public repo.
+- Compaction check (2026-10-19): the session-start hook fired once after compaction of the working chat, so the brief is not duplicated. That chat's transcript file shrank from about 5.2 MB to about 0.86 MB for an unconfirmed reason, so treat the repository files, not the transcript, as the reliable record.
+- Advice given when the working chat reached about 96% context: start a new chat for the next task (the scoring pilot) instead of continuing in a compacted one, because a long context costs more per message against the usage limit.
 
 ## Earlier chats
-- The long working chat that built all of this can be searched from a new session with the transcript search tool (it searches other sessions' transcripts by text). Its session ID is in the assistant's private project memory, not in this repository.
+- The long working chat that built all of this can be searched from a new session with the transcript search tool (it searches other sessions' transcripts by text). Its session ID is in `memory/reference_working_chat.md`.
