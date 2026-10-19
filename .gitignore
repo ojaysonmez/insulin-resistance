@@ -11,6 +11,5 @@ __pycache__/
 # Track the hook configuration (a global git ignore on this machine hides it by default)
 !.claude/settings.local.json
 .claude/sessions.log
-.claude/working-chat-id.txt
 scratch/
 *.tmp
