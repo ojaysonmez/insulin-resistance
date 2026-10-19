@@ -1,6 +1,6 @@
 # Watchlist (draft, not running)
 
-> Paths: this file lives in `update-system/`. The deliverables (`merged-conclusion.md`, `usecases-verified.md`) are in the project root; reviews are in `reviews/`; reports in `analysis/` and `usecases/`. Other files named here without a folder are in `update-system/`.
+> Paths: this file lives in `update-watch/`. The deliverables (`merged-conclusion.md`, `usecases-verified.md`) are in the project root; reviews are in `reviews/`; reports in `analysis/` and `usecases/`. Other files named here without a folder are in `update-watch/`.
 
 Used by the weekly watch in `UPDATE-PLAN.md`. Edit this file, not the agent prompts, to change what is monitored. Draft 2026-10-19; items come from the project's current deliverables. Search strings are deliberately short (long conjunctions broke in earlier runs). Date-limit each PubMed query to the last 8 days. Record the count and how many records were screened.
 

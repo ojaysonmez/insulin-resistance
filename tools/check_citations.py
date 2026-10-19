@@ -17,9 +17,9 @@ checks identity and notices only. A person or skeptic must still compare the tit
 abstract with the claim. A link or a matching record is an address, not a check.
 
 Usage (example, run from the project root):
-  python update-system/check_citations.py merged-conclusion.md usecases-verified.md \
-      --out update-system/citation-report.md --json update-system/citation-report.json \
-      --cache update-system/.citation-cache.json
+  python tools/check_citations.py merged-conclusion.md usecases-verified.md \
+      --out tools/citation-report.md --json tools/citation-report.json \
+      --cache tools/.citation-cache.json
 
 Environment variables (optional): NCBI_API_KEY (raises the rate limit),
 CROSSREF_MAILTO (an address for Crossref's polite pool; never hard-coded here).
@@ -169,9 +169,9 @@ def fetch_crossref(dois, cache, delay):
 def main():
     ap = argparse.ArgumentParser(description="Check PMIDs and DOIs in markdown files (identity and notices).")
     ap.add_argument("files", nargs="+")
-    ap.add_argument("--out", default="update-system/citation-report.md")
+    ap.add_argument("--out", default="tools/citation-report.md")
     ap.add_argument("--json", default="")
-    ap.add_argument("--cache", default="update-system/.citation-cache.json")
+    ap.add_argument("--cache", default="tools/.citation-cache.json")
     ap.add_argument("--no-network", action="store_true", help="extract and cross-check from cache only")
     ap.add_argument("--max", type=int, default=0, help="limit identifiers checked (0 = all), for a dry run")
     args = ap.parse_args()

@@ -2,13 +2,13 @@
 
 Updated: 2026-10-19 (end of the first long working session)
 
-The current state and the next step, written by hand at the end of a working session. It is overwritten each time (history lives in `CHANGELOG.md` and git). `update-system/session_brief.py` prints this note's main sections at the start of each session. Update it at the end of every working session.
+The current state and the next step, written by hand at the end of a working session. It is overwritten each time (history lives in `CHANGELOG.md` and git). `tools/session_start_context.py` prints this note's main sections at the start of each session. Update it at the end of every working session.
 
 ## Where we are
 - The merged conclusion and the 47-row use-case list are written, skeptic-reviewed and rescoped by measure type; the repository is public with a disclaimer.
 - The use-case scoring rubric is settled (US commonality, weights utility 0.40, commonality 0.25, stakes 0.20, readiness 0.15, all candidates ranked with a setting tag); nothing is scored yet.
-- Session continuity is set up this session: `CLAUDE.md`, the session-start hook, `DECISIONS.md`, this note and project memory.
-- Local commits for the rubric and for `CLAUDE.md` and the hook were not pushed when this note was written; the brief shows the live git state.
+- Session continuity is set up this session: `CLAUDE.md`, the session-start hook, `DECISIONS.md`, this note and in-repo project memory (`memory/`).
+- Check the session brief for unpushed commits and uncommitted changes (it shows the live git state).
 
 ## Next step
 - Run the scoring pilot on rows 6, 5 and 13 (needs searching for US commonality) once the user agrees, then score about 30 candidates by dimension.

@@ -1,6 +1,6 @@
 # Update plan: keeping the IR project current (draft, not running)
 
-> Paths: this file lives in `update-system/`. The deliverables (`merged-conclusion.md`, `usecases-verified.md`) are in the project root; reviews are in `reviews/`; reports in `analysis/` and `usecases/`. Other files named here without a folder are in `update-system/`.
+> Paths: this file lives in `update-watch/`. The deliverables (`merged-conclusion.md`, `usecases-verified.md`) are in the project root; reviews are in `reviews/`; reports in `analysis/` and `usecases/`. Other files named here without a folder are in `update-watch/`.
 
 Status: DRAFT written 2026-10-19. Nothing here is scheduled or running. It describes how to keep `merged-conclusion.md` and `usecases-verified.md` current as new evidence appears, without re-running the whole system. Coverage and reimbursement are out of scope.
 

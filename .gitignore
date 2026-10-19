@@ -1,7 +1,7 @@
 # Citation checker outputs and cache (regenerated on each run)
-update-system/citation-report.md
-update-system/citation-report.json
-update-system/.citation-cache.json
+tools/citation-report.md
+tools/citation-report.json
+tools/.citation-cache.json
 
 # Python
 __pycache__/

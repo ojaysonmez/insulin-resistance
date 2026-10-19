@@ -5,7 +5,7 @@ Prints a short plain-text brief to stdout. When installed as a Claude Code
 SessionStart hook, whatever this prints is added to the start of each session, so
 a new or resumed session knows where the project stands.
 
-Read-only: it reads git state, HANDOFF.md, CHANGELOG.md and update-system/PENDING.md and
+Read-only: it reads git state, HANDOFF.md, CHANGELOG.md and update-watch/PENDING.md and
 writes nothing. Standard library only. Keeps the brief under MAX_LINES lines.
 """
 import pathlib
@@ -13,7 +13,7 @@ import re
 import subprocess
 import sys
 
-MAX_LINES = 60
+MAX_LINES = 70
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 
 
@@ -59,6 +59,23 @@ def main():
             for b in section_bullets(handoff, title, limit=5):
                 brief.append(f"  [{title[3:]}] {b[2:]}")
 
+    decisions = re.findall(r"^\*\*(D-\d+)\.\s+(.+?)\.?\*\*", read("DECISIONS.md"), flags=re.M)
+    if decisions:
+        brief.append("Decisions already made (open DECISIONS.md and read the entry before changing one):")
+        line = "  "
+        for did, title in decisions:
+            item = f"{did} {title}; "
+            if len(line) + len(item) > 150:
+                brief.append(line.rstrip("; "))
+                line = "  "
+            line += item
+        brief.append(line.rstrip("; "))
+
+    notes = [ln.strip() for ln in read("memory/MEMORY.md").splitlines() if ln.startswith("- [")]
+    if notes:
+        brief.append("Project memory (memory/, one note per file; add new notes there, not in the private Claude folder):")
+        brief += [f"  {n[:170]}" for n in notes[:12]]
+
     log = git("log", "-5", "--format=%h %ad %s", "--date=short")
     if log:
         brief.append("Last commits:")
@@ -77,8 +94,8 @@ def main():
         if re.search(r"ahead \d+", branch):
             brief.append("Note: local commits are not pushed to the public repo. Push only when the user asks.")
 
-    pending = len(re.findall(r"^### P-", read("update-system/PENDING.md"), flags=re.M))
-    brief.append(f"Update watch: {pending} pending item(s) in update-system/PENDING.md (watch not yet running).")
+    pending = len(re.findall(r"^### P-", read("update-watch/PENDING.md"), flags=re.M))
+    brief.append(f"Update watch: {pending} pending item(s) in update-watch/PENDING.md (watch not yet running).")
 
     open_items = section_bullets(read("CHANGELOG.md"), "## Not yet run or done")
     if open_items:

@@ -1,6 +1,6 @@
 # Claim ledger: design (draft, not yet built)
 
-> Paths: this file lives in `update-system/`. The deliverables (`merged-conclusion.md`, `usecases-verified.md`) are in the project root; reviews are in `reviews/`; reports in `analysis/` and `usecases/`. Other files named here without a folder are in `update-system/`.
+> Paths: this file lives in `claims/`. The deliverables (`merged-conclusion.md`, `usecases-verified.md`) are in the project root; reviews are in `reviews/`; reports in `analysis/` and `usecases/`. Other files named here without a folder are in `claims/`.
 
 Status: DESIGN written 2026-10-19. No ledger rows exist yet; `claims.csv` has only the header. Nothing here has been run.
 

@@ -17,7 +17,7 @@ Insulin resistance (IR) is measured in research and in some clinics with fasting
 1. **The question is contested and the evidence is scattered** across prediction studies, guidelines, trials, laboratory standardisation papers and registries. A reader needs one place that says what each source actually shows and how strong it is.
 2. **A single AI pass over the literature is unreliable for this.** In this project, independent reviewers repeatedly found abstract-only reading, studies attached to the wrong claim, evidence graded more strongly than its source allowed, "not found" claims built on searches that could not have found anything, and caveats lost when claims were copied into the summary. The system is built to catch these failures, not to trust the first answer.
 3. **A test of the method.** The same roles were run twice (as separate sessions and as subagents) to see whether a second run adds confidence. It mostly measured how incomplete a single search is; the conclusions agreed.
-4. **A review that can be kept current.** The plan in `update-system/` describes a weekly watch for retractions, trial results and guideline changes, with nothing changing the conclusion until a skeptic has reviewed it.
+4. **A review that can be kept current.** The plan in `update-watch/` describes a weekly watch for retractions, trial results and guideline changes, with nothing changing the conclusion until a skeptic has reviewed it.
 
 ## How it works
 
@@ -47,7 +47,7 @@ Insulin resistance (IR) is measured in research and in some clinics with fasting
 - **Subagents are the default way to run a role.** Each run is a background subagent started from the role's definition; it returns a report that is saved to a file. Separate sessions are used only when someone wants to watch or talk to a run, or for peer messaging. The first round was run both ways to compare them; neither was clearly better, so the cheaper subagent mode is the default.
 - **Independence.** Analysis-stage runs do not read one another's files, so agreement means something. The skeptic reviews an output without reading other skeptics' reviews. Independent runs of the same role are compared, not blended.
 - **Two tracks.** The analysis track answers whether measuring IR is useful. The use-case track lists where insulin and C-peptide measurement is used and how well each use is supported.
-- **Verification layers.** (1) Every role records identifiers (PMID and DOI), the read level (full text, abstract, title) and caveats for each claim. (2) A skeptic checks each output against primary sources and verifies citations and retractions. (3) A steelman argues the opposite case and looks for evidence the team did not search for. (4) A script (`update-system/check_citations.py`) checks identifiers and retraction or correction notices. (5) Corrections get their own skeptic pass. (6) Every change is logged and kept in git history.
+- **Verification layers.** (1) Every role records identifiers (PMID and DOI), the read level (full text, abstract, title) and caveats for each claim. (2) A skeptic checks each output against primary sources and verifies citations and retractions. (3) A steelman argues the opposite case and looks for evidence the team did not search for. (4) A script (`tools/check_citations.py`) checks identifiers and retraction or correction notices. (5) Corrections get their own skeptic pass. (6) Every change is logged and kept in git history.
 - **Tools the roles use.** PubMed, Crossref, clinical trial registries, and guideline full texts from PMC or Europe PMC. A citation verification service was tried but was unavailable, so verification was done with PubMed and Crossref directly.
 
 ### The roles
@@ -83,7 +83,10 @@ The folders hold interim working material and the audit trail, not documents to 
 | `analysis/` | Analyst reports from session runs; the evidence searcher's evidence base; `subagent-runs/` has the matching subagent reports |
 | `reviews/` | Skeptic reviews, the steelman, the comparison of the two runs; `subagent-runs/` has subagent reviews |
 | `usecases/` | The unverified draft list and `reviewers/`, the area reviewer reports behind the verified list |
-| `update-system/` | Update plan, watchlist, pending queue, claim ledger design, citation checker script (not yet run) |
+| `update-watch/` | Update plan, watchlist and pending queue for keeping the conclusion current (draft, not running) |
+| `claims/` | Claim ledger design and its empty `claims.csv` |
+| `tools/` | Scripts (citation checker, session-start context for the hook) and how to install the hook |
+| `memory/` | Project memory: working style, preferences, lessons learned, pointers to earlier chats; read at session start |
 | `archive/` | Superseded files |
 | `.claude/agents/` | The role definitions |
 
@@ -93,4 +96,4 @@ The folders hold interim working material and the audit trail, not documents to 
 - **Known limits:** searches used PubMed and registries only (no Embase, Cochrane or non-English literature); several guideline texts could not be read in full; many sources were read at abstract level only; the two-run comparison was one pair per role with no control.
 
 ## Reusing the approach
-To apply it to another clinical question: edit the role files in `.claude/agents/` for the new topic, keep the independence and verification rules, run the searcher first, then the analysts and skeptic, and require every claim to carry its source, read level and caveats. `update-system/CLAIM-LEDGER.md` describes a structure for tracking claims.
+To apply it to another clinical question: edit the role files in `.claude/agents/` for the new topic, keep the independence and verification rules, run the searcher first, then the analysts and skeptic, and require every claim to carry its source, read level and caveats. `claims/CLAIM-LEDGER.md` describes a structure for tracking claims.
