@@ -30,13 +30,17 @@ def main():
     source = str(data.get("source", "unknown"))
     transcript = pathlib.PurePath(str(data.get("transcript_path", ""))).name or "-"
     keys = ",".join(sorted(data.keys())) or "-"
+    event = str(data.get("hook_event_name", "unknown"))
+    reason = str(data.get("reason", "-"))
     stamp = datetime.datetime.now().isoformat(timespec="seconds")
     try:
         LOG.parent.mkdir(exist_ok=True)
         with LOG.open("a", encoding="utf-8") as f:
-            f.write(f"{stamp}\tsource={source}\tsession_id={sid}\ttranscript={transcript}\tkeys={keys}\n")
+            f.write(f"{stamp}\tevent={event}\tsource={source}\treason={reason}\tsession_id={sid}\ttranscript={transcript}\tkeys={keys}\n")
     except Exception:
         pass
+    if event == "SessionEnd":
+        return
     try:
         sys.stdout.reconfigure(encoding="utf-8")
     except Exception:
