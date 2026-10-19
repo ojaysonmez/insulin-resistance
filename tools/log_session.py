@@ -32,11 +32,12 @@ def main():
     keys = ",".join(sorted(data.keys())) or "-"
     event = str(data.get("hook_event_name", "unknown"))
     reason = str(data.get("reason", "-"))
+    title = " ".join(str(data.get("session_title", "-")).split())[:80] or "-"
     stamp = datetime.datetime.now().isoformat(timespec="seconds")
     try:
         LOG.parent.mkdir(exist_ok=True)
         with LOG.open("a", encoding="utf-8") as f:
-            f.write(f"{stamp}\tevent={event}\tsource={source}\treason={reason}\tsession_id={sid}\ttranscript={transcript}\tkeys={keys}\n")
+            f.write(f"{stamp}\tevent={event}\tsource={source}\treason={reason}\tsession_id={sid}\ttitle={title}\ttranscript={transcript}\tkeys={keys}\n")
     except Exception:
         pass
     if event == "SessionEnd":
