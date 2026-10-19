@@ -1,0 +1,59 @@
+# Decision log
+
+Why the project is the way it is. Each entry: what was decided, why, what else was considered, who decided, and when to revisit. `CHANGELOG.md` records what changed; this file records the reasoning. Reconstructed on 2026-10-19 from the working conversation; add an entry whenever a decision is made, and read the relevant entry before changing a settled one.
+
+Decided by: **user** = Jay; **joint** = proposed by the assistant and accepted; **assistant** = the assistant's default, open to change.
+
+## Scope and method
+
+**D-01. Question and scope.** Assess the clinical utility of measuring insulin resistance, and separately where insulin and C-peptide measurement is used. Coverage and reimbursement are out of scope for every role. *Why:* the user's focus; an early coverage role was dropped. *Decided by:* user (2026-10-18). *Revisit:* if a reimbursement analysis is wanted, run it as a separate project.
+
+**D-02. The user sets role names and roles.** Roles were defined with the user's names and descriptions; early drafts were deleted. Final set: evidence searcher, endocrinologist, PCP, biostatistician, clinical chemist, scientist, skeptic, steelman, use-case reviewer, specialty reviewer, summary editor. *Decided by:* user.
+
+**D-03. Evidence searcher and clinical chemist added after the first round.** Skeptic reviews showed retrieval depth (abstract-only reading, top-page screening) and assay variability/cutoffs were owned by nobody. *Decided by:* joint (2026-10-18).
+
+**D-04. Scientist narrowed to on-call physiology.** Assay and cutoff questions moved to the chemist; clinical utility verdicts stay with the clinical roles. Its foundational claims must be sourced or tagged uncited. *Decided by:* joint.
+
+**D-05. Independence and hub-and-spoke coordination.** Analysis-stage runs do not read each other's files; all coordination goes through the main session; peer messaging only for specific conflicts or handoffs, at most two messages each, anything received verified before use. *Why:* agreement between runs is meaningful only if they are independent; the chemist/searcher exchange helped modestly and showed messages crossing and a relayed error that only independent verification caught. *Alternatives:* free peer messaging (loses independence, correlated errors). *Decided by:* joint.
+
+**D-06. Run mode: subagents by default.** The first round ran each role twice (separate sessions and subagents). Neither was clearly better; differences came from prompts, tools and instructions. The second run mostly measured how incomplete a single search is and cost 150,000 to 400,000 tokens per run. So: subagents for every role; sessions only when the user wants to watch or for peer messaging; never run the same role in both modes. The skeptic and steelman ran as sessions earlier only by the first pattern, not because they need to. *Decided by:* joint (2026-10-19). *Revisit:* if a controlled test (same brief, several runs in one mode) shows a real mode effect.
+
+**D-07. Verification layers.** A skeptic checks every deliverable change before it is committed (local-files-only when the user's usage limit is tight); a steelman argues the opposite case; identifiers are checked against PubMed and Crossref; corrections get their own skeptic pass. *Why:* repeated findings of overstated grades, mislabelled studies, unverified negatives and copying errors in the merge. *Decided by:* joint.
+
+**D-08. Confidence figures are judgements.** Bottom line 1 at about 80-85%, bottom line 2 at about 45-50%, stated as judgements of how likely the claim is to survive further checking, not computations. They were set before the measure-type rescoping and have not been re-derived. *Decided by:* assistant, reviewed by skeptics. *Revisit:* after the post-load and prediction gaps are searched.
+
+**D-09. Use-case track.** A separate track lists uses of insulin and C-peptide by patient type (draft of 19, then 47 verified rows) through three area reviewers (hypoglycaemia/pancreas/transplant; classification/paediatrics; metabolic/liver/IR) and a consolidation step, then a skeptic. *Why:* the user wants to rank uses that could enter a clinical workflow. *Decided by:* user (2026-10-19).
+
+**D-10. Specialty reviewer is analyst-side.** It checks the merged conclusion's IR claims from a specialty's view (cardiology first, also hepatology, reproductive medicine, nephrology, oncology, psychiatry), does not extend the use-case list, never stops to ask, and defaults to cardiology if no specialty is named; the main session names the specialty. *Why:* the user pointed out that use-case reviewers and analysts do different jobs. *Decided by:* joint.
+
+**D-11. Summary editor is file-only.** It writes a plain-language summary from the project files with every sentence traced to its source and uncertainty labels kept; it runs after the specialty reviews. *Decided by:* joint. Not yet run.
+
+**D-12. Conclusions are scoped by measure type.** The user asked whether fasting and postprandial insulin should be evaluated separately. A scope audit showed the bottom lines rest on fasting insulin/HOMA-IR and TyG/TG-HDL-C but were phrased as "IR measurement". Bottom lines were rescoped; post-load and C-peptide are evaluated only for niche uses; the two post-load prediction results in the files are nulls. Ten generic statements, relabelling use-case rows 17, 35 and 45, and a check of whether WBISI is the Matsuda index are deferred. *Decided by:* user raised it; joint.
+
+**D-13. Paywalled papers are read at abstract level only.** Only open-access and repository full texts can be read. Detail claims rest on abstracts unless marked. A prioritised download list (about 20-30 load-bearing abstract-only papers) was offered and the user said not yet; PDFs must stay out of the public repository. *Decided by:* user. *Revisit:* when the user supplies PDFs.
+
+**D-14. Usage limit awareness.** The user watches a usage limit. Search-heavy agent runs (specialty reviews, the scoring pilot, commonality searches) wait until the user agrees; file-only work is preferred meanwhile. *Decided by:* user.
+
+## Evidence handling
+
+**D-15. Identifier rule.** Record both PMID and DOI for every paper (doi.org link with the PMID beside it; PubMed link when there is no DOI), with read level and caveats. *Why:* 453 PMIDs vs 290 DOIs came from recording style, not missing DOIs. *Decided by:* user (2026-10-19).
+
+**D-16. Citation checker.** `update-system/check_citations.py` checks identity, DOI mismatches, retractions and corrections via PubMed and Crossref (Scholar Sidekick was unusable). The first version evaluated Crossref notices only for DOIs written in the files and missed 8 corrections; fixed and re-run. It checks identity only, not that a claim matches its paper. *Decided by:* assistant.
+
+**D-17. Claim ledger designed, build deferred.** Design in `update-system/CLAIM-LEDGER.md`. *Why deferred:* skeptic passes catch the merge errors it would prevent and the project is near a stable deliverable; needed if the update watch or repeated rounds go ahead. *Decided by:* joint (2026-10-19).
+
+**D-18. Update system: incremental watch with a gate.** Weekly watch (retractions, tracked registry IDs, guideline and label versions, short date-limited PubMed queries), monthly triage, nothing changes a deliverable until a skeptic has reviewed it; not a weekly full re-run. Drafted, not running; prerequisites and a dry run are outstanding. *Decided by:* joint.
+
+## Repository and structure
+
+**D-19. Public repository.** `github.com/ojaysonmez/insulin-resistance` (renamed by the user from `insulin-resistance-utility`), public, with a "Read this first" disclaimer (AI-assisted notes, not medical advice, not peer reviewed). Commit and push only when the user asks. *Decided by:* user.
+
+**D-20. Folder and naming.** The project folder was renamed from `C:\dev\common` to `C:\dev\ir`; all paths are relative to the project root (no absolute paths in files or prompts); the `ir-team/` subfolder was flattened; final documents (`merged-conclusion.md`, `usecases-verified.md`) stay in the root, interim material is in `analysis/`, `reviews/` and `usecases/reviewers/` (with `subagent-runs/` for subagent copies), plans and tools in `update-system/`; report files have no `ir-` prefix, role definitions in `.claude/agents/` keep it (agent names share one namespace across projects). *Decided by:* user.
+
+**D-21. Standing rules and session continuity.** A project `CLAUDE.md` (static rules), a session-start hook (read-only status brief, kept in git-ignored `.claude/settings.local.json`), a decision log, a handoff note and project memory carry knowledge into new chats. Files are created where they belong, not parked as drafts elsewhere. *Why:* new chats lose the context of earlier ones. *Decided by:* user. *Open:* moving the hook to shared `settings.json`; hook output not yet verified in a new session.
+
+## Use-case scoring
+
+**D-22. Scoring rubric** (`usecases/scoring-rubric.md`). Dimensions scored 0-4: decision change, evidence for the decision impact, added value over alternatives (utility quality); guideline status, feasibility, workflow fit, safety (readiness); commonality (log bins, 0-5); stakes (0-4, the consequence of not having the information). Scored by dimension across all candidates by one agent each, not by use case. Calibration pilot on rows 6, 5 and 13, an agreement check on five candidates, deep dossiers for the top group, skeptic review of the ranking. *Decided by:* joint.
+
+**D-23. Scoring parameters.** Commonality counted for the United States only (a patient = a patient in whom the clinical situation arises in a year: new cases plus those needing the test again; not tests, not everyone with the disease). Weights: utility quality 0.40, commonality 0.25, stakes 0.20, readiness 0.15, with a sensitivity check. Stakes is in the composite (the assistant's default was a separate label; the user preferred it as a scored dimension beside commonality). All candidates (about 30) are ranked and tagged by setting (routine care, specialist outpatient, inpatient or procedural). *Decided by:* user.

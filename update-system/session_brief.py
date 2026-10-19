@@ -5,15 +5,15 @@ Prints a short plain-text brief to stdout. When installed as a Claude Code
 SessionStart hook, whatever this prints is added to the start of each session, so
 a new or resumed session knows where the project stands.
 
-Read-only: it reads git state, CHANGELOG.md and update-system/PENDING.md and writes
-nothing. Standard library only. Keeps the brief under MAX_LINES lines.
+Read-only: it reads git state, HANDOFF.md, CHANGELOG.md and update-system/PENDING.md and
+writes nothing. Standard library only. Keeps the brief under MAX_LINES lines.
 """
 import pathlib
 import re
 import subprocess
 import sys
 
-MAX_LINES = 45
+MAX_LINES = 60
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 
 
@@ -50,6 +50,14 @@ def section_bullets(text, heading_prefix, limit=8):
 
 def main():
     brief = ["IR project status brief (generated at session start; read-only)"]
+
+    handoff = read("HANDOFF.md")
+    if handoff:
+        upd = re.search(r"^Updated:\s*(.+)$", handoff, flags=re.M)
+        brief.append("Handoff note (HANDOFF.md" + (f", updated {upd.group(1)}" if upd else "") + "):")
+        for title in ("## Where we are", "## Next step", "## Waiting on the user", "## Watch out for"):
+            for b in section_bullets(handoff, title, limit=5):
+                brief.append(f"  [{title[3:]}] {b[2:]}")
 
     log = git("log", "-5", "--format=%h %ad %s", "--date=short")
     if log:

@@ -12,6 +12,10 @@ This repository is an AI-assisted evidence review of whether measuring insulin r
 - **Unattended runs never stop to ask a question.** Record assumptions and failures in the output and continue.
 - **Independence:** analysis-stage agents do not read each other's reports. Coordination goes through the main session.
 - **Run mode:** subagents by default; sessions only when the user wants to watch or for peer messaging (`CONVENTIONS.md`).
+- **Decisions:** record each decision in `DECISIONS.md` when it is made (what, why, alternatives, who decided), and read the relevant entry before changing a settled decision.
+- **Handoff:** at the end of a working session, update `HANDOFF.md` (where we are, next step, waiting on the user, watch out for); the session-start brief prints it.
+- **Earlier chats:** to find past discussion, search other sessions' transcripts with the transcript search tool (it matches text and returns session IDs); the project memory holds the ID of the long working chat.
+- **Usage limit:** the user watches a usage limit. Do not start search-heavy agent runs without asking; prefer file-only work.
 - **Changes:** log every change in `CHANGELOG.md`. Commit and push only when the user asks; the repository is public.
 - **File locations:** create a file where it is meant to live (for example `CLAUDE.md` in the project root) and mark unfinished work inside the file, not by parking a draft elsewhere.
 - **Files:** no PDFs or copyrighted full texts in the repository. Interim material stays under `analysis/`, `reviews/` and `usecases/reviewers/`.

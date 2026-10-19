@@ -72,6 +72,8 @@ Flow: searcher, then analysts, then skeptic and steelman, then a merged conclusi
 | `merged-conclusion.md` | The main findings, with confidence figures, caveats and open gaps |
 | `usecases-verified.md` | Uses of insulin and C-peptide measurement by patient type (47 rows) |
 | `CHANGELOG.md` | What changed, when and why |
+| `DECISIONS.md` | Why the project is the way it is: each decision, the alternatives and who decided |
+| `HANDOFF.md` | Where things stand and the next step, for picking the work up in a new session |
 | `CONVENTIONS.md` | How runs are organised, where files go, the citation rule |
 
 The folders hold interim working material and the audit trail, not documents to read for the findings:
