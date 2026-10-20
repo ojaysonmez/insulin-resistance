@@ -69,6 +69,7 @@ Flow: searcher, then analysts, then skeptic and steelman, then a merged conclusi
 ## What to read
 | File | What it is |
 |---|---|
+| `summary.md` | Start here: the plain-language summary of both documents, with a glossary and a trace of each sentence to its source (not yet skeptic-reviewed) |
 | `merged-conclusion.md` | The main findings, with confidence figures, caveats and open gaps |
 | `usecases-verified.md` | Uses of insulin and C-peptide measurement by patient type (47 rows) |
 | `CHANGELOG.md` | What changed, when and why |

@@ -11,6 +11,7 @@ The current state and the next step, written by hand at the end of a working ses
 - Check the session brief for unpushed commits and uncommitted changes (it shows the live git state).
 
 ## Next step
+- **Review `summary.md` (written 2026-10-19):** skeptic-review it, then correct the outdated 'Crossref retraction checks found none' sentence in `merged-conclusion.md` (Provenance) with a skeptic check; the summary already states the later result (DiaPep277 retraction, 8 corrections).
 - **Check the first daily watch run (scheduled 2026-10-20, about 01:15 local; the computer must stay awake with the app open):** the session brief prints a line "Update watch, latest run ..."; open `update-watch/runs/2026-10-20-triage.md` and `update-watch/runs/usage-log.tsv`; confirm the state files `update-watch/seen-pmids.txt` and `update-watch/registry-baseline.json` were created; look at what the scheduled session itself cost (not logged). Pilot ends 2026-11-02; then decide weekly running (D-28, D-29) and delete the task. The state and run files show as uncommitted changes each day; commit them when you choose.
 - Run the scoring pilot on rows 6, 5 and 13 (needs searching for US commonality) once the user agrees, then score about 30 candidates by dimension.
 - The pilot is drafted as a workflow script, `.claude/workflows/usecase-scoring-pilot.js` (six agents, not run, review first). Running it needs the user's explicit go-ahead for the Workflow tool and room under the usage limit.
