@@ -51,6 +51,20 @@ def use_names(root):
     return names
 
 
+def signals(root):
+    """Latest watch signal per row from update-watch/signals.tsv: 'S2 2026-10-21 (rescore queued)'."""
+    out = {}
+    f = Path(root) / "update-watch" / "signals.tsv"
+    if f.exists():
+        for ln in f.read_text(encoding="utf-8").splitlines()[1:]:
+            c = ln.split("\t")
+            if len(c) >= 7 and c[2]:
+                for r in c[2].split(","):
+                    if r.strip().isdigit():
+                        out[int(r)] = f"{c[1]} {c[0]} ({c[6]})"
+    return out
+
+
 def load(root):
     d = Path(root) / "usecases" / "scoring"
     scores, tier, pv = {}, {}, {}
@@ -101,17 +115,18 @@ def index(dims):
 def build(root):
     names = use_names(root)
     scores, tier, pv, comp = load(root)
+    sig = signals(root)
     rows = sorted(set(scores) | set(tier), key=lambda r: (ORDER.get(tier.get(r)), -(comp.get(r) or index(scores.get(r, {})) or 0), r))
     L = [START, "", f"## Scorecard (generated {datetime.date.today().isoformat()}; preliminary, it improves as more scoring runs finish)", "",
          "Index = mean of the screening scores (decision change, evidence, guideline status, patients per year, stakes) rescaled to 0-1. Composite = the rubric's weighted score, shown only for rows with every dimension scored. Patients per year are screening estimates, mostly low confidence. Details: `usecases/scoring/screen-summary.md`, `usecases/scoring/ranking.md`.", "",
-         "| Tier | Row | Use | Status in list | Index | Composite | Dimensions scored | Patients per year | Missing piece (type, effort) |", "|---|---|---|---|---|---|---|---|---|"]
+         "| Tier | Row | Use | Status in list | Index | Composite | Dimensions scored | Patients per year | Missing piece (type, effort) | Watch signal |", "|---|---|---|---|---|---|---|---|---|---|"]
     for r in rows:
         dims = scores.get(r, {})
         idx = index(dims)
         d7 = dims.get("D7")
         d7s = BIN.get(round(sum(d7) / len(d7))) if d7 else "-"
         name, status = names.get(r, ("", ""))
-        L.append(f'| {tier.get(r, "-")} | {r} | {name} | {status} | {"-" if idx is None else f"{idx:.2f}"} | {f"{comp[r]:.2f}" if r in comp else "-"} | {len([d for d in ALL_DIMS if d in dims])}/9 | {d7s} | {pv.get(r, "-")} |')
+        L.append(f'| {tier.get(r, "-")} | {r} | {name} | {status} | {"-" if idx is None else f"{idx:.2f}"} | {f"{comp[r]:.2f}" if r in comp else "-"} | {len([d for d in ALL_DIMS if d in dims])}/9 | {d7s} | {pv.get(r, "-")} | {sig.get(r, "-")} |')
     L += ["", END]
     return "\n".join(L)
 

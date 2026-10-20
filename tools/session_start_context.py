@@ -120,6 +120,16 @@ def main():
         brief.append(f"Update watch, latest run {latest[0]}{note}: {summary or 'no SUMMARY line in the file'}")
 
     try:
+        sl = read("update-watch/signals.tsv").splitlines()[1:]
+        opened = [x.split("\t") for x in sl if x.strip()]
+        if opened:
+            urgent = sum(1 for c in opened if len(c) > 6 and c[6] == "URGENT")
+            queued = sum(1 for c in opened if len(c) > 6 and c[6] == "rescore queued")
+            cands = sum(1 for c in opened if len(c) > 6 and c[6] == "new candidate")
+            brief.append(f"Watch signals (update-watch/signals.tsv): {len(opened)} logged, {queued} rescore proposal(s) queued, {cands} new candidate(s), {urgent} urgent.")
+    except Exception:
+        pass
+    try:
         qd = json.loads(read("usecases/scoring/queue.json") or "{}")
         if qd.get("units"):
             counts = {}

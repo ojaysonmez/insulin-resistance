@@ -102,6 +102,146 @@
       "query": "(\"post-bariatric hypoglycemia\" OR \"postbariatric hypoglycemia\") AND (diagnosis OR consensus OR guideline)",
       "looking_for": "Post-bariatric hypoglycaemia criteria",
       "triggers": "Row 5"
+    },
+    {
+      "id": "P13",
+      "query": "pioglitazone AND (stroke OR \"transient ischemic\") AND (\"insulin resistance\" OR HOMA) AND (IRIS OR subgroup OR \"post hoc\" OR reanalysis)",
+      "looking_for": "IRIS follow-up by HOMA-IR stratum (missing piece of row 13)",
+      "triggers": "Path to viability, row 13",
+      "rows": [
+        13
+      ],
+      "signal": "S2"
+    },
+    {
+      "id": "P47",
+      "query": "(\"slowly progressive type 1 diabetes\" OR SPIDDM OR \"latent autoimmune diabetes\") AND \"C-peptide\" AND (cutoff OR \"cut-off\" OR validation OR \"insulin dependence\")",
+      "looking_for": "C-peptide cutoff validation outside Japan (row 47)",
+      "triggers": "Path to viability, row 47",
+      "rows": [
+        47
+      ],
+      "signal": "S2"
+    },
+    {
+      "id": "P3",
+      "query": "(sulfonylurea OR meglitinide) AND hypoglycemia AND (\"C-peptide\" OR insulin) AND (screen OR \"drug screening\" OR diagnosis)",
+      "looking_for": "Added value of insulin and C-peptide over the drug screen (row 3)",
+      "triggers": "Path to viability, row 3",
+      "rows": [
+        3
+      ],
+      "signal": "S2"
+    },
+    {
+      "id": "P31",
+      "query": "\"C-peptide\" AND insulin AND \"type 2 diabetes\" AND (discontinuation OR deintensification OR \"stop insulin\" OR withdrawal)",
+      "looking_for": "C-peptide-guided insulin de-escalation (row 31)",
+      "triggers": "Path to viability, row 31",
+      "rows": [
+        31
+      ],
+      "signal": "S2"
+    },
+    {
+      "id": "P7",
+      "query": "(MODY OR \"monogenic diabetes\") AND \"C-peptide\" AND (triage OR pathway OR \"positive predictive value\" OR \"genetic testing\")",
+      "looking_for": "MODY triage pathway validation (row 7)",
+      "triggers": "Path to viability, row 7",
+      "rows": [
+        7
+      ],
+      "signal": "S2"
+    },
+    {
+      "id": "P32",
+      "query": "\"ketosis-prone\" AND diabetes AND (\"C-peptide\" OR \"insulin withdrawal\" OR remission)",
+      "looking_for": "Post-DKA C-peptide in ketosis-prone diabetes (row 32)",
+      "triggers": "Path to viability, row 32",
+      "rows": [
+        32
+      ],
+      "signal": "S2"
+    },
+    {
+      "id": "P23",
+      "query": "insulinoma AND (postprandial OR \"oral glucose tolerance\" OR \"mixed meal\") AND (diagnosis OR accuracy)",
+      "looking_for": "Postprandial-only insulinoma diagnosis (row 23)",
+      "triggers": "Path to viability, row 23",
+      "rows": [
+        23
+      ],
+      "signal": "S2"
+    },
+    {
+      "id": "P33",
+      "query": "(\"urinary C-peptide\" OR UCPCR) AND (children OR adolescents OR youth) AND (\"type 1\" OR monogenic OR \"type 2\")",
+      "looking_for": "Urinary C-peptide in youth (row 33)",
+      "triggers": "Path to viability, row 33",
+      "rows": [
+        33
+      ],
+      "signal": "S2"
+    },
+    {
+      "id": "P6",
+      "query": "\"C-peptide\" AND (classification OR reclassification) AND \"type 1 diabetes\" AND (adults OR \"insulin-treated\")",
+      "looking_for": "C-peptide classification of insulin-treated adults (row 6)",
+      "triggers": "Path to viability, row 6",
+      "rows": [
+        6
+      ],
+      "signal": "S2"
+    },
+    {
+      "id": "P10",
+      "query": "(\"islet transplantation\" OR \"islet transplant\" OR \"pancreas transplant\") AND \"C-peptide\" AND (Igls OR \"graft function\" OR consensus)",
+      "looking_for": "Graft function criteria (row 10)",
+      "triggers": "Path to viability, row 10",
+      "rows": [
+        10
+      ],
+      "signal": "S2"
+    },
+    {
+      "id": "P29",
+      "query": "teplizumab AND (\"C-peptide\" OR \"stage 3\" OR approval OR label)",
+      "looking_for": "Teplizumab eligibility and label (row 29)",
+      "triggers": "Path to viability, row 29",
+      "rows": [
+        29
+      ],
+      "signal": "S2"
+    },
+    {
+      "id": "P1",
+      "query": "insulinoma AND (\"72-hour fast\" OR \"prolonged fast\" OR \"diagnostic criteria\") AND (insulin OR \"C-peptide\")",
+      "looking_for": "Insulinoma diagnostic criteria (row 1)",
+      "triggers": "Path to viability, row 1",
+      "rows": [
+        1
+      ],
+      "signal": "S2"
+    },
+    {
+      "id": "P2",
+      "query": "(factitious OR \"exogenous insulin\" OR \"insulin analog\" OR \"insulin analogue\") AND hypoglycemia AND (\"C-peptide\" OR assay)",
+      "looking_for": "Factitious insulin and analogue detection (row 2)",
+      "triggers": "Path to viability, row 2",
+      "rows": [
+        2
+      ],
+      "signal": "S2"
+    },
+    {
+      "id": "P22",
+      "query": "insulinoma AND (\"hepatic venous\" OR \"arterial stimulation\" OR \"calcium stimulation\") AND insulin",
+      "looking_for": "Insulinoma localisation by venous sampling (row 22)",
+      "triggers": "Path to viability, row 22",
+      "rows": [
+        22
+      ],
+      "signal": "S2"
     }
   ],
   "registry": [

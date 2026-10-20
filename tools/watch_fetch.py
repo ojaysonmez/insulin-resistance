@@ -317,6 +317,8 @@ def main():
         c = counts.get(q["id"])
         newc = sum(1 for p, qs in hits.items() if q["id"] in qs and p not in seen)
         note = "FAILED" if c is None else ("more hits than returned; rewrite the query" if c > cfg.get("max_hits_per_query", 60) else "")
+        if q.get("rows"):
+            note = (note + "; " if note else "") + "affects rows " + ",".join(str(r) for r in q["rows"])
         L.append(f"| {q['id']} | {c if c is not None else 'error'} | {newc} | {note} |")
     L.append("")
     L.append(f"New records: {len(new_ids)} (already seen and skipped: {len(hits) - len(new_ids)}).")
