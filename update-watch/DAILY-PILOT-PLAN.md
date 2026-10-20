@@ -16,12 +16,12 @@ Rules for the task prompt: do not edit `PENDING.md`, the deliverables, the role 
 No push messages (D-28). The session-start brief gets one line from the latest triage file: date, new records, candidates, entries, URGENT yes or no. This needs a small change to `tools/session_start_context.py`. Entries stay in the daily triage files during the pilot; the user decides what moves to `PENDING.md`.
 
 ## Schedule and limits
-- Daily at about 07:07 local time (cron `7 7 * * *`), while the Claude app is open; if the app is closed the run happens at the next launch, and `--days auto` covers the gap.
+- Daily at about 01:15 local time (cron `7 1 * * *`; the scheduler adds a delay of several minutes), changed from 07:07 at the user's request so that the usage window opened by the run has reset by the time the user starts work in the morning, while the Claude app is open and the computer is awake; if the app is closed the run happens at the next launch, and `--days auto` covers the gap.
 - Pilot length: two weeks (2026-10-20 to 2026-11-02), then a decision on weekly running.
 - Budget check: the subagent figure is exact; the scheduled parent session carries its own cost, which has not been measured. Measure it on the first run (session usage tool or the app) and log it. If the parent costs much more than the subagent, drop the subagent and let the scheduled session do the judging itself from the same instructions.
 
 ## What the user decides before it is created
-1. Time of day (07:07 proposed).
+1. Time of day (07:07 proposed; changed by the user to about 01:15).
 2. Pilot length (two weeks proposed).
 3. Whether the app staying open is acceptable, or the run should happen only when the user opens it.
 
@@ -34,7 +34,7 @@ No push messages (D-28). The session-start brief gets one line from the latest t
 Done: `watch_fetch.py --days auto` (tested: none earlier gives 2 days, last run 3 days ago gives 4, last run long ago is capped at 14); the session-start brief prints "Update watch, latest run <date>: <SUMMARY line>" from the newest `runs/<date>-triage.md` (tested with a sample file). Not done: the scheduled task itself (below), waiting for the user to approve its prompt.
 
 ## Scheduled task prompt (draft, not created)
-Task id `ir-update-watch-daily`; title "IR update watch (daily pilot)"; cron `7 7 * * *` (local time); saved in Auto mode like the earlier tests.
+Task id `ir-update-watch-daily`; title "IR update watch (daily pilot)"; cron `7 1 * * *` (local time; first proposed as `7 7 * * *`, changed to 1 a.m. on 2026-10-19); saved in Auto mode like the earlier tests.
 
 ```
 Daily run of the IR project's update watch (pilot, 2026-10-20 to 2026-11-02). You are a scheduled session with no memory of earlier chats. Work in the project folder and follow these steps exactly; do nothing else.
