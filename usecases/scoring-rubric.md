@@ -9,8 +9,8 @@ Rank the uses of insulin or C-peptide measurement by (a) how good the clinical u
 One use case = one row of `usecases-verified.md` (some rows are close variants, such as rows 4 and 24 or 9 and 27; merge them if the user prefers). Score the *use of the measurement in that clinical situation*, not the disease.
 
 ## Candidates (triage rule, to be confirmed)
-- **Include:** rows with status established (1, 2, 3, 4, 6, 7, 10, 22, 24, 29, 31) or limited (5, 9, 11, 12, 13, 14, 20, 21, 23, 25, 27, 32, 33, 46, 47): 26 rows.
-- **Include if the situation may be common:** research-only rows 8, 28, 35 and 45 (flagged for a commonality check).
+- **Include:** rows with status established (1, 2, 3, 4, 6, 7, 10, 22, 24, 29, 31) or limited (5, 9, 11, 12, 13, 14, 20, 21, 23, 25, 27, 32, 33, 46, 47, 49): 27 rows.
+- **Include if the situation may be common:** research-only rows 8, 28, 35, 45 and 48 (flagged for a commonality check; row 48, reactive hypoglycaemia, added 2026-10-19).
 - **Exclude:** negative entries (26, 30, 34, 40, 42, 43, 44), rows recording no use found, and research endpoints or very rare research uses (18, 19, 37, 38, 39, 41).
 - Result: about 30 candidates. The user can add or drop rows.
 

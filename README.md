@@ -11,7 +11,7 @@ Insulin resistance (IR) is measured in research and in some clinics with fasting
 - **No established clinical utility today for routine IR measurement** (fasting insulin, HOMA-IR, TyG) in primary care, prediabetes, type 2 diabetes, PCOS, MASLD or obesity. Post-load insulin and OGTT-derived indices were examined in only a few studies and not weighed separately (the two prediction results found are nulls). Judged at about 80-85%; this is a judgement of how well the verdict survives further checking, not a calculation.
 - **"Shown not to add value" is a weaker claim,** about 45-50%. The evidence is thin and narrow, and the searches that would find a decisive study were incomplete.
 - **The strongest finding is about measurement:** a single fasting insulin or HOMA-IR value cannot reliably classify a person near a cutoff or detect individual change (within-person variation is roughly 25-30%, assays disagree, cutoffs do not transfer).
-- **Insulin and C-peptide do have established uses, mostly not as IR screening:** hypoglycaemia work-up, diabetes classification, and some specialist settings. `usecases-verified.md` lists 47 uses by patient type: 11 established, 15 limited, 10 research-only, 11 unsupported (most of these mean no use was found in the sources read). All established uses are secretion, hypersecretion or classification uses; no IR-measurement use is established.
+- **Insulin and C-peptide do have established uses, mostly not as IR screening:** hypoglycaemia work-up, diabetes classification, and some specialist settings. `usecases-verified.md` lists 49 uses by patient type: 11 established, 16 limited, 11 research-only, 11 unsupported (most of these mean no use was found in the sources read). All established uses are secretion, hypersecretion or classification uses; no IR-measurement use is established.
 
 ## Why this exists
 1. **The question is contested and the evidence is scattered** across prediction studies, guidelines, trials, laboratory standardisation papers and registries. A reader needs one place that says what each source actually shows and how strong it is.
@@ -71,7 +71,7 @@ Flow: searcher, then analysts, then skeptic and steelman, then a merged conclusi
 |---|---|
 | `summary.md` | Start here: the plain-language summary of both documents, with a glossary and a trace of each sentence to its source (not yet skeptic-reviewed) |
 | `merged-conclusion.md` | The main findings, with confidence figures, caveats and open gaps |
-| `usecases-verified.md` | Uses of insulin and C-peptide measurement by patient type (47 rows) |
+| `usecases-verified.md` | Uses of insulin and C-peptide measurement by patient type (49 rows) |
 | `CHANGELOG.md` | What changed, when and why |
 | `DECISIONS.md` | Why the project is the way it is: each decision, the alternatives and who decided |
 | `HANDOFF.md` | Where things stand and the next step, for picking the work up in a new session |
@@ -92,7 +92,7 @@ The folders hold interim working material and the audit trail, not documents to 
 | `.claude/agents/` | The role definitions |
 
 ## Status
-- **Done:** the merged conclusion and the 47-row use-case list, each through skeptic review and corrections; the draft update system.
+- **Done:** the merged conclusion and the 49-row use-case list (rows 48 and 49 added after their own skeptic review), each through skeptic review and corrections; the draft update system.
 - **Not done:** specialty reviews (cardiology first), the plain-language summary, the claim ledger build, a first run of the citation script, the update watch dry run. The most recent corrections to the measurement section have had one review.
 - **Known limits:** searches used PubMed and registries only (no Embase, Cochrane or non-English literature); several guideline texts could not be read in full; many sources were read at abstract level only; the two-run comparison was one pair per role with no control.
 

@@ -5,7 +5,7 @@ Updated: 2026-10-19 (late evening; the daily update watch pilot was scheduled)
 The current state and the next step, written by hand at the end of a working session. It is overwritten each time (history lives in `CHANGELOG.md` and git). `tools/session_start_context.py` prints this note's main sections at the start of each session. Update it at the end of every working session.
 
 ## Where we are
-- The merged conclusion and the 47-row use-case list are written, skeptic-reviewed and rescoped by measure type; the repository is public with a disclaimer.
+- The merged conclusion and the 49-row use-case list are written, skeptic-reviewed and rescoped by measure type; the repository is public with a disclaimer.
 - The use-case scoring rubric is settled (US commonality, weights utility 0.40, commonality 0.25, stakes 0.20, readiness 0.15, all candidates ranked with a setting tag); nothing is scored yet.
 - Session continuity is set up this session: `CLAUDE.md`, the session-start hook, `DECISIONS.md`, this note and in-repo project memory (`memory/`).
 - Check the session brief for unpushed commits and uncommitted changes (it shows the live git state).

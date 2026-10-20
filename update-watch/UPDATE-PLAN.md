@@ -84,7 +84,7 @@ The dry run (`dry-run-2026-10-19.md`) let one agent search and read everything a
 1. ~~Cadence~~ **Changed by the user the same day: the watch runs once a day during a tuning pilot (about two weeks; two-day PubMed window; log tokens per run), then weekly. Triage (the first-pass judgement and impact classing by the lean agent) runs daily during the pilot as well, at the user's request; see `DAILY-PILOT-PLAN.md`.** Urgent items are flagged the day they are found.
 2. ~~Notification~~ **`PENDING.md` only.** The session-start brief prints the pending count, so the user sees it at the start of any chat. No push messages.
 3. ~~Budget~~ **Caps as drafted, but the first weekly runs start with the PubMed screening at about 150,000 tokens**; the retraction check and registry check are scripts (no model cost) where possible.
-4. ~~Scope~~ **Both** the IR conclusion and the use-case list (rows 1-47).
+4. ~~Scope~~ **Both** the IR conclusion and the use-case list (rows 1-49).
 5. ~~Start date~~ **Dry run first**, after a scheduling test. Order: scheduling test, dry run, then schedule the weekly run.
 
 ## Pilot monitoring (added 2026-10-19)
