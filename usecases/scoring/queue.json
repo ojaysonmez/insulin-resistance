@@ -4,7 +4,8 @@
     "continue_limit_pct5": 65,
     "weekly_cap_pct": 75,
     "quiet_hours": null,
-    "max_attempts": 2
+    "max_attempts": 2,
+    "hard_stop_pct5": 95
   },
   "status": "RUNNING",
   "pause_reason": "",
@@ -238,6 +239,37 @@
       "outputs": [
         "usecases/scoring/S3.md",
         "usecases/scoring/S3.json"
+      ]
+    },
+    {
+      "id": "S4",
+      "phase": "screen",
+      "agent": "ir-usecase-scout",
+      "dims": "D1 (decision change), D2 (evidence), D3 (guideline or regulatory status), D7 (US patients per year) and S (stakes)",
+      "rows": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        10,
+        22,
+        24,
+        29,
+        31
+      ],
+      "template": "screen",
+      "needs": [],
+      "inputs": [],
+      "extra": "",
+      "pause_after": false,
+      "state": "done",
+      "attempts": 0,
+      "prompt": "usecases/scoring/units/S4.md",
+      "outputs": [
+        "usecases/scoring/S4.md",
+        "usecases/scoring/S4.json"
       ]
     }
   ]

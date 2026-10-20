@@ -1,0 +1,855 @@
+{
+ "unit": "S4",
+ "role": "screener",
+ "scores": [
+  {
+   "row": 1,
+   "dimension": "D1",
+   "score": 3,
+   "reason": "Insulin/C-peptide at documented hypoglycaemia determines endogenous hyperinsulinism vs other cause and triggers localisation and surgery.",
+   "sources": [
+    "PMID 19088155 abstract (row 1; DOI not re-fetched)",
+    "PMID 26742109 full text (row 1; DOI not re-fetched)"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 1,
+   "dimension": "D2",
+   "score": 3,
+   "reason": "Endocrine Society guideline and ENETS restatement back the thresholds, but guideline evidence is low/very low [recall] and thresholds are second-hand.",
+   "sources": [
+    "PMID 19088155 abstract (row 1; DOI not re-fetched)",
+    "PMID 26742109 full text (row 1; DOI not re-fetched)"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 1,
+   "dimension": "D3",
+   "score": 4,
+   "reason": "Endocrine Society 2009 guideline treats the hypoglycaemia panel as the standard diagnostic step; 4 vs 3 is a judgement.",
+   "sources": [
+    "PMID 19088155 abstract (row 1; DOI not re-fetched)",
+    "PMID 26742109 full text (row 1; DOI not re-fetched)"
+   ],
+   "confidence": "high",
+   "origin": "project files"
+  },
+  {
+   "row": 1,
+   "dimension": "D7",
+   "score": 3,
+   "reason": "Adults evaluated for unexplained hypoglycaemia with Whipple's triad: point ~30,000 (range 10,000-100,000) [recall; insulinoma alone ~1,000-2,000 cases/yr at ~4 per million]. No US statistic found in the screened records.",
+   "sources": [
+    "PMID 19088155 abstract (row 1; DOI not re-fetched)",
+    "PMID 26742109 full text (row 1; DOI not re-fetched)"
+   ],
+   "confidence": "low",
+   "origin": "both"
+  },
+  {
+   "row": 1,
+   "dimension": "S",
+   "score": 3,
+   "reason": "Missed insulinoma or other cause means recurrent severe neuroglycopenia and injury.",
+   "sources": [
+    "judgement from rubric anchor; row 1 of usecases-verified.md"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 2,
+   "dimension": "D1",
+   "score": 3,
+   "reason": "High insulin with suppressed C-peptide separates exogenous from endogenous hyperinsulinism and so determines diagnosis.",
+   "sources": [
+    "PMID 25957977 full text (row 2; DOI not re-fetched)",
+    "PMID 36117266 DOI 10.1002/edm2.375 abstract"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 2,
+   "dimension": "D2",
+   "score": 2,
+   "reason": "Pattern is guideline-endorsed but sensitivity/specificity not retrieved (row 2); analogue and antibody pitfalls.",
+   "sources": [
+    "PMID 25957977 full text (row 2; DOI not re-fetched)",
+    "PMID 36117266 DOI 10.1002/edm2.375 abstract"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 2,
+   "dimension": "D3",
+   "score": 3,
+   "reason": "PES 2015 recommends it in the hypoglycaemia work-up; Endocrine Society 2009 likewise.",
+   "sources": [
+    "PMID 25957977 full text (row 2; DOI not re-fetched)",
+    "PMID 36117266 DOI 10.1002/edm2.375 abstract"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 2,
+   "dimension": "D7",
+   "score": 2,
+   "reason": "Factitious/exogenous insulin hypoglycaemia: point ~3,000 (range 500-10,000) [recall estimate]. Only a non-US single-centre series found (16% of 70 non-diabetic hypoglycaemia admissions): PMID 36117266 DOI 10.1002/edm2.375 abstract.",
+   "sources": [
+    "PMID 25957977 full text (row 2; DOI not re-fetched)",
+    "PMID 36117266 DOI 10.1002/edm2.375 abstract"
+   ],
+   "confidence": "low",
+   "origin": "both"
+  },
+  {
+   "row": 2,
+   "dimension": "S",
+   "score": 3,
+   "reason": "Missed diagnosis allows repeated life-threatening hypoglycaemia and unnecessary surgery.",
+   "sources": [
+    "judgement from rubric anchor; row 2 of usecases-verified.md"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 3,
+   "dimension": "D1",
+   "score": 2,
+   "reason": "Insulin and C-peptide show the hyperinsulinaemic mechanism only; the drug screen discriminates (row 3 correction), so the test supports but does not decide.",
+   "sources": [
+    "PMID 19088155 abstract (row 3)",
+    "PMID 25957977 full text (row 3)"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 3,
+   "dimension": "D2",
+   "score": 2,
+   "reason": "Guideline-level statement, no accuracy data retrieved (row 3).",
+   "sources": [
+    "PMID 19088155 abstract (row 3)",
+    "PMID 25957977 full text (row 3)"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 3,
+   "dimension": "D3",
+   "score": 3,
+   "reason": "Cited as part of the panel in Endocrine Society 2009 and PES 2015.",
+   "sources": [
+    "PMID 19088155 abstract (row 3)",
+    "PMID 25957977 full text (row 3)"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 3,
+   "dimension": "D7",
+   "score": 2,
+   "reason": "Sulfonylurea/meglitinide hypoglycaemia needing differential from insulinoma: point ~5,000 (range 1,000-30,000) [recall]. US hypoglycaemia ED searches gave no usable count: not found in the screened records.",
+   "sources": [
+    "PMID 19088155 abstract (row 3)",
+    "PMID 25957977 full text (row 3)"
+   ],
+   "confidence": "low",
+   "origin": "both"
+  },
+  {
+   "row": 3,
+   "dimension": "S",
+   "score": 3,
+   "reason": "Sulfonylurea hypoglycaemia is prolonged and can be fatal; wrong attribution leads to needless surgery or recurrence.",
+   "sources": [
+    "judgement from rubric anchor; row 3 of usecases-verified.md"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 4,
+   "dimension": "D1",
+   "score": 3,
+   "reason": "Critical sample separates hyperinsulinism from other causes and leads to genetics, imaging, diazoxide, surgery.",
+   "sources": [
+    "PMID 37454648 full text (row 4)",
+    "PMID 25957977 full text (row 4)",
+    "PMID 35721728 DOI 10.3389/fendo.2022.876903 abstract"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 4,
+   "dimension": "D2",
+   "score": 3,
+   "reason": "2023 HI guideline Rec 1.1 Grade 1, moderate; insulin is often undetectable, BOHB/FFA/glucagon response are the reliable markers.",
+   "sources": [
+    "PMID 37454648 full text (row 4)",
+    "PMID 25957977 full text (row 4)",
+    "PMID 35721728 DOI 10.3389/fendo.2022.876903 abstract"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 4,
+   "dimension": "D3",
+   "score": 3,
+   "reason": "HI guideline 2023 (PMID 37454648) and PES 2015 recommend it; insulin itself supportive, not required.",
+   "sources": [
+    "PMID 37454648 full text (row 4)",
+    "PMID 25957977 full text (row 4)",
+    "PMID 35721728 DOI 10.3389/fendo.2022.876903 abstract"
+   ],
+   "confidence": "high",
+   "origin": "project files"
+  },
+  {
+   "row": 4,
+   "dimension": "D7",
+   "score": 2,
+   "reason": "Children with persistent hypoglycaemia needing a critical sample: point ~8,000 (range 2,000-20,000) [recall]; congenital HI ~1 in 28,000-50,000 births [recall], about 100 US cases/yr. No US incidence found in the screened records (PMID 35721728 DOI 10.3389/fendo.2022.876903 abstract has no rate).",
+   "sources": [
+    "PMID 37454648 full text (row 4)",
+    "PMID 25957977 full text (row 4)",
+    "PMID 35721728 DOI 10.3389/fendo.2022.876903 abstract"
+   ],
+   "confidence": "low",
+   "origin": "both"
+  },
+  {
+   "row": 4,
+   "dimension": "S",
+   "score": 4,
+   "reason": "Delayed diagnosis causes permanent brain injury.",
+   "sources": [
+    "judgement from rubric anchor; row 4 of usecases-verified.md"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 6,
+   "dimension": "D1",
+   "score": 3,
+   "reason": "Random C-peptide determines whether an insulin-treated person is insulin-deficient, so classification and genetics referral.",
+   "sources": [
+    "Holt 2021 ADA/EASD consensus PMID 34590174 (full text per row 6)",
+    "PMID 23413806 full text (Jones 2013, row 6)",
+    "PMID 41358893 full text (ADA Standards 2026, row 6)",
+    "CDC page https://www.cdc.gov/diabetes/php/data-research/index.html fetched 2026-10-19"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 6,
+   "dimension": "D2",
+   "score": 3,
+   "reason": "Holt 2021 consensus, ADA Standards 2026 and Jones/Hattersley 2013; 11% reclassified; LADA thresholds are expert opinion only.",
+   "sources": [
+    "Holt 2021 ADA/EASD consensus PMID 34590174 (full text per row 6)",
+    "PMID 23413806 full text (Jones 2013, row 6)",
+    "PMID 41358893 full text (ADA Standards 2026, row 6)",
+    "CDC page https://www.cdc.gov/diabetes/php/data-research/index.html fetched 2026-10-19"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 6,
+   "dimension": "D3",
+   "score": 3,
+   "reason": "Second-line in insulin-treated people >3 years from diagnosis, antibodies first (Holt 2021; ADA Standards 2026).",
+   "sources": [
+    "Holt 2021 ADA/EASD consensus PMID 34590174 (full text per row 6)",
+    "PMID 23413806 full text (Jones 2013, row 6)",
+    "PMID 41358893 full text (ADA Standards 2026, row 6)",
+    "CDC page https://www.cdc.gov/diabetes/php/data-research/index.html fetched 2026-10-19"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 6,
+   "dimension": "D7",
+   "score": 4,
+   "reason": "Insulin-treated adults with unclear type: point ~200,000 (range 50,000-500,000) [recall judgement]. CDC page: 1.8 million US adults with diagnosed type 1 diabetes (undated); yearly share needing C-peptide not found in the screened records. Range spans bins: low confidence.",
+   "sources": [
+    "Holt 2021 ADA/EASD consensus PMID 34590174 (full text per row 6)",
+    "PMID 23413806 full text (Jones 2013, row 6)",
+    "PMID 41358893 full text (ADA Standards 2026, row 6)",
+    "CDC page https://www.cdc.gov/diabetes/php/data-research/index.html fetched 2026-10-19"
+   ],
+   "confidence": "low",
+   "origin": "both"
+  },
+  {
+   "row": 6,
+   "dimension": "S",
+   "score": 2,
+   "reason": "Misclassification causes suboptimal treatment and delayed harm, rarely acute.",
+   "sources": [
+    "judgement from rubric anchor; row 6 of usecases-verified.md"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 7,
+   "dimension": "D1",
+   "score": 3,
+   "reason": "Triage component that decides whether a gene panel is ordered.",
+   "sources": [
+    "PMID 37794142 full text (PMDI 2023, row 7)",
+    "PMID 40640995 full text (ANZ 2025, row 7)",
+    "PMID 36537518 full text, lists stripped",
+    "PMIDs 21270186, 23289766, 25792383, 32052124 abstracts"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 7,
+   "dimension": "D2",
+   "score": 2,
+   "reason": "UCPCR >=0.2 nmol/mmol separated MODY from T1D (97%/96%) but pathway PPV was 20% and it cannot separate MODY from T2D (row 7).",
+   "sources": [
+    "PMID 37794142 full text (PMDI 2023, row 7)",
+    "PMID 40640995 full text (ANZ 2025, row 7)",
+    "PMID 36537518 full text, lists stripped",
+    "PMIDs 21270186, 23289766, 25792383, 32052124 abstracts"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 7,
+   "dimension": "D3",
+   "score": 3,
+   "reason": "PMDI 2023 and ANZ 2025 consensus use it as one triage criterion.",
+   "sources": [
+    "PMID 37794142 full text (PMDI 2023, row 7)",
+    "PMID 40640995 full text (ANZ 2025, row 7)",
+    "PMID 36537518 full text, lists stripped",
+    "PMIDs 21270186, 23289766, 25792383, 32052124 abstracts"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 7,
+   "dimension": "D7",
+   "score": 3,
+   "reason": "Young antibody-negative non-obese diabetes triaged for MODY: point ~10,000 (range 3,000-30,000) [recall]. SEARCH MODY query returned 0 records: not found in the screened records.",
+   "sources": [
+    "PMID 37794142 full text (PMDI 2023, row 7)",
+    "PMID 40640995 full text (ANZ 2025, row 7)",
+    "PMID 36537518 full text, lists stripped",
+    "PMIDs 21270186, 23289766, 25792383, 32052124 abstracts"
+   ],
+   "confidence": "low",
+   "origin": "both"
+  },
+  {
+   "row": 7,
+   "dimension": "S",
+   "score": 2,
+   "reason": "Missed MODY means unnecessary insulin or missed sulfonylurea therapy; delayed harm.",
+   "sources": [
+    "judgement from rubric anchor; row 7 of usecases-verified.md"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 10,
+   "dimension": "D1",
+   "score": 2,
+   "reason": "Classifies graft as optimal, good, marginal or failed, mainly monitoring; chooses among accepted management options.",
+   "sources": [
+    "PMID 29528967 abstract",
+    "PMID 29453879 abstract",
+    "PMID 34061967 abstract",
+    "PMID 38895780 abstract",
+    "Igls 2018 full text read by skeptic (PMC5867272, row 10)"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 10,
+   "dimension": "D2",
+   "score": 2,
+   "reason": "Consensus plus cohorts; no numeric threshold for clinically significant C-peptide in Igls 2018 (row 10).",
+   "sources": [
+    "PMID 29528967 abstract",
+    "PMID 29453879 abstract",
+    "PMID 34061967 abstract",
+    "PMID 38895780 abstract",
+    "Igls 2018 full text read by skeptic (PMC5867272, row 10)"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 10,
+   "dimension": "D3",
+   "score": 3,
+   "reason": "Igls consensus 2018 and 2021 specify it as one of four criteria; consensus, not guideline.",
+   "sources": [
+    "PMID 29528967 abstract",
+    "PMID 29453879 abstract",
+    "PMID 34061967 abstract",
+    "PMID 38895780 abstract",
+    "Igls 2018 full text read by skeptic (PMC5867272, row 10)"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 10,
+   "dimension": "D7",
+   "score": 2,
+   "reason": "US islet and pancreas transplant recipients needing graft assessment: point ~3,000 (range 1,000-6,000) [recall: ~1,000 pancreas transplants/yr plus prevalent recipients]. Islet count query returned 0 records: not found in the screened records.",
+   "sources": [
+    "PMID 29528967 abstract",
+    "PMID 29453879 abstract",
+    "PMID 34061967 abstract",
+    "PMID 38895780 abstract",
+    "Igls 2018 full text read by skeptic (PMC5867272, row 10)"
+   ],
+   "confidence": "low",
+   "origin": "both"
+  },
+  {
+   "row": 10,
+   "dimension": "S",
+   "score": 2,
+   "reason": "Failed graft returns hypoglycaemia and complications over time; delayed harm.",
+   "sources": [
+    "judgement from rubric anchor; row 10 of usecases-verified.md"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 22,
+   "dimension": "D1",
+   "score": 3,
+   "reason": "Gradient chooses which pancreatic territory to resect when imaging is negative.",
+   "sources": [
+    "PMID 26742109 full text (ENETS 2016, row 22)",
+    "PMIDs 40656591, 41833398 abstracts (case reports)"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 22,
+   "dimension": "D2",
+   "score": 2,
+   "reason": "ENETS cites two small series (positive in 90-100%) and case reports (row 22).",
+   "sources": [
+    "PMID 26742109 full text (ENETS 2016, row 22)",
+    "PMIDs 40656591, 41833398 abstracts (case reports)"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 22,
+   "dimension": "D3",
+   "score": 2,
+   "reason": "ENETS 2016: should be considered when other imaging negative; second-line specialist option.",
+   "sources": [
+    "PMID 26742109 full text (ENETS 2016, row 22)",
+    "PMIDs 40656591, 41833398 abstracts (case reports)"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 22,
+   "dimension": "D7",
+   "score": 1,
+   "reason": "Insulinoma with negative imaging, MEN1 or adult nesidioblastosis: point ~300 (range 100-1,000) [recall; insulinoma ~1,300 cases/yr at ~4 per million, a minority need this test]. No US figure found in the screened records.",
+   "sources": [
+    "PMID 26742109 full text (ENETS 2016, row 22)",
+    "PMIDs 40656591, 41833398 abstracts (case reports)"
+   ],
+   "confidence": "low",
+   "origin": "both"
+  },
+  {
+   "row": 22,
+   "dimension": "S",
+   "score": 3,
+   "reason": "Failed localisation leads to repeated surgery or untreated severe hypoglycaemia.",
+   "sources": [
+    "judgement from rubric anchor; row 22 of usecases-verified.md"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 24,
+   "dimension": "D1",
+   "score": 2,
+   "reason": "Insulin/C-peptide at hypoglycaemia supports diagnosis and shifts the path to insulinoma/MEN1 rather than congenital HI.",
+   "sources": [
+    "PMID 37454648 full text (Rec 1.4, row 24)",
+    "PMID 26742109 (ENETS 2016, MEN1 clue, row 24)"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 24,
+   "dimension": "D2",
+   "score": 2,
+   "reason": "HI guideline Rec 1.4 Grade 1, low-quality evidence (row 24).",
+   "sources": [
+    "PMID 37454648 full text (Rec 1.4, row 24)",
+    "PMID 26742109 (ENETS 2016, MEN1 clue, row 24)"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 24,
+   "dimension": "D3",
+   "score": 3,
+   "reason": "Recommended in a specific population by the 2023 HI guideline.",
+   "sources": [
+    "PMID 37454648 full text (Rec 1.4, row 24)",
+    "PMID 26742109 (ENETS 2016, MEN1 clue, row 24)"
+   ],
+   "confidence": "high",
+   "origin": "project files"
+  },
+  {
+   "row": 24,
+   "dimension": "D7",
+   "score": 1,
+   "reason": "Children over 2 y with new hyperinsulinaemic hypoglycaemia: point ~300 (range 100-1,000) [recall judgement]. Not found in the screened records.",
+   "sources": [
+    "PMID 37454648 full text (Rec 1.4, row 24)",
+    "PMID 26742109 (ENETS 2016, MEN1 clue, row 24)"
+   ],
+   "confidence": "low",
+   "origin": "both"
+  },
+  {
+   "row": 24,
+   "dimension": "S",
+   "score": 3,
+   "reason": "Delay risks recurrent severe hypoglycaemia and neurological injury.",
+   "sources": [
+    "judgement from rubric anchor; row 24 of usecases-verified.md"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 29,
+   "dimension": "D1",
+   "score": 4,
+   "reason": "Peak stimulated C-peptide >=0.2 pmol/mL is a label eligibility criterion for the Stage 3 indication.",
+   "sources": [
+    "FDA Tzield label rev 06/2026 s2.1 and 14.2 (row 29)",
+    "CDC page https://www.cdc.gov/diabetes/php/data-research/index.html fetched 2026-10-19"
+   ],
+   "confidence": "high",
+   "origin": "project files"
+  },
+  {
+   "row": 29,
+   "dimension": "D2",
+   "score": 3,
+   "reason": "Regulatory accelerated approval on a surrogate (C-peptide AUC decline, PROTECT, 328 patients), not clinical outcome benefit; ADA Standards 2026 s9 does not endorse Stage 3 use (row 29).",
+   "sources": [
+    "FDA Tzield label rev 06/2026 s2.1 and 14.2 (row 29)",
+    "CDC page https://www.cdc.gov/diabetes/php/data-research/index.html fetched 2026-10-19"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 29,
+   "dimension": "D3",
+   "score": 4,
+   "reason": "FDA Tzield label (rev 06/2026) s2.1 states the criterion, though under accelerated approval.",
+   "sources": [
+    "FDA Tzield label rev 06/2026 s2.1 and 14.2 (row 29)",
+    "CDC page https://www.cdc.gov/diabetes/php/data-research/index.html fetched 2026-10-19"
+   ],
+   "confidence": "high",
+   "origin": "project files"
+  },
+  {
+   "row": 29,
+   "dimension": "D7",
+   "score": 2,
+   "reason": "US youth aged 8-17 within 8 weeks of Stage 3 T1D diagnosis: point ~9,000 (range 5,000-15,000) [recall; US youth T1D incidence ~20,000/yr]. Range crosses a bin boundary: low confidence. Teplizumab query returned 0 records; CDC page gave 314,000 youth with T1D (prevalence only).",
+   "sources": [
+    "FDA Tzield label rev 06/2026 s2.1 and 14.2 (row 29)",
+    "CDC page https://www.cdc.gov/diabetes/php/data-research/index.html fetched 2026-10-19"
+   ],
+   "confidence": "low",
+   "origin": "both"
+  },
+  {
+   "row": 29,
+   "dimension": "S",
+   "score": 2,
+   "reason": "Missing the window loses a chance to slow C-peptide decline; modest delayed harm.",
+   "sources": [
+    "judgement from rubric anchor; row 29 of usecases-verified.md"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 31,
+   "dimension": "D1",
+   "score": 3,
+   "reason": "Random C-peptide decides whether insulin can be stopped or avoided; consensus warns never to stop insulin without a check.",
+   "sources": [
+    "Holt 2021 ADA/EASD consensus PMID 34590174 (full text per row 6)",
+    "PMID 23413806 full text",
+    "PMID 24843502 abstract (Funakoshi 2011)",
+    "PMID 41358893 full text"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 31,
+   "dimension": "D2",
+   "score": 2,
+   "reason": "Classification is consensus-backed, but predicting success of stopping insulin is limited (Funakoshi 2011, weak match; likelihood ratios about 2).",
+   "sources": [
+    "Holt 2021 ADA/EASD consensus PMID 34590174 (full text per row 6)",
+    "PMID 23413806 full text",
+    "PMID 24843502 abstract (Funakoshi 2011)",
+    "PMID 41358893 full text"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 31,
+   "dimension": "D3",
+   "score": 3,
+   "reason": "Holt 2021 and ADA Standards 2026 recommend it in insulin-treated people with doubtful type.",
+   "sources": [
+    "Holt 2021 ADA/EASD consensus PMID 34590174 (full text per row 6)",
+    "PMID 23413806 full text",
+    "PMID 24843502 abstract (Funakoshi 2011)",
+    "PMID 41358893 full text"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 31,
+   "dimension": "D7",
+   "score": 4,
+   "reason": "Adults clinically T1D >=3 y or on insulin with doubtful type: point ~150,000 (range 40,000-400,000) [recall judgement]. CDC page: 1.8 million US adults with type 1 diabetes; yearly share needing reclassification not found in the screened records. Wide range: low confidence.",
+   "sources": [
+    "Holt 2021 ADA/EASD consensus PMID 34590174 (full text per row 6)",
+    "PMID 23413806 full text",
+    "PMID 24843502 abstract (Funakoshi 2011)",
+    "PMID 41358893 full text"
+   ],
+   "confidence": "low",
+   "origin": "both"
+  },
+  {
+   "row": 31,
+   "dimension": "S",
+   "score": 3,
+   "reason": "Wrongly stopping insulin risks ketoacidosis; wrongly continuing risks hypoglycaemia.",
+   "sources": [
+    "judgement from rubric anchor; row 31 of usecases-verified.md"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  }
+ ],
+ "path_to_viability": [
+  {
+   "row": 1,
+   "missing_piece": "Prospective accuracy data for the thresholds with current assays",
+   "type": "evidence",
+   "effort": "medium",
+   "basis": "Row 1 caveat: thresholds are second-hand via ENETS; guideline evidence low."
+  },
+  {
+   "row": 2,
+   "missing_piece": "Accuracy data and analogue-detecting assay performance for the high insulin/low C-peptide pattern",
+   "type": "evidence",
+   "effort": "small",
+   "basis": "Row 2 states sensitivity/specificity not retrieved."
+  },
+  {
+   "row": 3,
+   "missing_piece": "Evidence on added value of insulin/C-peptide over drug screen alone, and screen coverage of newer agents",
+   "type": "evidence",
+   "effort": "small",
+   "basis": "Row 3: pattern identical to insulinoma; screen may miss newer agents [recall]."
+  },
+  {
+   "row": 4,
+   "missing_piece": "Sensitive paediatric insulin assay standardisation and cutoffs",
+   "type": "assay",
+   "effort": "medium",
+   "basis": "Row 4: insulin often below detection; adult ranges inappropriate."
+  },
+  {
+   "row": 6,
+   "missing_piece": "Prospective validation that C-peptide-guided treatment change improves outcomes",
+   "type": "evidence",
+   "effort": "medium",
+   "basis": "Row 6: no C-peptide cut-off for selecting treatment; one value does not classify an individual."
+  },
+  {
+   "row": 7,
+   "missing_piece": "Prospective validation of the combined triage pathway PPV in US-relevant populations",
+   "type": "evidence",
+   "effort": "medium",
+   "basis": "Row 7: PPV 20% quoted; fails in first ~3 years."
+  },
+  {
+   "row": 10,
+   "missing_piece": "Igls 2.0 with agreed numeric C-peptide thresholds",
+   "type": "guideline",
+   "effort": "small",
+   "basis": "Row 10: Igls 2.0 not found; no numeric threshold in Igls 2018."
+  },
+  {
+   "row": 22,
+   "missing_piece": "Multicentre series with concordance to surgical findings, compared with modern imaging",
+   "type": "evidence",
+   "effort": "medium",
+   "basis": "Row 22 evidence is two small series and case reports."
+  },
+  {
+   "row": 24,
+   "missing_piece": "Registry data on diagnostic yield in children over 2 years",
+   "type": "evidence",
+   "effort": "medium",
+   "basis": "Row 24 gives guideline basis only."
+  },
+  {
+   "row": 29,
+   "missing_piece": "Clinical-outcome confirmation of benefit and guideline endorsement of Stage 3 use",
+   "type": "evidence",
+   "effort": "large",
+   "basis": "Row 29: surrogate endpoint; ADA 2026 s9 does not endorse."
+  },
+  {
+   "row": 31,
+   "missing_piece": "Prospective cohort showing C-peptide thresholds predict safe insulin de-escalation in T2D",
+   "type": "evidence",
+   "effort": "medium",
+   "basis": "Row 31: limited evidence for predicting success of stopping insulin."
+  }
+ ],
+ "tiers": [
+  {
+   "row": 1,
+   "tier": "viable now",
+   "reason": "Guideline-backed standard workup; limits are interpretation (assay, antibodies), not support."
+  },
+  {
+   "row": 2,
+   "tier": "viable now",
+   "reason": "Established panel; use rests on guideline text, with known assay caveats."
+  },
+  {
+   "row": 3,
+   "tier": "close",
+   "reason": "Established only as a panel part; the discriminating step is the drug screen, so the insulin/C-peptide component adds little alone."
+  },
+  {
+   "row": 4,
+   "tier": "viable now",
+   "reason": "Guideline-recommended; insulin component is supportive only, but the critical-sample workflow is standard."
+  },
+  {
+   "row": 6,
+   "tier": "viable now",
+   "reason": "Consensus-backed and in use; antibody test comes first."
+  },
+  {
+   "row": 7,
+   "tier": "close",
+   "reason": "Used as a triage component; the C-peptide step alone has low PPV and ISPAD wording is unread."
+  },
+  {
+   "row": 10,
+   "tier": "viable now",
+   "reason": "Consensus criteria in use for graft classification; niche but ready."
+  },
+  {
+   "row": 22,
+   "tier": "close",
+   "reason": "Specialist second-line test with consensus endorsement but only small-series evidence."
+  },
+  {
+   "row": 24,
+   "tier": "viable now",
+   "reason": "Guideline recommendation exists, rare but ready; evidence quality is low."
+  },
+  {
+   "row": 29,
+   "tier": "viable now",
+   "reason": "Regulatory criterion exists; benefit evidence remains surrogate-level."
+  },
+  {
+   "row": 31,
+   "tier": "close",
+   "reason": "Classification is consensus-backed; de-escalation prediction lacks a validated cut-off."
+  }
+ ],
+ "settings": [],
+ "anchor_issues": [
+  "D3 4 vs 3: rubric does not say whether a guideline standard diagnostic step (row 1) is standard or recommended in a specific population; row 1 scored 4, others 3.",
+  "D2 4 for regulatory approval (row 29) is ambiguous when approval rests on a surrogate; scored 3.",
+  "D7 asks for situations per year, not diagnoses; the diagnostic-workup population (rows 1-4) is larger than disease incidence and had to be estimated."
+ ],
+ "assumptions": [
+  "PubMed searches returned almost no US epidemiology; most D7 points are [recall] estimates with low confidence.",
+  "DOIs for PMIDs 19088155, 26742109, 25957977, 37454648 were not re-fetched; the rows give PMIDs only for them.",
+  "D8, D4-D6 not requested and not scored."
+ ],
+ "searches": [
+  "insulinoma incidence population-based United States",
+  "hypoglycemia emergency department visits United States adults without diabetes incidence",
+  "sulfonylurea hypoglycemia emergency department visits United States",
+  "congenital hyperinsulinism incidence United States",
+  "incidence of diagnosed diabetes adults United States type 1 type 2 new cases",
+  "MODY prevalence United States SEARCH youth monogenic diabetes",
+  "islet transplantation United States number of recipients per year",
+  "teplizumab eligible new-onset type 1 diabetes United States incidence youth",
+  "adults type 1 diabetes misclassification C-peptide prevalence insulin-treated",
+  "factitious hypoglycemia insulin surreptitious frequency",
+  "(web) https://www.cdc.gov/diabetes/php/data-research/index.html"
+ ]
+}

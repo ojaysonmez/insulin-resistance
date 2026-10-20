@@ -27,7 +27,7 @@ from pathlib import Path
 
 DEFAULT_ROOT = Path(__file__).resolve().parent.parent
 CONFIG = {"start_limit_pct5": 40, "continue_limit_pct5": 65, "weekly_cap_pct": 75,
-          "quiet_hours": None, "max_attempts": 2}
+          "quiet_hours": None, "max_attempts": 2, "hard_stop_pct5": 95}
 LOG_HEADER = ["time", "unit", "pct5_before", "pct5_after", "weekly_before", "weekly_after", "tokens", "tool_uses", "errors"]
 
 
@@ -164,7 +164,9 @@ def in_quiet(quiet, hour):
 
 def cmd_gate(a, root):
     cfg = load(root)["config"]
-    if a.weekly >= cfg["weekly_cap_pct"]:
+    if a.pct5 >= cfg.get("hard_stop_pct5", 95):
+        print(f"STOP: hard stop, 5-hour window at {a.pct5}% (limit {cfg.get('hard_stop_pct5', 95)}%)")
+    elif a.weekly >= cfg["weekly_cap_pct"]:
         print(f"STOP: weekly limit at {a.weekly}% (cap {cfg['weekly_cap_pct']}%)")
     elif in_quiet(cfg.get("quiet_hours"), a.hour):
         print(f"STOP: quiet hours {cfg['quiet_hours']}")
