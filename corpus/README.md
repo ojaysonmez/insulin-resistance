@@ -7,6 +7,7 @@ Every article cited in `merged-conclusion.md` and `usecases-verified.md`, one ro
 | `corpus.xlsx` | The working spreadsheet (sheets `Corpus` and `Legend`). Blue headers are filled automatically; orange headers are filled by reading the article and are never overwritten by the script |
 | `corpus.csv` | Generated copy of the same table, for version history (the `.xlsx` shows no useful changes in git). Do not edit it by hand |
 | `pdf-wanted.md` | Generated, ranked list of articles that have no local text yet, so PDFs can be supplied by ID |
+| `local/` | PERSONAL DATA, LOCAL ONLY (git-ignored, blocked by the pre-commit check): `contacts.xlsx` and `contacts.csv`, the published corresponding-author names, emails and affiliations of the corpus articles, made by `tools/corpus_contacts.py`. Never commit or paste it; copy it to your own outreach tracker |
 | `fulltext/` | LOCAL ONLY (git-ignored, blocked by the pre-commit check): `C001.txt`, `C001.pdf` and so on, named by the article ID. Full texts are copyrighted and are never committed |
 
 ## Columns
@@ -25,3 +26,4 @@ Re-running never overwrites the orange columns. New PMIDs get the next ID (C144,
 - PubMed IDs only: DOIs cited without a PMID (and papers outside PubMed) are not in yet.
 - "Read level (as recorded)" is taken from the words on the same line as the citation, so a line that cites several papers shares them; treat it as a hint, not as the verified read level.
 - 53 articles have no open copy (listed in `pdf-wanted.md`); open access in PubMed Central does not always mean free reuse of the text.
+- Author contacts (`local/`) are only what each article publishes; affiliations are as of the publication date and people move, so check the current institution before writing. Confidence: high = flagged corresponding author in PubMed Central, medium = an email in the record, low = a likely contact without an email.

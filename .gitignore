@@ -16,3 +16,10 @@ scratch/
 
 # Corpus full texts and PDFs stay local (copyrighted)
 corpus/fulltext/
+
+# Personal data (author contacts) stays local
+corpus/local/
+
+# Spreadsheet lock files (created while a workbook is open)
+.~lock.*
+~$*

@@ -49,6 +49,8 @@ def main():
     blocks, warns = [], []
 
     for n in names:
+        if n.replace("\\", "/").startswith("corpus/local/"):
+            blocks.append(f"{n}: corpus/local/ holds personal data (author contacts) and must stay local")
         if n.replace("\\", "/").startswith("corpus/fulltext/"):
             blocks.append(f"{n}: corpus full texts and PDFs must stay local (copyrighted)")
         if pathlib.PurePath(n).suffix.lower() in BLOCKED_SUFFIXES:
