@@ -2,7 +2,7 @@
 """Pre-commit check for the public IR repository.
 
 Looks at what a commit would ADD (not old content) and blocks the commit if it finds:
-  - a PDF, EPUB or Word file (no PDFs or copyrighted full texts in the repository);
+  - a PDF, EPUB or Word file, or anything under corpus/fulltext/ (no PDFs or copyrighted full texts in the repository);
   - a Claude session ID of the form local_<hex> (local identifiers, kept out of the public repo);
   - an absolute Windows or Unix user path (CLAUDE.md: use project-relative paths);
   - something that looks like an API key, token or private key.
@@ -49,6 +49,8 @@ def main():
     blocks, warns = [], []
 
     for n in names:
+        if n.replace("\\", "/").startswith("corpus/fulltext/"):
+            blocks.append(f"{n}: corpus full texts and PDFs must stay local (copyrighted)")
         if pathlib.PurePath(n).suffix.lower() in BLOCKED_SUFFIXES:
             blocks.append(f"{n}: document file type not allowed in the repository")
         p = ROOT / n

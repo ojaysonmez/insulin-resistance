@@ -13,3 +13,6 @@ __pycache__/
 .claude/sessions.log
 scratch/
 *.tmp
+
+# Corpus full texts and PDFs stay local (copyrighted)
+corpus/fulltext/
