@@ -284,6 +284,7 @@ def main():
             if parts and parts[0].isdigit():
                 seen[parts[0]] = ln
 
+    qrows = {q["id"]: q.get("rows", []) for q in cfg["queries"]}
     hits, counts, q_errors = run_queries(cfg["queries"], d_from, d_to, cfg.get("max_hits_per_query", 60), delay, log)
     new_ids = [p for p in hits if p not in seen]
     recs, r_errors = fetch_records(new_ids, delay)
@@ -329,7 +330,9 @@ def main():
     for p in sorted(recs, key=lambda x: -int(x)):
         r = recs[p]
         flag = " **NOTICE TYPE: " + ", ".join(t for t in r["pubtype"] if re.search(r"retract|erratum|correction|expression", t, re.I)) + "**" if any(re.search(r"retract|erratum|correction|expression", t, re.I) for t in r["pubtype"]) else ""
-        L.append(f"- PMID {p}; DOI {r['doi'] or 'none in PubMed'}; {r['first_author']}; {r['journal']} {r['date']}; queries {', '.join(hits[p])}{flag}")
+        rowset = sorted({rw for qid in hits[p] for rw in qrows.get(qid, [])})
+        hint = f"; candidate rows {','.join(str(x) for x in rowset)}" if rowset else ""
+        L.append(f"- PMID {p}; DOI {r['doi'] or 'none in PubMed'}; {r['first_author']}; {r['journal']} {r['date']}; queries {', '.join(hits[p])}{hint}{flag}")
         L.append(f"  {r['title']}")
     L.append("")
     L.append("## Registry (tracked NCT numbers)")

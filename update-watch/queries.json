@@ -5,103 +5,184 @@
       "id": "Q1",
       "query": "\"HOMA-IR\" AND (\"C-statistic\" OR \"reclassification\" OR \"decision curve\")",
       "looking_for": "Incremental value over standard predictors",
-      "triggers": "Bottom line 2"
+      "triggers": "Bottom line 2",
+      "rows": [
+        17
+      ]
     },
     {
       "id": "Q2",
       "query": "\"triglyceride-glucose\" AND (\"C-statistic\" OR \"reclassification\" OR \"decision curve\")",
       "looking_for": "TyG incremental value",
-      "triggers": "Bottom line 2"
+      "triggers": "Bottom line 2",
+      "rows": [
+        17
+      ]
     },
     {
       "id": "Q3",
       "query": "\"insulin resistance\" AND (randomized OR trial) AND (HOMA OR stratified OR interaction)",
       "looking_for": "IR-stratified or interaction analyses",
-      "triggers": "Bottom lines 1-2"
+      "triggers": "Bottom lines 1-2",
+      "rows": [
+        13,
+        17,
+        18
+      ]
     },
     {
       "id": "Q4",
       "query": "(\"fasting insulin\" OR \"HOMA-IR\") AND (guideline[ti] OR consensus[ti] OR \"position statement\"[ti])",
       "looking_for": "New recommendations (zero hits most weeks is normal)",
-      "triggers": "Bottom line 1"
+      "triggers": "Bottom line 1",
+      "rows": [
+        14,
+        15,
+        16,
+        17
+      ]
     },
     {
       "id": "Q5",
       "query": "insulin AND (harmonization OR commutability OR \"reference measurement\" OR \"reference material\" OR \"reference method\")",
       "looking_for": "Assay standardisation",
-      "triggers": "Measurement section"
+      "triggers": "Measurement section",
+      "rows": [
+        1,
+        2,
+        4,
+        6,
+        10,
+        13,
+        29,
+        31
+      ]
     },
     {
       "id": "Q6",
       "query": "(\"biological variation\" OR EuBIVAS) AND (insulin OR \"C-peptide\")",
       "looking_for": "Variability data (EuBIVAS insulin values still missing)",
-      "triggers": "Measurement section"
+      "triggers": "Measurement section",
+      "rows": [
+        13,
+        14,
+        17
+      ]
     },
     {
       "id": "Q7",
       "query": "\"C-peptide\" AND (classification OR teplizumab OR \"mixed meal\")",
       "looking_for": "C-peptide uses",
-      "triggers": "Use-case rows 6-10, 29-33, 46-47"
+      "triggers": "Use-case rows 6-10, 29-33, 46-47",
+      "rows": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        29,
+        31,
+        32,
+        33,
+        46,
+        47,
+        49
+      ]
     },
     {
       "id": "Q8",
       "query": "pioglitazone AND \"insulin resistance\"",
       "looking_for": "IRIS follow-up",
-      "triggers": "Row 13"
+      "triggers": "Row 13",
+      "rows": [
+        13
+      ]
     },
     {
       "id": "Q9",
       "query": "MASLD AND (\"insulin resistance\" OR HOMA-IR) AND (guideline OR consensus OR trial)",
       "looking_for": "MASLD recommendations or trials",
-      "triggers": "Row 14"
+      "triggers": "Row 14",
+      "rows": [
+        14
+      ]
     },
     {
       "id": "Q10",
       "query": "PCOS AND \"insulin resistance\" AND metformin",
       "looking_for": "PCOS",
-      "triggers": "Row 15"
+      "triggers": "Row 15",
+      "rows": [
+        15,
+        38
+      ]
     },
     {
       "id": "Q11",
       "query": "insulin AND hypoglycaemia AND (guideline OR consensus)",
       "looking_for": "Hypoglycaemia work-up",
-      "triggers": "Rows 1-5"
+      "triggers": "Rows 1-5",
+      "rows": [
+        1,
+        2,
+        3,
+        5
+      ]
     },
     {
       "id": "Q12",
       "query": "\"congenital hyperinsulinism\" OR \"hyperinsulinaemic hypoglycaemia\" OR \"hyperinsulinemic hypoglycemia\"",
       "looking_for": "Congenital and acquired hyperinsulinism",
-      "triggers": "Rows 4, 24-26"
+      "triggers": "Rows 4, 24-26",
+      "rows": [
+        4,
+        24,
+        25,
+        26
+      ]
     },
     {
       "id": "Q13",
       "query": "\"insulin resistance\" AND (\"Mendelian randomization\" OR trial) AND (cancer OR dementia OR depression)",
       "looking_for": "Oncology and psychiatry signals",
-      "triggers": "Steelman section"
+      "triggers": "Steelman section",
+      "rows": []
     },
     {
       "id": "Q14",
       "query": "(\"postprandial hypoglycemia\" OR \"reactive hypoglycemia\") AND (\"mixed meal\" OR \"meal test\")",
       "looking_for": "Reactive hypoglycaemia work-up",
-      "triggers": "Row 48"
+      "triggers": "Row 48",
+      "rows": [
+        48
+      ]
     },
     {
       "id": "Q15",
       "query": "\"C-peptide\" AND \"oral glucose tolerance\" AND \"type 1 diabetes\" AND (progression OR \"risk score\")",
       "looking_for": "Type 1 risk staging by OGTT C-peptide",
-      "triggers": "Row 49"
+      "triggers": "Row 49",
+      "rows": [
+        49
+      ]
     },
     {
       "id": "Q16",
       "query": "(\"type 3c diabetes\" OR \"pancreatogenic diabetes\" OR \"diabetes of the exocrine pancreas\") AND (\"C-peptide\" OR classification)",
       "looking_for": "Type 3c classification",
-      "triggers": "Row 9"
+      "triggers": "Row 9",
+      "rows": [
+        9
+      ]
     },
     {
       "id": "Q17",
       "query": "(\"post-bariatric hypoglycemia\" OR \"postbariatric hypoglycemia\") AND (diagnosis OR consensus OR guideline)",
       "looking_for": "Post-bariatric hypoglycaemia criteria",
-      "triggers": "Row 5"
+      "triggers": "Row 5",
+      "rows": [
+        5
+      ]
     },
     {
       "id": "P13",
@@ -240,6 +321,88 @@
       "triggers": "Path to viability, row 22",
       "rows": [
         22
+      ],
+      "signal": "S2"
+    },
+    {
+      "id": "P11",
+      "query": "bariatric AND \"C-peptide\" AND (remission OR \"diabetes remission\") AND (score OR predict*)",
+      "looking_for": "C-peptide in bariatric remission scores (row 11)",
+      "triggers": "Path to viability, row 11",
+      "rows": [
+        11
+      ],
+      "signal": "S2"
+    },
+    {
+      "id": "P12",
+      "query": "(lipodystrophy OR \"type B insulin resistance\" OR \"severe insulin resistance\" OR \"insulin receptor\") AND insulin AND (diagnosis OR criteria OR threshold)",
+      "looking_for": "Severe or genetic insulin resistance work-up (row 12)",
+      "triggers": "Path to viability, row 12",
+      "rows": [
+        12
+      ],
+      "signal": "S2"
+    },
+    {
+      "id": "P20",
+      "query": "(\"insulin autoimmune syndrome\" OR \"insulin antibodies\" OR \"anti-insulin antibody\") AND (hypoglycemia OR immunoassay OR interference)",
+      "looking_for": "Insulin autoimmune syndrome and antibody interference (rows 20, 25)",
+      "triggers": "Path to viability, row 20,25",
+      "rows": [
+        20,
+        25
+      ],
+      "signal": "S2"
+    },
+    {
+      "id": "P21",
+      "query": "(\"non-islet cell tumor hypoglycemia\" OR NICTH OR \"IGF-II\" OR \"big IGF\") AND hypoglycemia",
+      "looking_for": "Tumour hypoglycaemia (row 21)",
+      "triggers": "Path to viability, row 21",
+      "rows": [
+        21
+      ],
+      "signal": "S2"
+    },
+    {
+      "id": "P27",
+      "query": "(TPIAT OR \"total pancreatectomy with islet autotransplantation\") AND (\"C-peptide\" OR \"beta-cell\" OR \"insulin independence\")",
+      "looking_for": "Islet autotransplant graft reserve (row 27)",
+      "triggers": "Path to viability, row 27",
+      "rows": [
+        27
+      ],
+      "signal": "S2"
+    },
+    {
+      "id": "P28",
+      "query": "(\"chronic kidney disease\" OR \"renal function\" OR eGFR) AND \"C-peptide\" AND (cutoff OR \"cut-off\" OR interpretation OR classification)",
+      "looking_for": "C-peptide in kidney disease (row 28)",
+      "triggers": "Path to viability, row 28",
+      "rows": [
+        28
+      ],
+      "signal": "S2"
+    },
+    {
+      "id": "P35",
+      "query": "(\"gestational diabetes\" OR pregnancy) AND (\"insulin resistance\" OR HOMA) AND (\"first trimester\" OR prediction OR postpartum OR \"prior gestational\")",
+      "looking_for": "Insulin resistance indices in pregnancy and after gestational diabetes (rows 35, 45)",
+      "triggers": "Path to viability, row 35,45",
+      "rows": [
+        35,
+        45
+      ],
+      "signal": "S2"
+    },
+    {
+      "id": "P46",
+      "query": "(\"fulminant type 1 diabetes\" OR \"fulminant diabetes\") AND (\"C-peptide\" OR criteria OR \"immune checkpoint\")",
+      "looking_for": "Fulminant type 1 diabetes criteria (row 46)",
+      "triggers": "Path to viability, row 46",
+      "rows": [
+        46
       ],
       "signal": "S2"
     }

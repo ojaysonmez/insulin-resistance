@@ -111,5 +111,13 @@ class SignalTests(unittest.TestCase):
         self.assertEqual(usc.signals(self.root)[13], "S2 2026-10-21 (rescore queued)")
 
 
+class CoverageTests(unittest.TestCase):
+    def test_every_scored_row_has_a_row_tagged_watch_query(self):
+        import check_watch_coverage as cov
+        tagged, scored = cov.coverage(PROJECT)
+        self.assertTrue(scored, "no scored rows found")
+        self.assertEqual(sorted(scored - set(tagged)), [], "scored rows without a row-tagged query in update-watch/queries.json")
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
