@@ -1,0 +1,576 @@
+{
+ "unit": "S1",
+ "role": "screener",
+ "scores": [
+  {
+   "row": 5,
+   "dimension": "D1",
+   "score": 2,
+   "reason": "Insulin and glucose at nadir supports the diagnosis of postprandial hyperinsulinaemic hypoglycaemia and excludes other causes, but treatment options (diet, acarbose) are accepted ones.",
+   "sources": [
+    "usecases-verified.md row 5",
+    "PMID 30101281 abstract",
+    "PMID 34802853 abstract"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 5,
+   "dimension": "D2",
+   "score": 2,
+   "reason": "Observational cohorts and a meta-analysis; row states insulin level itself is not diagnostic and no threshold exists.",
+   "sources": [
+    "PMID 30101281 abstract (DOI not in row)",
+    "PMID 34802853 abstract (DOI not in row)"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 5,
+   "dimension": "D3",
+   "score": 2,
+   "reason": "PES 2015 full text read per row, but row records no international consensus on diagnosis; scored as option-level.",
+   "sources": [
+    "PES 2015 (row 5)"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 5,
+   "dimension": "D7",
+   "score": 3,
+   "reason": "About 200,000 bariatric operations a year in the US [recall: ASMBS]; severe post-bariatric hypoglycaemia needing work-up perhaps 1 to 5 percent: estimate 5,000 (range 1,000 to 20,000, spans two bins).",
+   "sources": [
+    "[recall] ASMBS annual estimates; CGM-detected hypoglycaemia 54.3% per row 5 caveat (not a work-up rate)"
+   ],
+   "confidence": "low",
+   "origin": "both"
+  },
+  {
+   "row": 5,
+   "dimension": "S",
+   "score": 3,
+   "reason": "Missed or mis-managed hypoglycaemia causes seizures, falls, driving injury; not usually fatal.",
+   "sources": [
+    "usecases-verified.md row 5"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 9,
+   "dimension": "D1",
+   "score": 2,
+   "reason": "C-peptide documents insulin deficiency and reserve, supporting classification; row says consensus diagnoses 3c by glucose/HbA1c/OGTT, not C-peptide.",
+   "sources": [
+    "usecases-verified.md row 9",
+    "PMID 23890130 abstract"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 9,
+   "dimension": "D2",
+   "score": 2,
+   "reason": "Cohort data on misclassification as T2D (87.8%); no C-peptide cut-offs retrieved.",
+   "sources": [
+    "PMID 28860126 abstract",
+    "PMID 39959260 abstract"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 9,
+   "dimension": "D3",
+   "score": 1,
+   "reason": "Consensus (PancreasFest 2012) does not recommend C-peptide for diagnosis, per row: not addressed.",
+   "sources": [
+    "PMID 23890130 abstract"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 9,
+   "dimension": "D7",
+   "score": 3,
+   "reason": "New diabetes after pancreatitis or pancreatectomy, estimate 30,000 a year (range 10,000 to 100,000) [recall: pancreatitis incidence, post-pancreatitis diabetes cohorts]; spans bins 3 to 4.",
+   "sources": [
+    "[recall] pancreatitis epidemiology; no search done"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 9,
+   "dimension": "S",
+   "score": 2,
+   "reason": "Misclassification as T2D leads to inappropriate oral therapy and delayed insulin: moderate, delayed harm.",
+   "sources": [
+    "usecases-verified.md row 9"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 11,
+   "dimension": "D1",
+   "score": 1,
+   "reason": "Remission prediction informs pre-operative counselling only; not an eligibility criterion (row).",
+   "sources": [
+    "usecases-verified.md row 11"
+   ],
+   "confidence": "high",
+   "origin": "project files"
+  },
+  {
+   "row": 11,
+   "dimension": "D2",
+   "score": 2,
+   "reason": "Derivation and validation cohorts (n=63, 176) but no study isolates C-peptide's incremental value; scores did not beat duration alone at 10 years.",
+   "sources": [
+    "PMID 22963817 abstract",
+    "PMID 32873586 abstract"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 11,
+   "dimension": "D3",
+   "score": 1,
+   "reason": "No guideline recommends C-peptide for this; not addressed per row.",
+   "sources": [
+    "usecases-verified.md row 11"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 11,
+   "dimension": "D7",
+   "score": 3,
+   "reason": "About 200,000 US bariatric operations a year [recall: ASMBS], roughly a quarter with T2D: estimate 50,000 (range 25,000 to 75,000).",
+   "sources": [
+    "[recall] ASMBS"
+   ],
+   "confidence": "low",
+   "origin": "both"
+  },
+  {
+   "row": 11,
+   "dimension": "S",
+   "score": 1,
+   "reason": "Poor prediction changes expectations, not safety.",
+   "sources": [
+    "usecases-verified.md row 11"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 12,
+   "dimension": "D1",
+   "score": 3,
+   "reason": "Fasting insulin above threshold decides who gets genetic or antibody testing and the severe-IR syndrome label.",
+   "sources": [
+    "PMID 35463863 full text (PMC8980125)"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 12,
+   "dimension": "D2",
+   "score": 1,
+   "reason": "Expert criteria from one nation without sensitivity or specificity; lipodystrophy guideline names no insulin assay.",
+   "sources": [
+    "PMID 35463863 full text",
+    "PMID 27710244 full text"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 12,
+   "dimension": "D3",
+   "score": 1,
+   "reason": "US lipodystrophy guideline (Brown 2016) names no insulin test; JDS 2022 is Japanese expert criteria. Not addressed for the US.",
+   "sources": [
+    "PMID 27710244 full text",
+    "PMID 35463863 full text"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 12,
+   "dimension": "D7",
+   "score": 1,
+   "reason": "Generalised plus partial lipodystrophy, genetic IR and type B IR; work-up estimate 1,500 patients a year (range 300 to 5,000) [recall: lipodystrophy is very rare].",
+   "sources": [
+    "[recall] no search done"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 12,
+   "dimension": "S",
+   "score": 3,
+   "reason": "Missed syndromes cause diabetes complications, pancreatitis, steatohepatitis; targeted therapy exists.",
+   "sources": [
+    "usecases-verified.md row 12"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 13,
+   "dimension": "D1",
+   "score": 2,
+   "reason": "HOMA-IR above 3.0 identifies who is offered pioglitazone, an accepted option; guidelines word it as may be considered.",
+   "sources": [
+    "PMID 26886418 full text (PMC4887756)",
+    "ADA Standards 2026 Rec 3.13"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 13,
+   "dimension": "D2",
+   "score": 2,
+   "reason": "One RCT used the HOMA-IR cutoff for entry; no test of whether measurement-guided selection beats treating all with prediabetes; subgroup heterogeneity by HOMA-IR not stated.",
+   "sources": [
+    "PMID 26886418 full text"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 13,
+   "dimension": "D3",
+   "score": 2,
+   "reason": "ADA 2026 Rec 3.13 (may be considered, evidence of IR) and AACE 2022 R9.4 (should be considered) mention IR but name no assay or threshold.",
+   "sources": [
+    "ADA Standards 2026 (PMC12690170) full text",
+    "PMID 35963508 full text"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 13,
+   "dimension": "D7",
+   "score": 4,
+   "reason": "US about 795,000 strokes a year plus TIA [recall: AHA/CDC]; those without diabetes but with prediabetes or IR perhaps a quarter: estimate 200,000 (range 50,000 to 400,000).",
+   "sources": [
+    "[recall] AHA statistics"
+   ],
+   "confidence": "low",
+   "origin": "both"
+  },
+  {
+   "row": 13,
+   "dimension": "S",
+   "score": 3,
+   "reason": "Recurrent stroke or MI is serious morbidity.",
+   "sources": [
+    "usecases-verified.md row 13"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 14,
+   "dimension": "D1",
+   "score": 1,
+   "reason": "No change to FIB-4/elastography pathway or therapy; clarify metabolic dysfunction only.",
+   "sources": [
+    "usecases-verified.md row 14"
+   ],
+   "confidence": "high",
+   "origin": "project files"
+  },
+  {
+   "row": 14,
+   "dimension": "D2",
+   "score": 1,
+   "reason": "Consensus opinion; guideline itself says assays need standardising; no outcome data on testing.",
+   "sources": [
+    "PMID 38851997 full text windows",
+    "PMID 37364790 abstract"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 14,
+   "dimension": "D3",
+   "score": 2,
+   "reason": "EASL-EASD-EASO 2024 may be considered (LoE 3); AASLD 2023 has no recommendation (whole article searched).",
+   "sources": [
+    "PMID 38851997, 38852583, 38869512",
+    "PMID 36727674"
+   ],
+   "confidence": "high",
+   "origin": "project files"
+  },
+  {
+   "row": 14,
+   "dimension": "D7",
+   "score": 5,
+   "reason": "MASLD affects roughly a third of US adults [recall]; suspected MASLD without T2D seen in primary care in millions: estimate 5,000,000 (range 2,000,000 to 10,000,000), within bin 5.",
+   "sources": [
+    "[recall] NHANES-based prevalence"
+   ],
+   "confidence": "low",
+   "origin": "both"
+  },
+  {
+   "row": 14,
+   "dimension": "S",
+   "score": 2,
+   "reason": "Delayed harm from missed metabolic risk; the pathway rests on fibrosis staging, not on this test.",
+   "sources": [
+    "usecases-verified.md row 14"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 27,
+   "dimension": "D1",
+   "score": 1,
+   "reason": "Pre-operative C-peptide may inform expected insulin need; the decision to proceed rests on pain and disease; no threshold found.",
+   "sources": [
+    "usecases-verified.md row 27"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 27,
+   "dimension": "D2",
+   "score": 1,
+   "reason": "Abstract-level and small cohort evidence; in a distal pancreatectomy cohort C-peptide AUC was not a significant predictor.",
+   "sources": [
+    "PMID 23890130 abstract",
+    "PMID 38895780 abstract",
+    "PMID 39994886 abstract",
+    "PMID 37889837 DOI 10.1210/clinem/dgad634 abstract and windows"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 27,
+   "dimension": "D3",
+   "score": 1,
+   "reason": "PancreasFest consensus covers evaluation but no C-peptide recommendation was found; not addressed.",
+   "sources": [
+    "PMID 23890130 abstract"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 27,
+   "dimension": "D7",
+   "score": 1,
+   "reason": "TPIAT is done in a few hundred patients a year in the US, estimate 300 (range 100 to 600) [recall].",
+   "sources": [
+    "[recall] no search done"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 27,
+   "dimension": "S",
+   "score": 2,
+   "reason": "Unexpected insulin dependence is moderate, delayed harm.",
+   "sources": [
+    "usecases-verified.md row 27"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 49,
+   "dimension": "D1",
+   "score": 1,
+   "reason": "Prognosis changes monitoring intensity only; not treatment selection.",
+   "sources": [
+    "usecases-verified.md row 49"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 49,
+   "dimension": "D2",
+   "score": 2,
+   "reason": "Cohort data from DPT-1 and TrialNet but thresholds are cohort medians, not externally validated; phi-total, not AUC C-peptide, was significant in one multivariable model.",
+   "sources": [
+    "PMID 35998266 DOI 10.2337/dc22-0167 abstract and windows",
+    "PMID 39992257 DOI 10.1210/clinem/dgaf086 windows"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 49,
+   "dimension": "D3",
+   "score": 1,
+   "reason": "ADA Standards 2026 recs 2.6 and 2.7 cover autoantibody screening only; staging consensus is descriptive.",
+   "sources": [
+    "PMID 41358893 DOI 10.2337/dc26-s002 windows",
+    "PMID 26404926 DOI 10.2337/dc15-1419"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 49,
+   "dimension": "D7",
+   "score": 2,
+   "reason": "Newly identified stage 1 or 2 individuals through relative screening and research programmes, estimate 5,000 a year (range 1,000 to 20,000) [recall; no search done].",
+   "sources": [
+    "[recall]"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 49,
+   "dimension": "S",
+   "score": 3,
+   "reason": "Unmonitored progression risks DKA at diagnosis (hospitalisation); monitoring reduces it.",
+   "sources": [
+    "usecases-verified.md row 49",
+    "[recall] DKA-at-diagnosis literature"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  }
+ ],
+ "path_to_viability": [
+  {
+   "row": 5,
+   "missing_piece": "A validated insulin (or C-peptide) cutoff during symptomatic nadir against a CGM or MMTT reference",
+   "type": "evidence",
+   "effort": "medium",
+   "basis": "Row records no accepted threshold and no consensus on diagnosis."
+  },
+  {
+   "row": 9,
+   "missing_piece": "A C-peptide cutoff that separates type 3c from T2D, validated, and a consensus statement that adopts it",
+   "type": "evidence",
+   "effort": "medium",
+   "basis": "Row: no 3c C-peptide cutoffs retrieved; consensus uses glucose/OGTT and exocrine evidence."
+  },
+  {
+   "row": 11,
+   "missing_piece": "A study showing C-peptide adds to duration and BMI in remission prediction",
+   "type": "evidence",
+   "effort": "small",
+   "basis": "Existing bariatric cohorts (SOS, DSS-II) could be reanalysed; row says no paper isolates it."
+  },
+  {
+   "row": 12,
+   "missing_piece": "A US-validated insulin threshold with an assay-specific cutoff for severe-IR work-up",
+   "type": "evidence",
+   "effort": "medium",
+   "basis": "JDS value is single-nation expert opinion; US guideline names no assay."
+  },
+  {
+   "row": 13,
+   "missing_piece": "An IRIS reanalysis or trial showing benefit differs by HOMA-IR stratum, plus an assay-standard statement",
+   "type": "evidence",
+   "effort": "small",
+   "basis": "IRIS data exist; subgroup by HOMA-IR is not stated in the row."
+  },
+  {
+   "row": 14,
+   "missing_piece": "Evidence that insulin-based testing changes MASLD management, and standardised assays",
+   "type": "evidence",
+   "effort": "medium",
+   "basis": "Row: no pathway or therapy depends on it; assays unstandardised."
+  },
+  {
+   "row": 27,
+   "missing_piece": "A pre-operative C-peptide threshold predicting insulin independence after TPIAT",
+   "type": "evidence",
+   "effort": "medium",
+   "basis": "No threshold found; needs prospective multicentre TPIAT registry data."
+  },
+  {
+   "row": 49,
+   "missing_piece": "External validation of Index60 or C-peptide thresholds in independent cohorts and a guideline line on monitoring",
+   "type": "evidence",
+   "effort": "medium",
+   "basis": "Thresholds are cohort medians; guideline covers screening only."
+  }
+ ],
+ "tiers": [
+  {
+   "row": 5,
+   "tier": "close",
+   "reason": "Limited support with one missing piece, a validated threshold; moderately common and serious."
+  },
+  {
+   "row": 9,
+   "tier": "far",
+   "reason": "Consensus does not use C-peptide and no cutoffs exist: several gaps."
+  },
+  {
+   "row": 11,
+   "tier": "far",
+   "reason": "Counselling-only use and no incremental-value evidence."
+  },
+  {
+   "row": 12,
+   "tier": "far",
+   "reason": "Single-nation expert criteria, no US guideline, rare."
+  },
+  {
+   "row": 13,
+   "tier": "close",
+   "reason": "Guideline-embedded and common; one missing piece is evidence that measurement-based selection matters, with a defined assay."
+  },
+  {
+   "row": 14,
+   "tier": "far",
+   "reason": "Weak consensus option, no decision depends on it."
+  },
+  {
+   "row": 27,
+   "tier": "far",
+   "reason": "No threshold, tiny population, negative related cohort."
+  },
+  {
+   "row": 49,
+   "tier": "close",
+   "reason": "Cohort evidence and growing screening; missing external validation and guideline wording."
+  }
+ ],
+ "settings": [],
+ "anchor_issues": [
+  "D1: accepted options (2) versus counselling only (1) is unclear for prognosis uses such as rows 11 and 49; scored 1 where the result changes monitoring or expectations only.",
+  "D3: a guideline mentioning IR without naming a test (row 13) was scored 2; the anchor does not say whether an unnamed assay counts.",
+  "D2: a trial entry criterion without a test of measurement-guided selection (row 13) was scored 2; the anchor 'not mere association' is ambiguous here."
+ ],
+ "assumptions": [
+  "D7 estimates are from memory ([recall]) with low confidence; no searches were run to stay cheap.",
+  "Row 9 scored as the whole post-pancreatitis or pancreatectomy diabetes situation, row 27 as TPIAT only.",
+  "Row 12 D3 scored for the US since the JDS text is Japanese."
+ ],
+ "searches": []
+}

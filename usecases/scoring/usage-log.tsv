@@ -1,2 +1,5 @@
 time	unit	pct5_before	pct5_after	weekly_before	weekly_after	tokens	tool_uses	errors
 2026-10-19T20:25:04	U1	57	63	33	34	172625	46	manual test run; gate overridden (57% > 40% start limit); window delta includes this chat's own use
+2026-10-19T20:40:15	S1	67	69	34	35	39317	6	manual stage 1 screen with ir-usecase-scout; no searches (D7 from memory); window change includes this chat's own use
+2026-10-19T20:45:15	S2	69	80	35	36	66373	11	ran in parallel with S3; window change includes S3 (40,307 tokens, 10 tools) and this chat's own use
+2026-10-19T20:45:15	S3					40307	10	see S2 line for the shared window change

@@ -158,6 +158,87 @@
         "usecases/scoring/U6.md",
         "usecases/scoring/U6.json"
       ]
+    },
+    {
+      "id": "S1",
+      "phase": "screen",
+      "agent": "ir-usecase-scout",
+      "dims": "D1 (decision change), D2 (evidence), D3 (guideline or regulatory status), D7 (US patients per year) and S (stakes)",
+      "rows": [
+        5,
+        9,
+        11,
+        12,
+        13,
+        14,
+        27,
+        49
+      ],
+      "template": "screen",
+      "needs": [],
+      "inputs": [],
+      "extra": "",
+      "pause_after": false,
+      "state": "done",
+      "attempts": 0,
+      "prompt": "usecases/scoring/units/S1.md",
+      "outputs": [
+        "usecases/scoring/S1.md",
+        "usecases/scoring/S1.json"
+      ]
+    },
+    {
+      "id": "S2",
+      "phase": "screen",
+      "agent": "ir-usecase-scout",
+      "dims": "D1 (decision change), D2 (evidence), D3 (guideline or regulatory status), D7 (US patients per year) and S (stakes)",
+      "rows": [
+        20,
+        21,
+        23,
+        25,
+        32,
+        33,
+        46,
+        47
+      ],
+      "template": "screen",
+      "needs": [],
+      "inputs": [],
+      "extra": "",
+      "pause_after": false,
+      "state": "done",
+      "attempts": 0,
+      "prompt": "usecases/scoring/units/S2.md",
+      "outputs": [
+        "usecases/scoring/S2.md",
+        "usecases/scoring/S2.json"
+      ]
+    },
+    {
+      "id": "S3",
+      "phase": "screen",
+      "agent": "ir-usecase-scout",
+      "dims": "D1 (decision change), D2 (evidence), D3 (guideline or regulatory status), D7 (US patients per year) and S (stakes)",
+      "rows": [
+        8,
+        28,
+        35,
+        45,
+        48
+      ],
+      "template": "screen",
+      "needs": [],
+      "inputs": [],
+      "extra": "",
+      "pause_after": false,
+      "state": "done",
+      "attempts": 0,
+      "prompt": "usecases/scoring/units/S3.md",
+      "outputs": [
+        "usecases/scoring/S3.md",
+        "usecases/scoring/S3.json"
+      ]
     }
   ]
 }

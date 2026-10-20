@@ -1,0 +1,393 @@
+{
+ "unit": "S3",
+ "role": "screener",
+ "scores": [
+  {
+   "row": 8,
+   "dimension": "D1",
+   "score": 1,
+   "reason": "The result tells a trial whether an intervention preserved beta-cell function; it does not change an individual patient's routine care (teplizumab eligibility is row 29).",
+   "sources": [
+    "usecases-verified.md row 8",
+    "PMID 14693724 abstract (Palmer 2004; DOI not in file)",
+    "PMID 18628574 abstract (Greenbaum 2008; DOI not in file)"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 8,
+   "dimension": "D2",
+   "score": 2,
+   "reason": "Palmer, Greenbaum and the albiglutide RCT are observational or trial-endpoint data on stimulated C-peptide, not evidence of a care decision change.",
+   "sources": [
+    "usecases-verified.md row 8",
+    "PMID 14693724 abstract (Palmer 2004; DOI not in file)",
+    "PMID 18628574 abstract (Greenbaum 2008; DOI not in file)",
+    "PMID 32219329 abstract"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 8,
+   "dimension": "D3",
+   "score": 1,
+   "reason": "Row records no guideline for care use; regulatory acceptance of the endpoint is not documented in the files.",
+   "sources": [
+    "usecases-verified.md row 8"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 8,
+   "dimension": "D7",
+   "score": 2,
+   "reason": "Patients enrolled in US T1D preservation trials per year, estimated at a few thousand (range 500 to 5,000); no statistic found.",
+   "sources": [
+    "not found in the screened records; estimate by judgement"
+   ],
+   "confidence": "low",
+   "origin": "new search"
+  },
+  {
+   "row": 8,
+   "dimension": "S",
+   "score": 1,
+   "reason": "Missing the information affects trial conclusions, not the harm to an individual patient.",
+   "sources": [
+    "usecases-verified.md row 8"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 28,
+   "dimension": "D1",
+   "score": 1,
+   "reason": "The row treats CKD as a caution on interpreting C-peptide (counselling and interpretation), not a decision rule.",
+   "sources": [
+    "usecases-verified.md row 28"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 28,
+   "dimension": "D2",
+   "score": 2,
+   "reason": "Observational data only: UCPCR <=1.13 nmol/g, AUC 0.978, n=85; correction methods poorly validated.",
+   "sources": [
+    "PMID 30794834 abstract (D'Elia 2019)",
+    "PMID 36465621 abstract (Zhou 2022)",
+    "PMID 23413806 full text windows (Jones and Hattersley 2013)"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 28,
+   "dimension": "D3",
+   "score": 1,
+   "reason": "No guideline on CKD adjustment of C-peptide retrieved; KDIGO 2022 abstract blank.",
+   "sources": [
+    "usecases-verified.md row 28"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 28,
+   "dimension": "D7",
+   "score": 4,
+   "reason": "About 20% of US adults have CKD (NHANES 1999-2018, PMID 42736589); newly diagnosed diabetes about 1.4 million a year [recall] times an assumed 15 to 20% with eGFR <60 gives about 200,000 to 300,000 (range 50,000 to 600,000, straddles bins 3 to 4).",
+   "sources": [
+    "PMID 42736589 DOI 10.1080/0886022x.2025.2536192 abstract"
+   ],
+   "confidence": "low",
+   "origin": "both"
+  },
+  {
+   "row": 28,
+   "dimension": "S",
+   "score": 2,
+   "reason": "Misreading C-peptide in CKD can misclassify diabetes type or hide secretagogue hypoglycaemia risk: moderate, partly delayed harm.",
+   "sources": [
+    "usecases-verified.md row 28"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 35,
+   "dimension": "D1",
+   "score": 0,
+   "reason": "No decision established for first-trimester HOMA-IR; the GCK trigger is glucose-based.",
+   "sources": [
+    "usecases-verified.md row 35"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 35,
+   "dimension": "D2",
+   "score": null,
+   "reason": "HOMA-IR cohorts (PMIDs 26754418, 34449903, 36675721, 38017369) were title-level only; the file says not determinable.",
+   "sources": [
+    "usecases-verified.md row 35"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 35,
+   "dimension": "D3",
+   "score": 1,
+   "reason": "ANZ 2025 (PMID 40640995) and PMDI read in full text; ADA, ACOG and IADPSG not retrieved, so only 'not addressed in the screened records'.",
+   "sources": [
+    "PMID 40640995 full text",
+    "usecases-verified.md row 35"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 35,
+   "dimension": "D7",
+   "score": 5,
+   "reason": "US births about 3.5 million a year (31.8 million in 2014-2022) with 6.8% GDM (about 245,000 a year); first-trimester risk assessment applies to all pregnancies.",
+   "sources": [
+    "PMID 42728719 DOI 10.1055/a-2957-5259 abstract"
+   ],
+   "confidence": "medium",
+   "origin": "new search"
+  },
+  {
+   "row": 35,
+   "dimension": "S",
+   "score": 2,
+   "reason": "Undetected GDM risk leads to delayed maternal and fetal harm, but glucose testing already catches GDM.",
+   "sources": [
+    "usecases-verified.md row 35"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 45,
+   "dimension": "D1",
+   "score": 0,
+   "reason": "Prevention decisions (metformin, ADA Rec 3.7) rest on glucose and A1C; no insulin test found.",
+   "sources": [
+    "usecases-verified.md row 45"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 45,
+   "dimension": "D2",
+   "score": null,
+   "reason": "Postpartum IR cohorts (PMIDs 32184821, 21926287, 19937225) were title-only; the file says not determinable.",
+   "sources": [
+    "usecases-verified.md row 45"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 45,
+   "dimension": "D3",
+   "score": 1,
+   "reason": "ADA 2026 s3 read only to 100k of 159k characters; no insulin test recommended in the part read.",
+   "sources": [
+    "usecases-verified.md row 45"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 45,
+   "dimension": "D7",
+   "score": 4,
+   "reason": "About 245,000 US pregnancies a year with GDM (6.8% of about 3.5 million births); each needs postpartum follow-up. Range 200,000 to 300,000.",
+   "sources": [
+    "PMID 42728719 DOI 10.1055/a-2957-5259 abstract"
+   ],
+   "confidence": "medium",
+   "origin": "new search"
+  },
+  {
+   "row": 45,
+   "dimension": "S",
+   "score": 2,
+   "reason": "Missed progression to type 2 diabetes is delayed moderate harm.",
+   "sources": [
+    "usecases-verified.md row 45"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 48,
+   "dimension": "D1",
+   "score": 1,
+   "reason": "Insulin was collected but not used; diagnosis rested on glucose and symptoms, so at most it informs counselling.",
+   "sources": [
+    "PMID 33916952 DOI 10.3390/jpm11040276 abstract and full-text windows"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 48,
+   "dimension": "D2",
+   "score": 1,
+   "reason": "Two small single-centre series (n=40; n=69 adults with obesity) and no insulin threshold.",
+   "sources": [
+    "PMID 33916952 DOI 10.3390/jpm11040276 abstract",
+    "PMID 41829992 DOI 10.3390/nu18050822 abstract"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 48,
+   "dimension": "D3",
+   "score": 1,
+   "reason": "Cryer 2009 Endocrine Society guideline (PMID 19088155 DOI 10.1210/jc.2008-1410) not read; not shown to be silent.",
+   "sources": [
+    "usecases-verified.md row 48"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 48,
+   "dimension": "D7",
+   "score": null,
+   "reason": "No US incidence of suspected reactive hypoglycaemia found in the screened records (one PubMed search returned only post-esophagectomy and unrelated items).",
+   "sources": [
+    "not found in the screened records"
+   ],
+   "confidence": "low",
+   "origin": "new search"
+  },
+  {
+   "row": 48,
+   "dimension": "S",
+   "score": 1,
+   "reason": "Symptomatic but reversible; non-diabetic adults, no gastric surgery.",
+   "sources": [
+    "usecases-verified.md row 48"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  }
+ ],
+ "path_to_viability": [
+  {
+   "row": 8,
+   "missing_piece": "Regulatory or consensus statement that an MMTT C-peptide change is an accepted surrogate for clinical benefit, plus a care-use rule",
+   "type": "guideline",
+   "effort": "medium",
+   "basis": "Row 29 already carries the regulatory use; row 8 stays a trial endpoint without it."
+  },
+  {
+   "row": 28,
+   "missing_piece": "Validated eGFR-adjusted C-peptide or UCPCR cutoffs in CKD",
+   "type": "evidence",
+   "effort": "medium",
+   "basis": "Row names correction methods as poorly validated; UCPCR data are n=85."
+  },
+  {
+   "row": 35,
+   "missing_piece": "Prospective study showing first-trimester HOMA-IR adds to clinical risk factors and changes management",
+   "type": "evidence",
+   "effort": "medium",
+   "basis": "Cohorts only; no decision attached (abstracts not yet read)."
+  },
+  {
+   "row": 45,
+   "missing_piece": "Study showing postpartum insulin or HOMA-IR adds to OGTT/A1C in choosing prevention",
+   "type": "evidence",
+   "effort": "medium",
+   "basis": "No insulin test in ADA Rec 3.7 as read; cohorts title-level."
+  },
+  {
+   "row": 48,
+   "missing_piece": "Agreed glucose and insulin criteria for reactive hypoglycaemia, validated in a multi-centre cohort",
+   "type": "evidence",
+   "effort": "medium",
+   "basis": "Authors of both studies set their own cut-offs; no standardized test."
+  }
+ ],
+ "tiers": [
+  {
+   "row": 8,
+   "tier": "far",
+   "reason": "Trial endpoint only; routine-care use sits in row 29."
+  },
+  {
+   "row": 28,
+   "tier": "far",
+   "reason": "A caution on interpretation with unvalidated corrections and no guideline."
+  },
+  {
+   "row": 35,
+   "tier": "far",
+   "reason": "No decision attached and the evidence is unread at abstract level."
+  },
+  {
+   "row": 45,
+   "tier": "far",
+   "reason": "No insulin test in the guidance read; the evidence is unread at abstract level."
+  },
+  {
+   "row": 48,
+   "tier": "far",
+   "reason": "No accepted criteria, insulin not used in diagnosis, prevalence unknown."
+  }
+ ],
+ "settings": [
+  {
+   "row": 8,
+   "setting": "specialist outpatient"
+  },
+  {
+   "row": 28,
+   "setting": "specialist outpatient"
+  },
+  {
+   "row": 35,
+   "setting": "routine care"
+  },
+  {
+   "row": 45,
+   "setting": "routine care"
+  },
+  {
+   "row": 48,
+   "setting": "specialist outpatient"
+  }
+ ],
+ "anchor_issues": [
+  "D2 asks for evidence of decision impact; for row 8 endpoint-validity evidence does not fit the anchors, scored 2 by judgement.",
+  "D7 for a trial endpoint (row 8) and a caution (row 28): 'patients in whom the situation arises' was read as trial participants and patients where the test would be interpreted."
+ ],
+ "assumptions": [
+  "Row 35 scored for part (b) first-trimester HOMA-IR; part (a) GCK is glucose-based.",
+  "Rows 35 and 45: D2 left null because only titles were in the files; abstracts were not fetched to keep the screen cheap.",
+  "US births about 3.5 million a year derived from 31.8 million over 2014-2022 (PMID 42728719); new diabetes diagnoses 1.4 million a year is [recall]."
+ ],
+ "searches": [
+  "pubmed_search: type 1 diabetes incidence United States adults and youth",
+  "pubmed_search: chronic kidney disease prevalence diabetes United States eGFR",
+  "pubmed_search: gestational diabetes prevalence United States births",
+  "pubmed_search: postpartum diabetes screening women with gestational diabetes United States",
+  "pubmed_search: postprandial hypoglycemia prevalence non-diabetic adults (all --max 6 --since 2015)",
+  "watch_fetch --abstracts 42728719,42736589"
+ ]
+}
