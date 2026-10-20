@@ -42,37 +42,37 @@ Index = mean of the screening scores (decision change, evidence, guideline statu
 
 | Tier | Row | Use | Status in list | Index | Composite | Dimensions scored | Patients per year | Missing piece (type, effort) |
 |---|---|---|---|---|---|---|---|---|
-| viable now | 1 | Adult with hypoglycaemia (Whipple's triad): insulino | Established | 0.77 | - | 5/9 | 10k-100k | Prospective accuracy data for the thresholds with current assays (evidence, medium) |
-| viable now | 4 | Infant or child with persistent hypoglycaemia (conge | Established | 0.73 | - | 5/9 | 1k-10k | Sensitive paediatric insulin assay standardisation and cutoffs (assay, medium) |
-| viable now | 29 | Children/adolescents, recently diagnosed (within 8 w | Established | 0.73 | - | 5/9 | 1k-10k | Clinical-outcome confirmation of benefit and guideline endorsement of  (evidence, large) |
-| viable now | 6 | Diabetes classification: T1D, T2D, LADA | Established | 0.71 | - | 5/9 | 100k-1M | Prospective validation that C-peptide-guided treatment change improves (evidence, medium) |
-| viable now | 2 | Suspected factitious or exogenous insulin hypoglycae | Established | 0.63 | - | 5/9 | 1k-10k | Accuracy data and analogue-detecting assay performance for the high in (evidence, small) |
-| viable now | 24 | Child older than 2 years with new hyperinsulinaemic  | Established | 0.54 | - | 5/9 | 100-1k | Registry data on diagnostic yield in children over 2 years (evidence, medium) |
+| viable now | 1 | Adult with hypoglycaemia: insulinoma vs other causes | Established | 0.77 | - | 5/9 | 10k-100k | Prospective accuracy data for the thresholds with current assays (evidence, medium) |
+| viable now | 4 | Infant or child with persistent hypoglycaemia | Established | 0.73 | - | 5/9 | 1k-10k | Sensitive paediatric insulin assay standardisation and cutoffs (assay, medium) |
+| viable now | 29 | Children/adolescents, recently diagnosed Stage 3 T1D: selecting for teplizumab | Established | 0.73 | - | 5/9 | 1k-10k | Clinical-outcome confirmation of benefit and guideline endorsement of Stage 3 use (evidence, large) |
+| viable now | 6 | Diabetes classification: T1D, T2D, LADA | Established | 0.71 | - | 5/9 | 100k-1M | Prospective validation that C-peptide-guided treatment change improves outcomes (evidence, medium) |
+| viable now | 2 | Suspected factitious or exogenous insulin hypoglycaemia | Established | 0.63 | - | 5/9 | 1k-10k | Accuracy data and analogue-detecting assay performance for the high insulin/low C-peptide pattern (evidence, small) |
+| viable now | 24 | Child older than 2 years with new hyperinsulinaemic hypoglycaemia; MEN1... | Established | 0.54 | - | 5/9 | 100-1k | Registry data on diagnostic yield in children over 2 years (evidence, medium) |
 | viable now | 10 | Islet or pancreas transplant graft function | Established | 0.53 | - | 5/9 | 1k-10k | Igls 2.0 with agreed numeric C-peptide thresholds (guideline, small) |
-| close | 31 | Adults clinically T1D >=3 years, or anyone on insuli | Established | 0.71 | - | 5/9 | 100k-1M | Prospective cohort showing C-peptide thresholds predict safe insulin d (evidence, medium) |
-| close | 7 | Choosing who gets genetic testing for MODY | Established | 0.62 | - | 5/9 | 10k-100k | Prospective validation of the combined triage pathway PPV in US-releva (evidence, medium) |
-| close | 13 | Stroke or TIA with prediabetes/IR: pioglitazone sele | Limited | 0.61 | - | 5/9 | 100k-1M | An IRIS reanalysis or trial showing benefit differs by HOMA-IR stratum (evidence, small) |
-| close | 3 | Sulfonylurea or meglitinide hypoglycaemia | Established | 0.58 | - | 5/9 | 1k-10k | Evidence on added value of insulin/C-peptide over drug screen alone, a (evidence, small) |
-| close | 5 | Hypoglycaemia after bariatric surgery (also fundopli | Limited | 0.57 | - | 5/9 | 10k-100k | A validated insulin (or C-peptide) cutoff during symptomatic nadir aga (evidence, medium) |
-| close | 32 | Adults with DKA but not classic T1D: ketosis-prone d | Limited | 0.57 | - | 5/9 | 10k-100k | Consensus or guideline statement endorsing post-DKA C-peptide (with ti (guideline, medium) |
-| close | 22 | Insulinoma with negative imaging; MEN1; suspected ad | Established | 0.54 | - | 5/9 | 100-1k | Multicentre series with concordance to surgical findings, compared wit (evidence, medium) |
-| close | 23 | Insulinoma presenting with postprandial symptoms onl | Limited | 0.49 | - | 5/9 | 100-1k | Diagnostic accuracy series of OGTT or mixed-meal insulin/glucose in su (evidence, medium) |
-| close | 33 | Children/adolescents, diabetes >~2 years, suspected  | Limited | 0.48 | - | 5/9 | 1k-10k | Multi-centre validation of UCPCR/post-meal C-peptide cut-offs in a US  (evidence, medium) |
-| close | 47 | Slowly progressive type 1 diabetes (SPIDDM) | Limited | 0.47 | - | 5/9 | 10k-100k | External validation of the 0.6 ng/mL cut-off against insulin requireme (evidence, small) |
-| close | 49 | Autoantibody-positive relatives (stage 1 or 2 type 1 | Limited | 0.43 | - | 5/9 | 1k-10k | External validation of Index60 or C-peptide thresholds in independent  (evidence, medium) |
-| far | 14 | Suspected MASLD without T2D | Limited | 0.50 | - | 5/9 | >1M | Evidence that insulin-based testing changes MASLD management, and stan (evidence, medium) |
-| far | 9 | Pancreatogenic (type 3c) diabetes, post-pancreatitis | Limited | 0.47 | - | 5/9 | 10k-100k | A C-peptide cutoff that separates type 3c from T2D, validated, and a c (evidence, medium) |
-| far | 28 | C-peptide interpretation in kidney disease (diabetes | Research-only | 0.46 | - | 5/9 | 100k-1M | Validated eGFR-adjusted C-peptide or UCPCR cutoffs in CKD (evidence, medium) |
-| far | 12 | Severe or syndromic IR: genetic IR syndromes, type B | Limited | 0.44 | - | 5/9 | 100-1k | A US-validated insulin threshold with an assay-specific cutoff for sev (evidence, medium) |
-| far | 21 | Non-islet-cell tumour hypoglycaemia (NICTH) | Limited | 0.44 | - | 5/9 | 100-1k | A guideline or review statement that places insulin and C-peptide supp (guideline, small) |
-| far | 46 | Fulminant type 1 diabetes: ketoacidosis soon after h | Limited | 0.44 | - | 5/9 | 100-1k | Accuracy and outcome data for the C-peptide criterion outside Japan, a (evidence, medium) |
-| far | 35 | Pregnancy/GDM | Research-only for | 0.44 | - | 4/9 | >1M | Prospective study showing first-trimester HOMA-IR adds to clinical ris (evidence, medium) |
-| far | 20 | Adult with hyperinsulinaemic hypoglycaemia and insul | Limited | 0.40 | - | 5/9 | <100 | Guideline or consensus text naming insulin plus antibody/PEG testing i (guideline, medium) |
-| far | 45 | Prior gestational diabetes | Research-only | 0.39 | - | 4/9 | 100k-1M | Study showing postpartum insulin or HOMA-IR adds to OGTT/A1C in choosi (evidence, medium) |
-| far | 11 | Bariatric surgery: predicting diabetes remission | Limited | 0.37 | - | 5/9 | 10k-100k | A study showing C-peptide adds to duration and BMI in remission predic (evidence, small) |
-| far | 8 | Residual beta-cell function in T1D: trial endpoints | Research-only | 0.33 | - | 5/9 | 1k-10k | Regulatory or consensus statement that an MMTT C-peptide change is an  (guideline, medium) |
-| far | 25 | Infant with spuriously high insulin from maternal in | Limited | 0.30 | - | 5/9 | <100 | Case series quantifying how often infant insulin immunoassay results a (evidence, medium) |
-| far | 27 | Post-pancreatectomy/TPIAT: beta-cell reserve before  | Limited | 0.29 | - | 5/9 | 100-1k | A pre-operative C-peptide threshold predicting insulin independence af (evidence, medium) |
-| far | 48 | Non-diabetic adult with suspected reactive (idiopath | Research-only | 0.25 | - | 4/9 | - | Agreed glucose and insulin criteria for reactive hypoglycaemia, valida (evidence, medium) |
+| close | 31 | Adults clinically T1D >=3 years, or anyone on insulin with doubtful type... | Established | 0.71 | - | 5/9 | 100k-1M | Prospective cohort showing C-peptide thresholds predict safe insulin de-escalation in T2D (evidence, medium) |
+| close | 7 | Choosing who gets genetic testing for MODY | Established | 0.62 | - | 5/9 | 10k-100k | Prospective validation of the combined triage pathway PPV in US-relevant populations (evidence, medium) |
+| close | 13 | Stroke or TIA with prediabetes/IR: pioglitazone selection | Limited | 0.61 | - | 5/9 | 100k-1M | An IRIS reanalysis or trial showing benefit differs by HOMA-IR stratum, plus an assay-standard statement (evidence, small) |
+| close | 3 | Sulfonylurea or meglitinide hypoglycaemia | Established | 0.58 | - | 5/9 | 1k-10k | Evidence on added value of insulin/C-peptide over drug screen alone, and screen coverage of newer agents (evidence, small) |
+| close | 5 | Hypoglycaemia after bariatric surgery | Limited | 0.57 | - | 5/9 | 10k-100k | A validated insulin (or C-peptide) cutoff during symptomatic nadir against a CGM or MMTT reference (evidence, medium) |
+| close | 32 | Adults with DKA but not classic T1D: ketosis-prone diabetes | Limited | 0.57 | - | 5/9 | 10k-100k | Consensus or guideline statement endorsing post-DKA C-peptide (with timing) for deciding insulin withdrawal, with a US multi-ethnic cohort validation (guideline, medium) |
+| close | 22 | Insulinoma with negative imaging; MEN1; suspected adult nesidioblastosis | Established | 0.54 | - | 5/9 | 100-1k | Multicentre series with concordance to surgical findings, compared with modern imaging (evidence, medium) |
+| close | 23 | Insulinoma presenting with postprandial symptoms only | Limited | 0.49 | - | 5/9 | 100-1k | Diagnostic accuracy series of OGTT or mixed-meal insulin/glucose in surgically confirmed insulinoma with postprandial-only presentation (evidence, medium) |
+| close | 33 | Children/adolescents, diabetes >~2 years, suspected non-T1D | Limited | 0.48 | - | 5/9 | 1k-10k | Multi-centre validation of UCPCR/post-meal C-peptide cut-offs in a US paediatric population, then inclusion in a paediatric guideline (evidence, medium) |
+| close | 47 | Slowly progressive type 1 diabetes | Limited | 0.47 | - | 5/9 | 10k-100k | External validation of the 0.6 ng/mL cut-off against insulin requirement in a non-Japanese cohort (existing LADA cohorts) (evidence, small) |
+| close | 49 | Autoantibody-positive relatives: individual progression risk | Limited | 0.43 | - | 5/9 | 1k-10k | External validation of Index60 or C-peptide thresholds in independent cohorts and a guideline line on monitoring (evidence, medium) |
+| far | 14 | Suspected MASLD without T2D | Limited | 0.50 | - | 5/9 | >1M | Evidence that insulin-based testing changes MASLD management, and standardised assays (evidence, medium) |
+| far | 9 | Pancreatogenic diabetes, post-pancreatitis or pancreatectomy | Limited | 0.47 | - | 5/9 | 10k-100k | A C-peptide cutoff that separates type 3c from T2D, validated, and a consensus statement that adopts it (evidence, medium) |
+| far | 28 | C-peptide interpretation in kidney disease | Research-only | 0.46 | - | 5/9 | 100k-1M | Validated eGFR-adjusted C-peptide or UCPCR cutoffs in CKD (evidence, medium) |
+| far | 12 | Severe or syndromic IR: genetic IR syndromes, type B IR | Limited | 0.44 | - | 5/9 | 100-1k | A US-validated insulin threshold with an assay-specific cutoff for severe-IR work-up (evidence, medium) |
+| far | 21 | Non-islet-cell tumour hypoglycaemia | Limited | 0.44 | - | 5/9 | 100-1k | A guideline or review statement that places insulin and C-peptide suppression plus IGF-II in a defined NICTH work-up (guideline, small) |
+| far | 46 | Fulminant type 1 diabetes: ketoacidosis soon after hyperglycaemic symptoms... | Limited | 0.44 | - | 5/9 | 100-1k | Accuracy and outcome data for the C-peptide criterion outside Japan, and a Western consensus adoption (evidence, medium) |
+| far | 35 | Pregnancy/GDM | Research-only for | 0.44 | - | 4/9 | >1M | Prospective study showing first-trimester HOMA-IR adds to clinical risk factors and changes management (evidence, medium) |
+| far | 20 | Adult with hyperinsulinaemic hypoglycaemia and insulin autoantibodies: insulin... | Limited | 0.40 | - | 5/9 | <100 | Guideline or consensus text naming insulin plus antibody/PEG testing in the hypoglycaemia work-up, or a diagnostic case series with defined cut-offs (guideline, medium) |
+| far | 45 | Prior gestational diabetes | Research-only | 0.39 | - | 4/9 | 100k-1M | Study showing postpartum insulin or HOMA-IR adds to OGTT/A1C in choosing prevention (evidence, medium) |
+| far | 11 | Bariatric surgery: predicting diabetes remission | Limited | 0.37 | - | 5/9 | 10k-100k | A study showing C-peptide adds to duration and BMI in remission prediction (evidence, small) |
+| far | 8 | Residual beta-cell function in T1D: trial endpoints | Research-only | 0.33 | - | 5/9 | 1k-10k | Regulatory or consensus statement that an MMTT C-peptide change is an accepted surrogate for clinical benefit, plus a care-use rule (guideline, medium) |
+| far | 25 | Infant with spuriously high insulin from maternal insulin antibodies or... | Limited | 0.30 | - | 5/9 | <100 | Case series quantifying how often infant insulin immunoassay results are antibody-affected and the effect on management (evidence, medium) |
+| far | 27 | Post-pancreatectomy/TPIAT: beta-cell reserve before and graft function after... | Limited | 0.29 | - | 5/9 | 100-1k | A pre-operative C-peptide threshold predicting insulin independence after TPIAT (evidence, medium) |
+| far | 48 | Non-diabetic adult with suspected reactive hypoglycaemia, no gastric surgery | Research-only | 0.25 | - | 4/9 | - | Agreed glucose and insulin criteria for reactive hypoglycaemia, validated in a multi-centre cohort (evidence, medium) |
 
 <!-- SCORECARD:END -->

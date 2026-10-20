@@ -28,6 +28,15 @@ BIN = {0: "<100", 1: "100-1k", 2: "1k-10k", 3: "10k-100k", 4: "100k-1M", 5: ">1M
 ORDER = {"viable now": 0, "close": 1, "far": 2, None: 3}
 
 
+def clip(text, n):
+    """Shorten at a word boundary (never mid-word) and mark the cut."""
+    text = " ".join(text.split())
+    if len(text) <= n:
+        return text
+    cut = text[:n].rsplit(" ", 1)[0].rstrip(",;: ")
+    return cut + "..."
+
+
 def use_names(root):
     names = {}
     f = Path(root) / "usecases-verified.md"
@@ -37,8 +46,8 @@ def use_names(root):
             if m:
                 c = [x.strip() for x in ln.strip().strip("|").split("|")]
                 if len(c) >= 6:
-                    name = re.sub(r"\s*\((skeptic|H|C|M)[^)]*\)", "", c[1])
-                    names[int(c[0])] = (name[:52], c[5].split(" (")[0].split(",")[0][:22])
+                    name = re.sub(r"\s*\([^)]*\)", "", c[1])
+                    names[int(c[0])] = (clip(name, 80), c[5].split(" (")[0].split(",")[0][:22])
     return names
 
 
@@ -56,7 +65,7 @@ def load(root):
         for t in j.get("tiers", []) or []:
             tier[t["row"]] = t["tier"]
         for p in j.get("path_to_viability", []) or []:
-            pv[p["row"]] = f'{p["missing_piece"][:70]} ({p["type"]}, {p["effort"]})'
+            pv[p["row"]] = f'{clip(p["missing_piece"], 150)} ({p["type"]}, {p["effort"]})'
     comp = {}
     rk = d / "ranking.json"
     if rk.exists():

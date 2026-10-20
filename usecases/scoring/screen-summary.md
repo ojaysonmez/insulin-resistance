@@ -8,31 +8,31 @@ Index = mean of D1, D2, D3, D7 and stakes rescaled to 0-1, nulls skipped. D7 val
 | viable now | 4 | 0.73 | 3 | 3 | 3 | 2 | 4 | Sensitive paediatric insulin assay standardisation and cutoffs (assay, medium) |
 | viable now | 29 | 0.73 | 4 | 3 | 4 | 2 | 2 | Clinical-outcome confirmation of benefit and guideline endorsement of Stage 3 use (evidence, large) |
 | viable now | 6 | 0.71 | 3 | 3 | 3 | 4 | 2 | Prospective validation that C-peptide-guided treatment change improves outcomes (evidence, medium) |
-| viable now | 2 | 0.63 | 3 | 2 | 3 | 2 | 3 | Accuracy data and analogue-detecting assay performance for the high insulin/low C-peptide  (evidence, small) |
+| viable now | 2 | 0.63 | 3 | 2 | 3 | 2 | 3 | Accuracy data and analogue-detecting assay performance for the high insulin/low C-peptide pattern (evidence, small) |
 | viable now | 24 | 0.54 | 2 | 2 | 3 | 1 | 3 | Registry data on diagnostic yield in children over 2 years (evidence, medium) |
 | viable now | 10 | 0.53 | 2 | 2 | 3 | 2 | 2 | Igls 2.0 with agreed numeric C-peptide thresholds (guideline, small) |
 | close | 31 | 0.71 | 3 | 2 | 3 | 4 | 3 | Prospective cohort showing C-peptide thresholds predict safe insulin de-escalation in T2D (evidence, medium) |
 | close | 7 | 0.62 | 3 | 2 | 3 | 3 | 2 | Prospective validation of the combined triage pathway PPV in US-relevant populations (evidence, medium) |
-| close | 13 | 0.61 | 2 | 2 | 2 | 4 | 3 | An IRIS reanalysis or trial showing benefit differs by HOMA-IR stratum, plus an assay-stan (evidence, small) |
-| close | 3 | 0.58 | 2 | 2 | 3 | 2 | 3 | Evidence on added value of insulin/C-peptide over drug screen alone, and screen coverage o (evidence, small) |
-| close | 5 | 0.57 | 2 | 2 | 2 | 3 | 3 | A validated insulin (or C-peptide) cutoff during symptomatic nadir against a CGM or MMTT r (evidence, medium) |
-| close | 32 | 0.57 | 3 | 2 | 1 | 3 | 3 | Consensus or guideline statement endorsing post-DKA C-peptide (with timing) for deciding i (guideline, medium) |
+| close | 13 | 0.61 | 2 | 2 | 2 | 4 | 3 | An IRIS reanalysis or trial showing benefit differs by HOMA-IR stratum, plus an assay-standard statement (evidence, small) |
+| close | 3 | 0.58 | 2 | 2 | 3 | 2 | 3 | Evidence on added value of insulin/C-peptide over drug screen alone, and screen coverage of newer agents (evidence, small) |
+| close | 5 | 0.57 | 2 | 2 | 2 | 3 | 3 | A validated insulin (or C-peptide) cutoff during symptomatic nadir against a CGM or MMTT reference (evidence, medium) |
+| close | 32 | 0.57 | 3 | 2 | 1 | 3 | 3 | Consensus or guideline statement endorsing post-DKA C-peptide (with timing) for deciding insulin withdrawal, with a US multi-ethnic cohort validation (guideline, medium) |
 | close | 22 | 0.54 | 3 | 2 | 2 | 1 | 3 | Multicentre series with concordance to surgical findings, compared with modern imaging (evidence, medium) |
-| close | 23 | 0.49 | 3 | 1 | 2 | 1 | 3 | Diagnostic accuracy series of OGTT or mixed-meal insulin/glucose in surgically confirmed i (evidence, medium) |
-| close | 33 | 0.48 | 3 | 2 | 1 | 2 | 2 | Multi-centre validation of UCPCR/post-meal C-peptide cut-offs in a US paediatric populatio (evidence, medium) |
-| close | 47 | 0.47 | 2 | 1 | 2 | 3 | 2 | External validation of the 0.6 ng/mL cut-off against insulin requirement in a non-Japanese (evidence, small) |
-| close | 49 | 0.43 | 1 | 2 | 1 | 2 | 3 | External validation of Index60 or C-peptide thresholds in independent cohorts and a guidel (evidence, medium) |
+| close | 23 | 0.49 | 3 | 1 | 2 | 1 | 3 | Diagnostic accuracy series of OGTT or mixed-meal insulin/glucose in surgically confirmed insulinoma with postprandial-only presentation (evidence, medium) |
+| close | 33 | 0.48 | 3 | 2 | 1 | 2 | 2 | Multi-centre validation of UCPCR/post-meal C-peptide cut-offs in a US paediatric population, then inclusion in a paediatric guideline (evidence, medium) |
+| close | 47 | 0.47 | 2 | 1 | 2 | 3 | 2 | External validation of the 0.6 ng/mL cut-off against insulin requirement in a non-Japanese cohort (existing LADA cohorts) (evidence, small) |
+| close | 49 | 0.43 | 1 | 2 | 1 | 2 | 3 | External validation of Index60 or C-peptide thresholds in independent cohorts and a guideline line on monitoring (evidence, medium) |
 | far | 14 | 0.50 | 1 | 1 | 2 | 5 | 2 | Evidence that insulin-based testing changes MASLD management, and standardised assays (evidence, medium) |
-| far | 9 | 0.47 | 2 | 2 | 1 | 3 | 2 | A C-peptide cutoff that separates type 3c from T2D, validated, and a consensus statement t (evidence, medium) |
+| far | 9 | 0.47 | 2 | 2 | 1 | 3 | 2 | A C-peptide cutoff that separates type 3c from T2D, validated, and a consensus statement that adopts it (evidence, medium) |
 | far | 28 | 0.46 | 1 | 2 | 1 | 4 | 2 | Validated eGFR-adjusted C-peptide or UCPCR cutoffs in CKD (evidence, medium) |
 | far | 12 | 0.44 | 3 | 1 | 1 | 1 | 3 | A US-validated insulin threshold with an assay-specific cutoff for severe-IR work-up (evidence, medium) |
-| far | 21 | 0.44 | 2 | 1 | 2 | 1 | 3 | A guideline or review statement that places insulin and C-peptide suppression plus IGF-II  (guideline, small) |
-| far | 46 | 0.44 | 3 | 1 | 2 | 1 | 2 | Accuracy and outcome data for the C-peptide criterion outside Japan, and a Western consens (evidence, medium) |
-| far | 35 | 0.44 | 0 | None | 1 | 5 | 2 | Prospective study showing first-trimester HOMA-IR adds to clinical risk factors and change (evidence, medium) |
-| far | 20 | 0.40 | 3 | 1 | 1 | 0 | 3 | Guideline or consensus text naming insulin plus antibody/PEG testing in the hypoglycaemia  (guideline, medium) |
+| far | 21 | 0.44 | 2 | 1 | 2 | 1 | 3 | A guideline or review statement that places insulin and C-peptide suppression plus IGF-II in a defined NICTH work-up (guideline, small) |
+| far | 46 | 0.44 | 3 | 1 | 2 | 1 | 2 | Accuracy and outcome data for the C-peptide criterion outside Japan, and a Western consensus adoption (evidence, medium) |
+| far | 35 | 0.44 | 0 | None | 1 | 5 | 2 | Prospective study showing first-trimester HOMA-IR adds to clinical risk factors and changes management (evidence, medium) |
+| far | 20 | 0.40 | 3 | 1 | 1 | 0 | 3 | Guideline or consensus text naming insulin plus antibody/PEG testing in the hypoglycaemia work-up, or a diagnostic case series with defined cut-offs (guideline, medium) |
 | far | 45 | 0.39 | 0 | None | 1 | 4 | 2 | Study showing postpartum insulin or HOMA-IR adds to OGTT/A1C in choosing prevention (evidence, medium) |
 | far | 11 | 0.37 | 1 | 2 | 1 | 3 | 1 | A study showing C-peptide adds to duration and BMI in remission prediction (evidence, small) |
-| far | 8 | 0.33 | 1 | 2 | 1 | 2 | 1 | Regulatory or consensus statement that an MMTT C-peptide change is an accepted surrogate f (guideline, medium) |
-| far | 25 | 0.30 | 2 | 1 | 1 | 0 | 2 | Case series quantifying how often infant insulin immunoassay results are antibody-affected (evidence, medium) |
+| far | 8 | 0.33 | 1 | 2 | 1 | 2 | 1 | Regulatory or consensus statement that an MMTT C-peptide change is an accepted surrogate for clinical benefit, plus a care-use rule (guideline, medium) |
+| far | 25 | 0.30 | 2 | 1 | 1 | 0 | 2 | Case series quantifying how often infant insulin immunoassay results are antibody-affected and the effect on management (evidence, medium) |
 | far | 27 | 0.29 | 1 | 1 | 1 | 1 | 2 | A pre-operative C-peptide threshold predicting insulin independence after TPIAT (evidence, medium) |
-| far | 48 | 0.25 | 1 | 1 | 1 | None | 1 | Agreed glucose and insulin criteria for reactive hypoglycaemia, validated in a multi-centr (evidence, medium) |
+| far | 48 | 0.25 | 1 | 1 | 1 | None | 1 | Agreed glucose and insulin criteria for reactive hypoglycaemia, validated in a multi-centre cohort (evidence, medium) |

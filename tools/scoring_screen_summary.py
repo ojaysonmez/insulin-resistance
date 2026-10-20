@@ -19,6 +19,13 @@ SCALE = {"D1": 4, "D2": 4, "D3": 4, "D7": 5, "S": 4}
 ORDER = {"viable now": 0, "close": 1, "far": 2}
 
 
+def clip(text, n):
+    text = " ".join(text.split())
+    if len(text) <= n:
+        return text
+    return text[:n].rsplit(" ", 1)[0].rstrip(",;: ") + "..."
+
+
 def index(r):
     v = [r[d] / SCALE[d] for d in SCALE if r.get(d) is not None]
     return sum(v) / len(v) if v else 0.0
@@ -36,7 +43,7 @@ def main():
         for t in j.get("tiers", []):
             rows.setdefault(t["row"], {})["tier"] = t["tier"]
         for p in j.get("path_to_viability", []):
-            rows.setdefault(p["row"], {})["pv"] = f'{p["missing_piece"][:90]} ({p["type"]}, {p["effort"]})'
+            rows.setdefault(p["row"], {})["pv"] = f'{clip(p["missing_piece"], 150)} ({p["type"]}, {p["effort"]})'
     if not rows:
         print("no S*.json files found", file=sys.stderr)
         return 2
