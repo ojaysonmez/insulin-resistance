@@ -174,6 +174,8 @@ def main():
     ap.add_argument("--cache", default="tools/.citation-cache.json")
     ap.add_argument("--no-network", action="store_true", help="extract and cross-check from cache only")
     ap.add_argument("--max", type=int, default=0, help="limit identifiers checked (0 = all), for a dry run")
+    ap.add_argument("--refresh", action="store_true",
+                    help="ignore cached records for the identifiers checked and fetch them again (use for the update watch: a cached record never shows a retraction posted after it was cached)")
     args = ap.parse_args()
 
     where = {}      # ("pmid"|"doi", id) -> list of "file:line"
@@ -193,6 +195,13 @@ def main():
         all_pm, all_doi = all_pm[:args.max], all_doi[:args.max]
 
     cache = Cache(args.cache)
+    if args.refresh and not args.no_network:
+        for p in all_pm:
+            old = cache.data["pubmed"].pop(p, None)
+            if old and old.get("doi"):
+                cache.data["crossref"].pop(old["doi"], None)
+        for d in all_doi:
+            cache.data["crossref"].pop(d, None)
     delay = 0.12 if os.environ.get("NCBI_API_KEY") else 0.4
     pubmed, crossref = {}, {}
     if args.no_network:
