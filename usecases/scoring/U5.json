@@ -1,41 +1,208 @@
-{"unit":"U5","role":"primary care physician (ir-pcp)","scores":[
-{"row":6,"dimension":"D1","score":3,"reason":"A random C-peptide with concurrent glucose, in an insulin-treated person more than 3 years from diagnosis, determines classification and so whether insulin can be replaced or genetics sent. Autoantibodies are the primary test at diagnosis, so it is not a required step.","sources":["PMID 34590174 DOI 10.1007/s00125-021-05568-3 full text (via usecases-verified.md row 6, skeptic-verified)","PMID 23413806 DOI 10.1111/dme.12159 full text (via row 6)","PMID 41358893 DOI 10.2337/dc26-s002 full text (via row 6)"],"confidence":"medium","origin":"project files"},
-{"row":6,"dimension":"D5","score":3,"reason":"A random C-peptide is a routine laboratory test with no timed protocol that a primary care physician can order in a stable insulin-treated patient with doubtful type. Interpretation rules (greater than 3 years, renal function, glucose above 4 mmol/L) and thresholds that differ between sources need care, and many unclear cases go to an endocrinologist.","sources":["PMID 34590174 DOI 10.1007/s00125-021-05568-3 full text (via row 6)","PMID 23413806 DOI 10.1111/dme.12159 full text (via row 6)"],"confidence":"medium","origin":"project files"},
-{"row":6,"dimension":"D6","score":3,"reason":"One blood draw, no fasting and no provocation, so burden is low. A false-low value (renal impairment, low glucose, early after diagnosis) could wrongly label someone insulin-deficient. A false-high value could lead to insulin withdrawal in a person with T1D, so the result must be read against the caveats.","sources":["PMID 34590174 DOI 10.1007/s00125-021-05568-3 full text (via row 6 caveats)","PMID 23413806 DOI 10.1111/dme.12159 full text (via row 6)"],"confidence":"medium","origin":"project files"},
-{"row":6,"dimension":"S","score":3,"reason":"Misclassifying insulin-requiring diabetes as T2D and withdrawing insulin risks ketoacidosis and hospitalisation. Missing a MODY or insulin-independent T2D mostly costs unnecessary injections, so the typical harm is serious but not usually fatal.","sources":["PMID 34590174 DOI 10.1007/s00125-021-05568-3 full text (via row 6; the 11% reclassified figure)","clinical judgement"],"confidence":"low","origin":"project files"},
-{"row":5,"dimension":"D1","score":2,"reason":"Insulin and glucose at the nadir support the diagnosis of postprandial hyperinsulinaemic hypoglycaemia and help exclude insulinoma, drugs and exogenous insulin. Management (diet, acarbose, specialist referral) would start from documented low glucose with symptoms alone, and no accepted insulin threshold exists.","sources":["PMID 30101281 DOI 10.1210/jc.2018-00528 abstract","PMID 34802853 DOI 10.1016/j.numecd.2021.08.047 abstract","usecases-verified.md row 5"],"confidence":"medium","origin":"both"},
-{"row":5,"dimension":"D5","score":1,"reason":"A reliable result needs insulin and glucose drawn at the symptomatic nadir or during a supervised mixed-meal test. That is a specialist protocol, and in primary care a spontaneous sample is rarely captured. Patients are usually referred to endocrinology.","sources":["PMID 30101281 DOI 10.1210/jc.2018-00528 abstract","usecases-verified.md row 5 (PES 2015 full text)"],"confidence":"medium","origin":"both"},
-{"row":5,"dimension":"D6","score":2,"reason":"A mixed-meal test deliberately provokes symptomatic hypoglycaemia in patients who may have neuroglycopenia and unawareness, so supervision is needed. Without an accepted threshold a false-positive or false-negative insulin value can mislead, but it rarely triggers harmful treatment.","sources":["PMID 30101281 DOI 10.1210/jc.2018-00528 abstract (severity, unawareness)","usecases-verified.md row 5"],"confidence":"low","origin":"both"},
-{"row":5,"dimension":"S","score":3,"reason":"Undiagnosed post-bariatric hypoglycaemia causes seizures, loss of consciousness, falls, road accidents and unawareness. Missing an insulinoma or exogenous insulin adds to that. Insulin is only one part of getting the right decision, so confidence is low.","sources":["PMID 30101281 DOI 10.1210/jc.2018-00528 abstract","PMID 34802853 DOI 10.1016/j.numecd.2021.08.047 abstract (54.3% CGM hypoglycaemia)"],"confidence":"low","origin":"both"},
-{"row":13,"dimension":"D1","score":2,"reason":"A HOMA-IR above 3.0 (fasting insulin with glucose) would choose among accepted options: pioglitazone for secondary stroke prevention in prediabetes. Both guidelines say considered and neither names an assay or threshold. IRIS never tested whether a lower HOMA-IR means no benefit, and a clinician can treat on stroke plus prediabetes alone.","sources":["PMID 26886418 DOI 10.1056/nejmoa1506930 abstract (HOMA-IR above 3.0 entry criterion) and full text via PMC4887756 (via row 13)","ADA Standards of Care 2026 section 3, Rec 3.13 (via row 13 skeptic reading)","PMID 35963508 DOI 10.1016/j.eprac.2022.08.002 AACE 2022 R 9.4 (via row 13)"],"confidence":"medium","origin":"both"},
-{"row":13,"dimension":"D5","score":2,"reason":"Patients are seen by neurology, post-stroke clinics or primary care, and the measure is a fasting insulin plus glucose with a calculation, which is not a routine panel. The fasting draw is practical but the assay is not standardised, IRIS used a central laboratory, and the result is rarely requested in practice.","sources":["PMID 26886418 DOI 10.1056/nejmoa1506930 full text via PMC4887756 (via row 13: central laboratories because insulin not standardised)"],"confidence":"low","origin":"project files"},
-{"row":13,"dimension":"D6","score":2,"reason":"The draw is low burden, but the result gates a drug with real harm (weight gain over 4.5 kg in 52% of the pioglitazone arm, oedema, fracture, heart failure risk). A false-positive value from an unstandardised assay exposes a patient to those effects. A false-negative withholds a drug with a 24% relative risk reduction.","sources":["PMID 26886418 DOI 10.1056/nejmoa1506930 abstract (HR 0.76; weight gain 52.2%)","usecases-verified.md row 13 (contraindications)"],"confidence":"medium","origin":"both"},
-{"row":13,"dimension":"S","score":3,"reason":"The outcome at stake is recurrent stroke or myocardial infarction (9.0% against 11.8% over 4.8 years in IRIS), which means permanent disability or death. Not having HOMA-IR would not usually prevent treatment, so confidence in this stakes score for the measurement itself is low.","sources":["PMID 26886418 DOI 10.1056/nejmoa1506930 abstract"],"confidence":"low","origin":"both"}
-],
-"path_to_viability":[
-{"row":6,"missing_piece":"One agreed C-peptide cut-off set and conditions of use (time since diagnosis, renal function, concurrent glucose) in a single US guideline, with outcome validation of insulin-withdrawal decisions","type":"guideline","effort":"medium","basis":"Holt 2021 and Jones 2013 give different thresholds (row 6 note); no study of decision outcomes was found in the screened records"},
-{"row":5,"missing_piece":"An accepted insulin or C-peptide threshold during a standardised mixed-meal test, validated against symptoms and CGM","type":"evidence","effort":"medium","basis":"Row 5 note: insulin level not diagnostic, no accepted threshold, no international consensus"},
-{"row":13,"missing_piece":"Analysis or trial showing whether pioglitazone benefit differs by baseline HOMA-IR, with a standardised insulin assay","type":"evidence","effort":"small","basis":"IRIS subgroup heterogeneity by HOMA-IR strata not stated (row 13); existing trial data could be reanalysed"}
-],
-"settings":[
-{"row":6,"setting":"routine care"},
-{"row":5,"setting":"specialist outpatient"},
-{"row":13,"setting":"routine care"}
-],
-"anchor_issues":[
-"Row 6 D1: determines classification (3) versus required step (4). Chose 3 because autoantibodies are the primary test at diagnosis and C-peptide is second line.",
-"Row 5 D1: the diagnosis is supported by insulin plus glucose, but treatment starts without it. Chose 2 (supports a diagnosis) rather than 3.",
-"Row 13 D1: IRIS used the measure as entry criterion, which could be read as eligibility criterion (4), but anchor 12 limits 4 to legal or regulatory requirements and guidelines do not require the measurement. Chose 2.",
-"Row 13 D5: no anchor for a fasting test that is routine to draw but not a standard panel and not standardised. Chose 2.",
-"D6 anchors mix patient burden and false-result consequences; where the two differ (rows 6 and 13) I scored the worse of the two within one point of the burden score.",
-"S is defined as the consequence of not having the information, but for rows 5 and 13 other information (glucose, clinical picture) covers most of the decision. I scored the harm of the wrong decision in that situation and marked confidence low."
-],
-"assumptions":[
-"Row 6 scored for random C-peptide in insulin-treated adults with uncertain type (the Holt 2021 situation), not for diabetes classification at diagnosis.",
-"Row 5 scored for insulin at symptomatic nadir or mixed-meal test (mixed-meal / post-load measure type); fasting measures were not used.",
-"Row 13 scored for fasting-based HOMA-IR (fasting insulin and glucose), the IRIS measure.",
-"Scores rest on the project's verified rows plus abstracts re-fetched for PMIDs 30101281, 34802853, 26886418, 34590174, 23413806, 35963508 and 41358893; full texts were not re-read, and full-text claims are marked via row.",
-"No new topic search was run; a search could change D5 and D6 for row 5 (use of CGM instead of timed insulin)."
-],
-"searches":["No PubMed topic searches run; 7 PMIDs fetched by tools/watch_fetch.py --abstracts (30101281, 34802853, 26886418, 34590174, 23413806, 35963508, 41358893). Negatives (for example no US primary-care workflow data found) are not found in the screened records because nothing beyond the project files was screened."]
+{
+ "unit": "U5",
+ "role": "primary care physician (ir-pcp)",
+ "scores": [
+  {
+   "row": 6,
+   "dimension": "D1",
+   "score": 4,
+   "reason": "A random C-peptide with concurrent glucose, in an insulin-treated person more than 3 years from diagnosis, determines classification and so whether insulin can be replaced or genetics sent. Autoantibodies are the primary test at diagnosis, so it is not a required step.",
+   "sources": [
+    "PMID 34590174 DOI 10.1007/s00125-021-05568-3 full text (via usecases-verified.md row 6, skeptic-verified)",
+    "PMID 23413806 DOI 10.1111/dme.12159 full text (via row 6)",
+    "PMID 41358893 DOI 10.2337/dc26-s002 full text (via row 6)"
+   ],
+   "confidence": "medium",
+   "origin": "project files",
+   "original_score": 3,
+   "correction": "Revised 2026-10-20 after the pilot skeptic review (U6). The decision scored is stopping or replacing insulin, the same decision as the corrected D3 (anchor 15: 4 if a guideline requires the result before that decision): ADA/EASD 2021 and ADA Standards 2026 say C-peptide must be measured before insulin discontinuation. For the classification decision alone (autoantibodies first) the result determines classification and other tests can substitute, which is 3. Stakes (S) were not changed: with the usual default action (continue insulin) the harm of deciding without the measurement is low, and the harm of stopping insulin without it is the case the requirement guards against. The choice of decision is the user's to confirm; the original score is kept."
+  },
+  {
+   "row": 6,
+   "dimension": "D5",
+   "score": 3,
+   "reason": "A random C-peptide is a routine laboratory test with no timed protocol that a primary care physician can order in a stable insulin-treated patient with doubtful type. Interpretation rules (greater than 3 years, renal function, glucose above 4 mmol/L) and thresholds that differ between sources need care, and many unclear cases go to an endocrinologist.",
+   "sources": [
+    "PMID 34590174 DOI 10.1007/s00125-021-05568-3 full text (via row 6)",
+    "PMID 23413806 DOI 10.1111/dme.12159 full text (via row 6)"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 6,
+   "dimension": "D6",
+   "score": 3,
+   "reason": "One blood draw, no fasting and no provocation, so burden is low. A false-low value (renal impairment, low glucose, early after diagnosis) could wrongly label someone insulin-deficient. A false-high value could lead to insulin withdrawal in a person with T1D, so the result must be read against the caveats.",
+   "sources": [
+    "PMID 34590174 DOI 10.1007/s00125-021-05568-3 full text (via row 6 caveats)",
+    "PMID 23413806 DOI 10.1111/dme.12159 full text (via row 6)"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 6,
+   "dimension": "S",
+   "score": 3,
+   "reason": "Misclassifying insulin-requiring diabetes as T2D and withdrawing insulin risks ketoacidosis and hospitalisation. Missing a MODY or insulin-independent T2D mostly costs unnecessary injections, so the typical harm is serious but not usually fatal.",
+   "sources": [
+    "PMID 34590174 DOI 10.1007/s00125-021-05568-3 full text (via row 6; the 11% reclassified figure)",
+    "clinical judgement"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 5,
+   "dimension": "D1",
+   "score": 2,
+   "reason": "Insulin and glucose at the nadir support the diagnosis of postprandial hyperinsulinaemic hypoglycaemia and help exclude insulinoma, drugs and exogenous insulin. Management (diet, acarbose, specialist referral) would start from documented low glucose with symptoms alone, and no accepted insulin threshold exists.",
+   "sources": [
+    "PMID 30101281 DOI 10.1210/jc.2018-00528 abstract",
+    "PMID 34802853 DOI 10.1016/j.numecd.2021.08.047 abstract",
+    "usecases-verified.md row 5"
+   ],
+   "confidence": "medium",
+   "origin": "both"
+  },
+  {
+   "row": 5,
+   "dimension": "D5",
+   "score": 1,
+   "reason": "A reliable result needs insulin and glucose drawn at the symptomatic nadir or during a supervised mixed-meal test. That is a specialist protocol, and in primary care a spontaneous sample is rarely captured. Patients are usually referred to endocrinology.",
+   "sources": [
+    "PMID 30101281 DOI 10.1210/jc.2018-00528 abstract",
+    "usecases-verified.md row 5 (PES 2015 full text)"
+   ],
+   "confidence": "medium",
+   "origin": "both"
+  },
+  {
+   "row": 5,
+   "dimension": "D6",
+   "score": 2,
+   "reason": "A mixed-meal test deliberately provokes symptomatic hypoglycaemia in patients who may have neuroglycopenia and unawareness, so supervision is needed. Without an accepted threshold a false-positive or false-negative insulin value can mislead, but it rarely triggers harmful treatment.",
+   "sources": [
+    "PMID 30101281 DOI 10.1210/jc.2018-00528 abstract (severity, unawareness)",
+    "usecases-verified.md row 5"
+   ],
+   "confidence": "low",
+   "origin": "both"
+  },
+  {
+   "row": 5,
+   "dimension": "S",
+   "score": 3,
+   "reason": "Undiagnosed post-bariatric hypoglycaemia causes seizures, loss of consciousness, falls, road accidents and unawareness. Missing an insulinoma or exogenous insulin adds to that. Insulin is only one part of getting the right decision, so confidence is low.",
+   "sources": [
+    "PMID 30101281 DOI 10.1210/jc.2018-00528 abstract",
+    "PMID 34802853 DOI 10.1016/j.numecd.2021.08.047 abstract (54.3% CGM hypoglycaemia)"
+   ],
+   "confidence": "low",
+   "origin": "both"
+  },
+  {
+   "row": 13,
+   "dimension": "D1",
+   "score": 2,
+   "reason": "A HOMA-IR above 3.0 (fasting insulin with glucose) would choose among accepted options: pioglitazone for secondary stroke prevention in prediabetes. Both guidelines say considered and neither names an assay or threshold. IRIS never tested whether a lower HOMA-IR means no benefit, and a clinician can treat on stroke plus prediabetes alone.",
+   "sources": [
+    "PMID 26886418 DOI 10.1056/nejmoa1506930 abstract (HOMA-IR above 3.0 entry criterion) and full text via PMC4887756 (via row 13)",
+    "ADA Standards of Care 2026 section 3, Rec 3.13 (via row 13 skeptic reading)",
+    "PMID 35963508 DOI 10.1016/j.eprac.2022.08.002 AACE 2022 R 9.4 (via row 13)"
+   ],
+   "confidence": "medium",
+   "origin": "both"
+  },
+  {
+   "row": 13,
+   "dimension": "D5",
+   "score": 2,
+   "reason": "Patients are seen by neurology, post-stroke clinics or primary care, and the measure is a fasting insulin plus glucose with a calculation, which is not a routine panel. The fasting draw is practical but the assay is not standardised, IRIS used a central laboratory, and the result is rarely requested in practice.",
+   "sources": [
+    "PMID 26886418 DOI 10.1056/nejmoa1506930 full text via PMC4887756 (via row 13: central laboratories because insulin not standardised)"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 13,
+   "dimension": "D6",
+   "score": 2,
+   "reason": "The draw is low burden, but the result gates a drug with real harm (weight gain over 4.5 kg in 52% of the pioglitazone arm, oedema, fracture, heart failure risk). A false-positive value from an unstandardised assay exposes a patient to those effects. A false-negative withholds a drug with a 24% relative risk reduction.",
+   "sources": [
+    "PMID 26886418 DOI 10.1056/nejmoa1506930 abstract (HR 0.76; weight gain 52.2%)",
+    "usecases-verified.md row 13 (contraindications)"
+   ],
+   "confidence": "medium",
+   "origin": "both"
+  },
+  {
+   "row": 13,
+   "dimension": "S",
+   "score": 3,
+   "reason": "The outcome at stake is recurrent stroke or myocardial infarction (9.0% against 11.8% over 4.8 years in IRIS), which means permanent disability or death. Not having HOMA-IR would not usually prevent treatment, so confidence in this stakes score for the measurement itself is low.",
+   "sources": [
+    "PMID 26886418 DOI 10.1056/nejmoa1506930 abstract"
+   ],
+   "confidence": "low",
+   "origin": "both"
+  }
+ ],
+ "path_to_viability": [
+  {
+   "row": 6,
+   "missing_piece": "One agreed C-peptide cut-off set and conditions of use (time since diagnosis, renal function, concurrent glucose) in a single US guideline, with outcome validation of insulin-withdrawal decisions",
+   "type": "guideline",
+   "effort": "medium",
+   "basis": "Holt 2021 and Jones 2013 give different thresholds (row 6 note); no study of decision outcomes was found in the screened records"
+  },
+  {
+   "row": 5,
+   "missing_piece": "An accepted insulin or C-peptide threshold during a standardised mixed-meal test, validated against symptoms and CGM",
+   "type": "evidence",
+   "effort": "medium",
+   "basis": "Row 5 note: insulin level not diagnostic, no accepted threshold, no international consensus"
+  },
+  {
+   "row": 13,
+   "missing_piece": "Analysis or trial showing whether pioglitazone benefit differs by baseline HOMA-IR, with a standardised insulin assay",
+   "type": "evidence",
+   "effort": "small",
+   "basis": "IRIS subgroup heterogeneity by HOMA-IR strata not stated (row 13); existing trial data could be reanalysed"
+  }
+ ],
+ "settings": [
+  {
+   "row": 6,
+   "setting": "routine care"
+  },
+  {
+   "row": 5,
+   "setting": "specialist outpatient"
+  },
+  {
+   "row": 13,
+   "setting": "routine care"
+  }
+ ],
+ "anchor_issues": [
+  "Row 6 D1: determines classification (3) versus required step (4). Chose 3 because autoantibodies are the primary test at diagnosis and C-peptide is second line.",
+  "Row 5 D1: the diagnosis is supported by insulin plus glucose, but treatment starts without it. Chose 2 (supports a diagnosis) rather than 3.",
+  "Row 13 D1: IRIS used the measure as entry criterion, which could be read as eligibility criterion (4), but anchor 12 limits 4 to legal or regulatory requirements and guidelines do not require the measurement. Chose 2.",
+  "Row 13 D5: no anchor for a fasting test that is routine to draw but not a standard panel and not standardised. Chose 2.",
+  "D6 anchors mix patient burden and false-result consequences; where the two differ (rows 6 and 13) I scored the worse of the two within one point of the burden score.",
+  "S is defined as the consequence of not having the information, but for rows 5 and 13 other information (glucose, clinical picture) covers most of the decision. I scored the harm of the wrong decision in that situation and marked confidence low."
+ ],
+ "assumptions": [
+  "Row 6 scored for random C-peptide in insulin-treated adults with uncertain type (the Holt 2021 situation), not for diabetes classification at diagnosis.",
+  "Row 5 scored for insulin at symptomatic nadir or mixed-meal test (mixed-meal / post-load measure type); fasting measures were not used.",
+  "Row 13 scored for fasting-based HOMA-IR (fasting insulin and glucose), the IRIS measure.",
+  "Scores rest on the project's verified rows plus abstracts re-fetched for PMIDs 30101281, 34802853, 26886418, 34590174, 23413806, 35963508 and 41358893; full texts were not re-read, and full-text claims are marked via row.",
+  "No new topic search was run; a search could change D5 and D6 for row 5 (use of CGM instead of timed insulin)."
+ ],
+ "searches": [
+  "No PubMed topic searches run; 7 PMIDs fetched by tools/watch_fetch.py --abstracts (30101281, 34802853, 26886418, 34590174, 23413806, 35963508, 41358893). Negatives (for example no US primary-care workflow data found) are not found in the screened records because nothing beyond the project files was screened."
+ ]
 }

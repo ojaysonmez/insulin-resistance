@@ -42,8 +42,8 @@ Index = mean of the screening scores (decision change, evidence, guideline statu
 
 | Tier | Row | Use | Status in list | Index | Composite | Dimensions scored | Patients per year | Missing piece (type, effort) |
 |---|---|---|---|---|---|---|---|---|
+| viable now | 6 | Diabetes classification: T1D, T2D, LADA | Established | 0.78 | 0.78 | 9/9 | 100k-1M | One agreed C-peptide cut-off set and conditions of use (time since diagnosis, renal function, concurrent glucose) in a single US guideline, with... (guideline, medium) |
 | viable now | 1 | Adult with hypoglycaemia: insulinoma vs other causes | Established | 0.77 | - | 5/9 | 10k-100k | Prospective accuracy data for the thresholds with current assays (evidence, medium) |
-| viable now | 6 | Diabetes classification: T1D, T2D, LADA | Established | 0.75 | 0.75 | 9/9 | 100k-1M | One agreed C-peptide cut-off set and conditions of use (time since diagnosis, renal function, concurrent glucose) in a single US guideline, with... (guideline, medium) |
 | viable now | 4 | Infant or child with persistent hypoglycaemia | Established | 0.73 | - | 5/9 | 1k-10k | Sensitive paediatric insulin assay standardisation and cutoffs (assay, medium) |
 | viable now | 29 | Children/adolescents, recently diagnosed Stage 3 T1D: selecting for teplizumab | Established | 0.73 | - | 5/9 | 1k-10k | Clinical-outcome confirmation of benefit and guideline endorsement of Stage 3 use (evidence, large) |
 | viable now | 2 | Suspected factitious or exogenous insulin hypoglycaemia | Established | 0.63 | - | 5/9 | 1k-10k | Accuracy data and analogue-detecting assay performance for the high insulin/low C-peptide pattern (evidence, small) |

@@ -18,8 +18,10 @@
     "PMID 23413806 DOI 10.1111/dme.12159 abstract (C-peptide more stable than thought; urine C-peptide:creatinine ratio option)",
     "PMID 34590174 DOI 10.1007/s00125-021-05568-3 abstract; thresholds and validity conditions via usecases-verified.md row 6"
    ],
-   "confidence": "medium",
-   "origin": "both"
+   "confidence": "low",
+   "origin": "both",
+   "original_confidence": "medium",
+   "correction": "Revised 2026-10-20 after the pilot skeptic review (U6). Score kept at 3, confidence lowered to low. The sentence that decision values are far from the cutoffs for most patients has no cited distribution and is withdrawn. The assay evidence is a Chinese survey (PMID 35177563: inter-system CV 24.5%, 5.7% after recalibration), not US platforms (anchor 20: non-US data, say so; under the strict reading of anchors 2 and 3 a 2 is arguable)."
   },
   {
    "row": 5,
@@ -51,7 +53,8 @@
     "usecases-verified.md row 13 (IRIS central laboratory statement, as read by the skeptic)"
    ],
    "confidence": "medium",
-   "origin": "both"
+   "origin": "both",
+   "correction": "Revised 2026-10-20 after the pilot skeptic review (U6). Score kept at 2. Primary support is the IRIS discussion (PMC4887756, verified by the skeptic): laboratories must adopt the IRIS assays or calibrate to them. The 11-assay HOMA-IR range (PMID 18535197) is reported with its limits: older assays; 12 normoglycaemic, 18 prediabetic and 67 type 2 diabetic subjects; no significant difference between assays in the prediabetes group (P=0.842), significant differences in the other groups (P=0.0007 and P<0.0001)."
   }
  ],
  "path_to_viability": [

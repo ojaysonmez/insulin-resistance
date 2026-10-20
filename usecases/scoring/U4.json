@@ -5,7 +5,7 @@
   {
    "row": 6,
    "dimension": "D1",
-   "score": 3,
+   "score": 4,
    "reason": "Random C-peptide with concurrent glucose, in insulin-treated people more than 3 years from diagnosis, decides whether insulin deficiency is absolute (below 80 pmol/L), whether insulin can be replaced (600 pmol/L or more), and whether to send MODY genetics. It determines classification and treatment but is not a required step: islet autoantibodies are the primary test at diagnosis. Measure type: C-peptide, random.",
    "sources": [
     "PMID 34590174 DOI 10.1007/s00125-021-05568-3 abstract (full text per usecases-verified.md row 6, skeptic-read)",
@@ -13,7 +13,9 @@
     "usecases-verified.md row 6 (Holt thresholds, 11% reclassified)"
    ],
    "confidence": "medium",
-   "origin": "both"
+   "origin": "both",
+   "original_score": 3,
+   "correction": "Revised 2026-10-20 after the pilot skeptic review (U6). The decision scored is stopping or replacing insulin, the same decision as the corrected D3 (anchor 15: 4 if a guideline requires the result before that decision): ADA/EASD 2021 and ADA Standards 2026 say C-peptide must be measured before insulin discontinuation. For the classification decision alone (autoantibodies first) the result determines classification and other tests can substitute, which is 3. Stakes (S) were not changed: with the usual default action (continue insulin) the harm of deciding without the measurement is low, and the harm of stopping insulin without it is the case the requirement guards against. The choice of decision is the user's to confirm; the original score is kept."
   },
   {
    "row": 6,
