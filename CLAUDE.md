@@ -2,7 +2,7 @@
 
 Active since 2026-10-19 (installed from the draft in `tools/README.md`). Loaded automatically at the start of every session.
 
-This repository is an AI-assisted evidence review of whether measuring insulin resistance is clinically useful, plus a verified list of insulin and C-peptide uses. Start with `README.md`; the final documents are `merged-conclusion.md` and `usecases-verified.md`. Coverage and reimbursement are out of scope.
+This repository is an AI-assisted evidence review. Its main goal (decision D-30) is to find and score the most viable uses of insulin, C-peptide and insulin-resistance measurement, and what would make the less viable ones viable; the assessment of whether routine insulin-resistance measurement is clinically useful (`merged-conclusion.md`) is the constraint behind that goal, together with a verified list of uses. Start with `README.md`; the final documents are `merged-conclusion.md` and `usecases-verified.md`. Coverage and reimbursement are out of scope.
 
 ## Rules
 - **Paths:** use project-root-relative paths in files and in agent prompts. Never write absolute paths.

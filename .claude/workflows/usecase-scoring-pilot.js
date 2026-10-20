@@ -41,6 +41,20 @@ const SCORE_SCHEMA = {
       },
     },
     anchor_issues: { type: 'array', items: { type: 'string' } },
+    path_to_viability: {
+      type: 'array',
+      items: {
+        type: 'object',
+        properties: {
+          row: { type: 'integer' },
+          missing_piece: { type: 'string' },
+          type: { type: 'string', enum: ['evidence', 'assay', 'guideline', 'workflow'] },
+          effort: { type: 'string', enum: ['small', 'medium', 'large'] },
+          basis: { type: 'string' },
+        },
+        required: ['row', 'missing_piece', 'type', 'effort'],
+      },
+    },
     assumptions: { type: 'array', items: { type: 'string' } },
     searches: { type: 'array', items: { type: 'string' } },
   },
@@ -94,7 +108,7 @@ const SCORERS = [
   {
     key: 'biostatistician',
     agentType: 'ir-biostatistician',
-    dims: 'D2 (evidence that the result changes decisions or outcomes, not mere association) and D8 (added value over alternatives such as clinical features, HbA1c, glucose, other tests)',
+    dims: 'D2 (evidence that the result changes decisions or outcomes, not mere association) and D8 (added value over alternatives such as clinical features, HbA1c, glucose, other tests) and, for every row, a path to viability (the one missing piece of evidence, assay, guideline or workflow that would move this use to the next tier, with its type and a rough effort small, medium or large; return it in path_to_viability, not as a score)',
   },
   {
     key: 'clinical-chemist',

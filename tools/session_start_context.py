@@ -124,7 +124,7 @@ def main():
         brief += [f"  {b}" for b in open_items]
 
     brief += [
-        "Start here: README.md (index), CONVENTIONS.md (rules), merged-conclusion.md and usecases-verified.md (final documents),",
+        "Start here: README.md (index), summary.md (one-page brief of viable uses), CONVENTIONS.md (rules), merged-conclusion.md and usecases-verified.md (final documents),",
         "  usecases/scoring-rubric.md (scoring decisions; pilot on rows 6, 5, 13 not yet run).",
         "Rules in short: relative paths only; record PMID and DOI; unattended runs never stop to ask; agents do not edit",
         "  deliverables; log every change in CHANGELOG.md; commit and push only when the user asks.",

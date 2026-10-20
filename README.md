@@ -2,6 +2,8 @@
 
 An AI-assisted evidence review of one question, built as a team of specialised AI roles that check each other, with every step kept as an audit trail.
 
+> **Main goal (since 2026-10-19, decision D-30):** find the most viable uses of insulin, C-peptide and insulin-resistance measurement, and what would make the less viable ones viable, by scoring the use cases. The clinical-utility assessment below is the constraint behind that goal: it shows what not to pursue and gives research targets. Start with the one-page brief in `summary.md`.
+
 > **Read this first:** These are AI-assisted research notes, not medical advice and not peer reviewed. Claims were checked by skeptic reviews, but many rest on abstracts or single sources, some items are marked unverified, and the latest corrections have had only one review. Citations were checked for identity and retractions by hand, not exhaustively. Confidence figures are judgements, not computations. Use `merged-conclusion.md` with its stated caveats and verify anything you rely on against the primary sources.
 
 ## The question
@@ -69,7 +71,8 @@ Flow: searcher, then analysts, then skeptic and steelman, then a merged conclusi
 ## What to read
 | File | What it is |
 |---|---|
-| `summary.md` | Start here: the plain-language summary of both documents, with a glossary and a trace of each sentence to its source (not yet skeptic-reviewed) |
+| `summary.md` | Start here: a one-page brief of the viable uses of insulin and C-peptide measurement and what would unlock more (preliminary; scores not yet run) |
+| `summary-detailed.md` | The longer plain-language summary with a glossary and a trace of each sentence to its source (not yet skeptic-reviewed) |
 | `merged-conclusion.md` | The main findings, with confidence figures, caveats and open gaps |
 | `usecases-verified.md` | Uses of insulin and C-peptide measurement by patient type (49 rows) |
 | `CHANGELOG.md` | What changed, when and why |

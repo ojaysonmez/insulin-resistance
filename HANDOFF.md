@@ -5,12 +5,14 @@ Updated: 2026-10-19 (late evening; the daily update watch pilot was scheduled)
 The current state and the next step, written by hand at the end of a working session. It is overwritten each time (history lives in `CHANGELOG.md` and git). `tools/session_start_context.py` prints this note's main sections at the start of each session. Update it at the end of every working session.
 
 ## Where we are
+- **Goal reframed (2026-10-19, D-30):** the main goal is scoring the viability of use cases and finding what would make the less viable ones viable; clinical utility is the constraint, not the headline. `summary.md` is now a one-page viable-pathways brief; the long version is `summary-detailed.md`. The rubric records a path to viability for every candidate.
 - The merged conclusion and the 49-row use-case list are written, skeptic-reviewed and rescoped by measure type; the repository is public with a disclaimer.
 - The use-case scoring rubric is settled (US commonality, weights utility 0.40, commonality 0.25, stakes 0.20, readiness 0.15, all candidates ranked with a setting tag); nothing is scored yet.
 - Session continuity is set up this session: `CLAUDE.md`, the session-start hook, `DECISIONS.md`, this note and in-repo project memory (`memory/`).
 - Check the session brief for unpushed commits and uncommitted changes (it shows the live git state).
 
 ## Next step
+- **Scoring is now the main job:** run the pilot on rows 6, 5 and 13 (the workflow in `.claude/workflows/usecase-scoring-pilot.js`, six agents, now also writing a path to viability), then score the candidates (about 30, plus rows 48 and 49) and pick 2-3 pathways. It needs searching, so it waits for the user's go-ahead and room under the usage limit.
 - **Review `summary.md` (written 2026-10-19):** skeptic-review it, then correct the outdated 'Crossref retraction checks found none' sentence in `merged-conclusion.md` (Provenance) with a skeptic check; the summary already states the later result (DiaPep277 retraction, 8 corrections).
 - **Check the first daily watch run (scheduled 2026-10-20, about 01:15 local; the computer must stay awake with the app open):** the session brief prints a line "Update watch, latest run ..."; open `update-watch/runs/2026-10-20-triage.md` and `update-watch/runs/usage-log.tsv`; confirm the state files `update-watch/seen-pmids.txt` and `update-watch/registry-baseline.json` were created; look at what the scheduled session itself cost (not logged). Pilot ends 2026-11-02; then decide weekly running (D-28, D-29) and delete the task. The state and run files show as uncommitted changes each day; commit them when you choose.
 - Run the scoring pilot on rows 6, 5 and 13 (needs searching for US commonality) once the user agrees, then score about 30 candidates by dimension.
