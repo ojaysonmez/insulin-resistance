@@ -46,6 +46,22 @@ Scored 0-4 unless stated. Each score needs: the number, one or two sentences of 
 
 **Path to viability (PV, added 2026-10-19 with decision D-30; recorded for every candidate, not part of the composite):** the one missing piece that would move this use to the next tier, as a short sentence (for example external validation of a threshold, a trial comparing measurement-guided care with usual care, an agreed assay cutoff, a guideline recommendation, a workflow or point-of-care assay), its type (evidence, assay, guideline, workflow) and a rough effort (small: months with existing data; medium: a prospective study; large: a randomized trial). PV answers what would make this use viable. It lets the map separate viable now, close to viable and far, and it names where research effort should go. It is a judgement with a source or a stated reason, not a score.
 
+## Anchor clarifications (approved by the user 2026-10-19; apply these whenever the anchors above are read)
+These come from the anchor problems reported by units U1, S1, S2, S3 and S4 (`usecases/scoring/anchor-proposals.md`).
+1. **D7, chronic conditions:** count new cases per year plus the share of the existing pool that is evaluated or retested in a year; write the share as a stated assumption.
+2. **D7, population:** use the narrowest population in which the guideline or study applies the test; state a broader reading as a note.
+3. **D7, bins:** score the bin that contains the point estimate; mark confidence low when the range spans bins; the score must equal the bin of the stated number.
+4. **D7, situations not diagnoses:** count patients in whom the clinical question arises (for example everyone worked up for hypoglycaemia), not only those with the final diagnosis.
+5. **D3, measurement not drug:** D3 is about the measurement. A guideline that recommends a drug or names the condition the test identifies but not the test scores 2; 3 only if it recommends or requires the measurement.
+6. **D3, national criteria:** score status for the US setting. National criteria from elsewhere count as 1 (not addressed in the US) unless a US or international body adopts them; note them.
+7. **D3, standard diagnostic step:** 4 only when the guideline or label requires the test for the decision; a recommended step is 3.
+8. **D2, trial entry criterion:** a trial that used the measure as an entry criterion but never tested measurement-guided selection scores 2 at most.
+9. **D2, surrogate approval:** regulatory approval on a surrogate endpoint scores 3; 4 only for hard-outcome randomized evidence for the decision.
+10. **D2, research endpoints:** for research-endpoint uses score the evidence that the measure is an accepted surrogate (2 for cohort evidence, 3 for a consensus statement) and say so.
+11. **D1, prognosis:** prognosis that sets monitoring intensity or counselling is 1; prognosis that selects a treatment or a diagnostic step is 2.
+12. **D1, national criteria:** 4 only where the criterion is a legal or regulatory requirement for the decision in the scoring country; national diagnostic criteria elsewhere are 3.
+Scores given before this date (unit U1) used the earlier wording; the pilot review (unit U6) compares them with the clarified reading.
+
 ## Combining the scores
 - **UQ** = mean of D1, D2 and D8. **R** = mean of D3 to D6. **C** = D7. **S** = stakes. Each is rescaled to 0-1 before weighting (C = D7/5; S = S/4; the others /4).
 - **Primary output is a map, not a single number:** C on one axis, UQ on the other, point size or colour = R, with colour or a label = S. A second view plots need (C and S together) against UQ. Quadrants: common and strong; rare but strong; common but weak; rare and weak; and a high-stakes marker on any of them.

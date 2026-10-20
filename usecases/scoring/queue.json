@@ -271,6 +271,196 @@
         "usecases/scoring/S4.md",
         "usecases/scoring/S4.json"
       ]
+    },
+    {
+      "id": "V1",
+      "phase": "stage2",
+      "agent": "ir-evidence-searcher",
+      "dims": "D7 (United States patients per year; give the number, its source and a range) and D3 (guideline or regulatory status, from guideline full text where possible)",
+      "rows": [
+        31,
+        7,
+        3,
+        32,
+        47,
+        49,
+        4,
+        10
+      ],
+      "template": "score",
+      "needs": [
+        "U6"
+      ],
+      "inputs": [],
+      "extra": "Patient counts must be RESEARCHED, not recalled: at least two searches per row with python tools/pubmed_search.py and public statistics pages; label a figure [recall] only if no source was found, and then mark the score low confidence. Follow the 'Anchor clarifications' section of the rubric.",
+      "pause_after": false,
+      "state": "pending",
+      "attempts": 0,
+      "prompt": "usecases/scoring/units/V1.md",
+      "outputs": [
+        "usecases/scoring/V1.md",
+        "usecases/scoring/V1.json"
+      ]
+    },
+    {
+      "id": "V2",
+      "phase": "stage2",
+      "agent": "ir-biostatistician",
+      "dims": "D2 (evidence that the result changes decisions or outcomes) and D8 (added value over alternatives such as clinical features, HbA1c, glucose, other tests)",
+      "rows": [
+        31,
+        7,
+        3,
+        32,
+        47,
+        49,
+        4,
+        10
+      ],
+      "template": "score",
+      "needs": [
+        "U6"
+      ],
+      "inputs": [],
+      "extra": "Also write a path to viability for EVERY row in path_to_viability (the one missing piece of evidence, assay, guideline or workflow that would move the use to the next tier; type; effort small, medium or large; basis). Follow the 'Anchor clarifications' section of the rubric.",
+      "pause_after": false,
+      "state": "pending",
+      "attempts": 0,
+      "prompt": "usecases/scoring/units/V2.md",
+      "outputs": [
+        "usecases/scoring/V2.md",
+        "usecases/scoring/V2.json"
+      ]
+    },
+    {
+      "id": "V3",
+      "phase": "stage2",
+      "agent": "ir-clinical-chemist",
+      "dims": "D4 (analytical feasibility: assay, sample, protocol, standardization)",
+      "rows": [
+        31,
+        7,
+        3,
+        32,
+        47,
+        49,
+        4,
+        10
+      ],
+      "template": "score",
+      "needs": [
+        "U6"
+      ],
+      "inputs": [],
+      "extra": "Follow the 'Anchor clarifications' section of the rubric.",
+      "pause_after": false,
+      "state": "pending",
+      "attempts": 0,
+      "prompt": "usecases/scoring/units/V3.md",
+      "outputs": [
+        "usecases/scoring/V3.md",
+        "usecases/scoring/V3.json"
+      ]
+    },
+    {
+      "id": "V4",
+      "phase": "stage2",
+      "agent": "ir-endocrinologist",
+      "dims": "D1 (decision change), D5 (workflow fit), D6 (safety and burden, higher = safer) and S (stakes)",
+      "rows": [
+        31,
+        7,
+        3,
+        32,
+        47,
+        49,
+        4,
+        10
+      ],
+      "template": "score",
+      "needs": [
+        "U6"
+      ],
+      "inputs": [],
+      "extra": "Also give the setting tag for every row in settings. Follow the 'Anchor clarifications' section of the rubric.",
+      "pause_after": false,
+      "state": "pending",
+      "attempts": 0,
+      "prompt": "usecases/scoring/units/V4.md",
+      "outputs": [
+        "usecases/scoring/V4.md",
+        "usecases/scoring/V4.json"
+      ]
+    },
+    {
+      "id": "V5",
+      "phase": "stage2",
+      "agent": "ir-pcp",
+      "dims": "D1 (decision change), D5 (workflow fit), D6 (safety and burden, higher = safer) and S (stakes). Another role scores the same dimensions independently; give your own reading as a primary care physician",
+      "rows": [
+        31,
+        7,
+        3,
+        32,
+        47,
+        49,
+        4,
+        10
+      ],
+      "template": "score",
+      "needs": [
+        "U6"
+      ],
+      "inputs": [],
+      "extra": "Follow the 'Anchor clarifications' section of the rubric.",
+      "pause_after": false,
+      "state": "pending",
+      "attempts": 0,
+      "prompt": "usecases/scoring/units/V5.md",
+      "outputs": [
+        "usecases/scoring/V5.md",
+        "usecases/scoring/V5.json"
+      ]
+    },
+    {
+      "id": "V6",
+      "phase": "stage2",
+      "agent": "ir-skeptic",
+      "dims": "",
+      "rows": [
+        31,
+        7,
+        3,
+        32,
+        47,
+        49,
+        4,
+        10
+      ],
+      "template": "review",
+      "needs": [
+        "V1",
+        "V2",
+        "V3",
+        "V4",
+        "V5"
+      ],
+      "inputs": [
+        "V1",
+        "V2",
+        "V3",
+        "V4",
+        "V5"
+      ],
+      "extra": "Also check that the clarified anchors in the rubric were applied.",
+      "pause_after": true,
+      "state": "pending",
+      "attempts": 0,
+      "prompt": "usecases/scoring/units/V6.md",
+      "outputs": [
+        "usecases/scoring/V6.md",
+        "usecases/scoring/V6.json"
+      ]
     }
   ]
 }
