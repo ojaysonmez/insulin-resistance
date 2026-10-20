@@ -1,40 +1,120 @@
-{"unit": "U1", "role": "evidence searcher (D7 commonality, D3 guideline status)", "scores": [
-{"row": 6, "dimension": "D3", "score": 3, "reason": "Random C-peptide with concurrent glucose is recommended in a specific population (insulin-treated adults with uncertain type) in the ADA/EASD 2021 consensus and reproduced in ADA Standards of Care 2026 section 2 (Figure 2.1), with stated cut-offs and validity limits. It is a consensus algorithm step, not a required or label-mandated test, and islet autoantibodies come first. Measure type: C-peptide, random (non-fasting, concurrent glucose).", "sources": ["PMID 34590174 DOI 10.1007/s00125-021-05568-3 full text (PMC8481000, grep of C-peptide passages)", "PMID 41358893 DOI 10.2337/dc26-S002 full text (PMC12690183, grep of C-peptide passages; web-page text, not verbatim-checked beyond the passages read)"], "confidence": "high", "origin": "both"},
-{"row": 6, "dimension": "D7", "score": 4, "reason": "Situation = insulin-treated adult, type uncertain, more than 3 years from diagnosis, where the Holt algorithm calls for C-peptide. CDC: 1.8 million US adults with type 1 and 28.8 million with diagnosed diabetes; the count of insulin-treated adults with uncertain type is not published, so the estimate is an assumption-based chain (insulin-treated adults of several million x 2-10 percent uncertain x roughly one in three needing a test in a year). Point estimate about 120,000 per year, range 30,000 to 400,000. The range spans bins 3 and 4 and the point sits near the 100,000 boundary, so low confidence. Measure type: C-peptide.", "sources": ["CDC National Diabetes Statistics Report, web page dated 2026-01-21 (cdc.gov/diabetes/data/statistics-report): 28.8 million diagnosed adults, 1.8 million adults with type 1", "PMID 29596402 DOI 10.15585/mmwr.mm6712a2 abstract (search excerpt): 2016 NHIS, 5.8 percent type 1, 90.9 percent type 2, 3.3 percent other", "PMID 34590174 DOI 10.1007/s00125-021-05568-3 full text: when C-peptide is indicated (insulin-treated, not within 3 years); 11 percent reclassified figure is quoted in usecases-verified.md row 6 (project file), not re-read here", "assumption chain stated in usecases/scoring/U1.md"], "confidence": "low", "origin": "both"},
-{"row": 5, "dimension": "D3", "score": 2, "reason": "No guideline names an insulin (or C-peptide) measurement for post-bariatric hypoglycaemia. ADA Standards 2026 rec 8.26 says clinical evaluation should exclude other disorders and recommends CGM, with no assay named; PES 2015 (paediatric) says postprandial hypoglycaemia after fundoplication or gastric bypass shows exaggerated insulin responses detectable on oral glucose or mixed-meal tests (description, not a recommendation). Insulin at documented hypoglycaemia is part of the general adult hypoglycaemia work-up (Endocrine Society 2009, abstract only here). Scored 2 (option) rather than 1 because measurement is part of accepted evaluation text but not specific to this situation. Measure type: fasting-independent insulin (+/- C-peptide) at symptomatic nadir or after mixed meal.", "sources": ["PMID 41358882 DOI 10.2337/dc26-S008 full text (PMC12690172, grep: rec 8.26)", "PMID 25957977 DOI 10.1016/j.jpeds.2015.03.057 full text (PMC11891912, grep: postprandial hypoglycaemia passage)", "PMID 19088155 DOI 10.1210/jc.2008-1410 abstract only (Endocrine Society 2009)", "PMID 30101281 DOI 10.1210/jc.2018-00528 abstract (review, not a guideline)"], "confidence": "medium", "origin": "both"},
-{"row": 5, "dimension": "D7", "score": 3, "reason": "Situation = a post-bariatric patient with suspected hypoglycaemia needing biochemical work-up. ASMBS 2023: about 157,000 sleeve and 63,000 gastric bypass procedures per year. Using the systematic review's Level A rates for needing medical attention (5 percent sleeve, 12 percent bypass) gives about 15,000 new cases per year; the same review models about 160,000 US patients needing medical management at any time. Annual patients in whom the work-up question arises: point about 30,000 (new cases plus a share of the prevalent pool), range 8,000 to 160,000. The range spans bins 3 and 4, so low confidence. Measure type: unspecified insulin at nadir or mixed-meal.", "sources": ["PMID 41966914 DOI 10.1016/j.soard.2026.03.013 abstract (truncated in retrieval; modelled US prevalence)", "ASMBS Estimate of Bariatric Surgery Numbers 2011-2023, asmbs.org/resources/estimate-of-bariatric-surgery-numbers (web page, 2025-04-14)", "PMID 34802853 DOI 10.1016/j.numecd.2021.08.047 abstract (CGM-detected rate 54.3 percent, not used as a work-up rate)", "PMID 41206858 DOI 10.1002/edm2.70123 abstract (25.9 percent at 12 months, 3 centres, not US)"], "confidence": "low", "origin": "new search"},
-{"row": 13, "dimension": "D3", "score": 2, "reason": "Both guidelines endorse pioglitazone after stroke or TIA in people with insulin resistance and prediabetes, but neither names a test, assay or threshold. ADA Standards 2026 rec 3.13 (evidence grade A, C) says pioglitazone 'may be considered' and the text describes IRIS HOMA-IR 3.0 or more; AACE 2022 rec 9.4 says it 'should be considered' in insulin resistance, prediabetes or T2D with prior TIA or stroke. The recommendation is for a drug in a defined group; measurement of insulin or HOMA-IR is not recommended or required. Scored 2 (option). Measure type: fasting-based (HOMA-IR).", "sources": ["ADA Standards of Care 2026 section 3, DOI 10.2337/dc26-S003 (Crossref-verified; PMID not retrieved in this unit), full text web-page grep (PMC12690170, rec 3.13)", "PMID 35963508 DOI 10.1016/j.eprac.2022.08.002 full text (PMC10200071, grep: rec 9.4; no HOMA match in the guideline text)", "PMID 26886418 DOI 10.1056/NEJMoa1506930 full text (PMC4887756): IRIS entry criterion HOMA-IR above 3.0, sample at least 14 days after event"], "confidence": "medium", "origin": "both"},
-{"row": 13, "dimension": "D7", "score": 4, "reason": "Situation = adult with ischaemic stroke or TIA, no diabetes, deciding on pioglitazone. CDC: about 795,000 strokes a year (610,000 first), 87 percent ischaemic, so about 690,000; at least 240,000 TIAs a year (AHA statement as cited by a news page). Roughly 70 percent without diabetes (assumption) gives about 650,000; HOMA-IR above 3.0 in about 25 to 50 percent (assumption; IRIS cut-off was the highest quartile of non-diabetic populations, median in trial 4.7); after exclusions (heart failure, sample timing) about 100,000 to 300,000. Point about 200,000, range 100,000 to 400,000, inside bin 4 (100,000 to 1,000,000) on any reading, including testing every non-diabetic stroke patient (about 650,000). Measure type: fasting-based (HOMA-IR).", "sources": ["CDC Stroke Facts, cdc.gov/stroke/data-research/facts-stats (web page, 2025-07-10)", "Yale Medicine news page 2025-04-08 citing the AHA/ASA TIA statement (secondary source, 240,000 TIAs)", "PMID 26886418 DOI 10.1056/NEJMoa1506930 full text (PMC4887756): median HOMA-IR 4.7/4.6, threshold rationale, exclusions"], "confidence": "medium", "origin": "both"}
-],
-"path_to_viability": [],
-"settings": [],
-"anchor_issues": [
-"D7 rows 5 and 6: the rubric defines patients per year in whom the situation arises, but for chronic conditions (post-bariatric hypoglycaemia, insulin-treated adults of uncertain type) the pool is prevalent, not incident. I counted new cases plus a share of the prevalent pool needing a test in the year, and said so; the share is an assumption.",
-"D7 row 6: the situation could be read as all newly diagnosed adults (about 1 million a year, bin 5) or only insulin-treated adults of uncertain type more than 3 years from diagnosis (the Holt/ADA indication). I chose the narrower reading because the guideline restricts C-peptide to that group.",
-"D3 row 13: guidelines recommend the drug in people 'with insulin resistance' without naming a measurement. The D3 anchor 3 (recommended in a specific population) arguably fits AACE 'should be considered' (Grade A), but the recommendation is about pioglitazone, not about measuring insulin. I scored 2 for the measurement.",
-"D3 row 5: the only guideline text that touches the measurement is general adult hypoglycaemia work-up (abstract only) and a paediatric description; no PBH-specific guideline names an insulin test. Anchor 1 (not addressed) versus 2 (option) was a judgement; I chose 2.",
-"D3 anchor 4 'required or standard' does not say whether a consensus algorithm step (row 6) counts as standard; I scored 3 because the algorithm makes autoantibodies the first test and the C-peptide conditional."
-],
-"assumptions": [
-"Insulin-treated adults with uncertain diabetes type: share 2 to 10 percent and one-third tested per year are my assumptions, not sourced; the number of insulin-treated US adults was not retrieved.",
-"About 70 percent of ischaemic stroke and TIA patients have no diabetes, and 25 to 50 percent of them have HOMA-IR above 3.0: both are assumptions (not retrieved in this unit).",
-"Systematic review 41966914 was read at abstract level only and the abstract was truncated in retrieval; its modelled 160,000 figure is a prevalent pool, not an annual count.",
-"ADA Standards 2026 sections 2, 3 and 8 were read as web-page text via tools/pmc_text.py (publisher does not allow XML), by passage search, not in full.",
-"The project-file text for row 6 (11 percent reclassified) was taken from usecases-verified.md and not re-read in the Holt full text."
-],
-"searches": [
-"Row 6 | PubMed (plugin) | 'prevalence of diabetes type misclassification adults insulin-treated C-peptide United States' | 0 records",
-"Row 6 | PubMed (plugin) | 'misdiagnosis type 1 diabetes adults classification C-peptide autoantibodies insulin-treated' | 0 records",
-"Row 6 | PubMed (plugin) | 'adult onset type 1 diabetes misdiagnosis type 2' | 64 records, 10 returned, titles not screened; no figure taken from them",
-"Row 6 | Web search | CDC National Diabetes Statistics Report adults, insulin use, new cases | about 8 pages screened; prevalence figures taken; adult incidence and insulin-treated adult count not found in the screened records",
-"Row 5 | PubMed (plugin) | 'post-bariatric hypoglycemia prevalence' | 28 records, 10 screened by title and 2 by abstract",
-"Row 5 | PubMed (plugin) | 'post-bariatric hypoglycemia prevalence incidence Roux-en-Y gastric bypass symptomatic cohort' | 0 records",
-"Row 5 | PubMed (plugin) | 'post-bariatric hypoglycemia insulin during hypoglycemia diagnostic evaluation guideline' | 0 records; a PBH-specific guideline naming an insulin test was not found in the screened records",
-"Row 5 | PubMed (plugin) | 'Obesity and Weight Management for the Prevention and Treatment of Diabetes: Standards of Care in Diabetes-2026' | 1 record (PMID 41358882)",
-"Row 5 | Web search | ASMBS bariatric procedure counts, 2023 | about 7 pages screened",
-"Row 13 | PubMed (plugin) | 'ischemic stroke TIA United States annual incidence prediabetes insulin resistance prevalence IRIS eligible' | 0 records",
-"Row 13 | PubMed (plugin) | 'insulin resistance prevalence after ischemic stroke without diabetes HOMA' | 15 records, 8 screened by title; none gave a US proportion with HOMA-IR above 3.0 in the screened titles",
-"Row 13 | PubMed (plugin) | 'Insulin Resistance Intervention after Stroke trial design rationale' | 2 records, 1 relevant (PMID 25458644), not read",
-"Row 13 | PubMed (plugin) | 'heart disease and stroke statistics 2024 update' and 'Heart Disease and Stroke Statistics-2025 Update American Heart Association' | 31 and 201 records, 5 screened each; the AHA statistics article was not found in the screened records, CDC web page used instead",
-"Row 13 | Web search | CDC stroke facts, TIA annual numbers | about 9 pages screened"
-]}
+{
+ "unit": "U1",
+ "role": "evidence searcher (D7 commonality, D3 guideline status)",
+ "scores": [
+  {
+   "row": 6,
+   "dimension": "D3",
+   "score": 4,
+   "reason": "Random C-peptide with concurrent glucose is recommended in a specific population (insulin-treated adults with uncertain type) in the ADA/EASD 2021 consensus and reproduced in ADA Standards of Care 2026 section 2 (Figure 2.1), with stated cut-offs and validity limits. It is a consensus algorithm step, not a required or label-mandated test, and islet autoantibodies come first. Measure type: C-peptide, random (non-fasting, concurrent glucose).",
+   "sources": [
+    "PMID 34590174 DOI 10.1007/s00125-021-05568-3 full text (PMC8481000, grep of C-peptide passages)",
+    "PMID 41358893 DOI 10.2337/dc26-S002 full text (PMC12690183, grep of C-peptide passages; web-page text, not verbatim-checked beyond the passages read)"
+   ],
+   "confidence": "high",
+   "origin": "both",
+   "original_score": 3,
+   "correction": "Corrected 2026-10-20 after the pilot skeptic review (U6): ADA/EASD 2021 (PMC8481000) and ADA Standards 2026 section 2 Figure 2.1 footnote 4 say 'Where a person is insulin-treated, C-peptide must be measured prior to insulin discontinuation to exclude severe insulin deficiency'. That is a required step for the decision to stop insulin; under anchor 7 (4 only when the guideline requires the test for the decision) the score is 4. U1's reason above, which says the test is not required, is wrong for that decision; for the classification decision (autoantibodies first) the test is a recommended step."
+  },
+  {
+   "row": 6,
+   "dimension": "D7",
+   "score": 4,
+   "reason": "Situation = insulin-treated adult, type uncertain, more than 3 years from diagnosis, where the Holt algorithm calls for C-peptide. CDC: 1.8 million US adults with type 1 and 28.8 million with diagnosed diabetes; the count of insulin-treated adults with uncertain type is not published, so the estimate is an assumption-based chain (insulin-treated adults of several million x 2-10 percent uncertain x roughly one in three needing a test in a year). Point estimate about 120,000 per year, range 30,000 to 400,000. The range spans bins 3 and 4 and the point sits near the 100,000 boundary, so low confidence. Measure type: C-peptide.",
+   "sources": [
+    "CDC National Diabetes Statistics Report, web page dated 2026-01-21 (cdc.gov/diabetes/data/statistics-report): 28.8 million diagnosed adults, 1.8 million adults with type 1",
+    "PMID 29596402 DOI 10.15585/mmwr.mm6712a2 abstract (search excerpt): 2016 NHIS, 5.8 percent type 1, 90.9 percent type 2, 3.3 percent other",
+    "PMID 34590174 DOI 10.1007/s00125-021-05568-3 full text: when C-peptide is indicated (insulin-treated, not within 3 years); 11 percent reclassified figure is quoted in usecases-verified.md row 6 (project file), not re-read here",
+    "assumption chain stated in usecases/scoring/U1.md"
+   ],
+   "confidence": "low",
+   "origin": "both"
+  },
+  {
+   "row": 5,
+   "dimension": "D3",
+   "score": 2,
+   "reason": "No guideline names an insulin (or C-peptide) measurement for post-bariatric hypoglycaemia. ADA Standards 2026 rec 8.26 says clinical evaluation should exclude other disorders and recommends CGM, with no assay named; PES 2015 (paediatric) says postprandial hypoglycaemia after fundoplication or gastric bypass shows exaggerated insulin responses detectable on oral glucose or mixed-meal tests (description, not a recommendation). Insulin at documented hypoglycaemia is part of the general adult hypoglycaemia work-up (Endocrine Society 2009, abstract only here). Scored 2 (option) rather than 1 because measurement is part of accepted evaluation text but not specific to this situation. Measure type: fasting-independent insulin (+/- C-peptide) at symptomatic nadir or after mixed meal.",
+   "sources": [
+    "PMID 41358882 DOI 10.2337/dc26-S008 full text (PMC12690172, grep: rec 8.26)",
+    "PMID 25957977 DOI 10.1016/j.jpeds.2015.03.057 full text (PMC11891912, grep: postprandial hypoglycaemia passage)",
+    "PMID 19088155 DOI 10.1210/jc.2008-1410 abstract only (Endocrine Society 2009)",
+    "PMID 30101281 DOI 10.1210/jc.2018-00528 abstract (review, not a guideline)"
+   ],
+   "confidence": "medium",
+   "origin": "both"
+  },
+  {
+   "row": 5,
+   "dimension": "D7",
+   "score": 3,
+   "reason": "Situation = a post-bariatric patient with suspected hypoglycaemia needing biochemical work-up. ASMBS 2023: about 157,000 sleeve and 63,000 gastric bypass procedures per year. Using the systematic review's Level A rates for needing medical attention (5 percent sleeve, 12 percent bypass) gives about 15,000 new cases per year; the same review models about 160,000 US patients needing medical management at any time. Annual patients in whom the work-up question arises: point about 30,000 (new cases plus a share of the prevalent pool), range 8,000 to 160,000. The range spans bins 3 and 4, so low confidence. Measure type: unspecified insulin at nadir or mixed-meal.",
+   "sources": [
+    "PMID 41966914 DOI 10.1016/j.soard.2026.03.013 abstract (truncated in retrieval; modelled US prevalence)",
+    "ASMBS Estimate of Bariatric Surgery Numbers 2011-2023, asmbs.org/resources/estimate-of-bariatric-surgery-numbers (web page, 2025-04-14)",
+    "PMID 34802853 DOI 10.1016/j.numecd.2021.08.047 abstract (CGM-detected rate 54.3 percent, not used as a work-up rate)",
+    "PMID 41206858 DOI 10.1002/edm2.70123 abstract (25.9 percent at 12 months, 3 centres, not US)"
+   ],
+   "confidence": "low",
+   "origin": "new search"
+  },
+  {
+   "row": 13,
+   "dimension": "D3",
+   "score": 2,
+   "reason": "Both guidelines endorse pioglitazone after stroke or TIA in people with insulin resistance and prediabetes, but neither names a test, assay or threshold. ADA Standards 2026 rec 3.13 (evidence grade A, C) says pioglitazone 'may be considered' and the text describes IRIS HOMA-IR 3.0 or more; AACE 2022 rec 9.4 says it 'should be considered' in insulin resistance, prediabetes or T2D with prior TIA or stroke. The recommendation is for a drug in a defined group; measurement of insulin or HOMA-IR is not recommended or required. Scored 2 (option). Measure type: fasting-based (HOMA-IR).",
+   "sources": [
+    "ADA Standards of Care 2026 section 3, DOI 10.2337/dc26-S003 (Crossref-verified; PMID not retrieved in this unit), full text web-page grep (PMC12690170, rec 3.13)",
+    "PMID 35963508 DOI 10.1016/j.eprac.2022.08.002 full text (PMC10200071, grep: rec 9.4; no HOMA match in the guideline text)",
+    "PMID 26886418 DOI 10.1056/NEJMoa1506930 full text (PMC4887756): IRIS entry criterion HOMA-IR above 3.0, sample at least 14 days after event"
+   ],
+   "confidence": "medium",
+   "origin": "both"
+  },
+  {
+   "row": 13,
+   "dimension": "D7",
+   "score": 4,
+   "reason": "Situation = adult with ischaemic stroke or TIA, no diabetes, deciding on pioglitazone. CDC: about 795,000 strokes a year (610,000 first), 87 percent ischaemic, so about 690,000; at least 240,000 TIAs a year (AHA statement as cited by a news page). Roughly 70 percent without diabetes (assumption) gives about 650,000; HOMA-IR above 3.0 in about 25 to 50 percent (assumption; IRIS cut-off was the highest quartile of non-diabetic populations, median in trial 4.7); after exclusions (heart failure, sample timing) about 100,000 to 300,000. Point about 200,000, range 100,000 to 400,000, inside bin 4 (100,000 to 1,000,000) on any reading, including testing every non-diabetic stroke patient (about 650,000). Measure type: fasting-based (HOMA-IR).",
+   "sources": [
+    "CDC Stroke Facts, cdc.gov/stroke/data-research/facts-stats (web page, 2025-07-10)",
+    "Yale Medicine news page 2025-04-08 citing the AHA/ASA TIA statement (secondary source, 240,000 TIAs)",
+    "PMID 26886418 DOI 10.1056/NEJMoa1506930 full text (PMC4887756): median HOMA-IR 4.7/4.6, threshold rationale, exclusions"
+   ],
+   "confidence": "medium",
+   "origin": "both"
+  }
+ ],
+ "path_to_viability": [],
+ "settings": [],
+ "anchor_issues": [
+  "D7 rows 5 and 6: the rubric defines patients per year in whom the situation arises, but for chronic conditions (post-bariatric hypoglycaemia, insulin-treated adults of uncertain type) the pool is prevalent, not incident. I counted new cases plus a share of the prevalent pool needing a test in the year, and said so; the share is an assumption.",
+  "D7 row 6: the situation could be read as all newly diagnosed adults (about 1 million a year, bin 5) or only insulin-treated adults of uncertain type more than 3 years from diagnosis (the Holt/ADA indication). I chose the narrower reading because the guideline restricts C-peptide to that group.",
+  "D3 row 13: guidelines recommend the drug in people 'with insulin resistance' without naming a measurement. The D3 anchor 3 (recommended in a specific population) arguably fits AACE 'should be considered' (Grade A), but the recommendation is about pioglitazone, not about measuring insulin. I scored 2 for the measurement.",
+  "D3 row 5: the only guideline text that touches the measurement is general adult hypoglycaemia work-up (abstract only) and a paediatric description; no PBH-specific guideline names an insulin test. Anchor 1 (not addressed) versus 2 (option) was a judgement; I chose 2.",
+  "D3 anchor 4 'required or standard' does not say whether a consensus algorithm step (row 6) counts as standard; I scored 3 because the algorithm makes autoantibodies the first test and the C-peptide conditional."
+ ],
+ "assumptions": [
+  "Insulin-treated adults with uncertain diabetes type: share 2 to 10 percent and one-third tested per year are my assumptions, not sourced; the number of insulin-treated US adults was not retrieved.",
+  "About 70 percent of ischaemic stroke and TIA patients have no diabetes, and 25 to 50 percent of them have HOMA-IR above 3.0: both are assumptions (not retrieved in this unit).",
+  "Systematic review 41966914 was read at abstract level only and the abstract was truncated in retrieval; its modelled 160,000 figure is a prevalent pool, not an annual count.",
+  "ADA Standards 2026 sections 2, 3 and 8 were read as web-page text via tools/pmc_text.py (publisher does not allow XML), by passage search, not in full.",
+  "The project-file text for row 6 (11 percent reclassified) was taken from usecases-verified.md and not re-read in the Holt full text."
+ ],
+ "searches": [
+  "Row 6 | PubMed (plugin) | 'prevalence of diabetes type misclassification adults insulin-treated C-peptide United States' | 0 records",
+  "Row 6 | PubMed (plugin) | 'misdiagnosis type 1 diabetes adults classification C-peptide autoantibodies insulin-treated' | 0 records",
+  "Row 6 | PubMed (plugin) | 'adult onset type 1 diabetes misdiagnosis type 2' | 64 records, 10 returned, titles not screened; no figure taken from them",
+  "Row 6 | Web search | CDC National Diabetes Statistics Report adults, insulin use, new cases | about 8 pages screened; prevalence figures taken; adult incidence and insulin-treated adult count not found in the screened records",
+  "Row 5 | PubMed (plugin) | 'post-bariatric hypoglycemia prevalence' | 28 records, 10 screened by title and 2 by abstract",
+  "Row 5 | PubMed (plugin) | 'post-bariatric hypoglycemia prevalence incidence Roux-en-Y gastric bypass symptomatic cohort' | 0 records",
+  "Row 5 | PubMed (plugin) | 'post-bariatric hypoglycemia insulin during hypoglycemia diagnostic evaluation guideline' | 0 records; a PBH-specific guideline naming an insulin test was not found in the screened records",
+  "Row 5 | PubMed (plugin) | 'Obesity and Weight Management for the Prevention and Treatment of Diabetes: Standards of Care in Diabetes-2026' | 1 record (PMID 41358882)",
+  "Row 5 | Web search | ASMBS bariatric procedure counts, 2023 | about 7 pages screened",
+  "Row 13 | PubMed (plugin) | 'ischemic stroke TIA United States annual incidence prediabetes insulin resistance prevalence IRIS eligible' | 0 records",
+  "Row 13 | PubMed (plugin) | 'insulin resistance prevalence after ischemic stroke without diabetes HOMA' | 15 records, 8 screened by title; none gave a US proportion with HOMA-IR above 3.0 in the screened titles",
+  "Row 13 | PubMed (plugin) | 'Insulin Resistance Intervention after Stroke trial design rationale' | 2 records, 1 relevant (PMID 25458644), not read",
+  "Row 13 | PubMed (plugin) | 'heart disease and stroke statistics 2024 update' and 'Heart Disease and Stroke Statistics-2025 Update American Heart Association' | 31 and 201 records, 5 screened each; the AHA statistics article was not found in the screened records, CDC web page used instead",
+  "Row 13 | Web search | CDC stroke facts, TIA annual numbers | about 9 pages screened"
+ ]
+}

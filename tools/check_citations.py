@@ -39,7 +39,7 @@ from pathlib import Path
 PMID_BLOCK = re.compile(r"PMIDs?:?\s*((?:\d{6,8}(?:\s*(?:,|and|;|/|&|-)\s*)?)+)", re.I)
 PUBMED_URL = re.compile(r"pubmed\.ncbi\.nlm\.nih\.gov/(\d{6,8})", re.I)
 DIGITS = re.compile(r"\d{6,8}")
-DOI_RE = re.compile(r"10\.\d{4,9}/[^\s|,;)\]>\"'`]+", re.I)
+DOI_RE = re.compile(r"10\.\d{4,9}/(?:[^\s|,;()\]>\"'`]|\([^\s|,;()\]>\"'`]*\))+", re.I)  # allows balanced parentheses, as in 10.1016/s2213-8587(25)00163-9
 NOTICE_TYPES = {"retraction", "correction", "erratum", "expression_of_concern", "withdrawal",
                 "removal", "partial_retraction", "addendum", "clarification"}
 URGENT_TYPES = {"retraction", "expression_of_concern", "withdrawal", "removal", "partial_retraction"}

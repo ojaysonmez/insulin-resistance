@@ -62,6 +62,20 @@ These come from the anchor problems reported by units U1, S1, S2, S3 and S4 (`us
 12. **D1, national criteria:** 4 only where the criterion is a legal or regulatory requirement for the decision in the scoring country; national diagnostic criteria elsewhere are 3.
 Scores given before this date (unit U1) used the earlier wording; the pilot review (unit U6) compares them with the clarified reading.
 
+### Pilot clarifications (adopted by the user 2026-10-20 after the pilot skeptic review U6; `usecases/scoring/U6.md`)
+These refine the twelve clarifications above. Where they differ, these apply.
+13. **D3, the decision named:** D3 is scored for the decision named in the use case. 4 only when a guideline, consensus or label says the test must be done before that decision; if the use case spans several decisions, score the primary one and note any decision where the test is required.
+14. **D3, broader population:** a recommendation for the measurement in a broader population that includes this one scores 2 unless the guideline text covers the use-case population explicitly; then 3.
+15. **D1, name the decision:** 4 if a guideline requires the result before that decision; 3 if the result determines the decision but other tests can substitute; 2 if it chooses among accepted options or only supports a diagnosis.
+16. **D5, ownership and steps only:** D5 scores who orders the test, where, and how many steps. Do not score assay standardisation (D4) or consequences of a wrong result (D6). Score 0 only if no specialty owns the decision.
+17. **D6, the lower of two:** D6 = the lower of the test burden score and the false-result consequence score; write both numbers in the reason. 3 = low (reversible, minor), 2 = moderate (reversible harm needing treatment), 1 = notable, 0 = serious.
+18. **Stakes, marginal harm:** S = the harm that results when the decision is made without the measurement, assuming the usual default action (for example continue insulin, or give pioglitazone on the other guideline trigger). Do not score the severity of the disease. If the default action is itself harmful, say so.
+19. **D8, within the population:** score against the alternatives within the stated population. 3 requires data or guideline text showing the measurement changes the answer given the alternatives (for example a reclassification rate); mechanism alone scores at most 2. 'Not determinable' is allowed.
+20. **D4, US assays:** score US-marketed assays. Where only non-US or older-generation data exist, score from them, cap confidence at medium, and say so. Separate protocol burden (D5) from assay standardisation (D4).
+21. **D7, sourced chains:** each share in the chain needs a source or is labelled an assumption with its own range. If the range of the bin-deciding share crosses a bin boundary, record 'bin 3 or 4, low confidence' (or not determinable) instead of a single bin.
+22. **Setting tag:** tag by who orders the test in the guideline or evidence pathway for the decision.
+23. **Corrections and later units:** a score corrected by the main session keeps `original_score` and a `correction` note in its JSON; a later unit may replace earlier scores of other units by listing them in `supersedes` (for example researched patient counts replacing screening estimates).
+
 ## Combining the scores
 - **UQ** = mean of D1, D2 and D8. **R** = mean of D3 to D6. **C** = D7. **S** = stakes. Each is rescaled to 0-1 before weighting (C = D7/5; S = S/4; the others /4).
 - **Primary output is a map, not a single number:** C on one axis, UQ on the other, point size or colour = R, with colour or a label = S. A second view plots need (C and S together) against UQ. Quadrants: common and strong; rare but strong; common but weak; rare and weak; and a high-stakes marker on any of them.

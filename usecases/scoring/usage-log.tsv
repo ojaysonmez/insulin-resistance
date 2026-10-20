@@ -4,3 +4,8 @@ time	unit	pct5_before	pct5_after	weekly_before	weekly_after	tokens	tool_uses	err
 2026-10-19T20:45:15	S2	69	80	35	36	66373	11	ran in parallel with S3; window change includes S3 (40,307 tokens, 10 tools) and this chat's own use
 2026-10-19T20:45:15	S3					40307	10	see S2 line for the shared window change
 2026-10-19T20:51:12	S4	82	84	37	37	51924	11	stage 1 screen of the 11 established rows; 17 PMIDs verified
+2026-10-20T01:33:13	U2	3		39		143027	19	
+2026-10-20T01:35:45	U3	6		40		144357	17	
+2026-10-20T01:37:51	U4	8		40		122440	9	
+2026-10-20T01:39:54	U5	10		40		0	10	tokens not shown in notification
+2026-10-20T01:44:39	U6	11		40			25	

@@ -1,0 +1,116 @@
+{
+ "unit": "U3",
+ "role": "clinical chemist (D4 analytical feasibility)",
+ "scores": [
+  {
+   "row": 6,
+   "dimension": "D4",
+   "score": 3,
+   "reason": "Random plasma C-peptide with a concurrent glucose is a routine automated immunoassay on all major platforms with no timed protocol, and the decision thresholds (80, 200, 600 pmol/L) are wide relative to assay disagreement. It is not fully standardized (inter-system CV 24.5% in one 94-laboratory Chinese survey, 5.7% after recalibration; a JCTLM-listed ID-LC-MS/MS procedure and WHO reagent 13/146 exist), so it sits on the 2/3 boundary; scored 3 because the values are used far from the cutoffs for most patients and sampling is simple. Measure type: C-peptide, random (non-fasting) with concurrent glucose.",
+   "sources": [
+    "PMID 35177563 DOI 10.3343/alm.2022.42.4.428 abstract and project-file full-text read",
+    "PMID 38549041 DOI 10.1093/clinchem/hvae034 abstract (C-peptide inter-laboratory LC-MS/MS 13.4% median; Missouri reference method)",
+    "PMID 36843403 DOI 10.3343/alm.2023.43.4.345 abstract",
+    "PMID 37141618 DOI 10.1515/cclm-2023-0215 abstract",
+    "PMID 42893716 DOI 10.1016/j.cca.2026.122908 abstract",
+    "PMID 30978327 DOI 10.1016/j.cca.2019.04.057 abstract",
+    "PMID 40587435 DOI 10.1371/journal.pone.0312065 abstract (EDTA plasma stable 24 h; uncentrifuged serum at room temperature fell to 51%, n=8)",
+    "PMID 23413806 DOI 10.1111/dme.12159 abstract (C-peptide more stable than thought; urine C-peptide:creatinine ratio option)",
+    "PMID 34590174 DOI 10.1007/s00125-021-05568-3 abstract; thresholds and validity conditions via usecases-verified.md row 6"
+   ],
+   "confidence": "medium",
+   "origin": "both"
+  },
+  {
+   "row": 5,
+   "dimension": "D4",
+   "score": 2,
+   "reason": "Insulin (with C-peptide and glucose) must be drawn at the nadir during symptoms or during a timed mixed-meal test, and the insulin immunoassay is not standardized: twelve current immunoassays differed from an ID-MS comparator by about -298 to +303 pmol/L, and analogue cross-reactivity varies by platform. Widely available but unstandardized and timed, so 2; no assay-specific threshold exists for this use. Measure type: post-load or mixed-meal / symptomatic-nadir insulin (with C-peptide).",
+   "sources": [
+    "PMID 40802520 DOI 10.1515/cclm-2025-0552 abstract (project files: full text)",
+    "PMID 17272483 DOI 10.1373/clinchem.2006.082214 abstract (older-generation assays, among-assay CV 12-66%, median 24%)",
+    "PMID 35177563 DOI 10.3343/alm.2022.42.4.428 abstract",
+    "PMID 37598742 DOI 10.1016/j.cca.2023.117516 abstract (analogue detection differs by assay)",
+    "PMID 39030378 DOI 10.1007/s12020-024-03970-6 abstract (one platform detected 5 analogues 92-121%; LC-MS/MS detected only glargine)",
+    "PMID 40587435 DOI 10.1371/journal.pone.0312065 abstract (insulin loss in uncentrifuged serum, n=8)",
+    "PMID 30101281 DOI 10.1210/jc.2018-00528 abstract (no accepted diagnostic insulin threshold, per usecases-verified.md row 5)"
+   ],
+   "confidence": "medium",
+   "origin": "both"
+  },
+  {
+   "row": 13,
+   "dimension": "D4",
+   "score": 2,
+   "reason": "HOMA-IR needs one fasting insulin and glucose draw, which is simple and routine to order, but insulin assays are unstandardized, HOMA-IR values for the same sera ranged about twofold across 11 assays, and IRIS had to use central laboratories because insulin is not standardized. A fixed threshold of 3.0 therefore does not transfer across assays; widely available but unstandardized gives 2. Measure type: fasting-based (HOMA-IR).",
+   "sources": [
+    "PMID 26886418 DOI 10.1056/nejmoa1506930 abstract and full text (PMC4887756; HOMA-IR >3.0 from fasting glucose x fasting insulin /22.5, median 4.6-4.7 at entry)",
+    "PMID 18535197 DOI 10.2337/dc08-0097 abstract (HOMA-IR 0.8-2.0, 1.9-3.2, 1.5-2.9 across 11 assays; heparinized plasma insulin 15% lower)",
+    "PMID 40802520 DOI 10.1515/cclm-2025-0552 abstract",
+    "PMID 35622611 DOI 10.1002/jcla.24521 abstract",
+    "usecases-verified.md row 13 (IRIS central laboratory statement, as read by the skeptic)"
+   ],
+   "confidence": "medium",
+   "origin": "both"
+  }
+ ],
+ "path_to_viability": [
+  {
+   "row": 6,
+   "missing_piece": "A cross-platform check on US-marketed C-peptide assays at the 200 and 600 pmol/L decision thresholds, with recalibration to a commutable reference material, so classification does not depend on the assay.",
+   "type": "assay",
+   "effort": "small",
+   "basis": "Recalibration cut inter-system CV from 24.5% to 5.7% (PMID 35177563); commutable materials and a JCTLM-listed reference procedure exist (PMIDs 37141618, 38549041); no US cross-platform study was found in the screened records."
+  },
+  {
+   "row": 5,
+   "missing_piece": "An assay-specific, validated insulin threshold for post-bariatric hypoglycaemia from a standardized mixed-meal protocol, on insulin assays traceable to a commutable reference material.",
+   "type": "assay",
+   "effort": "medium",
+   "basis": "No accepted insulin threshold (PMID 30101281, per project files); insulin assays disagree and no JCTLM-listed insulin reference procedure or certified reference material (PMID 40802520, author statement)."
+  },
+  {
+   "row": 13,
+   "missing_piece": "An assay-harmonized HOMA-IR (or insulin) threshold, with the IRIS 3.0 value mapped to current assays, or a guideline wording that names the assay requirement.",
+   "type": "assay",
+   "effort": "medium",
+   "basis": "HOMA-IR differs about twofold across assays (PMID 18535197); no commutable insulin reference material (PMID 40802520); IRIS used central laboratories (PMC4887756 via project files)."
+  }
+ ],
+ "settings": [
+  {
+   "row": 6,
+   "setting": "routine care"
+  },
+  {
+   "row": 5,
+   "setting": "specialist outpatient"
+  },
+  {
+   "row": 13,
+   "setting": "specialist outpatient"
+  }
+ ],
+ "anchor_issues": [
+  "Row 6 D4: anchors 2 and 3 overlap for a routine automated assay that is widely available but not fully standardized (C-peptide). Chose 3 because there is no timed protocol and thresholds are wide relative to assay disagreement; a strict reading of 'unstandardized' gives 2.",
+  "Row 5 D4: the anchor mixes assay quality and protocol burden; a timed symptomatic-nadir or mixed-meal protocol on an unstandardized insulin assay was scored 2 as the anchor describes. No anchor separates 'timed protocol' from 'unstandardized'.",
+  "Row 13 D4: a single fasting draw is easy but the threshold is assay-dependent; no anchor says how to weigh ease of sampling against unstandardized assay. Chose 2.",
+  "The D4 anchor does not say whether to score the assay as currently marketed in the US or as studied; most inter-assay data here come from China, Korea and Europe or older assay generations."
+ ],
+ "assumptions": [
+  "Scored the US setting; no US cross-platform data were found for C-peptide, so non-US surveys (China, Korea) were used and flagged as medium confidence.",
+  "Row 6 measure was read as random plasma C-peptide with concurrent glucose, as in usecases-verified.md; urine C-peptide:creatinine ratio was noted as an alternative, not scored.",
+  "Row 5 measure was read as insulin (with C-peptide and glucose) at symptomatic nadir or during a mixed-meal test.",
+  "Setting tags were assigned by judgement from the use description and are outside the D4 scope.",
+  "Older-generation figures (Marcovina 2007, Manley 2008) may not apply to current platforms; Rohlfing 2025 and Zhou 2022 are the current-generation anchors. Read levels: abstracts for all new PMIDs; full text for PMC4887756 keyword windows only; other full-text statements are taken from the project files, not re-read."
+ ],
+ "searches": [
+  "PubMed: 'C-peptide assay harmonization' (row 6): 17 records, 8 screened by title, 5 abstracts read (42893716, 37141618, 36843403, 30978327, 38549041); no US cross-platform C-peptide study found in the screened records",
+  "PubMed: 'C-peptide stability sample handling serum plasma pre-analytical' (row 6): 1 record screened (40587435)",
+  "PubMed: 'C-peptide immunoassay harmonization standardization WHO international reference reagent between-method variability' (row 6): 0 records",
+  "PubMed: 'insulin immunoassay cross-reactivity insulin analogues hypoglycemia evaluation' (row 5): 5 records screened, 4 abstracts read (39030378, 37598742, 26774399, 25541899); the last two are case reports and not used for scores",
+  "PubMed: 'post-bariatric hypoglycemia mixed meal tolerance test diagnosis insulin glucose protocol' (row 5): 0 records; a mixed-meal protocol standard was not found in the screened records",
+  "PubMed: 'HOMA-IR fasting insulin assay variability cutoff insulin resistance pioglitazone stroke' (row 13): 0 records; full-text keyword search of PMC4887756 (HOMA, fasting, central lab): 30 blocks screened",
+  "Abstract fetch via tools/watch_fetch.py for 38549041, 40802520, 30101281, 26886418, 35177563, 17272483, 18535197, 34590174, 23413806, 34802853, 35622611 and the search hits (note: PMID 23999222 was requested in error and is an unrelated paper; not used)"
+ ]
+}

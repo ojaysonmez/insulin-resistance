@@ -7,8 +7,8 @@
     "max_attempts": 2,
     "hard_stop_pct5": 95
   },
-  "status": "RUNNING",
-  "pause_reason": "",
+  "status": "PAUSED",
+  "pause_reason": "after unit U6 (pilot): the user reviews before the queue continues",
   "units": [
     {
       "id": "U1",
@@ -48,7 +48,7 @@
       "inputs": [],
       "extra": "Also write a path to viability for EVERY row in path_to_viability: the one missing piece of evidence, assay, guideline or workflow that would move this use to the next tier, its type (evidence, assay, guideline, workflow), a rough effort (small: months with existing data; medium: a prospective study; large: a randomized trial) and the basis for your judgement. It is a judgement, not a score.",
       "pause_after": false,
-      "state": "pending",
+      "state": "done",
       "attempts": 0,
       "prompt": "usecases/scoring/units/U2.md",
       "outputs": [
@@ -71,7 +71,7 @@
       "inputs": [],
       "extra": "",
       "pause_after": false,
-      "state": "pending",
+      "state": "done",
       "attempts": 0,
       "prompt": "usecases/scoring/units/U3.md",
       "outputs": [
@@ -94,7 +94,7 @@
       "inputs": [],
       "extra": "Also give the setting tag for every row in settings: routine care, specialist outpatient, or inpatient or procedural.",
       "pause_after": false,
-      "state": "pending",
+      "state": "done",
       "attempts": 0,
       "prompt": "usecases/scoring/units/U4.md",
       "outputs": [
@@ -117,7 +117,7 @@
       "inputs": [],
       "extra": "",
       "pause_after": false,
-      "state": "pending",
+      "state": "done",
       "attempts": 0,
       "prompt": "usecases/scoring/units/U5.md",
       "outputs": [
@@ -152,7 +152,7 @@
       ],
       "extra": "",
       "pause_after": true,
-      "state": "pending",
+      "state": "done",
       "attempts": 0,
       "prompt": "usecases/scoring/units/U6.md",
       "outputs": [
@@ -270,6 +270,31 @@
       "outputs": [
         "usecases/scoring/S4.md",
         "usecases/scoring/S4.json"
+      ]
+    },
+    {
+      "id": "V7",
+      "phase": "stage2",
+      "agent": "ir-evidence-searcher",
+      "dims": "D7 (United States patients per year in whom the clinical situation arises; give the number, its source and a range)",
+      "rows": [
+        6,
+        5,
+        13
+      ],
+      "template": "score",
+      "needs": [
+        "U6"
+      ],
+      "inputs": [],
+      "extra": "This unit REPLACES the earlier patient-count estimates for these three rows (U1 and the screening unit S1 or S4 gave estimates resting on unsourced shares; the pilot skeptic found the bin for row 6 not determined). RESEARCH every link of the chain: at least two searches per row with python tools/pubmed_search.py and public statistics pages (CDC, NHANES, registries, society reports); each share in a chain needs a source or is labelled an assumption with its own range; if the range of the bin-deciding share crosses a bin boundary, record 'bin N or N+1, low confidence' in the reason and score the bin of your best point estimate. Follow the 'Anchor clarifications' and 'Pilot clarifications' sections of the rubric (especially 1 to 4 and 21). Do not score any other dimension. In your JSON add the key \"supersedes\": [{\"unit\": \"U1\", \"dimensions\": [\"D7\"]}] and leave path_to_viability, settings and tiers empty.",
+      "pause_after": false,
+      "state": "pending",
+      "attempts": 0,
+      "prompt": "usecases/scoring/units/V7.md",
+      "outputs": [
+        "usecases/scoring/V7.md",
+        "usecases/scoring/V7.json"
       ]
     },
     {
@@ -435,7 +460,10 @@
         47,
         49,
         4,
-        10
+        10,
+        6,
+        5,
+        13
       ],
       "template": "review",
       "needs": [
@@ -443,16 +471,18 @@
         "V2",
         "V3",
         "V4",
-        "V5"
+        "V5",
+        "V7"
       ],
       "inputs": [
         "V1",
         "V2",
         "V3",
         "V4",
-        "V5"
+        "V5",
+        "V7"
       ],
-      "extra": "Also check that the clarified anchors in the rubric were applied.",
+      "extra": "Also check that the clarified anchors in the rubric (sections 'Anchor clarifications' and 'Pilot clarifications') were applied. V7 replaced the earlier patient-count estimates for rows 6, 5 and 13 (see its supersedes key): check that each chain share in V7 has a source or is labelled an assumption, and that the D7 bins follow the stated numbers.",
       "pause_after": true,
       "state": "pending",
       "attempts": 0,

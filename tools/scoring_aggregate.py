@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Aggregate the use-case scores (no model, standard library only).
 
-Reads usecases/scoring/U*.json (the score files written by the scoring units), averages the
+Reads usecases/scoring/U*.json and V*.json (the score files written by the scoring units; a unit may list earlier units in "supersedes" to replace their scores for given dimensions), averages the
 roles that scored the same dimension, flags differences of more than one point, computes the
 rubric's scores (utility UQ = mean of D1, D2, D8; readiness R = mean of D3 to D6; commonality
 C = D7; stakes S) rescaled to 0-1 and the weighted composite, labels weak evidence (D2 of 0 or
@@ -29,7 +29,16 @@ def load_scores(root):
     d = Path(root) / "usecases" / "scoring"
     by = {}      # (row, dim) -> list of (unit, score)
     pv, settings, issues, notes = {}, {}, [], []
-    for f in sorted(d.glob("U*.json")):
+    files = sorted(list(d.glob("U*.json")) + list(d.glob("V*.json")))
+    superseded = set()   # (unit, dimension) pairs replaced by a later unit
+    for f in files:
+        try:
+            for sp in json.loads(f.read_text(encoding="utf-8")).get("supersedes", []) or []:
+                for dm in sp.get("dimensions", []):
+                    superseded.add((sp.get("unit"), dm))
+        except Exception:
+            pass
+    for f in files:
         try:
             j = json.loads(f.read_text(encoding="utf-8"))
         except Exception as e:
@@ -37,6 +46,8 @@ def load_scores(root):
             continue
         for s in j.get("scores", []) or []:
             dim, row, val = s.get("dimension"), s.get("row"), s.get("score")
+            if (j.get("unit", f.stem), dim) in superseded:
+                continue
             if dim in SCALE and isinstance(row, int):
                 if val is None:
                     by.setdefault((row, dim), [])

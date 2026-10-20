@@ -1,0 +1,72 @@
+{
+ "NCT07710274": {
+  "name": "PRISM-I",
+  "title": "Effectiveness of the Personalized Responses & Integrated Systems for Metabolism (PRISM) on Improving Insulin Resistance Among Adults With Metabolic Syndrome: A Pilot Study (PRISM-I)",
+  "status": "RECRUITING",
+  "has_results": false,
+  "enrolment": 200,
+  "last_update": "2026-09-25",
+  "primary_completion": "2027-06",
+  "completion": "2027-06"
+ },
+ "NCT07412028": {
+  "name": "ANDROLIPO (AP-HP)",
+  "title": "Identification of Women With Severe Insulin Resistant Syndromes of Genetic Origin Among Patients With \"Classic\" Polycystic Ovary Syndrome (PCOS)",
+  "status": "RECRUITING",
+  "has_results": false,
+  "enrolment": 81,
+  "last_update": "2026-08-10",
+  "primary_completion": "2028-01",
+  "completion": "2028-01"
+ },
+ "NCT05760339": {
+  "name": "PRINCESS, perioperative IR",
+  "title": "Intermittent Fasting Versus Carbohydrate Drinks Before Surgery",
+  "status": "RECRUITING",
+  "has_results": false,
+  "enrolment": 75,
+  "last_update": "2024-10-22",
+  "primary_completion": "2025-09",
+  "completion": "2025-09"
+ },
+ "NCT06856291": {
+  "name": "TRIM-IR",
+  "title": "Response to Semaglutide in Non-diabetic Obese Patients With Varying Degrees of Insulin Resistance",
+  "status": "COMPLETED",
+  "has_results": false,
+  "enrolment": 40,
+  "last_update": "2026-10-02",
+  "primary_completion": "2026-09-06",
+  "completion": "2026-09-06"
+ },
+ "NCT03708419": {
+  "name": "PERSON",
+  "title": "Personalized Glucose Optimization Through Nutritional Intervention",
+  "status": "COMPLETED",
+  "has_results": false,
+  "enrolment": 242,
+  "last_update": "2022-02-14",
+  "primary_completion": "2021-11-29",
+  "completion": "2021-11-29"
+ },
+ "NCT01101438": {
+  "name": "MA.32",
+  "title": "A Phase III Randomized Trial of Metformin vs Placebo in Early Stage Breast Cancer",
+  "status": "COMPLETED",
+  "has_results": true,
+  "enrolment": 3649,
+  "last_update": "2023-09-13",
+  "primary_completion": "2021-09-21",
+  "completion": "2023-08-18"
+ },
+ "NCT02519543": {
+  "name": "TRIO-BD",
+  "title": "Treating Insulin Resistance as a Strategy to Improve Outcome in Refractory Bipolar Disorder",
+  "status": "COMPLETED",
+  "has_results": false,
+  "enrolment": 50,
+  "last_update": "2021-01-13",
+  "primary_completion": "2020-09",
+  "completion": "2020-09"
+ }
+}

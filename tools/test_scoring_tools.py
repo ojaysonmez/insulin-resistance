@@ -166,5 +166,18 @@ class AggregateTests(unittest.TestCase):
         self.assertEqual(sorted(v for _, v in by[(6, "D2")]), [3])
 
 
+class SupersedeTests(unittest.TestCase):
+    def test_later_unit_replaces_earlier_dimension(self):
+        root = Path(tempfile.mkdtemp())
+        try:
+            write_unit(root, "U1", [(6, "D7", 4), (6, "D3", 3)])
+            write_unit(root, "V7", [(6, "D7", 3)], {"supersedes": [{"unit": "U1", "dimensions": ["D7"]}]})
+            by, pv, settings, issues, notes = agg.load_scores(root)
+            self.assertEqual([v for _, v in by[(6, "D7")]], [3])
+            self.assertEqual([v for _, v in by[(6, "D3")]], [3])
+        finally:
+            shutil.rmtree(root, ignore_errors=True)
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

@@ -54,12 +54,23 @@ def use_names(root):
 def load(root):
     d = Path(root) / "usecases" / "scoring"
     scores, tier, pv = {}, {}, {}
-    for f in sorted(glob.glob(str(d / "[SU]*.json"))):
+    files = sorted(glob.glob(str(d / "[SUV]*.json")))
+    superseded = set()
+    for f in files:
+        try:
+            for sp in json.loads(Path(f).read_text(encoding="utf-8")).get("supersedes", []) or []:
+                for dm in sp.get("dimensions", []):
+                    superseded.add((sp.get("unit"), dm))
+        except Exception:
+            pass
+    for f in files:
         try:
             j = json.loads(Path(f).read_text(encoding="utf-8"))
         except Exception:
             continue
         for s in j.get("scores", []) or []:
+            if (j.get("unit"), s.get("dimension")) in superseded:
+                continue
             if s.get("score") is not None and s.get("dimension") in ALL_DIMS:
                 scores.setdefault(s["row"], {}).setdefault(s["dimension"], []).append(s["score"])
         for t in j.get("tiers", []) or []:
