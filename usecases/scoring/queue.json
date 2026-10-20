@@ -1,7 +1,7 @@
 {
   "config": {
     "start_limit_pct5": 40,
-    "continue_limit_pct5": 65,
+    "continue_limit_pct5": 80,
     "weekly_cap_pct": 75,
     "quiet_hours": null,
     "max_attempts": 2,
