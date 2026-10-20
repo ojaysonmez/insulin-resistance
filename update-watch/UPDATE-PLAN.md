@@ -66,7 +66,7 @@ Timings are suggestions. They depend on usage limits (one skeptic run already hi
 4. **Full-text reader helper**, so a trigger review reads documents end to end.
 5. **Version history** for the project folder (git repo) so changes can be diffed and undone.
 6. **A dry run.** One manual weekly-watch subagent over a one-week window, to check: the queries return usable results, tool failures are logged and do not stop the run, the output is correct and fits the budget, and the PENDING entries are in the right format.
-7. **A scheduling test.** Confirm that a scheduled task can start the subagent unattended: working directory, permissions for reading and writing the project folder, MCP tools available (PubMed, Crossref, registries), and that role files load as agent types. If scheduled sessions cannot spawn subagents, run the weekly watch as a single scheduled session and record that in the README.
+7. **A scheduling test.** *Done 2026-10-19:* two one-time tasks ran unattended in Auto mode; the second made a PubMed search and started a subagent (see `CHANGELOG.md`); not shown: a heavy screening run. Results were checked with a session timer (see `CONVENTIONS.md`, "Checking a scheduled or background run"). Original wording: Confirm that a scheduled task can start the subagent unattended: working directory, permissions for reading and writing the project folder, MCP tools available (PubMed, Crossref, registries), and that role files load as agent types. If scheduled sessions cannot spawn subagents, run the weekly watch as a single scheduled session and record that in the README.
 
 ## Expected yield and cost
 - Most weekly runs should find nothing that changes a claim. The conclusion has been stable across every review round. The value is in catching rare triggers: a retraction, a trial result, a guideline change.
@@ -79,3 +79,6 @@ Timings are suggestions. They depend on usage limits (one skeptic run already hi
 3. ~~Budget~~ **Caps as drafted, but the first weekly runs start with the PubMed screening at about 150,000 tokens**; the retraction check and registry check are scripts (no model cost) where possible.
 4. ~~Scope~~ **Both** the IR conclusion and the use-case list (rows 1-47).
 5. ~~Start date~~ **Dry run first**, after a scheduling test. Order: scheduling test, dry run, then schedule the weekly run.
+
+## Pilot monitoring (added 2026-10-19)
+During the daily tuning pilot, each run appends to its run log: the queries run with counts, tokens used, items kept and failures. The user sees the state through the pending count in the session-start brief. To check a run right after a change to the watch, use the timer pattern in `CONVENTIONS.md`; the timer is a developer aid and is not part of the schedule.

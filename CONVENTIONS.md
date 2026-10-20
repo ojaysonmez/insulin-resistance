@@ -22,3 +22,11 @@ One link per source, with the identifier shown beside it:
 3. Trial: registry ID plus its registry link (e.g. `https://clinicaltrials.gov/study/NCT00091949`, `https://www.isrctn.com/ISRCTN11215387`).
 4. Report or document with neither: source URL plus title, issuing body and date (URLs can move or break).
 A link is an address, not a check: verify that the title on the record matches the claim. State the read level (full text / abstract / title only) for every item. Publisher pages often block automated readers; doi.org and PubMed links are the safest for agents.
+
+## Checking a scheduled or background run (agreed 2026-10-19)
+A scheduled task or background agent does not reliably report back to the chat that started it. Use a session timer as a developer aid:
+1. Create the one-time scheduled task (or start the background run) and note its due time and expected duration.
+2. Create a one-shot timer (`CronCreate`, `recurring: false`) a few minutes after the due time, avoiding minute 0 and 30. Its prompt must be self-contained and say that the assistant, not the user, scheduled it.
+3. The timer prompt checks the run's status (the scheduled-tasks run list) and the output file, reports the result in plain words, and records it in `CHANGELOG.md`. It never commits, pushes, or starts search-heavy work.
+4. If the timer does not fire (the app was closed, or the chat was busy), do the same checks by hand when the user asks.
+Limits: the timer lives only in the open chat, does not appear in the app's SCHEDULED tab, and a recurring timer expires after 7 days. The update watch itself runs as a saved scheduled task and reports through `update-watch/PENDING.md` and the session-start brief, not through a timer.
