@@ -1,0 +1,2 @@
+time	unit	pct5_before	pct5_after	weekly_before	weekly_after	tokens	tool_uses	errors
+2026-10-19T20:25:04	U1	57	63	33	34	172625	46	manual test run; gate overridden (57% > 40% start limit); window delta includes this chat's own use

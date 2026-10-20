@@ -4,6 +4,19 @@
 
 Used by the weekly watch in `UPDATE-PLAN.md`. Edit this file, not the agent prompts, to change what is monitored. Draft 2026-10-19; items come from the project's current deliverables. Search strings are deliberately short (long conjunctions broke in earlier runs). Date-limit each PubMed query by entry date to the window of the run (2 days with 1 day of overlap in the daily pilot, 8 days in a weekly run). Record the count and how many records were screened. The machine-readable copy of section 4 is `queries.json`; keep the two in step (the script `tools/watch_fetch.py` reads the JSON file).
 
+## 0. Objective and signal types (D-31, 2026-10-19)
+The watch exists to catch a new fact that changes the viability of a use case in `usecases-verified.md`, or that reveals a new candidate use. Since decision D-30 the project's goal is to find and score the most viable uses and what would make the others viable, so the watch is aimed at each use's path to viability (the missing piece recorded in the scoring) and not at re-checking the clinical-utility conclusion for its own sake. Every kept item names the signal type and the row or pathway it affects.
+
+| Signal | What it is | Class |
+|---|---|---|
+| S1 Guideline, label or regulatory change | A guideline, consensus statement, drug label or regulatory decision that names an insulin or C-peptide test (new recommendation, threshold or eligibility criterion) for a use | review; urgent if it contradicts a row's status |
+| S2 Missing piece addressed | A study, trial or registry result that supplies a row's missing piece: external validation of a score, a trial of measurement-guided care, an incremental-value study, accuracy data, an agreed criterion | review |
+| S3 Assay or standardisation milestone | A reference material or method listing, harmonisation result, or biological-variation data (for example EuBIVAS insulin values) | review |
+| S4 New candidate use | A use of insulin, C-peptide or insulin-resistance measurement not yet in the list, especially post-meal or stimulated, with a guideline or trial source | candidate for the scoring queue (the main session decides whether to add a row, after a skeptic review) |
+| S5 Integrity | Retraction or correction of a cited paper | urgent |
+
+Anything else is logged and dropped (section 6). Queries Q1 to Q3 look for S2 on the unlock conditions of the insulin-resistance uses; Q4 for S1; Q5 and Q6 for S3; Q7 to Q13 for S1 or S2 on the rows they name; Q14 to Q17 for S2 and S4 on the closest-to-viable rows (48, 49, 9, 5).
+
 ## 1. Retraction and correction check
 All PMIDs and DOIs in `merged-conclusion.md` and `usecases-verified.md`. Method: PubMed record title and first author match; Crossref `works/{doi}` field `updated-by` (and `update-to`). Known notices already seen: corrections on EASL-EASD-EASO 2024 (PMIDs 38852583, 38869512), Holt 2021 (34590174), Palmer 2004 (14693724), AACE 2022 (35963508), ERAS bariatric (34984504); DiaPep277 (24757230) retracted and cited only as a do-not-cite note. Flag any new notice.
 Highest priority (load-bearing): IRIS 26886418; Spence 2019 30734043; Hu 2024 38191206; Liu 2026 42569452; Xu 2026 42702103; WHI 25944628; ATTICA 41178693; LAMP 42145088; PLIS 34531293; EuBIVAS 38987271; ARIC 29618016; Rohlfing 2025 40802520; Rosli 2022 35622611; Zhou 2022 35177563; Isokuortti 28660493; Gutenberg 34380182.
@@ -43,6 +56,10 @@ Highest-value changes: any recommendation that names an insulin or HOMA-IR measu
 | Q10 | PCOS AND "insulin resistance" AND metformin | PCOS | Row 15 |
 | Q11 | insulin AND hypoglycaemia AND (guideline OR consensus) | Hypoglycaemia work-up | Rows 1-5 |
 | Q12 | "congenital hyperinsulinism" OR "hyperinsulinaemic hypoglycaemia" OR "hyperinsulinemic hypoglycemia" | Congenital and acquired hyperinsulinism | Rows 4, 24-26 |
+| Q14 | ("postprandial hypoglycemia" OR "reactive hypoglycemia") AND ("mixed meal" OR "meal test") | Reactive hypoglycaemia work-up | Row 48 |
+| Q15 | "C-peptide" AND "oral glucose tolerance" AND "type 1 diabetes" AND (progression OR "risk score") | Type 1 risk staging by OGTT C-peptide | Row 49 |
+| Q16 | ("type 3c diabetes" OR "pancreatogenic diabetes" OR "diabetes of the exocrine pancreas") AND ("C-peptide" OR classification) | Type 3c classification | Row 9 |
+| Q17 | ("post-bariatric hypoglycemia" OR "postbariatric hypoglycemia") AND (diagnosis OR consensus OR guideline) | Post-bariatric hypoglycaemia criteria | Row 5 |
 | Q13 | "insulin resistance" AND ("Mendelian randomization" OR trial) AND (cancer OR dementia OR depression) | Oncology and psychiatry signals | Steelman section |
 If a query returns zero hits, rerun a shorter variant before logging a negative; log both strings. Notes from the dry run of 2026-10-19: do not use `randomized[pt]` or other publication-type tags for new records (types are added days after entry; use free-text words); do not use the bare word `standardization` (PubMed maps it to `standard`); the bare term `hyperinsulinism` explodes to insulin-resistance papers; Q4 is expected to return zero most weeks, which is normal for guidelines; if a query returns more than about 60 hits, rewrite the string instead of screening the top 25.
 

@@ -1,0 +1,163 @@
+{
+  "config": {
+    "start_limit_pct5": 40,
+    "continue_limit_pct5": 65,
+    "weekly_cap_pct": 75,
+    "quiet_hours": null,
+    "max_attempts": 2
+  },
+  "status": "RUNNING",
+  "pause_reason": "",
+  "units": [
+    {
+      "id": "U1",
+      "phase": "pilot",
+      "agent": "ir-evidence-searcher",
+      "dims": "D7 (United States patients per year in whom the situation arises; give the number, its source and a range, and mark a range wider than one bin as low confidence) and D3 (guideline or regulatory status, from guideline full text where possible)",
+      "rows": [
+        6,
+        5,
+        13
+      ],
+      "template": "score",
+      "needs": [],
+      "inputs": [],
+      "extra": "",
+      "pause_after": false,
+      "state": "done",
+      "attempts": 0,
+      "prompt": "usecases/scoring/units/U1.md",
+      "outputs": [
+        "usecases/scoring/U1.md",
+        "usecases/scoring/U1.json"
+      ]
+    },
+    {
+      "id": "U2",
+      "phase": "pilot",
+      "agent": "ir-biostatistician",
+      "dims": "D2 (evidence that the result changes decisions or outcomes, not mere association) and D8 (added value over alternatives such as clinical features, HbA1c, glucose, other tests)",
+      "rows": [
+        6,
+        5,
+        13
+      ],
+      "template": "score",
+      "needs": [],
+      "inputs": [],
+      "extra": "Also write a path to viability for EVERY row in path_to_viability: the one missing piece of evidence, assay, guideline or workflow that would move this use to the next tier, its type (evidence, assay, guideline, workflow), a rough effort (small: months with existing data; medium: a prospective study; large: a randomized trial) and the basis for your judgement. It is a judgement, not a score.",
+      "pause_after": false,
+      "state": "pending",
+      "attempts": 0,
+      "prompt": "usecases/scoring/units/U2.md",
+      "outputs": [
+        "usecases/scoring/U2.md",
+        "usecases/scoring/U2.json"
+      ]
+    },
+    {
+      "id": "U3",
+      "phase": "pilot",
+      "agent": "ir-clinical-chemist",
+      "dims": "D4 (analytical feasibility: assay, sample, protocol, standardization)",
+      "rows": [
+        6,
+        5,
+        13
+      ],
+      "template": "score",
+      "needs": [],
+      "inputs": [],
+      "extra": "",
+      "pause_after": false,
+      "state": "pending",
+      "attempts": 0,
+      "prompt": "usecases/scoring/units/U3.md",
+      "outputs": [
+        "usecases/scoring/U3.md",
+        "usecases/scoring/U3.json"
+      ]
+    },
+    {
+      "id": "U4",
+      "phase": "pilot",
+      "agent": "ir-endocrinologist",
+      "dims": "D1 (decision change), D5 (workflow fit), D6 (safety and burden, higher = safer) and S (stakes: harm if the right decision is not made)",
+      "rows": [
+        6,
+        5,
+        13
+      ],
+      "template": "score",
+      "needs": [],
+      "inputs": [],
+      "extra": "Also give the setting tag for every row in settings: routine care, specialist outpatient, or inpatient or procedural.",
+      "pause_after": false,
+      "state": "pending",
+      "attempts": 0,
+      "prompt": "usecases/scoring/units/U4.md",
+      "outputs": [
+        "usecases/scoring/U4.md",
+        "usecases/scoring/U4.json"
+      ]
+    },
+    {
+      "id": "U5",
+      "phase": "pilot",
+      "agent": "ir-pcp",
+      "dims": "D1 (decision change), D5 (workflow fit), D6 (safety and burden, higher = safer) and S (stakes). Another role scores the same dimensions independently; give your own reading as a primary care physician",
+      "rows": [
+        6,
+        5,
+        13
+      ],
+      "template": "score",
+      "needs": [],
+      "inputs": [],
+      "extra": "",
+      "pause_after": false,
+      "state": "pending",
+      "attempts": 0,
+      "prompt": "usecases/scoring/units/U5.md",
+      "outputs": [
+        "usecases/scoring/U5.md",
+        "usecases/scoring/U5.json"
+      ]
+    },
+    {
+      "id": "U6",
+      "phase": "pilot",
+      "agent": "ir-skeptic",
+      "dims": "",
+      "rows": [
+        6,
+        5,
+        13
+      ],
+      "template": "review",
+      "needs": [
+        "U1",
+        "U2",
+        "U3",
+        "U4",
+        "U5"
+      ],
+      "inputs": [
+        "U1",
+        "U2",
+        "U3",
+        "U4",
+        "U5"
+      ],
+      "extra": "",
+      "pause_after": true,
+      "state": "pending",
+      "attempts": 0,
+      "prompt": "usecases/scoring/units/U6.md",
+      "outputs": [
+        "usecases/scoring/U6.md",
+        "usecases/scoring/U6.json"
+      ]
+    }
+  ]
+}

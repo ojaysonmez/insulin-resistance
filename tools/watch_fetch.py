@@ -158,7 +158,7 @@ def md_section(path, heading_prefix):
 def rules_block():
     """Rules for the judging step, copied from the source files so they cannot drift."""
     out = ["Rules for the judging step (copied from update-watch/WATCHLIST.md sections 5 and 6 and update-watch/UPDATE-PLAN.md):", ""]
-    for path, prefix in (("update-watch/WATCHLIST.md", "## 5."), ("update-watch/WATCHLIST.md", "## 6."),
+    for path, prefix in (("update-watch/WATCHLIST.md", "## 0."), ("update-watch/WATCHLIST.md", "## 5."), ("update-watch/WATCHLIST.md", "## 6."),
                          ("update-watch/UPDATE-PLAN.md", "## PENDING.md entry format"),
                          ("update-watch/UPDATE-PLAN.md", "## Impact classes")):
         out += md_section(path, prefix) + [""]

@@ -8,6 +8,7 @@ a new or resumed session knows where the project stands.
 Read-only: it reads git state, HANDOFF.md, CHANGELOG.md and update-watch/PENDING.md and
 writes nothing. Standard library only. Keeps the brief under MAX_LINES lines.
 """
+import json
 import pathlib
 import re
 import subprocess
@@ -117,6 +118,17 @@ def main():
             age = -1
         note = f" ({age} day(s) ago; the daily pilot expects a run every day)" if age > 2 else ""
         brief.append(f"Update watch, latest run {latest[0]}{note}: {summary or 'no SUMMARY line in the file'}")
+
+    try:
+        qd = json.loads(read("usecases/scoring/queue.json") or "{}")
+        if qd.get("units"):
+            counts = {}
+            for u in qd["units"]:
+                counts[u["state"]] = counts.get(u["state"], 0) + 1
+            note = f" ({qd['pause_reason']})" if qd.get("pause_reason") else ""
+            brief.append(f"Scoring queue {qd.get('status', '?')}{note}: " + ", ".join(f"{k} {v}" for k, v in sorted(counts.items())) + " (usecases/scoring/queue.json)")
+    except Exception:
+        pass
 
     open_items = section_bullets(read("CHANGELOG.md"), "## Not yet run or done")
     if open_items:

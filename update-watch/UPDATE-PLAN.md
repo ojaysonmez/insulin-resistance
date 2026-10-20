@@ -4,6 +4,9 @@
 
 Status: DRAFT written 2026-10-19. Nothing here is scheduled or running. It describes how to keep `merged-conclusion.md` and `usecases-verified.md` current as new evidence appears, without re-running the whole system. Coverage and reimbursement are out of scope.
 
+## Objective (D-31, 2026-10-19)
+Catch any new guideline, label, trial, registry result, assay milestone or retraction that changes the viability of a use case in `usecases-verified.md`, or that reveals a new candidate use, and report it against the row or pathway it affects (signal types S1 to S5 in `WATCHLIST.md` section 0). The watch serves the project goal in D-30: finding and scoring the most viable uses and what would make the others viable.
+
 ## Principles
 1. **Incremental, not full re-runs.** Weekly runs look only for what changed since the last run. Full re-analysis happens only when a trigger in `WATCHLIST.md` fires.
 2. **Nothing changes the deliverables automatically.** Weekly and monthly runs write to `PENDING.md`. `merged-conclusion.md` and `usecases-verified.md` change only after triage and a skeptic review, and every change gets a `CHANGELOG.md` entry.
@@ -39,6 +42,7 @@ Timings are suggestions. They depend on usage limits (one skeptic run already hi
 - Type: paper / trial result / registry change / guideline or label update / retraction / correction
 - Read level: full text / abstract / title only
 - What it says: two sentences, numbers only if read
+- Signal: S1 to S5 (see `WATCHLIST.md` section 0)
 - Affects: claim or section in merged-conclusion.md or row in usecases-verified.md (until a claim ledger exists, name the section; with a ledger, the claim ID)
 - Proposed impact: none / minor (add a citation or caveat) / review (may change a claim or status) / urgent (retraction or contradicts a stated fact)
 - Status: new / triaged / in review / applied / rejected, with date and reviewer
