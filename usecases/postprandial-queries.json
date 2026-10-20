@@ -1,0 +1,56 @@
+{
+  "_note": "Topics and short PubMed strings for the post-meal, post-load and stimulated insulin and C-peptide use-case search; see usecases/POSTPRANDIAL-ADDITIONS-PLAN.md. Read by tools/usecase_search.py. Relevance order, no date window.",
+  "per_topic": 20,
+  "topics": [
+    {
+      "id": "T1",
+      "topic": "Mixed-meal test for suspected reactive (postprandial) hypoglycaemia",
+      "query": "(\"postprandial hypoglycemia\" OR \"reactive hypoglycemia\") AND (\"mixed meal\" OR \"meal test\" OR \"mixed-meal\")"
+    },
+    {
+      "id": "T2",
+      "topic": "Late dumping syndrome after gastric surgery",
+      "query": "(\"late dumping\" OR \"dumping syndrome\") AND (insulin OR \"mixed meal\")"
+    },
+    {
+      "id": "T3",
+      "topic": "Non-insulinoma pancreatogenous hypoglycaemia",
+      "query": "(\"noninsulinoma pancreatogenous hypoglycemia\" OR NIPHS OR \"adult nesidioblastosis\")"
+    },
+    {
+      "id": "T4",
+      "topic": "OGTT C-peptide to stage type 1 diabetes risk (Index60-type scores)",
+      "query": "\"C-peptide\" AND \"oral glucose tolerance\" AND \"type 1 diabetes\" AND (progression OR \"risk score\")"
+    },
+    {
+      "id": "T5",
+      "topic": "Stimulated C-peptide in LADA to guide treatment",
+      "query": "LADA AND \"C-peptide\" AND (stimulated OR \"mixed meal\") AND (treatment OR insulin)"
+    },
+    {
+      "id": "T6",
+      "topic": "Glucagon stimulation versus meal test in type 1 diabetes",
+      "query": "\"glucagon stimulation\" AND \"mixed meal\" AND \"C-peptide\""
+    },
+    {
+      "id": "T7",
+      "topic": "Protein or leucine challenge in congenital hyperinsulinism",
+      "query": "\"congenital hyperinsulinism\" AND (leucine OR \"protein challenge\" OR \"protein-induced\" OR \"protein load\")"
+    },
+    {
+      "id": "T8",
+      "topic": "Predicting diabetes after pancreatic surgery from a pre-operative OGTT or meal test",
+      "query": "pancreatectomy AND (\"oral glucose tolerance\" OR \"mixed meal\") AND (\"C-peptide\" OR insulin) AND (diabetes OR \"beta-cell\")"
+    },
+    {
+      "id": "T9",
+      "topic": "Meal-test beta-cell function to predict diabetes remission after bariatric surgery",
+      "query": "bariatric AND \"mixed meal\" AND \"C-peptide\" AND remission"
+    },
+    {
+      "id": "T10",
+      "topic": "Insulinogenic index or OGTT insulin to predict progression in prediabetes",
+      "query": "\"insulinogenic index\" AND (prediabetes OR \"diabetes risk\")"
+    }
+  ]
+}
