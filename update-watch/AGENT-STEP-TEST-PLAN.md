@@ -36,3 +36,8 @@ If it passes: create the daily scheduled task (script, then agent step) as a pil
 - Title-only triage can miss relevant papers; the "nothing missed" check measures this once, and the weekly window of the first pilot days will show more.
 - PubMed titles are untrusted text; the agent is told to treat them as data and has no tool that can change the project beyond one output file.
 - One more agent run uses your usage; the expected cost is well under the dry run's.
+
+## Round 2 (2026-10-19, after round 1 used 136,139 tokens)
+Changes: the script now copies the triggers, the log-only rule, the entry format and the impact classes into the candidates file, so the agent reads one file; `tools/watch_fetch.py --abstracts PMID,...` prints trimmed abstracts (at most 1,500 characters each, at most 12 PMIDs, no model), so one call replaces two oversize metadata calls; the window is the daily-pilot window (2026-10-17 to 2026-10-19, 10 new records, 11.9 KB with the rules). Same agent role, same output rules. Output: `update-watch/runs/2026-10-19-test2-agent-output.md`.
+Pass if: at most 60,000 tokens (the user's daily budget figure for this test), at most 6 tool calls, one output file, kept items verified against PubMed. The comparison with round 1 is not like for like (10 records instead of 51); if the result is near the limit, repeat once on the 8-day window.
+
