@@ -73,6 +73,13 @@ Timings are suggestions. They depend on usage limits (one skeptic run already hi
 - Per weekly run: about 150,000 to 300,000 tokens. Four to five runs a month plus a triage: roughly 1 to 2 million tokens a month, before any trigger reviews.
 - Review these figures after the dry run and after the first month, and cut queries that produce only "no trigger".
 
+## Design after the dry run (2026-10-19, decision D-29)
+The dry run (`dry-run-2026-10-19.md`) let one agent search and read everything and used 231,550 tokens against a 150,000 cap, partly because single tool results were about 80,000 characters long. The watch is therefore split:
+- **Retrieval by script, no model:** `tools/watch_fetch.py` runs the queries in `queries.json` over the entry-date window (2 days in the daily pilot, 8 in a weekly run), drops PMIDs already listed in `seen-pmids.txt`, fetches compact records (title, first author, journal, date, DOI), checks the tracked NCT numbers against `registry-baseline.json` (status, results flag, enrolment, last update, and the stale-record rule), and writes `runs/<date>-candidates.md`. `tools/check_citations.py --refresh` does the retraction and correction check. Tested on the dry run window: 12.7 seconds, 51 new records, the same hit counts and the same registry values as the agent found.
+- **Judgement by a model, small input:** an `ir-evidence-searcher` subagent reads only the candidates file, applies the log-only rule (`WATCHLIST.md` section 6), fetches abstracts for at most about 10 records, and writes entries for `PENDING.md`. The budget is bounded by construction (a short list and a cap on abstracts), and the real token count is read from the completion notice and logged in each run.
+- **Limits for any tool step by an agent:** at most about 4 PubMed searches in parallel (rate limit) and about 10 records per metadata call (output limit); if a query returns more than about 60 hits, rewrite the string.
+- The "Affects" field is filled from the deliverable headings and row titles that the script prints at the end of the candidates file.
+
 ## Decisions (settled 2026-10-19, user accepted the defaults; recorded as D-28 in `DECISIONS.md`)
 1. ~~Cadence~~ **Changed by the user the same day: the watch runs once a day during a tuning pilot (about two weeks; two-day PubMed window; log tokens per run), then weekly. Triage is weekly (monthly triage in the cadence table is replaced by weekly while the pilot runs).** Urgent items are flagged the day they are found.
 2. ~~Notification~~ **`PENDING.md` only.** The session-start brief prints the pending count, so the user sees it at the start of any chat. No push messages.
