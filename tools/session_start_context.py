@@ -97,6 +97,27 @@ def main():
     pending = len(re.findall(r"^### P-", read("update-watch/PENDING.md"), flags=re.M))
     brief.append(f"Update watch: {pending} pending item(s) in update-watch/PENDING.md (watch not yet running).")
 
+    latest = None
+    runs_dir = ROOT / "update-watch" / "runs"
+    if runs_dir.is_dir():
+        for f in runs_dir.glob("*-triage.md"):
+            m = re.fullmatch(r"(\d{4}-\d{2}-\d{2})-triage\.md", f.name)
+            if m and (latest is None or m.group(1) > latest[0]):
+                latest = (m.group(1), f)
+    if latest:
+        summary = ""
+        for ln in read(f"update-watch/runs/{latest[1].name}").splitlines()[:5]:
+            if ln.startswith("SUMMARY:"):
+                summary = ln[len("SUMMARY:"):].strip()
+                break
+        try:
+            import datetime
+            age = (datetime.date.today() - datetime.date.fromisoformat(latest[0])).days
+        except ValueError:
+            age = -1
+        note = f" ({age} day(s) ago; the daily pilot expects a run every day)" if age > 2 else ""
+        brief.append(f"Update watch, latest run {latest[0]}{note}: {summary or 'no SUMMARY line in the file'}")
+
     open_items = section_bullets(read("CHANGELOG.md"), "## Not yet run or done")
     if open_items:
         brief.append("Open items (CHANGELOG.md, 'Not yet run or done'):")

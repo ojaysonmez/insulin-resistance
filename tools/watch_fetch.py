@@ -237,7 +237,8 @@ def deliverable_map():
 
 def main():
     ap = argparse.ArgumentParser(description="Retrieval step of the update watch (no model).")
-    ap.add_argument("--days", type=int, default=2)
+    ap.add_argument("--days", default="2",
+                    help="window length in days, or 'auto': days since the last runs/<date>-candidates.md plus one day of overlap (2 to 14; 2 if none)")
     ap.add_argument("--date-to", default="")
     ap.add_argument("--queries", default="update-watch/queries.json")
     ap.add_argument("--seen", default="update-watch/seen-pmids.txt")
@@ -255,7 +256,21 @@ def main():
         print("cannot read queries file:", e, file=sys.stderr)
         return 2
     d_to = ymd(args.date_to) if args.date_to else datetime.date.today()
-    d_from = d_to - datetime.timedelta(days=args.days)
+    if args.days == "auto":
+        last = None
+        for f in (ROOT / "update-watch" / "runs").glob("*-candidates.md"):
+            m = re.fullmatch(r"(\d{4}-\d{2}-\d{2})-candidates\.md", f.name)
+            if m:
+                try:
+                    d = ymd(m.group(1))
+                except ValueError:
+                    continue
+                if d <= d_to and (last is None or d > last):
+                    last = d
+        days = 2 if last is None else max(2, min(14, (d_to - last).days + 1))
+    else:
+        days = int(args.days)
+    d_from = d_to - datetime.timedelta(days=days)
     out_path = ROOT / (args.out or f"update-watch/runs/{d_to.isoformat()}-candidates.md")
     delay = 0.12 if os.environ.get("NCBI_API_KEY") else 0.4
     notes = []
