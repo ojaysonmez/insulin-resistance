@@ -10,7 +10,7 @@ The scout drafted six rows from abstracts only and fetched no guideline text, so
 |---|---|---|
 | Cryer 2009, Endocrine Society hypoglycaemia guideline, PMID 19088155, DOI 10.1210/jc.2008-1410 | D1 | **No.** No PubMed Central copy; a first publisher-page attempt hit the wrong article, and a web search found only summaries. One more attempt on the Endocrine Society site is allowed; if it fails, D1 stays unread at guideline level and the report says so |
 | ADA Standards of Care 2026 section 2, PMID 41358893, PMC12690183 | D2 | Yes (already used for row 6) |
-| Insel 2015 staging statement of presymptomatic type 1 diabetes, PMID 26246049, PMC5444099 | D2 | Yes |
+| Insel 2015 staging statement of presymptomatic type 1 diabetes, PMID 26404926, PMC5321245 (corrected 2026-10-19: the PMID first written here, 26246049, was wrong and belongs to an unrelated paper) | D2 | Yes |
 | Index60 paper, PMID 35998266, PMC9643141; oral minimal model paper, PMID 39992257, PMC12527456 | D2 | Yes |
 | Reactive hypoglycaemia studies, PMID 33916952 (PMC8067537), 41829992 (PMC12986748); post-bariatric hypoglycaemia review, PMID 39555226 (PMC11564166) | D1 | Yes |
 | Distal pancreatectomy cohorts, PMID 37889837 (PMC10876401), 42146813 (PMC13178281) | D4 | Yes |
