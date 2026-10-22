@@ -2,13 +2,13 @@
   "config": {
     "start_limit_pct5": 40,
     "continue_limit_pct5": 80,
-    "weekly_cap_pct": 75,
+    "weekly_cap_pct": 88,
     "quiet_hours": null,
     "max_attempts": 2,
     "hard_stop_pct5": 95
   },
-  "status": "PAUSED",
-  "pause_reason": "after unit U6 (pilot): the user reviews before the queue continues",
+  "status": "RUNNING",
+  "pause_reason": "",
   "units": [
     {
       "id": "U1",
@@ -490,6 +490,27 @@
       "outputs": [
         "usecases/scoring/V6.md",
         "usecases/scoring/V6.json"
+      ]
+    },
+    {
+      "id": "R1",
+      "phase": "rescore",
+      "agent": "ir-usecase-scout",
+      "dims": "D2",
+      "rows": [
+        11
+      ],
+      "template": "rescore",
+      "needs": [],
+      "inputs": [],
+      "extra": "Signal type S2 found by the watch on 2026-10-22. Paper: PMID 42900776, DOI 10.2337/dc26-1070 (read level when flagged: abstract). Why the watch flagged it: ARMMS-T2D lists higher fasting C-peptide and insulin among univariate predictors of T2D remission after bariatric surgery; multivariate role not seen in the truncated abstract.",
+      "pause_after": false,
+      "state": "pending",
+      "attempts": 0,
+      "prompt": "usecases/scoring/units/R1.md",
+      "outputs": [
+        "usecases/scoring/R1.md",
+        "usecases/scoring/R1.json"
       ]
     }
   ]
