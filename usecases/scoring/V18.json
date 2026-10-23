@@ -239,13 +239,15 @@
   {
    "row": 46,
    "dimension": "D1",
-   "score": 2,
+   "score": 3,
    "reason": "Measure: C-peptide, urinary or serum with stimulation, at onset. It is criterion 3 of 3 in the Japanese diagnostic criteria (3 under clarification 12 in Japan), but in the US no guideline uses it and DKA is treated with insulin regardless, so it supports the diagnosis and prognosis only. Alternative reading: 3.",
    "sources": [
     "Imagawa/JDS committee 2012: PMID 24843620 DOI 10.1111/jdi.12024 full text (read by skeptic, per usecases-verified.md row 46)"
    ],
    "confidence": "low",
-   "origin": "project files"
+   "origin": "project files",
+   "original_score": 2,
+   "correction": "Applied 2026-10-23 from rescoring proposal RS-D1S (clarifications 25 to 29, user approved): Current 2.5 is the mean of V17 (3) and V18 (2). Clarification 28 and D-38: low C-peptide is criterion 3 of 3 in the Japan Diabetes Society fulminant T1D criteria, a national diagnostic criterion elsewhere, so D1 is 3, the same reading as row 47. The US reading (no guideline uses it; treatment unchanged) belongs in D3, D7 and S, not D1. Measure type: C-peptide (urinary or serum, stimulated). Proposal confidence medium."
   },
   {
    "row": 46,

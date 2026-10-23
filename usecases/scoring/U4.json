@@ -143,13 +143,15 @@
   {
    "row": 13,
    "dimension": "S",
-   "score": 2,
+   "score": 1,
    "reason": "IRIS absolute reduction in stroke or MI was 2.8 points over 4.8 years (9.0% vs 11.8%), so missing the selection means delayed, moderate harm; clinicians can also give pioglitazone to these patients without a HOMA-IR value, so the marginal harm from lacking the measurement is smaller than the harm of recurrent stroke itself. Recurrent stroke is serious, so a 3 is arguable.",
    "sources": [
     "PMID 26886418 DOI 10.1056/nejmoa1506930 abstract plus PMC4887756 keyword-grep windows"
    ],
    "confidence": "low",
-   "origin": "both"
+   "origin": "both",
+   "original_score": 2,
+   "correction": "Applied 2026-10-23 from rescoring proposal RS-D1S (clarifications 25 to 29, user approved): Current 2.5 is the mean of U4 (2) and U5 (3), and U5 scored recurrent-stroke severity, which clarification 18 forbids. Both scorers noted that clinicians can treat without HOMA-IR, and no source read shows benefit differs by HOMA-IR stratum. Marginal harm is treating a low-IR patient who gains less (oedema, weight, fracture risk) or leaving out a patient who would benefit if the default is not to treat; symptomatic or reversible, 1. If the default were withholding pioglitazone, S would be 2; recorded as the alternative. Proposal confidence low."
   }
  ],
  "path_to_viability": [],

@@ -44,14 +44,16 @@
   {
    "row": 6,
    "dimension": "S",
-   "score": 3,
+   "score": 2,
    "reason": "Misclassifying insulin-requiring diabetes as T2D and withdrawing insulin risks ketoacidosis and hospitalisation. Missing a MODY or insulin-independent T2D mostly costs unnecessary injections, so the typical harm is serious but not usually fatal.",
    "sources": [
     "PMID 34590174 DOI 10.1007/s00125-021-05568-3 full text (via row 6; the 11% reclassified figure)",
     "clinical judgement"
    ],
    "confidence": "low",
-   "origin": "project files"
+   "origin": "project files",
+   "original_score": 3,
+   "correction": "Applied 2026-10-23 from rescoring proposal RS-D1S (clarifications 25 to 29, user approved): Current 2.5 is the mean of U4 (2) and U5 (3). Under clarifications 18 and 26 the harm is that of the default without the result: unnecessary insulin (hypoglycaemia, burden) or a missed MODY or non-insulin option, moderate and delayed. DKA arises from a wrong result or a wrong withdrawal, not from absent information, so it is not the marginal harm. Moves rank-relevant S from 0.625 to 0.5 on the 0-1 scale. Proposal confidence low."
   },
   {
    "row": 5,
@@ -141,13 +143,15 @@
   {
    "row": 13,
    "dimension": "S",
-   "score": 3,
+   "score": 1,
    "reason": "The outcome at stake is recurrent stroke or myocardial infarction (9.0% against 11.8% over 4.8 years in IRIS), which means permanent disability or death. Not having HOMA-IR would not usually prevent treatment, so confidence in this stakes score for the measurement itself is low.",
    "sources": [
     "PMID 26886418 DOI 10.1056/nejmoa1506930 abstract"
    ],
    "confidence": "low",
-   "origin": "both"
+   "origin": "both",
+   "original_score": 3,
+   "correction": "Applied 2026-10-23 from rescoring proposal RS-D1S (clarifications 25 to 29, user approved): Current 2.5 is the mean of U4 (2) and U5 (3), and U5 scored recurrent-stroke severity, which clarification 18 forbids. Both scorers noted that clinicians can treat without HOMA-IR, and no source read shows benefit differs by HOMA-IR stratum. Marginal harm is treating a low-IR patient who gains less (oedema, weight, fracture risk) or leaving out a patient who would benefit if the default is not to treat; symptomatic or reversible, 1. If the default were withholding pioglitazone, S would be 2; recorded as the alternative. Proposal confidence low."
   }
  ],
  "path_to_viability": [
