@@ -1,6 +1,6 @@
 # Which uses of insulin and C-peptide measurement are viable?
 
-One-page brief, written 2026-10-19. Preliminary: it uses the status of each use case, not scores (scoring is the next step). Detail and sources: `summary-detailed.md`, `merged-conclusion.md`, `usecases-verified.md`. Not medical advice.
+One-page brief, written 2026-10-19; section 1b added 2026-10-23 after scoring. Preliminary: sections 1 and 2 use the status of each use case; section 1b and the scorecard use the scores. Detail and sources: `summary-detailed.md`, `merged-conclusion.md`, `usecases-verified.md`. Not medical advice.
 
 **Goal.** Find the uses of insulin, C-peptide and insulin-resistance measurement that are most viable, and what would make the less viable ones viable. We already know routine insulin-resistance screening is not supported (below); that is the constraint, not the finding to repeat.
 
@@ -10,6 +10,13 @@ All are about insulin secretion or classification, not insulin-resistance screen
 - **Diabetes classification** in insulin-treated people: a random C-peptide with a glucose, and urinary C-peptide for MODY triage (rows 6, 7, 31).
 - **Islet or pancreas graft function:** C-peptide within the Igls criteria (row 10).
 - **Teplizumab eligibility:** peak stimulated C-peptide of at least 0.2 pmol/mL in ages 8-17 (row 29).
+
+## 1b. Top pathways after scoring and the stage 3 skeptic review (2026-10-23)
+Scores are preliminary judgements; read tiers, not rank numbers (`usecases/scoring/ranking.md`, decisions D-39 to D-43). Tier A is rows 6, 1 and 31.
+1. **Random C-peptide in insulin-treated adults of uncertain diabetes type (rows 6 and 31 together).** Consensus text already says to test before stopping insulin, yield data exist (6.8% reclassified in one uncontrolled UK clinic), the test is cheap. Missing: US cross-platform agreement at 80, 200 and 600 pmol/L, then a multi-site cohort with a pre-specified step-down rule and ketoacidosis and HbA1c endpoints (about 1,500 to 2,500 people, 3 to 4 years).
+2. **Insulin, C-peptide and proinsulin at documented hypoglycaemia (row 1).** Established, but thresholds date from 2009 and have not been checked on current US assays. Missing: an accuracy study in consecutive patients (400 to 900 people, 6 to 10 centres, 4 to 5 years).
+3. **C-peptide or urine C-peptide:creatinine triage before MODY testing (row 7), conditional.** Tier B. It needs a sourced positive predictive value and US availability of the urine assay first; the earlier "20%" figure could not be traced.
+Not worth pursuing now: routine fasting insulin, HOMA-IR or TyG screening (Bottom line 1, about 80-85%); "shown not to add value" is about 40% for fasting insulin and HOMA-IR and 30% for TyG, so absence of proof is not proof of absence.
 
 ## 2. Closest to viable (from the stage 1 screen)
 Eleven uses are "close": limited or partly established support plus one specific missing piece (full table in the scorecard below). The cheapest next steps are the small-effort ones:
@@ -42,7 +49,7 @@ Index = mean of the screening scores (decision change, evidence, guideline statu
 
 | Tier | Row | Use | Status in list | Index | Composite | Dimensions scored | Patients per year | Missing piece (type, effort) | Watch signal |
 |---|---|---|---|---|---|---|---|---|---|
-| viable now | 6 | Diabetes classification: T1D, T2D, LADA | Established | 0.75 | 0.71 | 9/9 | 100k-1M | One agreed C-peptide cut-off set and conditions of use (time since diagnosis, renal function, concurrent glucose) in a single US guideline, with... (guideline, medium) | - |
+| viable now | 6 | Diabetes classification: T1D, T2D, LADA | Established | 0.71 | 0.66 | 9/9 | 100k-1M | One agreed C-peptide cut-off set and conditions of use (time since diagnosis, renal function, concurrent glucose) in a single US guideline, with... (guideline, medium) | - |
 | viable now | 1 | Adult with hypoglycaemia: insulinoma vs other causes | Established | 0.74 | 0.65 | 9/9 | 10k-100k | A prospective accuracy study with a standard assay-specific cutoff set (current insulin and C-peptide immunoassays) in consecutive patients with... (evidence, medium) | - |
 | viable now | 2 | Suspected factitious or exogenous insulin hypoglycaemia | Established | 0.63 | 0.57 | 9/9 | 1k-10k | Report analogue cross-reactivity per assay with a validated cutoff pattern, and a cohort accuracy study of insulin plus C-peptide against drug screen... (assay, medium) | - |
 | viable now | 10 | Islet or pancreas transplant graft function | Established | 0.59 | 0.56 | 9/9 | 1k-10k | A published Igls 2.0-type document with explicit C-peptide thresholds by assay, and adjustment for kidney function. (guideline, small) | - |

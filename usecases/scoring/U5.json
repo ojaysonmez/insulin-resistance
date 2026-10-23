@@ -44,7 +44,9 @@
   {
    "row": 6,
    "dimension": "S",
-   "score": 2,
+   "score": 1,
+   "original_score": 2,
+   "correction": "Applied 2026-10-23 (D-43): S aligned at 1 for rows 6 and 31 under clarification 18; both use 'continue insulin' as the default, so the harm of deciding without the measurement is low (missed reclassification or a missed monogenic cause), and the safety risk of withdrawal is carried by D6, not S.",
    "reason": "Misclassifying insulin-requiring diabetes as T2D and withdrawing insulin risks ketoacidosis and hospitalisation. Missing a MODY or insulin-independent T2D mostly costs unnecessary injections, so the typical harm is serious but not usually fatal.",
    "sources": [
     "PMID 34590174 DOI 10.1007/s00125-021-05568-3 full text (via row 6; the 11% reclassified figure)",

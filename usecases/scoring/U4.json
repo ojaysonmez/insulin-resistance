@@ -46,7 +46,9 @@
   {
    "row": 6,
    "dimension": "S",
-   "score": 2,
+   "score": 1,
+   "original_score": 2,
+   "correction": "Applied 2026-10-23 (D-43): S aligned at 1 for rows 6 and 31 under clarification 18; both use 'continue insulin' as the default, so the harm of deciding without the measurement is low (missed reclassification or a missed monogenic cause), and the safety risk of withdrawal is carried by D6, not S.",
    "reason": "Without the result, insulin-treated people may stay on insulin that is not needed (hypoglycaemia, burden) or MODY and non-insulin options may be missed: moderate, delayed harm. The life-threatening harm (DKA) arises from a wrong result or wrong insulin withdrawal, not from absent information, because insulin-treated patients keep taking insulin by default.",
    "sources": [
     "PMID 34590174 DOI 10.1007/s00125-021-05568-3 abstract (full text per usecases-verified.md row 6, skeptic-read)",

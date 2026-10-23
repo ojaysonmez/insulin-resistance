@@ -6,7 +6,7 @@ Tiers (D-39): A composite 0.60 or more, B 0.50 to 0.59, C 0.40 to 0.49, D below 
 
 | Rank | Row | Setting | UQ | R | C | S | Composite | Tier | Top group under all weightings | Flags | Path to viability |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | 6 | routine care, specialist outpatient | 0.83 | 0.81 | 0.60 | 0.50 | 0.705 | A | yes | - | Prospective cohort or registry of insulin-treated people reclassified by a standardised random C-peptide threshold, reporting treatment switch, HbA1c, hypoglycaemia and ketoacidosis outcomes against matched non-tested patients, with agreed assay harmonisation. (evidence, medium); A cross-platform check on US-marketed C-peptide assays at the 200 and 600 pmol/L decision thresholds, with recalibration to a commutable reference material, so classification does not depend on the assay. (assay, small); One agreed C-peptide cut-off set and conditions of use (time since diagnosis, renal function, concurrent glucose) in a single US guideline, with outcome validation of insulin-withdrawal decisions (guideline, medium) |
+| 1 | 6 | routine care, specialist outpatient | 0.83 | 0.81 | 0.60 | 0.25 | 0.655 | A | yes | - | Prospective cohort or registry of insulin-treated people reclassified by a standardised random C-peptide threshold, reporting treatment switch, HbA1c, hypoglycaemia and ketoacidosis outcomes against matched non-tested patients, with agreed assay harmonisation. (evidence, medium); A cross-platform check on US-marketed C-peptide assays at the 200 and 600 pmol/L decision thresholds, with recalibration to a commutable reference material, so classification does not depend on the assay. (assay, small); One agreed C-peptide cut-off set and conditions of use (time since diagnosis, renal function, concurrent glucose) in a single US guideline, with outcome validation of insulin-withdrawal decisions (guideline, medium) |
 | 2 | 1 | specialist outpatient | 0.67 | 0.56 | 0.60 | 0.75 | 0.651 | A | yes | - | Prospective diagnostic-accuracy validation of the insulin, C-peptide and proinsulin thresholds on current US-marketed assays and an updated guideline (current one is from 2009). (evidence, medium); A prospective accuracy study with a standard assay-specific cutoff set (current insulin and C-peptide immunoassays) in consecutive patients with Whipple's triad. (evidence, medium) |
 | 3 | 31 | routine care, specialist outpatient | 0.75 | 0.75 | 0.60 | 0.25 | 0.613 | A | yes | - | Prospective study or trial of C-peptide-guided insulin de-escalation in adults with doubtful type, reporting glycaemic control and ketoacidosis safety, with a harmonised random C-peptide cutoff by concurrent glucose. (evidence, medium); A prospective study of C-peptide-guided insulin withdrawal or de-escalation in adults of doubtful type, with safety outcomes and a stated cutoff and timing. (evidence, medium); Prospective validation of a C-peptide threshold (with glucose, duration and antibody status) for safe insulin withdrawal in doubtful-type adult diabetes. (evidence, medium) |
 | 4 | 2 | specialist outpatient | 0.58 | 0.56 | 0.40 | 0.75 | 0.568 | B | no | - | Insulin assay (or companion test) that detects insulin analogues so that low insulin plus low C-peptide can exclude exogenous analogue use, with published accuracy of the high-insulin/low-C-peptide pattern. (assay, medium); Report analogue cross-reactivity per assay with a validated cutoff pattern, and a cohort accuracy study of insulin plus C-peptide against drug screen or LC-MS/MS. (assay, medium) |
@@ -46,8 +46,8 @@ Tiers (D-39): A composite 0.60 or more, B 0.50 to 0.59, C 0.40 to 0.49, D below 
 
 | Row | default | equal | utility-heavy | need-heavy |
 |---|---|---|---|---|
-| 6 | 1 | 1 | 1 | 2 |
-| 1 | 2 | 2 | 3 | 1 |
+| 6 | 1 | 2 | 1 | 4 |
+| 1 | 2 | 1 | 3 | 1 |
 | 31 | 3 | 3 | 2 | 7 |
 | 2 | 4 | 4 | 9 | 5 |
 | 7 | 5 | 10 | 4 | 16 |
@@ -55,7 +55,7 @@ Tiers (D-39): A composite 0.60 or more, B 0.50 to 0.59, C 0.40 to 0.49, D below 
 | 24 | 7 | 7 | 6 | 19 |
 | 47 | 8 | 11 | 10 | 12 |
 | 32 | 9 | 17 | 8 | 18 |
-| 5 | 10 | 5 | 17 | 3 |
+| 5 | 10 | 5 | 17 | 2 |
 | 29 | 11 | 15 | 7 | 21 |
 | 4 | 12 | 6 | 11 | 8 |
 | 20 | 13 | 9 | 12 | 9 |
@@ -63,7 +63,7 @@ Tiers (D-39): A composite 0.60 or more, B 0.50 to 0.59, C 0.40 to 0.49, D below 
 | 12 | 15 | 16 | 15 | 13 |
 | 3 | 16 | 13 | 19 | 14 |
 | 13 | 17 | 19 | 21 | 11 |
-| 35 | 18 | 14 | 25 | 4 |
+| 35 | 18 | 14 | 25 | 3 |
 | 33 | 19 | 20 | 16 | 23 |
 | 14 | 20 | 18 | 27 | 6 |
 | 22 | 21 | 24 | 14 | 25 |
@@ -86,12 +86,12 @@ Rows whose D7 rests on an assumed share: the default-weight rank if D7 took the 
 |---|---|---|---|---|---|
 | 3 | 16 | 2 | 3 | 0.542 | 9 |
 | 5 | 10 | 3 | 2 | 0.482 | 18 |
-| 6 | 1 | 3 | 2 | 0.655 | 1 |
-| 6 | 1 | 3 | 4 | 0.755 | 1 |
+| 6 | 1 | 3 | 2 | 0.605 | 3 |
+| 6 | 1 | 3 | 4 | 0.705 | 1 |
 | 7 | 5 | 3 | 2 | 0.510 | 14 |
 | 21 | 14 | 2 | 3 | 0.566 | 5 |
 | 29 | 11 | 2 | 3 | 0.581 | 4 |
-| 31 | 3 | 3 | 4 | 0.663 | 2 |
+| 31 | 3 | 3 | 4 | 0.663 | 1 |
 | 47 | 8 | 3 | 2 | 0.493 | 15 |
 | 49 | 28 | 2 | 3 | 0.448 | 22 |
 

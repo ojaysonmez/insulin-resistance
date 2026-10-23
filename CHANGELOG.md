@@ -175,10 +175,12 @@ Format: date, time (if known), what changed, why.
 
 - Stage 3 outcome applied (D-42): row 7 S and D3, row 31 D1 (originals kept); Holt 6.8% and row 7 PPV/"3 years" text fixes in `usecases-verified.md`; Bottom line 2 per-measure figures and scope note in `merged-conclusion.md`; ranking and scorecard regenerated (12 tests pass). Row 31 back in tier A (0.613).
 
+- Open items closed (2026-10-23, user: close the open items; D-43): row 6 S aligned at 1; row 1 grade wording fixed in `usecases-verified.md` and noted in V9; `summary.md` section 1b lists the three top pathways; ranking, scorecard regenerated (12 tests pass). Not closed (need agents, data or your input): specialty reviewers, claim ledger, update watch scheduling, PDFs for abstract-only papers.
+
 ## Not yet run or done
 - Specialty reviewers (cardiology first, then others as chosen) and a skeptic on their findings; then the summary editor.
 - Use-case scoring: the pilot on rows 6, 5 and 13 (needs searching for US commonality), then scoring of about 30 candidates (`usecases/scoring-rubric.md`; all rubric decisions are settled, nothing is scored).
 - Claim ledger build (design in `update-system/CLAIM-LEDGER.md`; `claims.csv` is empty).
 - Update system: dry run and scheduling test (`update-system/UPDATE-PLAN.md`); the citation script has been run and fixed, and a pre-commit check is not written.
-- Deferred wording items from the scope review: about ten remaining generic "IR" statements; rows 17, 35, 45 relabel and the WBISI check are written up as a proposal (`reviews/deferred-wording-2026-10-23.md`), skeptic review and edit still to do.
+- Deferred wording items from the scope review: done (rows 17, 35, 45 and the WBISI wording by D-40; generic "IR" sentences reworded; skeptic reviewed).
 - Proposed, not drafted: full-text reader helper, formal appraisal tools (PROBAST, QUADAS-2, GRADE) for the biostatistician, a negative-claim protocol, analysts starting from the searcher's evidence set, a stopping rule.
