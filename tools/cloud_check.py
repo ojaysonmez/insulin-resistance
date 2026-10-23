@@ -6,8 +6,12 @@ the fix for anything that is not PASS. It changes nothing in the repository (it 
 one temporary file in two folders to test that they are writable, and runs git push --dry-run).
 
 Usage (project root):  python tools/cloud_check.py        (or python3 tools/cloud_check.py)
+  --brief   what the session-start hook runs: skips the tests and the push dry-run, shows only problems, and stays silent
+            when an earlier run on this platform (local or cloud) in this checkout passed less than 7 days ago
+            (marker file .claude/env-check.json, git-ignored). A cloud session is a fresh clone, so it runs every time.
 Exit code: 0 if there is no FAIL, 1 otherwise.
 """
+import concurrent.futures
 import datetime
 import json
 import os
@@ -21,6 +25,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 RESULTS = []
+BRIEF = False
+MARKER = ROOT / ".claude" / "env-check.json"
 
 
 def add(level, name, detail="", fix=""):
@@ -111,6 +117,8 @@ def check_git():
     rc, out = run(["git", "ls-remote", "--heads", "origin"], timeout=45)
     add("PASS" if rc == 0 else "FAIL", "Read access to the remote", f"{len(out.splitlines())} branches" if rc == 0 else out[:120],
         "The remote is not reachable from here (network or credentials).")
+    if BRIEF:
+        return
     rc, out = run(["git", "push", "--dry-run", "origin", "HEAD"], timeout=60)
     add("PASS" if rc == 0 else "WARN", "Write access to the remote (git push --dry-run, nothing is pushed)",
         "accepted" if rc == 0 else out[-160:],
@@ -134,17 +142,20 @@ def check_network():
     hosts = [("PubMed (E-utilities)", "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/einfo.fcgi?retmode=json"),
              ("Crossref", "https://api.crossref.org/works?rows=0"),
              ("ClinicalTrials.gov", "https://clinicaltrials.gov/api/v2/version"),
-             ("PubMed Central pages", "https://pmc.ncbi.nlm.nih.gov/articles/PMC8481000/"),
-             ("CDC", "https://www.cdc.gov/diabetes/php/data-research/index.html")]
-    for name, url in hosts:
+             ("PubMed Central pages", "https://pmc.ncbi.nlm.nih.gov/articles/PMC8481000/")]
+    def probe(item):
+        name, url = item
         try:
             req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (ir-project environment check)"})
-            with urllib.request.urlopen(req, timeout=20) as r:
+            with urllib.request.urlopen(req, timeout=8 if BRIEF else 20) as r:
                 r.read(512)
-                add("PASS", f"Network: {name}", f"HTTP {r.status}")
+                return ("PASS", f"Network: {name}", f"HTTP {r.status}", "")
         except Exception as e:
-            add("FAIL" if "PubMed" in name else "WARN", f"Network: {name}", str(e)[:90],
-                "Allow this host in the environment's network access settings.")
+            return ("FAIL" if "PubMed" in name else "WARN", f"Network: {name}", str(e)[:90],
+                    "Allow this host in the environment's network access settings.")
+    with concurrent.futures.ThreadPoolExecutor(max_workers=5) as ex:
+        for r in ex.map(probe, hosts):
+            RESULTS.append(r)
 
 
 def check_tests():
@@ -162,20 +173,52 @@ def check_queue():
         add("FAIL", "Scoring queue readable", str(e)[:100])
 
 
+def platform_tag():
+    return "cloud" if os.environ.get("CLAUDE_CODE_REMOTE") else "local"
+
+
+def marker_fresh():
+    try:
+        m = json.loads(MARKER.read_text(encoding="utf-8"))
+        age = datetime.datetime.now() - datetime.datetime.fromisoformat(m["when"])
+        return m.get("platform") == platform_tag() and m.get("fail", 1) == 0 and age < datetime.timedelta(days=7)
+    except Exception:
+        return False
+
+
 def main():
-    print(f"Environment check, {datetime.datetime.now().isoformat(timespec='seconds')}; {platform.system()} {platform.release()}; folder {ROOT.name}\n")
-    for fn in (check_python, check_packages, check_files, check_settings, check_git, check_write, check_network, check_queue, check_tests):
+    global BRIEF
+    BRIEF = "--brief" in sys.argv
+    if BRIEF and marker_fresh():
+        return 0
+    checks = [check_python, check_packages, check_files, check_settings, check_git, check_write, check_network, check_queue]
+    if not BRIEF:
+        checks.append(check_tests)
+    if not BRIEF:
+        print(f"Environment check, {datetime.datetime.now().isoformat(timespec='seconds')}; {platform.system()} {platform.release()}; folder {ROOT.name}\n")
+    for fn in checks:
         try:
             fn()
         except Exception as e:  # a check must never stop the others
             add("FAIL", fn.__name__, str(e)[:120])
-    sym = {"PASS": "PASS", "WARN": "WARN", "FAIL": "FAIL"}
+    n = {k: sum(1 for r in RESULTS if r[0] == k) for k in ("PASS", "WARN", "FAIL")}
     for lvl, name, detail, fix in RESULTS:
-        print(f"[{sym[lvl]}] {name}" + (f": {detail}" if detail else ""))
+        if BRIEF and lvl == "PASS":
+            continue
+        if BRIEF and name.startswith(("Session-start hook", "CLAUDE_PROJECT_DIR")):
+            continue
+        print(f"[{lvl}] {name}" + (f": {detail}" if detail else ""))
         if lvl != "PASS" and fix:
             print(f"       fix: {fix}")
-    n = {k: sum(1 for r in RESULTS if r[0] == k) for k in ("PASS", "WARN", "FAIL")}
-    print(f"\n{n['PASS']} pass, {n['WARN']} warn, {n['FAIL']} fail")
+    if BRIEF:
+        print(f"Environment check ({platform_tag()}): {n['PASS']} pass, {n['WARN']} warn, {n['FAIL']} fail; full check: python tools/cloud_check.py")
+        try:
+            MARKER.write_text(json.dumps({"when": datetime.datetime.now().isoformat(timespec="seconds"), "platform": platform_tag(),
+                                          "fail": n["FAIL"]}), encoding="utf-8")
+        except Exception:
+            pass
+    else:
+        print(f"\n{n['PASS']} pass, {n['WARN']} warn, {n['FAIL']} fail")
     return 1 if n["FAIL"] else 0
 
 

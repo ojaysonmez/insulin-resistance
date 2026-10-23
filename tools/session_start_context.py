@@ -152,6 +152,14 @@ def main():
         "  deliverables; log every change in CHANGELOG.md; commit and push only when the user asks.",
     ]
 
+    try:  # environment check: silent if a recent one passed on this platform, otherwise a short report
+        r = subprocess.run([sys.executable, str(ROOT / "tools" / "cloud_check.py"), "--brief"], capture_output=True, text=True,
+                           timeout=90, cwd=str(ROOT))
+        if r.stdout.strip():
+            brief = brief[:1] + [l for l in r.stdout.strip().splitlines()] + brief[1:]
+    except Exception:
+        pass
+
     if len(brief) > MAX_LINES:
         brief = brief[: MAX_LINES - 1] + ["... (brief truncated)"]
     try:

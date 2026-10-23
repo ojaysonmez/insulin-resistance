@@ -22,3 +22,4 @@ corpus/local/
 # Spreadsheet lock files (created while a workbook is open)
 .~lock.*
 ~$*
+.claude/env-check.json

@@ -1,1 +1,8 @@
-{}
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add *)",
+      "Bash(git commit -q -m 'Run a short environment check from the session-start brief \\(cached 7 days per platform\\); drop CDC from the host list *)"
+    ]
+  }
+}

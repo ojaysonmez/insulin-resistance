@@ -6,13 +6,13 @@ Status: draft written 2026-10-23 from the official Claude Code docs; nothing her
 - A cloud session clones the repository fresh each time. Only what is committed and pushed survives; treat uncommitted files as lost.
 - It reads the committed `.claude/settings.json` (hooks, permission rules). It does **not** read `.claude/settings.local.json`. Our hooks and permission rules are in the local file today, so they would not apply.
 - Packages: a setup script (set per cloud environment at claude.ai/code, runs as root on Ubuntu, result cached) or a SessionStart hook in `settings.json` can run `pip install openpyxl`. The docs list "Python 3.x with pip" but not the minor version, whether `python` exists (our hooks and task prompts call `python`), or whether openpyxl is present.
-- Network: the default level (Trusted) allows only a fixed list (GitHub, package registries and similar). PubMed (`eutils.ncbi.nlm.nih.gov`), Crossref, ClinicalTrials.gov, PubMed Central and CDC are not on it. Use a Custom environment and list those hosts. Connector traffic needs no entry.
+- Network: the default level (Trusted) allows only a fixed list (GitHub, package registries and similar). PubMed (`eutils.ncbi.nlm.nih.gov`), Crossref, ClinicalTrials.gov and PubMed Central are not on it. Use a Custom environment and list those hosts. Connector traffic needs no entry.
 - Routines (cloud scheduled tasks) belong to the claude.ai account, run with the computer off, start in auto mode, clone the default branch and by default push to a `claude/`-prefixed branch (a prompt can name another branch; GitHub branch protection decides whether `main` is allowed). Minimum interval is one hour. Local desktop scheduled tasks are a separate system.
 - Account connectors (for example Google Drive) are included in routines by default.
 - Not documented: whether the usage tool and the 5-hour / weekly windows exist inside a cloud session. `tools/scoring_queue.py gate` depends on them, so the gate needs a fallback (see below).
 
 ## First checkout: do these in order
-1. Create a cloud environment with network access Custom and these allowed hosts: `eutils.ncbi.nlm.nih.gov`, `api.crossref.org`, `clinicaltrials.gov`, `pmc.ncbi.nlm.nih.gov`, `www.cdc.gov`, plus the default package list.
+1. Create a cloud environment with network access Custom and these allowed hosts: `eutils.ncbi.nlm.nih.gov`, `api.crossref.org`, `clinicaltrials.gov`, `pmc.ncbi.nlm.nih.gov`, plus the default package list.
 2. Environment setup script: `pip install openpyxl` (and, if `python` is missing, a link from `python3`).
 3. Start a session on this repository and run:
    ```
@@ -33,3 +33,5 @@ Status: draft written 2026-10-23 from the official Claude Code docs; nothing her
 - Cloud runner prompts (watch and scoring) still need to be written and tested; the local ones use usage figures and `python`.
 - The eLFA workbook is on the local `I:` drive; in the cloud the DOI list would have to come through the Drive connector, or the DOI column stays blank.
 - Contacts (`corpus/local/`) and full texts (`corpus/fulltext/`) stay out of the repository, so they do not exist in the cloud; corpus extraction that needs full texts stays local.
+
+- The session-start brief now runs `python tools/cloud_check.py --brief`: silent if a check on the same platform passed in the last 7 days (marker `.claude/env-check.json`, git-ignored), otherwise it adds the problems and a one-line summary at the top of the brief. A cloud session is a fresh clone, so it runs each time (about 10 seconds; skips the tests and the push dry-run). The full check stays `python3 tools/cloud_check.py`.
