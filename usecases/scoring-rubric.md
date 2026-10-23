@@ -75,6 +75,7 @@ These refine the twelve clarifications above. Where they differ, these apply.
 21. **D7, sourced chains:** each share in the chain needs a source or is labelled an assumption with its own range. If the range of the bin-deciding share crosses a bin boundary, record 'bin 3 or 4, low confidence' (or not determinable) instead of a single bin.
 22. **Setting tag:** tag by who orders the test in the guideline or evidence pathway for the decision.
 23. **Corrections and later units:** a score corrected by the main session keeps `original_score` and a `correction` note in its JSON; a later unit may replace earlier scores of other units by listing them in `supersedes` (for example researched patient counts replacing screening estimates).
+24. **D7, unsourced shares (D-37):** where a share in the chain is an assumption (clarification 21) and the JSON needs one integer, score the bin of the point estimate (clarification 3), set confidence to low, and write the alternative bin and the share that decides it in the reason. The ranking shows a sensitivity column with the alternative bin for such rows. Do not switch to the broader 'situation arises' count to avoid the assumption; give that count as a note.
 
 ## Combining the scores
 - **UQ** = mean of D1, D2 and D8. **R** = mean of D3 to D6. **C** = D7. **S** = stakes. Each is rescaled to 0-1 before weighting (C = D7/5; S = S/4; the others /4).
