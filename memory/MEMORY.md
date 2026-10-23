@@ -6,4 +6,3 @@ Notes for future sessions, stored in the repository (this folder) instead of the
 - [File locations](feedback_file_locations.md) — create files where they belong, not as drafts in another folder
 - [Verify before commit](feedback_verify_before_commit.md) — make it work and show it, then ask to commit; never commit untested work first
 - [Lessons learned](lessons_learned.md) — what failed in this project and how it was fixed
-- [Working chat reference](reference_working_chat.md) — how to find the long chat that built the project (its ID is kept locally, not published)

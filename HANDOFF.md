@@ -48,4 +48,4 @@ The current state and the next step, written by hand at the end of a working ses
 - Advice given when the working chat reached about 96% context: start a new chat for the next task (the scoring pilot) instead of continuing in a compacted one, because a long context costs more per message against the usage limit.
 
 ## Earlier chats
-- The long working chat that built all of this can be searched from a new session with the transcript search tool (it searches other sessions' transcripts by text). Its session ID is in the git-ignored local log `.claude/sessions.log` (the `event=Manual` lines); `memory/reference_working_chat.md` explains how to find it.
+- Not used (D-36). Local and cloud chats cannot see each other; this note, `DECISIONS.md`, `CHANGELOG.md` and `memory/` are the record.

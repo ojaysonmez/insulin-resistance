@@ -34,20 +34,6 @@
           {
             "type": "command",
             "command": "\"$(command -v python || command -v python3)\" \"$CLAUDE_PROJECT_DIR/tools/session_start_context.py\""
-          },
-          {
-            "type": "command",
-            "command": "\"$(command -v python || command -v python3)\" \"$CLAUDE_PROJECT_DIR/tools/log_session.py\""
-          }
-        ]
-      }
-    ],
-    "SessionEnd": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "\"$(command -v python || command -v python3)\" \"$CLAUDE_PROJECT_DIR/tools/log_session.py\""
           }
         ]
       }

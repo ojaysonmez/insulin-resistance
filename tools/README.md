@@ -40,10 +40,6 @@ python tools/check_citations.py merged-conclusion.md usecases-verified.md
 
 Defaults write `tools/citation-report.md`, `tools/citation-report.json` and `tools/.citation-cache.json` (all git-ignored). Optional environment variables: `NCBI_API_KEY` (higher rate limit) and `CROSSREF_MAILTO` (Crossref's polite pool; never hard-coded). Exit code 1 means an urgent flag (a retracted paper or mismatch), 2 a network failure. Use `--max 10` for a small test run.
 
-## log_session.py (second session-start hook, added 2026-10-19)
-
-Appends one line per session start to `.claude/sessions.log` (git-ignored): time, event (SessionStart or SessionEnd), source (startup, resume, clear or compact), end reason, session ID, session title (when the hook input has one), transcript file name and the keys of the hook input. Prints the ID so the new session can tell the user. It is registered next to `session_start_context.py` in `.claude/settings.local.json`. Not yet verified: whether the hook's ID matches the `local_...` IDs used by the transcript search tools. To remove, delete its entry from the hook list.
-
 ## deliverable_reminder.py (PostToolUse hook, added 2026-10-19)
 
 After each Edit, Write or MultiEdit, checks whether the edited file is `merged-conclusion.md`, `usecases-verified.md` or `claims/claims.csv`. If so, it returns a short reminder to the session as extra context: only the main session edits deliverables, a substantive change needs a skeptic review, log it in `CHANGELOG.md`, keep the scope wording and the identifier rule. It never blocks an edit and never fails the tool call. Limit: edits made through shell commands (sed, a Python script run from Bash) are not caught. Registered under `PostToolUse` in `.claude/settings.local.json`; takes effect in the next new session.

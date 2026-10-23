@@ -10,7 +10,6 @@ __pycache__/
 # Local Claude Code settings and scratch
 # Track the hook configuration (a global git ignore on this machine hides it by default)
 !.claude/settings.local.json
-.claude/sessions.log
 scratch/
 *.tmp
 

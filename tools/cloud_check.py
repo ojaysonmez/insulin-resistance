@@ -89,13 +89,8 @@ def check_settings():
                 add("PASS", f"{f.name}: hooks and permissions", f"hook events {sorted(hooks)}; permission rules {sum(len(v) for v in perms.values())}")
             except Exception as e:
                 add("FAIL", f"{f.name}: valid JSON", str(e), "Fix the JSON.")
-    log = ROOT / ".claude" / "sessions.log"
-    if log.exists():
-        last = log.read_text(encoding="utf-8").strip().splitlines()[-1:] or [""]
-        add("PASS", "Session-start hook has written .claude/sessions.log", last[0][:19])
-    else:
-        add("WARN", "Session-start hook output (.claude/sessions.log)", "file absent",
-            "The hook did not run in this checkout, or has not run yet. Start a new session in this folder and run this check again; if it stays absent, the hooks are not being loaded (see settings above).")
+    add("WARN", "Session-start hook (cannot be tested from a script)", "check by eye",
+        "The first context of a new session should start with the IR project status brief. If it does not, the hooks are not loading.")
     env = os.environ.get("CLAUDE_PROJECT_DIR")
     add("PASS" if env else "WARN", "CLAUDE_PROJECT_DIR in this shell", env or "not set (normal in a plain shell; hooks get it from Claude Code)",
         "")

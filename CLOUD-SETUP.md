@@ -19,7 +19,7 @@ Status: draft written 2026-10-23 from the official Claude Code docs; nothing her
    python3 tools/cloud_check.py
    ```
    It prints PASS, WARN or FAIL per item with the fix. Send me the output.
-4. Read the output: the check shows whether `.claude/settings.json` loaded (the session-start hook writes `.claude/sessions.log`) and which commands or hosts fail.
+4. Read the output: the check shows whether `.claude/settings.json` loaded (proof: the session-start brief, headed "IR project status brief", is in the session's first context) and which commands or hosts fail.
 5. Run one routine by hand with a test prompt before any schedule goes live; confirm it can commit and push to its branch.
 
 ## Done on 2026-10-23 for running in both places
