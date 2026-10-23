@@ -164,6 +164,9 @@ Format: date, time (if known), what changed, why.
 - Drafted anchor clarifications 25 to 29 in `usecases/scoring-rubric.md` and adopted by the user the same day (no rescoring yet).
 - Wrote `reviews/deferred-wording-2026-10-23.md`: proposed relabel of rows 17, 35, 45 as "Not evaluated" (with count effects) and the WBISI/Matsuda check (same index by definition per Matsuda 1999 abstract; Hani 2024 formula not seen). Deliverables not edited; skeptic review first.
 
+- Skeptic review of the relabel and WBISI proposal (`reviews/skeptic-deferred-wording-2026-10-23.md`) and its Option A applied (D-40): rows 17, 35, 45 and the counts in `usecases-verified.md`, `README.md`, `merged-conclusion.md` (Bottom line 3 and the WBISI/Matsuda lines), `summary-detailed.md`; scorecard in `summary.md` regenerated. Not checked: `claims/claims.csv` (empty) and `queue.json`.
+- Rescoring proposals (file-only, no scores changed): `usecases/scoring/RS-D4.md` (D4 rows 3, 12, 20, 21 lower by one) and `usecases/scoring/RS-D1S.md` (row 46 D1 up to 3; S down on rows 6, 13, 31, 32). Awaiting the user's decision to apply.
+
 ## Not yet run or done
 - Specialty reviewers (cardiology first, then others as chosen) and a skeptic on their findings; then the summary editor.
 - Use-case scoring: the pilot on rows 6, 5 and 13 (needs searching for US commonality), then scoring of about 30 candidates (`usecases/scoring-rubric.md`; all rubric decisions are settled, nothing is scored).
