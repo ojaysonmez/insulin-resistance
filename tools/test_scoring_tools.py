@@ -33,6 +33,19 @@ def run_q(root, *argv):
     return buf.getvalue().strip()
 
 
+def run_cmd_exit(root, *argv):
+    """Like run_q, but turns a non-zero return code into SystemExit."""
+    old = sys.argv
+    sys.argv = ["scoring_queue.py", "--root", str(root), *argv]
+    try:
+        with contextlib.redirect_stdout(io.StringIO()):
+            rc = sq.main()
+    finally:
+        sys.argv = old
+    if rc:
+        raise SystemExit(rc)
+
+
 def make_root():
     root = Path(tempfile.mkdtemp())
     t = root / "usecases" / "scoring" / "templates"
@@ -96,6 +109,24 @@ class QueueTests(unittest.TestCase):
         sq.save(self.root, data)
         self.assertTrue(g("--pct5", "10", "--weekly", "10", "--hour", "10").startswith("STOP: quiet"))
         self.assertEqual(g("--pct5", "10", "--weekly", "10", "--hour", "20"), "START")
+
+    def test_gate_without_usage_figures(self):
+        g = lambda *a: run_q(self.root, "gate", *a)
+        self.assertTrue(g().startswith("STOP: no usage figures"))
+        self.assertTrue(g("--units-this-run", "0").startswith("START"))
+        self.assertTrue(g("--units-this-run", "1", "--continue").startswith("CONTINUE"))
+        self.assertTrue(g("--units-this-run", "2").startswith("STOP"))
+
+    def test_claim_and_release(self):
+        c = lambda *a: run_q(self.root, *a)
+        self.assertEqual(c("claim", "--side", "local"), "claimed by local")
+        self.assertEqual(c("claim", "--side", "local"), "claimed by local")
+        with self.assertRaises(SystemExit):  # the other side is refused with a non-zero exit
+            sys.argv = ["x"]
+            run_cmd_exit(self.root, "claim", "--side", "cloud")
+        self.assertEqual(c("claim", "--side", "cloud", "--force"), "claimed by cloud")
+        self.assertEqual(c("release"), "released")
+        self.assertEqual(c("claim", "--side", "cloud"), "claimed by cloud")
 
     def test_log(self):
         run_q(self.root, "log", "--unit", "U1", "--pct5-before", "10", "--pct5-after", "22", "--weekly-before", "30",

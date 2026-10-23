@@ -164,6 +164,17 @@ def in_quiet(quiet, hour):
 
 def cmd_gate(a, root):
     cfg = load(root)["config"]
+    if a.pct5 is None or a.weekly is None:
+        # No usage tool (cloud session): limit the number of units per run instead.
+        cap = cfg.get("cloud_units_per_run", 2)
+        n = a.units_this_run
+        if n is None:
+            print("STOP: no usage figures given and no --units-this-run; pass one of them")
+        elif n >= cap:
+            print(f"STOP: {n} unit(s) already done this run (cap {cap}, no usage figures)")
+        else:
+            print(f"{'CONTINUE' if a.cont else 'START'} (no usage figures; {n} of {cap} unit(s) done this run)")
+        return
     if a.pct5 >= cfg.get("hard_stop_pct5", 95):
         print(f"STOP: hard stop, 5-hour window at {a.pct5}% (limit {cfg.get('hard_stop_pct5', 95)}%)")
     elif a.weekly >= cfg["weekly_cap_pct"]:
@@ -174,6 +185,28 @@ def cmd_gate(a, root):
         print("CONTINUE" if a.pct5 < cfg["continue_limit_pct5"] else f"STOP: 5-hour window at {a.pct5}% (continue limit {cfg['continue_limit_pct5']}%)")
     else:
         print("START" if a.pct5 <= cfg["start_limit_pct5"] else f"STOP: 5-hour window at {a.pct5}% (start limit {cfg['start_limit_pct5']}%)")
+
+
+def cmd_claim(a, root):
+    """Record which side (local or cloud) is working on the queue; refuse if the other side holds it."""
+    data = load(root)
+    cur = data.get("running_on", "")
+    if cur and cur != a.side and not a.force:
+        print(f"REFUSED: queue is held by '{cur}' since {data.get('claimed_at', '?')}; use --force if that run is over")
+        return 1
+    data["running_on"] = a.side
+    data["claimed_at"] = datetime.datetime.now().isoformat(timespec="seconds")
+    save(root, data)
+    print(f"claimed by {a.side}")
+    return 0
+
+
+def cmd_release(a, root):
+    data = load(root)
+    data["running_on"] = ""
+    data["claimed_at"] = ""
+    save(root, data)
+    print("released")
 
 
 def cmd_log(a, root):
@@ -211,10 +244,15 @@ def main():
     p.add_argument("id")
     p.add_argument("--error", default="")
     p = sub.add_parser("gate")
-    p.add_argument("--pct5", type=float, required=True)
-    p.add_argument("--weekly", type=float, required=True)
-    p.add_argument("--hour", type=int, required=True)
+    p.add_argument("--pct5", type=float, default=None)
+    p.add_argument("--weekly", type=float, default=None)
+    p.add_argument("--hour", type=int, default=0)
+    p.add_argument("--units-this-run", type=int, default=None, help="used when no usage figures are available (cloud)")
     p.add_argument("--continue", dest="cont", action="store_true")
+    p = sub.add_parser("claim")
+    p.add_argument("--side", choices=["local", "cloud"], required=True)
+    p.add_argument("--force", action="store_true")
+    sub.add_parser("release")
     p = sub.add_parser("log")
     p.add_argument("--unit", required=True)
     for k in ("pct5-before", "pct5-after", "weekly-before", "weekly-after"):
@@ -224,9 +262,8 @@ def main():
     p.add_argument("--errors", default="")
     a = ap.parse_args()
     fn = {"add": cmd_add, "next": cmd_next, "done": cmd_done, "fail": cmd_fail, "status": cmd_status,
-          "resume": cmd_resume, "gate": cmd_gate, "log": cmd_log}[a.cmd]
-    fn(a, a.root)
-    return 0
+          "resume": cmd_resume, "gate": cmd_gate, "log": cmd_log, "claim": cmd_claim, "release": cmd_release}[a.cmd]
+    return fn(a, a.root) or 0
 
 
 if __name__ == "__main__":
