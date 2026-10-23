@@ -181,6 +181,8 @@ Format: date, time (if known), what changed, why.
 
 - Full-text check (2026-10-23, user: yes): `reviews/fulltext-check-2026-10-23.md` checks Holt, Cryer, Funakoshi, Gavigan and the UCPCR paper against the dossiers and scores; no score or sentence changes; open items: ISPAD monogenic chapter (PMID 36537518) and the Gavigan subgroup numbers.
 
+- Cardiology specialty review (2026-10-23, user: start with the first): `reviews/specialty-cardiology-2026-10-23.md` (24 look-ups, guideline excerpts). Bottom line 1 holds; suggested additions on IRIS, eGDR, ATTICA and PREVENT not applied; skeptic pass pending.
+
 ## Not yet run or done
 - Specialty reviewers (cardiology first, then others as chosen) and a skeptic on their findings; then the summary editor.
 - Use-case scoring: the pilot on rows 6, 5 and 13 (needs searching for US commonality), then scoring of about 30 candidates (`usecases/scoring-rubric.md`; all rubric decisions are settled, nothing is scored).
