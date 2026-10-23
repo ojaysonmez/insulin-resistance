@@ -1,0 +1,271 @@
+{
+ "unit": "V19",
+ "role": "skeptic",
+ "findings": [
+  {
+   "row": 9,
+   "dimension": "D7/D3 vs D1/D2/D8/D5/D6/S",
+   "problem": "The seven dimensions of row 9 do not describe one decision. V14 scored D7 (1) and D3 (3) for beta-cell reserve before TPIAT. V15 scored D2 and D8 for type 3c classification ('PancreasFest diagnoses 3c without C-peptide'; PMID 39959260 type 3c vs T2D comparison). V17 and V18 scored D1, D5, D6 and S with both decisions mixed ('C-peptide documents insulin deficiency and beta-cell reserve before TPIAT'). The composite would combine a TPIAT count of about 800 with classification evidence. V14 recorded the problem as an anchor issue but did not resolve it.",
+   "severity": "must fix",
+   "suggested_change": "Split row 9 into 9a (type 3c classification, C-peptide fasting or MMTT) and 9b (beta-cell reserve before TPIAT) and score every dimension for each, or pick one decision for all. For 9a V14's own note gives D7 bin 3 (5,000 to 30,000 per year) and D3 is 1 or 2 (PancreasFest statements 2.1 and 2.3 use glucose, HbA1c and pancreatic polypeptide, not C-peptide). For 9b D2 and D8 need a TPIAT-specific source; none was retrieved."
+  },
+  {
+   "row": 9,
+   "dimension": "D3",
+   "problem": "V14 reads PancreasFest Guidance Statement 2.4 as naming C-peptide and reports '58 percent top agreement'. Checked in PMC3830751: the statement reads 'Assessment of pancreatic endocrine reserve, and importantly that of functional beta-cell mass, should be performed as part of the evaluation and followup for TPIAT'. It names the function, not the analyte; C-peptide appears only in the evidence paragraph ('can be estimated from serum C-peptide levels determined during either oral glucose tolerance ... or mixed-nutrient meal testing'). The agreement for 2.4 is A 45%, B 20%, C 10%, D 18%, E 8%; the 58% figure belongs to statement 1.1. Under clarification 5 (a recommendation that names the condition or function, not the measurement, scores 2) D3 is 2, and the confidence statement 'consensus with 58 percent top agreement' is wrong.",
+   "severity": "must fix",
+   "suggested_change": "Set D3 to 2 for 9b (3 only if the reason quotes text that names C-peptide in the recommendation itself), correct the agreement figure to 45% A (26% in D or E), and note that the same paper's statement 2.3 uses an absent pancreatic polypeptide response, not C-peptide, as the specific indicator of type 3c diabetes."
+  },
+  {
+   "row": 21,
+   "dimension": "D7",
+   "problem": "The stated numbers give a different bin from the one scored. V14: 36 per 10,000 admissions x about 33 million admissions = about 118,800 episodes; x 8 percent = about 9,500, which is bin 2 (1,000 to 10,000). V14 wrote 'point estimate about 10,000' and scored 3, so the score does not equal the bin of the stated number (clarification 3). The inputs are weak: 33 million admissions is [recall, no source]; 36 per 10,000 is from StatPearls summarising one retrospective review (secondary; I could not open the page, it returned a bot challenge, so I could not check the figure); 8 percent is an assumption. The denominator is also conditioned on a suppressed result, which is known only after the test (clarification 4 says count everyone in whom the question arises).",
+   "severity": "must fix",
+   "suggested_change": "Score the bin of the product (2) or record 'bin 2 or 3, low confidence' per clarification 21, give the all-hypoglycaemia-work-up count as a note, and replace the recall admission count with a sourced figure (for example AHRQ HCUP national discharges)."
+  },
+  {
+   "row": 46,
+   "dimension": "D4",
+   "problem": "V16 scored D4 = 3 ('one fasting serum C-peptide at a low cutoff'). The criteria as recorded in usecases-verified.md row 46 and in V14 are fasting serum C-peptide <0.3 ng/mL and <0.5 ng/mL after glucagon or a meal (or urinary C-peptide <10 ug/day), so the stimulated or 24-hour urine step is part of the criterion, not an option. V16's own alternative says 'Alternative 2 if the stimulated test is required'. V16 also states that platform bias is largest at higher concentrations and that functional sensitivity at 0.3 ng/mL was not checked; the abstract of PMID 36630986 says the analyzers differed 'in the entire concentration range, especially with increasing C-peptide concentrations'. The same serum C-peptide assay gets 2 in rows 9 and 28 on the argument that platforms disagree or a timed protocol is needed.",
+   "severity": "must fix",
+   "suggested_change": "Set D4 to 2 and confidence to low (US platform sensitivity at 0.3 ng/mL not checked, clarification 20). If 3 is kept, the reason must explain why a stimulated test does not count as a timed protocol."
+  },
+  {
+   "row": 12,
+   "dimension": "D4",
+   "problem": "D4 = 1 is scored on the anti-insulin-receptor antibody (a research bridge assay at NIH, PMID 36869714, checked) and genetics, while D1, D2, D3 and D8 for row 12 are scored on fasting insulin (JDS threshold above 30 uU/mL). A reader of the table sees one row with D4 = 1 and D8 = 2 for different measures. V16 flagged the choice but the measure type is not harmonised across units.",
+   "severity": "should fix",
+   "suggested_change": "Score D4 for fasting insulin (2, same reasoning as row 14) and carry the antibody and genetics send-out in the path_to_viability or a second line, or rescore all row 12 dimensions on the composite pathway."
+  },
+  {
+   "row": 12,
+   "dimension": "D5",
+   "problem": "V17 gives D5 = 1 because of 'send-out antibody and genetic tests'. Clarification 16 says D5 scores who orders the test, where and how many steps, and that assay availability belongs to D4. V18 gave 2 (fasting insulin drawable in primary care, work-up owned by endocrinology or genetics). Difference of 1 point, so not above the threshold, but the V17 reasoning is the one that breaks the rule.",
+   "severity": "should fix",
+   "suggested_change": "Use 2 (specialist outpatient). Reading supported: V18."
+  },
+  {
+   "row": 12,
+   "dimension": "D6",
+   "problem": "V17 D6 = 3 with S = 3 in the same unit: it accepts that a missed syndrome is serious, yet rates the false-negative consequence as low. The JDS source (PMC8980125, checked) says 'depending on the course of treatment, some cases of genetic insulin resistance syndrome manifest fasting insulin concentrations of < 30 uU/mL' and that the 30 uU/mL value 'may depend on the course of treatment for diabetes'. V18 gave 2 on this basis.",
+   "severity": "should fix",
+   "suggested_change": "Use 2 (consequence of a false negative: delayed diagnosis, treatable). Reading supported: V18."
+  },
+  {
+   "row": 12,
+   "dimension": "D7",
+   "problem": "The chain is: about 8 per million lipodystrophy prevalence (French registry, PMID 40174859 checked: 1.6 and 6.4 per million, from rare-disease reference centre registrations) x 340 million = about 2,700 prevalent patients; then 'assume 2 new work-ups for each prevalent-equivalent diagnosed per year' gives about 5,000. The multiplier has no source and no logic linking an accumulated prevalence to an annual work-up count; the stated range 1,000 to 20,000 crosses three bins (clarification 21 asks for 'bin 2 or 3, low confidence'). The type B figure (119 published cases, PMID 32813762, checked) does not enter the number. The registry prevalence also excludes severe insulin resistance of other causes that the JDS criteria cover.",
+   "severity": "should fix",
+   "suggested_change": "Give the multiplier as an assumption with its own range, or replace it with a sourced count (for example the proportion of adults with diabetes and BMI under 25 or insulin doses above 200 U/day, as in the lipodystrophy guideline's clinical clues). Record 'bin 2 or 3'."
+  },
+  {
+   "row": 14,
+   "dimension": "D7",
+   "problem": "Point estimate 3 million rests on 86.3 million MASLD adults (PMID 39821400, checked: output of an agent-based decision model for 2020, not a survey count), x 75 percent without T2D (assumption, no range) x 5 percent evaluated or newly suspected per year (assumption, range 1 to 10 percent). The V14 range 650,000 to 6.5 million spans bins 4 and 5. V14 followed clarification 24 (point-estimate bin, low confidence, alternative bin 4 stated), so the form is right; the substance is that the bin-deciding 5 percent has no rationale and sits uneasily with a guideline that says only 'may be considered' (LoE 3). Clarification 21 also asks for each assumed share to have its own range; the 75 percent share has none.",
+   "severity": "should fix",
+   "suggested_change": "Source the annual evaluated share (for example claims or laboratory data on fasting insulin ordering in adults with steatosis, or MASLD incidence) or record 'bin 4 or 5, low' and let the sensitivity column carry it. State a range for the 75 percent share."
+  },
+  {
+   "row": 28,
+   "dimension": "D7",
+   "problem": "V14 counts only new adult diabetes (1.21 million) x 10 percent with eGFR below 60 x 10 percent with a C-peptide question = about 12,000, and states that the 5 million prevalent patients with diabetes and CKD are 'not counted'. Clarification 1 says to add the share of the existing pool evaluated or retested in a year. Bin 3 survives unless more than about 1.8 percent of the prevalent pool is evaluated (about 100,000 total), so the omission is probably not score-changing, but it is a departure from the rule. Both 10 percent shares are unsourced and the eGFR share has no range. I could not open the CDC restored page, so the 1,211 thousand figure is not re-verified.",
+   "severity": "should fix",
+   "suggested_change": "Add the prevalent-pool term with its assumed share and range, give the eGFR share a range, and mark 'bin 3, alternative 2 or 4'."
+  },
+  {
+   "row": 46,
+   "dimension": "D7",
+   "problem": "Chain: about 220,000 DKA hospitalisations (Diabetes Care 2020 page; the page returned a bot challenge to me, figure not re-verified, V14 itself says the table year is unverified) x 15 percent new diagnosis (assumption, no range) x 4 percent fulminant-like (assumption, no range) = about 1,300 to 1,500. V14 states that no incidence for fulminant T1D outside Japan was found; the only checked source (PMID 12882860: about 20 percent of ketosis-onset type 1 diabetes in Japan, 161 cases) is a Japanese population with a distinct HLA association, and does not support transfer to the US. The 4 percent is therefore a guess at the order of magnitude. Range 300 to 5,000 crosses bins 1 and 2.",
+   "severity": "should fix",
+   "suggested_change": "Record 'bin 1 or 2, low', give both shares ranges, and state in the reason that the US incidence of fulminant T1D is unknown."
+  },
+  {
+   "row": 21,
+   "dimension": "D3",
+   "problem": "V14 writes that Cryer 2009 'recommends measuring insulin, C-peptide and related variables during hypoglycaemia in adults without diabetes'. The abstract (PMID 19088155, checked) says: 'In patients suspected of having endogenous hyperinsulinism, measure plasma glucose, insulin, C-peptide, proinsulin, beta-hydroxybutyrate, and circulating oral hypoglycemic agents during an episode of hypoglycemia'. The recommendation is for suspected hyperinsulinism after clinical clues such as nonislet cell tumours have been considered, not for every adult with hypoglycaemia. The score of 2 is supportable (the guideline measures the pattern to find hyperinsulinism, not to identify NICTH), but the stated reason overstates the source. D7 uses a different population (all adults worked up) from the one D3 is read against.",
+   "severity": "should fix",
+   "suggested_change": "Quote the abstract wording in the reason, keep 2 with low confidence (abstract only), and state which population D3 and D7 share."
+  },
+  {
+   "row": 14,
+   "dimension": "D2",
+   "problem": "D2 = 1 for row 14 but D2 = 2 for rows 28 and 35, which rest on less. The anchor text for 2 is 'Observational accuracy or cohort data'. Row 14 has a guideline statement (LoE 3), HOMA-IR in a fibrosis score (PMID 33333040, checked: n=225 single-centre, AUROC 0.78 to 0.82, HOMA-IR one of five variables) and, not cited by V15, PMID 28660493 (checked: HOMA-IR cut-off 1.9 for NAFLD on MRS fat in 368 non-diabetic people, sensitivity 87 percent, specificity 79 percent). Rows 28 and 35 get 2 for single-centre accuracy studies (n=85 in-sample cut-off; AUC 0.809 from 20 cases). Either accuracy data score 2 everywhere (row 14 becomes 2) or accuracy without a defined decision scores 1 everywhere (rows 28 and 35 become 1).",
+   "severity": "should fix",
+   "suggested_change": "Apply one reading. The dimension title ('evidence for that decision impact, not mere association') supports 1 for accuracy data where D1 is 0 or 1 and no decision is defined (rows 14, 28, 35 all 1); the anchor text supports 2 for all three. See anchor rewrite for D2."
+  },
+  {
+   "row": 28,
+   "dimension": "D2",
+   "problem": "V15 D2 = 2 rests on PMID 36465621 (checked): 85 patients with type 2 diabetes, UCPCR cut-off of 1.13 nmol/g with sensitivity 88.37 percent and specificity 95.24 percent 'for identifying severe insulin deficiency in T2DM', derived and tested in the same sample. The use case is C-peptide interpretation for classification and secretagogue risk in diabetes with eGFR below 60; the study population is T2DM only and the target is severe deficiency, not type 1 versus type 2. PMID 30794834 (checked) is 87 T2DM patients, record review, a glucose/C-peptide ratio that falls with eGFR; it is an association. The project file status is 'Research-only'. Row 28 therefore scores higher on D2 than row 9, row 12 and row 21 on weaker or off-population evidence.",
+   "severity": "should fix",
+   "suggested_change": "D2 = 1, confidence low, with the population mismatch stated."
+  },
+  {
+   "row": 35,
+   "dimension": "D2",
+   "problem": "D2 = 2 while V17 gives D1 = 0 ('no established action follows') and V18 gives D1 = 1 with 'no established action'. The four cohorts (PMIDs 26754418, 36675721, 34449903, 38017369, abstracts checked) report association and ROC cut-offs in cohorts that include Chinese (PMIDs 36675721) and Iranian (PMID 38017369) women, with HOMA-IR cut-offs that differ (2.08; 1.43 to 2.27 by BMI; 1.52) and no comparison with a clinical model; PMID 26754418 has 20 GDM cases. There is no decision for the evidence to support, and no US cohort.",
+   "severity": "should fix",
+   "suggested_change": "D2 = 1 (or 0 if D1 stays 0), and add 'no US cohort' to the reason."
+  },
+  {
+   "row": 46,
+   "dimension": "D8",
+   "problem": "V15 D8 = 2 for fulminant T1D, while its own text says the criterion is 'definitional, and management is unchanged' and that 'only C-peptide documents near-total beta-cell loss among the three criteria' (the other two are the ketosis timing and glucose/HbA1c below 8.7 percent, PMID 24843620 abstract). D8 asks for added value over alternatives for a decision; if insulin and DKA care are identical with or without the label (V17, V18), added value is at most marginal. Clarification 19 allows 'not determinable'.",
+   "severity": "should fix",
+   "suggested_change": "D8 = 1 or 'not determinable'; keep the circularity in the anchor issues."
+  },
+  {
+   "row": 46,
+   "dimension": "D1",
+   "problem": "V17 gives 3 (clarification 12, national criteria elsewhere) and V18 gives 2 (US decision). V18 applies the opposite treatment to row 12 (D1 = 3 on the Japanese JDS criteria, 'no US adoption found'). Clarification 12 as written gives 3 for both. Scores for the same row now mix a Japanese D1, D2 and D3 base with a US D7.",
+   "severity": "should fix",
+   "suggested_change": "Use 3 for both rows if clarification 12 stands, tagged 'national criteria, not US'; or rewrite clarification 12 (see anchor rewrite) and rescore both with the US decision. Reading supported by the rubric text: V17."
+  },
+  {
+   "row": 35,
+   "dimension": "D7",
+   "problem": "Inputs verified in NVSR 74-1: 3,596,017 births, prepregnancy diabetes 44,601 (1.24 percent), gestational diabetes 296,661. The count of about 3.5 million is correct arithmetic, but it is the count of all pregnancies, scored for a use that no guideline proposes (D3 = 1, D1 = 0 to 1). Confidence 'medium' reflects the arithmetic, not the question of who would be tested; the cohort populations differ (all women, BMI strata, age strata). The result is that a research-only use gets C = 1.0.",
+   "severity": "note",
+   "suggested_change": "Keep 5, set confidence low for the population question, and keep the GCK branch (bin 3) as a note. Split the row (see anchor rewrite)."
+  },
+  {
+   "row": 28,
+   "dimension": "D3",
+   "problem": "D3 = 1 rests on two PubMed searches that returned 0 records, a review (PMID 23413806, checked: 'The clinical utility of C-peptide measurement in the care of patients with diabetes', a review, not a guideline), and the project file entry 'KDIGO 2022 abstract blank'. KDIGO text was not read. A negative from unread text is a weak basis; confidence 'medium' is high for this.",
+   "severity": "note",
+   "suggested_change": "Confidence low, or read the KDIGO 2022 diabetes-in-CKD guideline for C-peptide."
+  },
+  {
+   "row": 14,
+   "dimension": "D3",
+   "problem": "Score 2 is supported: PMC11299976 (checked) reads 'Assessment of insulin resistance (e.g., using ... HOMA-IR or estimates derived from the oral glucose tolerance test) may be considered to clarify metabolic dysfunction in adults with (suspected) MASLD and without an established diagnosis of type 2 diabetes (LoE 3, weak recommendation, consensus)' with 92 percent agreement. Two supporting statements are weaker than written: the Delphi 'co-led by US bodies' is not in the abstract of PMID 37364790 (it says 'three large pan-national liver associations'), and its 'may prompt HOMA-IR' wording came from the project file, not from a text read by V14. The AASLD negative is from the project skeptic, not rechecked by V14.",
+   "severity": "note",
+   "suggested_change": "Keep 2. Replace 'co-led by US bodies' with the abstract wording unless the societies are verified."
+  },
+  {
+   "row": null,
+   "dimension": "D4 (rows 12, 14, 35)",
+   "problem": "V16's summary of the ADA insulin assay workgroup (PMID 17272483, checked) quotes the within-assay CV range 3.7 to 39.0 percent and among-assay CV 12 to 66 percent but omits the same abstract's statements that 7 of 10 assays had within-assay CV of 10.6 percent or less and that 'Overall, most assays had acceptable imprecision and specificity for insulin'. The conclusion that insulin assays are unstandardized is still supported (among-assay CV median 24 percent; reference preparation did not harmonise), but the summary is one-sided. The same study is from 2007.",
+   "severity": "note",
+   "suggested_change": "Add the omitted sentence to the reason for rows 12, 14 and 35 so D4 = 2 is read as 'usable but unharmonised', not as 'poor'."
+  },
+  {
+   "row": 35,
+   "dimension": "D3",
+   "problem": "D3 = 1 'not addressed' rests on an unconfirmed negative: ADA, ACOG and IADPSG texts were not read (V14 says so), and the one search returned 0 records. The ANZ quote is correct (PMC12579922, checked: GCK testing 'should be considered in non-obese women with gestational diabetes and fasting glucose > 5.5 mmol/L') but it is the glucose-based branch, which V14 itself excludes from scoring.",
+   "severity": "note",
+   "suggested_change": "Keep 1 with confidence low and label the reason 'not found in sources read', or read the ADA Standards of Care gestational diabetes section."
+  },
+  {
+   "row": null,
+   "dimension": "D7 chain shares",
+   "problem": "Clarification 21 requires each share in a chain to have a source or to be labelled an assumption with its own range. V14 labels the assumptions but gives no separate range for: row 14 non-T2D share (75 percent); row 28 eGFR share (10 percent); row 46 new-diagnosis share (15 percent) and fulminant share (4 percent); row 21 admission count (recall, no range). Sourced and checked: 86.3 million MASLD (model), TP+IAT 53 to 155 per year (PMID 27011922, 754 TP+IAT patients 2002 to 2012), 30 percent pooled diabetes after chronic pancreatitis (PMID 42488134), 81.88 per 100,000 acute pancreatitis (PMID 30946239), births and GDM (NVSR 74-1), 2.8 per 100,000 SFT (PMID 34413033). Not re-verified: StatPearls 36 per 10,000, CDC NDSR 1,211 thousand, KDSS 37 percent, Diabetes Care DKA 220,340 (pages blocked from this environment).",
+   "severity": "should fix",
+   "suggested_change": "Add a range to each assumed share and a US source for the three recalled or secondary numbers."
+  },
+  {
+   "row": null,
+   "dimension": "identifiers",
+   "problem": "Rule: record both PMID and DOI with a read level. V17's source strings carry PMIDs without DOIs throughout. V15 records no DOI for PMIDs 36727674 (10.1097/hep.0000000000000323), 37364790, 28860126, 30794834, 35463863 (V15 says 'DOI not recorded'; it exists: 10.1007/s13340-022-00570-5), 24843620 and 23865326 (PubMed returns no DOI). V18 writes 'DOI not returned by ID converter' for 38851997, 37364790, 28860126 and 30794834, whose DOIs exist (10.1016/j.jhep.2024.04.031, 10.1016/j.jhep.2023.06.003, 10.2337/dc17-0542, 10.1016/j.diabres.2019.02.015, all checked). V17 and V18 read levels are 'per project files', that is, the units did not re-read the sources; V18 JSON also cites 'title only' for four HOMA-IR cohorts that V15 read at abstract level. No cited PMID I checked is retracted (publication types listed no retraction or erratum flag). No PMID I checked failed to resolve.",
+   "severity": "should fix",
+   "suggested_change": "Fill the DOIs listed above; where a converter returns none, check Crossref before writing 'no DOI'."
+  },
+  {
+   "row": null,
+   "dimension": "path_to_viability",
+   "problem": "Checked against V15 and V18 entries. (1) Several entries bundle more than one missing piece, against 'the one missing piece': row 14 (standardised assay plus incremental value plus management change), row 9 (cut-offs for insulin deficiency and TPIAT outcome), row 21 (guideline algorithm plus accuracy case series), row 46 (non-Japanese validation plus guideline adoption). (2) V15 and V18 disagree: row 14 medium vs large, row 28 small vs medium, row 46 guideline vs evidence. A trial of management after HOMA-IR is large; a delta C-statistic cohort is medium. (3) Row 28 'small' (months with existing data) names no existing dataset with stored samples; an external validation in a CKD cohort needs new C-peptide measurements, so medium is the supported effort. (4) Row 21: insulin and C-peptide at hypoglycaemia is already a guideline step (Cryer 2009, abstract checked); the missing piece is an NICTH-specific evidence base (accuracy against big IGF-II, for example in the 145-case series of PMID 39689018, checked), and a guideline cannot be the first piece when only case reports exist. (5) Rows 14 and 35 have no defined decision that a result would change, so the first missing piece is the decision itself, not a validation. (6) Row 46: no non-Japanese incidence was found (V14), so a Western validation cohort is large, not medium. (7) Row 12 medium is plausible because the European Lipodystrophy Registry (PMID 41152002, checked) exists, but neither unit names it.",
+   "severity": "should fix",
+   "suggested_change": "Rewrite each entry as one piece with type and effort, using: row 14 evidence (decision definition first, then cohort) medium; row 28 evidence medium; row 21 evidence small to medium; row 46 evidence large; row 35 evidence large; row 9 split by decision."
+  },
+  {
+   "row": 14,
+   "dimension": "S",
+   "problem": "V17 S = 0 and V18 S = 1 (difference of 1). Both say the FIB-4 and elastography pathway proceeds unchanged. Clarification 18 scores the harm of deciding without the measurement; V18's own reason is 'missing the result delays little', which fits 0 ('minor') better than 1 ('symptomatic but reversible').",
+   "severity": "note",
+   "suggested_change": "S = 0. Reading supported: V17."
+  }
+ ],
+ "anchor_rewrites": [
+  {
+   "anchor": "D2 (rows 14, 28, 35)",
+   "issue": "Anchor 3 ('consensus or guideline backed by studies') does not say what a weak-consensus guideline with no decision studies scores; anchor 2 ('observational accuracy') is applied in some rows and not in others.",
+   "rewrite": "D2: 0 = none or opinion; 1 = case series, expert opinion, or accuracy or cohort data in a population with no defined decision for the result (D1 of 0 or 1); 2 = observational accuracy or cohort data for a defined decision threshold, or a guideline or consensus statement graded weak (LoE 3 or lower) without decision studies; 3 = guideline or consensus whose cited studies test this decision, including reclassification or decision-impact data; 4 = randomized or regulatory evidence for the decision. If D1 is 0, D2 is at most 1."
+  },
+  {
+   "anchor": "D3 clarification 6 (national criteria) for multinational societies (row 14)",
+   "issue": "EASL-EASD-EASO is not a national body and not a US body; clarification 6 does not say which way it counts.",
+   "rewrite": "6. D3, non-US sources: criteria issued by one country's body count as 1 in the US unless adopted by a US or international body. A guideline from a multinational society (for example EASL, ESC, EASD) is scored on its own recommendation wording and tagged 'non-US'; if a US society guideline disagrees or is silent, say so in the reason and cap confidence at medium."
+  },
+  {
+   "anchor": "D3 clarification 5 vs anchor 1 (row 12)",
+   "issue": "A guideline that asks for a 'workup for insulin resistance' without naming an analyte sits between 1 and 2.",
+   "rewrite": "5. D3, measurement not drug: 2 if the guideline names the condition the test addresses or the function to be assessed (for example 'metabolic workup for insulin resistance', 'endocrine reserve') but not the analyte; 3 only if the recommendation text itself names the analyte or test; 1 if neither condition nor analyte is named."
+  },
+  {
+   "anchor": "Clarification 2 vs 4 (row 9) and rows with two decisions (rows 9, 35)",
+   "issue": "Rows that combine two decisions (9: classification and TPIAT; 35: GCK trigger and first-trimester HOMA-IR) were scored differently by different units.",
+   "rewrite": "2a. One decision per scored row: if a row names two decisions, split it (for example 9a and 9b, 35a and 35b) before scoring, and every unit scores the same decision. Where the main-session split is not yet made, every unit scores the first-named decision and notes the other."
+  },
+  {
+   "anchor": "D1 (row 35) 0 vs 1",
+   "issue": "'Counselling only' presumes an action; a measure with no defined use could be 0 or 1.",
+   "rewrite": "D1: 0 = no decision or counselling follows from any result, including the case where the result is only a research or prediction value; 1 = the result is used only to counsel or to set monitoring intensity."
+  },
+  {
+   "anchor": "D1 clarification 12 (national criteria; rows 12, 46)",
+   "issue": "Clarification 12 gives 3 for criteria elsewhere, yet D1 is meant for the scoring country's decision; V18 applied it to row 12 and not to row 46.",
+   "rewrite": "12. D1, national criteria: where a national body elsewhere makes the measure part of its diagnostic criteria, score D1 3 and write 'national criteria, not US' in the reason; D2, D3 and D4 are scored on the same sources, and the row is tagged 'country mismatch' if D7 counts US patients."
+  },
+  {
+   "anchor": "D4 2 vs 3 and composite pathways (rows 9, 12, 14, 21, 28, 35, 46)",
+   "issue": "Standard laboratory tests that are not harmonised fall between 2 and 3; units differ on whether to score the limiting send-out component.",
+   "rewrite": "D4: 3 = standard laboratory test, and the decision threshold lies in a range where US platforms agree within the allowable error, or the threshold is relative; 2 = standard test but the threshold lies where platforms differ, or the protocol needs timing (OGTT, stimulation, supervised fast); 1 = send-out or specialised assay. Score the analyte named in the use case; list adjunct tests (antibody, genetics, IGF-II) in the reason and in path_to_viability, not in the score. Cap confidence at low when no US-platform data exist at the decision threshold."
+  },
+  {
+   "anchor": "D5 vs D4 (row 12)",
+   "issue": "Send-out availability was used as a reason for D5.",
+   "rewrite": "16. add: availability of the assay (send-out, research) is scored only in D4; D5 asks who orders the test, in which clinic, and how many visits or steps."
+  },
+  {
+   "anchor": "D6 'moderate' vs 'low' (rows 9, 12, 28)",
+   "issue": "Whether a delayed or missed classification counts as 2 or 3 is not defined.",
+   "rewrite": "17. add: 2 = a wrong result leads to a treatment or test being started or withheld until corrected; 3 = a wrong result leads only to extra routine testing, anxiety or a label that does not change treatment; 1 = a wrong result leads to harm that is not fully reversible."
+  },
+  {
+   "anchor": "D7 bins and boundary estimates (row 21)",
+   "issue": "A point estimate of 9,500 was rounded to 10,000 and scored in the higher bin.",
+   "rewrite": "3. D7, bins: score the bin of the unrounded product of the stated numbers; if the product lies within 10 percent of a bin boundary or the range crosses a boundary, write 'bin X or Y' in the reason and set confidence low, but the integer is the bin of the unrounded product."
+  },
+  {
+   "anchor": "D7 clarification 4 (row 21) and rule 24",
+   "issue": "Counting only patients whose result comes back suppressed uses the test result to define the denominator.",
+   "rewrite": "4. D7, situations not diagnoses: the denominator is the patients in whom the clinical question is asked before the test result is known (for example everyone worked up for hypoglycaemia); a count restricted by the result or the final diagnosis is a note, not the score."
+  },
+  {
+   "anchor": "D7 clarification 21 (unsourced shares)",
+   "issue": "V14 labelled assumptions but several have no range of their own.",
+   "rewrite": "21. each share in the chain is either sourced (US source named) or labelled 'assumption, range a to b'; a chain with an assumed share without a range is scored but confidence is low and the sensitivity column shows the range implied by the other shares."
+  },
+  {
+   "anchor": "D8 for definitional criteria (row 46)",
+   "issue": "D8 4 ('irreplaceable') is circular when the measure is part of the definition.",
+   "rewrite": "19. add: where the measure is part of the definition of the condition, score D8 for the downstream management decision; if management is unchanged by the label, D8 is at most 1; if no downstream decision is defined, write 'not determinable'."
+  },
+  {
+   "anchor": "Rows that record an interpretive limit, not a test use (row 28)",
+   "issue": "C-peptide in CKD is a caution on interpretation; D1 and D5 become judgements about caution.",
+   "rewrite": "Add to the candidate rule: a row whose use is an interpretive limit is scored for the decision the limit affects (classification, secretagogue or insulin choice) and tagged 'limit'; D1 and D5 are scored for that decision, and the row is not ranked with test-ordering uses unless the user asks."
+  },
+  {
+   "anchor": "Setting tag rule 22 (rows 21, 46)",
+   "issue": "Sample drawn in the ED or ward, interpreted by a specialist.",
+   "rewrite": "22. tag by where the test is ordered in the guideline or evidence pathway for the decision: ED or ward draw during the acute event is 'inpatient or procedural' even if a specialist interprets it."
+  },
+  {
+   "anchor": "Identifier rule (V15, V17, V18)",
+   "issue": "'DOI not returned by ID converter' was written for papers that have DOIs.",
+   "rewrite": "Citations: if the ID converter returns no DOI, look the paper up in Crossref or PubMed before writing 'no DOI'; write 'no DOI exists (checked)' only after that."
+  }
+ ],
+ "verdict": "The seven rows are scored with mostly sound sources, and every PMID I checked (44 resolved, none flagged as retracted) matches its cited claim except for the points below, but the set is not ready to enter the ranking unchanged. Four items must be fixed: row 9 mixes two decisions across units and D3 = 3 reads PancreasFest statement 2.4 as naming C-peptide with the wrong agreement figure (45 percent, not 58); row 21 D7 is scored 3 although its own numbers give about 9,500 (bin 2); row 46 D4 = 3 ignores that the criteria require a stimulated or 24-hour urine value and is inconsistent with rows 9 and 28. Several should-fix items change a ranking position: D2 is applied inconsistently (row 14 = 1, rows 28 and 35 = 2 on weaker, off-population evidence); the D7 chains for rows 14, 12, 28 and 46 hinge on unsourced shares (rows 14 and 12 cross bins; clarification 21 asks for ranges that are missing); row 46 and row 12 mix Japanese criteria with US counts; PV entries bundle pieces and conflict on effort. Differences between roles scoring the same dimension (V17 vs V18, D1, D5, D6, S) are all 1 point or less (row 14 S 0/1; row 12 D5 1/2 and D6 3/2; row 46 D1 3/2; row 35 D1 0/1); none exceeds the threshold. For the four that matter I give the supported reading above. Anchor clarifications 1 (prevalent pool, row 28), 3 (row 21), 4 (row 21), 5, 13, 14, 16 (row 12 V17), 20 (row 46) and 21 were not applied cleanly; 6, 12, 17, 18, 19, 22 and 24 were applied. Overall the evidence for these seven uses is weak at the decision level: no row has D2 above 2, the only guideline-level support (row 14, 'may be considered', LoE 3) shows no management change, and the strongest uses on stakes (rows 12, 21) rest on case reports and national criteria. Counts for the US are low-confidence in six of seven rows. Not checked by me: StatPearls, CDC NDSR, CDC KDSS and the Diabetes Care DKA page (blocked from this environment); the AASLD 2023 negative and the Imagawa criteria text beyond the abstract (taken from project files)."
+}

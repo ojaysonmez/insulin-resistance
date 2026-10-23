@@ -210,5 +210,15 @@ class SupersedeTests(unittest.TestCase):
             shutil.rmtree(root, ignore_errors=True)
 
 
+class AlternativeBinTests(unittest.TestCase):
+    def test_alt_ranks(self):
+        out = {1: {"dims": {"D7": 3}, "UQ": 0.5, "R": 0.5, "C": 0.6, "S": 0.5, "composite": {"default": 0.52}},
+               2: {"dims": {"D7": 3}, "UQ": 0.5, "R": 0.5, "C": 0.6, "S": 0.5, "composite": {"default": 0.50}}}
+        comp, rank = agg.alt_ranks(out, {2: [5]})[(2, 5)]
+        self.assertAlmostEqual(comp, 0.4 * 0.5 + 0.25 * 1.0 + 0.2 * 0.5 + 0.15 * 0.5)
+        self.assertEqual(rank, 1)
+        self.assertEqual(agg.alt_ranks(out, {9: [1]}), {})
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

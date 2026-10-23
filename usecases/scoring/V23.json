@@ -1,0 +1,438 @@
+{
+ "unit": "V23",
+ "role": "endocrinologist scoring D1, D5, D6, S",
+ "scores": [
+  {
+   "row": 20,
+   "dimension": "D1",
+   "score": 3,
+   "reason": "Total insulin with antibodies and PEG precipitation establishes insulin autoimmune syndrome and redirects care from imaging or surgery to stopping the trigger; C-peptide separates it from exogenous insulin. Other tests (antibody assay, fasting-test pattern) can partly substitute, so 3 not 4. Measure type: unspecified total insulin plus C-peptide during hypoglycaemia (not an IR index).",
+   "sources": [
+    "PMID 42662728 DOI 10.1016/j.metop.2026.100491 abstract",
+    "PMID 42318218 DOI 10.3389/fendo.2026.1784299 abstract",
+    "PMID 42697708 DOI 10.1177/00045632261489517 abstract",
+    "usecases-verified.md row 20"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 20,
+   "dimension": "D5",
+   "score": 2,
+   "reason": "Specialist (endocrine) work-up, usually after a supervised fast or spontaneous event, with send-out PEG or antibody testing; few steps but not primary care.",
+   "sources": [
+    "usecases-verified.md row 20",
+    "PMID 42662728 DOI 10.1016/j.metop.2026.100491 abstract"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 20,
+   "dimension": "D6",
+   "score": 2,
+   "reason": "Test burden 3 (blood draws, often during an already-needed hypoglycaemia work-up); false-result consequence 2 (missed or wrong call leads to unnecessary imaging or pancreatic surgery for a presumed insulinoma, or delayed trigger withdrawal). D6 = lower = 2.",
+   "sources": [
+    "usecases-verified.md row 20",
+    "PMID 42697708 DOI 10.1177/00045632261489517 abstract"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 20,
+   "dimension": "S",
+   "score": 3,
+   "reason": "Without the insulin, antibody and PEG result the default is insulinoma work-up with possible surgery and continued recurrent hypoglycaemia; serious morbidity, usually reversible. Default action is itself harmful.",
+   "sources": [
+    "usecases-verified.md row 20",
+    "PMID 42662728 DOI 10.1016/j.metop.2026.100491 abstract"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 45,
+   "dimension": "D1",
+   "score": 0,
+   "reason": "Prior gestational diabetes testing and the metformin decision (ADA Rec 3.7) rest on OGTT or A1C; no insulin or HOMA test was found in the read part of ADA 2026 s3, so a fasting-based insulin measure changes nothing in the documented pathway. Last 59k characters of ADA s3 were unread, so low confidence.",
+   "sources": [
+    "usecases-verified.md row 45",
+    "ADA Standards of Care 2026 section 3, first 100k of 159k characters (summariser), per project file"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 45,
+   "dimension": "D5",
+   "score": 3,
+   "reason": "If it were used, fasting insulin is a routine laboratory draw that primary care or an obstetric follow-up visit could order in one step; no guideline pathway exists, so this scores the hypothetical ownership only. Alternative 0 if 'no pathway' is read as 'no owner'.",
+   "sources": [
+    "usecases-verified.md row 45"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 45,
+   "dimension": "D6",
+   "score": 3,
+   "reason": "Test burden 4 (one fasting blood draw); false-result consequence 3 (a spurious value could cause unneeded concern; preventive metformin and lifestyle are low risk). D6 = 3.",
+   "sources": [
+    "usecases-verified.md row 45"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 45,
+   "dimension": "S",
+   "score": 1,
+   "reason": "Prevention proceeds on OGTT or A1C regardless; omitting insulin or HOMA costs at most some risk stratification, a reversible, symptomless effect. Default action (metformin offered by glycaemia) is not harmful.",
+   "sources": [
+    "usecases-verified.md row 45"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 11,
+   "dimension": "D1",
+   "score": 1,
+   "reason": "C-peptide is one input to remission scores (ABCD) used for pre-operative counselling, not eligibility; no paper isolates its incremental value and scores did not beat duration alone at 10 years. Counselling only. Measure type: C-peptide (fasting).",
+   "sources": [
+    "PMID 22963817 DOI 10.1016/j.soard.2012.07.015 abstract",
+    "PMID 32873586 DOI 10.2337/dc20-0157 abstract",
+    "usecases-verified.md row 11"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 11,
+   "dimension": "D5",
+   "score": 2,
+   "reason": "Ordered by bariatric or endocrine teams at pre-operative assessment as one extra fasting blood test; specialist outpatient, though low step count.",
+   "sources": [
+    "usecases-verified.md row 11"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 11,
+   "dimension": "D6",
+   "score": 3,
+   "reason": "Test burden 4 (one blood draw); false-result consequence 3 (a wrong remission estimate alters expectations; surgery eligibility is not based on it). Unreliable with insulin therapy or CKD. D6 = 3.",
+   "sources": [
+    "usecases-verified.md row 11",
+    "PMID 22963817 DOI 10.1016/j.soard.2012.07.015 abstract"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 11,
+   "dimension": "S",
+   "score": 1,
+   "reason": "Without C-peptide the default is surgery on BMI and comorbidity criteria with duration-based counselling; the loss is a less accurate expectation, reversible.",
+   "sources": [
+    "usecases-verified.md row 11",
+    "PMID 32873586 DOI 10.2337/dc20-0157 abstract"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 8,
+   "dimension": "D1",
+   "score": 1,
+   "reason": "Stimulated C-peptide (MMTT AUC) decides whether an intervention preserved beta-cell function at trial level; it does not choose treatment for an individual patient in routine care. Scored 1 as the nearest anchor; alternative 0 if no patient decision counts. Measure type: C-peptide, post-meal stimulated.",
+   "sources": [
+    "usecases-verified.md row 8",
+    "PMID 14693724 abstract",
+    "PMID 18628574 abstract",
+    "PMID 32219329 abstract"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 8,
+   "dimension": "D5",
+   "score": 1,
+   "reason": "MMTT is a multi-hour timed protocol run by trial or specialist centres with several timed draws; specialist only.",
+   "sources": [
+    "usecases-verified.md row 8"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 8,
+   "dimension": "D6",
+   "score": 2,
+   "reason": "Test burden 2 (2 to 4 hour test with timed draws and a liquid meal, hyperglycaemia limits it); false-result consequence 3 (affects trial inference, no direct patient harm). D6 = 2.",
+   "sources": [
+    "usecases-verified.md row 8"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 8,
+   "dimension": "S",
+   "score": 1,
+   "reason": "A missed or misread endpoint harms through wrong conclusions about a therapy, not an immediate patient event; minor to reversible.",
+   "sources": [
+    "usecases-verified.md row 8"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 25,
+   "dimension": "D1",
+   "score": 3,
+   "reason": "Insulin/C-peptide interpretation with PEG precipitation of maternal and infant samples decides whether an apparent high insulin is real (congenital hyperinsulinism) or an antibody artefact; other tests (antibody testing, glucose-infusion rate, ketones) can partly substitute. Measure type: total insulin and C-peptide with PEG; single review, abstract level.",
+   "sources": [
+    "PMID 42697708 DOI 10.1177/00045632261489517 abstract",
+    "usecases-verified.md row 25"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 25,
+   "dimension": "D5",
+   "score": 1,
+   "reason": "Neonatal or paediatric endocrine and biochemistry laboratory decision with send-out PEG precipitation, sampling both mother and infant; specialist only and complex.",
+   "sources": [
+    "PMID 42697708 DOI 10.1177/00045632261489517 abstract",
+    "usecases-verified.md row 25"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 25,
+   "dimension": "D6",
+   "score": 1,
+   "reason": "Test burden 2 (small blood volumes from a hypoglycaemic infant, a critical sample timing); false-result consequence 1 (mislabelling as congenital HI leads to diazoxide, octreotide or even surgery, while missing true HI risks brain injury). D6 = 1.",
+   "sources": [
+    "PMID 42697708 DOI 10.1177/00045632261489517 abstract",
+    "usecases-verified.md row 25"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 25,
+   "dimension": "S",
+   "score": 3,
+   "reason": "Without the check the default is treating a spurious insulin value as hyperinsulinism, with unneeded drugs, prolonged admission and possibly surgery, or false reassurance; serious morbidity. Default is itself harmful.",
+   "sources": [
+    "PMID 42697708 DOI 10.1177/00045632261489517 abstract",
+    "usecases-verified.md row 25"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 27,
+   "dimension": "D1",
+   "score": 1,
+   "reason": "TPIAT is done for pain and proceeds regardless of reserve; MMTT C-peptide informs expected insulin need and follow-up, not whether to operate. In the distal pancreatectomy cohort preoperative C-peptide AUC did not predict new diabetes; no threshold found. Counselling or monitoring intensity only. Measure type: C-peptide, mixed-meal.",
+   "sources": [
+    "PMID 23890130 DOI 10.1016/j.pan.2013.05.002 abstract",
+    "PMID 37889837 DOI 10.1210/clinem/dgad634 abstract and full-text windows (as recorded in usecases-verified.md row 27)",
+    "usecases-verified.md row 27"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 27,
+   "dimension": "D5",
+   "score": 1,
+   "reason": "Performed in pancreas-surgery or islet-transplant centres with a multi-hour MMTT before and after surgery; specialist, complex protocol.",
+   "sources": [
+    "usecases-verified.md row 27",
+    "PMID 23890130 DOI 10.1016/j.pan.2013.05.002 abstract"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 27,
+   "dimension": "D6",
+   "score": 2,
+   "reason": "Test burden 3 (a meal test in a patient with pancreatic disease); false-result consequence 2 (a misjudged reserve may mis-set expectations or insulin plans, reversible with glucose monitoring). D6 = 2.",
+   "sources": [
+    "usecases-verified.md row 27"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 27,
+   "dimension": "S",
+   "score": 2,
+   "reason": "Without it the default is routine post-operative glucose monitoring; the harm is delayed recognition of insulin need, moderate and delayed.",
+   "sources": [
+    "usecases-verified.md row 27",
+    "PMID 23890130 DOI 10.1016/j.pan.2013.05.002 abstract"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 48,
+   "dimension": "D1",
+   "score": 0,
+   "reason": "In the cited cohorts diagnosis rested on documented low glucose with symptoms; insulin was collected but not used as a criterion and no insulin threshold was found, so the insulin component changes no decision in the screened records. The 2009 Endocrine Society guideline was not read. Measure type: post-load and mixed-meal glucose with insulin.",
+   "sources": [
+    "PMID 33916952 DOI 10.3390/jpm11040276 abstract and full-text windows (as recorded in usecases-verified.md row 48)",
+    "PMID 41829992 DOI 10.3390/nu18050822 abstract and full-text windows (as recorded in usecases-verified.md row 48)",
+    "Endocrine Society hypoglycemia guideline 2009, PMID 19088155 DOI 10.1210/jc.2008-1410, title only (full text not read)",
+    "usecases-verified.md row 48"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 48,
+   "dimension": "D5",
+   "score": 1,
+   "reason": "A 5-hour OGTT or 4-hour MMTT with symptom correlation is a long timed protocol run by endocrine specialists; no accepted routine pathway.",
+   "sources": [
+    "usecases-verified.md row 48",
+    "PMID 33916952 DOI 10.3390/jpm11040276 abstract and full-text windows (as recorded in usecases-verified.md row 48)"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 48,
+   "dimension": "D6",
+   "score": 2,
+   "reason": "Test burden 2 (5-hour test, provoked symptomatic hypoglycaemia); false-result consequence 2 (low post-load glucose also occurs in asymptomatic people, so over-diagnosis and unneeded diet or drug restriction). D6 = 2.",
+   "sources": [
+    "PMID 33916952 DOI 10.3390/jpm11040276 abstract and full-text windows (as recorded in usecases-verified.md row 48)",
+    "usecases-verified.md row 48"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 48,
+   "dimension": "S",
+   "score": 1,
+   "reason": "Without the insulin result the default is glucose-based confirmation and dietary advice; symptomatic but reversible.",
+   "sources": [
+    "PMID 33916952 DOI 10.3390/jpm11040276 abstract and full-text windows (as recorded in usecases-verified.md row 48)",
+    "usecases-verified.md row 48"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  }
+ ],
+ "path_to_viability": [
+  {
+   "row": 20,
+   "missing_piece": "A guideline or consensus text that states which insulin, antibody and PEG results define insulin autoimmune syndrome, with a harmonised assay-specific cut-off.",
+   "type": "guideline",
+   "effort": "medium",
+   "basis": "Only 2026 abstract-level reviews and case series found in project files (PMID 42662728, 42318218)."
+  },
+  {
+   "row": 45,
+   "missing_piece": "A cohort showing postpartum fasting insulin or HOMA-IR adds to OGTT, A1C and BMI for predicting type 2 diabetes after gestational diabetes, and a trial choosing prevention by it.",
+   "type": "evidence",
+   "effort": "large",
+   "basis": "Postpartum IR cohorts are title-level in the files; incremental value untested."
+  },
+  {
+   "row": 11,
+   "missing_piece": "Analysis of whether C-peptide adds to diabetes duration, BMI and age in remission prediction, with external validation of a cutoff on a standard assay.",
+   "type": "evidence",
+   "effort": "small",
+   "basis": "No paper found isolates C-peptide's incremental value (usecases-verified.md row 11)."
+  },
+  {
+   "row": 8,
+   "missing_piece": "Regulatory-accepted use of stimulated C-peptide to select or monitor an individual patient, plus a shorter validated meal-test protocol.",
+   "type": "workflow",
+   "effort": "medium",
+   "basis": "Research endpoint; MMTT is a multi-hour protocol (usecases-verified.md row 8)."
+  },
+  {
+   "row": 25,
+   "missing_piece": "Validation of an interpretation algorithm with PEG precipitation in infant hypoglycaemia on a larger cohort, and a routine PEG assay.",
+   "type": "assay",
+   "effort": "medium",
+   "basis": "Single brand-new review, abstract level (PMID 42697708)."
+  },
+  {
+   "row": 27,
+   "missing_piece": "A prospective TPIAT cohort testing whether preoperative MMTT C-peptide predicts insulin independence beyond islet yield and glucose measures.",
+   "type": "evidence",
+   "effort": "medium",
+   "basis": "No preoperative threshold found; distal pancreatectomy cohort found C-peptide AUC not significant (PMID 37889837)."
+  },
+  {
+   "row": 48,
+   "missing_piece": "Agreed diagnostic criteria for non-surgical postprandial hypoglycaemia and a study showing insulin or C-peptide changes management beyond documented glucose.",
+   "type": "guideline",
+   "effort": "medium",
+   "basis": "Authors note lack of standardised test and cutoff (PMID 33916952); Cryer 2009 unread."
+  }
+ ],
+ "settings": [
+  {
+   "row": 20,
+   "setting": "specialist outpatient"
+  },
+  {
+   "row": 45,
+   "setting": "routine care"
+  },
+  {
+   "row": 11,
+   "setting": "specialist outpatient"
+  },
+  {
+   "row": 8,
+   "setting": "specialist outpatient"
+  },
+  {
+   "row": 25,
+   "setting": "inpatient or procedural"
+  },
+  {
+   "row": 27,
+   "setting": "inpatient or procedural"
+  },
+  {
+   "row": 48,
+   "setting": "specialist outpatient"
+  }
+ ],
+ "anchor_issues": [
+  "Row 8 D1: no anchor for a trial-endpoint measure with no individual decision; chose 1 (nearest), alternative 0.",
+  "Row 45 D1/D5: the measure is not part of any pathway; D1 scored 0 (nothing changes), D5 scored the hypothetical ordering owner (PCP, 3) because 0 is reserved for 'no specialty owns the decision'; alternative 0.",
+  "Rows 20, 25 D1: 3 vs 4 depends on whether PEG or antibody testing 'substitutes'; chose 3 under clarification 15.",
+  "Row 25 D6: infant sampling burden and the two directions of false result (over- and under-diagnosis of hyperinsulinism) both fall under the lower-of-two rule; chose 1.",
+  "Row 27 D1: 'whether to proceed' is not supported by any threshold; scored the supported counselling and monitoring decision (1)."
+ ],
+ "assumptions": [
+  "No new searches were run; all scores come from usecases-verified.md rows and PMIDs listed there, with DOIs added from PubMed records retrieved with tools/watch_fetch.py (abstract level).",
+  "PMIDs 14693724, 18628574, 32219329 (row 8) were taken from the project file; DOIs not retrieved in this unit.",
+  "Row 45: ADA 2026 s3 was read only to 100k of 159k characters per the project file; I did not re-read it.",
+  "Stakes follow clarification 18 (harm of deciding without the measurement under the usual default).",
+  "D5 and D6 for rows 45 and 48 describe the measurement as the use case names it."
+ ],
+ "searches": []
+}

@@ -1,0 +1,221 @@
+{
+ "unit": "V20",
+ "role": "evidence searcher (D7 patient counts and D3 guideline status)",
+ "scores": [
+  {
+   "row": 20,
+   "dimension": "D7",
+   "score": 2,
+   "reason": "Measure type: C-peptide plus total insulin and insulin antibodies (fasting or meal-timed samples). Narrowest population: adults with documented endogenous hyperinsulinaemic hypoglycaemia in whom insulin antibodies are checked. Chain: insulinoma incidence about 1 per 250,000 patient-years (Cryer 2009) x US adults about 260 million = about 1,000 to 1,400 per year; other endogenous hyperinsulinism without gastric surgery (non-insulinoma, IAS, others) assumed to add 1 to 3 times that (assumption, no source) = point estimate about 3,000 per year, range about 1,300 to 10,000. Bin 2 (1,000 to 10,000). Alternative: bin 3 if all adults worked up for suspected hyperinsulinism (assumption, probably 10,000 or more) are counted, which rule 24 says to give as a note only. True IAS cases are far fewer: Japan rate 0.017 per 100,000 (case-report citation) would give at most about 60 per year in the US, and non-Asian rates are lower (Caucasian about 1 case per year in an Italian series). That is bin 1 and is the case count, not the situation count.",
+   "sources": [
+    "PMID 19088155 DOI 10.1210/jc.2008-1410 excerpt-level",
+    "PMID 32308449 DOI 10.2147/dmso.s219438 search excerpt only (incidence table)",
+    "Annals Clinical Cases DOI 10.7326/aimcc.2023.1485 search excerpt only (Japan 0.017 per 100,000)",
+    "PMID 42143009 DOI 10.1016/j.disamonth.2026.102146 abstract (rare, no rate)"
+   ],
+   "confidence": "low",
+   "origin": "new search"
+  },
+  {
+   "row": 20,
+   "dimension": "D3",
+   "score": 3,
+   "reason": "Measure: insulin, C-peptide and insulin antibodies (fasting or meal-timed). Cryer 2009 (Endocrine Society, US) recommends in patients suspected of endogenous hyperinsulinism to measure glucose, insulin, C-peptide, proinsulin, BOHB and drug screen during hypoglycaemia and to 'measure insulin antibodies' (recommendation 2.1, 1|QQQE strategy). Its table gives 'positive antibody' as the insulin autoimmune interpretation, and it says to localise an insulinoma only if antibodies are absent. Population is explicit (adults with hypoglycaemia without diabetes). Not scored 4: the decision named (avoid imaging/surgery) is sequenced after antibody testing, but the text does not say the test must be done first; a reader could argue 4. PEG precipitation is not mentioned in the screened excerpts.",
+   "sources": [
+    "PMID 19088155 DOI 10.1210/jc.2008-1410 (Cryer 2009 Endocrine Society guideline; recommendation text and tables read in a full-text PDF extract via web fetch, excerpt-level, not complete)"
+   ],
+   "confidence": "medium",
+   "origin": "new search"
+  },
+  {
+   "row": 25,
+   "dimension": "D7",
+   "score": 1,
+   "reason": "Measure: insulin and C-peptide in infants with hypoglycaemia (interference by maternal antibodies). No count of affected infants was found. Chain: US births 3,628,934 (2024, NCHS) ; congenital hyperinsulinism birth prevalence 1 in 17,394 in Western Australia (abstract) gives about 200 infants, and rarer elsewhere (assumed 1 in 50,000 = about 70), so about 70 to 200 infants per year have the hyperinsulinism work-up, plus other infants with a critical sample; infants whose raised insulin is an antibody artefact are a small unsourced fraction. Point estimate about 300 infants per year (assumption), range 50 to 3,000, bin 1 (100 to 1,000), confidence low. Alternative: bin 2 if more than about 1,000 infants a year have a critical sample with a maternal-antibody question; bin 0 if fewer than 100.",
+   "sources": [
+    "PMID 42697708 DOI 10.1177/00045632261489517 abstract",
+    "PMID 42396735 DOI 10.1515/jpem-2026-0122 abstract",
+    "NCHS Data Brief 535 (July 2025) births 2024, search excerpt, https://www.cdc.gov/nchs/data/databriefs/db535.pdf",
+    "PMID 30365409 DOI 10.1097/pec.0000000000001634 abstract (1 in 1,400 ED children with unexplained hypoglycaemia)"
+   ],
+   "confidence": "low",
+   "origin": "new search"
+  },
+  {
+   "row": 25,
+   "dimension": "D3",
+   "score": 2,
+   "reason": "Measure: insulin and C-peptide at hypoglycaemia in infants, with PEG precipitation for antibody interference. The Pediatric Endocrine Society 2015 recommendations (US) call for a critical sample with insulin and C-peptide in persistent hypoglycaemia, a broader population that includes this one, but the full text (PMC11891912, text-searched) contains no match for antibod*, maternal or PEG, so the maternal-antibody artefact is not addressed. Rule 14 gives 2.",
+   "sources": [
+    "PMID 25957977 DOI 10.1016/j.jpeds.2015.03.057 full text (PMC11891912 grep)",
+    "PMID 42697708 DOI 10.1177/00045632261489517 abstract"
+   ],
+   "confidence": "medium",
+   "origin": "new search"
+  },
+  {
+   "row": 8,
+   "dimension": "D7",
+   "score": 1,
+   "reason": "Measure: stimulated C-peptide (mixed-meal, 2 to 4 h AUC) as a trial endpoint. Situation = patients enrolled per year in US trials with a C-peptide beta-cell endpoint. ClinicalTrials.gov search (T1D, primary outcome C-peptide, start 2023 onward, US site): 18 records, about 12 relevant trials with planned enrolment totalling about 2,040 (e.g. NCT07088068 723, NCT07222332 300, NCT06111586 197, NCT07187531 159) over about 3.5 years, many with sites outside the US. Estimate about 300 to 600 US participants per year (assumption: about half of enrolment is in the US), range 150 to 1,500. Bin 1 (100 to 1,000); the range reaches bin 2, so confidence is low. Not included: routine clinical use (for example label selection, row 29) and trials whose primary outcome field does not say C-peptide.",
+   "sources": [
+    "NCT07088068 https://clinicaltrials.gov/study/NCT07088068 registry record fields",
+    "NCT07222332 https://clinicaltrials.gov/study/NCT07222332",
+    "NCT06111586 https://clinicaltrials.gov/study/NCT06111586",
+    "NCT07187531 https://clinicaltrials.gov/study/NCT07187531",
+    "Endotext NBK326738 (about 50,000 new T1D cases a year, context only) search excerpt"
+   ],
+   "confidence": "low",
+   "origin": "new search"
+  },
+  {
+   "row": 8,
+   "dimension": "D3",
+   "score": 3,
+   "reason": "Measure: stimulated C-peptide (MMTT). The 2026 TZIELD US label (BLA 761183, supplement 010) carries an accelerated-approval indication for recently diagnosed Stage 3 T1D 'based on evidence of reduced C-peptide decline', with a primary trial endpoint of C-peptide AUC change, and requires peak C-peptide of 0.2 pmol/mL or more on MMTT for selection. That is regulatory acceptance as a surrogate (accelerated approval), but the C-peptide briefing (C-Path 2025) says no FDA guidance yet qualifies it for traditional approval, and the 2023 FDA draft endpoints guidance excluded early-stage T1D. So 3, not 4.",
+   "sources": [
+    "FDA label https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761183s010lbls014lbl.pdf (excerpts read through web fetch, not the whole label)",
+    "C-Path briefing https://media.c-path.org/wp-content/uploads/20250630183647/Public-Workshop-Briefing-Document.pdf search excerpt only",
+    "PMID 37861217 DOI 10.1056/nejmoa2308743 title only (PROTECT)",
+    "PMID 38663372 DOI 10.1159/000538775 abstract (Pediatric Endocrine Society teplizumab statement)"
+   ],
+   "confidence": "medium",
+   "origin": "new search"
+  },
+  {
+   "row": 11,
+   "dimension": "D7",
+   "score": 3,
+   "reason": "Measure: C-peptide (fasting) as one input to a remission score; T2D patients considering bariatric surgery. Chain: US bariatric procedures 270,089 (2023, ASMBS) and about 200,667 (2024, ASMBS 2022-2024 volume assessment) ; share with diabetes at baseline about 28 to 37 percent in a US commercial-claims cohort (sleeve 28, bypass 37; adult MarketScan 2000-2020; the exact all-procedure share was not read). Point estimate 200,000 x 0.30 = about 60,000 per year, range about 45,000 (2024 x 0.22) to 100,000 (2023 x 0.37). Bin 3 (10,000 to 100,000). The range touches the 100,000 boundary, so alternative bin 4 if volumes recover to 2023 levels with a 37 percent diabetes share. Counts surgical candidates with T2D, not tests; C-peptide is unreliable in insulin-treated patients and CKD, so the useful subgroup is smaller.",
+   "sources": [
+    "PMID 38448343 DOI 10.1016/j.soard.2024.01.012 abstract (2022 estimate 280,000)",
+    "ASMBS estimate table https://asmbs.org/resources/estimate-of-bariatric-surgery-numbers search excerpt (2023 total 270,089)",
+    "ASMBS 2022-2024 volume assessment (SOARD 2026) https://asmbs.org/resources/the-american-society-of-metabolic-and-bariatric-surgery-2022-2024-procedural-volume-assessment/ search excerpt (2024 estimate 200,667; PMID not retrieved)",
+    "PMID 38902405 DOI 10.1007/s00464-024-10985-7 search excerpt (baseline diabetes 28 to 37 percent)"
+   ],
+   "confidence": "medium",
+   "origin": "new search"
+  },
+  {
+   "row": 11,
+   "dimension": "D3",
+   "score": 2,
+   "reason": "Measure: C-peptide for remission prediction. The 2022 ASMBS/IFSO indications (US and international bodies) recommend metabolic surgery for T2D from BMI 30 but a text search of the full text (PMC9834364) found no mention of C-peptide or of remission prediction scores. Rule 5: a guideline that recommends the treatment but not the test scores 2. Anchor 1 ('not addressed') would also fit the test itself; see anchor_issues. ADA Standards 2026 section 8 was not searched.",
+   "sources": [
+    "PMID 36336720 DOI 10.1007/s11695-022-06332-1 full text (PMC9834364 grep)",
+    "PMID 36280539 DOI 10.1016/j.soard.2022.08.013 same guideline in a second journal (listed only, not separately read)"
+   ],
+   "confidence": "medium",
+   "origin": "new search"
+  },
+  {
+   "row": 27,
+   "dimension": "D7",
+   "score": 1,
+   "reason": "Measure: MMTT C-peptide (beta-cell reserve) around TPIAT. US National Inpatient Sample: TPIAT rose from 53 cases (2002) to 155 (2012); 830 TPIAT in 2002 to 2013 in a second NIS analysis. Current volume not found; point estimate about 250 per year (assumption: continued growth to 1.5 to 2 times the 2012 figure, with extra candidates evaluated who do not proceed), range 150 to 500. Bin 1 (100 to 1,000). Confidence medium: the base figure is sourced, the growth is an assumption.",
+   "sources": [
+    "PMID 27011922 DOI 10.5500/wjt.v6.i1.233 abstract (via search excerpt)",
+    "PMID 31593020 DOI 10.1097/MPA.0000000000001405 search excerpt (830 TPIAT 2002 to 2013; PMC7952005)",
+    "PMID 29456124 DOI 10.1016/j.pan.2018.02.001 search excerpt (POST study, 9 US centres)"
+   ],
+   "confidence": "medium",
+   "origin": "new search"
+  },
+  {
+   "row": 27,
+   "dimension": "D3",
+   "score": 3,
+   "reason": "Measure: beta-cell reserve assessment (test not specified in the text I read). PancreasFest 2012 consensus (US meeting; Pancreatology) Guidance Statement 2.4: 'assessment of pancreatic endocrine reserve, and importantly that of functional beta-cell mass, should be performed as part of the evaluation and follow-up for TPIAT.' This recommends the assessment in the TPIAT population explicitly, but names no assay (MMTT C-peptide is one option) and is not a society guideline, so 3 not 4. Alternative 2 if the unnamed test is judged not to cover C-peptide.",
+   "sources": [
+    "PMID 23890130 DOI 10.1016/j.pan.2013.05.002 abstract (statement 2.4 quoted via PubMed page)"
+   ],
+   "confidence": "medium",
+   "origin": "new search"
+  },
+  {
+   "row": 45,
+   "dimension": "D7",
+   "score": 5,
+   "reason": "Measure: fasting insulin or HOMA-IR (research-only) in women with prior GDM. Narrowest population: women with a GDM history for whom prevention is chosen. Chain: births 3,628,934 (2024) x GDM about 8.0 percent (2023, birth certificates) = about 290,000 new GDM women a year; existing pool about 6 million (assumption: 8.9 percent of women of reproductive age report prior GDM, NHANES 2007-2014, applied to about 65 million women aged 20 to 44, older women not counted; range 5 to 10 million); share evaluated or retested a year about 22 percent (assumption: 67 percent screened within 3 years, NHANES 2007-2012, divided by 3; range 15 to 33 percent) = about 1.3 million. Point estimate about 1.6 million per year, range 1.2 to 3.6 million, bin 5 (over 1,000,000). Confidence low: pool size and share are assumptions. Alternative bin 4 if only newly diagnosed women (about 290,000) are counted or if the retest share is under about 12 percent (rule 24). Note: no insulin test is used in this situation today.",
+   "sources": [
+    "NCHS Data Brief 535 https://www.cdc.gov/nchs/data/databriefs/db535.pdf search excerpt",
+    "AHA Circulation abstract 4123308 DOI 10.1161/circ.150.suppl_1.4123308 search excerpt (GDM 8.0 percent in 2023)",
+    "PMID 30367717 DOI 10.5888/pcd15.180094 search excerpt (8.9 percent)",
+    "PMID 27609302 DOI 10.5888/pcd13.160106 search excerpt (67 percent screened in 3 years)"
+   ],
+   "confidence": "low",
+   "origin": "new search"
+  },
+  {
+   "row": 45,
+   "dimension": "D3",
+   "score": 2,
+   "reason": "Measure: fasting insulin or HOMA-IR. ADA Standards 2026 recommendation 3.7 (metformin considered for people with prior GDM) names the drug and the condition but not an insulin or HOMA measure; section 3 text search (PMC12690170, 44k characters of the page; may be partial) matched HOMA only for the IRIS pioglitazone item, not for GDM. Section 15 (PMC12690181) text search found insulin resistance only as physiology. Rule 5 gives 2. Anchor 1 ('not addressed') would also fit; see anchor_issues.",
+   "sources": [
+    "PMID 41358891 DOI 10.2337/dc26-S003 text-searched",
+    "PMID 41358885 DOI 10.2337/dc26-S015 text-searched"
+   ],
+   "confidence": "medium",
+   "origin": "both"
+  },
+  {
+   "row": 48,
+   "dimension": "D7",
+   "score": null,
+   "reason": "Not determinable. No US count of non-diabetic adults without gastric surgery who are worked up for suspected reactive hypoglycaemia was found in the screened records; the studies found are single-centre (40 adults; one abstract reports 1,511 OGTT work-ups at one site). A chain would rest on unsourced shares (primary-care presentations x referral share x share tested), and its plausible range, about 1,000 to 100,000, spans three bins, so no single bin is defensible even at low confidence.",
+   "sources": [
+    "PMID 33916952 DOI 10.3390/jpm11040276 (project files, abstract and full-text windows)",
+    "Diabetes 2024;73(Suppl 1):1594-P DOI not retrieved, abstract only (1,511 OGTT patients, single centre)"
+   ],
+   "confidence": "low",
+   "origin": "new search"
+  },
+  {
+   "row": 48,
+   "dimension": "D3",
+   "score": 2,
+   "reason": "Measure: insulin during post-load or meal tests. Cryer 2009 says an OGTT 'should never be used' for suspected postprandial hypoglycaemia (0 for the OGTT arm of this use case), and recommends a 5-h mixed-meal test with insulin, C-peptide and proinsulin sent only on samples with glucose below 60 mg/dL when Whipple's triad is shown (3 for the meal-test arm, in remarks and tables, not a numbered recommendation); postprandial symptoms without Whipple's triad are called a functional disorder. The decision named is confirming that symptoms coincide with low glucose, which glucose answers; insulin is optional. I scored 2 as the combined reading; see anchor_issues.",
+   "sources": [
+    "PMID 19088155 DOI 10.1210/jc.2008-1410 (Cryer 2009 Endocrine Society guideline; recommendation text and tables read in a full-text PDF extract via web fetch, excerpt-level, not complete)"
+   ],
+   "confidence": "medium",
+   "origin": "both"
+  }
+ ],
+ "path_to_viability": [],
+ "settings": [],
+ "anchor_issues": [
+  "Row 45 and row 11 D3: rule 5 (guideline recommends the drug or treatment but not the test = 2) conflicts with anchor 1 (not addressed). I followed rule 5 and scored 2; scoring 1 would apply if the test, not the treatment, is the unit. Same ambiguity for row 45 where the underlying measure (insulin/HOMA) is not tied to any decision in the guideline.",
+  "Row 48 D3: the use case combines an OGTT arm (guideline recommends against, 0) and a meal-test arm (recommended when Whipple's triad is shown, 3); the anchor has no way to score a use that spans both. Chose 2 because the named decision (confirming hypoglycaemia) does not need insulin.",
+  "Row 20 D3: rule 13 reserves 4 for a test that must be done before the decision; Cryer sequences antibodies before localisation but does not say 'must'. Chose 3.",
+  "Row 8 D7 and row 27 D7: 'patients in whom the situation arises' is unclear for research endpoints and for operations; I counted trial participants and TPIAT recipients respectively.",
+  "Row 25 D7: the situation (artefactual insulin from maternal antibodies) has no published count; a chain of unsourced fractions was needed.",
+  "Row 48 D7: set to null because no defensible bin exists even under rule 24."
+ ],
+ "assumptions": [
+  "US adults about 260 million; women aged 20 to 44 about 65 million.",
+  "Row 20: non-insulinoma endogenous hyperinsulinism adds 1 to 3 times the insulinoma count (no source).",
+  "Row 45: pool of prior-GDM women about 6 million; yearly evaluated share about 22 percent (derived from a 3-year screening rate).",
+  "Row 11: diabetes share 30 percent (range 22 to 37), taken from a commercial-claims cohort, not the MBSAQIP all-procedure share.",
+  "Row 27: TPIAT volume has grown since 2012 to about 250 per year (no recent count found).",
+  "Row 8: about half of trial enrolment is in the US.",
+  "Cryer 2009 was read as excerpts of a full-text PDF copy (web fetch) and the publisher page; the project file says the guideline was not read, so this is a new, partial read.",
+  "Searches by web search and fetch tools in addition to tools/pubmed_search.py; python tools/watch_fetch.py and tools/pmc_text.py were used as instructed."
+ ],
+ "searches": [
+  "pubmed_search.py: 'insulin autoimmune syndrome incidence United States' (1 record, 1994 Japan review; not used)",
+  "pubmed_search.py: 'insulin autoimmune syndrome' (1,691 hits, 8 screened); 'insulin autoimmune syndrome epidemiology' (190 hits, 8 screened); 'insulin autoimmune syndrome insulin antibodies hypoglycemia case series non-Japanese' (0)",
+  "pubmed_search.py: 'maternal insulin antibodies neonatal hypoglycemia' (22 hits, 8 screened); 'spurious hyperinsulinism insulin antibodies infant' (0); 'congenital hyperinsulinism incidence' (158 hits, 8 screened); 'hypoglycemia infants insulin measured critical sample' (4 hits)",
+  "pubmed_search.py: 'total pancreatectomy islet autotransplantation' (579 hits, 8 screened); 'islet autotransplantation chronic pancreatitis outcomes' (267, 8); 'islet autotransplant cases per year' (0); 'TPIAT pancreatic islet autotransplantation registry cases' (0); '... number of procedures United States per year' (2); '... guideline recommendations' (1)",
+  "pubmed_search.py: 'postprandial hypoglycemia prevalence' (8,921, 8 screened; no relevant); 'reactive hypoglycemia oral glucose tolerance test' (2,238, 8); 'idiopathic postprandial syndrome' (55, 8); 'hypoglycemia adults without diabetes evaluation' (4,480, 8); 'postprandial hypoglycemia adults mixed meal test insulin' (81, 6); 'hypoglycemia non-diabetic adults insulinoma prevalence evaluation fasting test number' (0)",
+  "pubmed_search.py: 'gestational diabetes history type 2 diabetes meta-analysis' (44, 6); 'postpartum glucose testing women with gestational diabetes United States' (91, 6); 'prevalence of gestational diabetes United States births' (1,794, 6)",
+  "pubmed_search.py: 'bariatric surgery procedures United States annual ASMBS' (4); 'bariatric surgery type 2 diabetes remission prediction C-peptide' (51, 6); 'bariatric surgery patients with diabetes United States proportion' (55, 6); 'ASMBS IFSO 2022 guidelines indications metabolic bariatric surgery' (9, 6); 'MBSAQIP diabetes preoperative proportion bariatric patients' (3); 'bariatric surgery diabetes prevalence among patients undergoing metabolic bariatric surgery United States registry' (5); 'bariatric surgery trends comorbidities type 2 diabetes sleeve gastrectomy MBSAQIP' (1)",
+  "pubmed_search.py: 'type 1 diabetes incidence United States youth adults' (1,181, 6); 'C-peptide endpoint type 1 diabetes trials FDA guidance' (0); 'stimulated C-peptide mixed meal tolerance test consensus' (0); 'teplizumab stage 3 type 1 diabetes PROTECT' (6); 'type 1 diabetes new onset trial C-peptide enrollment United States TrialNet' (2); 'SEARCH for Diabetes in Youth incidence type 1 2021' (67, 6)",
+  "pubmed_search.py: 'Pediatric Endocrine Society recommendations hypoglycemia neonates infants children' (7, 6); Thornton title search (1); ASMBS IFSO title search (6)",
+  "watch_fetch.py --abstracts: 42143009, 42697708, 42396735, 30365409, 42605938; 23890130, 38895780, 39994886; 41460978 (not returned), 37508719, 38663372",
+  "pmc_text.py grep: PMC12690170 (ADA s3), PMC12690181 (ADA s15), PMC9834364 (ASMBS/IFSO 2022), PMC11891912 (PES 2015)",
+  "Web search (Parallel): ASMBS bariatric numbers; GDM prevalence and births; TPIAT per year; T1D incidence and FDA C-peptide; Cryer 2009; ADA 2026 s3 and ASMBS/IFSO; GDM history prevalence and screening; PES hypoglycaemia and IAS rates; bariatric diabetes share. Pages fetched: TZIELD label, Cryer PDF, PancreasFest PubMed page",
+  "ClinicalTrials.gov (Clinical_Trials tool): condition 'type 1 diabetes', primary outcome C-peptide, start 2023 onward, US location, interventional: 18 records screened",
+  "Not found in the screened records: a US count of IAS cases; a US count of infants with maternal-antibody insulin interference; a US count of reactive-hypoglycaemia work-ups; a current TPIAT annual volume; an FDA guidance accepting C-peptide as a traditional-approval endpoint; any guideline text on C-peptide for bariatric remission prediction; any guideline text on insulin or HOMA in prior GDM."
+ ]
+}

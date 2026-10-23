@@ -1,0 +1,48 @@
+{
+ "note": "Alternative D7 bins for rows whose D7 rests on an unsourced share (rule 24, D-37). Taken from the 'bin X or Y' wording in each unit's D7 reason (V1.json, V7.json). Used only for the sensitivity table in ranking.md; no score is changed.",
+ "rows": {
+  "31": {
+   "alt_scores": [
+    4
+   ],
+   "source": "V1.json"
+  },
+  "7": {
+   "alt_scores": [
+    2
+   ],
+   "source": "V1.json"
+  },
+  "3": {
+   "alt_scores": [
+    3
+   ],
+   "source": "V1.json"
+  },
+  "47": {
+   "alt_scores": [
+    2
+   ],
+   "source": "V1.json"
+  },
+  "49": {
+   "alt_scores": [
+    3
+   ],
+   "source": "V1.json"
+  },
+  "6": {
+   "alt_scores": [
+    2,
+    4
+   ],
+   "source": "V7.json"
+  },
+  "5": {
+   "alt_scores": [
+    2
+   ],
+   "source": "V7.json"
+  }
+ }
+}

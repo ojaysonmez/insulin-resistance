@@ -1,0 +1,423 @@
+{
+ "unit": "V18",
+ "role": "primary care physician",
+ "scores": [
+  {
+   "row": 14,
+   "dimension": "D1",
+   "score": 1,
+   "reason": "Measure: fasting-based (HOMA-IR) or post-load (OGTT-derived). Guideline text says 'may be considered' to clarify metabolic dysfunction; no change to the FIB-4/elastography pathway or therapy depends on it, so counselling only (0 if counselling is not counted).",
+   "sources": [
+    "EASL-EASD-EASO 2024 MASLD guideline: PMID 38852583 DOI 10.1159/000539371 full text (keyword windows, per usecases-verified.md row 14); companion PMID 38869512 DOI 10.1007/s00125-024-06196-3; PMID 38851997 (DOI not returned by ID converter)",
+    "AASLD 2023 MASLD guidance: PMID 36727674 DOI 10.1097/HEP.0000000000000323 summariser read (per usecases-verified.md row 14)"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 14,
+   "dimension": "D5",
+   "score": 3,
+   "reason": "A primary care physician can order fasting insulin and glucose at a routine laboratory, one fasting draw; HOMA-IR is not usually reported and has to be calculated. No specialist needed. Not on a standing panel, so not 4.",
+   "sources": [
+    "EASL-EASD-EASO 2024 MASLD guideline: PMID 38852583 DOI 10.1159/000539371 full text (keyword windows, per usecases-verified.md row 14); companion PMID 38869512 DOI 10.1007/s00125-024-06196-3; PMID 38851997 (DOI not returned by ID converter)"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 14,
+   "dimension": "D6",
+   "score": 3,
+   "reason": "Burden 3 (one fasting draw); false-result consequence 3 (no action depends on it, but non-standardised assays and no cut-off risk false labelling or false reassurance). Lower of the two is 3.",
+   "sources": [
+    "EASL-EASD-EASO 2024 MASLD guideline: PMID 38852583 DOI 10.1159/000539371 full text (keyword windows, per usecases-verified.md row 14); companion PMID 38869512 DOI 10.1007/s00125-024-06196-3; PMID 38851997 (DOI not returned by ID converter)",
+    "Multisociety Delphi consensus PMID 37364790 (DOI not returned by ID converter) abstract-level via usecases-verified.md row 14: criteria exclude HOMA-IR for cost and between-laboratory variability"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 14,
+   "dimension": "S",
+   "score": 1,
+   "reason": "Marginal harm: default is FIB-4 then elastography, which finds advanced fibrosis without HOMA-IR; missing the result delays little. Diabetes/prediabetes detection is covered by glucose and HbA1c.",
+   "sources": [
+    "EASL-EASD-EASO 2024 MASLD guideline: PMID 38852583 DOI 10.1159/000539371 full text (keyword windows, per usecases-verified.md row 14); companion PMID 38869512 DOI 10.1007/s00125-024-06196-3; PMID 38851997 (DOI not returned by ID converter)",
+    "AASLD 2023 MASLD guidance: PMID 36727674 DOI 10.1097/HEP.0000000000000323 summariser read (per usecases-verified.md row 14)"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 9,
+   "dimension": "D1",
+   "score": 2,
+   "reason": "Measure: C-peptide, fasting or MMTT-stimulated. Type 3c is diagnosed by glucose/HbA1c and exocrine evidence; C-peptide documents insulin deficiency and beta-cell reserve before TPIAT, which supports counselling about insulin independence and chooses among accepted options. Not required and not determining (3 if TPIAT programmes use it as a selection criterion; not found in the files).",
+   "sources": [
+    "PancreasFest 2012: PMID 23890130 DOI 10.1016/j.pan.2013.05.002 abstract (per usecases-verified.md row 9)",
+    "Woodmansey 2017: PMID 28860126 (DOI not returned by ID converter) abstract",
+    "PMID 39959260 DOI 10.4239/wjd.v16.i2.95102 abstract"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 9,
+   "dimension": "D5",
+   "score": 2,
+   "reason": "Pancreas, surgery or endocrine specialist owns the decision (TPIAT candidacy, insulin plan); fasting C-peptide is a routine lab but MMTT needs a timed protocol. Specialist outpatient.",
+   "sources": [
+    "PancreasFest 2012: PMID 23890130 DOI 10.1016/j.pan.2013.05.002 abstract (per usecases-verified.md row 9)"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 9,
+   "dimension": "D6",
+   "score": 2,
+   "reason": "Burden 3 (fasting draw or MMTT, low); false-result consequence 2: C-peptide can be preserved early and falsely high in CKD, so insulin deficiency could be missed, or misclassification as type 2 diabetes persists (87.8% in the files), needing treatment change. Lower is 2.",
+   "sources": [
+    "Woodmansey 2017: PMID 28860126 (DOI not returned by ID converter) abstract",
+    "D'Elia 2019: PMID 30794834 (DOI not returned by ID converter) abstract"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 9,
+   "dimension": "S",
+   "score": 2,
+   "reason": "Marginal harm: default is glucose-guided treatment and enzyme replacement; without C-peptide the main loss is delayed insulin or misjudged TPIAT expectations, moderate and mostly reversible.",
+   "sources": [
+    "PancreasFest 2012: PMID 23890130 DOI 10.1016/j.pan.2013.05.002 abstract (per usecases-verified.md row 9)"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 28,
+   "dimension": "D1",
+   "score": 1,
+   "reason": "Measure: C-peptide (serum, glucose/C-peptide ratio, UCPCR) read in eGFR <60. It changes how a low or high value is read (deficiency vs renal clearance) and may inform secretagogue hypoglycaemia caution; no accepted action depends on the adjusted value, so counselling and caution only.",
+   "sources": [
+    "D'Elia 2019: PMID 30794834 (DOI not returned by ID converter) abstract",
+    "Zhou 2022: PMID 36465621 DOI 10.3389/fendo.2022.1052794 abstract",
+    "Jones and Hattersley 2013: PMID 23413806 DOI 10.1111/dme.12159 full text keyword windows"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 28,
+   "dimension": "D5",
+   "score": 1,
+   "reason": "Endocrinology or nephrology would interpret it; no validated correction method or US protocol (UCPCR not a routine US test), so specialist only without a defined pathway. Not 0 because endocrinology owns the question.",
+   "sources": [
+    "Zhou 2022: PMID 36465621 DOI 10.3389/fendo.2022.1052794 abstract",
+    "Jones and Hattersley 2013: PMID 23413806 DOI 10.1111/dme.12159 full text keyword windows"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 28,
+   "dimension": "D6",
+   "score": 2,
+   "reason": "Burden 3 (blood or urine sample); false-result consequence 2: falsely elevated C-peptide in CKD may lead to labelling an insulin-deficient patient as type 2 and withholding insulin, or the reverse (reversible harm needing treatment). Lower is 2.",
+   "sources": [
+    "D'Elia 2019: PMID 30794834 (DOI not returned by ID converter) abstract",
+    "Zhou 2022: PMID 36465621 DOI 10.3389/fendo.2022.1052794 abstract"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 28,
+   "dimension": "S",
+   "score": 2,
+   "reason": "Marginal harm: default is clinical classification (age, antibodies, history) with usual care; a misread value in CKD could mean hypoglycaemia on a secretagogue or delayed insulin, moderate morbidity.",
+   "sources": [
+    "D'Elia 2019: PMID 30794834 (DOI not returned by ID converter) abstract",
+    "Jones and Hattersley 2013: PMID 23413806 DOI 10.1111/dme.12159 full text keyword windows"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 12,
+   "dimension": "D1",
+   "score": 3,
+   "reason": "Measure: fasting insulin (JDS threshold >30 uU/mL), plus antibodies and genetics. In the JDS criteria fasting insulin is the only biochemical major sign and type B definite needs hyperinsulinaemia plus receptor antibody, so it determines classification and decides who gets antibody or genetic testing; other tests partly substitute (genetics, insulin requirement), so not 4. The JDS criteria are Japanese national criteria; no US adoption found, which keeps this at 3 not 4.",
+   "sources": [
+    "JDS working group 2022: PMID 35463863 DOI 10.1007/s13340-022-00570-5 full text (per usecases-verified.md row 12)",
+    "Brown 2016 lipodystrophy guideline: PMID 27710244 DOI 10.1210/jc.2016-2466 full text keyword windows (per usecases-verified.md row 12)"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 12,
+   "dimension": "D5",
+   "score": 2,
+   "reason": "Fasting insulin can be drawn in primary care, but the work-up (antibodies, genetics, treatment as severe IR or lipodystrophy) belongs to endocrinology or genetics, specialist outpatient.",
+   "sources": [
+    "JDS working group 2022: PMID 35463863 DOI 10.1007/s13340-022-00570-5 full text (per usecases-verified.md row 12)",
+    "Brown 2016 lipodystrophy guideline: PMID 27710244 DOI 10.1210/jc.2016-2466 full text keyword windows (per usecases-verified.md row 12)"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 12,
+   "dimension": "D6",
+   "score": 2,
+   "reason": "Burden 3 (fasting draw); false-result consequence 2: values below 30 occur in genetic cases and immunoassays can under-read at extreme values (recall, unverified), so a false negative delays a treatable diagnosis, and values on exogenous insulin may mislead. Lower is 2.",
+   "sources": [
+    "JDS working group 2022: PMID 35463863 DOI 10.1007/s13340-022-00570-5 full text (per usecases-verified.md row 12)"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 12,
+   "dimension": "S",
+   "score": 3,
+   "reason": "Marginal harm: default is continuing escalating insulin or standard type 2 care; a missed type B or lipodystrophy syndrome risks serious morbidity (severe hypertriglyceridaemia, pancreatitis, liver disease, uncontrolled diabetes). Insulin requirement is itself a clue, so the fasting insulin is not the only trigger; low-to-medium confidence.",
+   "sources": [
+    "Brown 2016 lipodystrophy guideline: PMID 27710244 DOI 10.1210/jc.2016-2466 full text keyword windows (per usecases-verified.md row 12)",
+    "JDS working group 2022: PMID 35463863 DOI 10.1007/s13340-022-00570-5 full text (per usecases-verified.md row 12)"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 21,
+   "dimension": "D1",
+   "score": 3,
+   "reason": "Measure: insulin and C-peptide (suppressed) at the hypoglycaemia sample. A suppressed pattern excludes hyperinsulinism and redirects work-up to tumour imaging and IGF-II instead of an insulinoma search; it determines the diagnostic pathway, with IGF-II as the confirmatory test, so not 4.",
+   "sources": [
+    "usecases-verified.md row 21 (HI guideline 2023 Table 2 lists NICTH as mimic; Cryer 2009 abstract; case reports PMID 42649063 abstract, 42657652 title only; DOIs not looked up)"
+   ],
+   "confidence": "medium",
+   "origin": "project files"
+  },
+  {
+   "row": 21,
+   "dimension": "D5",
+   "score": 2,
+   "reason": "The sample is drawn at documented hypoglycaemia (ED, inpatient or supervised fast) and interpreted by endocrinology; one critical sample, but timing needs the hypoglycaemic event. Setting is mixed; scored as specialist.",
+   "sources": [
+    "usecases-verified.md row 21 (HI guideline 2023 Table 2 lists NICTH as mimic; Cryer 2009 abstract; case reports PMID 42649063 abstract, 42657652 title only; DOIs not looked up)"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 21,
+   "dimension": "D6",
+   "score": 2,
+   "reason": "Burden 3 (one sample at hypoglycaemia, a supervised fast adds burden if used); false-result consequence 2: assay differences or analogue non-detection could misclassify exogenous insulin as NICTH, or a missed insulinoma (reversible harm needing treatment). Lower is 2.",
+   "sources": [
+    "usecases-verified.md row 21 (HI guideline 2023 Table 2 lists NICTH as mimic; Cryer 2009 abstract; case reports PMID 42649063 abstract, 42657652 title only; DOIs not looked up)"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 21,
+   "dimension": "S",
+   "score": 3,
+   "reason": "Marginal harm: without the suppressed-insulin pattern the default is an insulinoma search and delayed tumour diagnosis in a patient with a hypoglycaemia-causing malignancy; serious morbidity. The hypoglycaemia itself is treated either way.",
+   "sources": [
+    "usecases-verified.md row 21 (HI guideline 2023 Table 2 lists NICTH as mimic; Cryer 2009 abstract; case reports PMID 42649063 abstract, 42657652 title only; DOIs not looked up)"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 46,
+   "dimension": "D1",
+   "score": 2,
+   "reason": "Measure: C-peptide, urinary or serum with stimulation, at onset. It is criterion 3 of 3 in the Japanese diagnostic criteria (3 under clarification 12 in Japan), but in the US no guideline uses it and DKA is treated with insulin regardless, so it supports the diagnosis and prognosis only. Alternative reading: 3.",
+   "sources": [
+    "Imagawa/JDS committee 2012: PMID 24843620 DOI 10.1111/jdi.12024 full text (read by skeptic, per usecases-verified.md row 46)"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 46,
+   "dimension": "D5",
+   "score": 2,
+   "reason": "Occurs in the ED or inpatient with endocrinology; the criteria need 24-h urine or a glucagon or meal-stimulated serum value, which is a specialist protocol, although random serum C-peptide is a routine lab. Specialist.",
+   "sources": [
+    "Imagawa/JDS committee 2012: PMID 24843620 DOI 10.1111/jdi.12024 full text (read by skeptic, per usecases-verified.md row 46)"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 46,
+   "dimension": "D6",
+   "score": 3,
+   "reason": "Burden 3 (serum or urine; glucagon stimulation is brief); false-result consequence 3: C-peptide at glucotoxic DKA presentation may be transiently low, mislabelling a type 1 or type 2 case, but insulin treatment is given anyway, so the harm is a reversible label. Lower is 3.",
+   "sources": [
+    "Imagawa/JDS committee 2012: PMID 24843620 DOI 10.1111/jdi.12024 full text (read by skeptic, per usecases-verified.md row 46)"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 46,
+   "dimension": "S",
+   "score": 1,
+   "reason": "Marginal harm: the default action (insulin and DKA treatment) is correct without the C-peptide; the label adds prognostic information and may change follow-up. No accuracy data were read.",
+   "sources": [
+    "Imagawa/JDS committee 2012: PMID 24843620 DOI 10.1111/jdi.12024 full text (read by skeptic, per usecases-verified.md row 46)"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 35,
+   "dimension": "D1",
+   "score": 1,
+   "reason": "Scored for part (b), first-trimester HOMA-IR (fasting-based) to predict GDM; part (a) GCK testing is triggered by fasting glucose, not an insulin measure. No established action follows; at most counselling or earlier glucose testing (0 is defensible).",
+   "sources": [
+    "ANZ consensus 2025: PMID 40640995 DOI 10.5694/mja2.52717 full text (per usecases-verified.md row 35)",
+    "HOMA-IR cohorts PMIDs 26754418, 34449903, 36675721, 38017369 title only (DOIs not looked up)"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 35,
+   "dimension": "D5",
+   "score": 2,
+   "reason": "Obstetric or primary prenatal care could order it, but there is no protocol, no cut-off and no owner of the result; a separate fasting draw in early pregnancy. Not 0 because obstetrics owns GDM screening.",
+   "sources": [
+    "ANZ consensus 2025: PMID 40640995 DOI 10.5694/mja2.52717 full text (per usecases-verified.md row 35)"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 35,
+   "dimension": "D6",
+   "score": 3,
+   "reason": "Burden 3 (one fasting draw); false-result consequence 3: a false positive adds early OGTT and anxiety, a false negative gives false reassurance, but standard 24 to 28 week screening remains. Lower is 3.",
+   "sources": [
+    "ANZ consensus 2025: PMID 40640995 DOI 10.5694/mja2.52717 full text (per usecases-verified.md row 35)"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  },
+  {
+   "row": 35,
+   "dimension": "S",
+   "score": 1,
+   "reason": "Marginal harm: routine GDM screening at 24 to 28 weeks (and risk-based early OGTT) is the default and catches GDM with later treatment; missing early prediction costs a few weeks of untreated hyperglycaemia. Not determinable from title-level cohorts, scored from reasoning.",
+   "sources": [
+    "ANZ consensus 2025: PMID 40640995 DOI 10.5694/mja2.52717 full text (per usecases-verified.md row 35)"
+   ],
+   "confidence": "low",
+   "origin": "project files"
+  }
+ ],
+ "path_to_viability": [
+  {
+   "row": 14,
+   "missing_piece": "Trial or cohort showing HOMA-IR or OGTT-derived estimates change management beyond FIB-4 and elastography, with an agreed assay cut-off.",
+   "type": "evidence",
+   "effort": "large",
+   "basis": "Guideline says 'may be considered' with LoE 3 and warns of non-standardised assays (row 14)."
+  },
+  {
+   "row": 9,
+   "missing_piece": "Published C-peptide cut-offs for type 3c and for TPIAT outcome prediction, validated prospectively.",
+   "type": "evidence",
+   "effort": "medium",
+   "basis": "No cut-offs retrieved; consensus uses glucose and exocrine criteria (row 9)."
+  },
+  {
+   "row": 28,
+   "missing_piece": "Validated eGFR-adjusted C-peptide or UCPCR thresholds in a US CKD cohort, and a guideline note.",
+   "type": "evidence",
+   "effort": "medium",
+   "basis": "Correction methods 'poorly validated'; UCPCR data n=85 (row 28)."
+  },
+  {
+   "row": 12,
+   "missing_piece": "Diagnostic accuracy study of fasting insulin thresholds in severe IR and type B IR with standardised assay and US adoption.",
+   "type": "evidence",
+   "effort": "medium",
+   "basis": "JDS criteria have no sensitivity/specificity; some genetic cases fall below 30 (row 12)."
+  },
+  {
+   "row": 21,
+   "missing_piece": "Guideline or review text stating the insulin and C-peptide pattern as the first step before IGF-II testing.",
+   "type": "guideline",
+   "effort": "small",
+   "basis": "Only case reports and the HI guideline Table 2 mimic list were found (row 21)."
+  },
+  {
+   "row": 46,
+   "missing_piece": "Accuracy study of the C-peptide cut-offs in a non-Japanese population and a Western guideline recognising fulminant T1D.",
+   "type": "evidence",
+   "effort": "medium",
+   "basis": "No Western guideline cut-off and no accuracy data read (row 46)."
+  },
+  {
+   "row": 35,
+   "missing_piece": "Prospective study showing first-trimester HOMA-IR adds to risk-factor screening for GDM, then a trial of early intervention guided by it.",
+   "type": "evidence",
+   "effort": "large",
+   "basis": "Only title-level cohorts in the files (row 35)."
+  }
+ ],
+ "settings": [
+  {
+   "row": 14,
+   "setting": "routine care"
+  },
+  {
+   "row": 9,
+   "setting": "specialist outpatient"
+  },
+  {
+   "row": 28,
+   "setting": "specialist outpatient"
+  },
+  {
+   "row": 12,
+   "setting": "specialist outpatient"
+  },
+  {
+   "row": 21,
+   "setting": "inpatient or procedural"
+  },
+  {
+   "row": 46,
+   "setting": "inpatient or procedural"
+  },
+  {
+   "row": 35,
+   "setting": "routine care"
+  }
+ ],
+ "anchor_issues": [
+  "Row 35: the row has two parts; scored part (b) HOMA-IR, since (a) is glucose-based. Choosing between 0 and 1 for D1 was ambiguous because 'counselling only' presumes an action.",
+  "Row 46: D1 anchor 3 for national criteria elsewhere (clarification 12) conflicts with D1 scored for the US decision; chose 2 for the US and noted 3 for Japan.",
+  "Row 21 and 46: settings are mixed (ED or inpatient sample, then specialist); chose 'inpatient or procedural' under rule 22 where the sample is drawn during the acute event.",
+  "Row 28: the 'use' is an interpretation limit, not a test order; D1 1 and D5 1 are judgements about caution, not an action.",
+  "D6: whether a missed or delayed classification counts as 'moderate' (2) or 'low' (3) is not defined; chose 2 where a treatment change would follow."
+ ],
+ "assumptions": [
+  "No new searches were run (usage-limit rule in CLAUDE.md, and the files held the guideline and study details); all scores come from usecases-verified.md rows and the PMIDs it cites. Unread full texts were not re-opened.",
+  "DOIs were taken from the PubMed ID converter; where it returned none, the entry says so and the DOI is not verified. Cryer 2009 and the HI guideline 2023 were cited through the project file only.",
+  "Settings follow who orders the test in the evidence pathway; D5 and S are my primary care reading, scored independently."
+ ],
+ "searches": []
+}

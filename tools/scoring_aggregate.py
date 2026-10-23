@@ -67,6 +67,34 @@ def load_scores(root):
     return by, pv, settings, issues, notes
 
 
+def load_alternatives(root):
+    """Optional usecases/scoring/d7-alternatives.json (rule 24, D-37): {"row": [alternative D7 bins]}."""
+    f = Path(root) / "usecases" / "scoring" / "d7-alternatives.json"
+    if not f.exists():
+        return {}
+    try:
+        j = json.loads(f.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+    return {int(r): [a for a in v.get("alt_scores", []) if isinstance(a, int) and 0 <= a <= SCALE["D7"]]
+            for r, v in j.get("rows", {}).items()}
+
+
+def alt_ranks(out, alts):
+    """Default-weight rank of a row if its D7 takes each alternative bin, other rows unchanged."""
+    res = {}
+    for r, bins in alts.items():
+        v = out.get(r)
+        if not v or "composite" not in v or "D7" not in v["dims"]:
+            continue
+        for b in bins:
+            c = b / SCALE["D7"]
+            alt = sum(w * (c if x == "C" else v[x]) for x, w in WEIGHTS["default"].items())
+            others = [o["composite"]["default"] for q, o in out.items() if q != r and "composite" in o]
+            res[(r, b)] = (alt, 1 + sum(1 for o in others if o > alt))
+    return res
+
+
 def mean(xs):
     return sum(xs) / len(xs) if xs else None
 
@@ -103,7 +131,7 @@ def ranks(out, key):
     return {r: i + 1 for i, (r, _) in enumerate(done)}
 
 
-def write(root, out, pv, settings, issues, notes):
+def write(root, out, pv, settings, issues, notes, alts=None):
     d = Path(root) / "usecases" / "scoring"
     rk = {k: ranks(out, k) for k in WEIGHTS}
     ranked = sorted([r for r, v in out.items() if "composite" in v], key=lambda r: rk["default"][r])
@@ -125,6 +153,13 @@ def write(root, out, pv, settings, issues, notes):
     L += ["", f"## Sensitivity (top group = best {top_n} of {len(ranked)})", "", "| Row | " + " | ".join(WEIGHTS) + " |", "|---|" + "---|" * len(WEIGHTS)]
     for r in ranked:
         L.append(f"| {r} | " + " | ".join(str(rk[k][r]) for k in WEIGHTS) + " |")
+    ar = alt_ranks(out, alts or {})
+    if ar:
+        L += ["", "## Sensitivity to an unsourced D7 share (rule 24, D-37)", "",
+              "Rows whose D7 rests on an assumed share: the default-weight rank if D7 took the alternative bin named in the unit's reason (other rows unchanged). Alternatives are listed in `usecases/scoring/d7-alternatives.json`.", "",
+              "| Row | Default rank | D7 now | Alternative D7 | Composite then | Rank then |", "|---|---|---|---|---|---|"]
+        for (r, b), (comp, rank) in sorted(ar.items()):
+            L.append(f"| {r} | {rk['default'][r]} | {out[r]['dims']['D7']:g} | {b} | {comp:.3f} | {rank} |")
     if issues:
         L += ["", "## Anchor issues reported by the units", ""] + [f"- {x}" for x in issues]
     if notes:
@@ -143,7 +178,7 @@ def main():
         print("no score files found in usecases/scoring/ (U*.json)", file=sys.stderr)
         return 2
     out = compute(by)
-    ranked, inc = write(a.root, out, pv, settings, issues, notes)
+    ranked, inc = write(a.root, out, pv, settings, issues, notes, load_alternatives(a.root))
     print(f"ranked {len(ranked)} row(s), incomplete {len(inc)}; wrote usecases/scoring/ranking.md and ranking.json")
     return 0
 

@@ -1,0 +1,175 @@
+{
+ "unit": "V25",
+ "role": "skeptic",
+ "findings": [
+  {
+   "row": 8,
+   "dimension": "D3",
+   "problem": "V20 scored D3=3 from the 2026 TZIELD label. I fetched the label: it does carry accelerated approval 'based on evidence of reduced C-peptide decline' and Stage 3 selection requires 'Peak C-peptide >=0.2 pmol/mL on a mixed-meal tolerance test (if a mixed meal tolerance test is not available, an alternative method ... may be appropriate)'. That is patient selection, which the project assigns to row 29; usecases-verified.md row 8 says 'the regulatory surrogate use is row 29', and V21 and V24 explicitly left it out of row 8. So the teammates scored different uses under one row, and the label does not say MMTT is required.",
+   "severity": "must fix",
+   "suggested_change": "Decide the boundary. If row 8 stays 'trial endpoints', score D3 for that use (no US guideline recommends the test for it; the 2004 ADA workshop is a consensus, not a guideline) at 2 and move the label evidence to row 29. If the label is kept, say D3 3 comes from row 29 and reword to 'MMTT or alternative method'."
+  },
+  {
+   "row": 8,
+   "dimension": "D7",
+   "problem": "V20 counts NCT07088068 (723 planned, the largest of about 2,040) as a trial with a C-peptide primary outcome. The registry record I fetched lists, for US and non-EU countries, primary outcomes of HbA1c change and days without prandial insulin; MMTT C-peptide is a primary outcome only for EU countries (secondary elsewhere). It also has about 36 US sites among roughly 130 sites in about 20 countries. Also the arithmetic is off: 2,040 / 3.5 y = about 580 per year worldwide, half in the US = about 290, but the report states 300 to 600. Other three trials (NCT07222332, NCT06111586, NCT07187531) not checked by me.",
+   "severity": "should fix",
+   "suggested_change": "Drop or down-weight NCT07088068 for US participants, state US-site fraction from the registry location list, and restate point estimate and range. Bin 1 probably still holds (or bin 0 to 1); keep low confidence."
+  },
+  {
+   "row": 48,
+   "dimension": "D1/D2/D8 vs D3",
+   "problem": "Teammates disagree on the same source. V20 read Cryer 2009 and reports that a 5-h mixed-meal test with insulin, C-peptide and proinsulin on samples with glucose below 60 mg/dL is recommended when Whipple's triad is shown (D3 meal arm 3). V21, V23 and V24 say Cryer was not read and conclude insulin changes no decision (D1 0 in V23, 1 in V24; D8 0; D2 1). Both cannot hold. I confirmed from the PubMed abstract only that Cryer (PMID 19088155, DOI 10.1210/jc.2008-1410) recommends measuring insulin, C-peptide and proinsulin during hypoglycaemia in suspected endogenous hyperinsulinism; the OGTT and meal-test wording is V20's excerpt and I could not re-fetch it (publisher page fetch failed).",
+   "severity": "must fix",
+   "suggested_change": "Have one reviewer re-read the Cryer postprandial passage and either revise D1/D8 (insulin discriminates endogenous hyperinsulinism once low glucose is shown) or state why the use case, which has no hyperinsulinism work-up, differs. Record the Cryer read level in every row 48 score."
+  },
+  {
+   "row": 48,
+   "dimension": "D3",
+   "problem": "Rule 13 says score the primary decision and note others. V20 averaged an OGTT arm (0) and a meal-test arm (3) into 2 and chose the decision 'confirm low glucose' as the one insulin does not serve. That is a new reading, not the rule. The use case itself lists the 5-h OGTT first.",
+   "severity": "should fix",
+   "suggested_change": "Score the arm that matches the named decision's primary measure, list the other arm as a note, or split row 48 into OGTT and mixed-meal rows."
+  },
+  {
+   "row": 27,
+   "dimension": "D3",
+   "problem": "V20 scored 3 for PancreasFest 2012 Guidance Statement 2.4 ('Assessment of pancreatic endocrine reserve ... should be performed ... for TPIAT'; the PubMed abstract text I fetched truncates after 'Assessment of pancreatic endocrine reserve,' so the rest rests on V20's quote). The statement names no assay, so it does not recommend MMTT C-peptide. Rule 5 and rule 14 give 2 for a recommendation that names the construct but not the measurement, and V20 itself lists 2 as the alternative. It is also a consensus meeting report on diabetes in chronic pancreatitis, and V21, V23 found no support for the go/no-go decision the use case names.",
+   "severity": "should fix",
+   "suggested_change": "Score 2, note that statement 2.4 covers the TPIAT population explicitly but not the assay, or quote the full statement from the publisher text."
+  },
+  {
+   "row": 27,
+   "dimension": "D7",
+   "problem": "Confidence is 'medium' although the chain has an unsourced growth assumption (1.5 to 2 times the 2012 figure); rule 24 requires low confidence. Sourced base: PMID 31593020 (verified) gives 830 TPIAT in 2002 to 2013 (NIS, any pancreatitis); the 2012 figure of 155 and 2002 figure of 53 were not visible in the PMID 27011922 abstract I fetched (it reports 754 TP+IAT and 923 IAT 2002 to 2012). It also counts operations, not patients in whom beta-cell reserve is assessed (rule 4: those evaluated).",
+   "severity": "should fix",
+   "suggested_change": "Set confidence low, add the evaluated-but-not-operated share as a labelled assumption, and give the source for 155 (full text or table)."
+  },
+  {
+   "row": 20,
+   "dimension": "D7",
+   "problem": "The chain starts from insulinoma incidence (Cryer, 1 per 250,000 patient-years; I could not re-fetch the passage) and adds 1 to 3 times that as an unsourced multiplier, so it counts confirmed hyperinsulinism, whereas rule 4 asks for patients in whom the question arises (everyone worked up, and Cryer tells clinicians to measure antibodies in patients 'suspected' of endogenous hyperinsulinism). The 260 million adults figure has no source. Arithmetic: 1,040 x (1+1 to 1+3) = 2,100 to 4,200, but the stated range is 1,300 to 10,000 without explanation. The report's own IAS count (about 60 per year, bin 1) shows the bin depends on which population is meant.",
+   "severity": "should fix",
+   "suggested_change": "Give bin 2 as the narrowest-population reading (rule 2) but state the sensitivity as 'bin 1 (IAS cases) to bin 3 (suspected hyperinsulinism work-ups)'; source the adult denominator (Census) and explain the range."
+  },
+  {
+   "row": 25,
+   "dimension": "D7",
+   "problem": "Point estimate 300 comes from congenital hyperinsulinism birth prevalence in Western Australia (PMID 42396735, 1 in 17,394, verified) and an assumed 1 in 50,000, i.e. final diagnoses at a non-US site. Rule 4 says count patients worked up, not diagnoses. The cited PMID 30365409 (1 in 1,400 ED children with unexplained hypoglycaemia, verified) points to a much larger work-up pool; infants with a critical sample could plausibly exceed 1,000. Range 50 to 3,000 spans bins 0 to 2.",
+   "severity": "should fix",
+   "suggested_change": "Per rule 21 record 'bin 1 or 2, low confidence' (or not determinable) and add a sourced US count of neonatal and infant hypoglycaemia with critical samples."
+  },
+  {
+   "row": 11,
+   "dimension": "D7",
+   "problem": "Counts bariatric operations (rule 4 asks for patients considered for surgery, so the number is a floor). The 2023 (270,089) and 2024 (200,667) ASMBS volumes are search-excerpt only with no PMID or DOI, breaking the identifier rule; the verified PMID 38448343 gives 262,893 (2021) and 280,000 (2022). The 28 to 37 percent diabetes share is cited to PMID 38902405, whose abstract (checked) does not state diabetes shares, so it is unverified at abstract level. Confidence 'medium' while the range touches 100,000.",
+   "severity": "should fix",
+   "suggested_change": "Use the 2022 figure with PMID 38448343 or retrieve the 2026 SOARD paper's identifiers; source the diabetes share from MBSAQIP or a full-text table; set confidence low and give alternative bin 4."
+  },
+  {
+   "row": 45,
+   "dimension": "D7",
+   "problem": "Lower bound of range is wrong: 5 million x 15% + 290,000 = about 1.04 million, not 1.2 million, so the range reaches the bin 4/5 boundary and rule 21 applies. The 67 percent figure (PMID 27609302, verified) is any blood test for diabetes in 3 years, not a prevention decision or insulin test. The pool uses 8.9 percent (PMID 30367717) applied to all 65 million women aged 20 to 44, but the abstract does not say the denominator is parous women. Bin 5 gives this row full commonality credit (C = 1.0) although D1 is 0 and no insulin test is in the pathway.",
+   "severity": "should fix",
+   "suggested_change": "Recompute, record 'bin 4 or 5, low confidence', and add a note that the situation count describes women with prior GDM, not uses of the measurement. Flag in the map that C is not meaningful when D1 is 0."
+  },
+  {
+   "row": 45,
+   "dimension": "D5/D4",
+   "problem": "V23 and V24 both give D5 3 and V22 D4 2 for a measurement that appears in no guideline pathway ('hypothetical ownership'). This gives readiness credit for a workflow that does not exist, and with rule 16 it cannot be 0.",
+   "severity": "should fix",
+   "suggested_change": "Set D4 and D5 to 'not determinable' or cap at 2 when no pathway uses the measure; add that to the anchor text."
+  },
+  {
+   "row": 20,
+   "dimension": "D4/D2",
+   "problem": "V22 scores D4 row 20 = 2 and row 25 = 1 for the same PEG, insulin and C-peptide steps. Its own reason for row 20 says PEG is lab-developed and IAA often send-out, which is anchor 1 wording; it lists 1 as an alternative. Row 25 is penalised for the same lab-developed PEG.",
+   "severity": "should fix",
+   "suggested_change": "Use one value for the shared assay (1 or 2) and let row 25 differ only for sample volume or pairing, stated in the reason."
+  },
+  {
+   "row": 8,
+   "dimension": "D1",
+   "problem": "V23 and V24 both score 1 while saying no individual patient decision exists; anchor 0 is 'nothing'. Also D5 2 vs 1 pattern: V24 gives row 8 MMTT D5 1 but row 27 MMTT D5 2 and row 48 D5 2, though all are multi-hour timed protocols in specialist units.",
+   "severity": "should fix",
+   "suggested_change": "Use V23's values (D5 1 for rows 27 and 48) for consistency, and decide D1 for trial endpoints in the anchor (see rewrites)."
+  },
+  {
+   "row": null,
+   "dimension": "all",
+   "problem": "Roles V23 and V24 ran no searches and did not re-read abstracts (V24 says so); every D1/D5/D6/S score cites 'usecases-verified.md' as the source. V24 JSON sources lack DOIs next to PMIDs 14693724, 18628574, 23890130, 32219329, 32873586, 33916952 and 42662728 (proximity check; V23 lacks DOIs for 14693724, 18628574, 32219329). The CLAUDE.md rule requires both identifiers with read level. I confirmed DOIs: 14693724 10.2337/diabetes.53.1.250; 32219329 10.1210/clinem/dgaa149; 23890130 10.1016/j.pan.2013.05.002; 32873586 10.2337/dc20-0157; 33916952 10.3390/jpm11040276; 42662728 10.1016/j.metop.2026.100491.",
+   "severity": "should fix",
+   "suggested_change": "Add the DOIs and read levels in the final data; treat V23/V24 confidence as at most medium."
+  },
+  {
+   "row": 25,
+   "dimension": "S",
+   "problem": "S 3 (V23) vs 2 (V24). Both within one point. V24's reason says a reading with surgery in the default pathway would be 3; surgery follows only after medical failure, so 2 to 3 is a genuine range.",
+   "severity": "note",
+   "suggested_change": "Keep 2 or 3 with the alternative recorded; the sensitivity column should show it."
+  },
+  {
+   "row": 45,
+   "dimension": "S/D6",
+   "problem": "S 1 (V23) vs 0 (V24); row 8 S 1 vs 0; row 27 D5 1 vs 2 and S 2 vs 1; row 48 D5 1 vs 2 and D1 0 vs 1; row 11 D6 3 vs 2. No difference exceeds one point. Supported readings: row 8 S 0 (a trial endpoint harms no individual patient; clause 18); row 27 D5 1 (same MMTT as row 8); row 48 D5 1; row 11 D6 3 (V23 gives test burden 4 and consequence 3; V24 gives burden 3 and consequence 2 without a source); row 45 S 0 or 1 undecidable because no test is in the pathway; row 48 D1 depends on the Cryer reading above.",
+   "severity": "note",
+   "suggested_change": "Adopt the supported readings above or record the disagreement in the sensitivity output."
+  },
+  {
+   "row": null,
+   "dimension": "PV",
+   "problem": "Path-to-viability entries: row 45 (V21) bundles two pieces (HOMA-IR incremental cohort and an IR-guided prevention trial) and labels effort 'medium' although the trial is 'large' under the rubric; V23 says large. Row 8 (V21) asks for a regulator or consensus statement at 'small' effort; V20 reports the C-Path 2025 briefing saying no FDA guidance yet qualifies C-peptide for traditional approval, so the specific missing piece is that qualification (medium to large), not a protocol statement. Row 25 (V21) asks for a rate of antibody artefacts, which would describe the problem but not make the use viable; V23's validated interpretation algorithm is the better piece. Row 20 has three different types from three roles (evidence, assay, guideline). Row 11 (small, reanalysis of SOS data) is specific and supported; row 27 and row 48 are specific and supported.",
+   "severity": "should fix",
+   "suggested_change": "Reduce each to one piece with one type and one effort; for row 20 pick evidence (accuracy series) first, then assay, then guideline as a sequence; row 45 effort large."
+  },
+  {
+   "row": null,
+   "dimension": "rule check",
+   "problem": "Clarifications applied correctly where I checked: rule 13/14 for row 25 D3 (PES 2015 full text PMC11891912 returned 0 matches for antibod|maternal|PEG|polyethylene, 29,921 characters); rule 5 for row 11 D3 (ASMBS/IFSO PMC9834364 text search returned no C-peptide); rule 19 cap for rows 20 and 25 D8; rule 10 for row 8 D2. Rule 23 not needed (no corrections). Rule 24: row 8 and row 25 give alternative bins; rows 27 and 11 give confidence 'medium' against it (above).",
+   "severity": "note",
+   "suggested_change": "None."
+  }
+ ],
+ "anchor_rewrites": [
+  {
+   "anchor": "D3 rule 5 vs anchor 1 (rows 11, 45)",
+   "proposal": "D3 is scored for the measurement in the named decision. 1: the guideline does not tie any test of this kind to the decision (even if it recommends the treatment for the population). 2: the guideline names the condition or class of test the measurement belongs to, lists the measurement as optional, or recommends it in a broader population (rule 14). 3: recommends the measurement in this population. 4: requires it before the decision. If the main session wants to keep rule 5 as approved, add 'only when a test of this type already defines the condition in that pathway'; otherwise rows 11 and 45 score 1, not 2. This needs a user decision."
+  },
+  {
+   "anchor": "D3 for a use spanning arms with different status (row 48)",
+   "proposal": "If a use case contains arms with different D3, score the arm matching the first measure in the 'measure' column, write the other arm in the reason, and split the row when the arms are different tests."
+  },
+  {
+   "anchor": "D3 4 vs 3 for 'must be done first' (row 20)",
+   "proposal": "4 only if the text uses must, required or 'before'; a sequence in a flow chart or table counts as 3."
+  },
+  {
+   "anchor": "D7 for research endpoints (row 8) and operations (rows 11, 27)",
+   "proposal": "Research endpoint: count US participants per year in trials where the measure is a registered primary outcome for US sites; give the registry query and US-site share. Operation-linked uses: count patients evaluated for the operation, and give operated patients as a floor."
+  },
+  {
+   "anchor": "D7 rules 4 and 24 together (rows 20, 25)",
+   "proposal": "Count patients worked up for the question; if no sourced count of work-ups exists, record 'bin x or y, low confidence' rather than substituting diagnosis incidence; give the diagnosis count as a note."
+  },
+  {
+   "anchor": "D1 for a trial endpoint with no individual decision (row 8)",
+   "proposal": "0: nothing changes, including uses where the result informs a trial inference but no individual patient decision. 1: counselling or monitoring intensity for an individual patient."
+  },
+  {
+   "anchor": "D2 1 vs 2 (cohort data, rows 27, 45, 48)",
+   "proposal": "1: case series, expert opinion, or descriptive cohorts that do not test the measure for the decision. 2: cohorts or accuracy studies that test the measure for the decision named."
+  },
+  {
+   "anchor": "D8 3 vs 4 (row 8)",
+   "proposal": "4: no alternative can measure the construct. 3: the measure is the only direct measure of the construct but partial alternatives exist, or the measurement clearly adds beyond alternatives in data. Mechanism alone stays at most 2 (rule 19)."
+  },
+  {
+   "anchor": "D4, D5 for a measure in no pathway (row 45)",
+   "proposal": "If no guideline or evidence pathway uses the measurement, D4 and D5 are 'not determinable'; the composite treats them as missing and the row carries a 'no pathway' label."
+  },
+  {
+   "anchor": "D4 shared assays across rows",
+   "proposal": "Score the assay once per assay type (insulin immunoassay, C-peptide, PEG, IAA) and reuse the value across rows; rows differ only by protocol (D5)."
+  }
+ ],
+ "verdict": "Verdict on the V20 to V24 scoring set for rows 20, 45, 11, 8, 25, 27, 48: usable as a first pass but not final. All identifiers I checked (PMIDs 19088155, 42662728, 42318218, 42697708, 25957977, 23890130, 32873586, 22963817, 33916952, 14693724, 36336720, 32219329, 27011922, 31593020, 38448343, 38902405, 30367717, 27609302, 37861217, 30365409, 17272483, 42396735, 29456124 by watch_fetch, 23 PMIDs; PMC11891912 and PMC9834364 by pmc_text; the TZIELD label and NCT07088068 by fetch ) exist and match the cited titles and abstract wording used; no retraction notice seen in the abstract records. Problems: (1) row 8 D3 and D7 rest on a label use that belongs to row 29 and on a trial that has HbA1c, not C-peptide, as its US primary outcome; (2) row 48 insulin value is judged inconsistently because only V20 read Cryer 2009; (3) D7 chains for rows 20, 25, 11 and 27 count diagnoses or operations, not work-ups, and rows 27 and 11 carry 'medium' confidence against rule 24; (4) row 27 D3 should be 2; (5) path-to-viability entries bundle pieces or misstate effort for rows 45, 8, 25. No role pair differs by more than one point on any dimension. Not verified by me: Cryer incidence and OGTT wording (page fetch failed), NCT07222332, NCT06111586, NCT07187531, ASMBS 2023 and 2024 volumes, the diabetes share in PMID 38902405, the 53 and 155 TPIAT counts. Tool calls used by me: about 21."
+}

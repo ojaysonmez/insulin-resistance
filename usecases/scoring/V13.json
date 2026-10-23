@@ -1,0 +1,213 @@
+{
+ "unit": "V13",
+ "role": "skeptic",
+ "findings": [
+  {
+   "row": 23,
+   "dimension": "D3",
+   "problem": "V8 scored 2 from ENETS 2016 (single-centre OGTT pattern, no graded recommendation) and described the Endocrine Society text only as giving a mixed-meal protocol. The Endocrine Society 2009 guideline (PMID 19088155, DOI 10.1210/jc.2008-1410, Oxford Academic page, search excerpt) says: 'An oral glucose tolerance test should never be used for the evaluation of suspected postprandial hypoglycemia'. The row names the OGTT. Under the D3 anchor, 0 = recommended against. V8's own anchor issue 8 (OGTT vs mixed meal) hides this.",
+   "severity": "must fix",
+   "suggested_change": "Re-score D3 to 0 (US guideline recommends against the OGTT; ENETS option-level statement noted as conflicting), or split the row into OGTT and mixed-meal test. Quote the sentence in the reason and mark read level."
+  },
+  {
+   "row": 23,
+   "dimension": "D8",
+   "problem": "V9 gives D8 2 and D2 2 using only positive OGTT studies (PMID 32529519 AUC 0.97 in 37 cases vs 42 controls; PMID 38863915). V8 had already found PMID 42221390 (DOI 10.1016/j.aed.2026.01.015, abstract read by me): in 57 insulinoma vs 28 reactive hypoglycaemia inpatients, glucose pattern separated the groups and 'No differences were found in the area under the curve of insulin and C-peptide'. That directly says insulin adds nothing over glucose alone in the row's own comparison. V9 omitted it and V11/V12 D1 reasoning does not mention it.",
+   "severity": "must fix",
+   "suggested_change": "Lower D8 to 0 or 1 (alternative, glucose pattern, does as well) and mention the null finding in D2; re-check D1 2 against rule 15. State that the only positive accuracy data are case-control with a 72 h fast reference."
+  },
+  {
+   "row": 1,
+   "dimension": "D1 vs D3",
+   "problem": "Internal conflict. V11 and V12 give D1 4 under rule 15 ('guideline requires the result before the decision'). V8 gives D3 3 because the guideline is a graded recommendation, not a mandatory step (rule 13). Both cannot hold. The Endocrine Society abstract says 'measure ... during an episode of hypoglycemia' as part of a recommended strategy; nothing in it says required. V11 itself offers 3 as the alternative and says the Endocrine Society text was read at abstract level only.",
+   "severity": "must fix",
+   "suggested_change": "Apply one reading. Under rule 15 text, D1 = 3 (result determines the diagnosis; other tests such as drug screen and antibodies are part of the same panel) unless a quoted passage says the panel is required before localisation or surgery. Otherwise change V8 D3 to 4 and defend it. Record the choice."
+  },
+  {
+   "row": 1,
+   "dimension": "D8",
+   "problem": "V9 scores D8 4 on mechanism and says itself that rule 19 caps mechanism at 2. The rubric rule 19 text: 3 requires data or guideline text showing the measurement changes the answer; mechanism alone is at most 2. The score contradicts the approved rule, and sits beside D2 of 3. A pertinent datum existed and was not used: PMID 19141587 (DOI 10.1210/jc.2008-2031, abstract read) gives sensitivity above 90 percent and specificity above 70 percent of the panel's criteria (insulin, C-peptide, proinsulin, BOHB, glucagon response) in 237 surgically proven insulinomas. That is accuracy in confirmed cases, not added value over alternatives.",
+   "severity": "must fix",
+   "suggested_change": "Set D8 to 2 or 3 with the accuracy source named, or add an explicit rubric exception for no-alternative tests (see anchor rewrite A5). Do not keep 4 with a note."
+  },
+  {
+   "row": 29,
+   "dimension": "D2",
+   "problem": "V9 gives 3 citing the surrogate-approval rule (clarification 9) and admits clarification 8 caps trial-entry-criterion evidence at 2. The decision scored is selection by peak C-peptide. PROTECT (PMID 37861217, DOI 10.1056/nejmoa2308743, abstract read; PP analysis PMID 42720752, DOI 10.1007/s00125-026-06849-5, abstract read) enrolled at 0.2 pmol/mL or more and its subgroups are HLA and autoantibody type, not baseline C-peptide. Selection by C-peptide was never tested. Rule 9 is about approval evidence for the treatment, rule 8 about the measurement-guided decision.",
+   "severity": "should fix",
+   "suggested_change": "Set D2 to 2 and write the rule 8 reading; the 3 can be the alternative. Add the unmet piece (efficacy by baseline C-peptide stratum) to path_to_viability, which V9 already hints at."
+  },
+  {
+   "row": 29,
+   "dimension": "D7",
+   "problem": "Bin 3 rests on an uplift that is not derived. Sourced numbers: 18,291 per year under 20 (2014-15, second-hand web pages, not the CDC page), x 0.60 (age 8-17, own derivation from counts 179/341/445/194; I recompute 0.60) x 0.90 (assumed antibody share) = 9,877, bin 2. The 19,000 'now' is V8's assumption. SEARCH (PMID 36868256, DOI 10.1016/S2213-8587(23)00025-6, abstract read, PMC10091237) reports 22.2 per 100,000 in 2017-18 and a linear rise of 2.02% per year (95% CI 1.54-2.49); that rise applied to 2014-15 gives about 11,000-12,000 for 2026, while a shrinking youth population pulls the other way. The rise is sourced; V8 did not use it. Clarification 21 says record 'bin 2 or 3' when the deciding share crosses the boundary; the point estimate in V8 is 9,900-10,300.",
+   "severity": "should fix",
+   "suggested_change": "Show the growth calculation with the 2.02% per year source and a population-trend assumption, or record bin 2 or 3 low confidence. Source the 90% antibody share (SEARCH autoantibody data). Confirm 18,291 from the CDC report itself, not from advocacy and state pages."
+  },
+  {
+   "row": 2,
+   "dimension": "D7",
+   "problem": "Wrong denominator on the lower share. PMID 38766827 (DOI 10.2174/0118715303322628240509094537, abstract read): 104 hyperinsulinaemic adults, of whom 81 insulinoma and 5 factitious. V8 applies 4.8 percent (5/104) to the row 1 base of all evaluated adults (15,000), giving 750. On the same cohort the ratio is 5 factitious per 81 insulinomas, so about 85 per year against 1,360 insulinomas (bin 1). Also, 16 percent (PMID 36117266, DOI 10.1002/edm2.375, abstract read) includes 5 sulfonylurea cases (high C-peptide) that do not give the row's insulin-high, C-peptide-low pattern; insulin only is 6/70 = 8.6 percent. The range 750-2,400 therefore mixes denominators.",
+   "severity": "should fix",
+   "suggested_change": "Use insulin-only share of the right denominator; state range 85-1,300 or so and record 'bin 1 or 2, low confidence'. Keep bin 2 only if the endocrinology-department share is defended for the US."
+  },
+  {
+   "row": 1,
+   "dimension": "D7",
+   "problem": "Chain divides 1,360 insulinomas (4 per million, Olmsted County, PMID 1677058, DOI 10.1016/s0025-6196(12)62083-7; abstract now readable: eight county cases, 1927-1986, histologically confirmed) by yields from two referral cohorts. Abstract of PMID 42810406 says 'insulinoma or other neuroendocrine tumors' 12 of 92 (13%), not insulinoma alone. Referral yield overstates community yield, so the true work-up count is likely above 15,000; V8 admits the direction and offers bin 4. With eight county cases the incidence is imprecise and old. The Finnish EMS figure (1,082 per 100,000, PMID 29391050) shows the unworked-up hypoglycaemia pool is millions; no US count of hyperinsulinism panels exists.",
+   "severity": "should fix",
+   "suggested_change": "Report 'bin 3 or 4' per clarification 21, correct the 13 percent label to insulinoma or NET, and try to source a US figure (for example commercial-laboratory insulin/C-peptide order volume, NEDS E16 codes) before ranking row 1 against rows 2, 24, 29."
+  },
+  {
+   "row": 1,
+   "dimension": "D2/D3",
+   "problem": "Teammates disagree about the grade of the key recommendation. V8 says Rec 2.1 is grade 1, moderate quality; V9 says the guideline grades the evidence low or very low, and the project row marks that [recall]. The PubMed abstract (read) gives only the GRADE scale, not the grade of Rec 2.1. Neither claim is verified. V9's 'weak 3' for D2 depends on which is right.",
+   "severity": "should fix",
+   "suggested_change": "Read the recommendation list (Oxford Academic page) and quote the grade symbol for 1.1 and 2.1; correct V8 or V9 and the project row."
+  },
+  {
+   "row": 1,
+   "dimension": "D4",
+   "problem": "V10 supports 'not standardized' with PMID 38549041 (DOI 10.1093/clinchem/hvae034, abstract read): median imprecision 13.4% C-peptide and 22.2% insulin across three laboratories. That study is an antibody-free LC-MS/MS research assay (verification CV 2.7-3.7%), not US-marketed immunoassays; it says nothing about cross-platform immunoassay agreement. 'Insulin has no common reference system' and 'proinsulin and BOHB are send-out' have no cited source. Rule 20 asks for US-marketed assays. Same proxy underlies rows 24 and 29.",
+   "severity": "should fix",
+   "suggested_change": "Cite a harmonisation study of immunoassays (for example the C-peptide or insulin standardisation work) or mark these statements as unsourced judgement; keep confidence medium or lower."
+  },
+  {
+   "row": 22,
+   "dimension": "D4",
+   "problem": "V10 scores 1 because the whole procedure is specialised, but its own reason says the insulin immunoassay is ordinary and gradients are within-patient. Rule 16 and rule 20 say separate protocol burden (D5) from assay standardisation (D4). V11 and V12 already score the procedure in D5 (1) and D6 (1), so the procedure is counted three times.",
+   "severity": "should fix",
+   "suggested_change": "Score D4 at 2 (same insulin assay as row 1), keep the procedure in D5 and D6."
+  },
+  {
+   "row": 33,
+   "dimension": "D4",
+   "problem": "V10 scores the UCPCR form (1) because US availability was 'not found in the screened records' (zero-hit search). Absence from a search is not evidence of non-availability. D3 for this row (V8) rests on the ADA figure footnote about serum C-peptide (I confirmed the footnote text in PMC12690183), D1/D5/D6 use 'UCPCR or serum', and V10 itself says serum scores 2. The measure type differs between dimensions of one row.",
+   "severity": "should fix",
+   "suggested_change": "Score serum random post-meal C-peptide as primary (D4 2, matching ADA wording) and UCPCR as the alternative, or verify US UCPCR availability with a named laboratory catalogue."
+  },
+  {
+   "row": 33,
+   "dimension": "D6",
+   "problem": "V11 gives 2, V12 gives 3 (one point). V11 reasons a false-high value could lead to insulin withdrawal and ketoacidosis; V12 calls the consequence low and reversible. Neither cites a source for a practice in which insulin is stopped on UCPCR alone; the studies (PMIDs 23289766, 25792383, 32052124, abstracts read) say the result should prompt antibody and genetic testing ('may indicate further genetic testing', PMID 25792383).",
+   "severity": "note",
+   "suggested_change": "Take V12's reading (3) only if the consequence is stated as further testing; keep 2 if the reason names a documented harm."
+  },
+  {
+   "row": 29,
+   "dimension": "D5 and S",
+   "problem": "V11 D5 1 vs V12 D5 2; V11 S 2 vs V12 S 1 (one point each). V12's D5 of 2 is supported by the label allowing an alternative to the MMTT; V11's 1 counts infusion-centre steps that belong to the drug, not the measurement (rule 16). V12's S 1 follows rule 18 (default is no drug); V11's 2 counts exposure of ineligible children, which is a drug harm, not marginal harm of lacking the measurement.",
+   "severity": "note",
+   "suggested_change": "Use D5 2 and S 1; write the default action in the reason."
+  },
+  {
+   "row": 22,
+   "dimension": "S",
+   "problem": "V11 S 3 vs V12 S 2 (one point). V12 notes the diagnosis is already known and the default is extended resection or repeat imaging. Under rule 18 the harm is of the default action; extended resection and reoperation is moderate to serious. Either is defensible and neither cites an outcome source.",
+   "severity": "note",
+   "suggested_change": "Keep the lower value or cite outcome data for blind resection (PMID 31369096 reports invasive localisation in 7 of 7 non-visualised cases)."
+  },
+  {
+   "row": 23,
+   "dimension": "S",
+   "problem": "V11 S 3 vs V12 S 2 (one point). Default after a negative fast is no further work-up; V12's reading (moderate, curable) fits rule 18 better. Both low confidence.",
+   "severity": "note",
+   "suggested_change": "Use 2 unless an outcome source for missed postprandial insulinoma is given."
+  },
+  {
+   "row": 24,
+   "dimension": "D8",
+   "problem": "V9 gives 3 on 'guideline text that makes the test the entry step' and admits there are no reclassification data. Rule 19: 3 needs data or guideline text showing the measurement changes the answer given alternatives. The pediatric series (PMID 42149805, DOI 10.1159/000552145, abstract read) used an operating-point approach to separate insulinoma from congenital HI but the abstract (truncated in my read) reports no comparison with alternatives.",
+   "severity": "should fix",
+   "suggested_change": "Set 2 unless the sensitivity/specificity at the operating point against clinical features is quoted."
+  },
+  {
+   "row": 24,
+   "dimension": "D7",
+   "problem": "Anchor 4 asks for patients in whom the question arises. V8 scored the diagnosis-level count (about 150, two assumed multipliers: 20-60 centres, 1 per year each, from one hospital of unstated country) and put the work-up count (thousands, unsourced) in a note. Rule 24 allows the note but the row's own situation text is 'new hyperinsulinaemic hypoglycaemia', so the score is defensible; the bin is still a guess on two unsourced multipliers.",
+   "severity": "note",
+   "suggested_change": "Keep 1 low confidence with sensitivity bin 2 or 3; seek a US source (pediatric hospitalisation database for hypoglycaemia after age 2)."
+  },
+  {
+   "row": 33,
+   "dimension": "D7",
+   "problem": "Chain stacks four unsourced or non-US-derived shares: 0.88 duration share, 5.6 percent from one hospital EMR query (PMID 39510599, DOI 10.1136/bmjdrc-2024-004471, abstract read: 38 of 680 new-onset), 25 percent evaluated per year (range 10-100). The 25 percent decides the bin (2,500-16,600 crosses 10,000). The 5.6 percent label is 'autoantibody-negative T1D', whereas the row's situation (suspected non-T1D) also includes antibody-positive youth with atypical features. Alternative bin 3 is stated.",
+   "severity": "should fix",
+   "suggested_change": "Record 'bin 2 or 3, low confidence' per clarification 21 and source the retesting share or drop to a sensitivity note."
+  },
+  {
+   "row": "all",
+   "dimension": "identifiers",
+   "problem": "V11 lists PMIDs with no DOIs ('DOIs are not added'), V9 omits DOIs for PMIDs 26742109, 25957977, V8 omits the PMID for ADA 2026 (DOI 10.2337/dc26-S002, PMC12690183) and 1677058 is cited as 'excerpt only' although the abstract is retrievable. CLAUDE.md requires both identifiers with read level. I confirmed PMID/DOI pairs match PubMed for 36 PMIDs (list in the review). Not checked: PMIDs 26577133, 25873534 (V10 row 22 'series of 13 and 42 patients'), 31951592, 42168767, 39086570 abstract (none exists).",
+   "severity": "should fix",
+   "suggested_change": "Add DOIs to V9 and V11 sources (all verified by me: 26742109 10.1159/000443171, 25957977 10.1016/j.jpeds.2015.03.057), and verify 26577133 and 25873534 before the figures '13 and 42 patients' are used."
+  },
+  {
+   "row": 2,
+   "dimension": "D4",
+   "problem": "V10 says the test needs 'assay-specific knowledge or send-out'. The cited abstract (PMID 39030378, DOI 10.1007/s12020-024-03970-6) shows the US-marketed Siemens Atellica recovering 92-121 percent of five analogues in spiked samples and concludes it can be used for factitious hypoglycaemia; 'send-out' is not in any abstract read. Also the source is a manufacturer-platform comparison on spiked serum, not clinical samples.",
+   "severity": "note",
+   "suggested_change": "Keep 2 but drop 'send-out' unless sourced."
+  },
+  {
+   "row": 1,
+   "dimension": "D2",
+   "problem": "Rule check passed on D2 3 only in form: anchor 3 is 'consensus or guideline backed by studies'. The project row says evidence low/very low, V9 says 'weak 3'. Given the unresolved grade conflict (finding above) the D2 3 vs D1 4 vs D8 4 cluster for row 1 is the most inflated set in the batch.",
+   "severity": "note",
+   "suggested_change": "Cap row 1 UQ at the lowest defensible reading in sensitivity analysis."
+  }
+ ],
+ "anchor_rewrites": [
+  {
+   "anchor": "D1 anchor 4 / rule 15",
+   "problem": "Two roles read 'guideline requires the result' as 'the test defines the diagnosis' while D3 reads the same text as not required (row 1).",
+   "rewrite": "D1 4 only when a quoted guideline, consensus or label sentence makes the result a precondition for the named decision. A test that defines the diagnosis but is only 'recommended' scores 3. D1 and D3 must not differ by more than one point for the same sentence without a written reason."
+  },
+  {
+   "anchor": "D3 anchor 0 and rule 13 for provocation tests",
+   "problem": "Row 23: a close alternative stimulus is recommended, the named test is recommended against.",
+   "rewrite": "D3 is scored for the exact test named in the row. If a guideline recommends against that test (even if it endorses a related test), D3 = 0 and the alternative is noted. Split rows that name two stimuli."
+  },
+  {
+   "anchor": "D7 bin tie and growth",
+   "problem": "Row 29: point estimate 9,900-10,300 on the 10,000 boundary; no rule on uplifts.",
+   "rewrite": "Use only sourced growth (state rate and source). If the point estimate is within 5 percent of a boundary, write 'bin 2 or 3, low confidence' in the reason and set the integer to the bin of the sourced, unadjusted figure."
+  },
+  {
+   "anchor": "D7 clarifications 4 and 24 (no US work-up count)",
+   "problem": "Rows 1, 2, 23, 24 are back-calculated from incidence divided by referral yield, which biases the count downward.",
+   "rewrite": "A back-calculation may be used only with a community or population-based yield; with a referral yield, state the direction of bias and record the next higher bin as the alternative. Where two shares come from the same cohort, use that cohort's own denominator."
+  },
+  {
+   "anchor": "D8 anchor 4 vs rule 19",
+   "problem": "'Irreplaceable (no alternative)' conflicts with 'mechanism alone scores at most 2'.",
+   "rewrite": "D8 4 requires a quoted statement that no other test can establish the finding, plus a source for the test's accuracy in that role. Without both, the cap in rule 19 applies."
+  },
+  {
+   "anchor": "D2 rules 8 and 9",
+   "problem": "Row 29: surrogate approval (3) and trial-entry criterion (2 at most) both apply.",
+   "rewrite": "Rule 8 governs when the decision scored is the measurement-guided selection; rule 9 governs when the decision scored is the treatment effect. Where both apply, take the lower."
+  },
+  {
+   "anchor": "D4 anchor 2 / rule 20",
+   "problem": "'Needs a timed protocol' sits in D4 and D5; procedure vs assay unclear (row 22); proxies from LC-MS/MS used for immunoassays.",
+   "rewrite": "D4 scores only the analyte assay and its harmonisation on US-marketed platforms (3 = routine test with method-dependent cut-offs; 2 = routine test with documented cross-platform differences affecting the decision; 1 = send-out or specialised assay). Timed sampling and procedures go to D5. Evidence from a different technology must be labelled a proxy."
+  },
+  {
+   "anchor": "D3 rules 13, 14 for figures",
+   "problem": "Row 33: a figure footnote in a broader-population algorithm (ADA) has no scoring rule.",
+   "rewrite": "A figure or table footnote in a US guideline counts as guideline text. Score 2 if it covers a broader population, 3 if it names the use-case population; note that it is not a numbered recommendation."
+  },
+  {
+   "anchor": "D6 rule 17",
+   "problem": "False-result consequence for row 33 read as 2 or 3.",
+   "rewrite": "The consequence score must name the documented clinical step that follows a false result (further testing = 3; treatment change = 2; treatment withdrawal or an invasive procedure = 1). Without a source for the step, set confidence low."
+  },
+  {
+   "anchor": "Setting tag rule 22",
+   "problem": "Rows 1, 2, 24 involve a supervised fast, usually an admission, but are tagged specialist outpatient.",
+   "rewrite": "Tag by who orders the test; add a second tag 'admission required' when the guideline protocol needs hospital observation."
+  }
+ ],
+ "verdict": "The seven-row batch is usable as a ranking aid but not yet as a verified result. I checked 36 PMID/DOI pairs against PubMed (all matched) and read the abstracts behind the load-bearing numbers; the cited abstracts mostly say what the units report. Three scores contradict the rubric or the sources: row 23 D3 (the Endocrine Society says an OGTT should never be used for suspected postprandial hypoglycaemia, so 0, not 2), row 23 D8 (the newest OGTT study found no insulin or C-peptide difference), and row 1 D1 4 against D3 3 plus D8 4 against rule 19. Row 29 D2 should follow rule 8, and its D7 bin depends on an unsourced uplift. D7 counts for rows 1, 2, 24, 23, 33 are chains of unsourced shares and are low confidence as labelled; row 2 uses a wrong denominator. No difference larger than one point exists between V11 and V12 (five one-point differences listed). Row 1 UQ is the most inflated cluster. Path-to-viability entries were specific and typed sensibly (see md); row 22 correctly notes PET competition."
+}

@@ -1,0 +1,195 @@
+{
+ "unit": "V14",
+ "role": "evidence searcher (D7 patient counts and D3 guideline status)",
+ "scores": [
+  {
+   "row": 14,
+   "dimension": "D7",
+   "score": 5,
+   "reason": "Point estimate about 3,000,000 adults per year (range 650,000 to 6,500,000): MASLD 86.3 million US adults in 2020 (model, PMID 39821400); share without T2D about 75 percent [assumption, about 65 million]; share newly suspected or evaluated each year about 5 percent [assumption, range 1 to 10 percent]. Fasting-based (HOMA-IR) in the guideline population (adults with suspected MASLD, no T2D). Alternative bin 4 if fewer than about 1.5 percent of this pool (under 1,000,000) are evaluated in a year; that share decides it.",
+   "sources": [
+    "PMID 39821400 DOI 10.1001/jamanetworkopen.2024.54707 abstract"
+   ],
+   "confidence": "low",
+   "origin": "new search"
+  },
+  {
+   "row": 14,
+   "dimension": "D3",
+   "score": 2,
+   "reason": "EASL-EASD-EASO 2024: HOMA-IR or OGTT estimates 'may be considered to clarify metabolic dysfunction in adults with (suspected) MASLD and without an established diagnosis of type 2 diabetes' (LoE 3, weak, consensus); the population matches. Option-level, so 2. Measure: fasting-based HOMA-IR (OGTT-derived alternative named). The AASLD 2023 guidance has no such recommendation (project skeptic result, not rechecked here); a multisociety Delphi consensus co-led by US bodies (PMID 37364790 DOI 10.1016/j.jhep.2023.06.003, project files, abstract level) says suspected cases 'may' prompt HOMA-IR, so I count it as 2 for the US. Under a strict reading of clarification 6 (European guideline only) it would be 1.",
+   "sources": [
+    "PMID 38852583 DOI 10.1159/000539371 full text (PMC11299976, keyword windows; same EASL-EASD-EASO 2024 guideline as PMIDs 38851997 DOI 10.1016/j.jhep.2024.04.031 and 38869512 DOI 10.1007/s00125-024-06196-3)",
+    "PMID 37364790 DOI 10.1016/j.jhep.2023.06.003 abstract (via project files)"
+   ],
+   "confidence": "medium",
+   "origin": "both"
+  },
+  {
+   "row": 9,
+   "dimension": "D7",
+   "score": 1,
+   "reason": "Narrowest population (clarification 2): evaluation of beta-cell reserve in candidates for total pancreatectomy with islet autotransplantation (TPIAT), where PancreasFest applies C-peptide. TP+IAT procedures in the US rose from 53 (2002) to 155 (2012) per year (NIS, PMID 27011922); no later count was found. Assume 250 to 400 procedures now and 2 to 3 candidates evaluated per operation: point estimate about 800 (range 300 to 1,500). C-peptide, fasting or stimulated. Alternative bin 2 if evaluated candidates exceed 1,000, i.e. more than about 3 evaluations per procedure. Broader note: new pancreatogenic diabetes (classification use) is about 5,000 to 30,000 a year (chronic pancreatitis incidence 4 to 12 per 100,000 per year, AAFP 2018 page; diabetes in about 30 percent over time, PMID 42488134; acute pancreatitis about 82 per 100,000 adults per year, PMID 30946239), bin 3, not scored.",
+   "sources": [
+    "PMID 27011922 DOI 10.5500/wjt.v6.i1.233 abstract (as returned by web search)",
+    "PMID 30946239 DOI 10.1097/mpa.0000000000001275 abstract",
+    "PMID 42488134 DOI 10.1177/20420188261469942 abstract",
+    "AAFP 2018 'Chronic Pancreatitis: Diagnosis and Treatment' https://www.aafp.org/afp/2018/0315/p385 excerpt"
+   ],
+   "confidence": "low",
+   "origin": "new search"
+  },
+  {
+   "row": 9,
+   "dimension": "D3",
+   "score": 3,
+   "reason": "PancreasFest 2012 consensus (US): 'Assessment of pancreatic endocrine reserve, and importantly that of functional beta-cell mass, should be performed as part of the evaluation and followup for TPIAT', estimated from serum C-peptide during OGTT or mixed-meal test. A consensus recommendation in the specific population, so 3; not 4 because it is a consensus with 58 percent top agreement and no label or guideline requires it. It does not recommend C-peptide for diagnosing type 3c diabetes in general (that is glucose-based). Measure: C-peptide, post-load or mixed-meal.",
+   "sources": [
+    "PMID 23890130 DOI 10.1016/j.pan.2013.05.002 full text (PMC3830751, keyword windows)"
+   ],
+   "confidence": "medium",
+   "origin": "both"
+  },
+  {
+   "row": 28,
+   "dimension": "D7",
+   "score": 3,
+   "reason": "Narrowest population: adults with diabetes and eGFR below 60 in whom C-peptide classification is considered. New diagnosed adult diabetes 1.21 million per year (CDC NDSR, 2019 to 2021 crude, 1,094 to 1,328 thousand); share with eGFR below 60 about 10 percent [assumption; CKD of any kind is 37 percent of adults with diabetes, CDC KDSS, but that includes albuminuria]; share with a C-peptide-based classification question about 10 percent [assumption, range 3 to 25 percent]. Point estimate about 12,000 (range 4,000 to 30,000). Alternative bin 2 if the share is under about 8 percent. Prevalent patients retested (about 5 million with diabetes and CKD) not counted. C-peptide (serum or urinary).",
+   "sources": [
+    "CDC National Diabetes Statistics Report (restored copy 2024-05-15) https://restoredcdc.org/www.cdc.gov/diabetes/php/data-research/index.html , incidence 1,211 thousand, 2019-2021; CDC Kidney Disease Surveillance System Q763 https://wwwn.cdc.gov/kdss/detail.aspx?Qnum=Q763&topic=4 (37.0 percent CKD among adults with diabetes, 2017-March 2020); USRDS ADR 2022 ch.1"
+   ],
+   "confidence": "low",
+   "origin": "new search"
+  },
+  {
+   "row": 28,
+   "dimension": "D3",
+   "score": 1,
+   "reason": "No US guideline retrieved that addresses C-peptide interpretation or adjustment in CKD; searches 'C-peptide chronic kidney disease eGFR guideline interpretation type 1 diabetes' and 'C-peptide diabetes kidney disease eGFR cutoff classification' returned 0 records. The project files record KDIGO 2022 as blank at abstract level. The only text is a review (Jones and Hattersley 2013, PMID 23413806) calling renal correction methods poorly validated; a review is not a guideline. Not addressed, so 1. Measure: C-peptide.",
+   "sources": [
+    "PMID 23413806 DOI 10.1111/dme.12159 full text (via project files, keyword windows)",
+    "PMID 30794834 DOI 10.1016/j.diabres.2019.02.015 abstract (project files)"
+   ],
+   "confidence": "medium",
+   "origin": "both"
+  },
+  {
+   "row": 12,
+   "dimension": "D7",
+   "score": 2,
+   "reason": "Narrowest population: patients worked up for suspected severe or syndromic IR (lipodystrophy, genetic IR, type B). Registry prevalence: generalized 1.6 and partial 6.4 per million (France, PMID 40174859), about 8 per million, so about 2,700 prevalent lipodystrophy patients in the US (340 million) [extrapolation, registry undercount likely]; type B has about 119 published cases worldwide in a 2020 review (PMID 32813762). Patients in whom the question arises (clarification 4) are larger than those diagnosed: assume 2 new work-ups for each prevalent-equivalent diagnosed per year, point estimate about 5,000 (range 1,000 to 20,000). Alternative bin 3 if more than 10,000 are worked up. Fasting insulin.",
+   "sources": [
+    "PMID 40174859 DOI 10.1016/j.ando.2025.101730 abstract",
+    "PMID 41152002 DOI 10.1093/ejendo/lvaf214 abstract",
+    "PMID 32813762 DOI 10.20945/2359-3997000000257 abstract"
+   ],
+   "confidence": "low",
+   "origin": "new search"
+  },
+  {
+   "row": 12,
+   "dimension": "D3",
+   "score": 2,
+   "reason": "The US-endorsed multisociety lipodystrophy guideline (Brown 2016) says all lipodystrophy patients 'should undergo a metabolic workup for insulin resistance, diabetes, dyslipidemia, and fatty liver disease' but names no insulin assay, threshold or antibody test; the condition is named, the measurement is not (clarification 5), so 2. The Japanese JDS criteria (fasting insulin above 30 uU/mL, PMID 35463863) are national criteria elsewhere and count as 1 for the US (clarification 6); no US or international body adoption found. Measure: fasting insulin (JDS); unspecified (Brown).",
+   "sources": [
+    "PMID 27710244 DOI 10.1210/jc.2016-2466 full text (PMC5155679, keyword windows)",
+    "PMID 35463863 DOI 10.1007/s13340-022-00570-5 full text (PMC8980125, via project files)"
+   ],
+   "confidence": "low",
+   "origin": "both"
+  },
+  {
+   "row": 21,
+   "dimension": "D7",
+   "score": 3,
+   "reason": "Situation (clarification 4): adults without diabetes drugs worked up for spontaneous hypoglycaemia in whom insulin and C-peptide come back suppressed. Hypoglycaemia in non-diabetic admissions 36 per 10,000 admissions (StatPearls summarising one retrospective review of 38,898 admissions, secondary source); about 33 million US admissions [recall, no source retrieved] gives roughly 120,000 episodes; share with a formal insulin and C-peptide work-up and suppressed result about 8 percent [assumption, range 3 to 20 percent]. Point estimate about 10,000 (range 3,000 to 25,000). Alternative bin 2 if the share is below 8 percent. NICTH itself is far rarer (solitary fibrous tumour 2.8 per 100,000, about 5 to 10 percent with hypoglycaemia, PMID 34413033, abstract). Measure: insulin plus C-peptide (fasting or during symptoms). Confidence low: boundary estimate and a recall input.",
+   "sources": [
+    "StatPearls Non-Diabetic Hypoglycemia https://www.ncbi.nlm.nih.gov/books/NBK573079 excerpt",
+    "PMID 34413033 DOI 10.1136/bcr-2021-242447 abstract"
+   ],
+   "confidence": "low",
+   "origin": "new search"
+  },
+  {
+   "row": 21,
+   "dimension": "D3",
+   "score": 2,
+   "reason": "The Endocrine Society hypoglycaemia guideline (Cryer 2009, PMID 19088155 DOI 10.1210/jc.2008-1410) recommends measuring insulin, C-peptide and related variables during hypoglycaemia in adults without diabetes; this is a broader population than the use case (suppressed values to redirect to NICTH work-up), and IGF-II is the confirmatory test, so 2 (clarification 14). Full text could not be retrieved (no PMC copy); status rests on the abstract and project files. Measure: insulin and C-peptide, spontaneous or fasting-test.",
+   "sources": [
+    "PMID 19088155 DOI 10.1210/jc.2008-1410 abstract/title only (no PMC copy)"
+   ],
+   "confidence": "low",
+   "origin": "both"
+  },
+  {
+   "row": 46,
+   "dimension": "D7",
+   "score": 2,
+   "reason": "Situation: adults with ketoacidosis soon after hyperglycaemic symptoms and near-normal HbA1c at new diagnosis, in whom C-peptide would be used. US DKA hospitalisations about 200,000 or more a year (Diabetes Care 2020 update, 220,340 cases in the first column year of its table; exact year not verified); share of adult DKA that is a new diagnosis about 15 percent [assumption]; share with HbA1c below 8.7 percent and abrupt onset about 4 percent [assumption]. Point estimate about 1,500 (range 300 to 5,000). Fulminant T1D incidence outside Japan was not found (PubMed 'fulminant type 1 diabetes C-peptide criteria guideline' 0 records). Alternative bin 3 if the share exceeds about 30 percent of new-onset DKA, which is unlikely. Broader count (all new-onset DKA, about 30,000) is bin 3, noted not scored. C-peptide (urinary or serum, fasting and stimulated).",
+   "sources": [
+    "https://diabetesjournals.org/care/article/43/12/e196/31050/ (Diabetes Care 2020 DKA update) excerpt",
+    "PMID 12882860 DOI 10.2337/diacare.26.8.2345 abstract (Japan survey)"
+   ],
+   "confidence": "low",
+   "origin": "new search"
+  },
+  {
+   "row": 46,
+   "dimension": "D3",
+   "score": 1,
+   "reason": "The criteria (urinary C-peptide below 10 ug/day, or fasting serum C-peptide below 0.3 ng/mL and below 0.5 ng/mL after glucagon or meal) are Japan Diabetes Society national criteria (PMID 24843620 DOI 10.1111/jdi.12024, PMC4015434); no US or international body adoption found in the screened records, so 1 (clarification 6). Measure: C-peptide.",
+   "sources": [
+    "PMID 24843620 DOI 10.1111/jdi.12024 abstract (full text read by project skeptic)"
+   ],
+   "confidence": "medium",
+   "origin": "both"
+  },
+  {
+   "row": 35,
+   "dimension": "D7",
+   "score": 5,
+   "reason": "Scored for the insulin-based part, first-trimester HOMA-IR in pregnancy. Pregnant women without pre-existing diabetes: 3,596,017 US births in 2023 (NVSR 74-1) and 1.2 percent prepregnancy diabetes, so about 3.5 million (range 3.3 to 3.6 million). Fasting-based (HOMA-IR). The GCK-testing branch is glucose-based and not scored; for reference 296,661 GDM births in 2023 (NVSR 74-1) times about 6 percent referred by the NSC criteria (PMID 26109503) is about 18,000 (bin 3).",
+   "sources": [
+    "CDC NCHS NVSR 74(1) 'Births: Final Data for 2023' https://www.cdc.gov/nchs/data/nvsr/nvsr74/nvsr74-1.pdf (CDC NCHS, 2025-03-18)",
+    "PMID 26109503 DOI 10.2337/dc15-1001 abstract"
+   ],
+   "confidence": "medium",
+   "origin": "new search"
+  },
+  {
+   "row": 35,
+   "dimension": "D3",
+   "score": 1,
+   "reason": "ANZ 2025 consensus (PMID 40640995 DOI 10.5694/mja2.52717) says GCK testing should be considered in non-obese women with GDM and fasting glucose above 5.5 mmol/L, which is glucose-based. No text retrieved recommending fasting insulin, HOMA-IR or C-peptide in pregnancy; the search 'gestational diabetes first trimester HOMA-IR prediction systematic review' returned 0 records and ADA, ACOG and IADPSG texts were not read, so absence of a US recommendation is not confirmed. Not addressed: 1. Non-US source for GCK branch also counts 1.",
+   "sources": [
+    "PMID 40640995 DOI 10.5694/mja2.52717 full text (PMC12579922, keyword windows)"
+   ],
+   "confidence": "low",
+   "origin": "both"
+  }
+ ],
+ "path_to_viability": [],
+ "settings": [],
+ "anchor_issues": [
+  "Row 9 D7 and D3: the use case has two decisions (document insulin deficiency in type 3c; beta-cell reserve before TPIAT). I scored the TPIAT evaluation, the only decision for which a consensus names C-peptide (clarification 2, narrowest). The type 3c classification count (bin 3) is a note.",
+  "Row 35: the row mixes a glucose-based GCK trigger (a) and first-trimester HOMA-IR (b). I scored (b) only because (a) does not use insulin or C-peptide.",
+  "Row 14 D3: rule 6 (non-US national criteria count 1) is unclear for a multisociety European guideline. I counted the EASL-EASD-EASO guideline as 2 because a US-co-led Delphi consensus points the same way; strict reading gives 1.",
+  "Row 12 D3: rule 5 (condition named but not test, score 2) conflicts with D3 anchor 1 (not addressed) when the guideline asks for an 'insulin resistance workup' without naming a test. I chose 2.",
+  "D7 for rows 28, 21, 46 and 14 depends on 'share evaluated' factors that no source gives; per rule 24 I scored the point-estimate bin with low confidence and stated the alternative bin.",
+  "Rule 4 (count the situation, not the diagnosis) and rule 2 (narrowest population) pull in different directions for row 9; narrowest was used."
+ ],
+ "assumptions": [
+  "US population about 340 million; US adults about 260 million; about 33 million hospital admissions a year [recall, no source retrieved].",
+  "Share of MASLD with T2D about 25 percent; share evaluated or newly suspected each year about 5 percent (row 14).",
+  "TP+IAT now 250 to 400 procedures a year and 2 to 3 candidates evaluated per procedure (row 9).",
+  "New-onset diabetes with eGFR below 60 about 10 percent, C-peptide question in 10 percent (row 28).",
+  "Non-diabetic hypoglycaemia work-ups with suppressed insulin about 8 percent of episodes (row 21).",
+  "New-onset share of adult DKA 15 percent; abrupt, HbA1c below 8.7 percent subset 4 percent (row 46).",
+  "Statistics pages used a 2024 restored copy of the CDC NDSR for the adult incidence figure; the live CDC page (updated 2026-09-16) was not checked for a newer incidence."
+ ],
+ "searches": [
+  "2026-10-23 PubMed (tools/pubmed_search.py, max 5 to 6 shown): 'MASLD prevalence United States adults NHANES' 186 hits; 'MASLD NAFLD incidence United States adults new cases per year' 1; 'type B insulin resistance syndrome incidence prevalence' 5; 'lipodystrophy prevalence generalized partial epidemiology' 37; 'severe insulin resistance syndromes prevalence genetic' 327; 'pancreatogenic type 3c diabetes incidence after acute pancreatitis' 3; 'total pancreatectomy islet autotransplantation United States number of procedures' 24; 'type 3c diabetes prevalence among new-onset diabetes' 11; 'non-islet cell tumor hypoglycemia incidence' 10; 'NICTH IGF-II hypoglycemia case series prevalence solitary fibrous tumor' 0; 'fulminant type 1 diabetes incidence United States OR Europe OR Caucasian' off-topic (1,962,493); 'fulminant type 1 diabetes C-peptide criteria guideline' 0; 'GCK MODY pregnancy fasting glucose screening prevalence' 7; 'gestational diabetes first trimester HOMA-IR prediction systematic review' 0; 'lipodystrophy prevalence United States' 193; 'type B insulin resistance anti-insulin receptor antibodies cases reported' 8; 'C-peptide chronic kidney disease eGFR guideline interpretation type 1 diabetes' 0; 'type 3c diabetes consensus guideline diagnosis C-peptide ADA standards' 0; 'oral glucose tolerance test pregnancy GCK-MODY NICE guideline' 0; 'hypoglycemia nondiabetic emergency department visits incidence United States' 1 (off-topic); 'fulminant type 1 diabetes Western patients case series' 0; 'ketosis-onset diabetes adults new-onset type 1 incidence United States' 0; 'C-peptide diabetes kidney disease eGFR cutoff classification' 0; 'gestational diabetes insulin resistance screening recommendations ACOG fasting insulin not recommended' 0; 'ACOG practice bulletin gestational diabetes mellitus' 610 (no usable guideline text); 'ADA standards of care classification and diagnosis of diabetes pancreatic type 3c' 0; 'American Diabetes Association consensus diabetes of the exocrine pancreas' 2; 'Endocrine Society guideline hypoglycemia adults without diabetes insulin C-peptide' 1; 'diabetes type 1 consensus report C-peptide measurement 2021 Holt ADA EASD' 0; 'Endocrine Society hypoglycemia guideline 2009 Cryer' 1. About 140 records screened at title level, about 20 at abstract level.",
+  "Web (Parallel search, 2026-10-23): US acute pancreatitis hospitalisations, chronic pancreatitis incidence, TPIAT numbers (about 10 results screened); GDM, births, CKD with diabetes, new diabetes cases (about 20 results); fulminant T1D, NICTH, DKA (about 10 results); non-diabetic hypoglycaemia (about 8); CDC adult diabetes incidence (about 8). Fetched NVSR 74-1.",
+  "Full text opened with tools/pmc_text.py: PMC11299976 (EASL 2024), PMC5155679 (lipodystrophy 2016), PMC3830751 (PancreasFest 2012), PMC12579922 (ANZ 2025). Not found in the screened records: a US count of fulminant T1D, a US NICTH incidence, a post-2012 US TPIAT count, any US guideline text on C-peptide in CKD, any US guideline recommending insulin in GDM (ADA and ACOG texts not opened)."
+ ]
+}

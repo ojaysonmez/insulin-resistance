@@ -1,0 +1,117 @@
+{
+ "unit": "V10",
+ "role": "clinical chemist (D4 analytical feasibility)",
+ "scores": [
+  {
+   "row": 1,
+   "dimension": "D4",
+   "score": 2,
+   "reason": "Insulin and C-peptide are routine immunoassays in US labs, but they are not standardized across platforms: insulin has no common reference system and analogue/proinsulin cross-reactivity differs; the antibody-free LC-MS/MS comparison across three labs still gave 13% (C-peptide) and 22% (insulin) median imprecision. Proinsulin and BOHB are send-out or less common, and the ENETS thresholds are tied to assays of unstated generation. Measure type: fasting/at-hypoglycaemia insulin, C-peptide, proinsulin. Protocol burden left to D5. Alternative 3 if only insulin and C-peptide are counted.",
+   "sources": [
+    "PMID 26742109 DOI 10.1159/000443171 (ENETS 2016, read via project files, full text per usecases-verified.md)",
+    "PMID 38549041 DOI 10.1093/clinchem/hvae034 abstract",
+    "PMID 19088155 DOI 10.1210/jc.2008-1410 abstract (via project files)"
+   ],
+   "confidence": "medium",
+   "origin": "both"
+  },
+  {
+   "row": 2,
+   "dimension": "D4",
+   "score": 2,
+   "reason": "The pattern needs an insulin assay that detects the analogue in use; Atellica recovered 92-121% of five analogues while LC-MS/MS detected only glargine at 10 ng/mL, and one infant case went undetected until the local assay changed. Reviews advise two assays with different cross-reactivity, so the test is available but needs assay-specific knowledge or send-out. Evidence is from non-US-specific platforms and spiked samples (CV and recovery, not clinical sensitivity); confidence capped at medium. Measure type: insulin plus C-peptide at hypoglycaemia.",
+   "sources": [
+    "PMID 39030378 DOI 10.1007/s12020-024-03970-6 abstract",
+    "PMID 36965853 DOI 10.1016/j.ando.2023.03.015 abstract",
+    "PMID 36733550 DOI 10.7759/cureus.33224 abstract",
+    "PMID 25957977 DOI 10.1016/j.jpeds.2015.03.057 full text (via project files)",
+    "PMID 39086570 DOI 10.4103/ijem.ijem_56_24 title only"
+   ],
+   "confidence": "medium",
+   "origin": "both"
+  },
+  {
+   "row": 24,
+   "dimension": "D4",
+   "score": 2,
+   "reason": "Same assays as row 1 (insulin, C-peptide at hypoglycaemia); standard lab tests without cross-platform standardization, plus pediatric critical-sample volume (not checked in screened records). Genetic and imaging parts are outside D4. Measure type: insulin and C-peptide at hypoglycaemia.",
+   "sources": [
+    "PMID 37454648 DOI 10.1159/000531766 full text (via project files)",
+    "PMID 26742109 DOI 10.1159/000443171 (ENETS 2016, read via project files, full text per usecases-verified.md)",
+    "PMID 38549041 DOI 10.1093/clinchem/hvae034 abstract"
+   ],
+   "confidence": "medium",
+   "origin": "both"
+  },
+  {
+   "row": 29,
+   "dimension": "D4",
+   "score": 2,
+   "reason": "Stimulated C-peptide is a common lab assay and the FDA label sets 0.2 pmol/mL peak after an MMTT, with an alternative method allowed. C-peptide immunoassays are not harmonized (LC-MS/MS interlab 10.8-13.4% imprecision; the threshold sits at the low range where immunoassay lower limits matter), and the MMTT is a timed protocol not in routine care. Assay generation behind the PROTECT cut-off was not checked. Measure type: post-load/mixed-meal C-peptide.",
+   "sources": [
+    "FDA Tzield label (supplement 2026-06-15) s2.1, 14.2 via project files (usecases-verified.md row 29)",
+    "PMID 38549041 DOI 10.1093/clinchem/hvae034 abstract"
+   ],
+   "confidence": "medium",
+   "origin": "both"
+  },
+  {
+   "row": 22,
+   "dimension": "D4",
+   "score": 1,
+   "reason": "Insulin is measured by ordinary immunoassay, but the test as a whole (arterial calcium stimulation with timed hepatic venous samples, rapid turnaround) is done at few expert centres and published series are small (13 and 42 patients); gradient ratios are within-patient so assay bias largely cancels. Scored 1 as specialised; alternative 2 if only the assay is scored. Measure type: stimulated regional insulin (not fasting).",
+   "sources": [
+    "PMID 26742109 DOI 10.1159/000443171 (ENETS 2016, read via project files, full text per usecases-verified.md)",
+    "PMID 26577133 DOI 10.1007/s40618-015-0406-4 abstract",
+    "PMID 25873534 DOI 10.1016/j.surg.2015.03.004 abstract"
+   ],
+   "confidence": "low",
+   "origin": "both"
+  },
+  {
+   "row": 23,
+   "dimension": "D4",
+   "score": 2,
+   "reason": "Insulin and glucose by standard assays during a prolonged OGTT; no validated insulin cut-off, assay not specified in the guideline passage, and standardization as in row 1. Single-centre data only. Measure type: post-load insulin. Not found in the screened records: a dedicated analytical study.",
+   "sources": [
+    "PMID 26742109 DOI 10.1159/000443171 (ENETS 2016, read via project files, full text per usecases-verified.md)"
+   ],
+   "confidence": "low",
+   "origin": "both"
+  },
+  {
+   "row": 33,
+   "dimension": "D4",
+   "score": 1,
+   "reason": "UCPCR is a specialised test: the cohorts are UK/European or single-centre, the home urine sample with preservative was not confirmed as a US-orderable assay in the screened records, and units/cut-offs (0.2 to 0.7 nmol/mmol) differ across studies. Serum fasting or post-meal C-peptide would score 2. Not found in the screened records: US availability or stability data for UCPCR. Measure type: urinary C-peptide (post-meal) or serum C-peptide.",
+   "sources": [
+    "PMID 23289766 DOI 10.1111/pedi.12008 abstract",
+    "PMID 25792383 DOI 10.1159/000375410 abstract"
+   ],
+   "confidence": "low",
+   "origin": "both"
+  }
+ ],
+ "path_to_viability": [],
+ "settings": [],
+ "anchor_issues": [
+  "D4 anchor 2 mixes 'unstandardized' and 'needs a timed protocol'; clarification 20 says move protocol to D5, so rows 1, 24, 29 were scored on standardization only.",
+  "Row 22: the assay is routine but the procedure is specialised; the D4 anchor does not say which governs. Chose 1 (whole test), alternative 2.",
+  "Row 33: the row lists UCPCR or serum C-peptide; scored the UCPCR primary form (1), serum form would be 2.",
+  "No anchor fits an analyte that is standard but has no cut-off derived on a current US assay (rows 1, 23)."
+ ],
+ "assumptions": [
+  "Assay generation behind ENETS/ES thresholds and the PROTECT cut-off was not checked; US marketed insulin and C-peptide immunoassays assumed available at large reference labs.",
+  "Project-file sources (ENETS, ES, PES, HI guideline, FDA label) were taken from usecases-verified.md; DOIs were verified this session in PubMed for the four guidelines; the FDA label was not reopened.",
+  "Did not look for FDA clearance status or reference-material (WHO IRR) details of individual US platforms."
+ ],
+ "searches": [
+  "insulin analogue detection immunoassay cross-reactivity factitious hypoglycemia (4 records screened)",
+  "C-peptide standardization harmonization immunoassay comparison (3 records screened)",
+  "urinary C-peptide creatinine ratio stability boric acid home sample (0 records)",
+  "proinsulin assay insulinoma diagnosis hypoglycemia assay availability (8 of 14 screened by title)",
+  "mixed meal tolerance test C-peptide standardized protocol type 1 diabetes (4 records screened, none on assay standardization)",
+  "selective arterial calcium stimulation hepatic venous sampling insulinoma insulin assay (6 of 26 screened)",
+  "insulin immunoassay hemolysis interference insulin degradation sample handling hypoglycemia (0 records)"
+ ]
+}
