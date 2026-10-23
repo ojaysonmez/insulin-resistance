@@ -179,6 +179,8 @@ Format: date, time (if known), what changed, why.
 
 - Pathway 1 plan drafted (2026-10-23, user: plan + open full texts): `usecases/scoring/pathways/pathway-1-plan.md` and a DOCX copy (rows 6 and 31: US assay harmonisation, then a multi-site cohort with a step-down rule). Open-full-text retrieval for the abstract-only papers started as a background evidence-searcher run (texts to git-ignored `corpus/fulltext/`, log to `corpus/fulltext-attempt-2026-10-23.md`).
 
+- Full-text check (2026-10-23, user: yes): `reviews/fulltext-check-2026-10-23.md` checks Holt, Cryer, Funakoshi, Gavigan and the UCPCR paper against the dossiers and scores; no score or sentence changes; open items: ISPAD monogenic chapter (PMID 36537518) and the Gavigan subgroup numbers.
+
 ## Not yet run or done
 - Specialty reviewers (cardiology first, then others as chosen) and a skeptic on their findings; then the summary editor.
 - Use-case scoring: the pilot on rows 6, 5 and 13 (needs searching for US commonality), then scoring of about 30 candidates (`usecases/scoring-rubric.md`; all rubric decisions are settled, nothing is scored).
