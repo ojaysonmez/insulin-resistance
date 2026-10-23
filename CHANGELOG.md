@@ -171,6 +171,8 @@ Format: date, time (if known), what changed, why.
 
 - Next-step batch (2026-10-23, user: items 1, 2 and 3): (1) 13 generic "IR" sentences in `merged-conclusion.md`, `README.md` and `summary-detailed.md` reworded to name the measure type (skeptic pass pending); (2) confidence re-derivation written as a proposal only (`reviews/confidence-rederivation-2026-10-23.md`; `merged-conclusion.md` figures unchanged); (3) stage 3 dossiers for rows 6, 1, 7 and 31 in `usecases/scoring/dossiers/` (file-only reading plus at most 8 look-ups each; no score changed); skeptic pass started, report to `reviews/skeptic-stage3-2026-10-23.md`.
 
+- Skeptic pass on the stage 3 dossiers and the 13 wording edits (`reviews/skeptic-stage3-2026-10-23.md`): 6 edits accepted, 7 revised and applied (README lines 16 and 51; `merged-conclusion.md` pioglitazone, ITT-IR, searcher-negative, Mendelian randomisation, pregnancy lines; CTRI registry-negative note). Score changes (row 7 S and D3, rows 6/31 alignment), the Holt figure fix, the row 7 "PPV 20%" re-source and the Bottom line 2 figures await the user's decision.
+
 ## Not yet run or done
 - Specialty reviewers (cardiology first, then others as chosen) and a skeptic on their findings; then the summary editor.
 - Use-case scoring: the pilot on rows 6, 5 and 13 (needs searching for US commonality), then scoring of about 30 candidates (`usecases/scoring-rubric.md`; all rubric decisions are settled, nothing is scored).
