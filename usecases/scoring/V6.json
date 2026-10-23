@@ -1,0 +1,230 @@
+{
+ "unit": "V6",
+ "role": "skeptic",
+ "findings": [
+  {
+   "row": 31,
+   "dimension": "D1/D3",
+   "problem": "V1 scores D3=4 because ADA Standards 2026 section 2 (PMC12690183) says C-peptide 'must be measured prior to insulin discontinuation' (quote checked). V4 and V5 score D1=3 because 'nothing makes it mandatory'. Under clarification 15, D1=4 when a guideline requires the result before the decision. Both cannot hold for the same decision (stop or avoid insulin).",
+   "severity": "must fix",
+   "suggested_change": "Decide one reading. If the decision is insulin discontinuation, set D1=4 (or lower D3 to 3 and say why 'must' is not a requirement). If the decision is reclassification, D3=3 and D1=3. Record the choice in one note."
+  },
+  {
+   "row": 32,
+   "dimension": "D3",
+   "problem": "Row 32's decision is insulin withdrawal after DKA. V1 gives D3=2 as a broader-population recommendation, but the same ADA passage that gives row 31 D3=4 (insulin-treated, C-peptide before discontinuation) also carries the sentence 'do not test within 2 weeks of a hyperglycemic emergency'. Rows 31 and 32 are scored on the same text with different results.",
+   "severity": "must fix",
+   "suggested_change": "Score rows 31 and 32 with one rule: both 3 or 4 (text covers insulin withdrawal) or both 2 (clarification 14). Move row 32 D1 the same way."
+  },
+  {
+   "row": 31,
+   "dimension": "D2",
+   "problem": "V2 gives D2=3 for classification but says in its own text that the stop-insulin decision itself would score 2. V1, V4 and V5 treat stop or avoid insulin as the primary decision. The nearest retrieved study (Funakoshi 2011, PMID 24843502, abstract checked) is retrospective, 201 Japanese type 2 patients, likelihood ratios 1.6-2.8, and concerns who needs insulin to reach target, not safe withdrawal.",
+   "severity": "must fix",
+   "suggested_change": "Score D2 for the same decision as D3 and D1 (clarification 13). If that is withdrawal, D2=2 and the PV (withdrawal study) fits; if classification, say so for every dimension."
+  },
+  {
+   "row": 32,
+   "dimension": "D8",
+   "problem": "D8=3 rests on the claim that the Abeta scheme beat the other schemes because C-peptide adds beyond antibodies and BMI. The comparator figures were in the truncated part of the abstract and were not read (V2 says so). The outcome (preserved beta-cell function) is defined by glucagon-stimulated C-peptide >=1.5 ng/mL (PMID 17130187, abstract checked), so a scheme containing C-peptide predicting that outcome is circular. Clarification 19 requires data showing the measurement changes the answer given the alternatives.",
+   "severity": "must fix",
+   "suggested_change": "Lower to 2 or record not determinable. Evidence that would fix it: an outcome independent of the test (sustained insulin independence) comparing antibody-only with antibody plus C-peptide."
+  },
+  {
+   "row": 3,
+   "dimension": "D7",
+   "problem": "The Endocrine Society 2009 recommendation (PMID 19088155, abstract checked) applies to patients 'with hypoglycemia without diabetes mellitus'. V1's chain starts from sulfonylurea users with diabetes (5-10 million, unsourced) and hypoglycaemia ED visits among them (PMID 31922562, OptumLabs; the 5.75 per 1,000 person-years figure is not visible in the abstract text I retrieved). The denominator does not match the population in which the test is used, and 'unclear mechanism' is not defined for a person on a known sulfonylurea.",
+   "severity": "must fix",
+   "suggested_change": "Rebuild from adults without diabetes worked up for Whipple-triad hypoglycaemia (anchor 4) with a US source or labelled assumption. Until then report bin 2 or 3, not determinable."
+  },
+  {
+   "row": 31,
+   "dimension": "D7",
+   "problem": "V1 uses 3.8 million adults 'who started insulin within a year of diagnosis' as a lower bound of insulin-treated adults; it is a different group, not a bound of the pool. The 1-5% yearly share is an assumption. V7 scores row 6 (nearly the same population) at 37,000 from a different chain (7.2 million x 85% x 12% x 5%, four assumed shares). The two chains differ by about 2x, neither has a sourced bin-deciding share, and row 31 (anyone on insulin with doubtful type) should be at least as large as row 6.",
+   "severity": "must fix",
+   "suggested_change": "Use one chain for rows 6 and 31, show row 31 as a superset or an overlap note, and carry the range (bin 3 or 4) into the table."
+  },
+  {
+   "row": 7,
+   "dimension": "D8",
+   "problem": "D8=3 relies on PMID 41086125 (abstract checked): ROC AUC 0.80 with clinical features, 0.98 with biomarkers (C-peptide and islet autoantibodies), 0.96 biomarkers alone. C-peptide is not separated from antibodies, the group is early-insulin-treated (a proxy for type 1), and V2 itself says UCPCR cannot separate MODY from type 2 diabetes and the pathway PPV was 20%. Clarification 19 requires data on the measurement itself.",
+   "severity": "must fix",
+   "suggested_change": "Lower to 2, or state that the alternative is clinical features only and that antibodies are part of the measure. Evidence needed: calculator performance with and without C-peptide given antibody status."
+  },
+  {
+   "row": 10,
+   "dimension": "D2",
+   "problem": "D2=3 rests on prediction (CITR fasting C-peptide ROC AUC 0.906 and 0.845, PMID 36657975, abstract checked) plus a consensus definition. V2 says this is not decision impact. The D2 anchor asks for evidence for the decision impact, not mere association.",
+   "severity": "should fix",
+   "suggested_change": "Score 2, or add to the anchor that validation of a classification against outcomes counts as decision evidence."
+  },
+  {
+   "row": 4,
+   "dimension": "D2/D1/D8",
+   "problem": "The dimensions are scored on different objects: D2=3 for the critical-sample bundle (guideline), D1=2 and D8=1 for insulin and C-peptide only. Evidence on the component is retrospective accuracy: insulin detectable in only 23 of 28 confirmed cases (PMID 26490124), C-peptide threshold 291.5 pmol/L, sensitivity 82%, specificity 99%, single centre (PMID 39360602), both abstracts checked.",
+   "severity": "should fix",
+   "suggested_change": "Score all dimensions for the component (D2=2) or all for the bundle, and say which in each reason."
+  },
+  {
+   "row": 3,
+   "dimension": "S",
+   "problem": "S=3 in both V4 and V5, but clarification 18 scores marginal harm without the measurement. V2 (D8=1) and both teams say the drug screen and history discriminate and insulin/C-peptide only show the hyperinsulinaemic pattern. V4 itself gives S=3 for row 4 'because other markers reach the diagnosis'.",
+   "severity": "should fix",
+   "suggested_change": "Re-score S as the harm of omitting insulin and C-peptide while the drug screen is available (2 is supported); keep 3 only as a whole-work-up note."
+  },
+  {
+   "row": 4,
+   "dimension": "S",
+   "problem": "Same issue as row 3: S=3 (V4, V5) although BOHB, FFA and glucagon response reach the diagnosis and insulin is undetectable in 5 of 28 confirmed cases (PMID 26490124).",
+   "severity": "should fix",
+   "suggested_change": "Score S=2 for the component or label S as whole-work-up."
+  },
+  {
+   "row": "31,7,32,47,49",
+   "dimension": "S",
+   "problem": "Systematic one-point difference: V4 gives S=1 and V5 gives S=2 on all five rows. V5's reasons conflict with clarification 18: rows 31 and 32 'default is continued insulin, moderate harm'; row 47 'delayed insulin start with ketoacidosis risk', although the SPIDDM definition (PMID 38184802, abstract checked) is non-ketotic at diagnosis with insulin started on glycaemic grounds; row 49 glucose-based monitoring continues regardless. V4 reads the clarification as written.",
+   "severity": "should fix",
+   "suggested_change": "Use V4's S=1 for rows 31, 32, 47 and 49. Row 7 is arguable (V4's own note: 2 if C-peptide were the only triage); keep 1 with a note."
+  },
+  {
+   "row": "31,47",
+   "dimension": "D4",
+   "problem": "D4=3 (standard laboratory test) for random and fasting C-peptide. The cited source (PMID 18420730, abstract checked) reports 15 laboratories, 9 methods, CVs from <2% to >18%, results that 'do not always agree', and that harmonisation needs calibration to a reference method. That fits anchor 2 (widely available but unstandardized). V3's step that disagreement matters little because the decision range is low is an inference not shown for the 80 and 600 pmol/L cutoffs, and no US platform data were retrieved.",
+   "severity": "should fix",
+   "suggested_change": "Score 2 for rows 31 and 47, or clarify the anchor (see anchor_rewrites). Evidence needed: agreement data on current US platforms at the cutoffs."
+  },
+  {
+   "row": 10,
+   "dimension": "path_to_viability",
+   "problem": "V2, V4 and V5 name 'Igls 2.0 with numeric thresholds' as the missing piece because Igls 2018 'gives no numeric threshold'. The full text (PMC5867272, grep checked) says the functional outcome should be associated with an increase from pretransplant C-peptide 'and which should be at least >0.5 ng/ml [>0.17 nmol/l]', and gives <0.3 (fasting) and <0.6 ng/mL (postprandial) as low levels of questionable significance. What is absent is an assay-specific, renal-adjusted threshold. Effort also differs between units (small, medium, small).",
+   "severity": "should fix",
+   "suggested_change": "State the piece as assay-specific, renal-adjusted thresholds validated on registry data (type evidence or guideline), one effort, and correct the 'no numeric threshold' statement."
+  },
+  {
+   "row": 47,
+   "dimension": "D7",
+   "problem": "The point 20,000 is not computed. The chain gives 2,400-36,000 identified per year (geometric midpoint about 9,000, bin 2); the step 'pool followed for several years raises the number' has no number. The support for the 10-25% antibody-recognition share (PMID 42138126, abstract checked) is a count of 28,206 people across a PRE and a POST window in one dataset, not 'in one year' and not a national rate.",
+   "severity": "should fix",
+   "suggested_change": "Show a computed point, or write bin 2 or 3, not determinable. Correct the description of the 28,206 figure in rows 47 and 49."
+  },
+  {
+   "row": 49,
+   "dimension": "D7",
+   "problem": "Components (1,000-5,000 new plus 1,500-10,000 monitored) sum to 2,500-15,000, but the stated range is 1,500-20,000 and the point 5,000 is below the component midpoint (about 8,750). The components are assumptions with no source.",
+   "severity": "should fix",
+   "suggested_change": "Reconcile the range with the components; keep bin 2 or 3."
+  },
+  {
+   "row": 6,
+   "dimension": "D7",
+   "problem": "Four of five chain links are assumptions (insulin-treated 25%, >3 years 85%, unclear type 12%, evaluated share 5%). The 12% anchor is from a UK study (PMID 27080317, abstract checked: 601 adults in Devon, Northamptonshire and Leicestershire; UK criteria classified 86% correctly against a UCPCR gold standard). The bin spans 2 to 4. V7 reports no US insulin-treated share found; I did not test whether one is retrievable. Scoring bin 3 as one integer hides this.",
+   "severity": "should fix",
+   "suggested_change": "Carry the range into the composite (bin 3, low; sensitivity 2-4), or retrieve a US insulin-use share before scoring."
+  },
+  {
+   "row": 5,
+   "dimension": "D7",
+   "problem": "Inputs check: the abstract of PMID 41966914 gives 12% (RYGB) and 5% (sleeve) needing medical attention and about 160,000 requiring medical management; the arithmetic (14,163; 8,500; 8,000; x1.5 = about 25,000) is correct. The same abstract says reported incidence runs from 0.1% to 75%, so a +/-50% band understates the uncertainty; the 60% measured, 5% retest and x1.5 are unsourced. The mixed-meal paper (PMID 34935944, abstract checked) measured glucose, not insulin.",
+   "severity": "note",
+   "suggested_change": "Keep bin 2 or 3, low confidence; do not describe the meal-test paper as insulin evidence."
+  },
+  {
+   "row": 13,
+   "dimension": "D7",
+   "problem": "Arithmetic (932,000 x 70% x 70% = about 457,000) and the TIA figure (at least 240,000, PMID 36655570, abstract checked) hold. Two of three shares are assumptions and the stroke figure (CDC page) was not re-opened by me. Bin 4 holds across the stated range, so medium confidence is acceptable, but the count is the eligible pool, not patients tested.",
+   "severity": "note",
+   "suggested_change": "Keep 4; label it as the eligible pool."
+  },
+  {
+   "row": 49,
+   "dimension": "D3",
+   "problem": "Teplizumab label (Amass RegulatoryCore, checked): first indication Stage 2 T1D, age 1 year and older, no C-peptide requirement; second indication under accelerated approval on reduced C-peptide decline. V1's reading is correct; D3=1 stands.",
+   "severity": "note",
+   "suggested_change": "None."
+  },
+  {
+   "row": 3,
+   "dimension": "D3",
+   "problem": "The abstract (PMID 19088155) supports D3=3: for hypoglycaemia without diabetes and suspected endogenous hyperinsulinism it recommends insulin, C-peptide, proinsulin, BOHB and circulating oral hypoglycaemic agents during an episode. It is 17 years old and read at abstract level; the discriminating test is the drug screen, so 3 is for the panel (clarification 5).",
+   "severity": "note",
+   "suggested_change": "Keep 3 with that scope note, or apply clarification 14 and score 2."
+  },
+  {
+   "row": "all",
+   "dimension": "PV",
+   "problem": "Path-to-viability entries differ by unit for the same row: row 3 (V2 evidence/medium, V4 workflow/small, V5 assay/small), row 4 (evidence/medium, assay/medium, assay/small), row 49 (small, medium, large), row 47 (evidence/medium, guideline/small, guideline/medium). Rows 3 and 4 name an accuracy study of insulin and C-peptide although D8=1 says the limiting piece is the other marker or the drug screen. Row 31's piece (withdrawal study with safety outcomes) is specific and supported. Row 49's small effort (incremental analysis in existing TrialNet data) is plausible but data access was not checked; V5's large (outcome trial) is a different piece. V1, V3 and V7 gave no PV.",
+   "severity": "should fix",
+   "suggested_change": "One entry per row: single piece, type, effort, source. Row 3: broad rapid secretagogue screen (assay or workflow). Row 4: higher-sensitivity paediatric insulin assay or an accuracy study of the bundle. Row 49: two steps in order (incremental analysis small, then monitoring trial large)."
+  },
+  {
+   "row": "all",
+   "dimension": "method",
+   "problem": "Scholar Sidekick verifyCitation and checkRetraction could not be used (verifyCitation: not subscribed; later calls: too many requests). No retraction check was completed. Identifiers were checked against PubMed records from tools/watch_fetch.py (title, DOI, abstract), which does not test retraction. V4 and V5 ran no searches and took read levels as recorded; V2 and V3 read abstracts only. PMID 34593612 (ADA/EASD Diabetes Care copy, cited by V2) was not checked.",
+   "severity": "note",
+   "suggested_change": "Run retraction checks on load-bearing papers (17130187, 38184802, 29528967, 41358893) when the service is available."
+  }
+ ],
+ "anchor_rewrites": [
+  {
+   "clarification": "3 and 21 (bin X or Y)",
+   "problem": "Rule 21 asks for 'bin 3 or 4' but the JSON score is one integer; each unit scored the point-estimate bin and wrote the alternative in text, so the composite cannot see the range.",
+   "rewrite": "D7: give score (bin of the point estimate) plus score_low and score_high (bins of the range ends). If score_high minus score_low is 2 or more, or the bin-deciding share has no source, confidence is low and the composite is run at the point bin and at the low and high bins."
+  },
+  {
+   "clarification": "1 and 21 (share of existing pool)",
+   "problem": "Chains for rows 31, 47, 49, 10 and 6 multiply a pool by an unsourced yearly share, so the bin is set by an assumption.",
+   "rewrite": "D7 chains: the bin-deciding share needs a source, or two sources giving a low and a high value. If none exists, record 'not determinable, plausible bins X to Y' and do not use the score in the composite without a sensitivity run."
+  },
+  {
+   "clarification": "2 and 4 (population versus situation)",
+   "problem": "Row 3 counted sulfonylurea users with diabetes although the guideline population is hypoglycaemia without diabetes; row 13's narrowest population (IR-positive) is known only after the test.",
+   "rewrite": "D7: the denominator is the population named in the guideline or study that applies the test. Where the test itself defines the population, count the people eligible to be tested and give the test-positive subset as a note."
+  },
+  {
+   "clarification": "13 and 15 (D3 and D1 'required')",
+   "problem": "Row 31: the ADA text says 'must be measured' (D3=4) while D1 stayed 3; row 32 on the same sentence got D3=2.",
+   "rewrite": "D1 and D3 of one use case use the same named decision and the same text. If a current guideline in the scoring country says the test must be done before the decision, D3=4 and D1=4, unless other tests can substitute, in which case D1=3 and the reason is recorded. The decision is named once per row in the unit file."
+  },
+  {
+   "clarification": "14 (broader population)",
+   "problem": "Applied differently to rows 31, 32 and 3.",
+   "rewrite": "D3: if the guideline text names the use-case population or the decision (for example insulin withdrawal after DKA), the text is explicit and scores 3 or 4. Score 2 only when the use-case group is covered solely by a general statement about a larger group that does not mention the decision."
+  },
+  {
+   "clarification": "19 (D8)",
+   "problem": "Rows 7 and 32 scored 3 without data separating the measure from its alternatives (C-peptide merged with antibodies; outcome defined by C-peptide).",
+   "rewrite": "D8: 3 requires a comparison in which the measure is added to the named alternatives and the outcome is not defined by the measure. Combined-biomarker or circular-outcome data score at most 2 for the measure."
+  },
+  {
+   "clarification": "D2 anchors 2 and 3",
+   "problem": "Row 10 (prediction plus consensus) and rows 3 and 4 (guideline for a bundle) have no rule for when validation against outcomes counts as decision evidence.",
+   "rewrite": "D2: 3 needs consensus or guideline text for the decision plus studies on the measure itself; for a bundle score the measure's share of the evidence. Prediction of outcomes without a test of the decision is 2."
+  },
+  {
+   "clarification": "18 (stakes)",
+   "problem": "V4 and V5 differ by one point on five rows; both give 3 for rows 3 and 4 although D8=1.",
+   "rewrite": "S: score the harm when this measurement alone is missing and the other tests listed in the use case are available. For a bundle, score the measurement and write the bundle value in a note. Do not use the severity of the disease."
+  },
+  {
+   "clarification": "20 and D4 anchors 2 and 3",
+   "problem": "'Standard laboratory test' (3) and 'widely available but unstandardized' (2) both fit C-peptide (rows 31, 47); the anchor also mixes in timed protocol (V3).",
+   "rewrite": "D4: 3 = standard test whose result is harmonised or traceable at the decision cutoff on current US platforms; 2 = widely available but results differ by method at the cutoff, or no US platform data. Timed or stimulated protocols are scored in D5."
+  },
+  {
+   "clarification": "12 versus the US setting",
+   "problem": "Row 47 D1=3 under national criteria elsewhere while the US effect is small and D3=1.",
+   "rewrite": "D1: national criteria elsewhere score 3 only if a US or international body uses them; otherwise 2, with the national reading in a note."
+  },
+  {
+   "clarification": "17 (D6)",
+   "problem": "Row 4 D6 differs (1 vs 2) on whether a missed hyperinsulinism diagnosis is serious; row 10 differs (2 vs 3) on whether other criteria correct a wrong C-peptide.",
+   "rewrite": "D6: score the false-result consequence of the measurement as ordered, with no credit for later tests unless the guideline requires them; a delay that can cause brain injury is 0 or 1."
+  },
+  {
+   "clarification": "PV rule",
+   "problem": "PV type and effort differ by unit for the same row.",
+   "rewrite": "PV: one entry per row from one unit naming the single piece that moves the row to the next tier; type from evidence, assay, guideline, workflow; effort small (existing data, months), medium (prospective study), large (randomised trial). If two steps are needed, list them in order."
+  }
+ ],
+ "verdict": "The eight rows rest on real sources: about 27 PMIDs, two PMC texts and the FDA label were checked, and every title, DOI and quoted number I tested matched (retraction checks could not be run). The set is not ready to merge. Seven findings are must fix: conflicts between units on the same decision (row 31 D1 versus D3, row 32 versus row 31 on D3, row 31 D2 for classification versus withdrawal), two D8 scores of 3 (rows 7 and 32) that the cited abstracts do not support, a row 3 D7 built on the wrong population, and a row 31 D7 whose pool is misused and disagrees with row 6. Stakes are inflated for rows 3 and 4, and V5's S runs one point above V4's on five rows. No V4/V5 difference exceeds one point. V7's chains carry sources or assumption labels as clarification 21 requires and the arithmetic is right, but row 6 is only determinable as bins 2 to 4. After the fixes, rows 31, 4 and 10 remain the better-supported uses; none of the eight has outcome evidence that measurement-guided management improves outcomes."
+}
