@@ -30,6 +30,8 @@ The current state and the next step, written by hand at the end of a working ses
 - The session-start brief and the in-repo memory rule were both verified in a new session on 2026-10-19; nothing is pending there.
 - Then, as the user chooses: specialty reviews (cardiology first), summary editor, claim ledger build, update-watch dry run.
 
+- **Cloud (2026-10-23, drafted, uncommitted):** the project is being made runnable in Claude Code and in Claude cloud sessions alike; read `CLOUD-SETUP.md`, run `python3 tools/cloud_check.py` on the first cloud checkout, and note which side last held the queue (`scoring_queue.py claim`). Cloud runner prompts are not written yet; desktop schedules stay paused.
+
 ## Waiting on the user
 - Whether to move the hook from `.claude/settings.local.json` to the shared `settings.json`. (The local file is now tracked in git, so this matters less.)
 - Whether to supply PDFs for the 20-30 load-bearing papers that were read only at abstract level (user said not yet).
