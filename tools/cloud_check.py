@@ -201,6 +201,8 @@ def main():
             fn()
         except Exception as e:  # a check must never stop the others
             add("FAIL", fn.__name__, str(e)[:120])
+    if BRIEF:  # items that cannot be judged from a script are not counted or shown in the brief
+        RESULTS[:] = [r for r in RESULTS if not r[1].startswith(("Session-start hook", "CLAUDE_PROJECT_DIR"))]
     n = {k: sum(1 for r in RESULTS if r[0] == k) for k in ("PASS", "WARN", "FAIL")}
     for lvl, name, detail, fix in RESULTS:
         if BRIEF and lvl == "PASS":

@@ -9,6 +9,7 @@ Read-only: it reads git state, HANDOFF.md, CHANGELOG.md and update-watch/PENDING
 writes nothing. Standard library only. Keeps the brief under MAX_LINES lines.
 """
 import json
+import os
 import pathlib
 import re
 import subprocess
@@ -152,11 +153,13 @@ def main():
         "  deliverables; log every change in CHANGELOG.md; commit and push only when the user asks.",
     ]
 
+    env_lines = []
     try:  # environment check: silent if a recent one passed on this platform, otherwise a short report
         r = subprocess.run([sys.executable, str(ROOT / "tools" / "cloud_check.py"), "--brief"], capture_output=True, text=True,
                            timeout=90, cwd=str(ROOT))
         if r.stdout.strip():
-            brief = brief[:1] + [l for l in r.stdout.strip().splitlines()] + brief[1:]
+            env_lines = r.stdout.strip().splitlines()
+            brief = brief[:1] + env_lines + brief[1:]
     except Exception:
         pass
 
@@ -166,7 +169,17 @@ def main():
         sys.stdout.reconfigure(encoding="utf-8")
     except Exception:
         pass
-    print("\n".join(brief))
+    text = "\n".join(brief)
+    # Screen message for the user (systemMessage) plus the full brief for the session (additionalContext).
+    where = "cloud" if os.environ.get("CLAUDE_CODE_REMOTE") else "local"
+    problems = [l for l in env_lines if l.startswith(("[WARN]", "[FAIL]"))]
+    summary = next((l for l in env_lines if l.startswith("Environment check")), "environment check: passed recently")
+    queue = " ".join(next((l for l in brief if l.startswith("Scoring queue")), "").split()[:3])
+    msg = f"IR project ({where}); {summary.split(';')[0].replace(f' ({where})', '')[0].lower() + summary.split(';')[0].replace(f' ({where})', '')[1:]}." + (f" {len(problems)} problem(s) shown in the brief." if problems else "")
+    if queue:
+        msg += f" {queue}."
+    msg += ' Send "status" for the summary.'
+    print(json.dumps({"systemMessage": msg, "hookSpecificOutput": {"hookEventName": "SessionStart", "additionalContext": text}}))
 
 
 if __name__ == "__main__":
