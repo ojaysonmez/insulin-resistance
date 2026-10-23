@@ -8,9 +8,9 @@ Tiers (D-39): A composite 0.60 or more, B 0.50 to 0.59, C 0.40 to 0.49, D below 
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | 1 | 6 | routine care, specialist outpatient | 0.83 | 0.81 | 0.60 | 0.50 | 0.705 | A | yes | - | Prospective cohort or registry of insulin-treated people reclassified by a standardised random C-peptide threshold, reporting treatment switch, HbA1c, hypoglycaemia and ketoacidosis outcomes against matched non-tested patients, with agreed assay harmonisation. (evidence, medium); A cross-platform check on US-marketed C-peptide assays at the 200 and 600 pmol/L decision thresholds, with recalibration to a commutable reference material, so classification does not depend on the assay. (assay, small); One agreed C-peptide cut-off set and conditions of use (time since diagnosis, renal function, concurrent glucose) in a single US guideline, with outcome validation of insulin-withdrawal decisions (guideline, medium) |
 | 2 | 1 | specialist outpatient | 0.67 | 0.56 | 0.60 | 0.75 | 0.651 | A | yes | - | Prospective diagnostic-accuracy validation of the insulin, C-peptide and proinsulin thresholds on current US-marketed assays and an updated guideline (current one is from 2009). (evidence, medium); A prospective accuracy study with a standard assay-specific cutoff set (current insulin and C-peptide immunoassays) in consecutive patients with Whipple's triad. (evidence, medium) |
-| 3 | 31 | routine care, specialist outpatient | 0.67 | 0.75 | 0.60 | 0.25 | 0.579 | B | no | - | Prospective study or trial of C-peptide-guided insulin de-escalation in adults with doubtful type, reporting glycaemic control and ketoacidosis safety, with a harmonised random C-peptide cutoff by concurrent glucose. (evidence, medium); A prospective study of C-peptide-guided insulin withdrawal or de-escalation in adults of doubtful type, with safety outcomes and a stated cutoff and timing. (evidence, medium); Prospective validation of a C-peptide threshold (with glucose, duration and antibody status) for safe insulin withdrawal in doubtful-type adult diabetes. (evidence, medium) |
-| 4 | 7 | specialist outpatient | 0.67 | 0.56 | 0.60 | 0.38 | 0.576 | B | yes | - | External validation of C-peptide or UCPCR thresholds in a US multiethnic population plus a prospective pathway study of genetic-test yield and treatment change versus clinical criteria alone. (evidence, medium); External validation of C-peptide/UCPCR in a US multi-ethnic triage cohort, with the test's added yield over antibodies and age/BMI criteria. (evidence, medium); External validation of a UCPCR or C-peptide pathway with better positive predictive value (20% quoted) and a US-available assay and collection protocol. (assay, medium) |
-| 5 | 2 | specialist outpatient | 0.58 | 0.56 | 0.40 | 0.75 | 0.568 | B | no | - | Insulin assay (or companion test) that detects insulin analogues so that low insulin plus low C-peptide can exclude exogenous analogue use, with published accuracy of the high-insulin/low-C-peptide pattern. (assay, medium); Report analogue cross-reactivity per assay with a validated cutoff pattern, and a cohort accuracy study of insulin plus C-peptide against drug screen or LC-MS/MS. (assay, medium) |
+| 3 | 31 | routine care, specialist outpatient | 0.75 | 0.75 | 0.60 | 0.25 | 0.613 | A | yes | - | Prospective study or trial of C-peptide-guided insulin de-escalation in adults with doubtful type, reporting glycaemic control and ketoacidosis safety, with a harmonised random C-peptide cutoff by concurrent glucose. (evidence, medium); A prospective study of C-peptide-guided insulin withdrawal or de-escalation in adults of doubtful type, with safety outcomes and a stated cutoff and timing. (evidence, medium); Prospective validation of a C-peptide threshold (with glucose, duration and antibody status) for safe insulin withdrawal in doubtful-type adult diabetes. (evidence, medium) |
+| 4 | 2 | specialist outpatient | 0.58 | 0.56 | 0.40 | 0.75 | 0.568 | B | no | - | Insulin assay (or companion test) that detects insulin analogues so that low insulin plus low C-peptide can exclude exogenous analogue use, with published accuracy of the high-insulin/low-C-peptide pattern. (assay, medium); Report analogue cross-reactivity per assay with a validated cutoff pattern, and a cohort accuracy study of insulin plus C-peptide against drug screen or LC-MS/MS. (assay, medium) |
+| 5 | 7 | specialist outpatient | 0.67 | 0.62 | 0.60 | 0.25 | 0.560 | B | no | - | External validation of C-peptide or UCPCR thresholds in a US multiethnic population plus a prospective pathway study of genetic-test yield and treatment change versus clinical criteria alone. (evidence, medium); External validation of C-peptide/UCPCR in a US multi-ethnic triage cohort, with the test's added yield over antibodies and age/BMI criteria. (evidence, medium); External validation of a UCPCR or C-peptide pathway with better positive predictive value (20% quoted) and a US-available assay and collection protocol. (assay, medium) |
 | 6 | 10 | specialist outpatient | 0.67 | 0.59 | 0.40 | 0.50 | 0.556 | B | no | - | Igls 2.0 consensus with numeric, assay-specified C-peptide thresholds and CITR-based validation of incremental value over HbA1c, insulin dose and CGM. (guideline, small); A published Igls 2.0 revision with numeric C-peptide thresholds and handling of renal function. (guideline, medium); A published Igls 2.0-type document with explicit C-peptide thresholds by assay, and adjustment for kidney function. (guideline, small) |
 | 7 | 24 | specialist outpatient | 0.67 | 0.56 | 0.20 | 0.75 | 0.551 | B | no | - | Paediatric-specific insulin/C-peptide/BOHB thresholds separating insulinoma from congenital HI and other acquired HI, validated beyond one centre. (evidence, medium); A paediatric series of insulin and C-peptide at hypoglycaemia in children over 2 years with confirmed insulinoma or MEN1, with age-specific cutoffs. (evidence, medium) |
 | 8 | 47 | specialist outpatient | 0.58 | 0.56 | 0.60 | 0.38 | 0.543 | B | no | - | Validation of the 0.6 ng/mL fasting C-peptide criterion against clinical insulin dependence outside Japan, and adoption of the entity by a US or international body. (evidence, medium); Adoption of the criteria, or an equivalent C-peptide threshold, by a US or international body, with evidence that the label changes treatment. (guideline, small); Adoption or validation of the fasting C-peptide threshold by a US or international body in non-Japanese cohorts. (guideline, medium) |
@@ -47,21 +47,21 @@ Tiers (D-39): A composite 0.60 or more, B 0.50 to 0.59, C 0.40 to 0.49, D below 
 | Row | default | equal | utility-heavy | need-heavy |
 |---|---|---|---|---|
 | 6 | 1 | 1 | 1 | 2 |
-| 1 | 2 | 2 | 2 | 1 |
-| 31 | 3 | 4 | 3 | 13 |
-| 7 | 4 | 6 | 4 | 7 |
-| 2 | 5 | 3 | 9 | 5 |
-| 10 | 6 | 9 | 5 | 17 |
-| 24 | 7 | 8 | 6 | 19 |
+| 1 | 2 | 2 | 3 | 1 |
+| 31 | 3 | 3 | 2 | 7 |
+| 2 | 4 | 4 | 9 | 5 |
+| 7 | 5 | 10 | 4 | 16 |
+| 10 | 6 | 8 | 5 | 17 |
+| 24 | 7 | 7 | 6 | 19 |
 | 47 | 8 | 11 | 10 | 12 |
 | 32 | 9 | 17 | 8 | 18 |
 | 5 | 10 | 5 | 17 | 3 |
 | 29 | 11 | 15 | 7 | 21 |
-| 4 | 12 | 7 | 11 | 8 |
-| 20 | 13 | 10 | 12 | 9 |
+| 4 | 12 | 6 | 11 | 8 |
+| 20 | 13 | 9 | 12 | 9 |
 | 21 | 14 | 12 | 13 | 10 |
-| 12 | 15 | 16 | 15 | 14 |
-| 3 | 16 | 13 | 19 | 15 |
+| 12 | 15 | 16 | 15 | 13 |
+| 3 | 16 | 13 | 19 | 14 |
 | 13 | 17 | 19 | 21 | 11 |
 | 35 | 18 | 14 | 25 | 4 |
 | 33 | 19 | 20 | 16 | 23 |
@@ -72,7 +72,7 @@ Tiers (D-39): A composite 0.60 or more, B 0.50 to 0.59, C 0.40 to 0.49, D below 
 | 46 | 24 | 26 | 20 | 28 |
 | 25 | 25 | 27 | 22 | 26 |
 | 11 | 26 | 25 | 26 | 24 |
-| 45 | 27 | 21 | 31 | 16 |
+| 45 | 27 | 21 | 31 | 15 |
 | 49 | 28 | 28 | 24 | 27 |
 | 8 | 29 | 30 | 18 | 31 |
 | 9 | 30 | 29 | 29 | 29 |
@@ -88,10 +88,10 @@ Rows whose D7 rests on an assumed share: the default-weight rank if D7 took the 
 | 5 | 10 | 3 | 2 | 0.482 | 18 |
 | 6 | 1 | 3 | 2 | 0.655 | 1 |
 | 6 | 1 | 3 | 4 | 0.755 | 1 |
-| 7 | 4 | 3 | 2 | 0.526 | 12 |
-| 21 | 14 | 2 | 3 | 0.566 | 6 |
-| 29 | 11 | 2 | 3 | 0.581 | 3 |
-| 31 | 3 | 3 | 4 | 0.629 | 3 |
+| 7 | 5 | 3 | 2 | 0.510 | 14 |
+| 21 | 14 | 2 | 3 | 0.566 | 5 |
+| 29 | 11 | 2 | 3 | 0.581 | 4 |
+| 31 | 3 | 3 | 4 | 0.663 | 2 |
 | 47 | 8 | 3 | 2 | 0.493 | 15 |
 | 49 | 28 | 2 | 3 | 0.448 | 22 |
 

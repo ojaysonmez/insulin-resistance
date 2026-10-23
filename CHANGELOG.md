@@ -173,6 +173,8 @@ Format: date, time (if known), what changed, why.
 
 - Skeptic pass on the stage 3 dossiers and the 13 wording edits (`reviews/skeptic-stage3-2026-10-23.md`): 6 edits accepted, 7 revised and applied (README lines 16 and 51; `merged-conclusion.md` pioglitazone, ITT-IR, searcher-negative, Mendelian randomisation, pregnancy lines; CTRI registry-negative note). Score changes (row 7 S and D3, rows 6/31 alignment), the Holt figure fix, the row 7 "PPV 20%" re-source and the Bottom line 2 figures await the user's decision.
 
+- Stage 3 outcome applied (D-42): row 7 S and D3, row 31 D1 (originals kept); Holt 6.8% and row 7 PPV/"3 years" text fixes in `usecases-verified.md`; Bottom line 2 per-measure figures and scope note in `merged-conclusion.md`; ranking and scorecard regenerated (12 tests pass). Row 31 back in tier A (0.613).
+
 ## Not yet run or done
 - Specialty reviewers (cardiology first, then others as chosen) and a skeptic on their findings; then the summary editor.
 - Use-case scoring: the pilot on rows 6, 5 and 13 (needs searching for US commonality), then scoring of about 30 candidates (`usecases/scoring-rubric.md`; all rubric decisions are settled, nothing is scored).
