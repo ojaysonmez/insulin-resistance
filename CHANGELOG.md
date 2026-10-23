@@ -158,10 +158,16 @@ Format: date, time (if known), what changed, why.
 - Role files were not registered as agent types in the session where they were written; early runs used `general-purpose` agents told to read the role file. They appear as agent types after a restart.
 - Coverage and reimbursement are out of scope for every role.
 
+## 2026-10-23 (cloud session, main): ranking review
+
+- Reviewed `usecases/scoring/ranking.md`; no score changed. Added a Tier column (A/B/C/D by composite) to `tools/scoring_aggregate.py` and regenerated the ranking (12 tests pass). Decision D-39.
+- Drafted anchor clarifications 25 to 29 in `usecases/scoring-rubric.md` and adopted by the user the same day (no rescoring yet).
+- Wrote `reviews/deferred-wording-2026-10-23.md`: proposed relabel of rows 17, 35, 45 as "Not evaluated" (with count effects) and the WBISI/Matsuda check (same index by definition per Matsuda 1999 abstract; Hani 2024 formula not seen). Deliverables not edited; skeptic review first.
+
 ## Not yet run or done
 - Specialty reviewers (cardiology first, then others as chosen) and a skeptic on their findings; then the summary editor.
 - Use-case scoring: the pilot on rows 6, 5 and 13 (needs searching for US commonality), then scoring of about 30 candidates (`usecases/scoring-rubric.md`; all rubric decisions are settled, nothing is scored).
 - Claim ledger build (design in `update-system/CLAIM-LEDGER.md`; `claims.csv` is empty).
 - Update system: dry run and scheduling test (`update-system/UPDATE-PLAN.md`); the citation script has been run and fixed, and a pre-commit check is not written.
-- Deferred wording items from the scope review: about ten remaining generic "IR" statements, relabelling use-case rows 17, 35 and 45, and a check of whether WBISI is the Matsuda index.
+- Deferred wording items from the scope review: about ten remaining generic "IR" statements; rows 17, 35, 45 relabel and the WBISI check are written up as a proposal (`reviews/deferred-wording-2026-10-23.md`), skeptic review and edit still to do.
 - Proposed, not drafted: full-text reader helper, formal appraisal tools (PROBAST, QUADAS-2, GRADE) for the biostatistician, a negative-claim protocol, analysts starting from the searcher's evidence set, a stopping rule.
