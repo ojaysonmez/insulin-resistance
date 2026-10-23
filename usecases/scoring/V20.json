@@ -71,7 +71,7 @@
   {
    "row": 8,
    "dimension": "D3",
-   "score": 3,
+   "score": 2,
    "reason": "Measure: stimulated C-peptide (MMTT). The 2026 TZIELD US label (BLA 761183, supplement 010) carries an accelerated-approval indication for recently diagnosed Stage 3 T1D 'based on evidence of reduced C-peptide decline', with a primary trial endpoint of C-peptide AUC change, and requires peak C-peptide of 0.2 pmol/mL or more on MMTT for selection. That is regulatory acceptance as a surrogate (accelerated approval), but the C-peptide briefing (C-Path 2025) says no FDA guidance yet qualifies it for traditional approval, and the 2023 FDA draft endpoints guidance excluded early-stage T1D. So 3, not 4.",
    "sources": [
     "FDA label https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761183s010lbls014lbl.pdf (excerpts read through web fetch, not the whole label)",
@@ -80,7 +80,9 @@
     "PMID 38663372 DOI 10.1159/000538775 abstract (Pediatric Endocrine Society teplizumab statement)"
    ],
    "confidence": "medium",
-   "origin": "new search"
+   "origin": "new search",
+   "original_score": 3,
+   "correction": "2026-10-23, main session, after skeptic V25: the label C-peptide requirement is for selecting Stage 3 patients, which is row 29; for the trial-endpoint use no US guideline recommends the test (ADA workshop = consensus)"
   },
   {
    "row": 11,
@@ -124,13 +126,15 @@
   {
    "row": 27,
    "dimension": "D3",
-   "score": 3,
+   "score": 2,
    "reason": "Measure: beta-cell reserve assessment (test not specified in the text I read). PancreasFest 2012 consensus (US meeting; Pancreatology) Guidance Statement 2.4: 'assessment of pancreatic endocrine reserve, and importantly that of functional beta-cell mass, should be performed as part of the evaluation and follow-up for TPIAT.' This recommends the assessment in the TPIAT population explicitly, but names no assay (MMTT C-peptide is one option) and is not a society guideline, so 3 not 4. Alternative 2 if the unnamed test is judged not to cover C-peptide.",
    "sources": [
     "PMID 23890130 DOI 10.1016/j.pan.2013.05.002 abstract (statement 2.4 quoted via PubMed page)"
    ],
    "confidence": "medium",
-   "origin": "new search"
+   "origin": "new search",
+   "original_score": 3,
+   "correction": "2026-10-23, main session, after skeptic V25: the consensus statement names no assay (rules 5 and 14)"
   },
   {
    "row": 45,

@@ -43,6 +43,18 @@
     2
    ],
    "source": "V7.json"
+  },
+  "29": {
+   "alt_scores": [
+    3
+   ],
+   "source": "V8.json (correction note)"
+  },
+  "21": {
+   "alt_scores": [
+    3
+   ],
+   "source": "V14.json (correction note)"
   }
  }
 }

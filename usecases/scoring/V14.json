@@ -42,13 +42,15 @@
   {
    "row": 9,
    "dimension": "D3",
-   "score": 3,
+   "score": 2,
    "reason": "PancreasFest 2012 consensus (US): 'Assessment of pancreatic endocrine reserve, and importantly that of functional beta-cell mass, should be performed as part of the evaluation and followup for TPIAT', estimated from serum C-peptide during OGTT or mixed-meal test. A consensus recommendation in the specific population, so 3; not 4 because it is a consensus with 58 percent top agreement and no label or guideline requires it. It does not recommend C-peptide for diagnosing type 3c diabetes in general (that is glucose-based). Measure: C-peptide, post-load or mixed-meal.",
    "sources": [
     "PMID 23890130 DOI 10.1016/j.pan.2013.05.002 full text (PMC3830751, keyword windows)"
    ],
    "confidence": "medium",
-   "origin": "both"
+   "origin": "both",
+   "original_score": 3,
+   "correction": "2026-10-23, main session, after skeptic V19: PancreasFest statement 2.4 names endocrine reserve, not C-peptide (rule 5 = 2); agreement figure belongs to a different statement"
   },
   {
    "row": 28,
@@ -101,14 +103,16 @@
   {
    "row": 21,
    "dimension": "D7",
-   "score": 3,
+   "score": 2,
    "reason": "Situation (clarification 4): adults without diabetes drugs worked up for spontaneous hypoglycaemia in whom insulin and C-peptide come back suppressed. Hypoglycaemia in non-diabetic admissions 36 per 10,000 admissions (StatPearls summarising one retrospective review of 38,898 admissions, secondary source); about 33 million US admissions [recall, no source retrieved] gives roughly 120,000 episodes; share with a formal insulin and C-peptide work-up and suppressed result about 8 percent [assumption, range 3 to 20 percent]. Point estimate about 10,000 (range 3,000 to 25,000). Alternative bin 2 if the share is below 8 percent. NICTH itself is far rarer (solitary fibrous tumour 2.8 per 100,000, about 5 to 10 percent with hypoglycaemia, PMID 34413033, abstract). Measure: insulin plus C-peptide (fasting or during symptoms). Confidence low: boundary estimate and a recall input.",
    "sources": [
     "StatPearls Non-Diabetic Hypoglycemia https://www.ncbi.nlm.nih.gov/books/NBK573079 excerpt",
     "PMID 34413033 DOI 10.1136/bcr-2021-242447 abstract"
    ],
    "confidence": "low",
-   "origin": "new search"
+   "origin": "new search",
+   "original_score": 3,
+   "correction": "2026-10-23, main session, after skeptic V19: the chain gives about 9,500 per year (bin 2); the 33 million admissions figure is recalled; alternative bin 3, confidence low"
   },
   {
    "row": 21,
