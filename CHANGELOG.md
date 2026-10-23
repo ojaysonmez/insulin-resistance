@@ -177,6 +177,8 @@ Format: date, time (if known), what changed, why.
 
 - Open items closed (2026-10-23, user: close the open items; D-43): row 6 S aligned at 1; row 1 grade wording fixed in `usecases-verified.md` and noted in V9; `summary.md` section 1b lists the three top pathways; ranking, scorecard regenerated (12 tests pass). Not closed (need agents, data or your input): specialty reviewers, claim ledger, update watch scheduling, PDFs for abstract-only papers.
 
+- Pathway 1 plan drafted (2026-10-23, user: plan + open full texts): `usecases/scoring/pathways/pathway-1-plan.md` and a DOCX copy (rows 6 and 31: US assay harmonisation, then a multi-site cohort with a step-down rule). Open-full-text retrieval for the abstract-only papers started as a background evidence-searcher run (texts to git-ignored `corpus/fulltext/`, log to `corpus/fulltext-attempt-2026-10-23.md`).
+
 ## Not yet run or done
 - Specialty reviewers (cardiology first, then others as chosen) and a skeptic on their findings; then the summary editor.
 - Use-case scoring: the pilot on rows 6, 5 and 13 (needs searching for US commonality), then scoring of about 30 candidates (`usecases/scoring-rubric.md`; all rubric decisions are settled, nothing is scored).
