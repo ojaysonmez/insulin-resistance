@@ -1,3 +1,4 @@
 date	window	records	candidates	entries	urgent	subagent_tokens	subagent_tool_uses	subagent_ms	errors
 2026-10-20	auto (2026-10-18 to 2026-10-20)	4	1	0	YES	35032	4	34343	none
 2026-10-22	3 days (2026-10-19 to 2026-10-22)	7	3	1	no	37725	4	35864	none
+2026-10-24	auto (2026-10-22 to 2026-10-24; manual run in cloud session)	15	8	0	no	41426	4	54096	none (registry stale: NCT05760339)

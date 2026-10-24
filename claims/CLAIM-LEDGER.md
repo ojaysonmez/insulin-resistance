@@ -2,7 +2,7 @@
 
 > Paths: this file lives in `claims/`. The deliverables (`merged-conclusion.md`, `usecases-verified.md`) are in the project root; reviews are in `reviews/`; reports in `analysis/` and `usecases/`. Other files named here without a folder are in `claims/`.
 
-Status: DESIGN written 2026-10-19. No ledger rows exist yet; `claims.csv` has only the header. Nothing here has been run.
+Status: version 1 built 2026-10-24 (D-46): `claims.csv` holds the rows extracted from `merged-conclusion.md` and `usecases-verified.md` by two file-only agents (`claims/build/`), corrected after a skeptic sample (`reviews/skeptic-ledger-2026-10-24.md`). Known v1 limits: absence rows carry no search-string log (marked 'search log not recorded in the deliverable'); the ID-consistency script in Open points is not written.
 
 ## Why
 Most corrections the skeptics made to `merged-conclusion.md` came from claims being copied from reports into the merged file with caveats lost (ATTICA filed as "small or no gain", PERSON called "matched", the presurgical metformin 0.07 treated as a replication, MA.32's 72 unadjusted tests dropped, the Rosli within-kit RSD read as between-kit disagreement, stale "single-source" tags). A ledger keeps each claim, its source, its read level and its caveats in one place, so the merged conclusion and the summary can be built from and checked against it. For the update system (`UPDATE-PLAN.md`) it also gives the weekly watch something specific to compare new evidence against.
@@ -38,6 +38,13 @@ One row per claim in `claims.csv` (plain CSV, one header row). It is the project
 5. **Status changes only through the gate** in `UPDATE-PLAN.md` (triage, then a skeptic review) and get a CHANGELOG entry. The weekly watch never edits the ledger; it proposes changes in `PENDING.md` that name claim IDs.
 6. **Confidence figures are rows too** (`CONF-xx`), with what they are a judgement of and whose figure it is (for example the skeptics' 80-85% for bottom line 1), so the same number cannot be attached to two different quantities.
 7. **Citation check.** Before a ledger release, run `check_citations.py` over the readable files and the ledger's `source_ids`; fix flags before reviewers see it.
+
+## Status rule (written 2026-10-24, from the skeptic sample)
+- `supported`: the deliverable states the claim without a limiting qualifier. For a use-case row the status grades the deliverable's verdict, not the use: a plain "Unsupported" or "Research-only" row can be `supported` (the verdict is supported), which is not support for the use.
+- `qualified`: the deliverable attaches a limiter (abstract, excerpt or scan level, small n, single source, labelled inference, no identifier in the file, a resolved conflict, pending re-review, or a file-level "not re-verified" caveat). All absence claims are `qualified`.
+- `unverified`: recall, title-only or unretrieved sources, or a Not evaluated use-case row.
+- `disputed`: the deliverable rejects the claim, or two sources disagree and the main session has not resolved it.
+- `superseded`: replaced by a later row or decision.
 
 ## How it is used
 - **Merge:** the main session edits ledger rows, then updates the readable view; a skeptic compares the view to the ledger, not just to the reports.

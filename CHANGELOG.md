@@ -189,10 +189,18 @@ Format: date, time (if known), what changed, why.
 
 - `summary.md` prose rewritten (2026-10-24) from the summary-editor draft (file-only run; the agent could not write files, so the main session saved it): pathways, specialty findings, 50-row counts, per-measure figures; the row 1 study size is now cited to `usecases/scoring/dossiers/row-01.md`; scorecard block unchanged.
 
+- Row 7 untraced "PPV 20%" removed from the unit files V5 and S4 (path to viability and basis), with a correction note; ranking and scorecard regenerated (2026-10-24).
+
+- Row 50 scored (2026-10-24): units V26 (evidence searcher: D2 1, D3 1, D7 4, D8 1; 4 searches) and V27 (endocrinologist: D1 2, D4 2, D5 3, D6 3, S 1; no searches). Composite 0.468, tier C, weak-evidence flag; the two units disagree on the setting tag (routine care vs specialist outpatient), both shown. Ranking and scorecard regenerated (32 rows ranked).
+
+- Update watch run by hand (2026-10-24, cloud session): citation check (only the known DiaPep277 retraction), `watch_fetch.py --days auto` (15 new records, no registry changes, NCT05760339 stale), triage (8 candidates, 0 entries, no signals, not urgent; `update-watch/runs/2026-10-24-triage.md`); usage logged.
+
+- Claim ledger v1 built (2026-10-24, D-46): 386 rows in `claims/claims.csv`, build files in `claims/build/`, skeptic sample `reviews/skeptic-ledger-2026-10-24.md` and its corrections applied, 222 DOIs filled, status rule in `claims/CLAIM-LEDGER.md`; six wording fixes in `merged-conclusion.md` and `usecases-verified.md`.
+
 ## Not yet run or done
 - Specialty reviewers: done for all six specialties (D-44, D-45). Still to do: the summary editor pass on `summary.md`, and scoring row 50 if wanted.
 - Use-case scoring: the pilot on rows 6, 5 and 13 (needs searching for US commonality), then scoring of about 30 candidates (`usecases/scoring-rubric.md`; all rubric decisions are settled, nothing is scored).
-- Claim ledger build (design in `update-system/CLAIM-LEDGER.md`; `claims.csv` is empty).
+- Claim ledger: v1 built (D-46). Still to do: search-string logs for absence rows; a script checking that claim IDs and ledger sources match the readable files.
 - Update system: dry run and scheduling test (`update-system/UPDATE-PLAN.md`); the citation script has been run and fixed, and a pre-commit check is not written.
 - Deferred wording items from the scope review: done (rows 17, 35, 45 and the WBISI wording by D-40; generic "IR" sentences reworded; skeptic reviewed).
 - Proposed, not drafted: full-text reader helper, formal appraisal tools (PROBAST, QUADAS-2, GRADE) for the biostatistician, a negative-claim protocol, analysts starting from the searcher's evidence set, a stopping rule.

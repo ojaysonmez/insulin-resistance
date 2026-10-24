@@ -1,0 +1,357 @@
+# Citation check report
+
+Files: claims.csv
+Unique PMIDs: 188; unique DOIs: 52. Identity and notice check only; this does not verify that any claim matches its source.
+
+## Urgent flags (2)
+- PMID 24757230: PubMed marks it as a RETRACTED PUBLICATION (Raz I 2014, Treatment of recent-onset type 1 diabetic patients with DiaPep277: results of a double-bli); used at claims.csv:249
+- DOI 10.2337/dc13-1391: Crossref notice 'retraction' (Retraction, notice DOI 10.2337/dc15-rt01); used at claims.csv:249 (via PMID 24757230)
+
+## Other notices (18)
+- DOI 10.1007/s00125-021-05568-3: Crossref notice 'correction' (Correction, notice DOI 10.1007/s00125-021-05600-6); used at claims.csv:247 (via PMID 34590174)
+- DOI 10.1007/s00125-024-06196-3: Crossref notice 'correction' (Correction, notice DOI 10.1007/s00125-024-06258-6); used at claims.csv:228, claims.csv:255 (via PMID 38869512)
+- DOI 10.1007/s00268-021-06394-9: Crossref notice 'correction' (Correction, notice DOI 10.1007/s00268-022-06459-3); used at claims.csv:278 (via PMID 34984504)
+- DOI 10.1007/s13340-023-00679-1: Crossref notice 'correction' (Correction, notice DOI 10.1007/s13340-024-00702-z); used at claims.csv:288 (via PMID 38264233)
+- DOI 10.1016/j.eprac.2022.08.002: Crossref notice 'erratum' (Erratum, notice DOI 10.1016/j.eprac.2022.12.005); used at claims.csv:254 (via PMID 35963508)
+- DOI 10.1038/s41586-018-0343-4: Crossref notice 'correction' (Correction, notice DOI 10.1038/s41586-018-0506-3); used at claims.csv:186
+- DOI 10.1111/jdi.14121: Crossref notice 'correction' (Correction, notice DOI 10.1111/jdi.14190); used at claims.csv:288 (via PMID 38184802)
+- DOI 10.1159/000539371: Crossref notice 'erratum' (Erratum, notice DOI 10.1159/000541386); used at claims.csv:53, claims.csv:54, claims.csv:55
+- DOI 10.1161/cir.0000000000001063: Crossref notice 'correction' (Correction, notice DOI 10.1161/cir.0000000000001073); used at claims.csv:92
+- DOI 10.1161/cir.0000000000001063: Crossref notice 'correction' (Correction, notice DOI 10.1161/cir.0000000000001097); used at claims.csv:92
+- DOI 10.1161/cir.0000000000001063: Crossref notice 'correction' (Correction, notice DOI 10.1161/cir.0000000000001142); used at claims.csv:92
+- DOI 10.1161/cir.0000000000001184: Crossref notice 'correction' (Correction, notice DOI 10.1161/cir.0000000000001241); used at claims.csv:62
+- DOI 10.1161/cir.0000000000001423: Crossref notice 'correction' (Correction, notice DOI 10.1161/cir.0000000000001457); used at claims.csv:11, claims.csv:62, claims.csv:232
+- DOI 10.1161/cir.0000000000001423: Crossref notice 'correction' (Correction, notice DOI 10.1161/cir.0000000000001475); used at claims.csv:11, claims.csv:62, claims.csv:232
+- DOI 10.1161/circulationaha.123.067626: Crossref notice 'correction' (Correction, notice DOI 10.1161/cir.0000000000001230); used at claims.csv:8, claims.csv:10, claims.csv:73 (via PMID 37947085)
+- DOI 10.1161/circulationaha.123.067626: Crossref notice 'correction' (Correction, notice DOI 10.1161/cir.0000000000001491); used at claims.csv:8, claims.csv:10, claims.csv:73 (via PMID 37947085)
+- DOI 10.2337/diabetes.53.1.250: Crossref notice 'correction' (Correction, notice DOI 10.2337/diabetes.53.7.1934); used at claims.csv:249 (via PMID 14693724)
+- DOI 10.3233/jad-141791: Crossref notice 'correction' (Correction, notice DOI 10.3233/jad-159002); used at claims.csv:208
+
+## DOIs PubMed knows that the files do not record (136)
+Suggested fills for the identifier rule (PMID with a DOI recorded):
+- PMID 10480510: https://doi.org/10.2337/diacare.22.9.1462 (Matsuda M 1999, Insulin sensitivity indices obtained from oral glucose tolerance testing: compar)
+- PMID 11773152: https://doi.org/10.1200/jco.2002.20.1.42 (Goodwin PJ 2002, Fasting insulin and outcome in early-stage breast cancer: results of a prospecti)
+- PMID 12087016: https://doi.org/10.2337/diacare.25.7.1177 (Hanley AJ 2002, Homeostasis model assessment of insulin resistance in relation to the incidence )
+- PMID 14602731: https://doi.org/10.1210/jc.2003-030180 (Maldonado M 2003, Ketosis-prone diabetes: dissection of a heterogeneous syndrome using an immunoge)
+- PMID 14693724: https://doi.org/10.2337/diabetes.53.1.250 (Palmer JP 2004, C-peptide is the appropriate outcome measure for type 1 diabetes clinical trials)
+- PMID 15897479: https://doi.org/10.1038/oby.2005.79 (Cornier MA 2005, Insulin sensitivity determines the effectiveness of dietary macronutrient compos)
+- PMID 15983289: https://doi.org/10.1001/archinte.165.12.1395 (Sumner AE 2005, Fasting triglyceride and the triglyceride-HDL cholesterol ratio are not markers )
+- PMID 17130187: https://doi.org/10.2337/dc06-0749 (Balasubramanyam A 2006, Accuracy and predictive value of classification schemes for ketosis-prone diabet)
+- PMID 17272483: https://doi.org/10.1373/clinchem.2006.082214 (Marcovina S 2007, Standardization of insulin immunoassays: report of the American Diabetes Associa)
+- PMID 17533210: https://doi.org/10.1001/archinte.167.10.1068 (Wilson PW 2007, Prediction of incident diabetes mellitus in middle-aged adults: the Framingham O)
+- PMID 18292467: https://doi.org/10.1210/er.2007-0026 (Balasubramanyam A 2008, Syndromes of ketosis-prone diabetes mellitus.)
+- PMID 18535197: https://doi.org/10.2337/dc08-0097 (Manley SE 2008, Preanalytical, analytical, and computational factors affect homeostasis model as)
+- PMID 18628574: https://doi.org/10.2337/dc07-2451 (Greenbaum CJ 2008, Mixed-meal tolerance test versus glucagon stimulation test for the assessment of)
+- PMID 19325009: https://doi.org/10.1373/clinchem.2008.118380 (Miller WG 2009, Toward standardization of insulin immunoassays.)
+- PMID 19805654: https://doi.org/10.1161/circulationaha.109.192644 (Alberti KG 2009, Harmonizing the metabolic syndrome: a joint interim statement of the Internation)
+- PMID 19937225: https://doi.org/10.1007/s00125-009-1600-8 (Retnakaran R 2010, Low adiponectin concentration during pregnancy predicts postpartum insulin resis)
+- PMID 20040676: https://doi.org/10.2337/dc09-1206 (Staten MA 2010, Insulin assay standardization: leading to measures of insulin sensitivity and se)
+- PMID 21115858: https://doi.org/10.1200/jco.2009.26.4473 (Duggan C 2011, Associations of insulin resistance and adiponectin with mortality in women with )
+- PMID 21270186: https://doi.org/10.2337/dc10-1293 (Besser RE 2011, Urinary C-peptide creatinine ratio is a practical outpatient tool for identifyin)
+- PMID 21441124: https://doi.org/10.2215/cjn.08070910 (Hung AM 2011, A comparison of novel and commonly-used indices of insulin sensitivity in Africa)
+- PMID 21926287: https://doi.org/10.2337/dc11-0817 (Retnakaran R 2011, Hepatic insulin resistance is an early determinant of declining β-cell function )
+- PMID 21945562: https://doi.org/10.1016/j.diabres.2011.08.025 (Gordon BA 2011, Reproducibility of multiple repeated oral glucose tolerance tests.)
+- PMID 22162568: https://doi.org/10.1200/jco.2011.36.2723 (Goodwin PJ 2012, Insulin- and obesity-related variables in early-stage breast cancer: correlation)
+- PMID 22564993: https://doi.org/10.1200/jco.2011.39.3769 (Bonanni B 2012, Dual effect of metformin on breast cancer proliferation in a randomized presurgi)
+- PMID 22743620: https://doi.org/10.1016/j.anpedi.2012.05.015 (Martín-Frías M 2012, [Abnormal glucose tolerance in prepubertal patients with cystic fibrosis].)
+- PMID 22933030: https://doi.org/10.1007/s10549-012-2223-1 (Niraula S 2012, Metformin in early breast cancer: a prospective window of opportunity neoadjuvan)
+- PMID 22963817: https://doi.org/10.1016/j.soard.2012.07.015 (Lee WJ 2013, Predicting success of metabolic surgery: age, body mass index, C-peptide, and du)
+- PMID 23289766: https://doi.org/10.1111/pedi.12008 (Besser RE 2013, Home urine C-peptide creatinine ratio (UCPCR) testing can identify type 2 and MO)
+- PMID 23413806: https://doi.org/10.1111/dme.12159 (Jones AG 2013, The clinical utility of C-peptide measurement in the care of patients with diabe)
+- PMID 23890130: https://doi.org/10.1016/j.pan.2013.05.002 (Rickels MR 2013, Detection, evaluation and treatment of diabetes mellitus in chronic pancreatitis)
+- PMID 24757230: https://doi.org/10.2337/dc13-1391 (Raz I 2014, Treatment of recent-onset type 1 diabetic patients with DiaPep277: results of a )
+- PMID 24843502: https://doi.org/10.1111/j.2040-1124.2010.00096.x (Funakoshi S 2011, Utility of indices using C-peptide levels for indication of insulin therapy to a)
+- PMID 24843620: https://doi.org/10.1111/jdi.12024 (Imagawa A 2012, Report of the Committee of the Japan Diabetes Society on the Research of Fulmina)
+- PMID 24972190: https://doi.org/10.1016/j.ygyno.2014.06.014 (Laskov I 2014, Anti-diabetic doses of metformin decrease proliferation markers in tumors of pat)
+- PMID 25253174: https://doi.org/10.1007/s10549-014-3141-1 (DeCensi A 2014, Differential effects of metformin on breast cancer proliferation according to ma)
+- PMID 25356808: https://doi.org/10.1210/jc.2014-2700 (Katznelson L 2014, Acromegaly: an endocrine society clinical practice guideline.)
+- PMID 25792383: https://doi.org/10.1159/000375410 (Yılmaz Agladioglu S 2015, Urinary C-Peptide/Creatinine Ratio Can Distinguish Maturity-Onset Diabetes of th)
+- PMID 25944628: https://doi.org/10.1161/circoutcomes.114.001563 (Schmiegelow MD 2015, Insulin Resistance and Risk of Cardiovascular Disease in Postmenopausal Women: A)
+- PMID 25957977: https://doi.org/10.1016/j.jpeds.2015.03.057 (Thornton PS 2015, Recommendations from the Pediatric Endocrine Society for Evaluation and Manageme)
+- PMID 26109503: https://doi.org/10.2337/dc15-1001 (Rudland VL 2016, Identifying Glucokinase Monogenic Diabetes in a Multiethnic Gestational Diabetes)
+- PMID 26526047: https://doi.org/10.3747/pdi.2013.00296 (King-Morris KR 2016, Measurement and Correlation of Indices of Insulin Resistance in Patients on Peri)
+- PMID 26638192: https://doi.org/10.1002/oby.21331 (Gardner CD 2016, Weight loss on low-fat vs. low-carbohydrate diets by insulin resistance status a)
+- PMID 26742109: https://doi.org/10.1159/000443171 (Falconi M 2016, ENETS Consensus Guidelines Update for the Management of Patients with Functional)
+- PMID 26754418: https://doi.org/10.1007/s40618-015-0427-z (Alptekin H 2016, Predicting gestational diabetes mellitus during the first trimester using anthro)
+- PMID 27189354: https://doi.org/10.1007/s11695-016-2237-6 (Cohen RV 2016, The Diabetes Surgery Summit II Guidelines: a Disease-Based Clinical Recommendati)
+- PMID 27710244: https://doi.org/10.1210/jc.2016-2466 (Brown RJ 2016, The Diagnosis and Management of Lipodystrophy Syndromes: A Multi-Society Practic)
+- PMID 28150502: https://doi.org/10.1080/00365513.2016.1278260 (Tohidi M 2017, Assay-dependent variability of serum insulin concentrations: a comparison of eig)
+- PMID 28264826: https://doi.org/10.1136/bmjopen-2016-012982 (Alsweiler J 2017, Computer-determined dosage of insulin in the management of neonatal hyperglycaem)
+- PMID 28359099: https://doi.org/10.1210/jc.2016-2573 (Styne DM 2017, Pediatric Obesity-Assessment, Treatment, and Prevention: An Endocrine Society Cl)
+- PMID 28390156: https://doi.org/10.1002/ijc.30729 (Tsujimoto T 2017, Association between hyperinsulinemia and increased risk of cancer death in nonob)
+- PMID 28660493: https://doi.org/10.1007/s00125-017-4340-1 (Isokuortti E 2017, Use of HOMA-IR to diagnose non-alcoholic fatty liver disease: a population-based)
+- PMID 28860126: https://doi.org/10.2337/dc17-0542 (Woodmansey C 2017, Incidence, Demographics, and Clinical Characteristics of Diabetes of the Exocrin)
+- PMID 29453879: https://doi.org/10.1111/tri.13138 (Rickels MR 2018, Defining outcomes for β-cell replacement therapy in the treatment of diabetes: a)
+- PMID 29466592: https://doi.org/10.1001/jama.2018.0245 (Gardner CD 2018, Effect of Low-Fat vs Low-Carbohydrate Diet on 12-Month Weight Loss in Overweight)
+- PMID 29528967: https://doi.org/10.1097/tp.0000000000002158 (Rickels MR 2018, Defining Outcomes for β-cell Replacement Therapy in the Treatment of Diabetes: A)
+- PMID 29940866: https://doi.org/10.1186/s12874-018-0521-y (Rudvik A 2018, Evaluation of surrogate measures of insulin sensitivity - correlation with gold )
+- PMID 30101281: https://doi.org/10.1210/jc.2018-00528 (Salehi M 2018, Hypoglycemia After Gastric Bypass Surgery: Current Concepts and Controversies.)
+- PMID 30794834: https://doi.org/10.1016/j.diabres.2019.02.015 (D'Elia JA 2019, Variations in glucose/C-peptide ratio in patients with type 2 diabetes associate)
+- PMID 32052124: https://doi.org/10.1007/s00431-020-03606-7 (Elzahar W 2020, Urinary C-peptide creatinine ratio to differentiate type 2 diabetes mellitus fro)
+- PMID 32184821: https://doi.org/10.1155/2020/7417356 (Miao Z 2020, Long-Term Postpartum Outcomes of Insulin Resistance and β-cell Function in Women)
+- PMID 32219329: https://doi.org/10.1210/clinem/dgaa149 (Pozzilli P 2020, Randomized 52-week Phase 2 Trial of Albiglutide Versus Placebo in Adult Patients)
+- PMID 32278004: https://doi.org/10.1016/j.jhep.2020.03.039 (Eslam M 2020, A new definition for metabolic dysfunction-associated fatty liver disease: An in)
+- PMID 32847960: https://doi.org/10.2337/dbi20-0017 (Buzzetti R 2020, Management of Latent Autoimmune Diabetes in Adults: A Consensus Statement From a)
+- PMID 32873586: https://doi.org/10.2337/dc20-0157 (Sjöholm K 2020, Comparison of Preoperative Remission Scores and Diabetes Duration Alone as Predi)
+- PMID 33079318: https://doi.org/10.1007/s11102-020-01091-7 (Fleseriu M 2021, A Pituitary Society update to acromegaly management guidelines.)
+- PMID 33225349: https://doi.org/10.1093/cid/ciaa1391 (Thompson MA 2021, Primary Care Guidance for Persons With Human Immunodeficiency Virus: 2020 Update)
+- PMID 34061967: https://doi.org/10.1210/clinem/dgab386 (Landstra CP 2021, Examination of the Igls Criteria for Defining Functional Outcomes of β-cell Repl)
+- PMID 34123348: https://doi.org/10.1177/20420188211012144 (Knopp JL 2021, Increased insulin resistance in intensive care: longitudinal retrospective analy)
+- PMID 34132018: https://doi.org/10.1111/dom.14464 (Blonde L 2021, Efficacy of liraglutide added to sodium-glucose cotransporter-2 inhibitors in ty)
+- PMID 34378729: https://doi.org/10.6061/clinics/2021/e2906 (de Cleva R 2021, C-peptide level as predictor of type 2 diabetes remission and body composition c)
+- PMID 34380182: https://doi.org/10.1515/cclm-2021-0643 (Matli B 2021, Distribution of HOMA-IR in a population-based cohort and proposal for reference )
+- PMID 34449903: https://doi.org/10.1002/ijgo.13905 (Song S 2022, HOMA-IR as a risk factor of gestational diabetes mellitus and a novel simple sur)
+- PMID 34531293: https://doi.org/10.2337/db21-0526 (Fritsche A 2021, Different Effects of Lifestyle Intervention in High- and Low-Risk Prediabetes: R)
+- PMID 34590174: https://doi.org/10.1007/s00125-021-05568-3 (Holt RIG 2021, The management of type 1 diabetes in adults. A consensus report by the American )
+- PMID 34674510: https://doi.org/10.3803/enm.2021.1110 (Koo DJ 2021, Changes in Insulin Resistance Index and the Risk of Liver Fibrosis in Patients w)
+- PMID 34679116: https://doi.org/10.1371/journal.pone.0258476 (Hudak S 2021, Reproducibility and discrimination of different indices of insulin sensitivity a)
+- PMID 34802853: https://doi.org/10.1016/j.numecd.2021.08.047 (Lupoli R 2022, Rate of post-bariatric hypoglycemia using continuous glucose monitoring: A meta-)
+- PMID 34984504: https://doi.org/10.1007/s00268-021-06394-9 (Stenberg E 2022, Guidelines for Perioperative Care in Bariatric Surgery: Enhanced Recovery After )
+- PMID 35120288: https://doi.org/10.4088/jcp.21m14022 (Calkin CV 2022, Treating Insulin Resistance With Metformin as a Strategy to Improve Clinical Out)
+- PMID 35177563: https://doi.org/10.3343/alm.2022.42.4.428 (Zhou W 2022, Current Status of Serum Insulin and C-Peptide Measurement in Clinical Laboratori)
+- PMID 35256262: https://doi.org/10.1016/j.asjsur.2021.12.070 (AbdAlla Salman M 2022, Predictors of type-2 diabetes remission following bariatric surgery after a two-)
+- PMID 35463863: https://doi.org/10.1007/s13340-022-00570-5 (Ogawa W 2022, New classification and diagnostic criteria for insulin resistance syndrome.)
+- PMID 35608580: https://doi.org/10.1001/jama.2022.6147 (Goodwin PJ 2022, Effect of Metformin vs Placebo on Invasive Disease-Free Survival in Patients Wit)
+- PMID 35622611: https://doi.org/10.1002/jcla.24521 (Rosli N 2022, Measurement comparability of insulin assays using conventional immunoassay kits.)
+- PMID 35700159: https://doi.org/10.2337/dc22-0202 (Wang T 2022, Association Between Insulin Resistance and Cardiovascular Disease Risk Varies Ac)
+- PMID 35963508: https://doi.org/10.1016/j.eprac.2022.08.002 (Blonde L 2022, American Association of Clinical Endocrinology Clinical Practice Guideline: Deve)
+- PMID 36181637: https://doi.org/10.1007/s40292-022-00542-5 (González-González JG 2022, HOMA-IR as a predictor of Health Outcomes in Patients with Metabolic Risk Factor)
+- PMID 36465621: https://doi.org/10.3389/fendo.2022.1052794 (Zhou W 2022, Application of urine C-peptide creatinine ratio in type 2 diabetic patients with)
+- PMID 36537518: https://doi.org/10.1111/pedi.13426 (Greeley SAW 2022, ISPAD Clinical Practice Consensus Guidelines 2022: The diagnosis and management )
+- PMID 36537525: https://doi.org/10.1111/pedi.13453 (Ode KL 2022, ISPAD Clinical Practice Consensus Guidelines 2022: Management of cystic fibrosis)
+- PMID 36599304: https://doi.org/10.1016/j.cmet.2022.12.002 (Trouwborst I 2023, Cardiometabolic health improvements upon dietary intervention are driven by tiss)
+- PMID 36622115: https://doi.org/10.1542/peds.2022-060640 (Hampl SE 2023, Clinical Practice Guideline for the Evaluation and Treatment of Children and Ado)
+- PMID 36675721: https://doi.org/10.3390/jpm13010060 (Duo Y 2022, Predictability of HOMA-IR for Gestational Diabetes Mellitus in Early Pregnancy B)
+- PMID 36727674: https://doi.org/10.1097/hep.0000000000000323 (Rinella ME 2023, AASLD Practice Guidance on the clinical assessment and management of nonalcoholi)
+- PMID 37364790: https://doi.org/10.1016/j.jhep.2023.06.003 (Rinella ME 2023, A multisociety Delphi consensus statement on new fatty liver disease nomenclatur)
+- PMID 37454648: https://doi.org/10.1159/000531766 (De Leon DD 2024, International Guidelines for the Diagnosis and Management of Hyperinsulinism.)
+- PMID 37794142: https://doi.org/10.1038/s43856-023-00369-8 (Murphy R 2023, The use of precision diagnostics for monogenic diabetes: a systematic review and)
+- PMID 37794253: https://doi.org/10.1038/s41591-023-02502-5 (Tobias DK 2023, Second international consensus report on gaps and opportunities for the clinical)
+- PMID 37947085: https://doi.org/10.1161/circulationaha.123.067626 (Khan SS 2024, Development and Validation of the American Heart Association's PREVENT Equations)
+- PMID 38017369: https://doi.org/10.1186/s12884-023-06113-3 (Hashemipour S 2023, The yield of early-pregnancy homeostasis of model assessment -insulin resistance)
+- PMID 38177805: https://doi.org/10.1038/s42255-023-00943-3 (Dwibedi C 2024, Randomized open-label trial of semaglutide and dapagliflozin in patients with ty)
+- PMID 38184802: https://doi.org/10.1111/jdi.14121 (Shimada A 2024, New diagnostic criteria (2023) for slowly progressive type 1 diabetes (SPIDDM): )
+- PMID 38190619: https://doi.org/10.2337/dc23-1059 (Utzschneider KM 2024, Impact of Insulin Sensitivity and β-Cell Function Over Time on Glycemic Outcomes)
+- PMID 38191206: https://doi.org/10.1136/bmjdrc-2023-003680 (Hu H 2024, Should insulin resistance (HOMA-IR), insulin secretion (HOMA-β), and visceral fa)
+- PMID 38264233: https://doi.org/10.1007/s13340-023-00679-1 (Shimada A 2024, New diagnostic criteria (2023) for slowly progressive type 1 diabetes (SPIDDM): )
+- PMID 38549041: https://doi.org/10.1093/clinchem/hvae034 (Moradian A 2024, Interlaboratory Comparison of Antibody-Free LC-MS/MS Measurements of C-peptide a)
+- PMID 38851997: https://doi.org/10.1016/j.jhep.2024.04.031 (European Association for the Study of the Liver (EASL) 2024, EASL-EASD-EASO Clinical Practice Guidelines on the management of metabolic dysfu)
+- PMID 38869512: https://doi.org/10.1007/s00125-024-06196-3 (European Association for the Study of the Liver 2024, EASL-EASD-EASO Clinical Practice Guidelines on the management of metabolic dysfu)
+- PMID 38895780: https://doi.org/10.1111/petr.14813 (Khatter NJ 2024, Longitudinal Quality of Life and Glycemic Outcomes of Total Pancreatectomy With )
+- PMID 38987271: https://doi.org/10.1515/cclm-2024-0672 (Carobene A 2025, The biological variation of insulin resistance markers: data from the European B)
+- PMID 39117485: https://doi.org/10.1016/j.numecd.2024.06.010 (Blicher MK 2024, Triglyceride-glucose index improves risk prediction beyond traditional risk fact)
+- PMID 39380079: https://doi.org/10.1186/s13052-024-01767-x (Valerio G 2024, Cardiometabolic risk in children and adolescents with obesity: a position paper )
+- PMID 39756404: https://doi.org/10.1002/oby.24201 (Martins C 2025, The impact of a low-carbohydrate (vs. low-fat) diet on fat mass loss in African )
+- PMID 39808164: https://doi.org/10.1158/1055-9965.epi-24-1304 (Albers FEM 2025, Insulin and Insulin-like Growth Factor and Risk of Postmenopausal Estrogen Recep)
+- PMID 39959260: https://doi.org/10.4239/wjd.v16.i2.95102 (Juza A 2025, Distinguishing exocrine pancreas disease-associated diabetes from type 2 diabete)
+- PMID 39994886: https://doi.org/10.1177/09636897251317048 (Kuncha J 2025, Correlation of Pancreatic Laminin Alpha 5 Expression With Clinical Outcomes in T)
+- PMID 40353876: https://doi.org/10.1007/s00216-025-05900-5 (Liu H 2025, A candidate reference measurement procedure for quantification of human insulin )
+- PMID 40497454: https://doi.org/10.1210/clinem/dgaf350 (Stafford JM 2025, Prediabetes Subgroups, Type 2 Diabetes Risk, and Differential Effects of Prevent)
+- PMID 40640995: https://doi.org/10.5694/mja2.52717 (De Sousa SM 2025, Australian and New Zealand joint society consensus statement on genetic testing )
+- PMID 40656591: https://doi.org/10.2147/ceg.s520986 (Izumo W 2025, Clinically Adult-Onset Nesidioblastosis with Repeated Severe Hypoglycemia, Succe)
+- PMID 40802520: https://doi.org/10.1515/cclm-2025-0552 (Rohlfing C 2025, The current status of serum insulin measurements and the need for standardizatio)
+- PMID 40841970: https://doi.org/10.1186/s13098-025-01900-8 (Dastjerdi P 2025, Estimated glucose disposal rate and risk of cardiovascular events in type 1 diab)
+- PMID 41833398: https://doi.org/10.1507/endocrj.ej25-0591 (Yoshida H 2026, [(18)F]FB(ePEG12)12-Exendin-4 positron emission tomography/magnetic resonance im)
+- PMID 42063220: https://doi.org/10.1093/jncics/pkag045 (Goodwin PJ 2026, Exploration of body mass index and circulating metabolic factors as predictors o)
+- PMID 42145088: https://doi.org/10.1161/strokeaha.125.056010 (Lu L 2026, Liraglutide and Recurrent Stroke by Baseline Insulin Resistance: A Post Hoc Anal)
+- PMID 42291078: https://doi.org/10.1016/j.ajpc.2026.101643 (Schwartz GG 2026, Small, dense LDL-C as a predictor of cardiovascular risk and benefit of alirocum)
+- PMID 42312889: https://doi.org/10.2337/dc26-0118 (Güdemann LM 2026, To Cluster or Not to Cluster? A Comparison of Approaches to Targeting Type 2 Dia)
+- PMID 42318218: https://doi.org/10.3389/fendo.2026.1784299 (Zhang W 2026, A case report and literature review of proton pump inhibitors inducing insulin a)
+- PMID 42633332: https://doi.org/10.7759/cureus.113222 (Alavi R 2026, Severe Uncontrolled Pancreatogenic Diabetes in a Patient With Prior Alcoholic Pa)
+- PMID 42649063: https://doi.org/10.2169/internalmedicine.7675-26 (Miwa M 2026, A Giant Thoracic Mass and Hypoglycemia: Suspected Solitary Fibrous Tumor-related)
+- PMID 42657652: https://doi.org/10.1002/1545-5017.70655 (Tanaka K 2026, Pediatric Case of Non-Islet Cell Tumor Hypoglycemia Driven by Hepatoblastoma: Th)
+- PMID 42662728: https://doi.org/10.1016/j.metop.2026.100491 (Vallianou NG 2026, Alpha-lipoic acid as a trigger of insulin autoimmune syndrome: Current evidence,)
+- PMID 42697708: https://doi.org/10.1177/00045632261489517 (Ismail AAA 2026, Insulin/C-peptide interpretation in infants with hypoglycaemia of unknown origin)
+- PMID 42702103: https://doi.org/10.1016/j.clinsp.2026.101089 (Xu X 2026, Divergent associations of TyG index and HOMA-IR with cardiovascular and cerebrov)
+- PMID 42732032: https://doi.org/10.1007/s11695-026-08925-6 (Lu S 2026, A Simple Scoring Model for Mid-term Remission of Type 2 Diabetes Mellitus After )
+- PMID 8721775: https://doi.org/10.1007/bf00418345 (Mooy JM 1996, Intra-individual variation of glucose, specific insulin and proinsulin concentra)
+
+## Records for manual spot check (PMID, first author, year, journal, title)
+- 10480510: Matsuda M 1999, Diabetes Care: Insulin sensitivity indices obtained from oral glucose tolerance testing: comparison with the euglycemic insul
+- 11773152: Goodwin PJ 2002, J Clin Oncol: Fasting insulin and outcome in early-stage breast cancer: results of a prospective cohort study.
+- 12087016: Hanley AJ 2002, Diabetes Care: Homeostasis model assessment of insulin resistance in relation to the incidence of cardiovascular disease: the
+- 12401750: Jayagopal V 2002, Diabetes Care: Biological variation of homeostasis model assessment-derived insulin resistance in type 2 diabetes.
+- 14602731: Maldonado M 2003, J Clin Endocrinol Metab: Ketosis-prone diabetes: dissection of a heterogeneous syndrome using an immunogenetic and beta-cell functional
+- 14693724: Palmer JP 2004, Diabetes: C-peptide is the appropriate outcome measure for type 1 diabetes clinical trials to preserve beta-cell functio
+- 14747245: American Diabetes Association 2004, Diabetes Care: Consensus development conference on antipsychotic drugs and obesity and diabetes.
+- 15897479: Cornier MA 2005, Obes Res: Insulin sensitivity determines the effectiveness of dietary macronutrient composition on weight loss in obese 
+- 15983289: Sumner AE 2005, Arch Intern Med: Fasting triglyceride and the triglyceride-HDL cholesterol ratio are not markers of insulin resistance in Afric
+- 17130187: Balasubramanyam A 2006, Diabetes Care: Accuracy and predictive value of classification schemes for ketosis-prone diabetes.
+- 17272483: Marcovina S 2007, Clin Chem: Standardization of insulin immunoassays: report of the American Diabetes Association Workgroup.
+- 17533210: Wilson PW 2007, Arch Intern Med: Prediction of incident diabetes mellitus in middle-aged adults: the Framingham Offspring Study.
+- 18292467: Balasubramanyam A 2008, Endocr Rev: Syndromes of ketosis-prone diabetes mellitus.
+- 18535197: Manley SE 2008, Diabetes Care: Preanalytical, analytical, and computational factors affect homeostasis model assessment estimates.
+- 18628574: Greenbaum CJ 2008, Diabetes Care: Mixed-meal tolerance test versus glucagon stimulation test for the assessment of beta-cell function in therape
+- 19088155: Cryer PE 2009, J Clin Endocrinol Metab: Evaluation and management of adult hypoglycemic disorders: an Endocrine Society Clinical Practice Guideline.
+- 19325009: Miller WG 2009, Clin Chem: Toward standardization of insulin immunoassays.
+- 19700136: Kalogeropoulos A 2009, J Card Fail: Glycemic status and incident heart failure in elderly without history of diabetes mellitus: the health, aging,
+- 19805654: Alberti KG 2009, Circulation: Harmonizing the metabolic syndrome: a joint interim statement of the International Diabetes Federation Task Fo
+- 19937225: Retnakaran R 2010, Diabetologia: Low adiponectin concentration during pregnancy predicts postpartum insulin resistance, beta cell dysfunction a
+- 20040676: Staten MA 2010, Diabetes Care: Insulin assay standardization: leading to measures of insulin sensitivity and secretion for practical clinical
+- 20190296: International Association of Diabetes and Pregnancy Study Groups Consensus Panel 2010, Diabetes Care: International association of diabetes and pregnancy study groups recommendations on the diagnosis and classifi
+- 20489042: Holland-Fischer P 2010, Am J Physiol Gastrointest Liver Physiol: Insulin sensitivity and body composition in cirrhosis: changes after TIPS.
+- 21115858: Duggan C 2011, J Clin Oncol: Associations of insulin resistance and adiponectin with mortality in women with breast cancer.
+- 21270186: Besser RE 2011, Diabetes Care: Urinary C-peptide creatinine ratio is a practical outpatient tool for identifying hepatocyte nuclear factor 1-
+- 21441124: Hung AM 2011, Clin J Am Soc Nephrol: A comparison of novel and commonly-used indices of insulin sensitivity in African American chronic hemodialysi
+- 21804853: Pringsheim T 2011, J Can Acad Child Adolesc Psychiatry: Evidence-based recommendations for monitoring safety of second generation antipsychotics in children and youth
+- 21804854: Ho J 2011, J Can Acad Child Adolesc Psychiatry: Management recommendations for metabolic complications associated with second generation antipsychotic use in 
+- 21926287: Retnakaran R 2011, Diabetes Care: Hepatic insulin resistance is an early determinant of declining β-cell function in the first year postpartum a
+- 21945562: Gordon BA 2011, Diabetes Res Clin Pract: Reproducibility of multiple repeated oral glucose tolerance tests.
+- 22162568: Goodwin PJ 2012, J Clin Oncol: Insulin- and obesity-related variables in early-stage breast cancer: correlations and time course of prognosti
+- 22564993: Bonanni B 2012, J Clin Oncol: Dual effect of metformin on breast cancer proliferation in a randomized presurgical trial.
+- 22743620: Martín-Frías M 2012, An Pediatr (Barc): [Abnormal glucose tolerance in prepubertal patients with cystic fibrosis].
+- 22933030: Niraula S 2012, Breast Cancer Res Treat: Metformin in early breast cancer: a prospective window of opportunity neoadjuvant study.
+- 22963817: Lee WJ 2013, Surg Obes Relat Dis: Predicting success of metabolic surgery: age, body mass index, C-peptide, and duration score.
+- 23115501: Ho J 2011, Paediatr Child Health: Management recommendations for metabolic complications associated with second-generation antipsychotic use in 
+- 23289766: Besser RE 2013, Pediatr Diabetes: Home urine C-peptide creatinine ratio (UCPCR) testing can identify type 2 and MODY in pediatric diabetes.
+- 23413806: Jones AG 2013, Diabet Med: The clinical utility of C-peptide measurement in the care of patients with diabetes.
+- 23890130: Rickels MR 2013, Pancreatology: Detection, evaluation and treatment of diabetes mellitus in chronic pancreatitis: recommendations from Pancrea
+- 24476695: Jia T 2014, Kidney Int: Validation of insulin sensitivity surrogate indices and prediction of clinical outcomes in individuals with an
+- 24757230: Raz I 2014, Diabetes Care: Treatment of recent-onset type 1 diabetic patients with DiaPep277: results of a double-blind, placebo-controll
+- 24843502: Funakoshi S 2011, J Diabetes Investig: Utility of indices using C-peptide levels for indication of insulin therapy to achieve good glycemic control i
+- 24843620: Imagawa A 2012, J Diabetes Investig: Report of the Committee of the Japan Diabetes Society on the Research of Fulminant and Acute-onset Type 1 Diab
+- 24972190: Laskov I 2014, Gynecol Oncol: Anti-diabetic doses of metformin decrease proliferation markers in tumors of patients with endometrial cancer.
+- 25253174: DeCensi A 2014, Breast Cancer Res Treat: Differential effects of metformin on breast cancer proliferation according to markers of insulin resistance an
+- 25356808: Katznelson L 2014, J Clin Endocrinol Metab: Acromegaly: an endocrine society clinical practice guideline.
+- 25374101: Claxton A 2015, J Alzheimers Dis: Long-acting intranasal insulin detemir improves cognition for adults with mild cognitive impairment or early-s
+- 25792383: Yılmaz Agladioglu S 2015, Horm Res Paediatr: Urinary C-Peptide/Creatinine Ratio Can Distinguish Maturity-Onset Diabetes of the Young from Type 1 Diabetes i
+- 25944628: Schmiegelow MD 2015, Circ Cardiovasc Qual Outcomes: Insulin Resistance and Risk of Cardiovascular Disease in Postmenopausal Women: A Cohort Study From the Women's
+- 25957977: Thornton PS 2015, J Pediatr: Recommendations from the Pediatric Endocrine Society for Evaluation and Management of Persistent Hypoglycemia 
+- 26109503: Rudland VL 2016, Diabetes Care: Identifying Glucokinase Monogenic Diabetes in a Multiethnic Gestational Diabetes Mellitus Cohort: New Pregnanc
+- 26404926: Insel RA 2015, Diabetes Care: Staging presymptomatic type 1 diabetes: a scientific statement of JDRF, the Endocrine Society, and the America
+- 26526047: King-Morris KR 2016, Perit Dial Int: Measurement and Correlation of Indices of Insulin Resistance in Patients on Peritoneal Dialysis.
+- 26602230: Lin KW 2015, Psychiatry Res: Adjuvant pioglitazone for unremitted depression: Clinical correlates of treatment response.
+- 26638192: Gardner CD 2016, Obesity (Silver Spring): Weight loss on low-fat vs. low-carbohydrate diets by insulin resistance status among overweight adults and adu
+- 26742109: Falconi M 2016, Neuroendocrinology: ENETS Consensus Guidelines Update for the Management of Patients with Functional Pancreatic Neuroendocrine Tum
+- 26754418: Alptekin H 2016, J Endocrinol Invest: Predicting gestational diabetes mellitus during the first trimester using anthropometric measurements and HOMA
+- 26823551: de Boer IH 2016, J Am Soc Nephrol: Impaired Glucose and Insulin Homeostasis in Moderate-Severe CKD.
+- 26886418: Kernan WN 2016, N Engl J Med: Pioglitazone after Ischemic Stroke or Transient Ischemic Attack.
+- 27150853: Miyaaki H 2016, Intern Med: Significance of Hepatic Insulin Clearance in Patients with Chronic Hepatitis C and Non-alcoholic Fatty Liver D
+- 27189354: Cohen RV 2016, Obes Surg: The Diabetes Surgery Summit II Guidelines: a Disease-Based Clinical Recommendation.
+- 27710244: Brown RJ 2016, J Clin Endocrinol Metab: The Diagnosis and Management of Lipodystrophy Syndromes: A Multi-Society Practice Guideline.
+- 28150502: Tohidi M 2017, Scand J Clin Lab Invest: Assay-dependent variability of serum insulin concentrations: a comparison of eight assays.
+- 28264826: Alsweiler J 2017, BMJ Open: Computer-determined dosage of insulin in the management of neonatal hyperglycaemia (HINT2): protocol of a rand
+- 28359099: Styne DM 2017, J Clin Endocrinol Metab: Pediatric Obesity-Assessment, Treatment, and Prevention: An Endocrine Society Clinical Practice Guideline.
+- 28390156: Tsujimoto T 2017, Int J Cancer: Association between hyperinsulinemia and increased risk of cancer death in nonobese and obese people: A popula
+- 28660493: Isokuortti E 2017, Diabetologia: Use of HOMA-IR to diagnose non-alcoholic fatty liver disease: a population-based and inter-laboratory study.
+- 28860126: Woodmansey C 2017, Diabetes Care: Incidence, Demographics, and Clinical Characteristics of Diabetes of the Exocrine Pancreas (Type 3c): A Retros
+- 29084736: Yaghi S 2018, Circulation: Pioglitazone Prevents Stroke in Patients With a Recent Transient Ischemic Attack or Ischemic Stroke: A Planned
+- 29453879: Rickels MR 2018, Transpl Int: Defining outcomes for β-cell replacement therapy in the treatment of diabetes: a consensus report on the Igls 
+- 29466592: Gardner CD 2018, JAMA: Effect of Low-Fat vs Low-Carbohydrate Diet on 12-Month Weight Loss in Overweight Adults and the Association Wi
+- 29528967: Rickels MR 2018, Transplantation: Defining Outcomes for β-cell Replacement Therapy in the Treatment of Diabetes: A Consensus Report on the Igls 
+- 29934374: Young LH 2018, Circulation: Heart Failure After Ischemic Stroke or Transient Ischemic Attack in Insulin-Resistant Patients Without Diabete
+- 29940866: Rudvik A 2018, BMC Med Res Methodol: Evaluation of surrogate measures of insulin sensitivity - correlation with gold standard is not enough.
+- 30051890: Hopkins BD 2018, Nature: Suppression of insulin feedback enhances the efficacy of PI3K inhibitors.
+- 30101281: Salehi M 2018, J Clin Endocrinol Metab: Hypoglycemia After Gastric Bypass Surgery: Current Concepts and Controversies.
+- 30734043: Spence JD 2019, JAMA Neurol: Pioglitazone Therapy in Patients With Stroke and Prediabetes: A Post Hoc Analysis of the IRIS Randomized Clini
+- 30794834: D'Elia JA 2019, Diabetes Res Clin Pract: Variations in glucose/C-peptide ratio in patients with type 2 diabetes associated with renal function.
+- 31647106: Wang R 2019, Hum Reprod Update: First-line ovulation induction for polycystic ovary syndrome: an individual participant data meta-analysis.
+- 32052124: Elzahar W 2020, Eur J Pediatr: Urinary C-peptide creatinine ratio to differentiate type 2 diabetes mellitus from type 1 in pediatric patients
+- 32184821: Miao Z 2020, Int J Endocrinol: Long-Term Postpartum Outcomes of Insulin Resistance and β-cell Function in Women with Previous Gestational Dia
+- 32219329: Pozzilli P 2020, J Clin Endocrinol Metab: Randomized 52-week Phase 2 Trial of Albiglutide Versus Placebo in Adult Patients With Newly Diagnosed Type 1 D
+- 32278004: Eslam M 2020, J Hepatol: A new definition for metabolic dysfunction-associated fatty liver disease: An international expert consensus s
+- 32398352: Chen W 2020, BMJ Open Diabetes Res Care: Causal associations of insulin resistance with coronary artery disease and ischemic stroke: a Mendelian random
+- 32847960: Buzzetti R 2020, Diabetes: Management of Latent Autoimmune Diabetes in Adults: A Consensus Statement From an International Expert Panel.
+- 32867516: Keepers GA 2020, Am J Psychiatry: The American Psychiatric Association Practice Guideline for the Treatment of Patients With Schizophrenia.
+- 32873586: Sjöholm K 2020, Diabetes Care: Comparison of Preoperative Remission Scores and Diabetes Duration Alone as Predictors of Durable Type 2 Diabet
+- 33079318: Fleseriu M 2021, Pituitary: A Pituitary Society update to acromegaly management guidelines.
+- 33225349: Thompson MA 2021, Clin Infect Dis: Primary Care Guidance for Persons With Human Immunodeficiency Virus: 2020 Update by the HIV Medicine Associati
+- 33916952: Hall M 2021, J Pers Med: Metabolic Parameters in Patients with Suspected Reactive Hypoglycemia.
+- 34061967: Landstra CP 2021, J Clin Endocrinol Metab: Examination of the Igls Criteria for Defining Functional Outcomes of β-cell Replacement Therapy: IPITA Symposi
+- 34103538: Goodwin PJ 2021, NPJ Breast Cancer: Effect of metformin versus placebo on metabolic factors in the MA.32 randomized breast cancer trial.
+- 34123348: Knopp JL 2021, Ther Adv Endocrinol Metab: Increased insulin resistance in intensive care: longitudinal retrospective analysis of glycaemic control patie
+- 34132018: Blonde L 2021, Diabetes Obes Metab: Efficacy of liraglutide added to sodium-glucose cotransporter-2 inhibitors in type 2 diabetes, stratified by b
+- 34378729: de Cleva R 2021, Clinics (Sao Paulo): C-peptide level as predictor of type 2 diabetes remission and body composition changes in non-diabetic and dia
+- 34380182: Matli B 2021, Clin Chem Lab Med: Distribution of HOMA-IR in a population-based cohort and proposal for reference intervals.
+- 34449903: Song S 2022, Int J Gynaecol Obstet: HOMA-IR as a risk factor of gestational diabetes mellitus and a novel simple surrogate index in early pregnanc
+- 34531293: Fritsche A 2021, Diabetes: Different Effects of Lifestyle Intervention in High- and Low-Risk Prediabetes: Results of the Randomized Contr
+- 34590174: Holt RIG 2021, Diabetologia: The management of type 1 diabetes in adults. A consensus report by the American Diabetes Association (ADA) and
+- 34674510: Koo DJ 2021, Endocrinol Metab (Seoul): Changes in Insulin Resistance Index and the Risk of Liver Fibrosis in Patients with Nonalcoholic Fatty Liver D
+- 34679116: Hudak S 2021, PLoS One: Reproducibility and discrimination of different indices of insulin sensitivity and insulin secretion.
+- 34802853: Lupoli R 2022, Nutr Metab Cardiovasc Dis: Rate of post-bariatric hypoglycemia using continuous glucose monitoring: A meta-analysis of literature studies
+- 34984504: Stenberg E 2022, World J Surg: Guidelines for Perioperative Care in Bariatric Surgery: Enhanced Recovery After Surgery (ERAS) Society Recomme
+- 35120288: Calkin CV 2022, J Clin Psychiatry: Treating Insulin Resistance With Metformin as a Strategy to Improve Clinical Outcomes in Treatment-Resistant B
+- 35177563: Zhou W 2022, Ann Lab Med: Current Status of Serum Insulin and C-Peptide Measurement in Clinical Laboratories: Experience from 94 Laborat
+- 35256262: AbdAlla Salman M 2022, Asian J Surg: Predictors of type-2 diabetes remission following bariatric surgery after a two-year follow-up.
+- 35363499: Heidenreich PA 2022, Circulation: 2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure: A Report of the American College of Cardiolog
+- 35463863: Ogawa W 2022, Diabetol Int: New classification and diagnostic criteria for insulin resistance syndrome.
+- 35608580: Goodwin PJ 2022, JAMA: Effect of Metformin vs Placebo on Invasive Disease-Free Survival in Patients With Breast Cancer: The MA.32 Ran
+- 35622611: Rosli N 2022, J Clin Lab Anal: Measurement comparability of insulin assays using conventional immunoassay kits.
+- 35700159: Wang T 2022, Diabetes Care: Association Between Insulin Resistance and Cardiovascular Disease Risk Varies According to Glucose Tolerance S
+- 35963508: Blonde L 2022, Endocr Pract: American Association of Clinical Endocrinology Clinical Practice Guideline: Developing a Diabetes Mellitus Com
+- 35998266: Ismail HM 2022, Diabetes Care: The Transition From a Compensatory Increase to a Decrease in C-peptide During the Progression to Type 1 Diabet
+- 36181637: González-González JG 2022, High Blood Press Cardiovasc Prev: HOMA-IR as a predictor of Health Outcomes in Patients with Metabolic Risk Factors: A Systematic Review and Met
+- 36272764: Kidney Disease: Improving Global Outcomes (KDIGO) Diabetes Work Group 2022, Kidney Int: KDIGO 2022 Clinical Practice Guideline for Diabetes Management in Chronic Kidney Disease.
+- 36464132: Palani G 2023, Endocr Pract: Clinical Presentation and Diagnostic Approach to Hypoglycemia in Adults Without Diabetes Mellitus.
+- 36465621: Zhou W 2022, Front Endocrinol (Lausanne): Application of urine C-peptide creatinine ratio in type 2 diabetic patients with different levels of renal fun
+- 36537518: Greeley SAW 2022, Pediatr Diabetes: ISPAD Clinical Practice Consensus Guidelines 2022: The diagnosis and management of monogenic diabetes in child
+- 36537525: Ode KL 2022, Pediatr Diabetes: ISPAD Clinical Practice Consensus Guidelines 2022: Management of cystic fibrosis-related diabetes in children 
+- 36599304: Trouwborst I 2023, Cell Metab: Cardiometabolic health improvements upon dietary intervention are driven by tissue-specific insulin resistance
+- 36622115: Hampl SE 2023, Pediatrics: Clinical Practice Guideline for the Evaluation and Treatment of Children and Adolescents With Obesity.
+- 36675721: Duo Y 2022, J Pers Med: Predictability of HOMA-IR for Gestational Diabetes Mellitus in Early Pregnancy Based on Different First Trimes
+- 36727674: Rinella ME 2023, Hepatology: AASLD Practice Guidance on the clinical assessment and management of nonalcoholic fatty liver disease.
+- 37144983: Simmons D 2023, N Engl J Med: Treatment of Gestational Diabetes Mellitus Diagnosed Early in Pregnancy.
+- 37364790: Rinella ME 2023, J Hepatol: A multisociety Delphi consensus statement on new fatty liver disease nomenclature.
+- 37454648: De Leon DD 2024, Horm Res Paediatr: International Guidelines for the Diagnosis and Management of Hyperinsulinism.
+- 37580314: Teede HJ 2023, J Clin Endocrinol Metab: Recommendations From the 2023 International Evidence-based Guideline for the Assessment and Management of Poly
+- 37794142: Murphy R 2023, Commun Med (Lond): The use of precision diagnostics for monogenic diabetes: a systematic review and expert opinion.
+- 37794253: Tobias DK 2023, Nat Med: Second international consensus report on gaps and opportunities for the clinical translation of precision diab
+- 37947085: Khan SS 2024, Circulation: Development and Validation of the American Heart Association's PREVENT Equations.
+- 38017369: Hashemipour S 2023, BMC Pregnancy Childbirth: The yield of early-pregnancy homeostasis of model assessment -insulin resistance (HOMA-IR) for predicting gest
+- 38151465: Ebert T 2024, Diabetes Care: Outcomes With Finerenone in Patients With Chronic Kidney Disease and Type 2 Diabetes by Baseline Insulin Resis
+- 38171510: Sharif A 2024, Nephrol Dial Transplant: International consensus on post-transplantation diabetes mellitus.
+- 38177805: Dwibedi C 2024, Nat Metab: Randomized open-label trial of semaglutide and dapagliflozin in patients with type 2 diabetes of different pat
+- 38184802: Shimada A 2024, J Diabetes Investig: New diagnostic criteria (2023) for slowly progressive type 1 diabetes (SPIDDM): Report from Committee on Type 
+- 38185282: Ren S 2024, Clin Chim Acta: Evaluation of insulin secretion and insulin sensitivity in pregnant women: Application value of simple indices
+- 38190619: Utzschneider KM 2024, Diabetes Care: Impact of Insulin Sensitivity and β-Cell Function Over Time on Glycemic Outcomes in the Glycemia Reduction App
+- 38191206: Hu H 2024, BMJ Open Diabetes Res Care: Should insulin resistance (HOMA-IR), insulin secretion (HOMA-β), and visceral fat area be considered for impro
+- 38264233: Shimada A 2024, Diabetol Int: New diagnostic criteria (2023) for slowly progressive type 1 diabetes (SPIDDM): Report from Committee on Type 
+- 38297009: Gallagher EJ 2024, NPJ Breast Cancer: Managing hyperglycemia and rash associated with alpelisib: expert consensus recommendations using the Delphi t
+- 38549041: Moradian A 2024, Clin Chem: Interlaboratory Comparison of Antibody-Free LC-MS/MS Measurements of C-peptide and Insulin.
+- 38851997: European Association for the Study of the Liver (EASL) 2024, J Hepatol: EASL-EASD-EASO Clinical Practice Guidelines on the management of metabolic dysfunction-associated steatotic li
+- 38852583: European Association for the Study of the Liver (EASL) 2024, Obes Facts: EASL-EASD-EASO Clinical Practice Guidelines on the Management of Metabolic Dysfunction-Associated Steatotic Li
+- 38869512: European Association for the Study of the Liver 2024, Diabetologia: EASL-EASD-EASO Clinical Practice Guidelines on the management of metabolic dysfunction-associated steatotic li
+- 38895780: Khatter NJ 2024, Pediatr Transplant: Longitudinal Quality of Life and Glycemic Outcomes of Total Pancreatectomy With Islet Autotransplantation in C
+- 38987271: Carobene A 2025, Clin Chem Lab Med: The biological variation of insulin resistance markers: data from the European Biological Variation Study (EuB
+- 39013634: Renklint R 2024, BMJ Open Diabetes Res Care: Surrogate measures of first-phase insulin secretion versus reference methods intravenous glucose tolerance tes
+- 39117485: Blicher MK 2024, Nutr Metab Cardiovasc Dis: Triglyceride-glucose index improves risk prediction beyond traditional risk factors and hypertension mediated 
+- 39380079: Valerio G 2024, Ital J Pediatr: Cardiometabolic risk in children and adolescents with obesity: a position paper of the Italian Society for Ped
+- 39726936: Hani NS 2024, Pediatr Diabetes: The Reproducibility and Reliability of Insulin Sensitivity and Secretion Indices in Children and Adolescents.
+- 39756404: Martins C 2025, Obesity (Silver Spring): The impact of a low-carbohydrate (vs. low-fat) diet on fat mass loss in African American women is modulated by
+- 39808164: Albers FEM 2025, Cancer Epidemiol Biomarkers Prev: Insulin and Insulin-like Growth Factor and Risk of Postmenopausal Estrogen Receptor-Positive Breast Cancer: A 
+- 39959260: Juza A 2025, World J Diabetes: Distinguishing exocrine pancreas disease-associated diabetes from type 2 diabetes based on anthropometric and 
+- 39963280: Nie Q 2025, Front Endocrinol (Lausanne): Insulin resistance and β-cell dysfunction in individuals with normal glucose tolerance but elevated 1-h post-l
+- 39992257: Galderisi A 2025, J Clin Endocrinol Metab: Metabolic Phenotype of Stage 1 and Stage 2 Type 1 Diabetes Using Modeling of β Cell Function.
+- 39994886: Kuncha J 2025, Cell Transplant: Correlation of Pancreatic Laminin Alpha 5 Expression With Clinical Outcomes in Total Pancreatectomy With Islet
+- 40353876: Liu H 2025, Anal Bioanal Chem: A candidate reference measurement procedure for quantification of human insulin in serum based on immunoaffini
+- 40497454: Stafford JM 2025, J Clin Endocrinol Metab: Prediabetes Subgroups, Type 2 Diabetes Risk, and Differential Effects of Preventive Interventions.
+- 40639383: Gillessen S 2025, Lancet Oncol: Metformin for patients with metastatic prostate cancer starting androgen deprivation therapy: a randomised pha
+- 40640995: De Sousa SM 2025, Med J Aust: Australian and New Zealand joint society consensus statement on genetic testing for monogenic diabetes in adul
+- 40656591: Izumo W 2025, Clin Exp Gastroenterol: Clinically Adult-Onset Nesidioblastosis with Repeated Severe Hypoglycemia, Successfully Treated by Two Times P
+- 40802520: Rohlfing C 2025, Clin Chem Lab Med: The current status of serum insulin measurements and the need for standardization.
+- 40812331: Retnakaran R 2025, Lancet Diabetes Endocrinol: The central role of recovery of β-cell function in the remission of prediabetes: a prospective cohort study in
+- 40841970: Dastjerdi P 2025, Diabetol Metab Syndr: Estimated glucose disposal rate and risk of cardiovascular events in type 1 diabetes: a systematic review and 
+- 40916719: Ostrominski JW 2025, Eur J Heart Fail: Finerenone according to insulin resistance in heart failure: Insights from the FINEARTS-HF trial.
+- 41178693: Mavraganis G 2026, Diabetes Obes Metab: Improving cardiovascular risk stratification through the derivation and validation of an elevated triglyceride
+- 41358885: American Diabetes Association Professional Practice Committee for Diabetes* 2026, Diabetes Care: 15. Management of Diabetes in Pregnancy: Standards of Care in Diabetes-2026.
+- 41358893: American Diabetes Association Professional Practice Committee for Diabetes* 2026, Diabetes Care: 2. Diagnosis and Classification of Diabetes: Standards of Care in Diabetes-2026.
+- 41829992: Sweatt SK 2026, Nutrients: Defining and Characterizing Postprandial Reactive Hypoglycemia.
+- 41833398: Yoshida H 2026, Endocr J: [(18)F]FB(ePEG12)12-Exendin-4 positron emission tomography/magnetic resonance imaging for precise preoperative
+- 42063220: Goodwin PJ 2026, JNCI Cancer Spectr: Exploration of body mass index and circulating metabolic factors as predictors of metformin benefit in the Can
+- 42110441: Zhang W 2026, Front Med (Lausanne): The correlation between triglyceride-glucose index in early pregnancy (<20 weeks) and pregnancy complications 
+- 42145088: Lu L 2026, Stroke: Liraglutide and Recurrent Stroke by Baseline Insulin Resistance: A Post Hoc Analysis of the LAMP Trial.
+- 42265997: Ndumele CE 2026, J Am Coll Cardiol: 2026 AHA/ACC/ADA/ASN Guideline for the Prevention, Detection, Evaluation, and Management of Cardiovascular-Kid
+- 42291078: Schwartz GG 2026, Am J Prev Cardiol: Small, dense LDL-C as a predictor of cardiovascular risk and benefit of alirocumab in patients with recent acu
+- 42312889: Güdemann LM 2026, Diabetes Care: To Cluster or Not to Cluster? A Comparison of Approaches to Targeting Type 2 Diabetes Glucose-Lowering Therapy
+- 42318218: Zhang W 2026, Front Endocrinol (Lausanne): A case report and literature review of proton pump inhibitors inducing insulin autoimmune syndrome.
+- 42569452: Liu F 2026, Front Cardiovasc Med: Reassessing of the incremental predictive value of triglyceride-glucose index beyond traditional cardiovascula
+- 42633332: Alavi R 2026, Cureus: Severe Uncontrolled Pancreatogenic Diabetes in a Patient With Prior Alcoholic Pancreatitis and Partial Pancrea
+- 42649063: Miwa M 2026, Intern Med: A Giant Thoracic Mass and Hypoglycemia: Suspected Solitary Fibrous Tumor-related Doege-Potter Syndrome.
+- 42657652: Tanaka K 2026, Pediatr Blood Cancer: Pediatric Case of Non-Islet Cell Tumor Hypoglycemia Driven by Hepatoblastoma: The Diagnostic Approach and Impa
+- 42662728: Vallianou NG 2026, Metabol Open: Alpha-lipoic acid as a trigger of insulin autoimmune syndrome: Current evidence, a case-based approach, diagno
+- 42684379: Sims EK 2026, Diabetes Care: β-Cell Dysfunction Identifies Individuals With Single Autoantibody Positivity at Increased Risk of Type 1 Diab
+- 42697708: Ismail AAA 2026, Ann Clin Biochem: Insulin/C-peptide interpretation in infants with hypoglycaemia of unknown origin.
+- 42702103: Xu X 2026, Clinics (Sao Paulo): Divergent associations of TyG index and HOMA-IR with cardiovascular and cerebrovascular mortality in non-diabe
+- 42732032: Lu S 2026, Obes Surg: A Simple Scoring Model for Mid-term Remission of Type 2 Diabetes Mellitus After Sleeve Gastrectomy in Chinese 
+- 8077319: Letiexhe MR 1993, J Clin Endocrinol Metab: Insulin secretion, clearance, and action on glucose metabolism in cirrhotic patients.
+- 8721775: Mooy JM 1996, Diabetologia: Intra-individual variation of glucose, specific insulin and proinsulin concentrations measured by two oral glu

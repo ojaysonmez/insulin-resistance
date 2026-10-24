@@ -733,7 +733,7 @@
    "missing_piece": "Prospective validation of the combined triage pathway PPV in US-relevant populations",
    "type": "evidence",
    "effort": "medium",
-   "basis": "Row 7: PPV 20% quoted; fails in first ~3 years."
+   "basis": "Row 7: PPV not sourced (an earlier '20%' could not be traced; nearest verified figure a 16-19% positive-test rate, PMID 41086125); validity tested after >2 years in children and >=5 years in adults (PMIDs 23289766, 21270186). Corrected 2026-10-24."
   },
   {
    "row": 10,
