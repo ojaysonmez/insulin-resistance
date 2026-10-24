@@ -187,6 +187,8 @@ Format: date, time (if known), what changed, why.
 
 - Specialty reviews done (2026-10-24): hepatology, reproductive and obstetric, nephrology, oncology, psychiatry (`reviews/specialty-*-2026-10-24.md`), combined skeptic (`reviews/skeptic-specialties-2026-10-24.md`); M1-M24 and U1-U10 applied, counts now 50 rows (11/17/10/10/2 not evaluated), new row 50 (D-45). Scorecard regenerated.
 
+- `summary.md` prose rewritten (2026-10-24) from the summary-editor draft (file-only run; the agent could not write files, so the main session saved it): pathways, specialty findings, 50-row counts, per-measure figures; the row 1 study size is now cited to `usecases/scoring/dossiers/row-01.md`; scorecard block unchanged.
+
 ## Not yet run or done
 - Specialty reviewers: done for all six specialties (D-44, D-45). Still to do: the summary editor pass on `summary.md`, and scoring row 50 if wanted.
 - Use-case scoring: the pilot on rows 6, 5 and 13 (needs searching for US commonality), then scoring of about 30 candidates (`usecases/scoring-rubric.md`; all rubric decisions are settled, nothing is scored).

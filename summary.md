@@ -1,45 +1,40 @@
 # Which uses of insulin and C-peptide measurement are viable?
 
-One-page brief, written 2026-10-19; section 1b added 2026-10-23 after scoring. Preliminary: sections 1 and 2 use the status of each use case; section 1b and the scorecard use the scores. Detail and sources: `summary-detailed.md`, `merged-conclusion.md`, `usecases-verified.md`. Not medical advice.
+One-page brief, rewritten 2026-10-24. Status comes from the verified use-case list; tiers come from preliminary scores. Detail: `merged-conclusion.md`, `usecases-verified.md`, `usecases/scoring/ranking.md`. Not medical advice.
 
-**Goal.** Find the uses of insulin, C-peptide and insulin-resistance measurement that are most viable, and what would make the less viable ones viable. We already know routine insulin-resistance screening is not supported (below); that is the constraint, not the finding to repeat.
+**Goal.** Find the uses of insulin, C-peptide and insulin-resistance measurement that are most viable, and what would make the less viable ones viable [DECISIONS: D-30]. Routine insulin-resistance screening is not supported (section 5); that is the constraint, not the finding [merged-conclusion: Bottom line 1].
 
 ## 1. Viable now: 11 uses with established support
-All are about insulin secretion or classification, not insulin-resistance screening [usecases-verified: Summary by kind].
-- **Hypoglycaemia work-up** in adults and children: insulin and C-peptide at the time of low glucose, with other markers (rows 1-4, 22, 24).
-- **Diabetes classification** in insulin-treated people: a random C-peptide with a glucose, and urinary C-peptide for MODY triage (rows 6, 7, 31).
-- **Islet or pancreas graft function:** C-peptide within the Igls criteria (row 10).
-- **Teplizumab eligibility:** peak stimulated C-peptide of at least 0.2 pmol/mL in ages 8-17 (row 29).
+The list has 50 uses: 11 established, 17 limited, 10 research-only, 10 unsupported and 2 not evaluated [usecases-verified: section 2]. All 11 established uses are about insulin secretion or diabetes classification, not insulin-resistance screening [usecases-verified: section 2 notes].
+- **Hypoglycaemia work-up** in adults and children: insulin, C-peptide and proinsulin drawn at the time of a documented low glucose, with other markers (rows 1-4, 22, 24) [usecases-verified: rows 1-4, 22, 24]. In sulfonylurea hypoglycaemia (row 3), the drug screen, not insulin, is the test that tells the causes apart [usecases-verified: row 3].
+- **Diabetes classification** in insulin-treated people: a random C-peptide with a glucose drawn at the same time (rows 6, 31), and blood or urinary C-peptide as one part of the triage for MODY genetic testing (row 7) [usecases-verified: rows 6, 7, 31].
+- **Islet or pancreas graft function:** basal and stimulated C-peptide within the Igls criteria (row 10) [usecases-verified: row 10].
+- **Teplizumab eligibility:** a peak stimulated C-peptide of at least 0.2 pmol/mL on a mixed-meal test, ages 8-17, within 8 weeks of stage 3 diagnosis. The approval is accelerated and rests on a C-peptide surrogate (row 29) [usecases-verified: row 29].
 
-## 1b. Top pathways after scoring and the stage 3 skeptic review (2026-10-23)
-Scores are preliminary judgements; read tiers, not rank numbers (`usecases/scoring/ranking.md`, decisions D-39 to D-43). Tier A is rows 6, 1 and 31.
-1. **Random C-peptide in insulin-treated adults of uncertain diabetes type (rows 6 and 31 together).** Consensus text already says to test before stopping insulin, yield data exist (6.8% reclassified in one uncontrolled UK clinic), the test is cheap. Missing: US cross-platform agreement at 80, 200 and 600 pmol/L, then a multi-site cohort with a pre-specified step-down rule and ketoacidosis and HbA1c endpoints (about 1,500 to 2,500 people, 3 to 4 years).
-2. **Insulin, C-peptide and proinsulin at documented hypoglycaemia (row 1).** Established, but thresholds date from 2009 and have not been checked on current US assays. Missing: an accuracy study in consecutive patients (400 to 900 people, 6 to 10 centres, 4 to 5 years).
-3. **C-peptide or urine C-peptide:creatinine triage before MODY testing (row 7), conditional.** Tier B. It needs a sourced positive predictive value and US availability of the urine assay first; the earlier "20%" figure could not be traced.
-Not worth pursuing now: routine fasting insulin, HOMA-IR or TyG screening (Bottom line 1, about 80-85%); "shown not to add value" is about 40% for fasting insulin and HOMA-IR and 30% for TyG, so absence of proof is not proof of absence.
+## 2. Top three pathways after scoring (read tiers, not ranks)
+Tier A is rows 6, 1 and 31 [ranking.md: tier table; DECISIONS: D-43]. Inside a tier the rank order means little: one unsourced patient-count score moves a row's score by about 0.05 [ranking.md: header; DECISIONS: D-39].
+1. **Random C-peptide (with concurrent glucose) in insulin-treated adults of uncertain diabetes type (rows 6 and 31 together).** The ADA/EASD consensus says to test before stopping insulin (full text checked 2026-10-23) [pathway-1-plan: section 1; fulltext-check]. In one uncontrolled UK clinic, 6.8% of those tested were reclassified (abstract level) [pathway-1-plan: section 1]. Missing first: agreement between US-marketed assays at 80, 200 and 600 pmol/L (about 9 to 12 months, small) [pathway-1-plan: Step A]. Missing second: a multi-site cohort with a pre-specified step-down rule, ketoacidosis and HbA1c endpoints, about 1,500 to 2,500 people over 3 to 4 years. These sizes are the assistant's judgements [pathway-1-plan: Step B; header]. No registry search for existing trials has been run [pathway-1-plan: section 6].
+2. **Insulin, C-peptide and proinsulin at documented hypoglycaemia (row 1).** This use is established, but the thresholds date from the 2009 Endocrine Society guideline and have not been checked on current US assays [usecases-verified: row 1; dossier row-01]. Missing: a prospective accuracy study in consecutive patients, roughly 400 to 900 evaluated adults (40 to 70 insulinoma cases) at 6 to 10 centres over 4 to 5 years, a judgement [dossier row-01: section 5].
+3. **C-peptide or urine C-peptide:creatinine triage before MODY testing (row 7), conditional.** Row 7 is tier B [ranking.md: row 7]. It needs a sourced positive predictive value and a US-available urine assay. The earlier "20%" figure could not be traced; the nearest verified figure is a 16-19% positive-test rate (abstract) [usecases-verified: row 7; DECISIONS: D-42]. (The scorecard's row 7 text below still quotes the old figure from the original unit file.)
 
-## 2. Closest to viable (from the stage 1 screen)
-Eleven uses are "close": limited or partly established support plus one specific missing piece (full table in the scorecard below). The cheapest next steps are the small-effort ones:
-- **Pioglitazone after stroke** (row 13): re-analyse the IRIS trial by HOMA-IR stratum and agree an assay standard.
-- **Slowly progressive type 1 diabetes** (row 47): validate the 0.6 ng/mL C-peptide cutoff outside Japan.
-- **Sulfonylurea hypoglycaemia** (row 3): show what insulin and C-peptide add to the drug screen alone.
-Medium-effort steps: a validated insulin cutoff for post-bariatric hypoglycaemia (row 5), a prospective cohort for C-peptide-guided de-escalation of insulin (row 31), validation of the MODY triage pathway (row 7), a guideline statement on post-DKA C-peptide (row 32), accuracy series for postprandial-only insulinoma (row 23) and for urinary C-peptide in US children (row 33), and external validation of the Index60 score for type 1 risk staging (row 49).
-Screened "far": fatty liver (row 14, a very large patient pool but weak evidence), type 3c diabetes (row 9) and severe or genetic insulin resistance (row 12).
+## 3. Closest to viable
+These rows are limited (or established but with a gap) and each has one named missing piece [scorecard below; ranking.md].
+- Tier B: fasting C-peptide below 0.6 ng/mL in slowly progressive type 1 diabetes, needing validation outside Japan (row 47). Post-DKA C-peptide, needing a multi-centre US cohort (row 32). An insulin or C-peptide threshold for post-bariatric hypoglycaemia, flagged weak evidence (row 5) [ranking.md: rows 47, 32, 5].
+- Tier C: re-analysing the IRIS pioglitazone trial by fasting-based HOMA-IR stratum (row 13), and accuracy data for insulin and C-peptide alongside the drug screen in sulfonylurea hypoglycaemia (row 3). Both are small-effort steps [ranking.md: rows 13, 3].
 
-## 3. What would unlock more (research targets, not conclusions)
-- A pre-specified study of whether HOMA-IR or TyG adds to risk scores (PCE, SCORE2) with calibration [merged-conclusion: Open gaps 2].
-- A trial of measurement-guided care against usual care; none was found [merged-conclusion: Trials and interaction].
-- Treatment-interaction tests stated per measure, in adequately sized trials [merged-conclusion: Open gaps 3].
-- Assay-harmonised cutoffs: one fasting insulin varies about 25-30% within a person, and assays disagree [merged-conclusion: Open gaps 4; Added by chemist runs].
-- Post-meal and stimulated tests: only research-level uses beyond rows 10 and 29 so far (rows 48 and 49 are new, research-only and limited).
+## 4. What the six specialty reviews found
+- **Cardiology:** PREVENT and SCORE2 take no fasting insulin, HOMA-IR, TyG or TG/HDL-C input. Neither 2026 guideline was found to recommend measuring them (excerpt or regex level) [merged-conclusion: Bottom line 1; skeptic-cardiology: section 5].
+- **The other five reviews** were hepatology, pregnancy and postpartum care, kidney disease and transplantation, oncology, and psychiatry. They found the same: the decisions read run on glucose, HbA1c, BMI, lipids, fibrosis tests or kidney function, not on fasting insulin, HOMA-IR or TyG. Most of these negatives are excerpt- or term-scan-level [merged-conclusion: Bottom line 1; skeptic-specialties: section 6].
+- **Paediatric exception (row 50, limited, not yet scored):** the Canadian CAMESA 2011 guideline recommends fasting insulin for children on most second-generation antipsychotics. A high value leads to an OGTT and specialist referral, not a treatment change. Its grades rate evidence that the side effect occurs, and its authors state there is no evidence on the outcome of monitoring [usecases-verified: row 50; skeptic-specialties: section 1.1; DECISIONS: D-45]. It conflicts in direction with Endocrine Society 2017 and NICE CG155. Whether CAMESA was updated after 2011 was not checked [usecases-verified: row 50].
+- **EASL 2024 (fatty liver, row 14, limited):** HOMA-IR or OGTT-derived estimates "may be considered" (weak, 92% agreement). A narrative "possible MASLD" passage and Table 7 list insulin-resistance tests as options, not a mandate. None of these is tied to fibrosis work-up or treatment [merged-conclusion: What is well supported, MASLD; skeptic-specialties: section 1.2].
+- No specialty review changed either bottom line or its figures [skeptic-specialties: section 5].
 
-## 4. Not worth pursuing now
-Routine fasting insulin, HOMA-IR or TyG screening in primary care, prediabetes, type 2 diabetes, PCOS, fatty liver or obesity: no established utility, about 80-85% likely to stay so (a judgement); the PCOS and paediatric obesity guidelines advise against routine insulin testing [merged-conclusion: Bottom line 1; usecases-verified: rows 15, 16].
+## 5. Not worth pursuing now
+- **Bottom line 1.** Routine fasting insulin, HOMA-IR or TyG measurement has no established clinical utility in primary care, prediabetes, type 2 diabetes, PCOS, fatty liver or obesity [merged-conclusion: Bottom line 1]. The project puts this at about 80-85%, a judgement of how likely the verdict is to survive further checking, not a measurement [merged-conclusion: Bottom line 1]. The PCOS guideline (practice points, "evidence not sought") and the Endocrine Society 2017 paediatric obesity guideline advise against routine insulin testing [usecases-verified: rows 15, 16; merged-conclusion: What is well supported].
+- **Bottom line 2.** "Shown not to add value" is a weaker claim. It is about 40% for fasting insulin and HOMA-IR and about 30% for TyG, a judgement about cardiovascular and type 2 diabetes outcomes, so absence of proof is not proof of absence [merged-conclusion: Bottom line 2]. For liver outcomes and for early-pregnancy prediction of gestational diabetes, the question is "not tested" [merged-conclusion: Bottom line 2].
+- **What would change this:** a pre-specified study of whether HOMA-IR or TyG adds to PREVENT or SCORE2 at current treatment thresholds [merged-conclusion: Open gaps 2]. No trial of measurement-guided care against usual care was found [merged-conclusion: Trials and interaction].
 
-## Next step
-Score the candidates (decision impact, evidence, readiness, patients affected, stakes, and path to viability) to pick 2-3 pathways to focus on [usecases/scoring-rubric.md]. The pilot on rows 6, 5 and 13 waits for a go-ahead.
-
-*Limits:* percentages are judgements; specialty reviews are not done; about 20-30 key papers were read at abstract level only.
+*Limits:* percentages, sizes and tiers are judgements, and the scores are preliminary [ranking.md: header; pathway-1-plan: header]. Row 50 has no scores [DECISIONS: D-45]. Several key sources were read at abstract or excerpt level only, as labelled above [merged-conclusion: Open gaps 5-6].
 
 <!-- SCORECARD:START -->
 
