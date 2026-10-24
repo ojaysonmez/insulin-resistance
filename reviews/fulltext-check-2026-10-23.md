@@ -15,3 +15,6 @@ Method: read-only grep and reading of the local open full texts in `corpus/fullt
 Not obtained (HTTP 403 or no open copy): Foteinopoulou 2021 (PMID 33131101, the source of the 6.8% figure) and Besser 2013 (PMID 23289766). These two stay at abstract level.
 
 Conclusion: no score or sentence has to change. The Holt wording behind D-42 is confirmed at full-text level. Two items stay open: the ISPAD monogenic chapter (PMID 36537518) and the Gavigan subgroup numbers.
+
+## Follow-up 2026-10-24: ISPAD 2022 monogenic chapter
+PMID 36537518, DOI 10.1111/pedi.13426, PMC10107883, full text read through `tools/pmc_text.py` (PMC XML). In "When to suspect a diagnosis of T1D in children may not be correct?", the list of features includes "Preserved β-cell function, with low insulin requirements and detectable C-peptide (either in blood or urine) over an extended partial remission phase (at least 5 years)". This confirms the V1 and V8 statement at full-text level; the open item above is closed. Row 7 D3 is unchanged (Holt 2021 carries it; ISPAD names C-peptide as a feature that raises suspicion, not as a gate).

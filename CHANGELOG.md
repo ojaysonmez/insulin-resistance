@@ -197,10 +197,20 @@ Format: date, time (if known), what changed, why.
 
 - Claim ledger v1 built (2026-10-24, D-46): 386 rows in `claims/claims.csv`, build files in `claims/build/`, skeptic sample `reviews/skeptic-ledger-2026-10-24.md` and its corrections applied, 222 DOIs filled, status rule in `claims/CLAIM-LEDGER.md`; six wording fixes in `merged-conclusion.md` and `usecases-verified.md`.
 
+- `tools/check_ledger.py` written and run (2026-10-24): 0 errors, 0 warnings after adding two row-10 PMIDs (34599533, 30501589) to UC-10; the retracted PMID 24757230 is excluded on purpose. Tested with a duplicate-ID copy (error caught).
+
+- Ledger search logs (2026-10-24): `search_log_ref` filled for 81 absence rows from the project reports (`claims/build/search-logs.csv`, notes in `search-logs-notes.md`); 5 rows still have no recorded search (ABS-05, UC-ABS-17, UC-ABS-21, UC-GAP-15, UC-GAP-26). Recorded searches weaken ABS-10, ABS-11, ABS-12, UC-ABS-16 (now disputed) and UC-GAP-04 (noted in `conflicts`); eight UC-GAP rows closed by later reads marked superseded. Deliverable follow-ups not yet applied: UC-ABS-16 (ADA Rec 3.13 wording) and UC-GAP-04 (analogue cross-reactivity by platform).
+
+- `usecases-verified.md` follow-ups from the ledger search logs (2026-10-24): section 5 item 1 (ADA Rec 3.13) marked resolved from the earlier skeptic full-text read; section 4 H gap on insulin-analogue cross-reactivity now cites the three round-2 abstracts (PMIDs 24150210, 37598742, 39030378, DOIs verified in PubMed). Ledger rows UC-ABS-16 and UC-GAP-04 superseded.
+
+- ISPAD 2022 monogenic chapter (PMID 36537518, DOI 10.1111/pedi.13426) read in PMC full text (2026-10-24): the "detectable C-peptide ... at least 5 years" feature is confirmed verbatim; `reviews/fulltext-check-2026-10-23.md` follow-up, row 7 read level and ledger UC-07 updated. No score change.
+
+- Row 31 dossier: Gavigan 2023 numbers corrected against the full text (49 with C-peptide; the 23/7 split and 11-of-23 counts marked unconfirmed; p = 0.029 confirmed) (2026-10-24).
+
 ## Not yet run or done
 - Specialty reviewers: done for all six specialties (D-44, D-45). Still to do: the summary editor pass on `summary.md`, and scoring row 50 if wanted.
 - Use-case scoring: the pilot on rows 6, 5 and 13 (needs searching for US commonality), then scoring of about 30 candidates (`usecases/scoring-rubric.md`; all rubric decisions are settled, nothing is scored).
-- Claim ledger: v1 built (D-46). Still to do: search-string logs for absence rows; a script checking that claim IDs and ledger sources match the readable files.
+- Claim ledger: v1 built (D-46); search logs filled except 5 rows.
 - Update system: dry run and scheduling test (`update-system/UPDATE-PLAN.md`); the citation script has been run and fixed, and a pre-commit check is not written.
 - Deferred wording items from the scope review: done (rows 17, 35, 45 and the WBISI wording by D-40; generic "IR" sentences reworded; skeptic reviewed).
 - Proposed, not drafted: full-text reader helper, formal appraisal tools (PROBAST, QUADAS-2, GRADE) for the biostatistician, a negative-claim protocol, analysts starting from the searcher's evidence set, a stopping rule.

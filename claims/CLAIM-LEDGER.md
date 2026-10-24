@@ -69,4 +69,4 @@ One row per claim in `claims.csv` (plain CSV, one header row). It is the project
 ## Open points
 - Whether the ledger is a CSV, a table in markdown, or a small JSON file; CSV is easiest to diff in git and for a script to read.
 - Who owns it: the main session, with agents proposing changes. Agents never edit it directly during a run.
-- A script to check that every claim ID cited in the readable files exists in the ledger, and every ledger source appears in the citation report. Not written.
+- ID and source consistency: `tools/check_ledger.py` (written 2026-10-24) checks columns, unique IDs, status values, one UC row per use case, dangling depends_on/conflicts IDs, and PMIDs cited in the readable files versus the ledger; report in `claims/build/ledger-check.md`. Run it after every ledger or deliverable edit. It does not yet check claim IDs cited inside the readable files (none are cited there yet).
