@@ -183,6 +183,8 @@ Format: date, time (if known), what changed, why.
 
 - Cardiology specialty review (2026-10-23, user: start with the first): `reviews/specialty-cardiology-2026-10-23.md` (24 look-ups, guideline excerpts). Bottom line 1 holds; suggested additions on IRIS, eGDR, ATTICA and PREVENT not applied; skeptic pass pending.
 
+- Cardiology skeptic pass (`reviews/skeptic-cardiology-2026-10-23.md`, 12 look-ups) and its nine changes applied to `merged-conclusion.md`, notes on rows 13 and 17 of `usecases-verified.md` (D-44). Remaining specialty reviewers: hepatology, reproductive and obstetric, nephrology, oncology, psychiatry (not started).
+
 ## Not yet run or done
 - Specialty reviewers (cardiology first, then others as chosen) and a skeptic on their findings; then the summary editor.
 - Use-case scoring: the pilot on rows 6, 5 and 13 (needs searching for US commonality), then scoring of about 30 candidates (`usecases/scoring-rubric.md`; all rubric decisions are settled, nothing is scored).

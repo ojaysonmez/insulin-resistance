@@ -1,0 +1,126 @@
+# Skeptic review: cardiology specialty review (2026-10-23)
+
+Reviewed: `reviews/specialty-cardiology-2026-10-23.md` (the "report"), against `merged-conclusion.md` (scope note read first) and `usecases-verified.md` rows 13 and 17. Background read: `reviews/skeptic-steelman.md` (ATTICA passage only). No deliverable was edited. Measure labels: F = fasting insulin or HOMA-IR (fasting-based); T = TyG or TG/HDL-C (non-insulin surrogate); E = eGDR (non-insulin surrogate from clinical variables); P = post-load; C = C-peptide.
+
+Look-up budget: 15 allowed, 12 used (log in section 7). Scholar Sidekick verifyCitation is not available in this session, so identifiers were checked against PubMed (metadata and ID converter) and retraction/correction status against Crossref (`updates` filter) and PubMed publication types. All confidence statements below are judgements.
+
+## 1. Ranked problems in the report
+
+| Rank | Severity | Claim in report | Why it fails | What fixes it |
+|---|---|---|---|---|
+| 1 | High | Section 2C and row 2: the AHA 2023 CKM presidential advisory is used as the current AHA CKM document; "AHA 2023 CKM advisory could not be retrieved" is closed "to excerpt level" | A 2026 AHA/ACC/ADA/ASN Guideline on CKM syndrome exists (JACC; PMID 42265997; DOI 10.1016/j.jacc.2026.03.056; PMC13399222; title verified by the PubMed ID converter and the PMC record). It is a formal guideline and newer than the advisory. The report does not mention it. My regex scan of its PMC full text (about 248k characters) found no HOMA, fasting insulin, serum insulin, TyG, TG/HDL ratio, eGDR or hyperinsulinaemia terms; "insulin resistance" appears 11 times, all as mechanism or as a drug effect. It says "High triglycerides and low high-density lipoprotein cholesterol (HDL-C) are markers of insulin resistance ... Lipid testing, which includes these measures, is recommended". It uses PREVENT-CVD (10-year risk 7.5% or more) to recommend GLP-1-based therapy or SGLT2 inhibitors. Its only pioglitazone sentence is in glycaemic management of diabetes ("associated with increased risk of HF"); no post-stroke IRIS recommendation was found in the scan | Cite the 2026 CKM guideline in place of the 2023 advisory for current practice. Read level: PMC full text, regex-scanned, not read end to end; tables may be incomplete in the PMC extraction |
+| 2 | High (identifier) | Section 1 table: CKM advisory "PMID not verified (37807920 is probably this record)" | PubMed 37807920 is a different paper: "A Synopsis of the Evidence for the Science and Clinical Management of Cardiovascular-Kidney-Metabolic (CKM) Syndrome: A Scientific Statement From the American Heart Association", DOI 10.1161/CIR.0000000000001186. The advisory's DOI is 10.1161/CIR.0000000000001184; the ID converter returned no PMID for it | Remove 37807920 as the advisory's PMID. Record the advisory as DOI 10.1161/CIR.0000000000001184, PMID not found |
+| 3 | Medium | Row 6 and suggestion 3: "every IRIS participant had HOMA-IR above 3.0 (median 4.7, interquartile range 3.8 to 6.2 in both arms)" | Two errors. (a) The criterion was a *screening* HOMA-IR above 3.0, measured in central laboratories at least 14 days after the index event (NEJM full text, PMC4887756). The text read does not report whether any baseline value fell at or below 3.0, so "every participant had" should be "every participant was required to have at screening". (b) Viscoli 2017 Table 1 gives 4.7 (3.8, 6.2) with pioglitazone and 4.6 (3.7, 6.2) with placebo; the NEJM text gives medians 4.7 and 4.6 | Use the wording in section 4, change 3 |
+| 4 | Medium | Suggestion 5: "eGDR-based analyses (FIDELITY, FINEARTS-HF) use waist, HbA1c and hypertension status" | Verified only for FINEARTS-HF (abstract, PMID 40916719). The FIDELITY formula was not checked by anyone. eGDR formulas differ: the single-centre HFpEF study (PMID 37364818, abstract) used BMI, not waist | Attribute the formula to FINEARTS-HF only (section 4, change 5) |
+| 5 | Medium | Row 11 and suggestion 6: ATTICA's gain "fits a weak base score in a young, hospital-clinic cohort" | It mixes two cohorts. The ATTICA derivation cohort is a general-population cohort (abstract) with mean age 43.9; the validation set is two pooled Athens hospital-clinic cohorts (skeptic full-text read). The "about ten times larger" comparison sets a single dichotomised marker over SCORE2 in about 1,200 to 1,700 people against three optional markers over PREVENT in 3.3 million people. The ratio is arithmetic (0.044 to 0.054 against 0.004 to 0.005), but what it implies is inference. The report does label it as inference | Keep it as a plausibility check, labelled as inference, and name the cohorts correctly (section 4, change 6) |
+| 6 | Medium | Row 7 and suggestion 3: "Heart failure was an exclusion"; HF guideline "lists them as a major HF exacerbator (level of evidence A)" | (a) IRIS first excluded NYHA class III-IV heart failure and class II with reduced ejection fraction; an exclusion for *any* history of heart failure was added during the trial (NEJM full text). (b) In the excerpts, "thiazolidinediones should be avoided in patients with reduced LVEF" is supportive text in section 6.1 (stage B). "Major, LOE A" is the Table 13 grading of heart-failure induction or precipitation, not the class and level of a recommendation. A formal recommendation in section 7.3.7 may exist but was not seen | Use the wording in section 4, change 3. The HF guideline has three Crossref-registered corrections (2022-05, 2022-09, 2023-04), which were not read |
+| 7 | Low | Section 1 table: dyslipidaemia guideline "Circulation 2026-04-28" | The guideline was published online on 13 March 2026, in JACC (DOI 10.1016/j.jacc.2025.11.016) and Circulation (DOI 10.1161/CIR.0000000000001423) (ACC and AHA press releases, search excerpts). 2026-04-28 is the date the Circulation page shows. The ID converter found no PMID for either DOI. The phrase "retires and replaces" was not in my excerpts; the JACC Guideline-at-a-Glance says its recommendations "replace those from the 2018" guideline | Give both DOIs and the online date |
+| 8 | Low | Row 11 and section 2A: "the 2026 guideline already lists persistent triglycerides (at least 150 mg/dL fasting) as a risk enhancer" | Not in my excerpts. They show the TG 150-499 mg/dL PREVENT recommendation (COR 1) and the risk-enhancer recommendations, but not the list itself | Mark it "report-only, not re-verified" until the risk-enhancer table is read |
+| 9 | Low | Use of PREVENT figures (PMID 37947085) | Crossref shows two corrections to the PREVENT paper (2024-03-11 and 2026-10-14). Neither was read, so whether they touch the ΔC 0.004-0.005 figure is unknown | Read the 2026-10-14 correction before the ΔC figure goes into a deliverable |
+| 10 | Low | Row 6, the HOMA effect-modifier question | Still unresolved. The Viscoli 2017 Figure 2 legend defines "HOMA", which suggests a HOMA subgroup, but no HOMA interaction P value appears in any excerpt. The figure's outcome is stroke, not the primary outcome of stroke or MI, and its P values are "unadjusted for multiplicity". The NEJM Figure 2 (13 subgroups) was not seen | Read NEJM Figure 2 and Viscoli 2017 Figure 2 directly |
+
+No problem found: the FINEARTS-HF numbers; the IRIS heart-failure numbers; the PREVENT optional-predictor ΔC; the PREVENT-ASCVD thresholds; all six DOI pairs in the report's DOI list; the MR caveat. The report flags its own excerpt-level limits honestly.
+
+## 2. Answers to the seven checks
+
+1. **PMID/DOI pairs.** All pairs below were verified against PubMed metadata. None of the records carries a "Retracted Publication" type. A Crossref `updates` query over eight load-bearing DOIs returned corrections for PREVENT and the HF guideline only, and no retractions.
+   - Correct: PREVENT 37947085 / 10.1161/CIRCULATIONAHA.123.067626 (online 2023-11-10); FINEARTS-HF eGDR 40916719 / 10.1002/ejhf.70034; HFpEF eGDR 37364818 / 10.1016/j.jjcc.2023.06.008; AHA/ASA 2021 stroke 34024117 / 10.1161/STR.0000000000000375; IRIS 26886418 / 10.1056/NEJMoa1506930 (PMC4887756); Viscoli 2017 29084736 / 10.1161/CIRCULATIONAHA.117.030458 (now metadata-verified); IRIS-HF 29934374 / 10.1161/CIRCULATIONAHA.118.034763; IRIS diabetes 27465265 / 10.2337/dc16-0798 (the DOI the report could not retrieve; PMC5033078); MR 32398352 / 10.1136/bmjdrc-2020-001217; ATTICA 41178693 / 10.1111/dom.70270; Liu 2026 42569452 / 10.3389/fcvm.2026.1804411; Health ABC 19700136 / 10.1016/j.cardfail.2009.03.001; Spence 2019 30734043 / 10.1001/jamaneurol.2019.0079.
+   - The report's recalled IDs are confirmed: ESC 2021 is 34458905 / 10.1093/eurheartj/ehab484, and the 2022 HF guideline is 35363499 / 10.1161/CIR.0000000000001063.
+   - Wrong: 37807920 is not the CKM advisory (problem 2).
+   - No PMID found: the 2026 dyslipidaemia guideline (both DOIs) and the CKM advisory.
+2. **2026 ACC/AHA dyslipidaemia guideline.** It exists and replaces the 2018 blood cholesterol guideline (Guideline-at-a-Glance, search excerpt). It uses PREVENT-ASCVD, whose inputs include no insulin, HOMA-IR, TyG or triglycerides (PREVENT abstract). In the publisher-page excerpts:
+   - the CKM definition names "hyperinsulinemia" as a characteristic;
+   - the lifestyle text advises "improvement of insulin resistance" without any measurement;
+   - TyG appears only as a reference title in the imaging section (Zhang 2025).
+   No recommendation to measure F or T was seen. Read level: excerpts, so "none found in excerpts", not "none in the document".
+3. **IRIS.** Eligibility required a screening HOMA-IR above 3.0 in central laboratories (NEJM full text). This is "required at screening", not a verified baseline value for every participant (problem 3). Viscoli 2017 did examine subgroups by baseline features for the stroke outcome. Only prior stroke (P = 0.02) and index event type (P = 0.05) were reported as modifiers, both unadjusted. A HOMA subgroup is implied by the Figure 2 legend, but its P value was not seen. Read level: publisher-page excerpts (abstract, Table 1, subgroup paragraph, figure legend). The Spence 2019 authors write, in a search excerpt, "We cannot know the effectiveness of pioglitazone in patients with prediabetes and HOMA-IR scores less than or equal to 3".
+4. **HF caveat.** The wording is confirmed: "Given the evidence, thiazolidinediones should be avoided in patients with reduced LVEF" (section 6.1 supportive text). Table 13 lists thiazolidinediones as exacerbating underlying myocardial dysfunction, magnitude "Major", LOE A. The guideline also says thiazolidinediones are associated with HF events "in those patients with or without a previous history of HF". Read level: publisher-page excerpts.
+5. **FINEARTS-HF.** P = 0.64 is confirmed for cardiovascular death and total HF events, for a median split at 5.1 mg/kg/min. eGDR was computed from waist circumference, HbA1c and hypertension status, with no insulin assay. Read level: abstract.
+6. **ATTICA "inflated".** This is an inference, not a sourced finding. Two separate points trace to `reviews/skeptic-steelman.md`:
+   - The NRI point. The paper does not state the NRI type, and the skeptic did not read the supplement. The skeptic judged that values of 0.47-0.67 are "typical of category-free NRI, which is known to be inflated". No methods reference is recorded.
+   - The base-score point. "A weak or mis-calibrated base score inflates delta C" is marked by the skeptic as "inference from the baseline table, not something the paper says".
+   The report's point 11 is a third inference of the same kind. The wording for `merged-conclusion.md` is in section 4, change 6b.
+7. **Open gap 2.** Yes, it should name PREVENT. The thresholds are verified from the dyslipidaemia guideline excerpt (PREVENT-ASCVD 10-year risk: low under 3%, borderline 3 to under 5%, intermediate 5 to under 10%, high 10% or more). The 2026 CKM guideline adds PREVENT-CVD, which includes HF, with a 7.5% threshold for GLP-1-based therapy or SGLT2 inhibitors.
+
+## 3. Verdicts on the report's suggested changes
+
+| # | Report suggestion | Verdict | Reason |
+|---|---|---|---|
+| 1 | Add cardiology populations to bottom line 1 | Apply with changes | Name the 2026 CKM guideline. Keep "in the excerpts read". Add the TG/HDL-C point (the CKM guideline treats the components as IR markers inside the lipid panel) |
+| 2 | Limits paragraph: 2018 guideline replaced | Apply with changes | Add both DOIs and the read level. Also update "AHA 2023" (problem 1) |
+| 3 | IRIS: HOMA-IR range, HF exclusion, HF guideline | Apply with changes | Problems 3 and 6 |
+| 4 | IRIS subgroup sentence (Viscoli 2017) | Apply with changes | State that the outcome is stroke, that P values are unadjusted, and that the result holds only within the enrolled range |
+| 5 | eGDR sentence with FINEARTS-HF result | Apply with changes | Problem 4. Label eGDR as a non-insulin surrogate and state that the comparison is a median split |
+| 6 | PREVENT scale check on ATTICA | Apply with changes | Problem 5. Also reword the existing "inflated" parenthesis (check 6) |
+| 7 | Open gap 2: name PREVENT | Apply with changes | Add the PREVENT-CVD/HF threshold from the CKM guideline. Keep PCE only as a secondary comparator for older cohorts |
+| 8 | Not-tested list wording | Apply with changes | Name the measure in every clause |
+| 9 | Add missing DOIs | Apply | All six pairs verified against PubMed metadata. Add the IRIS diabetes paper DOI 10.2337/dc16-0798 if that paper is cited |
+| (row 1) | Cardiology-specific confidence 85-90% | Do not add to the deliverable now | It is a judgement by one specialty reviewer at excerpt level. The confidence figures were re-derived and skeptic-reviewed on 2026-10-23, so a change needs the same route |
+
+## 4. Exact replacement sentences for `merged-conclusion.md` (not applied)
+
+**Change 1. Bottom line 1** (line 10). After "in primary care, prediabetes, T2D, PCOS, MASLD or obesity." insert:
+> "The same holds in cardiology for cardiovascular risk estimation and for treatment choice. The risk tools in current use take no fasting insulin, HOMA-IR, TyG or TG/HDL-C input: PREVENT (PMID 37947085), which the 2026 ACC/AHA dyslipidaemia and 2026 AHA/ACC/ADA/ASN CKM guidelines recommend, and SCORE2 (ESC 2021). Neither 2026 guideline was found to recommend measuring fasting insulin, HOMA-IR or TyG (dyslipidaemia guideline: publisher-page excerpts only; CKM guideline, PMID 42265997: PMC full text regex-scanned, not read end to end). The CKM guideline calls high triglycerides and low HDL-C 'markers of insulin resistance' and covers them through the standard lipid panel, not through a TG/HDL-C ratio. The exception is the post-stroke IRIS niche in point 3."
+
+**Change 2. Limits paragraph** (line 24). Replace "AHA 2023, AACE 2026, ADA/EASD 2026 consensus, the 2018 cholesterol guideline (Set A)" with:
+> "AHA 2023 (the CKM presidential advisory, DOI 10.1161/CIR.0000000000001184, PMID not found; publisher-page excerpts only; now followed by the 2026 AHA/ACC/ADA/ASN CKM guideline, PMID 42265997, DOI 10.1016/j.jacc.2026.03.056, PMC full text regex-scanned for insulin, HOMA, TyG, TG/HDL-C and eGDR terms, none found as a measurement), AACE 2026, ADA/EASD 2026 consensus, the 2018 cholesterol guideline (Set A; replaced by the 2026 ACC/AHA multisociety dyslipidaemia guideline, DOI 10.1161/CIR.0000000000001423 and 10.1016/j.jacc.2025.11.016, PMID not found, read only as publisher-page excerpts)"
+
+**Change 3. IRIS bullet** (line 33). After "...so it cannot show testing is needed." insert:
+> "Entry required a screening HOMA-IR above 3.0 (fasting-based), measured in central laboratories at least 14 days after the index event (full text). Baseline HOMA-IR was median 4.7 (interquartile range 3.8 to 6.2) with pioglitazone and 4.6 (3.7 to 6.2) with placebo (Viscoli 2017, PMID 29084736, DOI 10.1161/CIRCULATIONAHA.117.030458, Table 1, publisher-page excerpts). IRIS therefore says nothing about people at or below 3.0, as the Spence 2019 authors also state. Heart failure of NYHA class III-IV, or class II with reduced ejection fraction, was excluded from the start, and any heart-failure history was excluded later in the trial. Heart failure did not differ between arms (74 vs 71 patients, P = 0.80; full text). Among the 3,851 participants without prior heart failure, 5-year heart-failure risk was 4.1% with pioglitazone and 4.2% with placebo (PMID 29934374, DOI 10.1161/CIRCULATIONAHA.118.034763, abstract). The 2022 AHA/ACC/HFSA guideline (PMID 35363499, DOI 10.1161/CIR.0000000000001063, publisher-page excerpts) states in its stage B text that 'thiazolidinediones should be avoided in patients with reduced LVEF', and its drug table rates thiazolidinediones a major cause of heart-failure induction or exacerbation (level of evidence A)."
+
+**Change 4. IRIS subgroup sentence** (line 33). Replace "whether HOMA-IR is one of them is unconfirmed" with:
+> "whether HOMA-IR is one of them is not stated in the text read. In the planned secondary analysis with stroke as the outcome (Viscoli 2017, PMID 29084736, publisher-page excerpts), no baseline feature significantly modified the effect except prior stroke (P interaction 0.02) and index event type (P = 0.05), both unadjusted for multiplicity. The Figure 2 legend defines 'HOMA', which suggests a HOMA subgroup, but its interaction P value was not seen. Any such null would apply to stroke, not to the primary stroke-or-MI outcome, and only within the enrolled range (HOMA-IR above 3.0)"
+
+**Change 5. eGDR sentence** (line 88). Replace "**eGDR-based analyses** (FIDELITY, FINEARTS-HF) do not use an insulin assay." with:
+> "**eGDR-based analyses** (FIDELITY, FINEARTS-HF) use clinical variables, not an insulin assay (eGDR is a non-insulin surrogate). In FINEARTS-HF (PMID 40916719, DOI 10.1002/ejhf.70034, abstract), eGDR was computed from waist circumference, HbA1c and hypertension status. Below-median eGDR (under 5.1 mg/kg/min) carried a higher rate of cardiovascular death and total heart-failure events (adjusted rate ratio 1.63, 1.41-1.87). Finerenone's effect did not differ by eGDR category (interaction P = 0.64). This is a null treatment-by-surrogate interaction for a median split, and the association does not separate insulin resistance from its three inputs. The FIDELITY eGDR formula was not checked."
+
+**Change 6a. ATTICA bullet** (line 28). After "...TyG uses triglycerides and glucose, not insulin, so the gain may not be IR." insert:
+> "For scale: adding urine albumin-creatinine ratio, HbA1c and social deprivation index together to PREVENT raised the C-statistic by 0.004 to 0.005 in external validation (PMID 37947085, abstract). The ATTICA TyG gains (TyG is a non-insulin surrogate) are about ten times larger. The base scores, cohort sizes and marker coding differ, and the validation set had 63 events, so this is only a plausibility check. The view that the gap reflects a weak base model (SCORE2 applied in a general-population cohort with mean age 43.9, partly below its validated range) rather than a large TyG effect is an inference, not a finding of either paper."
+
+**Change 6b. ATTICA bullet** (line 28). Replace "the NRI type is unstated (values typical of an inflated category-free NRI)" with:
+> "the NRI type is not stated in the main text (the supplement was not read); values of 0.47 to 0.67 are in the range usually seen with category-free NRI, which is not comparable with category-based NRI and can be large for modest markers (a skeptic inference from the values, not a statement of the paper)"
+
+**Change 7. Open gap 2** (line 126). Replace "of HOMA-IR/TyG over PCE or SCORE2 in an external, more diverse cohort" with:
+> "of HOMA-IR (fasting-based) and TyG or TG/HDL-C (non-insulin surrogates) over PREVENT (US) or SCORE2 (Europe) in an external, more diverse cohort. It should report category-based reclassification at the treatment thresholds now in use: PREVENT-ASCVD 10-year risk under 3%, 3 to under 5%, 5 to under 10% and 10% or more (2026 ACC/AHA dyslipidaemia guideline), and PREVENT-CVD, which includes heart failure, at 7.5% (2026 CKM guideline). PCE can be kept as a secondary comparator for older cohorts"
+
+Line 90 ("no delta-C study over PCE/SCORE2") and line 107 ("over PCE/SCORE2") should take the same wording, "over PREVENT, SCORE2 or PCE".
+
+**Change 8. Not-tested list** (line 105). Replace "IR-selected trials in dementia and HFpEF" with:
+> "randomised trials selecting or stratifying by fasting insulin or HOMA-IR in dementia and HFpEF (MET-HFpEF, which uses FIRI, a fasting-based index, as one of three entry routes, is recruiting; post hoc analyses of heart-failure trials stratified by eGDR, a non-insulin surrogate, exist, for example FINEARTS-HF)"
+
+**Change 9. Corrections list** (after line 122). Add:
+> "DOIs for PMIDs cited without them (verified against PubMed): IRIS 26886418 = 10.1056/NEJMoa1506930; Spence 2019 30734043 = 10.1001/jamaneurol.2019.0079; MR 32398352 = 10.1136/bmjdrc-2020-001217; ATTICA 41178693 = 10.1111/dom.70270; Liu 2026 42569452 = 10.3389/fcvm.2026.1804411; Health ABC 19700136 = 10.1016/j.cardfail.2009.03.001."
+
+`usecases-verified.md` row 13: add "screening HOMA-IR >3.0 (central laboratory, at least 14 days after the event); Viscoli 2017 stroke-outcome subgroups show no significant modification except prior stroke and index event type; HOMA interaction P not seen". Row 17: add "PREVENT (2026 ACC/AHA dyslipidaemia, 2026 CKM guidelines) has no F or T input". These rows are not changed by this review.
+
+## 5. Claims that survived scrutiny
+
+- No current cardiology risk tool or 2026 ACC/AHA guideline seen recommends measuring fasting insulin, HOMA-IR or TyG (F, T). This was checked in the PREVENT abstract, dyslipidaemia guideline excerpts and the CKM guideline full-text scan. The negative is excerpt- or regex-level.
+- The FINEARTS-HF eGDR association and the null interaction (E).
+- The IRIS heart-failure findings (F-selected population) and the HF guideline caveat on thiazolidinediones.
+- The PREVENT optional-predictor ΔC of 0.004-0.005, subject to the unread 2026-10-14 correction.
+- The MR caveat: the instruments mix fasting insulin with HDL-C and triglycerides.
+- The AHA/ASA 2021 stroke-guideline reading: no assay named; recommendation tables unread.
+
+## 6. Verdict
+
+The cardiology review makes the project's main verdict stronger, not weaker: there is no established clinical utility of routine fasting insulin, HOMA-IR, TyG or TG/HDL-C measurement for cardiovascular risk prediction or treatment choice. The newest US guidance it missed (2026 CKM guideline) points the same way. That guideline uses PREVENT for treatment thresholds and treats triglycerides and HDL-C as IR markers inside the routine lipid panel, with no separate measurement. The one cardiology-adjacent niche is still pioglitazone after stroke or TIA, selected in IRIS by a screening HOMA-IR above 3.0. It remains "limited": a single trial; no comparator below the threshold; no HOMA effect-modification result seen; a glycaemic-category alternative (Spence 2019); and a heart-failure contraindication. ATTICA is the only result over a current score that runs against the verdict, and its large gain is most plausibly a design artefact. That judgement rests on inference, not on a published re-analysis. Overall the case for clinical utility in cardiology is weak (judgement), and the evidence that would change this is the incremental-value study over PREVENT or SCORE2 in open gap 2, at decision thresholds.
+
+## 7. Look-up log and read levels
+
+| # | Tool | Target | Read level / result |
+|---|---|---|---|
+| 1 | PubMed metadata | 16 PMIDs (all report PMIDs plus recalled 37807920, 34458905, 35363499) | Title, DOI, publication type, abstracts. 37807920 = CKM Synopsis statement |
+| 2 | PubMed ID converter | 6 PMIDs | DOI for 27465265 found; no PMC for Viscoli 2017 |
+| 3 | PMC full text | IRIS, PMC4887756 | Full text (body; tables and figures not in extraction) |
+| 4 | Web fetch | Viscoli 2017, ahajournals.org | Publisher-page excerpts (abstract, Table 1, subgroup text, Figure 2 legend); figure values not seen |
+| 5 | Web search | IRIS HOMA-IR subgroup P value | Search excerpts (NEJM, Spence 2019, IRIS-HF table row); no HOMA P value found |
+| 6 | Web search | 2026 dyslipidaemia guideline | Search excerpts (JACC hub, Guideline-at-a-Glance, ACC/AHA press releases); also surfaced the 2026 CKM guideline |
+| 7 | Web fetch | 2026 dyslipidaemia guideline, Circulation | Publisher-page excerpts |
+| 8 | Web fetch | 2026 CKM guideline, JACC | Publisher-page excerpts |
+| 9 | Web fetch | 2022 HF guideline, Circulation | Publisher-page excerpts (sections 6.1, 7.3.7, Table 13) |
+| 10 | Crossref API | `updates` filter, 8 DOIs | Corrections: PREVENT (2), HF guideline (3); no retractions. Correction contents not read |
+| 11 | PubMed ID converter | 4 guideline DOIs | Only the CKM guideline resolved (PMID 42265997, PMC13399222) |
+| 12 | PMC full text | CKM guideline, PMC13399222 | Full text regex-scanned (about 248k characters), not read end to end |
+
+Not done: verifying ADA/EASD 2023 (PMID 37794253); reading the risk-enhancer table of the dyslipidaemia guideline; the AHA/ASA 2021 recommendation tables; NEJM Figure 2; FIDELITY.
