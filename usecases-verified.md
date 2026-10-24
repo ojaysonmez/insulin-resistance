@@ -113,7 +113,7 @@ From M (section 3):
 17. WHO 1999 metabolic syndrome definition requiring IR (historical) [recall].
 18. Very high fasting insulin as a first clue to a rare IR syndrome outside JDS [recall] (the dose-based clue and the JDS threshold are sourced; M's item 3, type B work-up, is sourced by the JDS table and is not unsourced).
 
-Inline [recall] items inside verified rows (the Igls threshold in row 10 is now sourced): no accepted insulin threshold for post-bariatric hypoglycaemia (row 5); guideline GRADE for the hypoglycaemia strategy (row 1); immunoassay hook-effect under-reading at extreme insulin values (row 12); newer-agent miss in drug screens (row 3).
+Inline [recall] items inside verified rows (the Igls threshold in row 10 is now sourced): no accepted insulin threshold for post-bariatric hypoglycaemia (row 5); guideline GRADE for the hypoglycaemia strategy (row 1; resolved 2026-10-23, reported as grade 1, moderate); immunoassay hook-effect under-reading at extreme insulin values (row 12); newer-agent miss in drug screens (row 3).
 
 ## 4. Source gaps the reviewers could not retrieve
 

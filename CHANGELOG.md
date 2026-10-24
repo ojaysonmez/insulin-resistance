@@ -207,9 +207,21 @@ Format: date, time (if known), what changed, why.
 
 - Row 31 dossier: Gavigan 2023 numbers corrected against the full text (49 with C-peptide; the 23/7 split and 11-of-23 counts marked unconfirmed; p = 0.029 confirmed) (2026-10-24).
 
+- Watch fixes (2026-10-24): the 2026-10-24 triage file now starts with its SUMMARY line, and `.claude/agents/ir-watch-triage.md` requires that line so the session-start brief can read every run. Manual registry check: PRINCESS (NCT05760339) still recruiting with a passed completion date, no results, no signal; the two ISRCTN, the CTRI and the IRCT records could not be read from this environment (wrong cached page, boilerplate, timeout) and stay unchecked.
+
+- Registry and ledger follow-ups (2026-10-24): ISRCTN74144960 and ISRCTN11215387 read through the ISRCTN API (MET-HFpEF recruitment end 2026-08-31 passed, overall end 2027-08, no outputs; ITT-IR ended 2021, 757 enrolled, no outputs); CTRI (TLS failure) and IRCT (connection reset) still unchecked. Ledger: four "no search" rows reclassified as reading-scope statements, ABS-05 marked an untested absence (unverified), three inline [recall] rows added (UC-REC-INL-01 to -03; the row 5 item was already a UC-ABS row); 389 rows, ledger check 0 errors. Row 1 GRADE recall item marked resolved in `usecases-verified.md` section 3.
+
+- Daily watch pilot exercised again (2026-10-24, user): citation check (only DiaPep277), `watch_fetch.py --days auto` found 0 new records (all already seen), so no triage run; logged in `usage-log.tsv`. The fetch overwrote the same-day candidates file; restored from git, second run kept as `update-watch/runs/2026-10-24b-candidates.md`; lesson added to `memory/lessons_learned.md`.
+
+- Pathway 1 next steps (2026-10-24, user): registry and literature search (`usecases/scoring/pathways/pathway-1-registry-search.md`; no registered trial answers Step A or B, no US record; closest is CLASP, ISRCTN76893830) and partner scouting (`usecases/scoring/pathways/pathway-1-partners.md`; Missouri reference laboratory first, UW TaMADOR second, manufacturers via the standardisation committee, RADIANT and T1DX-QI for Step B; no personal contact data). Findings folded into `pathway-1-plan.md` section 7; DOCX regenerated.
+
+- Cloud daily watch scheduled (2026-10-24, user, D-47): task "IR daily update watch (cloud)", daily 01:43 PDT, fresh session, pushes only watch files to main. First run due 2026-10-24 01:43 PDT.
+
+- CTRI/2026/09/117733 status logged from the user's browser check (2026-10-24): not yet recruiting, AIIMS Delhi, fasting vs postprandial phenotype arms; HOMA-IR thresholds not visible in the list view. IRCT20170812035642N11 read by the user through WHO ICTRP: diet-by-metabotype feasibility RCT (Tehran, n = 144, recruiting since 2025-12-21; insulin-resistant metabotype = fasting glucose 100 or more, fasting insulin 15 or more and HOMA-IR above 2.4); no results, no signal; contacts not copied (D-35).
+
 ## Not yet run or done
 - Specialty reviewers: done for all six specialties (D-44, D-45). Still to do: the summary editor pass on `summary.md`, and scoring row 50 if wanted.
-- Use-case scoring: the pilot on rows 6, 5 and 13 (needs searching for US commonality), then scoring of about 30 candidates (`usecases/scoring-rubric.md`; all rubric decisions are settled, nothing is scored).
+- Use-case scoring: done (stage 1 to 3, 32 rows ranked, row 48 unranked, 18 rows not candidates; D-32 to D-46). Scores stay preliminary judgements.
 - Claim ledger: v1 built (D-46); search logs filled except 5 rows.
 - Update system: dry run and scheduling test (`update-system/UPDATE-PLAN.md`); the citation script has been run and fixed, and a pre-commit check is not written.
 - Deferred wording items from the scope review: done (rows 17, 35, 45 and the WBISI wording by D-40; generic "IR" sentences reworded; skeptic reviewed).

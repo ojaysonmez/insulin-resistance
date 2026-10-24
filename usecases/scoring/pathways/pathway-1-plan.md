@@ -48,3 +48,26 @@ D2 3 to 3 or 4 (4 only with controlled hard-outcome data); D8 clarified; D4 conf
 - The 11% reclassification figure sometimes quoted has no traced source; use 6.8%.
 - No registry search was run for existing trials of C-peptide-guided insulin withdrawal.
 - No funding source, partner or budget is assumed.
+
+# 7. What already exists, and who to approach (added 2026-10-24)
+
+Sources: `usecases/scoring/pathways/pathway-1-registry-search.md` (30 logged registry and literature look-ups) and `usecases/scoring/pathways/pathway-1-partners.md` (27 look-ups, public sources only, no personal contact data). Both are desk research; no organisation has been contacted, and willingness, capacity and fees are unknown.
+
+## Does a trial already answer Step A or Step B?
+No registered trial was found that answers either step, and no US record was found at all (WHO ICTRP results could not be read directly; abstracts only).
+- Step A: no registered cross-platform C-peptide harmonisation study. Published laboratory work only: TaMADOR (PMID 38549041, DOI 10.1093/clinchem/hvae034), Deng 2023 (PMID 37141618, DOI 10.1515/cclm-2023-0215) and Hörber 2023 (PMID 36630986), all abstract level. No published US split-sample comparison at 80, 200 and 600 pmol/L.
+- Step B: the closest design is CLASP (ISRCTN76893830, Dundee, UK), a single-arm pilot in 28 frail adults aged 70 or older with type 2 diabetes that withdraws insulin at random C-peptide of 900 pmol/L or more, with ketoacidosis and hyperosmolar state as secondary outcomes; no results found. Its cutoff is higher than this plan's 600 pmol/L band, which is worth weighing when the step-down rule is set. Partly related, both UK: ARC-T1D (NCT06821360) and StartRight (PMID 36205650).
+
+## Candidate partners (ranked by fit; a judgement, not an endorsement)
+1. University of Missouri Diabetes Diagnostic Laboratory / C-peptide Standardization Program: the only US laboratory with a C-peptide reference measurement procedure on the international (JCTLM) register, plus commutable serum materials and multi-manufacturer studies (Rohlfing 2025, PMID 39803820, DOI 10.1515/cclm-2024-1260, full text). Step A reference values and materials.
+2. University of Washington (Hoofnagle laboratory, TaMADOR method): an independent LC-MS/MS method already compared with the Missouri procedure (PMIDs 34723236, 38549041). Second mass-spectrometry arm.
+3. Assay manufacturers, approached through the standardisation committee rather than one by one: Roche, Abbott, Siemens (Centaur and Atellica), DiaSorin and Tosoh have US-documented C-peptide products; Beckman, QuidelOrtho, Fujirebio, ALPCO and Mercodia need their US status checked. C-peptide assays are FDA Class I and exempt from 510(k) (21 CFR 862.1135), so FDA records cannot confirm which assays are on the US market; confirm from US labelling.
+4. RADIANT (rare and atypical diabetes network; PMIDs 37104866, 42892882): the closest population match for "insulin-treated, type uncertain"; an ancillary study is likely more feasible than a separate network. Step B.
+5. T1D Exchange Quality Improvement network: adult clinics and a shared data platform for the stepped-wedge design, but a T1D-labelled, mostly paediatric population. Step B arm for "T1D label with BMI 30 or more, or diagnosis at 35 or older".
+6. College of American Pathologists accuracy-based survey: if it still runs, a low-cost baseline of US platform bias against reference values (status unverified).
+7. Single academic centres (Johns Hopkins, Indiana, Penn, Chicago) as founding Step B sites or protocol co-authors.
+
+## New gaps for Step A
+- Within-person biological variation, reference change value and repeatability of random C-peptide in insulin-treated adults were not covered by any source found; allowable bias cannot be set without them.
+- Sample stability and pre-analytical handling need their own validation (flagged, not quantified, in Rohlfing 2025).
+- No CDC or NIST C-peptide programme was found.
