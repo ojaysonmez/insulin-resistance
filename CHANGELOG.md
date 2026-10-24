@@ -185,8 +185,10 @@ Format: date, time (if known), what changed, why.
 
 - Cardiology skeptic pass (`reviews/skeptic-cardiology-2026-10-23.md`, 12 look-ups) and its nine changes applied to `merged-conclusion.md`, notes on rows 13 and 17 of `usecases-verified.md` (D-44). Remaining specialty reviewers: hepatology, reproductive and obstetric, nephrology, oncology, psychiatry (not started).
 
+- Specialty reviews done (2026-10-24): hepatology, reproductive and obstetric, nephrology, oncology, psychiatry (`reviews/specialty-*-2026-10-24.md`), combined skeptic (`reviews/skeptic-specialties-2026-10-24.md`); M1-M24 and U1-U10 applied, counts now 50 rows (11/17/10/10/2 not evaluated), new row 50 (D-45). Scorecard regenerated.
+
 ## Not yet run or done
-- Specialty reviewers (cardiology first, then others as chosen) and a skeptic on their findings; then the summary editor.
+- Specialty reviewers: done for all six specialties (D-44, D-45). Still to do: the summary editor pass on `summary.md`, and scoring row 50 if wanted.
 - Use-case scoring: the pilot on rows 6, 5 and 13 (needs searching for US commonality), then scoring of about 30 candidates (`usecases/scoring-rubric.md`; all rubric decisions are settled, nothing is scored).
 - Claim ledger build (design in `update-system/CLAIM-LEDGER.md`; `claims.csv` is empty).
 - Update system: dry run and scheduling test (`update-system/UPDATE-PLAN.md`); the citation script has been run and fixed, and a pre-commit check is not written.
