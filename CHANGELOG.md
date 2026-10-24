@@ -219,6 +219,8 @@ Format: date, time (if known), what changed, why.
 
 - CTRI/2026/09/117733 status logged from the user's browser check (2026-10-24): not yet recruiting, AIIMS Delhi, fasting vs postprandial phenotype arms; HOMA-IR thresholds not visible in the list view. IRCT20170812035642N11 read by the user through WHO ICTRP: diet-by-metabotype feasibility RCT (Tehran, n = 144, recruiting since 2025-12-21; insulin-resistant metabotype = fasting glucose 100 or more, fasting insulin 15 or more and HOMA-IR above 2.4); no results, no signal; contacts not copied (D-35).
 
+- Step A gap search (2026-10-24, user): `usecases/scoring/pathways/pathway-1-cpeptide-variation.md` (24 look-ups): no biological-variation data for random C-peptide in insulin-treated adults; inter-method bias 20-52% against a desirable bias of 7.1% (Ricós/Westgard); EDTA plasma more stable than unspun serum. Folded into `pathway-1-plan.md` section 7; DOCX regenerated.
+
 ## Not yet run or done
 - Specialty reviewers: done for all six specialties (D-44, D-45). Still to do: the summary editor pass on `summary.md`, and scoring row 50 if wanted.
 - Use-case scoring: done (stage 1 to 3, 32 rows ranked, row 48 unranked, 18 rows not candidates; D-32 to D-46). Scores stay preliminary judgements.

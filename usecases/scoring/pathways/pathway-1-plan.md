@@ -68,6 +68,8 @@ No registered trial was found that answers either step, and no US record was fou
 7. Single academic centres (Johns Hopkins, Indiana, Penn, Chicago) as founding Step B sites or protocol co-authors.
 
 ## New gaps for Step A
-- Within-person biological variation, reference change value and repeatability of random C-peptide in insulin-treated adults were not covered by any source found; allowable bias cannot be set without them.
+- Biological variation (gap search 2026-10-24, `usecases/scoring/pathways/pathway-1-cpeptide-variation.md`, 24 logged look-ups): no study gives within-person variation of random C-peptide in insulin-treated adults or anyone with diabetes. Published within-person CVs (about 9% to 28%) come from healthy, mostly fasting people on older assays; the EFLM database has no meta-analysed value; the nearest diabetes figures are fasting 38% and post-meal 27% in type 2 diabetes (Bowman 2012, abstract only). Step A (or a small add-on) therefore has to measure repeat random C-peptide in insulin-treated adults itself.
+- Assay performance: within-laboratory CV about 1.4% to 10%; bias between methods about 20% to 52%. The only published specification is the Ricós/Westgard 2014 table (desirable bias 7.1%, total error 20.8%), which corresponds to roughly 6, 14 and 43 pmol/L at 80, 200 and 600 pmol/L (a derivation, not a finding). Measured inter-method bias is 3 to 7 times larger, which is the case for Step A.
+- Sample handling: C-peptide in EDTA whole blood was reported stable for 24 hours at room temperature, while unspun serum lost 22% to 74%; Step A should standardise on EDTA plasma with stated handling times.
 - Sample stability and pre-analytical handling need their own validation (flagged, not quantified, in Rohlfing 2025).
 - No CDC or NIST C-peptide programme was found.
