@@ -1,12 +1,4 @@
----
-title: "Research prompt: repeat C-peptide as a trigger for a clinical decision"
----
-
-Status: prompt written 2026-10-25 (user request); revised the same day to fit jay-research's file layout and to carry the row data inline. Not yet run.
-
-**How to run:** in a fresh cloud session with only the `ojaysonmez/insulin-resistance` repository, on `main`, type `/jay-research standard:` followed by everything below the line. Standard means 3 researchers with up to 10 tool calls each. After the run, the main session copies the report to `usecases/scoring/serial-cpeptide-trigger.md`, makes the DOCX, runs a skeptic review, and commits when the user asks.
-
----
+# Research prompt: repeat C-peptide as a trigger for a clinical decision
 
 ## Where to write (read first)
 
