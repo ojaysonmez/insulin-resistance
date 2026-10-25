@@ -221,6 +221,8 @@ Format: date, time (if known), what changed, why.
 
 - Step A gap search (2026-10-24, user): `usecases/scoring/pathways/pathway-1-cpeptide-variation.md` (24 look-ups): no biological-variation data for random C-peptide in insulin-treated adults; inter-method bias 20-52% against a desirable bias of 7.1% (Ricós/Westgard); EDTA plasma more stable than unspun serum. Folded into `pathway-1-plan.md` section 7; DOCX regenerated.
 
+- Review sheet for the 50 use cases (2026-10-25, user): `usecases/review-sheet.xlsx`, built from `usecases-verified.md`, `usecases/scoring/ranking.json` and `ranking.md`, plus a confidence label derived from the unit scores (share marked low). Scored rows first by tier, then Not evaluated, then not-candidate rows; empty "Your verdict" and "Your note" columns for the user's marks. Not committed yet.
+
 ## Not yet run or done
 - Specialty reviewers: done for all six specialties (D-44, D-45). Still to do: the summary editor pass on `summary.md`, and scoring row 50 if wanted.
 - Use-case scoring: done (stage 1 to 3, 32 rows ranked, row 48 unranked, 18 rows not candidates; D-32 to D-46). Scores stay preliminary judgements.
