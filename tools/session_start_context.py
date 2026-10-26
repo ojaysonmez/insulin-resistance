@@ -174,7 +174,7 @@ def main():
     where = "cloud" if os.environ.get("CLAUDE_CODE_REMOTE") else "local"
     problems = [l for l in env_lines if l.startswith(("[WARN]", "[FAIL]"))]
     summary = next((l for l in env_lines if l.startswith("Environment check")), "environment check: passed recently")
-    queue = " ".join(next((l for l in brief if l.startswith("Scoring queue")), "").split()[:3])
+    queue = " ".join(next((l for l in brief if l.startswith("Scoring queue")), "").split()[:3]).rstrip(":;,")
     msg = f"IR project ({where}); {summary.split(';')[0].replace(f' ({where})', '')[0].lower() + summary.split(';')[0].replace(f' ({where})', '')[1:]}." + (f" {len(problems)} problem(s) shown in the brief." if problems else "")
     if queue:
         msg += f" {queue}."

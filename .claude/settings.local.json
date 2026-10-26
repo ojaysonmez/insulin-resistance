@@ -4,7 +4,8 @@
       "Bash(git add *)",
       "Bash(git commit -q -m 'Run a short environment check from the session-start brief \\(cached 7 days per platform\\); drop CDC from the host list *)",
       "Bash(git commit -q -m 'Add the status shortcut for a first message *)",
-      "Bash(git commit -q -m 'Session-start hook: screen message asking the user to send status, full brief as context *)"
+      "Bash(git commit -q -m 'Session-start hook: screen message asking the user to send status, full brief as context *)",
+      "Bash(git commit -q -m 'Rewrite the handoff to the current state; fix the colon in the session-start screen message *)"
     ]
   }
 }
