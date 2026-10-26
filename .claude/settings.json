@@ -10,7 +10,10 @@
       "Bash(python3 tools/precommit_check.py*)",
       "Bash(python3 tools/session_start_context.py)",
       "Bash(python3 tools/cloud_check.py)",
-      "Bash(python tools/cloud_check.py)"
+      "Bash(python tools/cloud_check.py)",
+      "Bash(python tools/watch_commit.py*)",
+      "Bash(python tools/apply_rescore.py*)",
+      "Bash(python tools/test_autonomy.py)"
     ],
     "ask": [
       "Bash(git push)",

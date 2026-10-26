@@ -20,6 +20,8 @@ The current state and the next step, written by hand at the end of a working ses
 - Corpus (D-34): rebuilt 2026-10-26 to 189 articles; the reading columns (role, design, key numbers, claims) are still empty (extraction not run). The brief and the deliverable reminder warn when cited PMIDs are missing; rebuild with `python tools/corpus_build.py` on the local machine (full texts and the eLFA path exist only there). `corpus/pdf-wanted.md` lists articles without an open copy; `python tools/corpus_fulltext.py` fetches new open texts.
 
 ## Waiting on the user
+- **Scoring runner (D-48):** the task `ir-scoring-runner-2` is still disabled with its old prompt. Updating and enabling it was denied by the auto-mode classifier. Enable it (or allow `mcp__scheduled-tasks__update_scheduled_task`) so R2 runs overnight and small rescores are applied; the new steps are 6b (`python tools/apply_rescore.py --pending`) and 6c (`python tools/watch_commit.py --message ... --push`) after the aggregate and scorecard step.
+- Review the first automatic watch commit and push (the next 01:15 run) and the first rescore-log entries.
 - Whether to supply PDFs for the load-bearing papers that were read only at abstract level (user said not yet).
 - Permission for search-heavy agent runs (the user is watching a usage limit).
 - How cloud runs should push: allow `main` for state files only, or a `claude/` branch first (see `CLOUD-SETUP.md`).

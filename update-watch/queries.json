@@ -405,6 +405,16 @@
         46
       ],
       "signal": "S2"
+    },
+    {
+      "id": "P50",
+      "query": "(\"second-generation antipsychotic\" OR antipsychotic) AND (child* OR adolescent OR youth OR paediatric) AND (\"fasting insulin\" OR \"insulin resistance\" OR HOMA OR \"metabolic monitoring\")",
+      "looking_for": "Fasting insulin or insulin resistance indices in children and youth on antipsychotics: monitoring guidance and outcome evidence (row 50)",
+      "triggers": "Path to viability, row 50",
+      "rows": [
+        50
+      ],
+      "signal": "S2"
     }
   ],
   "registry": [

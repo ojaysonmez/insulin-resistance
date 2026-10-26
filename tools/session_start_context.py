@@ -171,6 +171,25 @@ def main():
     except Exception:
         pass
 
+    urgent_text = ""
+    try:  # urgent watch flag (written by the daily watch) and the automatic rescore log (D-48)
+        up = ROOT / "update-watch" / "URGENT.md"
+        if up.exists() and up.read_text(encoding="utf-8").strip():
+            lines = [l for l in up.read_text(encoding="utf-8").strip().splitlines() if l.strip()]
+            urgent_text = lines[0][:160]
+            brief = brief[:1] + ["URGENT (update-watch/URGENT.md; delete the file when handled):"] + [f"  {l[:200]}" for l in lines[:4]] + brief[1:]
+        lp = ROOT / "usecases" / "scoring" / "rescore-log.tsv"
+        if lp.exists():
+            rows = [l.split("\t") for l in lp.read_text(encoding="utf-8").splitlines()[1:] if l.count("\t") >= 6]
+            applied = [r for r in rows if r[6] == "applied"]
+            review = [r for r in rows if r[6] == "needs review"]
+            tierchg = [r for r in rows if r[6] == "TIER CHANGE"]
+            if applied or review or tierchg:
+                brief += [f"Rescore log (usecases/scoring/rescore-log.tsv): {len(applied)} applied automatically, {len(review)} need review, {len(tierchg)} tier change(s)."]
+                brief += [f"  {r[0]} {r[1]} row {r[2]} {r[3]}: {r[4]} to {r[5]} {r[6]}: {r[7][:110]}" for r in (applied + review + tierchg)[-4:]]
+    except Exception:
+        pass
+
     if len(brief) > MAX_LINES:
         brief = brief[: MAX_LINES - 1] + ["... (brief truncated)"]
     try:
@@ -186,6 +205,8 @@ def main():
     msg = f"IR project ({where}); {summary.split(';')[0].replace(f' ({where})', '')[0].lower() + summary.split(';')[0].replace(f' ({where})', '')[1:]}." + (f" {len(problems)} problem(s) shown in the brief." if problems else "")
     if queue:
         msg += f" {queue}."
+    if urgent_text:
+        msg = "URGENT: " + urgent_text + " | " + msg
     msg += ' Send "status" for the summary.'
     print(json.dumps({"systemMessage": msg, "hookSpecificOutput": {"hookEventName": "SessionStart", "additionalContext": text}}))
 

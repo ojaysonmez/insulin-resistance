@@ -79,6 +79,8 @@ def cmd_add(a, root):
     (d / "units").mkdir(parents=True, exist_ok=True)
     (Path(root) / unit["prompt"]).write_text(render(root, a.template, unit), encoding="utf-8")
     data["units"].append(unit)
+    if data["status"] == "DONE":  # a new unit (for example a watch rescore proposal) reopens a finished queue
+        data["status"] = "RUNNING"
     save(root, data)
     print(f"added {a.id} ({a.agent}, rows {unit['rows']})")
 
