@@ -163,6 +163,14 @@ def main():
     except Exception:
         pass
 
+    try:  # corpus upkeep: say so when cited articles are missing from corpus/corpus.csv
+        r = subprocess.run([sys.executable, str(ROOT / "tools" / "corpus_build.py"), "--check"], capture_output=True, text=True,
+                           timeout=20, cwd=str(ROOT))
+        if r.stdout.strip():
+            brief = brief[:1] + ["Corpus: " + r.stdout.strip()] + brief[1:]
+    except Exception:
+        pass
+
     if len(brief) > MAX_LINES:
         brief = brief[: MAX_LINES - 1] + ["... (brief truncated)"]
     try:

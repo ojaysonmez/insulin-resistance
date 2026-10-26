@@ -14,6 +14,9 @@ version history). Full texts are NOT in the repository: corpus/fulltext/ is git-
 
 Usage (project root):
   python tools/corpus_build.py [--from FILE ...] [--elfa "I:/My Drive/SCIENCE/eLFA Articles.xlsx"] [--no-network]
+  python tools/corpus_build.py --check    offline and instant: says how many cited PMIDs are not in corpus/corpus.csv yet
+                                          (silent when none); exit code 0 either way. Used by the session-start brief and
+                                          the deliverable reminder so the corpus is rebuilt when citations change.
 """
 import argparse
 import csv
@@ -212,7 +215,19 @@ def main():
     ap.add_argument("--from", dest="sources", nargs="+", default=["merged-conclusion.md", "usecases-verified.md"])
     ap.add_argument("--elfa", default="I:/My Drive/SCIENCE/eLFA Articles.xlsx")
     ap.add_argument("--no-network", action="store_true")
+    ap.add_argument("--check", action="store_true")
     a = ap.parse_args()
+    if a.check:
+        cited = set(cited_locations(a.sources))
+        try:
+            with (CORPUS / "corpus.csv").open(encoding="utf-8", newline="") as f:
+                have = {r["PMID"].strip() for r in csv.DictReader(f)}
+        except Exception:
+            have = set()
+        new = sorted(cited - have, key=int)
+        if new:
+            print(f"corpus is {len(new)} cited article(s) behind (e.g. PMID {', '.join(new[:3])}); rebuild with: python tools/corpus_build.py")
+        return 0
     CORPUS.mkdir(exist_ok=True)
     loc = cited_locations(a.sources)
     pmids = sorted(loc, key=int)
@@ -230,6 +245,7 @@ def main():
         cache.save()
         extra = pubmed_extra(pmids)
     elfa = load_elfa(a.elfa)
+    have_ft = (CORPUS / "fulltext").is_dir()  # absent in a fresh clone (cloud): then keep the stored value, do not mark everything 'none'
     next_id = max([int(str(v["ID"])[1:]) for v in existing.values() if v.get("ID")] + [0]) + 1
     today = datetime.date.today().isoformat()
     records, missing = [], []
@@ -250,7 +266,7 @@ def main():
             "PMCID": extra.get(p, {}).get("pmcid", ""), "Open access (PMC)": "yes" if extra.get(p, {}).get("pmcid") else "no PMC copy",
             "Integrity status": st, "Integrity note": note, "Cited in": "; ".join(sorted(o["where"]))[:300],
             "Use-case rows": ",".join(str(x) for x in sorted(o["rows"])), "Read level (as recorded)": ", ".join(sorted(o["read"])),
-            "Full text local": fulltext_state(rec["ID"]),
+            "Full text local": fulltext_state(rec["ID"]) if have_ft else (rec.get("Full text local") or "unknown (no local folder)"),
             "Also in eLFA corpus": ("yes" if doi.lower() in elfa else "no") if elfa is not None and doi else (rec.get("Also in eLFA corpus") or ""),
             "Last checked": today})
         records.append(rec)
@@ -263,7 +279,8 @@ def main():
          "| ID | PMID | DOI | First author, year | Title | Cited in | Rows | Read level recorded | Integrity |", "|---|---|---|---|---|---|---|---|---|"]
     for r in want:
         L.append(f"| {r['ID']} | {r['PMID']} | {r['DOI']} | {r['First author']} {r['Year']} | {str(r['Title'])[:90]} | {len(str(r['Cited in']).split(';'))} | {r['Use-case rows']} | {r['Read level (as recorded)']} | {r['Integrity status']} |")
-    (CORPUS / "pdf-wanted.md").write_text(chr(10).join(L) + chr(10), encoding="utf-8")
+    if have_ft:  # the wanted list is only meaningful where the local full-text folder exists
+        (CORPUS / "pdf-wanted.md").write_text(chr(10).join(L) + chr(10), encoding="utf-8")
     cnt = {}
     for r in records:
         cnt[r["Integrity status"]] = cnt.get(r["Integrity status"], 0) + 1

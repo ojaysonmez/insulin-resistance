@@ -12,6 +12,7 @@ Standard library only.
 """
 import json
 import pathlib
+import subprocess
 import sys
 
 DELIVERABLES = {
@@ -45,10 +46,20 @@ def main():
                 break
         if not name:
             return
+        text = REMINDER.format(name=name)
+        if name in ("merged-conclusion.md", "usecases-verified.md"):  # citations may have changed: is the corpus behind?
+            try:
+                root = pathlib.Path(__file__).resolve().parent.parent
+                r = subprocess.run([sys.executable, str(root / "tools" / "corpus_build.py"), "--check"], capture_output=True,
+                                   text=True, timeout=20, cwd=str(root))
+                if r.stdout.strip():
+                    text += " Corpus: " + r.stdout.strip()
+            except Exception:
+                pass
         out = {
             "hookSpecificOutput": {
                 "hookEventName": "PostToolUse",
-                "additionalContext": REMINDER.format(name=name),
+                "additionalContext": text,
             }
         }
         sys.stdout.reconfigure(encoding="utf-8")
