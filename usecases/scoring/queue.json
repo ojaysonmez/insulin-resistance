@@ -7,7 +7,7 @@
     "max_attempts": 2,
     "hard_stop_pct5": 95
   },
-  "status": "DONE",
+  "status": "RUNNING",
   "pause_reason": "",
   "units": [
     {
@@ -1063,6 +1063,27 @@
       "outputs": [
         "usecases/scoring/V25.md",
         "usecases/scoring/V25.json"
+      ]
+    },
+    {
+      "id": "R2",
+      "phase": "rescore",
+      "agent": "ir-usecase-scout",
+      "dims": "D2, S",
+      "rows": [
+        11
+      ],
+      "template": "rescore",
+      "needs": [],
+      "inputs": [],
+      "extra": "Signal type S2 found by the watch on 2026-10-26. Paper: PMID 42928427, DOI 10.1111/dom.71455 (read level when flagged: abstract). Why the watch flagged it: Small retrospective cohort (n=70) where fasting C-peptide predicted stringent but not consensus-defined remission after metabolic surgery and ABCD/IMS scores were re-tested with internal cross-validation only, so row 11 may need a second look for definition dependence.",
+      "pause_after": false,
+      "state": "pending",
+      "attempts": 0,
+      "prompt": "usecases/scoring/units/R2.md",
+      "outputs": [
+        "usecases/scoring/R2.md",
+        "usecases/scoring/R2.json"
       ]
     }
   ]

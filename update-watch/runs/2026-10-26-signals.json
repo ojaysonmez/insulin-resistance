@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-26",
+  "signals": [
+    {
+      "type": "S2",
+      "rows": [11],
+      "dimensions": ["D2", "S"],
+      "pmid": "42928427",
+      "doi": "10.1111/dom.71455",
+      "read_level": "abstract",
+      "note": "Small retrospective cohort (n=70) where fasting C-peptide predicted stringent but not consensus-defined remission after metabolic surgery and ABCD/IMS scores were re-tested with internal cross-validation only, so row 11 may need a second look for definition dependence."
+    }
+  ],
+  "new_candidates": []
+}
