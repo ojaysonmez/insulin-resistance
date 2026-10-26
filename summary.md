@@ -38,7 +38,7 @@ These rows are limited (or established but with a gap) and each has one named mi
 
 <!-- SCORECARD:START -->
 
-## Scorecard (generated 2026-10-24; preliminary, it improves as more scoring runs finish)
+## Scorecard (generated 2026-10-26; preliminary, it improves as more scoring runs finish)
 
 Index = mean of the screening scores (decision change, evidence, guideline status, patients per year, stakes) rescaled to 0-1. Composite = the rubric's weighted score, shown only for rows with every dimension scored. Patients per year are screening estimates, mostly low confidence. Details: `usecases/scoring/screen-summary.md`, `usecases/scoring/ranking.md`.
 
@@ -70,10 +70,10 @@ Index = mean of the screening scores (decision change, evidence, guideline statu
 | far | 28 | C-peptide interpretation in kidney disease | Research-only | 0.44 | 0.44 | 9/9 | 100k-1M | Validated eGFR-adjusted C-peptide or UCPCR thresholds in a US CKD cohort, and a guideline note. (evidence, medium) | - |
 | far | 46 | Fulminant type 1 diabetes: ketoacidosis soon after hyperglycaemic symptoms... | Limited | 0.40 | 0.43 | 9/9 | 1k-10k | Accuracy study of the C-peptide cut-offs in a non-Japanese population and a Western guideline recognising fulminant T1D. (evidence, medium) | - |
 | far | 25 | Infant with spuriously high insulin from maternal insulin antibodies or... | Limited | 0.40 | 0.42 | 9/9 | <100 | Validation of an interpretation algorithm with PEG precipitation in infant hypoglycaemia on a larger cohort, and a routine PEG assay. (assay, medium) | - |
-| far | 11 | Bariatric surgery: predicting diabetes remission | Limited | 0.40 | 0.41 | 9/9 | 10k-100k | Analysis of whether C-peptide adds to diabetes duration, BMI and age in remission prediction, with external validation of a cutoff on a standard... (evidence, small) | S2 2026-10-22 (rescore queued) |
+| far | 11 | Bariatric surgery: predicting diabetes remission | Limited | 0.40 | 0.41 | 9/9 | 10k-100k | Analysis of whether C-peptide adds to diabetes duration, BMI and age in remission prediction, with external validation of a cutoff on a standard... (evidence, small) | S2 2026-10-26 (rescore queued) |
 | far | 45 | Prior gestational diabetes | Research-only | 0.35 | 0.40 | 9/9 | 100k-1M | A cohort showing postpartum fasting insulin or HOMA-IR adds to OGTT, A1C and BMI for predicting type 2 diabetes after gestational diabetes, and a... (evidence, large) | - |
-| far | 8 | Residual beta-cell function in T1D: trial endpoints | Research-only | 0.34 | 0.37 | 9/9 | 1k-10k | Regulatory-accepted use of stimulated C-peptide to select or monitor an individual patient, plus a shorter validated meal-test protocol. (workflow, medium) | - |
 | far | 9 | Pancreatogenic diabetes, post-pancreatitis or pancreatectomy | Limited | 0.43 | 0.36 | 9/9 | 1k-10k | Published C-peptide cut-offs for type 3c and for TPIAT outcome prediction, validated prospectively. (evidence, medium) | - |
+| far | 8 | Residual beta-cell function in T1D: trial endpoints | Research-only | 0.34 | 0.34 | 9/9 | 1k-10k | Regulatory-accepted use of stimulated C-peptide to select or monitor an individual patient, plus a shorter validated meal-test protocol. (workflow, medium) | - |
 | far | 27 | Post-pancreatectomy/TPIAT: beta-cell reserve before and graft function after... | Limited | 0.30 | 0.30 | 9/9 | 100-1k | A prospective TPIAT cohort testing whether preoperative MMTT C-peptide predicts insulin independence beyond islet yield and glucose measures. (evidence, medium) | - |
 | far | 48 | Non-diabetic adult with suspected reactive hypoglycaemia, no gastric surgery | Research-only | 0.26 | - | 8/9 | - | Agreed diagnostic criteria for non-surgical postprandial hypoglycaemia and a study showing insulin or C-peptide changes management beyond documented... (guideline, medium) | - |
 | - | 50 | Children and youth on second-generation antipsychotics | Limited | 0.41 | 0.47 | 9/9 | 100k-1M | A cohort of SGA-treated children and youth testing whether fasting insulin adds to fasting glucose, HbA1c and BMI for detecting dysglycaemia on OGTT... (evidence, medium) | - |

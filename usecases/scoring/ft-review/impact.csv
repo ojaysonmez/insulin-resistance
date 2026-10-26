@@ -1,0 +1,71 @@
+batch,ID,PMID,verdict,rows_affected,dimensions_affected,proposals,text_quality
+FT1,C005,14693724,confirms,8,"D2,D8",0,partial
+FT1,C013,18628574,adds nuance,8,"D8,D4",1,good
+FT1,C060,32219329,confirms,8,D2,0,good
+FT1,C049,28860126,adds nuance,9,"D2,S",0,good
+FT1,C116,39959260,adds nuance,9,"D2,D8",0,good
+FT1,C136,42633332,confirms,9,,0,good
+FT10,C188,42110441,adds nuance,,,0,good
+FT10,C002,12087016,adds nuance,,,0,good
+FT10,C155,24150210,confirms,,,0,partial
+FT10,C167,31647106,adds nuance,,,0,good
+FT10,C181,39030378,confirms,,,0,good
+FT2,C024,22963817,adds nuance,11,"D2,D8",0,good
+FT2,C043,27189354,confirms,11,D3,0,partial
+FT2,C064,32873586,confirms,11,"D2,D8",0,good
+FT2,C070,34378729,adds nuance,11,D2,0,good
+FT2,C081,35256262,adds nuance,11,"D2,D8",0,good
+FT3,C134,42318218,adds nuance,20,,0,good
+FT3,C139,42662728,confirms,20,"D2,D3",0,good
+FT3,C141,42697708,adds nuance,"20,25","D2,D3,D8",0,"good (two-column PDF extraction, some hyphenation)"
+FT3,C137,42649063,adds nuance,21,D2,0,"partial (PDF extraction; table and figure text partly garbled, numbers readable)"
+FT4,C113,39013634,adds nuance,18,,0,good
+FT4,C117,39963280,adds nuance,18,,0,good
+FT4,C018,19937225,confirms,45,,0,good
+FT4,C021,21926287,adds nuance,45,,0,good
+FT4,C059,32184821,confirms,45,,0,good
+FT5,C001,10480510,adds nuance,,,0,partial
+FT5,C007,15983289,confirms,,,0,good
+FT5,C010,17533210,adds nuance,,,0,good
+FT5,C016,19700136,adds nuance,,,0,good
+FT5,C034,25944628,confirms,,,0,good
+FT5,C085,35700159,adds nuance,,,0,good
+FT5,C088,36181637,adds nuance,,,0,good
+FT5,C101,37794253,adds nuance,,,0,good
+FT5,C135,42569452,adds nuance,,,0,good
+FT6,C142,42702103,adds nuance,,,0,good
+FT6,C145,11773152,confirms,,,0,good
+FT6,C146,20190296,adds nuance,35,,0,good
+FT6,C148,21115858,adds nuance,,,0,good
+FT6,C149,21441124,adds nuance,,,0,good
+FT6,C152,22162568,adds nuance,,,0,good
+FT6,C156,24476695,adds nuance,,,0,good
+FT6,C159,26526047,adds nuance,,,0,good
+FT6,C162,28390156,adds nuance,,,0,good
+FT7,C168,32867516,adds nuance,GL-23,,0,partial
+FT7,C187,41358885,confirms,"GL-24,EV-12",,0,good
+FT7,C003,12401750,confirms,MEAS-29,,0,good
+FT7,C009,17272483,adds nuance,"MEAS-12,MEAS-14",,0,good
+FT7,C012,18535197,adds nuance,MEAS-10,,0,partial
+FT7,C045,28150502,contradicts,"MEAS-12,MEAS-15",,0,good
+FT7,C048,28660493,confirms,"MEAS-19,MEAS-48",,0,good
+FT7,C051,29466592,adds nuance,"TRI-01,TRI-22,TRI-23,TRI-54,ABS-21",,0,good
+FT7,C053,29940866,adds nuance,MEAS-08,,0,good
+FT8,C073,34531293,adds nuance,,,0,good
+FT8,C131,42145088,adds nuance,,,0,good
+FT8,C133,42291078,adds nuance,,,0,good
+FT8,C144,8077319,confirms,,,0,partial
+FT8,C147,20489042,adds nuance,,,0,good
+FT8,C160,26823551,adds nuance,,,0,good
+FT8,C161,27150853,confirms,,,0,partial
+FT8,C177,38151465,adds nuance,,,0,good
+FT8,C185,40916719,confirms,,,0,partial
+FT9,C061,32278004,confirms,,,0,good
+FT9,C062,32398352,adds nuance,,,0,good
+FT9,C075,34674510,adds nuance,,,0,good
+FT9,C125,40841970,adds nuance,,,0,good
+FT9,C153,22933030,adds nuance,,,0,"partial (two-column layout interleaved, tables partly broken)"
+FT9,C157,24972190,confirms,,,0,partial (two-column text with line numbers interleaved)
+FT9,C158,25374101,adds nuance,,,0,good
+FT9,C174,37144983,adds nuance,,,0,good
+FT9,C184,40639383,adds nuance,,,0,good

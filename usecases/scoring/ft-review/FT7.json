@@ -1,0 +1,294 @@
+{
+ "unit": "FT7",
+ "role": "full-text reader",
+ "papers": [
+  {
+   "id": "C168",
+   "pmid": "32867516",
+   "doi": "10.1176/appi.ajp.2020.177901",
+   "text_quality": "partial",
+   "read_level": "full text (partial)",
+   "relied_on": "APA 2020 Table 2 monitors weight, waist, BP, fasting glucose or HbA1c and lipids with no insulin, HOMA-IR or C-peptide test; insulin resistance only as risk factor/mechanism (GL-23).",
+   "full_text_shows": "The local file holds only the executive-summary pages (to p. 872, 319 lines) and the reference list. Table 2 and the monitoring text are not in it. The text has no occurrence of insulin, HOMA, C-peptide or 'insulin resistance'.",
+   "verdict": "adds nuance",
+   "quote": "Not applicable: no passage on insulin or C-peptide testing exists in the local text.",
+   "key_numbers": "None. Local text lacks Table 2; absence claim cannot be checked here.",
+   "role_in_work": "Guideline cited for an absence claim (no insulin or C-peptide test in antipsychotic monitoring).",
+   "design": "Clinical practice guideline (adult schizophrenia).",
+   "population_and_size": "Adults with schizophrenia; no size.",
+   "measure_type": "Not applicable (guideline); claim concerns fasting glucose/HbA1c monitoring, no insulin or C-peptide.",
+   "assay_or_platform": "Not applicable",
+   "quality_note": "Only an executive summary was read; Table 2 still rests on excerpts. Consistent with, but does not confirm, the claim.",
+   "rows_affected": [
+    "GL-23"
+   ],
+   "dimensions_affected": []
+  },
+  {
+   "id": "C187",
+   "pmid": "41358885",
+   "doi": "10.2337/dc26-s015",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "ADA Standards 2026 s15 defines GDM detection and follow-up by glucose (OGTT, fasting glucose, A1C) and names no insulin, HOMA-IR, TyG or C-peptide test; insulin sensitivity changes across gestation (GL-24, EV-12).",
+   "full_text_shows": "Full PMC text read. Recommendations use A1C, CGM and glucose; postpartum rec 15.30 is a 75-g OGTT at 4-12 weeks. Insulin resistance is described as physiology (progressive in 2nd/3rd trimester, drops rapidly after delivery). Zero hits for C-peptide, HOMA, antibodies or fasting insulin.",
+   "verdict": "confirms",
+   "quote": "Insulin resistance drops rapidly with the delivery of the placenta.",
+   "key_numbers": "15.30: 75-g OGTT at 4-12 weeks postpartum; 15.9 A1C goal <6% (<42 mmol/mol) in pregnancy; insulin requirements about 34% lower immediately postpartum (one study); 0 hits for C-peptide/HOMA.",
+   "role_in_work": "Guideline for the absence claim and the gestational insulin-sensitivity statement.",
+   "design": "Consensus guideline (ADA Standards of Care 2026, section 15).",
+   "population_and_size": "Pregnancy with diabetes or GDM; no size.",
+   "measure_type": "Not applicable (guideline); mentions glucose-based tests only; insulin sensitivity physiology.",
+   "assay_or_platform": "Not applicable",
+   "quality_note": "PMC page fetched 2026-10-26. The claim can now be labelled full-text read rather than excerpt. The step to 'non-pregnant HOMA-IR cutoffs should not be applied' stays an inference; s15 does not mention HOMA cutoffs.",
+   "rows_affected": [
+    "GL-24",
+    "EV-12"
+   ],
+   "dimensions_affected": []
+  },
+  {
+   "id": "C003",
+   "pmid": "12401750",
+   "doi": "10.2337/diacare.25.11.2022",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "Empirical T2D figure +90%/-47% from 12 diet-controlled women; non-diabetic controls far less variable (MEAS-29).",
+   "full_text_shows": "Confirms design and numbers: fasting HOMA-IR measured at 4-day intervals on 10 consecutive occasions in 12 postmenopausal women with diet-controlled T2D and 11 matched controls. The +90%/-47% critical difference comes from 2.77 x CVI on log-transformed data and is given only for the T2D group. Control variation was Gaussian and smaller (mean intraindividual variation 1.05 vs 0.15, P<0.001; the unit is not clear in the extracted text).",
+   "verdict": "confirms",
+   "quote": "a subsequent sample must increase by 90% or decrease by 47% to be considered significantly different from the first.",
+   "key_numbers": "HOMA-IR 4.33+-2.3 (T2D) vs 2.11+-0.79 (controls); +90%/-47%; insulin assay CV 10.6%; analytical variance 1.5% of total variance (T2D).",
+   "role_in_work": "Empirical anchor for the RCV discussion.",
+   "design": "Prospective repeated-measures biological-variation study.",
+   "population_and_size": "12 women T2D + 11 controls, postmenopausal, Caucasian; 10 occasions each, 4-day intervals.",
+   "measure_type": "Fasting-based HOMA-IR (fasting insulin, fasting glucose), 0800-0900 samples.",
+   "assay_or_platform": "DPC Immulite 2000 chemiluminescent insulin (CV 10.6%); Beckman Synchron LX20 glucose",
+   "quality_note": "Small, single-sex, single-ethnic group; no percent critical difference given for controls in the extracted text, so the 'far less variable' wording rests on the variation figures, not a control RCV.",
+   "rows_affected": [
+    "MEAS-29"
+   ],
+   "dimensions_affected": []
+  },
+  {
+   "id": "C009",
+   "pmid": "17272483",
+   "doi": "10.1373/clinchem.2006.082214",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "Among-assay CV 12-66%, median 24%, for 10 assays; a common reference preparation did not lower it (MEAS-14, MEAS-12).",
+   "full_text_shows": "Abstract confirmed. Added detail: 12 assays from 9 manufacturers were evaluated but results are for 10; CV was measured on 40 patient samples and was greatest at low insulin concentrations; within-assay CV 3.7-39.0%; 6 of 10 assays met a 32% total-error limit; 7 of 10 recovered added insulin within 15.5%. Cross-reactivity with proinsulin varied.",
+   "verdict": "adds nuance",
+   "quote": "A common insulin reference preparation did not change the among-assay CV and failed to improve harmonization of results among assays.",
+   "key_numbers": "among-assay CV 12-66%, median 24%; within-assay CV 3.7-39.0%; 40 patient samples; 6/10 within 32% total error.",
+   "role_in_work": "Assay-disagreement evidence.",
+   "design": "Multi-assay comparison (ADA Workgroup standardization study).",
+   "population_and_size": "12 commercial assays/9 manufacturers (10 analysed); 40 patient samples; serum pool.",
+   "measure_type": "Insulin immunoassays (concentration range matters).",
+   "assay_or_platform": "Commercial immunoassays of about 2006.",
+   "quality_note": "Old-generation assays; CV depends on concentration, so the single median hides the range.",
+   "rows_affected": [
+    "MEAS-12",
+    "MEAS-14"
+   ],
+   "dimensions_affected": []
+  },
+  {
+   "id": "C012",
+   "pmid": "18535197",
+   "doi": "10.2337/dc08-0097",
+   "text_quality": "partial",
+   "read_level": "full text (partial)",
+   "relied_on": "HOMA-IR ranges across 11 assays: 0.8-2.0 normoglycaemia, 1.9-3.2 prediabetes, 1.5-2.9 T2D (MEAS-10).",
+   "full_text_shows": "Text read; tables (Table 2, Fig. 1) are not in the extracted file, so the exact per-assay ranges 0.8-2.0, 1.9-3.2, 1.5-2.9 could not be checked. Text gives pooled medians (IQR): 1.30 (0.84-1.65) normoglycaemia, 2.58 (1.24-3.12) prediabetes, 2.13 (1.19-3.54) T2D, and 'HOMA estimates varied by up to twofold' by assay. Small groups (n=12, 18, 67; total 97). Calculator choice changed HOMA-IR by 15%; 4.3% of insulin results <20 pmol/L and 1% >300 pmol/L were out of calculator limits.",
+   "verdict": "adds nuance",
+   "quote": "HOMA estimates varied by up to twofold, depending on which insulin assay was used.",
+   "key_numbers": "n=97 (12/18/67); up to twofold across 11 assays; calculator choice 15%; pooled median HOMA-IR 1.30/2.58/2.13.",
+   "role_in_work": "Source for assay dependence of HOMA-IR.",
+   "design": "Cross-sectional multi-assay comparison on one sample set.",
+   "population_and_size": "97 fasting adults 18-75 y; 11 serum insulin assays plus one plasma assay; 5 runs.",
+   "measure_type": "Fasting-based HOMA-IR (HOMA2 calculator 2.2).",
+   "assay_or_platform": "11 insulin assays (mean QC CV 3.8% and above); IRP 66/304 calibrated.",
+   "quality_note": "Normoglycaemic group only 12; the figure ranges are likely from Table 2 (not in file); mark as not re-verified.",
+   "rows_affected": [
+    "MEAS-10"
+   ],
+   "dimensions_affected": []
+  },
+  {
+   "id": "C045",
+   "pmid": "28150502",
+   "doi": "10.1080/00365513.2016.1278260",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "8 assays, lowest and highest medians differ by factor 1.8; 'It reports no CV' (MEAS-15).",
+   "full_text_shows": "The factor 1.8 is confirmed (8.35 uIU/mL Diametra to 14.71 uIU/mL Roche). But the paper does report CVs: intra-assay CV 0.8-10.1% and inter-assay CV 1.0-12.9% from quality-control material. It does not report an among-assay CV. So 'reports no CV' is wrong as written.",
+   "verdict": "contradicts",
+   "quote": "serum insulin measurement with different assays showed a maximum of 1.8-fold difference",
+   "key_numbers": "165 serum samples (85 fasting/80 non-fasting); 8 assays (2 CLIA, 4 ELISA, 2 IRMA); medians 8.35-14.71 uIU/mL; within-assay CVs 0.8-10.1%, inter-assay CVs 1.0-12.9%.",
+   "role_in_work": "Assay-disagreement evidence.",
+   "design": "Method-comparison study with Bland-Altman and Deming regression.",
+   "population_and_size": "165 serum samples from 165 participants (65 men, 100 women); Iranian.",
+   "measure_type": "Fasting and non-fasting serum insulin (mixed).",
+   "assay_or_platform": "Roche, DiaSorin, Tosoh, Mercodia, Monobind, Diametra, Izotop, BioSource",
+   "quality_note": "QC replicate design was below CLSI EP15-A2 (authors' own limitation); results not extrapolable to other assays.",
+   "rows_affected": [
+    "MEAS-12",
+    "MEAS-15"
+   ],
+   "dimensions_affected": []
+  },
+  {
+   "id": "C048",
+   "pmid": "28660493",
+   "doi": "10.1007/s00125-017-4340-1",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "Only one small study gives a HOMA-IR inter-laboratory figure (25%, ten samples, seven labs); DOI not recorded; Helsinki illustration not about one patient (MEAS-19, MEAS-48).",
+   "full_text_shows": "Confirms 25% (25.0%), ten non-diabetic individuals, seven laboratories; the 25% is driven by insulin (25.4%) not glucose (4.6%). HOMA-IR 2.0 in Helsinki corresponded to 1.3, 1.6, 1.8, 1.8, 2.0, 2.1 elsewhere, derived from regression of liver fat on HOMA-IR per centre (population-level, not one patient), so MEAS-48 holds. Lab means ranged 0.69-4.0 for HOMA-IR. The DOI is 10.1007/s00125-017-4340-1 (now recorded). Main population finding: upper 95th percentile HOMA-IR 1.9 and 2.0 (FINRISK n=1167, FIN-D2D n=459); NAFLD cut-off 1.9 (sensitivity 87%, specificity 79%).",
+   "verdict": "confirms",
+   "quote": "The inter-laboratory CV% of HOMA-IR was 25% due to inter-assay variation in insulin (25%) rather than glucose (5%)",
+   "key_numbers": "inter-lab CV HOMA-IR 25.0%, insulin 25.4%, glucose 4.6%; lab mean HOMA-IR 0.69-4.0; NAFLD cut-off 1.9 (87%/79%); n=368 for NAFLD analysis.",
+   "role_in_work": "Single HOMA-IR inter-laboratory figure; also NAFLD HOMA-IR threshold.",
+   "design": "Population-based cohorts plus inter-laboratory sample exchange.",
+   "population_and_size": "FINRISK 1167, FIN-D2D 459, 368 non-diabetic with 1H-MRS; 10 individuals in 7 labs.",
+   "measure_type": "Fasting-based HOMA-IR.",
+   "assay_or_platform": "Local assays in seven European labs (Helsinki Architect ci8200)",
+   "quality_note": "Ten samples, seven labs, non-diabetic persons only; storage at -80 C lowered insulin over time (sample handling).",
+   "rows_affected": [
+    "MEAS-19",
+    "MEAS-48"
+   ],
+   "dimensions_affected": []
+  },
+  {
+   "id": "C051",
+   "pmid": "29466592",
+   "doi": "10.1001/jama.2018.0245",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "DIETFITS n=609, prespecified diet x INS-30 interaction P=0.47, null; post-load insulin, weight-loss outcome (TRI-01, TRI-23, TRI-54).",
+   "full_text_shows": "Confirms n=609 and P=0.47 (3-way term, beta 0.08 per 10 uIU/mL, 95% CI -0.13 to 0.28). But the insulin hypothesis was added after the trial began (when funding rose) and before examining data; originally an insulin-sensitivity measure was planned. Power: more than 80% for the original n=400, about 90% post hoc for 609. The effect-modifier is the 30-minute insulin of a 75-g OGTT (proxy for insulin secretion), mean 93 uIU/mL. Adults 18-50, BMI 28-40, no diabetes.",
+   "verdict": "adds nuance",
+   "quote": "Prior to examining any data, we modified the primary hypothesis of our study and tested baseline INS-30",
+   "key_numbers": "P=.47; beta 0.08 (-0.13 to 0.28) per 10 uIU/mL; n=609 (481 completed); weight change -5.3 kg (low fat) vs -6.0 kg (low carbohydrate).",
+   "role_in_work": "Randomized interaction test for post-load insulin as effect modifier of diet.",
+   "design": "Randomized clinical trial (12 months) with prespecified interaction tests.",
+   "population_and_size": "609 adults without diabetes; 79% completed.",
+   "measure_type": "Post-load (30-minute insulin after 75 g OGTT, INS-30), insulin not C-peptide.",
+   "assay_or_platform": "Insulin assay not named in main text.",
+   "quality_note": "Null result applies to non-diabetic overweight adults and weight loss only; 'prespecified' should read 'specified before data analysis, added after trial start'.",
+   "rows_affected": [
+    "TRI-01",
+    "TRI-22",
+    "TRI-23",
+    "TRI-54",
+    "ABS-21"
+   ],
+   "dimensions_affected": []
+  },
+  {
+   "id": "C053",
+   "pmid": "29940866",
+   "doi": "10.1186/s12874-018-0521-y",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "HOMA-IR, QUICKI and FIRI are monotone transforms of one another; QUICKI's 4.1% reflects its log transform and does not make it more informative (MEAS-08).",
+   "full_text_shows": "Confirms: one-to-one monotonic transforms, so Spearman, ROC and rank-based tests are identical; they are not linear transforms of each other (HOMA-IR and FIRI are linear, QUICKI is not). Simulation, not clinical data. The paper does not discuss within-person CV; the '4.1% reflects its log transform' remark is the project's inference.",
+   "verdict": "adds nuance",
+   "quote": "We have shown that HOMA-IR, QUICKI and FIRI are one-to-one transformations of each other.",
+   "key_numbers": "HOMA-IR and QUICKI Spearman correlation -1; simulated Pearson with lean mass 0.75; advice to choose one of three.",
+   "role_in_work": "Methods paper for index equivalence.",
+   "design": "Methodological/simulation paper.",
+   "population_and_size": "Simulated lognormal data; no patients.",
+   "measure_type": "Fasting surrogate indices (HOMA-IR, QUICKI, FIRI); OGTT indices discussed.",
+   "assay_or_platform": "Not applicable",
+   "quality_note": "Equivalence is for rank-based methods only; parametric analyses can differ. Does not support the CV statement.",
+   "rows_affected": [
+    "MEAS-08"
+   ],
+   "dimensions_affected": []
+  }
+ ],
+ "proposals": [],
+ "claim_issues": [
+  {
+   "where": "merged-conclusion.md line 47 (Tohidi 2017 bullet) and claims MEAS-15",
+   "issue": "'It reports no CV' is wrong; the paper reports intra-assay (0.8-10.1%) and inter-assay (1.0-12.9%) CVs from QC material. It reports no among-assay CV.",
+   "proposed_wording": "Tohidi 2017 (PMID 28150502, full text): 8 assays on 165 serum samples, lowest and highest median differing by a factor of 1.8; it reports within-assay CVs (intra-assay 0.8-10.1%, inter-assay 1.0-12.9%) but no among-assay CV.",
+   "paper": "C045",
+   "claim_ids": [
+    "MEAS-15",
+    "MEAS-12"
+   ]
+  },
+  {
+   "where": "merged-conclusion.md line 76 (DIETFITS table row) and TRI-01, TRI-23",
+   "issue": "'prespecified' needs a caveat: the insulin interaction was added after enrolment began, before data were examined; powered at over 80% for n=400, about 90% post hoc for 609.",
+   "proposed_wording": "DIETFITS (PMID 29466592, full text): n=609; diet x 30-minute post-glucose insulin interaction, specified before data were examined but added after the trial began, P = 0.47 (beta 0.08 per 10 uIU/mL, 95% CI -0.13 to 0.28); non-diabetic adults, weight loss outcome.",
+   "paper": "C051",
+   "claim_ids": [
+    "TRI-01",
+    "TRI-23",
+    "TRI-54",
+    "ABS-21"
+   ]
+  },
+  {
+   "where": "merged-conclusion.md line 46 (Marcovina bullet) and MEAS-14",
+   "issue": "Abstract-level label can be upgraded; add that CV depends on concentration and 12 assays were assessed but 10 analysed.",
+   "proposed_wording": "Marcovina 2007 (PMID 17272483, full text): 10 of 12 assays analysed on 40 patient samples; among-assay CV 12-66%, median 24%, highest at low insulin concentrations; a common reference preparation did not lower it (older-generation assays).",
+   "paper": "C009",
+   "claim_ids": [
+    "MEAS-14",
+    "MEAS-12"
+   ]
+  },
+  {
+   "where": "merged-conclusion.md line 43 (Manley 2008) and MEAS-10",
+   "issue": "The per-assay ranges 0.8-2.0 / 1.9-3.2 / 1.5-2.9 could not be verified because the tables are missing from the local text; the text gives pooled medians and 'up to twofold' by assay. Groups are small (12 normoglycaemic).",
+   "proposed_wording": "HOMA-IR varied up to twofold depending on the insulin assay across 11 assays in 97 fasting adults (Manley 2008, PMID 18535197; 12 normoglycaemic, 18 prediabetic, 67 T2D); per-assay ranges were not re-checked against the table.",
+   "paper": "C012",
+   "claim_ids": [
+    "MEAS-10"
+   ]
+  },
+  {
+   "where": "merged-conclusion.md line 20 and GL-23 (APA 2020)",
+   "issue": "Local full text is the executive summary only; Table 2 and 'risk factor and mechanism' wording not verifiable here. Keep the excerpt label.",
+   "proposed_wording": "APA 2020 (PMID 32867516): the executive-summary text read names no insulin, HOMA-IR or C-peptide test; Table 2 not re-read.",
+   "paper": "C168",
+   "claim_ids": [
+    "GL-23"
+   ]
+  },
+  {
+   "where": "merged-conclusion.md line 21 and GL-24, EV-12 (ADA s15)",
+   "issue": "Read level can change from 'summarising-fetch excerpts' to full text; claim confirmed. The step to non-pregnant HOMA-IR cutoffs is still inference.",
+   "proposed_wording": "ADA Standards 2026 section 15 (PMID 41358885, full text): GDM follow-up uses 75-g OGTT at 4-12 weeks postpartum and A1C goals; no insulin, HOMA-IR, TyG or C-peptide test is named; insulin resistance rises in the 2nd and 3rd trimester and drops rapidly after delivery.",
+   "paper": "C187",
+   "claim_ids": [
+    "GL-24",
+    "EV-12"
+   ]
+  },
+  {
+   "where": "merged-conclusion.md line 42 and MEAS-08",
+   "issue": "Equivalence holds for rank-based methods; the paper says nothing about within-person CV, so the 'does not make it more informative' sentence is project inference.",
+   "proposed_wording": "HOMA-IR, QUICKI and FIRI are one-to-one monotone transforms of one another, so rank-based statistics are identical (PMID 29940866, simulation); the interpretation of QUICKI's 4.1% CV as a log-transform effect is the project's inference.",
+   "paper": "C053",
+   "claim_ids": [
+    "MEAS-08"
+   ]
+  },
+  {
+   "where": "merged-conclusion.md line 50 (Isokuortti, 'DOI not recorded in the files') and MEAS-19",
+   "issue": "DOI is known and in the paper header.",
+   "proposed_wording": "(Isokuortti 2017, PMID 28660493, DOI 10.1007/s00125-017-4340-1; 25%, ten samples, seven labs)",
+   "paper": "C048",
+   "claim_ids": [
+    "MEAS-19"
+   ]
+  }
+ ],
+ "notes": "C168 local text is only the APA executive summary (no Table 2). C012 tables missing from extraction, so per-assay ranges unverified. C003 control critical difference not given as a percent in the extracted text. No score proposals: none of the papers changes a use-case score. Confidence: full text lowers confidence slightly in MEAS-15 (wrong claim) and TRI-23 ('prespecified'); raises it for GL-24/EV-12 and MEAS-19. Line numbers in merged-conclusion.md are from a grep at review time."
+}

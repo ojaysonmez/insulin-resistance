@@ -1,0 +1,187 @@
+{
+  "unit": "FT8",
+  "role": "full-text reader",
+  "papers": [
+    {
+      "id": "C073", "pmid": "34531293", "doi": "10.2337/db21-0526", "text_quality": "good", "read_level": "full text",
+      "relied_on": "merged-conclusion.md (Trials and interaction): PLIS is a multi-component phenotype (secretion, sensitivity, liver fat) and is not evidence of care guided by a fasting insulin or HOMA-IR measurement.",
+      "full_text_shows": "The local file is the medRxiv preprint (posted 30 Jan 2021, not peer reviewed), not the Diabetes version. Risk stratification used a 75 g OGTT with insulin at 0, 30, 60, 90 and 120 min: insulin sensitivity by the Matsuda index, secretion by the insulinogenic index and the disposition index, plus MRS liver fat, with cut-offs from an earlier cohort (ref 14; values not given in the text read). So the stratifier is post-load OGTT insulin, not fasting insulin; the project statement is correct but incomplete. The randomised contrasts were conventional vs intensified lifestyle intervention in the high-risk group and conventional vs control in the low-risk group; no arm tests stratified against unstratified care.",
+      "verdict": "adds nuance",
+      "quote": "Screening procedures also involved measurement of liver fat content, insulin sensitivity and insulin secretion.",
+      "key_numbers": "1105 randomised, 908 (82%) completed 12 months; high-risk intensified vs conventional LI: change in 2-h post-challenge glucose -0.290 mmol/l (CI -0.544 to -0.036), p=0.025; low-risk conventional vs control: not significant (a bootstrap sensitivity analysis suggested an effect about half that of the high-risk stratum); liver fat -1.34 percentage points, p=0.002; plasma insulin by chemiluminescence (ADVIA Centaur XP), measured centrally",
+      "role_in_work": "Cited in the trials section as a trial that stratified by an insulin-based phenotype but is not a test of care guided by fasting insulin or HOMA-IR.",
+      "design": "Stratified, randomised, multicentre (8 German university sites) lifestyle trial, NCT01947595, 12-month intervention, follow-up OGTTs at 1 and 2 years",
+      "population_and_size": "Adults 18-75 with IFG and/or IGT, BMI under 45; 1105 randomised, 908 analysed at 12 months",
+      "measure_type": "Post-load: insulin during a 5-point 75 g OGTT (Matsuda index, insulinogenic index, disposition index) combined with MRS liver fat; no fasting-only index and no C-peptide",
+      "assay_or_platform": "Siemens ADVIA Centaur XP chemiluminescence insulin assay, central laboratory (Tuebingen); glucose measured locally",
+      "quality_note": "Preprint text; check numbers against the published version before quoting. Stratification cut-offs are from a previous study and not in the text read. Low-risk stratum had fewer participants; the authors call the result a proof of concept.",
+      "rows_affected": [], "dimensions_affected": []
+    },
+    {
+      "id": "C131", "pmid": "42145088", "doi": "10.1161/strokeaha.125.056010", "text_quality": "good", "read_level": "full text",
+      "relied_on": "merged-conclusion.md (Trials and interaction): LAMP interaction P=0.02 at HOMA-IR 2.5, post hoc, 510 analysed, local assays, partly prognostic imbalance; and Measurement: LAMP excluded insulin users because insulin therapy and analogue cross-reactivity make insulin and C-peptide indices uninterpretable.",
+      "full_text_shows": "Numbers in the trials statement match the text (P interaction 0.02; spline P 0.07 and nonlinear interaction P 0.02; 5.8% vs 18.1% HR 0.30 in IR; 11.5% vs 9.5% HR 1.22 in non-IR; control 18.1% vs 9.5% HR 2.00, P=0.08; early termination for loss of funding; no multiplicity correction; no central laboratory standardisation). The text gives 522 patients after excluding insulin use in the week before onset and 510 with complete fasting insulin and glucose; the figures 636 and 114 are not in the main text (may be in the supplement or the main trial paper). The stated reason for the insulin exclusion is the short-term effect of exogenous insulin on fasting insulin and HOMA-IR; analogue cross-reactivity and C-peptide are not mentioned, and only use in the preceding week was excluded.",
+      "verdict": "adds nuance",
+      "quote": "However, these findings are hypothesis-generating and should be interpreted with caution.",
+      "key_numbers": "510 of 522 analysed; 348 (68.2%) IR at HOMA-IR 2.5; overall HR 0.48 (0.28-0.83); IR HR 0.30 (0.15-0.62); non-IR HR 1.22 (0.47-3.16); interaction P=0.02; spline interaction P=0.07, nonlinear interaction P=0.02; HOMA-IR 2.0 sensitivity consistent for primary and vascular outcomes; disclosures none",
+      "role_in_work": "Main example of a post hoc treatment-by-insulin-resistance interaction in a trial, used with caveats.",
+      "design": "Post hoc secondary analysis of an open-label randomised trial (LAMP), 90-day follow-up, trial terminated early for loss of funding; effect modification not prespecified",
+      "population_and_size": "Chinese adults with type 2 diabetes and minor ischaemic stroke or high-risk TIA, 27 centres; 510 with complete data",
+      "measure_type": "Fasting-based: HOMA-IR (fasting insulin and glucose); cut-off 2.5 chosen for Asian populations, 2.0 as sensitivity",
+      "assay_or_platform": "Local laboratories at each centre, no central standardisation, no external validation against other indices",
+      "quality_note": "Authors list limits: small number of events, open label, selection bias from the insulin exclusion, no multiplicity correction, Chinese-only population, no standard HOMA-IR cut-off. Interaction is unadjusted.",
+      "rows_affected": [], "dimensions_affected": []
+    },
+    {
+      "id": "C133", "pmid": "42291078", "doi": "10.1016/j.ajpc.2026.101643", "text_quality": "good", "read_level": "full text",
+      "relied_on": "merged-conclusion.md and claim TRI-42: the abstract says sdLDL-C and LDL-C relationships with MACE were similar in patients with greater or lesser insulin resistance and treatment effect did not vary by LDL-C or sdLDL-C; not a treatment-by-IR test; IR measure not determinable from the files.",
+      "full_text_shows": "The IR measure is now determinable: fasting HOMA-IR, split at the median (3.31) in the placebo group (n=2839 below, 2858 at or above). The HOMA-IR analysis only compared spline curves of sdLDL-C and LDL-C against MACE within each HOMA-IR half; it did not test alirocumab effect by HOMA-IR. The treatment HR was examined across sdLDL-C and across LDL-C (spline p 0.36 and 0.50), not across HOMA-IR. So the project is right that it is not a treatment-by-IR test; the phrase that it leans toward no IR modification is not supported by any analysis of treatment effect by IR.",
+      "verdict": "adds nuance",
+      "quote": "biochemical measurement of sdLDL-C does not appear to provide additional prognostic information to LDL-C in statin-treated patients with recent ACS",
+      "key_numbers": "Baseline sdLDL-C n=11,837 (62.6% of 18,924); median HOMA-IR 3.31; HOMA-IR below median 2.04 vs 5.74 above; sdLDL-C 28.0 vs 33.9 mg/dL; LDL-C 87.0 vs 85.3 mg/dL; overall alirocumab HR 0.87 (0.79-0.95); concordance sdLDL-C 53.4% vs apolipoprotein B 55.3%",
+      "role_in_work": "Cited as a trial that mentions HOMA-IR but does not test effect modification by it.",
+      "design": "Post hoc exploratory analysis of the ODYSSEY OUTCOMES randomised trial, expanded 5-part MACE endpoint",
+      "population_and_size": "Recent acute coronary syndrome on optimised statin, LDL-C 70 mg/dL or more; 11,837 with baseline sdLDL-C; HOMA-IR subgroups in the placebo group, 5697 in total",
+      "measure_type": "Fasting-based: HOMA-IR from fasting insulin and glucose, median split; the main test is sdLDL-C, not an insulin test",
+      "assay_or_platform": "sdLDL-C by Roche-Denka homogeneous assay at Leiden; the insulin assay is not described in the text read",
+      "quality_note": "Industry funded (Sanofi, Regeneron; Roche supported sdLDL-C measurement); exploratory; subset of the trial cohort; no HOMA-IR by treatment analysis.",
+      "rows_affected": [], "dimensions_affected": []
+    },
+    {
+      "id": "C144", "pmid": "8077319", "doi": "10.1210/jcem.77.5.8077319", "text_quality": "partial", "read_level": "full text",
+      "relied_on": "merged-conclusion.md Measurement and claim MEAS-22: in compensated cirrhosis insulin clearance about 40% lower, correlated with shunt size, and minimal-model insulin sensitivity about half that of controls (n=9 per group).",
+      "full_text_shows": "Confirmed. The PDF text is two-column and partly garbled, but the abstract numbers are legible: clearance 725 vs 1165 mL/min per m2 (P under 0.05), insulin sensitivity index 2.82 vs 5.86 (P under 0.01), correlation of clearance with shunt r=0.75 (P under 0.02). The project statement does not say that the measure was an iv glucose tolerance test (frequently sampled) with minimal model, and that clearance was derived by deconvolving C-peptide (using population C-peptide kinetics), not by direct measurement.",
+      "verdict": "confirms",
+      "quote": "cirrhosis is characterized by an important peripheral hyperinsulinism",
+      "key_numbers": "9 compensated cirrhotic patients and 9 matched healthy volunteers; insulin secretion rate 60% higher (P under 0.05); SI 2.82 vs 5.86; clearance 725 vs 1165 mL/min per m2; r=0.75 with portosystemic shunt",
+      "role_in_work": "Evidence that liver disease lowers insulin clearance, limiting fasting insulin and HOMA-IR in cirrhosis.",
+      "design": "Case-control physiological study, 1993",
+      "population_and_size": "9 compensated cirrhosis (Child-Pugh) and 9 healthy controls matched for age, sex and weight",
+      "measure_type": "Stimulated: iv glucose (0.3 g/kg) frequently sampled test with insulin and C-peptide, minimal model for sensitivity and C-peptide deconvolution for secretion and clearance; not fasting-based, not an HOMA-IR study",
+      "assay_or_platform": "Insulin and C-peptide immunoassays (C-peptide by the method of Heding, intra-assay CV 3.1%); 1990s assays",
+      "quality_note": "Very small, old; clearance depends on assumed C-peptide kinetics; no HOMA-IR reported in what was read.",
+      "rows_affected": [], "dimensions_affected": []
+    },
+    {
+      "id": "C147", "pmid": "20489042", "doi": "10.1152/ajpgi.00375.2009", "text_quality": "good", "read_level": "full text",
+      "relied_on": "merged-conclusion.md and claim MEAS-23: after TIPS fasting insulin rose 123 to 193 pmol/L, C-peptide-to-insulin ratio fell 21%, clamp sensitivity unchanged, measured clearance unchanged, authors attribute the rise to less insulin reaching the liver (n=11).",
+      "full_text_shows": "Numbers confirmed. Added detail: it is a before-after study without a control group at 6 months; the clamp had 10 patients; OGTT insulin AUC rose 53% and glucose AUC 14%; clearance that was unchanged was the steady-state clamp clearance of infused insulin, whereas the authors read the fall in C-peptide-to-insulin ratio itself as reduced clearance (the abstract says the apparent discrepancy 'may be ascribed' to shunt-related reduced exposure of the liver). The authors also state that methods for sinusoidal insulin assume a normal portal-arterial distribution that cirrhosis and TIPS violate, so they did not calculate hepatic insulin sensitivity.",
+      "verdict": "adds nuance",
+      "quote": "The small number of subjects under study entails a risk of a type 2 error.",
+      "key_numbers": "n=11 (clamp n=10); fasting insulin 123 to 193 pmol/L (P 0.03); glucose AUC +14%, insulin AUC +53%; C-peptide:insulin ratio -21% (CI 8-35%); clamp GIR 4.69 vs 4.85, Rd 5.01 vs 4.97 mg/kg/min",
+      "role_in_work": "Supports the point that shunting raises peripheral insulin without a change in clamp sensitivity.",
+      "design": "Prospective before-after study (baseline and 6 months after TIPS), two-step hyperinsulinaemic euglycaemic clamp with glucose tracer, OGTT",
+      "population_and_size": "11 patients with cirrhosis and TIPS (8 men, 3 women)",
+      "measure_type": "Fasting insulin, post-load (75 g OGTT insulin and C-peptide AUC) and clamp; C-peptide:insulin ratio as an index of hepatic clearance",
+      "assay_or_platform": "Insulin and C-peptide by ELISA (Dako); glucagon by in-house RIA",
+      "quality_note": "Small, uncontrolled; authors acknowledge risk of type 2 error and that the anabolic effect is unexplained.",
+      "rows_affected": [], "dimensions_affected": []
+    },
+    {
+      "id": "C160", "pmid": "26823551", "doi": "10.1681/asn.2015070756", "text_quality": "good", "read_level": "full text",
+      "relied_on": "merged-conclusion.md and claims MEAS-25/MEAS-26: in nondiabetic CKD, clamp sensitivity and clearance both lower than controls (876 vs 998 mL/min), partly explained by lifestyle and body composition, neither correlated with eGFR; so in CKD a high fasting insulin or HOMA-IR mixes reduced clearance with reduced sensitivity.",
+      "full_text_shows": "Abstract numbers confirmed (n=59 CKD and 39 controls; SI 3.9 vs 5.0; clearance 876 vs 998). Added: the clearance difference is modest and after adjustment is -85 mL/min (CI -160 to -10); clearance tracked insulin sensitivity (r=0.72, which the authors say may be inflated because steady-state insulin is in both denominators) and lean mass, not eGFR; the authors suggest non-renal clearance may fall in advanced CKD. Fasting insulin was higher in CKD (10.1 vs 7.3 uU/ml, P=0.01) and the Matsuda index lower (4.2 vs 6.6); insulin secretion (acute insulin response, insulinogenic index) did not differ. The statement that fasting and OGTT estimates 'may be biased in CKD because of changes in insulin clearance' is the authors' premise, not something this study shows; diabetes was excluded.",
+      "verdict": "adds nuance",
+      "quote": "Neither insulin sensitivity nor insulin clearance correlated significantly with eGFR.",
+      "key_numbers": "SI 3.9 vs 5.0 mg/min per uU/ml (P under 0.01); clearance 876.1 vs 998.3 mL/min (P under 0.01); adjusted difference in clearance -85 mL/min (CI -160 to -10); SI-clearance r=0.72; fasting insulin 10.1 vs 7.3 uU/ml; Matsuda 4.2 vs 6.6; normal glucose tolerance maintained in only 35% of CKD",
+      "role_in_work": "Evidence that in CKD insulin clearance and sensitivity both change, so fasting insulin indices are hard to interpret.",
+      "design": "Cross-sectional (SUGAR study), clamp, IVGTT and OGTT",
+      "population_and_size": "59 nondiabetic moderate-severe CKD (mean eGFR 37.6) and 39 controls; people with diabetes excluded",
+      "measure_type": "Clamp (reference) with stimulated and post-load insulin (IVGTT acute insulin response, OGTT Matsuda and insulinogenic index) and fasting insulin; HOMA-IR not the main measure",
+      "assay_or_platform": "Hyperinsulinaemic euglycaemic clamp; insulin assay not read in detail",
+      "quality_note": "Small, cross-sectional, power limited for eGFR associations; the authors caution about confounding by physical activity, diet and body composition.",
+      "rows_affected": [], "dimensions_affected": []
+    },
+    {
+      "id": "C161", "pmid": "27150853", "doi": "10.2169/internalmedicine.55.5288", "text_quality": "partial", "read_level": "full text",
+      "relied_on": "merged-conclusion.md and claim MEAS-24: in NAFLD an OGTT-derived hepatic insulin clearance index was lower with severe fibrosis (n=37).",
+      "full_text_shows": "Confirmed for NAFLD (0.135 vs 0.098, P=0.013; correlation with fibrosis r=-0.337, P=0.042) and the same direction in 74 chronic hepatitis C patients (r=-0.234; mild vs severe fibrosis 0.167 vs 0.125, P=0.010). The index is the C-peptide:insulin AUC ratio over a 75 g OGTT, a surrogate rather than a measured clearance. HOMA-beta (symbol lost in extraction) rose with fibrosis in NAFLD (115.6 vs 172.8, P=0.018) but not in hepatitis C; HOMA-IR is not reported in the text read, so this paper does not itself show HOMA-IR shifting.",
+      "verdict": "confirms",
+      "quote": "Liver fibrosis development is associated with hepatic insulin clearance in both the CHC and NAFLD patients.",
+      "key_numbers": "HCV n=74, NAFLD n=37; NAFLD index 0.135+-0.045 (mild) vs 0.098+-0.031 (severe), P=0.013; multivariate: fibrosis the only independent factor in HCV (beta -0.256, P=0.026)",
+      "role_in_work": "Supports lower hepatic insulin clearance with fibrosis, a limit on insulin-based indices in liver disease.",
+      "design": "Cross-sectional biopsy-based study with OGTT",
+      "population_and_size": "74 treatment-naive chronic hepatitis C and 37 biopsy-proven NAFLD patients (Japan); antidiabetic drug users excluded",
+      "measure_type": "Post-load: 5-point 75 g OGTT insulin and C-peptide; C-peptide:insulin AUC ratio and HOMA-beta; no HOMA-IR result",
+      "assay_or_platform": "Not identified in the text read",
+      "quality_note": "Single centre, small NAFLD group, correlational; conflict of interest: none stated.",
+      "rows_affected": [], "dimensions_affected": []
+    },
+    {
+      "id": "C177", "pmid": "38151465", "doi": "10.2337/dc23-1420", "text_quality": "good", "read_level": "full text",
+      "relied_on": "merged-conclusion.md and claims TRI-41, ABS-16: FIDELITY (n=12,964) eGDR from waist, hypertension and HbA1c; below-median eGDR (median 4.1) linked to more cardiovascular events but not kidney outcomes; finerenone effect did not differ by eGDR (P interaction 0.23 CV, 0.28 kidney); null interaction.",
+      "full_text_shows": "Numbers confirmed. 12,964 is the sum of the two eGDR halves (6,484 + 6,480); the full analysis set was 13,026. The CV point estimates favour finerenone more in the low-eGDR half (HR 0.81, 0.72-0.92) than in the high-eGDR half (0.92, 0.79-1.06); the continuous test was P=0.063, which the authors call near statistical significance, and they say the analysis was hypothesis generating and not powered for interactions. Sensitivity analyses with TG/HDL ratio, visceral adiposity index and lipid accumulation product also showed no heterogeneity. The study was sponsored by Bayer (finerenone maker).",
+      "verdict": "adds nuance",
+      "quote": "finerenone provided consistent CV and kidney protection in patients with CKD and type 2 diabetes, irrespective of baseline insulin resistance.",
+      "key_numbers": "median eGDR 4.1 mg/kg/min; CV events per 100 patient-years placebo 6.34 (below median) vs 3.76 (at or above); CV P interaction 0.23, continuous Wald P 0.063; kidney P interaction 0.28, continuous P 0.51; eGDR not associated with kidney outcome (HR 1.00, 0.96-1.04)",
+      "role_in_work": "Example of a trial subgroup using a non-insulin surrogate for insulin resistance, with no sign of effect modification.",
+      "design": "Post hoc subgroup analysis of the prespecified FIDELITY pooled analysis of two randomised trials, median follow-up 3.0 years",
+      "population_and_size": "Type 2 diabetes with CKD; 13,026 in the full analysis set, 12,964 split by eGDR",
+      "measure_type": "Non-insulin surrogate: eGDR (clinical variables); no insulin or C-peptide assay",
+      "assay_or_platform": "None; eGDR computed from waist circumference, hypertension status and HbA1c",
+      "quality_note": "Sponsor-authored analysis; median split chosen by the authors; not powered for interaction.",
+      "rows_affected": [], "dimensions_affected": []
+    },
+    {
+      "id": "C185", "pmid": "40916719", "doi": "10.1002/ejhf.70034", "text_quality": "partial", "read_level": "full text",
+      "relied_on": "merged-conclusion.md and claim TRI-40: FINEARTS-HF eGDR from waist, HbA1c and hypertension; below 5.1 mg/kg/min had a higher rate of cardiovascular death and total HF events (aRR 1.63, 1.41-1.87); finerenone effect did not differ (P interaction 0.64); null interaction for a median split.",
+      "full_text_shows": "Confirmed. The PDF text is two-column and partly garbled but the abstract values are legible. Additions: 5851 participants (98%) had a calculable eGDR; the association was similar with diabetes (aRR 1.72) and without (1.34; P interaction 0.06); a race interaction for the primary outcome was reported as exploratory (P 0.012, Asian, Black and other race steeper); finerenone benefit on new-onset diabetes was also consistent (P 0.36); Bayer employees are co-authors.",
+      "verdict": "confirms",
+      "quote": "appeared consistent irrespective of baseline eGDR category.",
+      "key_numbers": "median eGDR 5.1 (IQR 3.9-6.3) mg/kg/min; aRR 1.63 (1.41-1.87); finerenone P interaction 0.64; n=5851",
+      "role_in_work": "Second eGDR-stratified heart-failure trial analysis showing no effect modification.",
+      "design": "Exploratory post hoc analysis of the FINEARTS-HF randomised trial",
+      "population_and_size": "Heart failure with mildly reduced or preserved ejection fraction; 5851 with eGDR",
+      "measure_type": "Non-insulin surrogate: eGDR",
+      "assay_or_platform": "None",
+      "quality_note": "Exploratory; co-authors from the sponsor; median is not a validated threshold in heart failure, as the authors note.",
+      "rows_affected": [], "dimensions_affected": []
+    }
+  ],
+  "proposals": [],
+  "claim_issues": [
+    {
+      "where": "merged-conclusion.md, Trials and interaction, PLIS bullet (line 65); claim TRI-14",
+      "issue": "Correct but incomplete: PLIS stratified on OGTT insulin (post-load Matsuda and insulinogenic indices) plus liver fat, so it is a trial of care guided by post-load insulin measurements, though not a test of added value of stratification. The text read is the medRxiv preprint.",
+      "proposed_wording": "PLIS (PMID 34531293, full text, preprint version): participants were stratified into high and low risk with a 75 g OGTT insulin-based phenotype (Matsuda sensitivity index, insulinogenic and disposition indices) plus MRS liver fat, using cut-offs from an earlier cohort. Intensified lifestyle intervention improved 2-h glucose more than conventional intervention in the high-risk group (-0.29 mmol/l, P=0.025); conventional intervention was not clearly better than control in the low-risk group. No arm compared stratified with unstratified care, and no fasting insulin or HOMA-IR rule was tested.",
+      "paper": "C073", "claim_ids": ["TRI-14"]
+    },
+    {
+      "where": "merged-conclusion.md, Measurement section (line 51); claim MEAS-21",
+      "issue": "LAMP did not give analogue cross-reactivity or C-peptide as a reason; it excluded insulin therapy in the preceding week to protect fasting insulin and HOMA-IR from exogenous insulin.",
+      "proposed_wording": "Exogenous insulin therapy distorts fasting insulin and HOMA-IR; the LAMP post hoc analysis excluded patients who had received insulin in the week before the event for this reason (fasting-based; the paper does not address C-peptide or analogue cross-reactivity).",
+      "paper": "C131", "claim_ids": ["MEAS-21"]
+    },
+    {
+      "where": "merged-conclusion.md, Trials and interaction, LAMP bullet (line 90); claim TRI-39",
+      "issue": "The counts 636 and 114 are not in the main text read (522 after insulin exclusion, 510 complete). The interaction is unadjusted and authors call it hypothesis-generating; text also reports a consistent result at HOMA-IR 2.0 for primary and vascular outcomes.",
+      "proposed_wording": "Analysis was 510 patients with complete fasting insulin and glucose, out of 522 who had not received insulin in the previous week (the exclusion count of 114 and the trial total of 636 are not stated in the main text and need a supplement or main-paper check).",
+      "paper": "C131", "claim_ids": ["TRI-39"]
+    },
+    {
+      "where": "merged-conclusion.md, Trials and interaction, ODYSSEY OUTCOMES sentence (line 91); claim TRI-42",
+      "issue": "The IR measure is fasting HOMA-IR split at the median (3.31), used only for sdLDL-C versus LDL-C spline comparisons in the placebo group. The treatment HR was examined across sdLDL-C and LDL-C, not across HOMA-IR, so the statement that it leans toward no IR modification has no analysis behind it.",
+      "proposed_wording": "ODYSSEY OUTCOMES (PMID 42291078, full text): in the placebo group, fasting HOMA-IR was split at the median (3.31) and the sdLDL-C and LDL-C splines against MACE were similar in both halves; alirocumab effect was not tested by HOMA-IR (it was tested across sdLDL-C and LDL-C, no variation). It is therefore a prognostic comparison of two lipid measures, not a treatment-by-IR test, and says nothing for or against IR modification of alirocumab benefit. Industry funded; exploratory; 62.6% of the trial cohort.",
+      "paper": "C133", "claim_ids": ["TRI-42"]
+    },
+    {
+      "where": "merged-conclusion.md, Measurement section (line 51); claims MEAS-22, MEAS-23",
+      "issue": "Method labels missing: cirrhosis study used an iv glucose tolerance test with C-peptide deconvolution; TIPS study is an uncontrolled before-after study at 6 months, and the unchanged clearance was the clamp steady-state value while the authors read the C-peptide:insulin ratio fall as reduced clearance.",
+      "proposed_wording": "In compensated cirrhosis (n = 9 vs 9 controls; stimulated iv glucose test with C-peptide deconvolution, not a fasting measure), calculated insulin clearance was about 40% lower (r = 0.75 with shunt size) and minimal-model sensitivity about half of controls (PMID 8077319, full text, partly garbled). In 11 patients studied before and 6 months after TIPS, fasting insulin rose from 123 to 193 pmol/L and OGTT insulin AUC by 53% while the C-peptide:insulin ratio fell 21%; clamp sensitivity and steady-state clamp insulin clearance were unchanged, and the authors suggest, without proof, that less insulin reaches the liver through the shunt (PMID 20489042, full text, no control group).",
+      "paper": "C144", "claim_ids": ["MEAS-22", "MEAS-23"]
+    },
+    {
+      "where": "merged-conclusion.md, Measurement section (line 51); claims MEAS-24, MEAS-25, MEAS-26, EV-42",
+      "issue": "The summary sentence says a high fasting insulin or HOMA-IR in advanced liver disease or CKD mixes reduced clearance with reduced sensitivity. The papers show lower clearance indices (C-peptide:insulin AUC ratio, clamp clearance) and lower sensitivity, but C161 reports no HOMA-IR result, and C160 shows a modest clearance difference (-85 mL/min adjusted) that tracked sensitivity and lean mass, not eGFR, in people without diabetes. That fasting estimates are biased in CKD is the authors' premise, not a finding. The liver evidence is compensated cirrhosis (n=9), TIPS (n=11) and fibrosis in NAFLD and hepatitis C, not advanced disease in general.",
+      "proposed_wording": "In compensated cirrhosis, after TIPS, and with fibrosis in NAFLD and hepatitis C, indices of insulin clearance were lower (small studies; post-load or stimulated indices; HOMA-IR itself was not reported in the NAFLD and hepatitis C paper), and in nondiabetic CKD (n = 59) clamp clearance was modestly lower (876 vs 998 mL/min; adjusted difference -85 mL/min) and followed insulin sensitivity and lean mass rather than eGFR. It is plausible, but not shown by these studies, that a high fasting insulin or HOMA-IR in these groups reflects reduced clearance as well as reduced sensitivity.",
+      "paper": "C160", "claim_ids": ["MEAS-24", "MEAS-25", "MEAS-26", "EV-42"]
+    },
+    {
+      "where": "merged-conclusion.md, Trials and interaction, FIDELITY and FINEARTS-HF sentences (line 91); claims TRI-40, TRI-41, ABS-16",
+      "issue": "'Did not differ' and 'null interaction' hide that the FIDELITY CV estimates were more favourable in the low-eGDR half (HR 0.81 vs 0.92), with a continuous interaction P=0.063 that the authors call near significance; analyses are underpowered and sponsor-authored. n=12,964 is the eGDR-split total (full analysis set 13,026). FINEARTS-HF has an exploratory race interaction (P=0.012) and diabetes-status interaction P=0.06.",
+      "proposed_wording": "FIDELITY (PMID 38151465, full text; 12,964 of 13,026 patients split at the median eGDR of 4.1): finerenone HR for the cardiovascular composite 0.81 (0.72-0.92) below the median and 0.92 (0.79-1.06) at or above it; no significant interaction (P 0.23; continuous P 0.063, described by the authors as near significance); kidney P interaction 0.28; hypothesis-generating and not powered for interaction; Bayer-sponsored. FINEARTS-HF (PMID 40916719, full text): aRR 1.63 (1.41-1.87) for eGDR below 5.1 mg/kg/min; finerenone effect on cardiovascular death and total HF events P interaction 0.64; an exploratory race interaction for the primary outcome (P 0.012) was reported.",
+      "paper": "C177", "claim_ids": ["TRI-40", "TRI-41", "ABS-16"]
+    }
+  ],
+  "notes": "Used 25 tool calls (including the task file read). Confidence: the full texts lower confidence slightly in the cirrhosis/CKD summary sentence (MEAS-26, EV-42: inference reaches beyond the papers) and in the ODYSSEY 'leans toward no IR modification' phrase (TRI-42); they leave the LAMP, FIDELITY and FINEARTS-HF numbers unchanged and slightly raise confidence in them as quoted. The PLIS text is the medRxiv preprint (C073), not the Diabetes version, so numbers should be rechecked against the published paper; the stratification cut-off values were not read. C144, C161 and C185 are PDF-extracted text with broken columns or lost symbols (HOMA-beta symbol lost in C161); no number was judged wrong because of garbling. The insulin assay in C161 and C160 and the LAMP 636 and 114 counts were not found in the text read. No row score changes proposed; proposals empty. No web access used."
+}

@@ -35,8 +35,8 @@ Tiers (D-39): A composite 0.60 or more, B 0.50 to 0.59, C 0.40 to 0.49, D below 
 | 27 | 11 | specialist outpatient | 0.33 | 0.53 | 0.60 | 0.25 | 0.413 | C | no | - | Head-to-head external validation showing C-peptide adds to duration, HbA1c and medications in the same cohort, with a durable-remission outcome (evidence, small); Harmonized C-peptide results (common calibrator or LC-MS/MS reference) and a validated cutoff across US assays. (assay, medium); Analysis of whether C-peptide adds to diabetes duration, BMI and age in remission prediction, with external validation of a cutoff on a standard assay. (evidence, small) |
 | 28 | 45 | routine care | 0.08 | 0.62 | 1.00 | 0.12 | 0.402 | C | no | weak evidence (D2 of 0 or 1) | Cohort analysis in women with prior GDM testing whether HOMA-IR adds to OGTT/A1C for conversion to diabetes, plus a trial of IR-guided prevention (evidence, medium); Evidence that fasting insulin or HOMA-IR adds to OGTT and A1C after gestational diabetes, using a standardized insulin assay. (evidence, medium); A cohort showing postpartum fasting insulin or HOMA-IR adds to OGTT, A1C and BMI for predicting type 2 diabetes after gestational diabetes, and a trial choosing prevention by it. (evidence, large) |
 | 29 | 49 | specialist outpatient | 0.42 | 0.38 | 0.40 | 0.38 | 0.398 | D | no | - | Incremental-value analysis (C-statistic, NRI, calibration, decision curve) of OGTT C-peptide over antibody count, OGTT glucose, age and BMI in existing TrialNet data, with a reduced-sample protocol. (evidence, small); External validation of Index60 or AUC C-peptide thresholds with a test of incremental value over OGTT glucose, autoantibody number and age, and a reduced-sample protocol. (evidence, medium); External validation of simplified C-peptide scores in a large antibody-positive cohort, plus a trial showing C-peptide-guided monitoring changes outcomes such as ketoacidosis at onset. (evidence, large) |
-| 30 | 8 | specialist outpatient | 0.58 | 0.44 | 0.20 | 0.12 | 0.374 | D | no | - | A regulator or consensus statement stating the standardized MMTT C-peptide protocol and the change that counts as preserved function, with a US-marketed assay harmonized across sites (guideline, small); Common calibration for C-peptide across trial laboratories (central lab or reference method); routine MMTT is not needed for care. (assay, small); Regulatory-accepted use of stimulated C-peptide to select or monitor an individual patient, plus a shorter validated meal-test protocol. (workflow, medium) |
-| 31 | 9 | specialist outpatient | 0.33 | 0.50 | 0.20 | 0.50 | 0.358 | D | no | weak evidence (D2 of 0 or 1) | Prospective cohort in post-pancreatitis or pancreatectomy diabetes giving C-peptide cutoffs (fasting and stimulated) for insulin deficiency and TPIAT outcome, validated externally. (evidence, medium); Published C-peptide cut-offs for type 3c and for TPIAT outcome prediction, validated prospectively. (evidence, medium) |
+| 30 | 9 | specialist outpatient | 0.33 | 0.50 | 0.20 | 0.50 | 0.358 | D | no | weak evidence (D2 of 0 or 1) | Prospective cohort in post-pancreatitis or pancreatectomy diabetes giving C-peptide cutoffs (fasting and stimulated) for insulin deficiency and TPIAT outcome, validated externally. (evidence, medium); Published C-peptide cut-offs for type 3c and for TPIAT outcome prediction, validated prospectively. (evidence, medium) |
+| 31 | 8 | specialist outpatient | 0.50 | 0.44 | 0.20 | 0.12 | 0.341 | D | no | - | A regulator or consensus statement stating the standardized MMTT C-peptide protocol and the change that counts as preserved function, with a US-marketed assay harmonized across sites (guideline, small); Common calibration for C-peptide across trial laboratories (central lab or reference method); routine MMTT is not needed for care. (assay, small); Regulatory-accepted use of stimulated C-peptide to select or monitor an individual patient, plus a shorter validated meal-test protocol. (workflow, medium) |
 | 32 | 27 | inpatient or procedural | 0.25 | 0.47 | 0.20 | 0.38 | 0.295 | D | no | weak evidence (D2 of 0 or 1) | A cohort of TPIAT candidates relating preoperative MMTT C-peptide to postoperative insulin need, tested against HbA1c/CGM, with a threshold validated in a second centre (evidence, medium); A standardized MMTT protocol and a preoperative C-peptide threshold validated against post-transplant insulin independence. (evidence, medium); A prospective TPIAT cohort testing whether preoperative MMTT C-peptide predicts insulin independence beyond islet yield and glucose measures. (evidence, medium) |
 
 ## Incomplete rows (not ranked)
@@ -62,8 +62,8 @@ Tiers (D-39): A composite 0.60 or more, B 0.50 to 0.59, C 0.40 to 0.49, D below 
 | 20 | 13 | 9 | 12 | 9 |
 | 21 | 14 | 12 | 13 | 10 |
 | 12 | 15 | 16 | 15 | 13 |
-| 3 | 16 | 13 | 19 | 14 |
-| 13 | 17 | 19 | 21 | 11 |
+| 3 | 16 | 13 | 18 | 14 |
+| 13 | 17 | 19 | 20 | 11 |
 | 35 | 18 | 14 | 26 | 3 |
 | 33 | 19 | 21 | 16 | 24 |
 | 14 | 20 | 18 | 28 | 6 |
@@ -71,14 +71,14 @@ Tiers (D-39): A composite 0.60 or more, B 0.50 to 0.59, C 0.40 to 0.49, D below 
 | 22 | 22 | 25 | 14 | 26 |
 | 28 | 23 | 23 | 29 | 21 |
 | 23 | 24 | 24 | 24 | 23 |
-| 46 | 25 | 27 | 20 | 29 |
-| 25 | 26 | 28 | 22 | 27 |
+| 46 | 25 | 27 | 19 | 29 |
+| 25 | 26 | 28 | 21 | 27 |
 | 11 | 27 | 26 | 27 | 25 |
 | 45 | 28 | 22 | 32 | 16 |
 | 49 | 29 | 29 | 25 | 28 |
-| 8 | 30 | 31 | 18 | 32 |
-| 9 | 31 | 30 | 30 | 30 |
-| 27 | 32 | 32 | 31 | 31 |
+| 9 | 30 | 30 | 30 | 30 |
+| 8 | 31 | 32 | 22 | 32 |
+| 27 | 32 | 31 | 31 | 31 |
 
 ## Sensitivity to an unsourced D7 share (rule 24, D-37)
 

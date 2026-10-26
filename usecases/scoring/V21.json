@@ -96,14 +96,16 @@
   {
    "row": 8,
    "dimension": "D8",
-   "score": 3,
+   "score": 2,
    "reason": "The workshop states HbA1c is an insensitive measure of beta-cell function under near-normal control, and hard outcomes (hypoglycaemia, complications) need very large, long trials; MMTT C-peptide is reproducible. No other test measures endogenous secretion directly. Not 4 because insulin dose, A1c and CGM metrics are partial alternatives.",
    "sources": [
     "PMID 14693724 DOI 10.2337/diabetes.53.1.250 abstract",
     "PMID 18628574 DOI 10.2337/dc07-2451 abstract"
    ],
    "confidence": "medium",
-   "origin": "both"
+   "origin": "both",
+   "original_score": 3,
+   "correction": "Full-text review FT1 (2026-10-26, applied with the user's approval; low-confidence proposal): D8 3 to 2. Greenbaum 2008 (PMID 18628574) full text: fasting C-peptide correlates r=0.95 and 0.93 with MMTT AUC and the authors say a stimulated test may not add benefit in clinical practice beyond a fasting or random C-peptide."
   },
   {
    "row": 25,

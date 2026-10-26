@@ -1,0 +1,211 @@
+{
+ "unit": "FT1",
+ "role": "full-text reader",
+ "papers": [
+  {
+   "id": "C005",
+   "pmid": "14693724",
+   "doi": "10.2337/diabetes.53.1.250",
+   "text_quality": "partial",
+   "read_level": "full text",
+   "relied_on": "Row 8 relied on the abstract for consensus that stimulated C-peptide is the appropriate primary outcome in T1D beta-cell preservation trials (row 8 D2 3, D8 3).",
+   "full_text_shows": "The text was extracted from a two-column PDF, so lines interleave and the beta symbol is lost, but the content is readable. It gives the DCCT-based rationale: stimulated C-peptide of 0.2 nmol/l or more was linked to lower retinopathy, nephropathy and hypoglycaemia, and it advises testing between 70 and 200 mg/dl. The workshop sets out the outcome for trials, not a routine-care test.",
+   "verdict": "confirms",
+   "quote": "C-peptide is considered to be a good marker of insulin secretion",
+   "key_numbers": "Stimulated C-peptide threshold 0.2 nmol/l (DCCT intensive group); test glucose window 70-200 mg/dl; MMTT 2-h peak usually before 90 min",
+   "role_in_work": "Consensus source for row 8 surrogate acceptance",
+   "design": "ADA workshop report (expert consensus with literature and DCCT data review)",
+   "population_and_size": "DCCT-derived data and recent-onset T1D trial candidates; no single sample size",
+   "measure_type": "C-peptide, stimulated (mixed-meal; glucagon discussed)",
+   "assay_or_platform": "Not a single assay; assay variability discussed generally",
+   "quality_note": "Consensus from a 2001 meeting, over 20 years old; adoption by a guideline body not stated in the passages read; sponsor and conflict details not checked.",
+   "rows_affected": [
+    8
+   ],
+   "dimensions_affected": [
+    "D2",
+    "D8"
+   ]
+  },
+  {
+   "id": "C013",
+   "pmid": "18628574",
+   "doi": "10.2337/dc07-2451",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "Row 8 relied on the abstract for MMTT being preferred over the glucagon stimulation test for trials (D2 3, D8 3, D4 2).",
+   "full_text_shows": "Confirms two parallel studies (TrialNet and ECPT) showing MMTT is more sensitive, more reproducible and better tolerated; nausea occurred in 75-81% of glucagon tests. It also states that fasting C-peptide correlates r=0.95 and 0.93 with MMTT AUC and that a stimulated test may not add benefit in clinical practice beyond fasting or random C-peptide. It says DCCT linked stimulated, not fasting, C-peptide to outcomes, and that no formal study compares them.",
+   "verdict": "adds nuance",
+   "quote": "Any stimulated test is expensive and time consuming and thus may not provide benefits in clinical practice beyond a fasting or a random C-peptide measurement.",
+   "key_numbers": "MMTT vs fasting r 0.95/0.93; GST nausea 75-81%, vomiting 5-11%; MMTT peak about 88 min, GST peak about 6 min; fasting duplicate r about 0.90",
+   "role_in_work": "Source for MMTT protocol choice and endpoint reliability in row 8",
+   "design": "Two parallel analyses of repeated tests in trial cohorts (TrialNet, ECPT)",
+   "population_and_size": "Recent-onset T1D, age 8-35 years, duration 3 months-3 years; sample sizes not re-read (earlier project note: n=148 TrialNet, 118 ECPT)",
+   "measure_type": "C-peptide, stimulated (mixed-meal vs glucagon); fasting C-peptide compared",
+   "assay_or_platform": "Trial laboratory C-peptide assay (platform not captured in the passages read)",
+   "quality_note": "Standardized trial conditions; not routine-care data; sensitivity analysis excluded glucose outside 70-200 mg/dl.",
+   "rows_affected": [
+    8
+   ],
+   "dimensions_affected": [
+    "D8",
+    "D4"
+   ]
+  },
+  {
+   "id": "C060",
+   "pmid": "32219329",
+   "doi": "10.1210/clinem/dgaa149",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "Row 8 cited the albiglutide RCT as an example of MMTT 2-h C-peptide AUC used as a primary endpoint.",
+   "full_text_shows": "Phase 2 trial, 67 randomized (50 albiglutide, 17 placebo), primary endpoint MMTT 2-h C-peptide AUC change at week 52. Mean change was -0.16 nmol/L placebo vs -0.13 albiglutide (P=0.65 non-Bayesian); the study was stopped early and funded by GSK, and the Bayesian posterior difference was 0.12 nmol/L (0-0.24). It is a negative trial; it supports endpoint use, not that C-peptide guides care.",
+   "verdict": "confirms",
+   "quote": "no significant secondary endpoint differences were noted",
+   "key_numbers": "n=67 (50:17); completers 40/50 and 12/17; change -0.13 vs -0.16 nmol/L; P=0.6505; posterior difference 0.12 (0-0.24); P(diff >=0.2)=0.097",
+   "role_in_work": "Example of the endpoint in an RCT",
+   "design": "Randomized, placebo-controlled phase 2, 52 weeks, Bayesian primary analysis using prior placebo data",
+   "population_and_size": "Adults with newly diagnosed T1D (within 8 weeks), 67 randomized",
+   "measure_type": "C-peptide, mixed-meal stimulated (2-h AUC)",
+   "assay_or_platform": "Plasma C-peptide; platform not captured",
+   "quality_note": "Industry-funded (GSK authors), stopped early, small, negative; relies on a Bayesian prior.",
+   "rows_affected": [
+    8
+   ],
+   "dimensions_affected": [
+    "D2"
+   ]
+  },
+  {
+   "id": "C049",
+   "pmid": "28860126",
+   "doi": "10.2337/dc17-0542",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "Row 9 relied on the abstract for misclassification of type 3c diabetes as type 2 (87.8%) and need for insulin.",
+   "full_text_shows": "Primary-care record study in England (2,360,631 people, 31,789 new adult-onset diabetes cases, 559 after pancreatic disease). The word C-peptide does not appear in the text; no insulin or C-peptide measurement was used. Its value for row 9 is the misclassification rate and insulin need, not the test.",
+   "verdict": "adds nuance",
+   "quote": "Diabetes of the exocrine pancreas is frequently labeled type 2",
+   "key_numbers": "Incidence after pancreatic disease 2.59 per 100,000 person-years vs 1.64 for type 1; 87.8% labelled type 2; 2.7% labelled exocrine; insulin within 5 years 4.1% (T2D), 20.9% (after acute pancreatitis), 45.8% (chronic pancreatic disease); poor control aOR 1.7",
+   "role_in_work": "Burden and misclassification context for row 9",
+   "design": "Retrospective cohort, UK primary care database (2005-2016)",
+   "population_and_size": "Adults with new-onset diabetes, n=31,789; 559 with preceding pancreatic disease",
+   "measure_type": "None (no insulin or C-peptide measure); coded diagnosis, HbA1c and insulin use only",
+   "assay_or_platform": "Not applicable",
+   "quality_note": "Coding-based, UK; misclassification and selection bias acknowledged by the authors; does not test C-peptide.",
+   "rows_affected": [
+    9
+   ],
+   "dimensions_affected": [
+    "D2",
+    "S"
+   ]
+  },
+  {
+   "id": "C116",
+   "pmid": "39959260",
+   "doi": "10.4239/wjd.v16.i2.95102",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "Row 9 relied on the abstract for lower C-peptide in pancreatogenic diabetes versus T2D (D2 1, D8 1).",
+   "full_text_shows": "Single-centre cross-sectional study, 44 pancreatogenic (26 cancer, 18 chronic pancreatitis) vs 35 T2D. The measure was fasting C-peptide, 0.81 vs 1.71 nmol/L (P<0.001). C-peptide did not enter the cut-off table; fasting insulin did (below 85 pmol/L: sensitivity 75.0%, specificity 82.9%), and the composite index (below 2.40) reached 84.1% and 80.0%. Authors flag low statistical power and small size.",
+   "verdict": "adds nuance",
+   "quote": "We found significantly lower insulin and C-peptide levels in patients with pancreatogenic diabetes.",
+   "key_numbers": "Fasting C-peptide 0.81 vs 1.71 nmol/L; insulin cut-off <85 pmol/L sens 75.0 spec 82.9 OR 14.50; type 3c index <2.40 sens 84.1 spec 80.0; BMI <24.65 sens 50.0 spec 97.1",
+   "role_in_work": "Only retrieved comparison of C-peptide in type 3c vs T2D",
+   "design": "Single-centre cross-sectional case-control",
+   "population_and_size": "New-onset or short-duration (up to 6 months) diabetes; n=79",
+   "measure_type": "Fasting-based insulin and C-peptide (with HOMA-IR); no stimulated test",
+   "assay_or_platform": "C-peptide platform not captured in the passages read; adiponectin by ELISA (BioVendor)",
+   "quality_note": "Small, single-centre, several tests under-powered; no external validation; mixes pancreatic cancer and chronic pancreatitis.",
+   "rows_affected": [
+    9
+   ],
+   "dimensions_affected": [
+    "D2",
+    "D8"
+   ]
+  },
+  {
+   "id": "C136",
+   "pmid": "42633332",
+   "doi": "10.7759/cureus.113222",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "Row 9 caveat: case report, anecdotal.",
+   "full_text_shows": "Single case: glucose 668 mg/dL, HbA1c 19%, C-peptide 0.87 ng/mL (reference 1.1-4.4). Serum insulin was drawn after exogenous insulin and so was not interpretable. C-peptide is used as supportive evidence next to history; no cut-off or stimulated test.",
+   "verdict": "confirms",
+   "quote": "low C-peptide levels suggestive of impaired endogenous insulin secretion",
+   "key_numbers": "C-peptide 0.87 ng/mL (ref 1.1-4.4); glucose 668 mg/dL; HbA1c 19.0%; insulin 9.4 uIU/mL drawn on exogenous insulin",
+   "role_in_work": "Anecdotal illustration",
+   "design": "Case report",
+   "population_and_size": "One patient",
+   "measure_type": "C-peptide, random (single sample); insulin not interpretable",
+   "assay_or_platform": "Hospital laboratory, not named",
+   "quality_note": "Anecdotal, no evidence on decision change.",
+   "rows_affected": [
+    9
+   ],
+   "dimensions_affected": []
+  }
+ ],
+ "proposals": [
+  {
+   "row": 8,
+   "dimension": "D8",
+   "current": 3,
+   "proposed": 2,
+   "reason": "Full text says fasting C-peptide correlates r=0.95 and 0.93 with MMTT AUC and that no study shows the stimulated value is more meaningful per subject; the workshop case rests on DCCT stimulated data. Alternatives (fasting C-peptide) are closer than 'clearly adds'. Clarification 19 needs data showing the measure changes the answer given the alternatives.",
+   "quote": "Without a formal study using a fasting or random C-peptide value in addition to a stimulated test, it is not possible to determine which is more clinically meaningful",
+   "confidence": "low",
+   "papers": [
+    "C013"
+   ]
+  },
+  {
+   "row": 9,
+   "dimension": "D2",
+   "current": 1,
+   "proposed": null,
+   "reason": "C116 full text confirms a single-centre case-control with fasting C-peptide only; no change. C049 has no C-peptide.",
+   "quote": "We found significantly lower insulin and C-peptide levels in patients with pancreatogenic diabetes.",
+   "confidence": "medium",
+   "papers": [
+    "C116",
+    "C049"
+   ]
+  },
+  {
+   "row": 8,
+   "dimension": "D2",
+   "current": 3,
+   "proposed": null,
+   "reason": "Consensus plus randomized comparison confirmed; the negative albiglutide trial does not change surrogate acceptance.",
+   "quote": "no significant secondary endpoint differences were noted",
+   "confidence": "medium",
+   "papers": [
+    "C005",
+    "C013",
+    "C060"
+   ]
+  }
+ ],
+ "claim_issues": [
+  {
+   "where": "usecases-verified.md row 8 caveats",
+   "issue": "Add that Greenbaum 2008 full text reports fasting C-peptide correlating r=0.95/0.93 with MMTT AUC and says a stimulated test may add nothing in clinical practice; and that the albiglutide trial was negative, stopped early and GSK-funded.",
+   "paper": "C013"
+  },
+  {
+   "where": "usecases-verified.md row 9 sources",
+   "issue": "Woodmansey 2017 contains no insulin or C-peptide measurement (word absent); it supports misclassification (87.8%) and insulin need only. Do not cite it for the C-peptide test itself.",
+   "paper": "C049"
+  },
+  {
+   "where": "usecases-verified.md row 9 test column",
+   "issue": "The only C-peptide data (Juza 2025) are fasting; 'fasting or MMTT-stimulated' is not supported by this source for the type 3c vs T2D question. Its cut-off table has insulin (<85 pmol/L), not C-peptide.",
+   "paper": "C116"
+  }
+ ],
+ "notes": "Local texts read by keyword windows, not line by line; C005, C060 and C049 are PDF-extracted two-column text (interleaved lines, lost symbols). Current scores taken from latest V/RS files and ranking.json (row 8: D1 1, D2 3, D3 2, D4 2, D5 1, D6 2, D7 1, D8 3, S 0.5; row 9: D1 2, D2 1, D3 2, D4 2, D5 2, D6 2, D7 1, D8 1, S 2). Row 9 split into 9a/9b was raised by V19; this review does not resolve it. Path to viability unchanged for row 8 (consensus on protocol) and row 9 (validated C-peptide cut-offs); C116 shows an insulin cut-off could be a first step but is unvalidated. Tool calls used: 17."
+}

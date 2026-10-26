@@ -1,0 +1,196 @@
+{
+  "unit": "FT9",
+  "role": "full-text reader",
+  "papers": [
+    {
+      "id": "C061", "pmid": "32278004", "doi": "10.1016/j.jhep.2020.03.039",
+      "text_quality": "good", "read_level": "full text",
+      "relied_on": "merged-conclusion line 100: HOMA-IR 2.5 or more is one of seven optional metabolic risk criteria; any two suffice in lean adults; an insulin assay is never required.",
+      "full_text_shows": "Table 1 lists seven criteria and says at least two are needed for lean/normal-weight patients (overweight/obesity and type 2 diabetes qualify without them). HOMA-IR is listed as 'HOMA-IR score 2.5' (the 'or more' sign is lost in extraction; the 2.5 cut-off is the text's). The prediabetes criterion can be met by fasting glucose, 2-hour post-load glucose or HbA1c, not insulin. The Korean criticism sentence is not in this paper (it comes from a different source).",
+      "verdict": "confirms",
+      "quote": "Homeostasis model assessment (HOMA)-insulin resistance score 2.5.",
+      "key_numbers": "7 criteria; at least 2 needed in lean adults; HOMA-IR cut-off 2.5; footnote links the optional cut points to Caucasian individuals or populations with increased insulin resistance",
+      "role_in_work": "Definitional entry showing where fasting-insulin-based HOMA-IR appears in a consensus; not a management use.",
+      "design": "International expert consensus statement (Delphi-type panel)",
+      "population_and_size": "Not applicable (panel of 22 experts, criteria for adults with hepatic steatosis)",
+      "measure_type": "Fasting-based (HOMA-IR from fasting insulin and glucose); optional criterion",
+      "assay_or_platform": "Not specified",
+      "quality_note": "Consensus text, no competing interests declared. The text does not say which insulin assay or standardisation to use for the 2.5 cut-off. The expert-panel size of 22 was not checked in the text and is from memory [recall]; do not use it.",
+      "rows_affected": [], "dimensions_affected": []
+    },
+    {
+      "id": "C062", "pmid": "32398352", "doi": "10.1136/bmjdrc-2020-001217",
+      "text_quality": "good", "read_level": "full text",
+      "relied_on": "merged-conclusion line 101: genetically predicted IR phenotypes (fasting insulin, HDL-C, triglycerides) carry OR 1.79 for CAD and 1.80 for small-artery stroke; lipid pathways limit interpretation.",
+      "full_text_shows": "Numbers confirmed (CAD OR 1.79, 1.57-2.04; SAO OR 1.80, 1.30-2.49; all-ischaemic stroke OR 1.21). The authors themselves find that associations vanish with the 28-SNP instrument that excludes lipid loci (MR-Egger and, for CAD/MI, no association with the 5-SNP clamp-based instrument: p=0.17 CAD, p=0.12 MI) and say the main contribution is via lipids, while noting weak measurement-error control. MR-Egger for the 53-SNP instrument was null for stroke and SAO (OR 0.92, 0.94) and the SAO intercept was marginal (p=0.046). Stroke subtype data are small (5,386 SAO cases).",
+      "verdict": "adds nuance",
+      "quote": "indicating that the major contribution of the IR composite phenotype to the CAD/MI outcome is via its effect on lipids.",
+      "key_numbers": "CAD OR 1.79 (1.57-2.04); MI 1.78; IS 1.21 (1.05-1.40); SAO 1.80 (1.30-2.49); 5-SNP gold-standard instrument not associated with CAD (p=0.17) or MI (p=0.12); nominal for SAO (p=0.01)",
+      "role_in_work": "Causal-plausibility evidence for IR and vascular disease; explicitly not evidence for a test.",
+      "design": "Two-sample Mendelian randomization, summary-level European GWAS data",
+      "population_and_size": "Exposure GWAS up to 188,577 people; CAD 60,801 cases; ischemic stroke 40,585 cases; European ancestry only",
+      "measure_type": "Genetic proxy of IR: BMI-adjusted fasting insulin plus HDL-C plus triglycerides (not a clinical measurement)",
+      "assay_or_platform": "Genetic instruments (53 SNPs, composite), MAGIC and GLGC consortia",
+      "quality_note": "Proxy IR phenotype selected by concordance of three traits; pleiotropy not excluded; results sensitive to instrument choice.",
+      "rows_affected": [], "dimensions_affected": []
+    },
+    {
+      "id": "C075", "pmid": "34674510", "doi": "10.3803/enm.2021.1110",
+      "text_quality": "good", "read_level": "full text",
+      "relied_on": "merged-conclusion line 106: n=15,728, 86% men; shared components make part of the association mechanical; supports association of two changes only.",
+      "full_text_shows": "Population and shared-component caveat confirmed; authors state it themselves. Extra points: fibrosis was defined only by NFS and APRI (no biopsy, ultrasound-defined NAFLD), retrospective design; NFS and APRI gave inconsistent results (in APRI, BMI change fitted better than HOMA-IR change; HOMA-IR fitted better in NFS); effect held after adjusting for new-onset diabetes (NFS G4 vs G1 OR for progression 2.34 Model 1; APRI OR 2.31 Model 3, 2.08 Model 4); associations were not seen in women or BMI<25 in some analyses. HOMA-IR change used fasting values. Follow-up 4 years.",
+      "verdict": "adds nuance",
+      "quote": "changes in HOMA-IR may reflect changes in fasting blood glucose levels. These implies that the two indices are likely to be originally related",
+      "key_numbers": "n=15,728; mean age 40.5; men 86%; NFS progression 949, regression 720; APRI progression 669, regression 515; NFS OR per SD HOMA-IR change 1.33 (1.25-1.42) vs BMI 1.16",
+      "role_in_work": "Association evidence for HOMA-IR change vs fibrosis scores; no monitoring value shown.",
+      "design": "Retrospective cohort, health-screening population (Kangbuk Samsung)",
+      "population_and_size": "15,728 adults with ultrasound NAFLD, no diabetes at baseline, Korea",
+      "measure_type": "Fasting-based (HOMA-IR change)",
+      "assay_or_platform": "Fasting insulin and glucose from a screening center; assay not detailed in the passages read",
+      "quality_note": "Surrogate outcomes (NFS, APRI), healthy-worker population, mostly men, unverified lifestyle data.",
+      "rows_affected": [], "dimensions_affected": []
+    },
+    {
+      "id": "C125", "pmid": "40841970", "doi": "10.1186/s13098-025-01900-8",
+      "text_quality": "good", "read_level": "full text",
+      "relied_on": "merged-conclusion line 105: eGDR in type 1 diabetes, observational (non-insulin surrogate).",
+      "full_text_shows": "Observational meta-analysis (PROSPERO-registered, PRISMA). eGDR is computed from waist/waist-hip ratio, hypertension and HbA1c, so no insulin or C-peptide is measured. Per-unit eGDR rise: MACE HR 0.79 (0.72-0.87, 9 studies, I2=63%); all-cause mortality HR 0.84 (0.82-0.86, 5 studies); CAD (3 studies) HR 3.61 for low vs high eGDR (2.83-4.62); subclinical atherosclerosis not significant. Four different eGDR equations; no standard thresholds; 1 study high risk of bias and 7 some concerns; larger studies (>=1,000) not significant for MACE (HR 0.83, 0.65-1.06). The authors recommend considering routine eGDR monitoring, which the data (association only) do not show to change outcomes.",
+      "verdict": "adds nuance",
+      "quote": "all included studies were observational, which introduces the risk of residual confounding and limits the ability to infer causality.",
+      "key_numbers": "MACE HR 0.79 (0.72-0.87) per unit; mortality HR 0.84; CAD HR 3.61 (low vs high); I2 63%",
+      "role_in_work": "Non-insulin surrogate example; not an insulin or C-peptide test.",
+      "design": "Systematic review and meta-analysis of observational studies",
+      "population_and_size": "Adults with type 1 diabetes; number of studies about 20 (exact total not confirmed here)",
+      "measure_type": "Non-insulin surrogate (eGDR from clinical variables and HbA1c)",
+      "assay_or_platform": "Four published eGDR equations",
+      "quality_note": "Heterogeneous equations and exposure coding; HbA1c is part of the score, so association with outcomes may reflect glycaemic control.",
+      "rows_affected": [], "dimensions_affected": []
+    },
+    {
+      "id": "C153", "pmid": "22933030", "doi": "10.1007/s10549-012-2223-1",
+      "text_quality": "partial (two-column layout interleaved, tables partly broken)", "read_level": "full text",
+      "relied_on": "merged-conclusion line 97: insulin, HOMA or C-peptide was an outcome that metformin lowered, not an effect modifier.",
+      "full_text_shows": "Mostly confirmed: HOMA fell (-0.21, p=0.047) and insulin fell non-significantly; baseline insulin and HOMA were not reported as predictors of Ki67 change in the exploratory analysis. But two exploratory findings link metabolic markers to tumour response: Ki67 reduction was greater with baseline fasting glucose above 5.3 mmol/L (-6.1 vs +1.1 %, p=0.02), and TUNEL rose more in women with the largest fasting-insulin fall (p=0.001); HOMA appears in a similar pattern (p=0.01; the sentence is ambiguous in the garbled text). These are on-treatment change associations in small subgroups, not baseline effect modification.",
+      "verdict": "adds nuance",
+      "quote": "Results of these exploratory analyzes must be interpreted with caution given the small numbers of subjects, particularly in subgroups.",
+      "key_numbers": "48 enrolled, 9 did not complete; HOMA change -0.21 (p=0.047); baseline glucose >5.3 mmol/L Ki67 -6.1 vs +1.1 % (p=0.02); insulin fall >3.5 pmol/L TUNEL +0.84 vs +0.13 % (p=0.001)",
+      "role_in_work": "Preoperative window study; insulin/HOMA as secondary biomarker outcome.",
+      "design": "Single-arm prospective window-of-opportunity trial",
+      "population_and_size": "About 39 evaluable women with early breast cancer, one centre (Canada)",
+      "measure_type": "Fasting-based (fasting insulin, HOMA; C-peptide listed as a rationale)",
+      "assay_or_platform": "Fasting serum insulin; HOMA = insulin/7.167 x glucose/22.5 (as printed in the text)",
+      "quality_note": "No control arm, small, exploratory subgroups, multiple comparisons.",
+      "rows_affected": [], "dimensions_affected": []
+    },
+    {
+      "id": "C157", "pmid": "24972190", "doi": "10.1016/j.ygyno.2014.06.014",
+      "text_quality": "partial (two-column text with line numbers interleaved)", "read_level": "full text",
+      "relied_on": "merged-conclusion line 97: insulin was an outcome metformin lowered, not an effect modifier.",
+      "full_text_shows": "Fasting insulin fell in all 11 treated patients (mean 13.36 to 5.2 mU/l, p=0.0005); IGF-1 and IGFBP-7 also fell; Ki67 fell by a mean of 9.7% versus stable in controls. The discussion expects greater metformin impact in insulin-resistant (type 1) tumours but the study did not test insulin level as a predictor of Ki67 response (pilot, n=11). Confirms the project statement.",
+      "verdict": "confirms",
+      "quote": "Fasting insulin levels were reduced from baseline to peri-operative measurements in all patients",
+      "key_numbers": "n=11 treated; fasting insulin 13.36 to 5.2 mU/l (p=0.0005); Ki67 -9.7% vs stable controls",
+      "role_in_work": "Biomarker outcome in a pilot window trial.",
+      "design": "Pilot prospective window study with a small non-randomised control group",
+      "population_and_size": "11 metformin patients with endometrial cancer plus controls (control size not read)",
+      "measure_type": "Fasting-based (plasma insulin)",
+      "assay_or_platform": "Insulin assay on frozen samples (kit name partly garbled; not recorded)",
+      "quality_note": "Tiny pilot, mixed tumour types, not randomised.",
+      "rows_affected": [], "dimensions_affected": []
+    },
+    {
+      "id": "C158", "pmid": "25374101", "doi": "10.3233/jad-141791",
+      "text_quality": "good", "read_level": "full text",
+      "relied_on": "merged-conclusion line 109: within-arm correlation r=0.54 in 19 people between baseline IR and response to 40 IU detemir; IR measure not named in the abstract; not an interaction test.",
+      "full_text_shows": "The IR measure is named: HOMA-IR from fasting glucose and insulin, plus a second index, insulin AUC adjusted for glucose AUC from a 75 g OGTT (post-load, 15 to 120 min). The r=0.54 sits in the abstract and the 40 IU arm has n=19; the full text passages read do not say which index the r refers to (HOMA-IR is the named primary index). The trial is a 60-person pilot, 21 days. Primary memory composite was not significant overall; the effect was moderated by APOE-4 (improvement in carriers, worsening in non-carriers). HOMA-IR itself changed differently by APOE-4 status. This reinforces that APOE-4, not IR, was the stratifier.",
+      "verdict": "adds nuance",
+      "quote": "Higher insulin resistance at baseline predicted greater improvement with the 40 IU dose (r = 0.54, p < 0.02).",
+      "key_numbers": "n=60 (20 placebo, 21 at 20 IU, 19 at 40 IU); r=0.54, p<0.02; APOE-4 treatment x time interaction p<0.05 for memory composite",
+      "role_in_work": "Closest item to a trial where baseline insulin resistance relates to response; correlation only.",
+      "design": "Randomised placebo-controlled pilot, 21 days",
+      "population_and_size": "60 adults with MCI or mild to moderate Alzheimer disease, US",
+      "measure_type": "Fasting-based (HOMA-IR) and post-load (OGTT insulin AUC adjusted for glucose AUC)",
+      "assay_or_platform": "Fasting and OGTT samples; glucose by meter; insulin assay not read",
+      "quality_note": "Small pilot, many outcomes and subgroup tests, Crossref lists corrections for this paper (not read here).",
+      "rows_affected": [], "dimensions_affected": []
+    },
+    {
+      "id": "C174", "pmid": "37144983", "doi": "10.1056/nejmoa2214956",
+      "text_quality": "good", "read_level": "full text",
+      "relied_on": "merged-conclusion line 109: the benefit of treating even glucose-defined early GDM remains debated (TOBOGM).",
+      "full_text_shows": "TOBOGM (n=802) found a lower rate of the first primary outcome, adverse neonatal composite, with immediate treatment (24.9% vs 30.5%; adjusted risk difference -5.6 points, 95% CI -10.1 to -1.2), but no difference in pregnancy-related hypertension (10.6% vs 9.9%) or neonatal lean body mass. Diagnosis used a 75 g OGTT with glucose criteria only; no insulin or C-peptide measurement. So the trial supports treating glucose-defined early GDM for one outcome; 'debated' is fair only for the other two outcomes.",
+      "verdict": "adds nuance",
+      "quote": "adjusted risk difference, -5.6 percentage points; 95% CI, -10.1 to -1.2",
+      "key_numbers": "802 randomised; neonatal composite 24.9% vs 30.5%; hypertension 10.6% vs 9.9% (RD 0.7, -1.6 to 2.9); lean mass 2.86 vs 2.91 kg",
+      "role_in_work": "Context that the benefit of treating early glucose-defined GDM is not settled.",
+      "design": "Multicentre open-label randomised trial",
+      "population_and_size": "802 women with a risk factor, early GDM by WHO 2013 criteria, <20 weeks, Australia, Canada, India and others",
+      "measure_type": "Not an insulin or C-peptide test (glucose OGTT only)",
+      "assay_or_platform": "75 g OGTT glucose",
+      "quality_note": "Open-label; three co-primary outcomes; result mixed.",
+      "rows_affected": [], "dimensions_affected": []
+    },
+    {
+      "id": "C184", "pmid": "40639383", "doi": "10.1016/s1470-2045(25)00231-1",
+      "text_quality": "good", "read_level": "full text",
+      "relied_on": "merged-conclusion line 97: STAMPEDE metformin arm null for overall survival, no baseline insulin subgroup (abstract per the oncology reviewer).",
+      "full_text_shows": "Overall survival HR 0.91 (0.80-1.03; p=0.15) with CRD data; null. Seven prespecified subgroups, none by insulin, HOMA or C-peptide. Not fully null: progression-free survival HR 0.76 in high-volume disease (interaction p=0.012), with a similar pattern for metastatic PFS; authors call this a potential effect to test further, and report metabolic benefits (weight, glucose, lipids). Only 3% received ADT plus ARPI. Open-label.",
+      "verdict": "adds nuance",
+      "quote": "there was some evidence of a potential anticancer effect in patients with high-volume disease.",
+      "key_numbers": "OS HR 0.91 (0.80-1.03; p=0.15); PFS high-volume HR 0.76 (0.64-0.90), low-volume 1.06; interaction p=0.012",
+      "role_in_work": "Large randomised metformin trial in which no insulin-based selection was tested.",
+      "design": "Randomised phase 3 platform arm, open-label",
+      "population_and_size": "Metastatic hormone-sensitive prostate cancer starting ADT, UK and Switzerland (about 1,800 target); exact enrolled total not captured here",
+      "measure_type": "No insulin or C-peptide measure used as a selector",
+      "assay_or_platform": "Not applicable",
+      "quality_note": "Open-label; some authors report industry consulting fees; stratifiers were clinical.",
+      "rows_affected": [], "dimensions_affected": []
+    }
+  ],
+  "proposals": [],
+  "claim_issues": [
+    {
+      "where": "merged-conclusion.md line 100 (MAFLD definition)",
+      "issue": "Accurate, but the 'any two suffice' rule applies to lean/normal-weight adults only; the 'Korean authors criticise' sentence is not from this paper. Full text raises confidence in the criteria statement; it does not bear on the criticism clause.",
+      "proposed_wording": "The 2020 international consensus (PMID 32278004, DOI 10.1016/j.jhep.2020.03.039; criteria table read in full text) lists HOMA-IR of 2.5 or more among seven metabolic risk criteria; adults with a lean/normal weight need at least two (waist, BP, triglycerides, HDL, prediabetes by glucose or HbA1c, HOMA-IR, hs-CRP), so a fasting insulin assay is never required (fasting-based measure).",
+      "paper": "C061", "claim_ids": ["GL-40", "EV-35"]
+    },
+    {
+      "where": "merged-conclusion.md line 101 (Mendelian randomization)",
+      "issue": "The paper's own sensitivity analyses make the lipid caveat stronger: no association with the lipid-free 28-SNP instrument, nor for CAD/MI with the 5-SNP clamp-based instrument. 'Numbers verified' is correct. Full text lowers confidence that the signal is specific to insulin resistance.",
+      "proposed_wording": "... carry OR 1.79 for CAD and 1.80 for small-artery stroke; in the authors' sensitivity analyses the association was lost with the 28-SNP instrument that excludes lipid loci and with the 5-SNP clamp-based instrument for CAD and MI (p=0.17, 0.12), and the authors attribute most of the CAD signal to lipids. This does not separate IR from lipid biology and does not show that measuring fasting insulin, HOMA-IR or lipid surrogates is useful.",
+      "paper": "C062", "claim_ids": ["EV-38"]
+    },
+    {
+      "where": "merged-conclusion.md line 105 (eGDR in type 1 diabetes)",
+      "issue": "The one-line mention hides that the reviewers' own conclusion recommends routine eGDR monitoring on association data; the pooled HR was not significant in larger studies and eGDR includes HbA1c, so the association with outcomes may partly reflect glycaemic control. eGDR is a non-insulin surrogate, not an insulin test.",
+      "proposed_wording": "eGDR (non-insulin surrogate from waist, hypertension and HbA1c) in type 1 diabetes (PMID 40841970, DOI 10.1186/s13098-025-01900-8; full text read): meta-analysis of observational studies, pooled HR per unit 0.79 for MACE (I2 63%), not significant in studies with 1,000 or more participants; four different equations; no outcome test of acting on eGDR.",
+      "paper": "C125", "claim_ids": ["EV-40"]
+    },
+    {
+      "where": "merged-conclusion.md line 106 (HOMA-IR change and NAFLD fibrosis)",
+      "issue": "Correct. Add that fibrosis was NFS/APRI only (no biopsy), retrospective, and the two scores disagreed. Full text slightly lowers confidence that HOMA-IR is the better tracker (BMI fitted better for APRI).",
+      "proposed_wording": "Longitudinal HOMA-IR change tracked changes in NAFLD fibrosis scores (PMID 34674510, DOI 10.3803/enm.2021.1110; full text read; n=15,728, 86% men, retrospective, fasting-based): fibrosis was judged by NFS and APRI only, results differed between the two, and the authors note that glucose is a component of both exposure and outcome.",
+      "paper": "C075", "claim_ids": ["EV-41"]
+    },
+    {
+      "where": "merged-conclusion.md line 97 (oncology window studies)",
+      "issue": "Read level is now full text for C153 and C157, not abstract. C153 reports exploratory associations of on-treatment change (insulin fall with TUNEL; baseline fasting glucose above 5.3 mmol/L with Ki67 fall), so 'not an effect modifier' needs the qualifier that baseline insulin was not shown to predict response but glucose was in an exploratory subgroup. C184 was not null in every analysis (PFS benefit in high-volume disease). Lowers confidence that 'no selection signal' is complete.",
+      "proposed_wording": "In window studies in breast and endometrial cancer (PMIDs 22933030, 24972190; full text read) fasting insulin and HOMA fell on metformin; in the breast study baseline insulin or HOMA were not reported as predictors of Ki67 change, while exploratory subgroups linked baseline fasting glucose above 5.3 mmol/L (p=0.02) and on-treatment insulin fall (TUNEL, p=0.001) to tumour response. The STAMPEDE metformin arm (PMID 40639383, DOI 10.1016/S1470-2045(25)00231-1; full text read) was null for overall survival (HR 0.91, 0.80-1.03), showed a progression-free survival signal in high-volume disease (interaction p=0.012), and tested no insulin or C-peptide subgroup.",
+      "paper": "C153", "claim_ids": ["TRI-43", "TRI-44", "EV-35"]
+    },
+    {
+      "where": "merged-conclusion.md line 109 (dementia, Claxton 2015)",
+      "issue": "The full text names the measure (HOMA-IR; a post-load OGTT insulin AUC adjusted for glucose AUC is a second index), so 'IR measure not named' can be replaced. The stratifier that carried the memory result was APOE-4. The text passages read do not state which index the r=0.54 uses. Correction notice for this paper is still not read.",
+      "proposed_wording": "... a within-arm correlation between baseline insulin resistance and response to 40 IU intranasal insulin detemir (r = 0.54 in 19 people; Claxton 2015, PMID 25374101, DOI 10.3233/JAD-141791; full text read; insulin resistance was HOMA-IR from fasting values, with OGTT insulin AUC adjusted for glucose AUC as a secondary index; the full text does not say which index the correlation uses; APOE-4 status, not insulin resistance, moderated the main memory effect; not a stratified or interaction test).",
+      "paper": "C158", "claim_ids": ["ABS-15"]
+    },
+    {
+      "where": "merged-conclusion.md line 109 (TOBOGM)",
+      "issue": "'Benefit remains debated' understates that TOBOGM met its first primary outcome; it was null on the other two. Diagnosis was by glucose OGTT, so the trial does not involve insulin or C-peptide.",
+      "proposed_wording": "... TOBOGM (PMID 37144983, DOI 10.1056/NEJMoa2214956; full text read; glucose OGTT criteria, no insulin measurement) found fewer adverse neonatal outcomes with immediate treatment of early GDM (24.9% vs 30.5%; adjusted risk difference -5.6 points, 95% CI -10.1 to -1.2), with no difference in pregnancy-related hypertension or neonatal lean body mass.",
+      "paper": "C174", "claim_ids": ["ABS-14"]
+    }
+  ],
+  "notes": "Used about 12 tool calls. Only local files read. C153 and C157 PDF text is two-column and partly garbled; the C153 HOMA subgroup sentence is ambiguous and the C157 control group size and insulin assay were not recovered. C125 total number of studies, C184 enrolled total, and C061 panel size were not confirmed in the passages read. The Crossref correction for Claxton 2015 was not read. No score proposals: none of these papers is tied to a scored row as far as the passages show (U*/V* score files were not opened; this is an assumption). Confidence figures were not touched."
+}
