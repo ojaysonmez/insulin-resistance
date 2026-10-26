@@ -7,3 +7,4 @@ Notes for future sessions, stored in the repository (this folder) instead of the
 - [Verify before commit](feedback_verify_before_commit.md) — make it work and show it, then ask to commit; never commit untested work first
 - [Lessons learned](lessons_learned.md) — what failed in this project and how it was fixed
 - [Metsulin product facts](project_metsulin_product.md) — device measures insulin, C-peptide and glucose; 5-10 tests a year threshold; four grouping axes
+- [Review before commit](feedback_review_before_commit.md) — show the changes and wait; commit and push only after the user has reviewed
