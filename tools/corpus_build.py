@@ -212,7 +212,10 @@ def write_xlsx(records):
 
 def main():
     ap = argparse.ArgumentParser(description="Build or refresh the article corpus table (no model).")
-    ap.add_argument("--from", dest="sources", nargs="+", default=["merged-conclusion.md", "usecases-verified.md"])
+    # default scope (2026-10-26): the two main documents plus the score files, so every paper a score rests on is in the corpus
+    default_sources = ["merged-conclusion.md", "usecases-verified.md"] + sorted(
+        str(p.relative_to(ROOT)).replace("\\", "/") for p in (ROOT / "usecases" / "scoring").glob("[UV]*.json"))
+    ap.add_argument("--from", dest="sources", nargs="+", default=default_sources)
     ap.add_argument("--elfa", default="I:/My Drive/SCIENCE/eLFA Articles.xlsx")
     ap.add_argument("--no-network", action="store_true")
     ap.add_argument("--check", action="store_true")

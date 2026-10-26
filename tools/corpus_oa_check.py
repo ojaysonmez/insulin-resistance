@@ -10,7 +10,7 @@ filled in, and updates the rest.
 Columns: ID, PMID, DOI, first_checked, last_checked, oa_status (gold, green, hybrid, bronze, closed, not found),
 best_url, host (publisher, repository, ...), version (published, accepted, submitted), license, other_locations,
 action (open: not looked at yet; to-download: approved for download; downloaded; refused: server refused; closed: no open copy;
-supply-pdf: needs your PDF), notes.
+supply-pdf: needs your PDF; inaccessible: tried by hand, not reachable, to be requested through a colleague), notes.
 
 Optional environment variable: OPENALEX_MAILTO (polite pool; never hard-coded).
 
@@ -95,7 +95,7 @@ def main():
             continue
         if not r.get("DOI"):
             continue
-        if prev and prev["action"] in ("closed", "refused", "landing-page", "supply-pdf", "downloaded") and not a.all:
+        if prev and prev["action"] in ("closed", "refused", "landing-page", "supply-pdf", "downloaded", "inaccessible") and not a.all:
             continue  # already decided: do not check again unless --all
         todo.append(r)
     if a.max:

@@ -65,6 +65,18 @@ def find_entries(root, row, dim):
     return out
 
 
+def file_indent(path):
+    """Indent width used by an existing JSON file (so an edit does not reformat the whole file)."""
+    try:
+        for line in Path(path).read_text(encoding="utf-8").splitlines()[1:6]:
+            n = len(line) - len(line.lstrip(" "))
+            if n:
+                return n
+    except Exception:
+        pass
+    return 2
+
+
 def decide(root, pr):
     """Return (action, note, entry_tuple or None) for one proposal."""
     row, dim, cur, new = pr.get("row"), pr.get("dimension"), pr.get("current"), pr.get("proposed")
@@ -149,7 +161,7 @@ def main():
             rows.append([today, unit, "", "", "", "", "no proposals", ""])
         for fpath, data in touched.items():
             with fpath.open("w", encoding="utf-8", newline="\n") as fh:
-                json.dump(data, fh, indent=2, ensure_ascii=False)
+                json.dump(data, fh, indent=file_indent(fpath), ensure_ascii=False)
                 fh.write("\n")
         for r in rows:
             print("\t".join(str(x) for x in r))
