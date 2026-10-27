@@ -1,0 +1,183 @@
+{
+  "unit": "FT16",
+  "role": "full-text reader",
+  "papers": [
+    {
+      "id": "C204", "pmid": "24314196", "doi": "10.1016/j.jpedsurg.2013.04.022",
+      "text_quality": "good", "read_level": "full text (introduction, methods, results and discussion tail read)",
+      "relied_on": "Row 24 D2 treated the child-specific evidence as small surgical series (title only), so support for the work-up was extrapolated adult consensus.",
+      "full_text_shows": "Retrospective review of 8 children and young adults (age 4 to 26) with histology-proven insulinoma at one US hyperinsulinism centre (1999 to 2012). Detectable insulin during fasting or post-prandial hypoglycaemia (glucose under 50 mg/dL) with suppressed beta-hydroxybutyrate and a glucagon response was an inclusion criterion; the paper evaluates localisation imaging and surgery, not the insulin or C-peptide test.",
+      "verdict": "confirms",
+      "quote": "Diagnosis of an insulinoma is confirmed by a 72-hour fast study during which the patient is symptomatic and has inappropriately elevated insulin levels",
+      "key_numbers": "n=8; age 4 to 26 (median 10); symptom-to-surgery 1 to 84 months (median 3.5); abdominal CT, ultrasound, EUS, MRI localised 28.6%, 20%, 40%, 50% of cases where used; 6 of 8 had diazoxide or octreotide without consistent benefit; 2 pancreatic fistulas.",
+      "role_in_work": "Child-specific supporting case series for row 24 (context for the work-up; no test-accuracy or decision-impact data for insulin or C-peptide).",
+      "design": "Retrospective single-centre case series (surgical).",
+      "population_and_size": "8 patients with histology-confirmed insulinoma, Children's Hospital of Philadelphia Congenital Hyperinsulinism Center, 1999 to 2012.",
+      "measure_type": "Insulin (with glucose, beta-hydroxybutyrate, glucagon response) at spontaneous or fasting hypoglycaemia, used as an inclusion criterion; random/critical-sample, not post-load or stimulated.",
+      "assay_or_platform": "Not stated.",
+      "quality_note": "Very small retrospective series selected by surgical confirmation (false positives and negatives cannot be counted); single centre.",
+      "rows_affected": [24], "dimensions_affected": ["D2"]
+    },
+    {
+      "id": "C321", "pmid": "42149805", "doi": "10.1159/000552145",
+      "text_quality": "good", "read_level": "full text (introduction to discussion; tables 1 to 4)",
+      "relied_on": "Row 24 D7 used the abstract: 23 paediatric insulinomas in 18 years at one hospital (country not stated), about 1 per year, scaled by assumed centre counts to about 150 per year (low confidence).",
+      "full_text_shows": "The site is the Children's Hospital of Philadelphia Congenital Hyperinsulinism Center (US), 2006 to 2024, 23 patients aged 2 to 26 (median 13), so the cohort includes young adults, not only children; 7 of 23 were under 10. Incidence in children is stated as not well defined. In a comparison with a previously published congenital HI cohort, insulin and C-peptide did not separate insulinoma from congenital HI (insulin AUC 0.61, C-peptide AUC 0.505); beta-hydroxybutyrate (AUC 0.75) and a BOHB plus IGFBP-1 model (AUC 0.933) did. The paper does not test whether insulin or C-peptide changes management.",
+      "verdict": "adds nuance",
+      "quote": "Although not statistically significant, insulin concentrations were higher in the insulinoma group.",
+      "key_numbers": "n=23 (22 resected with histology); median age 13 (2 to 26); MEN1 positive 7 of 22 tested; cure 21 of 22 operated; median critical-sample insulin 8.8 uIU/mL, C-peptide 0.53 nmol/L; detectable insulin sensitivity 55%, specificity 60% (AUC 0.61, 95% CI 0.44 to 0.77); BOHB at or above 0.40 mmol/L sensitivity 0.68, specificity 0.76; combined model sensitivity 0.89, specificity 0.84, not significant after age adjustment.",
+      "role_in_work": "Supporting source for the commonality chain of row 24 (D7) and context for the work-up (insulin and C-peptide establish hyperinsulinism; they do not distinguish insulinoma from congenital HI).",
+      "design": "Retrospective single-centre cohort with a historical congenital HI comparator (critical-sample data 2002 to 2013).",
+      "population_and_size": "23 patients (insulinoma or highly suspected) plus a published congenital HI comparator cohort; ages 2 to 26.",
+      "measure_type": "Insulin and C-peptide at hypoglycaemia (critical sample after diagnostic fast or spontaneous episode); random/critical-sample, not post-load.",
+      "assay_or_platform": "Not stated; units given in both uIU/mL and pmol/L, C-peptide in ng/mL and nmol/L.",
+      "quality_note": "Small n, one centre, historical infant comparator (age confounded: median 12.8 versus 0.3 years), some biomarkers missing (C-peptide n=18, insulin n=21), multivariable model not significant after age adjustment.",
+      "rows_affected": [24], "dimensions_affected": ["D7"]
+    },
+    {
+      "id": "C029", "pmid": "24843502", "doi": "10.1111/j.2040-1124.2010.00096.x",
+      "text_quality": "good", "read_level": "full text (methods, results, tables 1 to 3, start of discussion)",
+      "relied_on": "Row 31 entries used the abstract: a retrospective study of 201 Japanese patients with type 2 diabetes with likelihood ratios about 2, as the only de-escalation-adjacent evidence (D2, D8), a weak match for the stop-insulin decision, and as a supporting source for D1 and S.",
+      "full_text_shows": "The question is which hospitalised type 2 diabetes patients needed insulin (rather than oral drugs or diet) to reach a mean pre-meal glucose under 130 mg/dL; it is not about stopping insulin or type classification. Five indices (fasting C-peptide, glucagon 6-minute C-peptide, delta, SUIT, C-peptide index CPI) gave AUC 0.69 to 0.75 and likelihood ratios 1.6 to 2.8; CPI was best. Five patients were switched from insulin to oral drugs, but this was not analysed as an outcome.",
+      "verdict": "adds nuance",
+      "quote": "CPI is the most relevant of these indices for selecting insulin therapy to achieve good glycemic control",
+      "key_numbers": "746 admitted, 474 analysed, 201 achieved good control (119 non-insulin, 82 insulin at discharge). CPI AUC 0.75, optimal cut-off 1.1 ng/mg, sensitivity 61%, specificity 78%, LR 2.8; fasting C-peptide AUC 0.69 (cut-off 1.75 ng/mL, LR 2.0); 6-min glucagon C-peptide AUC 0.71 (3.75 ng/mL, LR 2.1). In 166 patients re-analysed against HbA1c under 7.4% within 6 months: CPI AUC 0.75, cut-off 1.2, sensitivity 73%, specificity 71%, LR 2.5.",
+      "role_in_work": "Weak supporting study for row 31 (the decision it informs is starting insulin in type 2 diabetes, not stopping it or classifying doubtful type).",
+      "design": "Retrospective single-centre inpatient cohort with ROC analysis; no validation set.",
+      "population_and_size": "Japanese adults with type 2 diabetes admitted for poor control (Kyoto University Hospital, 2003 to 2009); 201 in the main analysis; excluded creatinine at or above 1.3 mg/dL, pancreatic or liver disease, and patients on oral drugs plus insulin at discharge.",
+      "measure_type": "C-peptide: fasting and glucagon-stimulated (1 mg IV, 6 minutes), plus ratio indices (CPI, SUIT). Not random C-peptide and not post-meal.",
+      "assay_or_platform": "Enzyme immunoassay, ST AIA-PACK C-Peptide (Tosoh, Japan); glucagon test within 1 week of admission with oral drugs paused.",
+      "quality_note": "Inpatient setting with dietitian-managed diet, treatment chosen by clinicians (not randomised), only 42% reached target, discharge treatment as the label; discrimination fair at best (LR below 3); non-US population and assay.",
+      "rows_affected": [31], "dimensions_affected": ["D2", "D8", "S", "D1"]
+    },
+    {
+      "id": "C226", "pmid": "29115947", "doi": "10.1186/s12916-017-0958-6",
+      "text_quality": "good", "read_level": "full text (methods, results, limitations)",
+      "relied_on": "Row 31 D7 took 'about 37,000 new adult type 1 cases per year' (ages 20 to 64) from an abstract or excerpt as a cross-check on the insulin-treated pool.",
+      "full_text_shows": "The 37,000 figure is an extrapolation from a commercial-insurance claims cohort (61 million people) to the US population: 24,000 commercial, 8,000 government, 5,000 uninsured. Adult type 1 was defined by claims algorithm (two type 1 codes plus insulin use, continuous insulin, no oral drugs around diagnosis), not by C-peptide or antibodies, which were available only for a small fraction. It counts adults with new type 1 diabetes, not adults in whom the type is doubtful, so it is an incidence cross-check and not the situation count of row 31.",
+      "verdict": "adds nuance",
+      "quote": "we estimated 37,000 incident cases of type 1 diabetes annually in the United States",
+      "key_numbers": "Adult (20 to 64) incidence 18.6 per 100,000 per year; 19,174 incident adult cases in the cohort; US estimate 37,000 adults (27,000 youth; 64,000 total, ages 0 to 64); adult incidence fell 1.3% per year 2001 to 2015; adults 65 and over excluded.",
+      "role_in_work": "Epidemiological input for row 31 D7 (cross-check only).",
+      "design": "Longitudinal claims-database cohort (OptumInsight Clinformatics, 2001 to June 2015) with census extrapolation.",
+      "population_and_size": "32,476 incident type 1 cases (13,302 youth, 19,174 adults) among 61.8 million commercially insured people.",
+      "measure_type": "None (incidence study); notes C-peptide and GAD antibodies were available only for a small fraction of cases. Not a C-peptide measure.",
+      "assay_or_platform": "Not applicable.",
+      "quality_note": "Claims-based case definition; the authors say the adult definition may be too restrictive or too inclusive; data end in 2015; ages 65 and over excluded; extrapolation to government-insured and uninsured by census.",
+      "rows_affected": [31], "dimensions_affected": ["D7"]
+    },
+    {
+      "id": "C278", "pmid": "37273894", "doi": "10.1016/j.lanepe.2023.100661",
+      "text_quality": "good", "read_level": "full text (short comment, about 5 KB)",
+      "relied_on": "Row 31 D7 cited an excerpt for the misdiagnosis estimate (up to 40% of adults with type 1 diabetes) as a cross-check.",
+      "full_text_shows": "A short comment with no data of its own. It says up to 40% of adults older than 30 with type 1 diabetes might have been misdiagnosed as type 2, mentions poor access to islet autoantibody and C-peptide tests, and calls for a diagnostic decision tree. It gives no US figure, no source for the 40% in the stored text, and no C-peptide threshold.",
+      "verdict": "adds nuance",
+      "quote": "It is estimated that up to 40% of adults older than 30 years with type 1 diabetes might have been misdiagnosed with type 2 diabetes.",
+      "key_numbers": "Up to 40% (prevalent adults with type 1 over age 30, global, modelled); life expectancy reduced by up to 8 years in type 1 versus 3 in type 2 (as stated).",
+      "role_in_work": "Opinion-level context for misdiagnosis in adults; not evidence for a C-peptide decision.",
+      "design": "Comment (no study).",
+      "population_and_size": "Not applicable.",
+      "measure_type": "C-peptide and autoantibodies mentioned only as poorly accessible tests; no measure type evaluated.",
+      "assay_or_platform": "Not applicable.",
+      "quality_note": "Comment; citations not visible in the stored text; the 40% is a ceiling ('up to') for prevalent adults over 30, not a rate among newly diagnosed adults.",
+      "rows_affected": [31], "dimensions_affected": ["D7"]
+    },
+    {
+      "id": "C004", "pmid": "14602731", "doi": "10.1210/jc.2003-030180",
+      "text_quality": "partial (two-column PDF extraction; Greek symbols lost, tables garbled, so per-group insulin-discontinuation numbers were not read)",
+      "read_level": "full text (abstract, methods, selected results and discussion lines)",
+      "relied_on": "Row 32 D2 and D8 used the abstract: n=103 cohort showing persistent insulin requirement in beta-negative groups.",
+      "full_text_shows": "103 patients with DKA were classified into four groups by autoantibodies and beta-cell function (18, 23, 11 and 51 patients). Beta-cell function was fasting C-peptide of at least 1 ng/mL (0.33 nmol/L) or peak glucagon-stimulated C-peptide of at least 1.5 ng/mL (0.5 nmol/L), measured after correction of ketoacidosis (fasting sample at least 24 h after IV insulin stopped) and repeated at 6 and 12 months; insulin was withdrawn on a set protocol when glucose targets were met. The methods print 'ng/dl', apparently a typo for ng/mL given the nmol/L equivalents. It is a descriptive immunogenetic study, not a test of C-peptide-guided withdrawal.",
+      "verdict": "confirms",
+      "quote": "Ketosis-prone diabetes is heterogeneous.",
+      "key_numbers": "n=103; groups 18/23/11/51; baseline fasting C-peptide differs by function group (p=0.0001, printed unit unclear); the two beta-negative groups differed from the two beta-positive groups in persistent insulin requirement (abstract). Individual cell counts for insulin discontinuation could not be assigned reliably.",
+      "role_in_work": "Primary cohort for row 32 (classification and insulin dependence in ketosis-prone diabetes).",
+      "design": "Prospective single-centre cohort, 12 months of follow-up with a protocolised insulin withdrawal.",
+      "population_and_size": "103 adults with DKA, Houston (Baylor, Ben Taub), multiethnic.",
+      "measure_type": "C-peptide: fasting and glucagon-stimulated (1 mg IV; 0, 5, 10 minutes).",
+      "assay_or_platform": "Human C-peptide radioimmunoassay (Linco Research); autoantibodies by radioligand binding assay.",
+      "quality_note": "Single network and older RIA assay; groups are defined by the same C-peptide cut-offs, so group differences in function are partly by construction; small groups.",
+      "rows_affected": [32], "dimensions_affected": ["D2", "D8"]
+    },
+    {
+      "id": "C008", "pmid": "17130187", "doi": "10.2337/dc06-0749",
+      "text_quality": "partial (two-column PDF extraction; the beta symbol is lost so group names read 'A' only, and table columns are interleaved; numbers below come from lines that read clearly)",
+      "read_level": "full text (abstract, methods, results text, discussion)",
+      "relied_on": "Row 32 entries used a truncated abstract: n=294, sensitivity 99.4%, specificity 95.9%, AUC 0.972 for later preserved beta-cell function, comparator figures not read (D2, D8), plus D4 (glucagon protocol and timing), D1, D6 and S.",
+      "full_text_shows": "Comparator figures are now readable: the other three schemes had AUC 0.707 (ADA), 0.703 (modified ADA) and 0.766 (BMI-based) against 0.972 for the autoantibody plus beta-cell-function scheme, so the D8 comparison holds. But the outcome (beta-cell function at 12 months, peak glucagon C-peptide of at least 1.5 ng/mL) is measured by the same test that defines the scheme's function axis, so accuracy is largely baseline-versus-12-month C-peptide concordance, not prediction of insulin withdrawal. Baseline C-peptide was measured within 1 to 2 weeks of the index DKA. The authors state the scheme is less accurate in the autoantibody-positive, function-preserved group (about half progress to insulin dependence), and that 31% of the cohort were withdrawn from insulin.",
+      "verdict": "adds nuance",
+      "quote": "has the highest accuracy and predictive value in classifying KPD patients",
+      "key_numbers": "n=294 consecutive DKA, 12 to 60 months (mean 31); 44.8% African American; best scheme sensitivity 99.4, specificity 95.9, PPV 97.1, NPV 99.2, LR+ 24.55, LR- 0.01, AUC 0.972; BMI scheme sensitivity 67.3, specificity 85.8, AUC 0.766; ADA scheme sensitivity 48.8, specificity 94.2, AUC 0.707; modified ADA sensitivity 31.6, specificity 99.2, AUC 0.703; in 138 with new-onset diabetes AUC 0.969 for the best scheme. Cut-offs: fasting 1 ng/mL (0.33 nmol/L), peak glucagon 1.5 ng/mL (0.5 nmol/L).",
+      "role_in_work": "Main accuracy cohort for row 32 (D2, D8, D4, D1, D6, S all lean on it).",
+      "design": "Prospective single-network cohort, 12 to 60 months, ROC comparison of four classification schemes.",
+      "population_and_size": "294 consecutive adults with DKA, Houston, Texas; subset of 138 with new-onset diabetes.",
+      "measure_type": "C-peptide: fasting and glucagon-stimulated (1 mg IV), repeated at 12 months; plus autoantibodies.",
+      "assay_or_platform": "Not restated in the extracted text; refers to the 2003 cohort methods (RIA); autoantibodies by radioligand assay.",
+      "quality_note": "Reference outcome overlaps the index test (circularity); authors are from the group that proposed the scheme; single network, largely African American and Hispanic patients; outcome is beta-cell function, not insulin withdrawal success.",
+      "rows_affected": [32], "dimensions_affected": ["D2", "D8", "D4", "D1", "D6", "S"]
+    },
+    {
+      "id": "C011", "pmid": "18292467", "doi": "10.1210/er.2007-0026",
+      "text_quality": "good", "read_level": "full text (abstract, classification, management and prediction passages found by search; not every section read)",
+      "relied_on": "Row 32 D2 used the abstract of the review as support for the classification and insulin dependence.",
+      "full_text_shows": "A narrative review by the same group. It advises testing beta-cell reserve and antibodies after complete resolution of DKA, generally 1 to 3 weeks after resolution of ketoacidosis. It says the fasting 1 ng/mL and glucagon 1.5 ng/mL cut-offs predict beta-cell function at 6 and 12 months but do not independently predict successful and safe insulin withdrawal; in beta-positive patients a fasting C-peptide (nmol/L) to glucose (mmol/L) ratio above 11, new-onset diabetes and later onset predict insulin discontinuation, and within the autoantibody-positive, function-preserved group initial C-peptide does not predict who becomes insulin dependent. It is review text, not a guideline or consensus statement.",
+      "verdict": "adds nuance",
+      "quote": "although the cutoffs noted above do not independently predict the potential for successful and safe withdrawal of insulin",
+      "key_numbers": "Cut-off ROC AUCs reported: peak glucagon C-peptide 0.968, fasting C-peptide 0.978, C-peptide to glucose ratio 0.961; fasting C-peptide to glucose ratio above 11 predicts insulin withdrawal among beta-positive patients (cited reference 23, not read).",
+      "role_in_work": "Narrative review supporting row 32 (expert-opinion level, by the authors of the primary cohorts; not an independent consensus).",
+      "design": "Narrative review.",
+      "population_and_size": "Not applicable (summarises Houston, Atlanta, Paris and Dallas cohorts).",
+      "measure_type": "C-peptide: fasting, glucagon-stimulated, C-peptide to glucose ratio.",
+      "assay_or_platform": "Not applicable (methods refer to the 2003 cohort paper).",
+      "quality_note": "Review by the group that proposed the scheme; disclosure states nothing to disclose; grant RO1 HL73969 and Alkek Foundation; cites its own cohorts for the main claims.",
+      "rows_affected": [32], "dimensions_affected": ["D2", "D8", "D4"]
+    }
+  ],
+  "proposals": [
+    {
+      "row": 32, "dimension": "D8", "current": 3, "proposed": 2,
+      "reason": "V2 scored 3 on the accuracy gap of the autoantibody plus C-peptide scheme (AUC 0.972) over the other schemes (0.70 to 0.77); the full text confirms that gap. But the cohort outcome (peak glucagon C-peptide at 12 months) is the same test that defines the scheme's function axis, and the review by the same group says the C-peptide cut-offs do not independently predict safe insulin withdrawal, the decision named in the row. Under clarification 19 a 3 needs data that the measurement changes the answer for the named decision; that is not shown, so 2 (useful in a defined subgroup). Confidence low: reviewer judgement, partial-quality PDF text, group-level insulin-discontinuation table in C004 was garbled.",
+      "quote": "although the cutoffs noted above do not independently predict the potential for successful and safe withdrawal of insulin",
+      "confidence": "low",
+      "papers": ["C008", "C011", "C004"]
+    }
+  ],
+  "claim_issues": [
+    {
+      "where": "usecases-verified.md row 32, caveats column ('not within ~2 weeks of the acute episode'); same 'weeks to months' wording in the V3 row 32 D4 reason",
+      "issue": "The full texts do not support a minimum delay of 2 weeks. The primary cohorts measured C-peptide after correction of ketoacidosis (Maldonado 2003: fasting sample at least 24 h after IV insulin stopped; Balasubramanyam 2006: baseline within 1 to 2 weeks of the index DKA, with high correlation to 6 and 12 month retests); the review advises testing after complete resolution, generally 1 to 3 weeks after resolution of ketoacidosis.",
+      "proposed_wording": "Test after the ketoacidosis has resolved and the patient is stable (the Houston cohorts measured after correction of DKA, within about 1 to 2 weeks; one review advises 1 to 3 weeks after resolution); retest at 6 to 12 months.",
+      "paper": "C008",
+      "claim_ids": []
+    },
+    {
+      "where": "usecases-verified.md row 32 (decision informed: 'Can insulin be withdrawn after ~12 months'; evidence: 'One prospective cohort (n=294)')",
+      "issue": "The 294-patient cohort shows that the autoantibody plus C-peptide scheme predicts beta-cell function at 12 months (measured by the same glucagon C-peptide test), not that C-peptide-guided withdrawal is safe. The review says the cut-offs do not independently predict safe insulin withdrawal; the predictors among beta-positive patients were the fasting C-peptide to glucose ratio above 11, new onset and later onset. 31% of the cohort were withdrawn from insulin.",
+      "proposed_wording": "One prospective cohort (n=294) shows that autoantibodies plus fasting or glucagon-stimulated C-peptide predict beta-cell function at 12 months (AUC 0.972; the outcome is also C-peptide-defined); a review by the same group says the C-peptide cut-offs alone do not predict successful insulin withdrawal.",
+      "paper": "C011",
+      "claim_ids": []
+    },
+    {
+      "where": "usecases-verified.md row 31, caveats ('Likelihood ratios ~2') and evidence cell for Funakoshi 2011",
+      "issue": "Funakoshi 2011 reports likelihood ratios of 1.6 to 2.8 across five fasting or glucagon-stimulated indices (best CPI 2.8, AUC 0.75) for needing insulin to reach target in hospitalised Japanese patients with type 2 diabetes; it did not study random C-peptide, doubtful type or insulin withdrawal. 'About 2' is fair for fasting and glucagon C-peptide alone but understates the best index.",
+      "proposed_wording": "Funakoshi 2011 (201 Japanese inpatients with type 2 diabetes): fasting or glucagon-stimulated C-peptide indices, AUC 0.69 to 0.75 and likelihood ratios 1.6 to 2.8 (C-peptide index 2.8) for needing insulin to reach target; not random C-peptide and not a stop-insulin outcome.",
+      "paper": "C029",
+      "claim_ids": []
+    },
+    {
+      "where": "usecases/scoring/V8.json row 24 D7 reason ('country not stated in the abstract')",
+      "issue": "The full text names the site: the Children's Hospital of Philadelphia Congenital Hyperinsulinism Center (US); the cohort is aged 2 to 26 (median 13), not children only, and covers 2006 to 2024. The estimate is not changed, but the 'country not stated' uncertainty goes and the rate of about 1 per year is shown to come from one US referral centre.",
+      "proposed_wording": "One US academic hyperinsulinism centre (Philadelphia) treated 23 patients aged 2 to 26 with insulinoma between 2006 and 2024 (about 1 per year); the share of US cases it sees is not stated.",
+      "paper": "C321",
+      "claim_ids": []
+    },
+    {
+      "where": "usecases/scoring/V1.json row 31 D7 reason ('up to 40% of adults with new type 1 diabetes are misdiagnosed (ADA 2026)')",
+      "issue": "C278 (cited by V1 for the misdiagnosis estimate) says up to 40% of adults older than 30 with type 1 diabetes (prevalent, not newly diagnosed) might have been misdiagnosed as type 2, with no data or US figure in the text. Whether ADA 2026 words it as 'new type 1' was not checked in this unit.",
+      "proposed_wording": "A 2023 Lancet Regional Health-Europe comment estimates that up to 40% of adults older than 30 with type 1 diabetes might have been misdiagnosed with type 2 diabetes (global, no primary data).",
+      "paper": "C278",
+      "claim_ids": []
+    }
+  ],
+  "notes": "Assumptions and limits. (1) No change proposed for row 24 D2 or D7: C204 and C321 neither test the insulin or C-peptide decision nor give a US count; C321 only shows insulin and C-peptide at hypoglycaemia do not separate insulinoma from congenital HI, and a one-centre rate of about 1.3 per year is consistent with but does not settle the V8 estimate of about 150 per year (assumed 20 to 60 centres), which stays low confidence in bin 1 with alternative bin 0. (2) Row 31: no change proposed to D2 (3), D8 (2), S (1), D1 (4, as corrected from 3 on 2026-10-23) or D7 (3, low confidence); C029 is a peripheral source for the stop-insulin decision, and C226 and C278 are cross-checks for D7 that do not address the bin-deciding share (1 to 5% with doubtful type). (3) Row 32: D2 stays 2; D4 (2), D1 (3), D6 (2), S (1) left unchanged; the glucagon protocol is confirmed, only the timing caveat in claim_issues differs. The primary cohort used an older RIA assay, so under clarification 20 D4 confidence stays at medium or lower. (4) Row 32 path to viability: a prospective comparison of C-peptide-guided insulin withdrawal against antibody and clinical-feature guidance, in a US population with a current US assay, remains the missing piece; the full texts sharpen it (the withdrawal predictor within beta-positive patients was the fasting C-peptide to glucose ratio, not the cut-offs). Rows 31 and 24 paths unchanged. (5) PDF extraction for C004 and C008 lost Greek symbols and mixed table columns; no number was called wrong because of garbling, and per-group insulin-discontinuation counts in C004 were not used. (6) Score entries were read from the V1, V2, V3, V4, V5, V8 and V9 JSON files; V5 row 31 D1 carries a correction to 4; V7 supersedes U1 D7 for other rows only; a search for 'supersedes' in usecases/scoring/*.json found nothing replacing the row 31 D7 or row 32 entries. (7) No web use; the 40% attributed to the ADA Standards was not checked. Tool calls used: about 24 including the writes (one early heredoc write failed and was redone with the Write tool)."
+}

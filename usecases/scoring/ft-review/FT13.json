@@ -1,0 +1,469 @@
+{
+ "unit": "FT13",
+ "role": "full-text reader",
+ "papers": [
+  {
+   "id": "C250",
+   "pmid": "32634859",
+   "doi": "10.1111/dme.14361",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "Row 6 D8 assumed the abstract-level result that a clinical model (age, BMI) reached AUC 0.95 against histology-defined type 1 diabetes and that antibodies plus genetic risk score added to 0.97, so clinical features and genetics only approximate insulin deficiency.",
+   "full_text_shows": "Confirmed: 153 nPOD organ donors (111 histological type 1, 42 non-type 1); clinical-only model AUC 0.95 (95% CI 0.91-0.98), full model 0.97 (0.95-1.00), P=0.03. The paper did NOT run a primary analysis against C-peptide (renal failure and storage confound donor sera); C-peptide appears only as a descriptive comparison (median <17 vs 1037 pmol/L, non-overlapping) and in the 5 discordant donors, where C-peptide matched histology. The adult white-European 18-50 y subgroup was only 31 donors (AUC >0.84). The model is not a C-peptide test, so the paper supports C-peptide as a valid reference for insulin deficiency, not C-peptide's added value over alternatives.",
+   "verdict": "adds nuance",
+   "quote": "progression to C-peptide deficiency is an appropriate surrogate endpoint",
+   "key_numbers": "n=153 (111 vs 42); AUC clinical 0.95 vs full 0.97, P=0.03; IDI 0.05 (antibodies) and 0.07 (GRS); subgroup n=31, AUC>0.84; donor C-peptide median <17 vs 1037 pmol/L; 5 discordant donors all matched histology by C-peptide",
+   "role_in_work": "Indirect validation of the C-peptide-defined (<200 pmol/L at >3 y) type 1 reference standard; comparator evidence for clinical models",
+   "design": "Cross-sectional diagnostic-model validation against pancreatic histology (nPOD biobank)",
+   "population_and_size": "153 organ donors with diabetes (4 monogenic and 11 secondary excluded, 53 incomplete); 27% non-white-European; age at diagnosis 1-73 y",
+   "measure_type": "C-peptide (random donor serum, descriptive only); non-insulin surrogates (antibodies, genetic risk score, clinical features) are the modelled variables",
+   "assay_or_platform": "Donor C-peptide: two-site immunoenzymometric assay, Tosoh 2000 (Northwest Lipid Research Laboratories); autoantibodies ELISA/RBA; 30-SNP T1D-GRS",
+   "quality_note": "Organ-donor population, small non-European and adult subgroups, model built by the same group; authors state further validation is needed in non-white Europeans, children and over 50 y",
+   "rows_affected": [
+    6
+   ],
+   "dimensions_affected": [
+    "D8"
+   ]
+  },
+  {
+   "id": "C273",
+   "pmid": "36843403",
+   "doi": "10.3343/alm.2023.43.4.345",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "Row 6 D4 cited it (abstract level) as evidence that a JCTLM-traceable ID-LC-MS/MS method exists and that routine C-peptide immunoassays disagree, placing the assay on the 2/3 boundary.",
+   "full_text_shows": "A new ID-LC-MS/MS method (CRM NMIJ 6901-c, total imprecision 1.3-2.2%, LOQ 33.3 pmol/L) was compared with six routine immunoassays on 76 leftover Beijing samples (173-3,612 pmol/L). All R2 >0.98, but four assays (Roche, Abbott, Mindray, Snibe) showed mean positive bias of 49.9, 35.4, 32.2 and 81.7%; Siemens and Beckman agreed better. After recalibration with 5 pooled sera the bias fell to -6.0 to +1.2%. The 24.5% inter-system CV and 5.7% after recalibration quoted in the U3 row 6 reason are NOT in this paper (they presumably come from the separate 94-laboratory survey, PMID 35177563, not checked here).",
+   "verdict": "adds nuance",
+   "quote": "Among the six routine assays, the Beckman and Siemens assay showed better agreement with our ID-LC–MS/MS method than the other assays.",
+   "key_numbers": "n=76 samples + 5 pools; bias +49.9% Roche, +35.4% Abbott, +32.2% Mindray, +81.7% Snibe; slopes 1.54-1.88 for those four; recalibrated slopes 1.03-1.09, mean difference -6.0 to +1.2%; ID-LC-MS/MS CV 1.3-2.2%",
+   "role_in_work": "Assay standardisation evidence for D4 (reference method and harmonisation)",
+   "design": "Analytical method development, validation and split-sample method comparison",
+   "population_and_size": "76 leftover patient sera (no clinical data) and 5 pools, Beijing Hospital 2022",
+   "measure_type": "C-peptide (serum, immunoassay vs ID-LC-MS/MS); no clinical decision tested",
+   "assay_or_platform": "ID-LC-MS/MS (Sciex 6500 Plus); Roche e801, Abbott i2000, Beckman Dxi800, Siemens Centaur XP, Mindray CL8000i, Snibe Maglumi X8",
+   "quality_note": "Chinese-market lots and calibrations, single laboratory; US-marketed platform families are included but the bias may not transfer to US-labelled kits (clarification 20: medium confidence at most). No clinical-threshold analysis",
+   "rows_affected": [
+    6
+   ],
+   "dimensions_affected": [
+    "D4"
+   ]
+  },
+  {
+   "id": "C283",
+   "pmid": "38252849",
+   "doi": "10.2337/dc23-1815",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "Row 6 D8 used the abstract figure that clinical models reached AUC 0.95-0.98 for retained C-peptide in youth as evidence that clinical features only approximate the treatment-relevant construct.",
+   "full_text_shows": "The outcome is FASTING C-peptide >=250 pmol/L (random value used in <0.5% of measures) 3-10 y after diagnosis in 2,966 US youth; the models PREDICT C-peptide from baseline features, so C-peptide is the reference, not a tested alternative. Clinical-only model AUC 0.95, plus antibodies 0.972, plus GRS 0.979; provider diagnosis AUC 0.887 (sensitivity 79.7% for retained C-peptide); antibodies alone AUC 0.878, PPV 53%. Only internal validation; the authors state the lack of external data and that the threshold is mainly from adult data. Duality of interest: one author has a Randox R&D grant on genetic risk scores.",
+   "verdict": "adds nuance",
+   "quote": "A limitation is the lack of other data sets for external validation.",
+   "key_numbers": "n=2,966 (501 with retained C-peptide, 17%); AUC 0.950/0.972/0.979/0.964 for models 1-4; provider dx AUC 0.887; within clinically diagnosed T1D (100 of 2,496 retained C-peptide) AUC 0.84-0.92; 2.3% of antibody-positive and 53% of antibody-negative retained C-peptide",
+   "role_in_work": "Shows what clinical models achieve against a C-peptide reference in youth; supports C-peptide as outcome; staged-use suggestion (measure C-peptide in long-standing diabetes, models prioritise testing)",
+   "design": "Prospective cohort (SEARCH) prediction-model development with internal validation",
+   "population_and_size": "2,966 US youth with diabetes diagnosed <=19-20 y, C-peptide measured 3-10 y later (median 74 months)",
+   "measure_type": "Fasting C-peptide (with concurrent glucose when low); non-insulin predictors (clinical features, antibodies, GRS)",
+   "assay_or_platform": "Central laboratory, University of Washington (Northwest Lipid Metabolism and Diabetes Research Laboratories); assay brand not found in the text read",
+   "quality_note": "Youth not adults; fasting not random C-peptide; no external validation; an industry research link for one author; the authors call the models decision aids that supplement judgement",
+   "rows_affected": [
+    6
+   ],
+   "dimensions_affected": [
+    "D8"
+   ]
+  },
+  {
+   "id": "C299",
+   "pmid": "39805939",
+   "doi": "10.1038/s41598-024-80348-8",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "Row 6 D8 cited it for 'clinical features unhelpful in ambiguous South Asian cases; genetic score used'.",
+   "full_text_shows": "The paper estimates, with ancestry-corrected polygenic risk scores, that 3.6-10.2% (median 5.9%; 95% CI up to 15.2%) of 839 insulin-treated, clinically ambiguous people in Genes and Health (East London) have type 1 diabetes; 1.9-7.8% (median 4.5%) after removing coded T1D. C-peptide and autoantibodies were recorded in only 0.7% and 2.5% of diabetes cases, so the paper contains no evaluation of C-peptide testing. The authors say the PRS was not used to classify individuals.",
+   "verdict": "adds nuance",
+   "quote": "Diabetes autoantibodies and measures of beta cell function (serum C-peptide) were rarely recorded.",
+   "key_numbers": "839 ambiguous, 31 T1D reference, 1,842 T2D, 5,174 controls; T1D share 3.6-10.2% (median 5.9%), CI 0-15.2%; misclassification estimate median 4.5%; C-peptide recorded in 0.7% of cases",
+   "role_in_work": "Context for the size of misclassification in a South Asian population; not evidence about C-peptide added value",
+   "design": "Population-based cohort with linked health records and polygenic-risk-score mixture estimation",
+   "population_and_size": "British Pakistani and Bangladeshi adults, 38,344 with primary-care data; 839 ambiguous insulin-treated cases",
+   "measure_type": "Non-insulin surrogate (polygenic risk scores, clinical codes); C-peptide only descriptive (0.7% recorded)",
+   "assay_or_platform": "T1D 10-SNP PRS and T2D PRS corrected for 5 principal components; no C-peptide assay described",
+   "quality_note": "Reference group of 31 true T1D from coded records plus an Indian PRS reference cohort; wide CIs; electronic-record coding limits",
+   "rows_affected": [
+    6
+   ],
+   "dimensions_affected": [
+    "D8"
+   ]
+  },
+  {
+   "id": "C309",
+   "pmid": "40587435",
+   "doi": "10.1371/journal.pone.0312065",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "Rows 4, 5, 6 and 31 D4 cited it (abstract level) for the pre-analytical point that EDTA samples keep insulin and C-peptide for 24 h and that uncentrifuged serum loses analyte (51%, n=8).",
+   "full_text_shows": "Confirmed but narrow: 8 non-diabetic adults in Uganda (2 of 10 excluded for haemolysis), non-fasting, one platform (Cobas 601), baseline levels not low. Uncentrifuged K2EDTA whole blood at room temperature stayed >=90% of baseline at 24 h (C-peptide 90%, insulin 98%); uncentrifuged plain serum fell to 51% (C-peptide) and 64% (insulin); on ice, uncentrifuged serum insulin fell to 52%. The authors list as limitations the absence of low-concentration samples, a single platform and no interference testing. C-peptide at exactly 90% sits on their own 10% acceptance limit. Manufacturers cite 4 h at 20-25 C. Unit labels in the results look inconsistent (C-peptide given in uU/mL; insulin baseline 864 pmol/L is high for non-diabetic samples); I read this as labelling, not as proof of error.",
+   "verdict": "adds nuance",
+   "quote": "Limitations for this study include the absence of samples with low insulin or C-peptide levels",
+   "key_numbers": "n=8 analysed; EDTA RT 24 h: C-peptide 90%, insulin 98%; serum uncentrifuged RT 24 h: C-peptide 51%, insulin 64% (p<0.001); serum uncentrifuged on ice: insulin 50% by 2 h; CVa 1.7/2.2% C-peptide, 1.5/3.9% insulin",
+   "role_in_work": "Pre-analytical stability support for D4 and for referral logistics",
+   "design": "Experimental stability study (time, tube type, temperature, centrifugation)",
+   "population_and_size": "8 healthy adults without diabetes, Entebbe, Uganda, 2019",
+   "measure_type": "Random (non-fasting) insulin and C-peptide in healthy people; no post-load or stimulated samples",
+   "assay_or_platform": "Roche Cobas 601 electrochemiluminescence; C-peptide traceable to WHO 84/510, insulin to 66/304; frozen at -20/-80 C, single batch",
+   "quality_note": "Very small, healthy, high-baseline, single-platform, non-US; not tested at the low concentrations that matter for rows 4, 5 and 6 (low end); fine for the pre-analytical point only",
+   "rows_affected": [
+    4,
+    5,
+    6,
+    31
+   ],
+   "dimensions_affected": [
+    "D4"
+   ]
+  },
+  {
+   "id": "C020",
+   "pmid": "21270186",
+   "doi": "10.2337/dc10-1293",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "Row 7 D2, D8 and D4 assumed an observational accuracy study of post-meal urinary C-peptide:creatinine ratio (UCPCR) for HNF1A/4A MODY versus long-duration type 1 diabetes, with a timed mailed sample.",
+   "full_text_shows": "Confirmed in detail: adults with diabetes >=5 y and eGFR >=60; 77 HNF1A/4A MODY, 69 type 1, 54 type 2; urine collected 120 min after the largest meal, in boric acid, mailed, analysed only if received within 72 h. UCPCR >=0.2 nmol/mmol: AUC 0.98, sensitivity 97%, specificity 96%, LR 24; versus type 2 diabetes AUC 0.64 (81% / 44%; poor). 3 of 69 type 1 patients were UCPCR-positive (2 had serum C-peptide >=0.2 nmol/L, 2 were antibody positive). The authors compute a 14% post-test probability of MODY at an assumed 0.7% prevalence (not 20%). They say it cannot be used within 5 y of diagnosis or in renal impairment, and that antibodies are probably better near diagnosis. No comparison with antibodies or a combined model; only parental history was compared.",
+   "verdict": "confirms",
+   "quote": "UCPCR showed excellent discrimination between HNF1A/HNF4A MODY and type 1 diabetes in patients >5 years after diabetes diagnosis",
+   "key_numbers": "0.2 nmol/mmol: sens 97%, spec 96%, AUC 0.98, LR+ 24, LR- 0.03; insulin-treated subset AUC 0.96 (94%/96%); vs T2D AUC 0.64; post-test probability 14% at 0.7% prevalence; 3/69 T1D positive",
+   "role_in_work": "Primary accuracy study behind the UCPCR component of the MODY triage (row 7)",
+   "design": "Cross-sectional diagnostic accuracy, ROC-derived cutoff, no external validation",
+   "population_and_size": "200 adults (77 MODY, 69 T1D, 54 T2D), UK, duration >=5 y",
+   "measure_type": "C-peptide, post-meal (2 h) urinary C-peptide:creatinine ratio; mixed-meal serum C-peptide at 90 min in 3 patients",
+   "assay_or_platform": "Roche E170 electrochemiluminescence (urine C-peptide, CV <3.3%/<4.5%); Roche P800 Jaffe creatinine; reference laboratory in Exeter",
+   "quality_note": "Single UK research centre, cutoff derived and tested in the same data, renal impairment excluded, patients from research databases; no conflict-of-interest statement found in the text read",
+   "rows_affected": [
+    7
+   ],
+   "dimensions_affected": [
+    "D2",
+    "D8",
+    "D4"
+   ]
+  },
+  {
+   "id": "C025",
+   "pmid": "23289766",
+   "doi": "10.1111/pedi.12008",
+   "text_quality": "partial (PDF text extraction, two-column layout interleaved; numbers read from abstract and results lines and cross-checked)",
+   "read_level": "full text",
+   "relied_on": "Rows 7 and 33 assumed a paediatric accuracy study of home 2-h post-meal UCPCR, usable beyond 2 y of diabetes, with data-derived cutoff 0.7 nmol/mmol, mailed samples, and no discrimination of MODY from type 2.",
+   "full_text_shows": "Confirmed: 264 patients <21 y (160 type 1, 41 type 2, 63 MODY), home sample 2 h after the evening meal in boric acid, mailed to Exeter. After 2 y duration (about 177 patients: 120 type 1, 57 non-type 1), UCPCR >=0.7 gives 100% sensitivity (92-100) and 97% specificity (91-99), AUC 0.997; MODY versus type 2 AUC 0.57. Within 2 y specificity is only 33%. Reproducibility CV of UCPCR was 31% and values near the cutoff should be repeated. The home meal was not standardised. Not validated in renal impairment. Probability of non-type 1 diabetes rises from 2.2% to 40.3% if positive (assumed prevalence), <0.004% if negative. 26% of MODY probands had been treated with insulin before diagnosis. NOTE: the n=264 in the row 33 D2 reason is the whole cohort; the >2 y result rests on about 177.",
+   "verdict": "adds nuance",
+   "quote": "UCPCR testing has limited use in patients with diabetes duration <2 yr",
+   "key_numbers": ">2 y: 100% (92-100) sens, 97% (91-99) spec, AUC 0.997, LR+ 30, LR- <0.002; 2-5 y subgroup 100%/91%; <2 y spec 33%; MODY vs T2D AUC 0.57; CV 31%; PPV 40.3% at 2.2% prevalence",
+   "role_in_work": "Core evidence for row 33 and the paediatric half of row 7",
+   "design": "Cross-sectional diagnostic accuracy with ROC-derived cutoff and a small reproducibility sub-study",
+   "population_and_size": "264 UK patients <21 y; about 177 with duration >2 y",
+   "measure_type": "C-peptide, post-meal (2 h, home) urinary C-peptide:creatinine ratio",
+   "assay_or_platform": "Roche E170 electrochemiluminescence (intra-assay CV 3.3%, inter-assay 4.5%, lower limit 0.03 nmol/L), Roche P800 creatinine; central lab in Exeter",
+   "quality_note": "Single-centre, referral-based cohort, cutoff not externally validated, non-standardised meal, CV 31%, no renal data; authors from the Exeter group that runs the MODY service",
+   "rows_affected": [
+    7,
+    33
+   ],
+   "dimensions_affected": [
+    "D2",
+    "D8",
+    "D4",
+    "D1",
+    "D5",
+    "D6",
+    "S"
+   ]
+  },
+  {
+   "id": "C033",
+   "pmid": "25792383",
+   "doi": "10.1159/000375410",
+   "text_quality": "partial (PDF text extraction; tables partly scrambled, some symbols lost; numbers cross-checked in abstract, text and figure captions)",
+   "read_level": "full text",
+   "relied_on": "Rows 7 and 33 assumed a small paediatric study giving UCPCR cutoff 0.22 nmol/mmol (AUC 0.93, n=69), with fasting C-peptide as a comparator.",
+   "full_text_shows": "27 genetically confirmed MODY (16 GCK) versus 42 type 1 (no type 2 group), single Turkish centre. Urine was collected in hospital 2 h after a standardised lunch (not at home). UCPCR >=0.22: sensitivity 96.3%, specificity 85.7%, AUC 0.93; the paediatric 0.7 cutoff had only 59% sensitivity (91% specificity). Fasting C-peptide 0.62 ng/mL: sensitivity 93%, specificity 90%, AUC 0.967, i.e. at least as good as UCPCR. 6 of 42 type 1 children were UCPCR-positive, all antibody positive. The authors name small sample and unequal groups as limitations.",
+   "verdict": "adds nuance",
+   "quote": "The limitations of our study are its small sample size and the unequal distribution of patients in the groups",
+   "key_numbers": "UCPCR >=0.22: 96.3%/85.7%, AUC 0.93; >=0.125: 100%/81%; >=0.68: 59.3%/90.5%; fasting C-peptide 0.62 ng/mL: 93%/90%, AUC 0.967; UCPCR+ in 6/42 type 1; MODY duration 0.5-9 y, T1D 2-17 y",
+   "role_in_work": "Third cohort for cutoffs 0.2-0.7 in children; shows cutoff non-transferability and that fasting serum C-peptide performs as well in this small sample",
+   "design": "Single-centre cross-sectional diagnostic accuracy, ROC-derived cutoffs",
+   "population_and_size": "69 children and adolescents (27 MODY, 42 T1D), Ankara, Turkey",
+   "measure_type": "C-peptide, post-meal urinary C-peptide:creatinine ratio (standard lunch, in hospital) and fasting serum C-peptide",
+   "assay_or_platform": "Urinary C-peptide by electrochemiluminescence on the hospital biochemistry platform (analysed within 24 h); serum C-peptide by immunoassay (lower limit 0.08 ng/mL)",
+   "quality_note": "Small, unequal groups, 16 of 27 GCK-MODY (often no treatment change), MODY duration shorter than T1D, no type 2 group, cutoff derived in the same data, no conflict statement found in the text read",
+   "rows_affected": [
+    7,
+    33
+   ],
+   "dimensions_affected": [
+    "D2",
+    "D4",
+    "D8",
+    "D1",
+    "S"
+   ]
+  }
+ ],
+ "proposals": [
+  {
+   "row": 6,
+   "dimension": "D8",
+   "current": 3,
+   "proposed": null,
+   "reason": "C250, C283 and C299 together do not move it. C250 and C283 show clinical models approximate a C-peptide or histology reference (AUC 0.95) and never test whether measuring C-peptide changes the answer; C299 has no C-peptide data (0.7% recorded). Under clarification 19 the 3 rests on the reclassification cohort (6.8%) and the consensus, which these papers do not touch. C283 (provider diagnosis AUC 0.887, about 20% of retained-C-peptide youth labelled differently) is weak support in a different population from row 6. Keep 3 at the existing lower confidence.",
+   "quote": "A limitation is the lack of other data sets for external validation.",
+   "confidence": "medium",
+   "papers": [
+    "C250",
+    "C283",
+    "C299"
+   ]
+  },
+  {
+   "row": 6,
+   "dimension": "D4",
+   "current": 3,
+   "proposed": null,
+   "reason": "C273 shows +32 to +82% mean bias for four of six routine assays against ID-LC-MS/MS, near-agreement for Siemens and Beckman, and recalibration to within -6 to +1%. This supports the existing remark that the assay sits on the 2/3 boundary, but the data are Chinese-market lots, there is no cutoff-level analysis, and the 24.5% CV is not in this paper. Not enough alone to move the score; if the main session reads 'unstandardised' literally the alternative is 2 (low confidence). C309 addresses sample handling only.",
+   "quote": "Among the six routine assays, the Beckman and Siemens assay showed better agreement with our ID-LC–MS/MS method than the other assays.",
+   "confidence": "low",
+   "papers": [
+    "C273",
+    "C309"
+   ]
+  },
+  {
+   "row": 4,
+   "dimension": "D4",
+   "current": 2,
+   "proposed": null,
+   "reason": "C309 supports the pre-analytical remark (delay lowers analytes) but did not test low insulin or C-peptide concentrations, which are the relevant ones in a critical sample; keep 2.",
+   "quote": "Limitations for this study include the absence of samples with low insulin or C-peptide levels",
+   "confidence": "medium",
+   "papers": [
+    "C309"
+   ]
+  },
+  {
+   "row": 5,
+   "dimension": "D4",
+   "current": 2,
+   "proposed": null,
+   "reason": "Same as row 4: no low-concentration or post-meal samples; keep 2.",
+   "quote": "Limitations for this study include the absence of samples with low insulin or C-peptide levels",
+   "confidence": "medium",
+   "papers": [
+    "C309"
+   ]
+  },
+  {
+   "row": 31,
+   "dimension": "D4",
+   "current": 3,
+   "proposed": null,
+   "reason": "C309 stability data (EDTA 24 h, uncentrifuged serum losses) do not change a score based on routine random C-peptide; low-end behaviour untested.",
+   "quote": "Limitations for this study include the absence of samples with low insulin or C-peptide levels",
+   "confidence": "medium",
+   "papers": [
+    "C309"
+   ]
+  },
+  {
+   "row": 7,
+   "dimension": "D2",
+   "current": 3,
+   "proposed": null,
+   "reason": "C020, C025 and C033 are cross-sectional accuracy studies with data-derived cutoffs (observational accuracy, the D2 2 level); the 3 rests on the PMDI review and ANZ consensus, which these texts do not replace. Nothing in them reduces it, and they confirm that no outcome or pathway study exists.",
+   "quote": "UCPCR showed excellent discrimination between HNF1A/HNF4A MODY and type 1 diabetes in patients >5 years after diabetes diagnosis",
+   "confidence": "medium",
+   "papers": [
+    "C020",
+    "C025",
+    "C033"
+   ]
+  },
+  {
+   "row": 7,
+   "dimension": "D8",
+   "current": 3,
+   "proposed": null,
+   "reason": "C020 compares UCPCR only with single clinical items (parental history sensitivity 91%, specificity 77%) and says antibodies are likely better near diagnosis; C025 and C020 show no MODY versus type 2 discrimination (AUC 0.57 and 0.64). No incremental analysis. The 3 rests on PMID 41086125 (AUC 0.80 to 0.98 with C-peptide plus antibodies), which is not in this unit. These three papers alone would support 2 (useful in a defined subgroup), but they are one of several feeding sources, so no change.",
+   "quote": "The advantage of using UCPCR is that it has both strong sensitivity (97%) and specificity (96%)",
+   "confidence": "low",
+   "papers": [
+    "C020",
+    "C025",
+    "C033"
+   ]
+  },
+  {
+   "row": 7,
+   "dimension": "D4",
+   "current": 2,
+   "proposed": null,
+   "reason": "Full texts confirm the timed, mailed, boric-acid urine protocol and reference-laboratory analysis; C025 reports a reproducibility CV of 31%. Row 33 scores the same urine assay 1 (V10) while row 7 scores 2 because blood C-peptide is also named; this inconsistency should be settled by clarification 25 (limiting assay), not by these papers. Alternative 1, low confidence.",
+   "quote": "UCPCR values close to the 0.7 nmol/mol cutoff should be interpreted with caution",
+   "confidence": "low",
+   "papers": [
+    "C020",
+    "C025"
+   ]
+  },
+  {
+   "row": 33,
+   "dimension": "D2",
+   "current": 2,
+   "proposed": null,
+   "reason": "Confirmed 2: three single-centre cohorts, data-derived cutoffs (0.7, 0.22 in children, 0.2 in adults), no outcome study. Detail correction: the 100%/97% result is for about 177 patients after 2 y, not 264.",
+   "quote": "UCPCR testing has limited use in patients with diabetes duration <2 yr",
+   "confidence": "high",
+   "papers": [
+    "C025",
+    "C033"
+   ]
+  },
+  {
+   "row": 33,
+   "dimension": "D8",
+   "current": 2,
+   "proposed": null,
+   "reason": "The reason's remark that fasting C-peptide did worse than UCPCR (sensitivity 63%) is not supported by C033, where fasting C-peptide 0.62 ng/mL had 93% sensitivity and 90% specificity (AUC 0.967) against UCPCR 96.3%/85.7%. The 63% may come from PMID 32052124 (not in this unit). Neither C025 nor C033 compared UCPCR with antibodies or genetics. Keep 2, low confidence.",
+   "quote": "a fasting C-peptide level of 0.62 ng/ml demonstrates a sensitivity of 93%, a specificity of 90%",
+   "confidence": "low",
+   "papers": [
+    "C033",
+    "C025"
+   ]
+  },
+  {
+   "row": 33,
+   "dimension": "D4",
+   "current": 1,
+   "proposed": null,
+   "reason": "Confirmed 1: mailed home sample to a UK reference laboratory, CV 31%, non-standardised cutoffs 0.2-0.7. C033 shows the assay can run on a hospital platform within 24 h (Turkey); no US availability data.",
+   "quote": "UCPCR values close to the 0.7 nmol/mol cutoff should be interpreted with caution",
+   "confidence": "medium",
+   "papers": [
+    "C025",
+    "C033"
+   ]
+  },
+  {
+   "row": 33,
+   "dimension": "D1",
+   "current": 2,
+   "proposed": null,
+   "reason": "Confirmed 2 for V11 and V12: a positive UCPCR only prompts antibody or genetic testing and the paediatric cutoff is not validated; 16 of 27 MODY in C033 were GCK-MODY (often no drug change).",
+   "quote": "suggests that a genetic test might be appropriate",
+   "confidence": "medium",
+   "papers": [
+    "C025",
+    "C033"
+   ]
+  },
+  {
+   "row": 33,
+   "dimension": "D5",
+   "current": 2,
+   "proposed": null,
+   "reason": "Confirmed 2: C025 samples were posted to a central laboratory; C033 sampled in hospital after a standardised lunch.",
+   "quote": "Patients collected their urine samples in boric acid preservative 2 h after their lunch meal",
+   "confidence": "medium",
+   "papers": [
+    "C025",
+    "C033"
+   ]
+  },
+  {
+   "row": 33,
+   "dimension": "D6",
+   "current": 3,
+   "proposed": null,
+   "reason": "Confirmed: no needle; C025 says not validated in renal impairment and values near the cutoff should be repeated (false results lead to repeat testing or a genetic test).",
+   "quote": "UCPCR has not been validated in patients with renal impairment.",
+   "confidence": "medium",
+   "papers": [
+    "C025"
+   ]
+  },
+  {
+   "row": 33,
+   "dimension": "S",
+   "current": 2,
+   "proposed": null,
+   "reason": "C025: 26% of MODY probands (8 of 31) had been treated with insulin before diagnosis, which supports the delayed-harm reading; keep 2.",
+   "quote": "26% of the MODY probands in our study (n = 31) were inappropriately treated with insulin",
+   "confidence": "low",
+   "papers": [
+    "C025"
+   ]
+  }
+ ],
+ "claim_issues": [
+  {
+   "where": "usecases-verified.md row 33, caveats column ('cut-offs 0.2-0.28')",
+   "issue": "The paediatric studies used UCPCR cutoffs of 0.7 nmol/mmol (PMID 23289766, children, after 2 y) and 0.22 nmol/mmol (PMID 25792383); 0.2 is the adult cutoff (PMID 21270186). The range 0.2-0.28 omits 0.7, and the 0.7 cutoff had only 59% sensitivity in the Turkish cohort.",
+   "proposed_wording": "Cut-offs are data-derived and not transferable: 0.7 nmol/mmol in UK children with diabetes >2 y (PMID 23289766, DOI 10.1111/pedi.12008); 0.22 in a small Turkish cohort (PMID 25792383, DOI 10.1159/000375410; 0.7 gave 59% sensitivity there); 0.2 in UK adults >5 y (PMID 21270186, DOI 10.2337/dc10-1293); 0.28 is reported by PMID 32052124 (abstract, not checked in this unit).",
+   "paper": "C025",
+   "claim_ids": []
+  },
+  {
+   "where": "usecases-verified.md row 33 test column ('Home 2-h post-meal UCPCR') and V9 row 33 D2 reason",
+   "issue": "Only PMID 23289766 used a home sample (non-standardised meal). PMID 25792383 used a standardised lunch in hospital and included only MODY and type 1 (no type 2). The D2 reason's 'n=264 after 2 years' is the whole cohort; the >2 y result is about 177 patients (120 type 1, 57 non-type 1).",
+   "proposed_wording": "Post-meal (2 h) UCPCR: home sample in UK children (PMID 23289766, 264 patients, about 177 with diabetes >2 y); hospital standard lunch in a Turkish cohort of 27 MODY and 42 type 1 children (PMID 25792383), with no type 2 group.",
+   "paper": "C033",
+   "claim_ids": []
+  },
+  {
+   "where": "usecases/scoring V9 row 33 D8 reason ('Fasting C-peptide did worse than UCPCR in one cohort (sensitivity 63%)')",
+   "issue": "Not supported by PMID 25792383: fasting C-peptide (0.62 ng/mL) had 93% sensitivity and 90% specificity, UCPCR 0.22 had 96.3% and 85.7%. The 63% was not found in C025 or C033.",
+   "proposed_wording": "In one small cohort fasting serum C-peptide (cutoff 0.62 ng/mL, AUC 0.967) performed about as well as UCPCR (AUC 0.93) for MODY versus type 1 (PMID 25792383); no study compared UCPCR with antibodies or genetic testing.",
+   "paper": "C033",
+   "claim_ids": []
+  },
+  {
+   "where": "usecases-verified.md row 7 ('20% PPV' remark) and V2 row 7 D2 reason ('PPV ... 20 percent (project file)')",
+   "issue": "The adult UCPCR paper gives a post-test probability of 14% for HNF1A/4A MODY if UCPCR >=0.2 nmol/mmol, computed from an assumed 0.7% prevalence and LR 24 (PMID 21270186); the paediatric paper gives 40.3% for non-type 1 diabetes at an assumed 2.2% prevalence (PMID 23289766). A 20% figure is in neither text. These are computed from assumed prevalence, not observed pathway PPVs.",
+   "proposed_wording": "Authors' calculated post-test probabilities (assumed prevalence): about 14% for HNF1A/4A MODY at UCPCR >=0.2 nmol/mmol in adults with diabetes >5 y (PMID 21270186, 0.7% prevalence assumed); 40.3% for non-type 1 diabetes at UCPCR >=0.7 in UK children >2 y (PMID 23289766, 2.2% prevalence assumed). These are not observed pathway yields.",
+   "paper": "C020",
+   "claim_ids": []
+  },
+  {
+   "where": "usecases/scoring U3 row 6 D4 reason ('inter-system CV 24.5% in one 94-laboratory Chinese survey, 5.7% after recalibration') citing PMID 36843403",
+   "issue": "These figures are not in PMID 36843403. That paper compares six immunoassays with a new ID-LC-MS/MS method on 76 samples: mean bias +32 to +82% for Roche, Abbott, Mindray and Snibe, Siemens and Beckman closer, -6.0 to +1.2% after recalibration.",
+   "proposed_wording": "Six routine C-peptide immunoassays compared with an ID-LC-MS/MS method on 76 Chinese samples: four read 32-82% higher, two agreed better, and recalibration with five pooled sera reduced the mean difference to -6.0 to +1.2% (PMID 36843403, DOI 10.3343/alm.2023.43.4.345, full text). The 24.5% inter-laboratory CV should be cited to its own source (PMID 35177563, not checked here).",
+   "paper": "C273",
+   "claim_ids": []
+  },
+  {
+   "where": "usecases/scoring U2 row 6 D8 reason, source entry for PMID 39805939",
+   "issue": "PMID 39805939 does not evaluate C-peptide; it estimates misclassification with polygenic risk scores (C-peptide recorded in 0.7% of cases). It supports that clinical features cannot reliably separate T1D from T2D in ambiguous South Asian insulin-treated cases, not that C-peptide adds value.",
+   "proposed_wording": "In 839 clinically ambiguous insulin-treated British Pakistani and Bangladeshi adults, polygenic risk scores estimated that 3.6-10.2% (median 5.9%) had type 1 diabetes; C-peptide was recorded in 0.7% and was not evaluated (PMID 39805939, DOI 10.1038/s41598-024-80348-8, full text).",
+   "paper": "C299",
+   "claim_ids": []
+  },
+  {
+   "where": "usecases/scoring U2 row 6 D8 reason, 'clinical models in youth reached AUC 0.95-0.98 for retained C-peptide' (PMID 38252849)",
+   "issue": "The range merges clinical-only (0.95) and biomarker-augmented (0.972-0.979) models; the outcome is fasting C-peptide in US youth (not random C-peptide in adults); there is no external validation.",
+   "proposed_wording": "In 2,966 US youth, internally validated models predicted fasting C-peptide >=250 pmol/L 3-10 y after diagnosis with AUC 0.95 (clinical features only) to 0.98 (with antibodies and genetic risk score); provider diagnosis AUC 0.887; no external validation (PMID 38252849, DOI 10.2337/dc23-1815, full text).",
+   "paper": "C283",
+   "claim_ids": []
+  },
+  {
+   "where": "D4 reasons for rows 4, 5, 6 and 31 citing PMID 40587435",
+   "issue": "The stability result comes from 8 healthy adults on one platform without low-concentration samples; C-peptide in EDTA at 24 h was 90% of baseline, at the authors' own 10% limit. It should not be read as validation for critical hypoglycaemia samples or low C-peptide values.",
+   "proposed_wording": "In 8 healthy non-diabetic adults (Cobas 601), unspun K2EDTA whole blood kept C-peptide at 90% and insulin at 98% of baseline at 24 h at room temperature, while unspun serum fell to 51% and 64%; low-concentration samples were not tested (PMID 40587435, DOI 10.1371/journal.pone.0312065, full text).",
+   "paper": "C309",
+   "claim_ids": []
+  }
+ ],
+ "notes": "All eight full texts were read from corpus/fulltext (C025 and C033 from PDF extraction, two-column text with scrambled tables; numbers cross-checked, not called wrong). No score change is proposed (all proposed null) because none of the papers alone changes the evidence behind a score; the findings are claim and wording issues. Current scores were read from the unit JSON files; RS-D4.json does not touch rows 4-7, 31 or 33, and the U2/U3 corrections for row 6 keep D8 3 and D4 3. Not found in the screened text: US availability of urinary C-peptide; conflict-of-interest statements in C020, C025, C033, C273 and C309. The 24.5% CV (PMID 35177563) was not checked here. I read only the row 6, 7, 31 and 33 lines of usecases-verified.md. Tool calls used: 15."
+}

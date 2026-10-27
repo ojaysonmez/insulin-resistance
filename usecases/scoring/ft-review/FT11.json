@@ -1,0 +1,273 @@
+{
+  "unit": "FT11",
+  "role": "full-text reader",
+  "papers": [
+    {
+      "id": "C014", "pmid": "19088155", "doi": "10.1210/jc.2008-1410", "text_quality": "partial",
+      "read_level": "full text",
+      "relied_on": "Mostly abstract-level or publisher-extract reading: Rec 2.1 is a graded recommendation to measure insulin, C-peptide, proinsulin and BOHB at hypoglycaemia, so D3 3 not 4 and D1 3 (corrected from 4); evidence 'low or very low' in some units, moderate in the correction.",
+      "full_text_shows": "Rec 2.1 is graded 1QQQE (strong, moderate) only 'compared with a much less thorough workup'; the text says recommendations 'must rely largely on clinical experience' and much lower quality evidence supports the strategy against minor modifications. The remarks add that insulinoma diagnosis 'requires' biochemical evidence before localisation, give the thresholds directly (insulin at least 3.0 uU/mL, C-peptide at least 0.6 ng/mL, proinsulin at least 5.0 pmol/L, BOHB 2.7 mmol/L or less, glucagon rise at least 25 mg/dL), a 5-h mixed-meal protocol (Table 5), say an OGTT should never be used for suspected postprandial hypoglycaemia and that mixed-meal interpretation standards are not established. Two-column layout is interleaved and Table 3 values are scrambled, so Table 3 was read only for its row and column labels.",
+      "verdict": "adds nuance",
+      "quote": "The diagnosis of an insulinoma requires convincing clinical and biochemical evidence before any attempt to regionalize or localize the tumor",
+      "key_numbers": "Rec 2.1 grade 1QQQE; insulin >=3.0 uU/mL (18 pmol/L), C-peptide >=0.6 ng/mL (0.2 nmol/L), proinsulin >=5.0 pmol/L, BOHB <=2.7 mmol/L, glucagon rise >=25 mg/dL at glucose <55 mg/dL; insulin criterion met in 29 of 32 insulinomas, C-peptide and proinsulin in 32 of 32 (one series); insulinoma incidence about 1 per 250,000 patient-years; mixed meal sampled every 30 min to 300 min; insulin/C-peptide/proinsulin sent only on samples with glucose <60 mg/dL.",
+      "role_in_work": "Primary guideline for rows 1, 2, 3 (D3, D1, D2), cited for rows 5, 20, 21, 23, 48.",
+      "design": "Endocrine Society clinical practice guideline, GRADE, 7 authors; some authors list industry interests (listed in the disclosure block, not assessed further).",
+      "population_and_size": "Adults with hypoglycaemia, with and without diabetes; no patient numbers (recommendations from literature).",
+      "measure_type": "Fasting-based or spontaneous-episode insulin, C-peptide, proinsulin; post-meal (mixed-meal, 5 h) insulin, C-peptide, proinsulin; OGTT advised against for suspected postprandial hypoglycaemia.",
+      "assay_or_platform": "No assay named; thresholds assume no renal insufficiency and no intercurrent illness; ratios of insulin to glucose 'have no diagnostic utility'.",
+      "quality_note": "2009 guideline; no newer version found in the screened records. PEG precipitation and insulin-analogue immunoassay cross-reactivity are not in the text.",
+      "rows_affected": [1, 2, 3, 5, 20, 21, 23, 48],
+      "dimensions_affected": ["D1", "D3", "D2"]
+    },
+    {
+      "id": "C039", "pmid": "26742109", "doi": "10.1159/000443171", "text_quality": "good",
+      "read_level": "full text",
+      "relied_on": "ENETS 2016 restates the Endocrine Society thresholds (row 1); endorses calcium-stimulated hepatic venous insulin sampling (row 22, D3 2); reports OGTT-revealed insulinomas (row 23); said to support row 24 (child) at D1 and D8.",
+      "full_text_shows": "The thresholds are quoted second-hand from the Endocrine Society consensus. The calcium-stimulation passage says 'should be considered' when other imaging is negative and 'positive in 90-100%' from two cited series. The OGTT passage is narrative: up to 18% of insulinomas present post-prandially and one mono-institutional study found some diagnosed by OGTT; it gives no graded recommendation. There is no paediatric-specific statement on insulin or C-peptide (children appear only in a surgical-cure sentence).",
+      "verdict": "adds nuance",
+      "quote": "a subset of patients with insulinomas may be diagnosed on the basis of an altered insulin secretory pattern during OGTT",
+      "key_numbers": "Insulin <3 uU/mL and glucose <55 mg/dL in the 72-h fast; insulin cut-off 3 not 5 uU/mL because 9% of insulinomas would be missed at 5; BOHB >2.7 mmol/L in 23% after prior pancreatectomy; post-prandial symptoms up to 18% (21% had type 2 diabetes or IGT); calcium stimulation positive in 90-100%; conventional imaging negative in under 5-10%; CgA specificity 73% in insulinoma.",
+      "role_in_work": "Secondary consensus source for rows 1, 22, 23, 24.",
+      "design": "ENETS consensus guideline update (expert consensus with literature review).",
+      "population_and_size": "Adults with functional or non-functional pancreatic NETs; no cohort of its own.",
+      "measure_type": "Fasting-based insulin and C-peptide thresholds (quoted); post-load (OGTT) insulin (narrative); stimulated regional insulin after intra-arterial calcium (procedure).",
+      "assay_or_platform": "None named; the 3 uU/mL cut-off is tied to a study with an unstated assay generation.",
+      "quality_note": "No evidence grades in the retrieved text; the OGTT and calcium-stimulation statements rest on single-centre or two small series.",
+      "rows_affected": [1, 22, 23, 24],
+      "dimensions_affected": ["D3", "D2", "D1", "D8"]
+    },
+    {
+      "id": "C107", "pmid": "38549041", "doi": "10.1093/clinchem/hvae034", "text_quality": "good",
+      "read_level": "full text",
+      "relied_on": "Used for D4 on 11 rows as evidence that insulin and C-peptide are not standardised: 13% (C-peptide) and 22% (insulin) median imprecision, and a C-peptide reference method.",
+      "full_text_shows": "It compares a research antibody-free LC-MS/MS workflow in three consortium laboratories on leftover serum; it did not test the immunoassays used in US clinical laboratories. With single-point calibration the median imprecision across 84 measurements was 13.4% (C-peptide) and 22.2% (insulin); with in-house curves 19.0% and 22.5%; averaging two days gave 10.8% and 15.3%. C-peptide mean bias against the University of Missouri reference method was 5.2%; for insulin no reference measurement procedure exists.",
+      "verdict": "adds nuance",
+      "quote": "Accuracy was not assessed for insulin measurements, because there is no reference measurement procedure available.",
+      "key_numbers": "Median imprecision 13.4% / 22.2% (single-point calibration, 84 measurements); 19.0% / 22.5% (in-house calibrators); 10.8% / 15.3% (two-day averages, 60 samples); C-peptide slope 1.044, r2 0.99, bias 5.2%; LLMI C-peptide 0.11 and 0.037 ng/mL, insulin 0.03 ng/mL (two labs).",
+      "role_in_work": "Supporting source for D4 (assay standardisation) on rows 1, 3, 4, 6, 9, 11, 14, 24, 29, 31, 50.",
+      "design": "Interlaboratory method comparison of an LC-MS/MS research workflow (TaMADOR consortium).",
+      "population_and_size": "De-identified leftover serum samples from one US centre plus reference materials; 3 laboratories; no patients described.",
+      "measure_type": "C-peptide and insulin concentration, mass spectrometry; not a clinical immunoassay and not a stimulated or post-meal test.",
+      "assay_or_platform": "Antibody-free proteolysis-aided LC-MS/MS; Waters/Xevo, Thermo/Sciex-type systems; equine-serum or human-serum single-point calibrators.",
+      "quality_note": "Research assay, not US-marketed (rubric clarification 20 asks for US-marketed assays); the figures describe LC-MS/MS agreement, not immunoassay disagreement. Genetic polymorphisms can alter LC-MS/MS C-peptide by about 50% in heterozygotes. Authors are from the consortium that developed the method.",
+      "rows_affected": [1, 3, 4, 6, 9, 11, 14, 24, 29, 31, 50],
+      "dimensions_affected": ["D4"]
+    },
+    {
+      "id": "C227", "pmid": "29391050", "doi": "10.1186/s13049-018-0480-7", "text_quality": "good",
+      "read_level": "full text",
+      "relied_on": "Row 1 D7 note only: Finnish EMS rate of 1,082 non-diabetic hypoglycaemia encounters per 100,000 per year, mostly alcohol and hypothermia, not an evaluated-for-hyperinsulinism count.",
+      "full_text_shows": "The note is accurate to the paper's text. Insulin and C-peptide were not measured or analysed; endocrine causes were 0.7% of 3,856 transported non-diabetic events (3 insulinoma, 1 hyperinsulinism, 13 hypopituitarism, 9 Addison disease). The stated 1,082 per 100,000 per year cannot be reproduced from the counts (3,856 events in 7 years in a population of about one million is about 55 per 100,000 per year), so the rate should not be quoted without that caveat.",
+      "verdict": "not relevant",
+      "quote": "three cases of insulinoma, one case of hyperinsulinism",
+      "key_numbers": "13,135 episodes from 505,180 EMS cases (7 years); 3,856 transported non-diabetic events; stated rate 1,082 (95% CI 1,019-1,148) per 100,000 per year; alcohol 41.4%, hypothermia 17.2%, malnutrition 17.0%; endocrine 0.7%; cause found in 95.6%.",
+      "role_in_work": "Context for D7 of row 1 (note only).",
+      "design": "Retrospective cohort, EMS and hospital records, registry mortality follow-up to 6 years.",
+      "population_and_size": "Helsinki University Hospital EMS area (about 1 million inhabitants), 2009-2015, glucose <=3.9 mmol/L, 3,856 transported non-diabetic events.",
+      "measure_type": "None (glucose by glucometer; no insulin or C-peptide measure).",
+      "assay_or_platform": "Capillary glucometer plasma-calibrated; no insulin assay.",
+      "quality_note": "Retrospective; aetiology is 'possible cause' from hospital records, not a work-up result; Finnish, not US.",
+      "rows_affected": [1],
+      "dimensions_affected": ["D7"]
+    },
+    {
+      "id": "C264", "pmid": "36117266", "doi": "10.1002/edm2.375", "text_quality": "good",
+      "read_level": "full text",
+      "relied_on": "Row 1 and row 2 D7: 11 of 70 (16%) factitious cases (6 insulin, 5 sulfonylurea) as a share of hypoglycaemia work-ups; row 1 also used a 6% insulinoma share of the same 70.",
+      "full_text_shows": "The 16% is confirmed (11 of 70; 6 insulin injection, 5 glibenclamide) but comes from a single Tunisian endocrinology department, adults with Whipple triad admitted 2004-2020, where adrenal insufficiency (34%) and pre-diabetes (24%) were the commonest causes. The 6% insulinoma share is not stated in the text (only a Figure 1 is mentioned). Insulin-injection patients (n=6) had median insulin 58 mU/L (IQR 33.7-390.5) and C-peptide 0.21 ug/L (IQR 0.06-0.28); glibenclamide patients (n=5) insulin 20.3 mU/L and C-peptide 2.79 ug/L.",
+      "verdict": "adds nuance",
+      "quote": "Factitious hypoglycaemia was diagnosed in 11 patients corresponding to a prevalence of 16%.",
+      "key_numbers": "11/70 = 16% (about 8-26% by a simple binomial interval [recall, not in paper]); 6 insulin, 5 glibenclamide; 7% undetermined; median age 28 vs 45 years; insulin injection: insulin 58 mU/L, C-peptide 0.21 ug/L.",
+      "role_in_work": "Share input for D7 chains (rows 1 and 2) and small observational data for the exogenous-insulin pattern.",
+      "design": "Single-centre retrospective study.",
+      "population_and_size": "70 non-diabetic adults (age over 14), La Rabta hospital, Tunis, with documented Whipple triad.",
+      "measure_type": "Spontaneous-hypoglycaemia (fasting-state) insulin and C-peptide.",
+      "assay_or_platform": "Electro-chemiluminescence immunoassay for insulin and C-peptide; glucose by hexokinase/G6PDH.",
+      "quality_note": "Tertiary referral selection (admitted for investigation), small groups, quartiles reported oddly for n=5 (median equals upper quartile); the authors note the 16% may be sample-specific and that analogue and some sulfonylurea detection is lacking.",
+      "rows_affected": [1, 2],
+      "dimensions_affected": ["D7"]
+    },
+    {
+      "id": "C035", "pmid": "25957977", "doi": "10.1016/j.jpeds.2015.03.057", "text_quality": "good",
+      "read_level": "full text",
+      "relied_on": "Parallel critical-sample recommendation including insulin and C-peptide (rows 2, 3, 4, 24, 25); exogenous-insulin pattern (row 2); postprandial hypoglycaemia after fundoplication or bypass (row 5).",
+      "full_text_shows": "The numbered recommendations (1.1 Whipple triad, 2.1 investigate the mechanism, GRADE 1) do not name insulin or C-peptide; insulin and C-peptide appear in the text as plasma held in reserve for suspected hyperinsulinism and as additional tests 'to be considered' at the end of a fast. The text stresses BOHB, FFA and the glucagon response because insulin is sometimes not above the detection limit. It states that high insulin with low C-peptide suggests exogenous insulin and that some insulin assays miss analogues. It does not mention antibodies, maternal antibodies or PEG (no match in the text), so row 25 is not addressed.",
+      "verdict": "adds nuance",
+      "quote": "Not all commercially available insulin assays measure the insulin analogues",
+      "key_numbers": "Fast stopped at glucose <50 mg/dL with glucagon 1 mg; glucagon rise >30 mg/dL nearly pathognomonic of hyperinsulinism; BOHB <1.5 mmol/L and FFA <1.0-1.5 mmol/L; fundoplication hypoglycaemia incidence 25-30%.",
+      "role_in_work": "Paediatric guideline for rows 2, 3, 4, 5, 24, 25 (D1, D3, D2).",
+      "design": "Pediatric Endocrine Society guideline with GRADE.",
+      "population_and_size": "Neonates, infants and children with persistent hypoglycaemia.",
+      "measure_type": "Spontaneous-episode (critical sample) or fasting-test insulin and C-peptide; post-meal or oral-glucose insulin response described for post-fundoplication or post-bypass hypoglycaemia.",
+      "assay_or_platform": "None named; warns reference ranges for insulin may be inappropriate in childhood hypoglycaemia.",
+      "quality_note": "Paediatric population: use for adult rows only as a parallel statement.",
+      "rows_affected": [2, 3, 4, 5, 24, 25],
+      "dimensions_affected": ["D1", "D3", "D2"]
+    },
+    {
+      "id": "C272", "pmid": "36733550", "doi": "10.7759/cureus.33224", "text_quality": "good",
+      "read_level": "full text",
+      "relied_on": "Row 2 D4 and D8: an infant case went undetected until the local insulin assay changed.",
+      "full_text_shows": "A single case (24-week-born male infant, factitious hypoglycaemia by the mother, Munchausen by proxy). Insulin was below 2.0 uIU/mL on multiple critical samples; a later sample gave insulin 143 pmol/L (reference 22.9-116.95) with C-peptide 0.14 nmol/L (reference 0.26-1.72). Two things changed together (the mother's insulin from detemir to glargine, and the laboratory's scheduled change to an assay with better analogue cross-reactivity), so the paper cannot separate them. The assay brand is not named.",
+      "verdict": "adds nuance",
+      "quote": "The possibility of exogenous administration of insulin should not be ruled out on the basis of undetectable insulin",
+      "key_numbers": "Insulin <2.0 uIU/mL (several samples) then 143 pmol/L (upper reference 116.95); C-peptide 0.14 nmol/L (lower reference 0.26).",
+      "role_in_work": "Illustration of the analogue-assay pitfall (row 2 D4, D8).",
+      "design": "Case report.",
+      "population_and_size": "One infant.",
+      "measure_type": "Spontaneous-hypoglycaemia (critical sample) insulin and C-peptide.",
+      "assay_or_platform": "Laboratory insulin immunoassay, replaced a month earlier; names not given.",
+      "quality_note": "Confounded by the simultaneous change of insulin type; mildly raised insulin only; no confirmatory LC-MS or drug level.",
+      "rows_affected": [2],
+      "dimensions_affected": ["D4", "D8"]
+    },
+    {
+      "id": "C292", "pmid": "39086570", "doi": "10.4103/ijem.ijem_56_24", "text_quality": "good",
+      "read_level": "full text",
+      "relied_on": "Row 2 D4 and D2: insulin immunoassays differ in detecting analogues, shown in a factitious-hypoglycaemia case (earlier read at title only).",
+      "full_text_shows": "A one-case letter. A man with type 2 diabetes had a first fast with insulin 9.12 uU/mL and C-peptide 1.2 ng/mL (read as endogenous), a distal pancreatectomy with a normal pancreas, then recurrence; the second critical sample read insulin 0.4 uU/mL and C-peptide 0.35 ng/mL on a Roche Elecsys assay and insulin 32.4 uU/mL, C-peptide 0.4 ng/mL on an Abbott analyser. Lispro use came from questioning, not a drug assay. The first episode is attributed 'probably' to a sulfonylurea missed by the urine screen, which was not confirmed. The statement that Elecsys has no analogue cross-reactivity is generalised from the cited literature, not tested here.",
+      "verdict": "adds nuance",
+      "quote": "Roche Elecsys assay does not exhibit any cross-reactivity with any insulin analogues, but they are picked up with Abbott analyser.",
+      "key_numbers": "Insulin 9.12 then 0.4 (Roche) vs 32.4 (Abbott) uU/mL; C-peptide 1.2 then 0.35 / 0.4 ng/mL; glucose 33 then 30 mg/dL.",
+      "role_in_work": "Case-level support for assay-dependence of the exogenous-insulin pattern (row 2) and for the cost of a wrong pattern (unneeded surgery).",
+      "design": "Letter with one case report.",
+      "population_and_size": "One adult.",
+      "measure_type": "Fasting-state (supervised fast and critical sample) insulin and C-peptide.",
+      "assay_or_platform": "Roche Elecsys vs Abbott analyser insulin and C-peptide immunoassays.",
+      "quality_note": "Single case, no sponsor (nil), no confirmatory analogue-specific assay; two work-up errors (insulin analogue missed, sulfonylurea screen incomplete) are mixed in one history.",
+      "rows_affected": [2],
+      "dimensions_affected": ["D4", "D2", "D6"]
+    }
+  ],
+  "proposals": [
+    {
+      "row": 1, "dimension": "D1", "current": 3, "proposed": 4,
+      "reason": "The corrected score of 3 assumed the guideline only says 'measure'. The full text also says insulinoma diagnosis requires biochemical evidence before any localisation, and the Rec 2.1 localisation step is conditional on documented endogenous hyperinsulinaemic hypoglycaemia, so under rule 15 the guideline requires the result before the localisation and surgery decision. The decision named in row 1 includes that step.",
+      "quote": "The diagnosis of an insulinoma requires convincing clinical and biochemical evidence before any attempt to regionalize or localize the tumor",
+      "confidence": "medium", "papers": ["C014"]
+    },
+    {
+      "row": 1, "dimension": "D3", "current": 3, "proposed": 4,
+      "reason": "Same sentence: a guideline text says the biochemical evidence is required before localisation (clarifications 7 and 13). Counter-reading: the sentence is in the remarks, not in the numbered recommendation, which is 'we recommend' (1QQQE), so 3 remains defensible; hence low confidence.",
+      "quote": "The diagnosis of an insulinoma requires convincing clinical and biochemical evidence before any attempt to regionalize or localize the tumor",
+      "confidence": "low", "papers": ["C014"]
+    },
+    {
+      "row": 5, "dimension": "D3", "current": 2, "proposed": 3,
+      "reason": "U1 found no guideline naming insulin measurement after bariatric surgery and read Cryer at abstract level. The full text names post-gastric-bypass hypoglycaemia as an endogenous hyperinsulinaemic cause, lists it in Table 3 with insulinoma, and recommends a 5-h mixed meal test with insulin, C-peptide and proinsulin (Table 5) for postprandial hypoglycaemia. Under clarification 14 explicit coverage of the population gives 3. It remains a remark and table, not a numbered recommendation for bypass patients.",
+      "quote": "The patient with a history suggestive of postprandial hypoglycemia should undergo a mixed-meal test.",
+      "confidence": "low", "papers": ["C014", "C035"]
+    },
+    {
+      "row": 21, "dimension": "D3", "current": 2, "proposed": 3,
+      "reason": "V14 scored from the abstract and treated the population as broader than the use. The full text names non-islet-cell tumour hypoglycaemia, states insulin secretion is suppressed in it, and includes an IGF-mediated column in Table 3; Rec 2.1 measurements are said to separate insulin-mediated from other mechanisms. Under clarification 14 that is explicit coverage. IGF-II assays are described as not generally available, so the use is not recommended as such.",
+      "quote": "Endogenous insulin secretion is suppressed appropriately in nonislet cell tumor hypoglycemia.",
+      "confidence": "low", "papers": ["C014"]
+    },
+    {
+      "row": 48, "dimension": "D1", "current": 0, "proposed": 1,
+      "reason": "V23 had not read the guideline and found no insulin threshold. The full text says mixed-meal results are currently read with the fasting criteria although standards are not established; a documented low glucose with high insulin would therefore support a diagnosis of endogenous hyperinsulinism, but this is a usage statement, not validated (2 would need validation).",
+      "quote": "standards for the interpretation of the mixed-meal test have not been established",
+      "confidence": "low", "papers": ["C014"]
+    },
+    {
+      "row": 1, "dimension": "D2", "current": 3, "proposed": null,
+      "reason": "No change proposed. The full text weakens the evidence wording (recommendations 'must rely largely on clinical experience'; moderate quality only against a much less thorough workup) but also cites case series (insulin criterion met in 29 of 32 insulinomas), and the literal anchor 3 (guideline backed by studies) is still met. Watch item: 2 is arguable.",
+      "quote": "recommendations for their evaluation and management must rely largely on clinical experience",
+      "confidence": "low", "papers": ["C014", "C039"]
+    },
+    {
+      "row": 23, "dimension": "D3", "current": 0, "proposed": null,
+      "reason": "Confirmed. The full text states the OGTT should never be used for suspected postprandial hypoglycaemia; the guideline's own test is the mixed meal. ENETS gives only a narrative OGTT statement.",
+      "quote": "An oral glucose tolerance test should never be used for the evaluation of suspected postprandial hypoglycemia",
+      "confidence": "high", "papers": ["C014", "C039"]
+    },
+    {
+      "row": 22, "dimension": "D3", "current": 2, "proposed": null,
+      "reason": "Confirmed: ENETS wording is 'should be considered', option-level, two small series cited.",
+      "quote": "should be considered in a patient where other imaging tests are negative",
+      "confidence": "high", "papers": ["C039"]
+    },
+    {
+      "row": 1, "dimension": "D4", "current": 2, "proposed": null,
+      "reason": "No change. C107 is a research LC-MS/MS comparison, not evidence on US immunoassays; the score rests on the other sources. For C-peptide a reference method exists with 5.2% bias; for insulin there is none, which supports 2 for insulin.",
+      "quote": "Accuracy was not assessed for insulin measurements, because there is no reference measurement procedure available.",
+      "confidence": "medium", "papers": ["C107"]
+    },
+    {
+      "row": 3, "dimension": "D4", "current": 1, "proposed": null,
+      "reason": "No change. The current score is driven by the drug-screen send-out (limiting assay); the 22.2% insulin figure is LC-MS/MS imprecision across three research laboratories, not routine inter-method disagreement.",
+      "quote": "the median imprecision across 84 measurements was 13.4% (IQR 11.6%) and 22.2% (IQR 20.9%) for C-peptide and insulin",
+      "confidence": "medium", "papers": ["C107"]
+    },
+    {
+      "row": 2, "dimension": "D4", "current": 2, "proposed": null,
+      "reason": "No change. C272 and C292 are single cases (C272 confounded by a simultaneous insulin switch); they illustrate assay-dependent detection of analogues but are not accuracy data. PES 2015 states the caveat in guideline text.",
+      "quote": "Not all commercially available insulin assays measure the insulin analogues",
+      "confidence": "medium", "papers": ["C035", "C272", "C292"]
+    },
+    {
+      "row": 4, "dimension": "D1", "current": 2, "proposed": null,
+      "reason": "Confirmed by PES 2015 full text: insulin is held in reserve and BOHB, FFA and the glucagon response are stressed because insulin may not be detectable.",
+      "quote": "plasma insulin concentration is sometimes not above the lower limit of detection",
+      "confidence": "high", "papers": ["C035"]
+    },
+    {
+      "row": 1, "dimension": "D7", "current": 3, "proposed": null,
+      "reason": "No change. C227 and C264 are notes and shares only. C264 gives the 16% factitious share but not a text figure for the 6% insulinoma share; C227's headline rate is not reproducible from its counts.",
+      "quote": "Factitious hypoglycaemia was diagnosed in 11 patients corresponding to a prevalence of 16%.",
+      "confidence": "low", "papers": ["C227", "C264"]
+    }
+  ],
+  "claim_issues": [
+    {
+      "where": "usecases-verified.md row 1 source column and line 121 ('Full text of Cryer 2009 (abstract only; thresholds, grades and 72-hour fast rules are second-hand via ENETS)')",
+      "issue": "The full text has now been read: thresholds, the grade and the fast and mixed-meal protocols are in the guideline itself, not only via ENETS.",
+      "proposed_wording": "Cryer 2009, PMID 19088155, DOI 10.1210/jc.2008-1410, full text: Rec 2.1 (1QQQE) recommends insulin, C-peptide, proinsulin and BOHB at spontaneous hypoglycaemia, and a fast of up to 72 h or a mixed meal when none is observed; insulin at least 3.0 uU/mL, C-peptide at least 0.6 ng/mL, proinsulin at least 5.0 pmol/L at glucose below 55 mg/dL.",
+      "paper": "C014", "claim_ids": []
+    },
+    {
+      "where": "usecases-verified.md row 22 status 'Established, specialist, second-line'",
+      "issue": "ENETS 2016 wording is 'should be considered' where other imaging is negative, based on two small series; that is option-level, not a requirement.",
+      "proposed_wording": "ENETS 2016 (consensus) says the hepatic venous insulin gradient after intra-arterial calcium injection 'should be considered' when other imaging is negative, positive in 90-100% in two cited series; option-level.",
+      "paper": "C039", "claim_ids": []
+    },
+    {
+      "where": "usecases-verified.md row 23 (OGTT-induced hypoglycaemia, status Limited, source ENETS 2016)",
+      "issue": "ENETS only reports narrative data from one mono-institutional study; the Endocrine Society text says an OGTT should never be used for suspected postprandial hypoglycaemia and gives a 5-h mixed-meal test instead.",
+      "proposed_wording": "ENETS 2016 reports that a subset of insulinomas may be diagnosed by an altered insulin pattern during an OGTT (one single-centre study, no graded recommendation). Cryer 2009 states an OGTT 'should never be used' for suspected postprandial hypoglycaemia and describes a 5-h mixed-meal test with insulin, C-peptide and proinsulin on samples with glucose below 60 mg/dL; interpretation standards for it are not established.",
+      "paper": "C014", "claim_ids": []
+    },
+    {
+      "where": "usecases-verified.md row 48 ('no accepted criteria in the screened records'; 'Cryer ... NOT read'; 'no insulin threshold found')",
+      "issue": "The guideline now read gives a mixed-meal protocol and states that current usage applies the fasting criteria to it, while stating that interpretation standards are not established; it also says OGTT is not indicated for postprandial symptoms without Whipple triad ('functional disorder').",
+      "proposed_wording": "Cryer 2009 (full text): mixed-meal test over 5 h with insulin, C-peptide and proinsulin kept for samples with glucose below 60 mg/dL; 'standards for the interpretation of the mixed-meal test have not been established'; fasting criteria are applied in current usage; an OGTT should never be used for suspected postprandial hypoglycaemia.",
+      "paper": "C014", "claim_ids": []
+    },
+    {
+      "where": "usecases/scoring/V2.json row 3 D2 and V9.json row 1 D2 reason text ('evidence graded low to very low')",
+      "issue": "Rec 2.1 is graded 1QQQE (moderate) against a much less thorough workup; only the comparison with minor modifications is of much lower quality. V9 already withdrew the phrase; V2 still carries it.",
+      "proposed_wording": "Rec 2.1 is graded 1QQQE (strong, moderate quality) compared with a much less thorough workup; the text says much lower quality evidence supports it against minor modifications.",
+      "paper": "C014", "claim_ids": []
+    },
+    {
+      "where": "usecases-verified.md row 20 (PEG precipitation listed with Cryer 2009) and row 2 caveat on analogue assays",
+      "issue": "Cryer 2009 recommends measuring insulin antibodies but does not mention PEG precipitation; the adult guideline does not discuss analogue cross-reactivity (PES 2015 does).",
+      "proposed_wording": "Insulin antibodies: Cryer 2009 Rec 2.1. PEG precipitation: not found in Cryer 2009. Insulin-analogue cross-reactivity: PES 2015 (full text) and case reports (PMID 36733550, PMID 39086570); not found in Cryer 2009.",
+      "paper": "C014", "claim_ids": []
+    },
+    {
+      "where": "usecases/scoring/V3.json row 3 D4 correction and V10.json row 29 D4 reasons ('insulin inter-lab CV 22.2%', 'C-peptide immunoassays are not harmonized (LC-MS/MS interlab 10.8-13.4% imprecision)')",
+      "issue": "The 22.2%, 13.4% and 10.8% figures are median imprecision of an LC-MS/MS research workflow in three consortium laboratories; the paper did not test immunoassays or routine platforms.",
+      "proposed_wording": "In an antibody-free LC-MS/MS comparison of three research laboratories the median imprecision was 13.4% (C-peptide) and 22.2% (insulin) with single-point calibration; this is not a measure of US immunoassay disagreement. For insulin no reference measurement procedure exists; C-peptide bias against the reference method was 5.2%.",
+      "paper": "C107", "claim_ids": []
+    },
+    {
+      "where": "usecases/scoring/V8.json row 1 D7 (6% insulinoma share of 70 adults; 1,082 per 100,000 per year note)",
+      "issue": "The text of PMID 36117266 does not state an insulinoma share (Figure 1 only); PMID 29391050 states 1,082 per 100,000 per year but its counts imply about 55 per 100,000 per year.",
+      "proposed_wording": "Factitious hypoglycaemia was 11 of 70 (16%) in one Tunisian endocrinology department (PMID 36117266); insulinoma share not found in the text. Finnish EMS study (PMID 29391050): 3,856 transported non-diabetic events in 7 years, 4 insulinoma or hyperinsulinism; the stated rate of 1,082 per 100,000 per year is not reproducible from the counts.",
+      "paper": "C264", "claim_ids": []
+    }
+  ],
+  "notes": "Path to viability: row 1 unaffected as a type (a guideline already exists); if D1 and D3 go to 4 the missing piece becomes a mixed-meal or fast interpretation study with current assays. Row 23 path should say a mixed-meal protocol (not OGTT) is the guideline route, and the missing piece is validated mixed-meal criteria; row 48 the same. Row 5: the missing piece stays a validated threshold for post-bypass hypoglycaemia. Assumptions: the current score is the score in the unit file (corrections applied; RS-D4 and RS-D1S queued proposals were not read as in force). C014 is a two-column PDF extraction: line interleaving and a lost mu symbol (insulin 'U/ml' means uU/mL) were treated as garbling, and Table 3 numbers are scrambled so no table value was used for a proposal. COI blocks for C014 list industry interests of some authors; not assessed beyond that. C039 and C035 text had no disclosure section in the stored XML (not found in the screened text). Tool calls used: about 36 (including the two writes)."
+}

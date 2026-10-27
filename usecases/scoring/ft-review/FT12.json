@@ -1,0 +1,661 @@
+{
+ "unit": "FT12",
+ "role": "full-text reader",
+ "papers": [
+  {
+   "id": "C026",
+   "pmid": "23413806",
+   "doi": "10.1111/dme.12159",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "Narrative review as source for C-peptide use in classification and insulin withdrawal (rows 6, 31, 32), for renal clearance as an interpretation limit (row 28), and for assay and workflow burden.",
+   "full_text_shows": "Review (PubMed search to Aug 2012; no systematic method or grading) says random C-peptide with concurrent glucose >8 mmol/L was the best classifier in one large study and is 'likely' sufficient in most situations; stimulated <0.6 nmol/L suggests marked deficiency, <0.2 nmol/L absolute deficiency. For insulin withdrawal it says the role is mainly to exclude absolute deficiency, and that the withdrawal studies (Table 3) are short, use lax glycaemic targets and rarely include low C-peptide groups. About half of C-peptide is renally cleared, so blood values are falsely elevated in renal impairment and correction methods are poorly validated; assay standardisation has not been achieved, mainly at higher concentrations.",
+   "verdict": "confirms",
+   "quote": "Mechanisms to correct for renal function when measuring C-peptide have been suggested, but are currently poorly validated",
+   "key_numbers": "Stimulated C-peptide <0.6 nmol/L (fasting <0.25) suggests marked deficiency; <0.2 nmol/L (fasting <0.08) absolute deficiency; preserved C-peptide after ketoacidosis: fasting >0.33 or glucagon >0.5 nmol/L, about 50% insulin-free at 1 year in one mostly non-Caucasian cohort; about 50% renal clearance, about 5% excreted unchanged; 2-h urine C-peptide:creatinine <0.2 nmol/mmol 96% sensitive, 98% specific (Exeter, n=70 vs 145).",
+   "role_in_work": "Primary review source for row 6 thresholds, row 28 renal caveat, rows 31 and 32 workflow; stands behind D1, D2, D4, D5, D6 and S entries.",
+   "design": "Narrative review with PubMed search to August 2012; not a guideline.",
+   "population_and_size": "Adults and children with diabetes, mainly European studies; no pooled sample.",
+   "measure_type": "C-peptide: random (non-fasting, glucose >8 mmol/L), fasting, glucagon- and mixed-meal-stimulated, post-meal urine C-peptide:creatinine; not insulin.",
+   "assay_or_platform": "Generic discussion of immunoassays; says standardisation is not achieved and results near thresholds may not be comparable across methods.",
+   "quality_note": "Pre-2013 review with expert opinion in places ('likely'); funding NIHR and Wellcome. It has no passage on secretagogue hypoglycaemia in kidney disease (not found in the text), so row 28 S rests on judgement. Its thresholds differ from Holt 2021 (stimulated 0.6 and 0.2 nmol/L vs 600 and 80 pmol/L random).",
+   "rows_affected": [
+    6,
+    28,
+    31,
+    32
+   ],
+   "dimensions_affected": [
+    "D1",
+    "D2",
+    "D3",
+    "D4",
+    "D5",
+    "D6",
+    "S"
+   ]
+  },
+  {
+   "id": "C074",
+   "pmid": "34590174",
+   "doi": "10.1007/s00125-021-05568-3",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "Consensus text as the guideline source that recommends random C-peptide for uncertain type beyond 3 years and requires it before insulin discontinuation (rows 6 and 31 D1, D3, D5, D6).",
+   "full_text_shows": "The text says a random C-peptide with concurrent glucose within 5 h of eating is recommended beyond 3 years where type is uncertain, and that in insulin-treated people it should always be done before insulin discontinuation. The Figure 1 note adds thresholds (>=600 pmol/L circumstances do not matter; <80 pmol/L no repeat; 200-600 usually T1D or MODY but can be insulin-treated T2D; no test within 2 weeks of a hyperglycaemic emergency). Autoantibodies (GAD first) are the primary investigation. For suspected monogenic diabetes it says to test antibodies and C-peptide and to consider genetic testing only if antibodies are negative and non-fasting C-peptide >200 pmol/L. Renal impairment is named only as a confounder of the urinary C-peptide:creatinine ratio. The authors state the report is consensus opinion because evidence is incomplete.",
+   "verdict": "confirms",
+   "quote": "Where a person is treated with insulin, this test should always be performed prior to insulin discontinuation to exclude severe insulin deficiency.",
+   "key_numbers": "Thresholds 600, 200-600 and 80 pmol/L; >40% of adults who develop T1D after age 30 are first treated as T2D; reclassification in 11% of adult-onset diabetes with 3+ years' duration (ref 31, primary study not identified in the corpus text); urine C-peptide:creatinine <0.2 nmol/mol (as printed) for severe deficiency.",
+   "role_in_work": "Guideline-level source for D3 (4 for the insulin-discontinuation decision), D1 and D2 (consensus), D5, D6 and the row 6 path to viability.",
+   "design": "ADA/EASD consensus report; authors summarise literature, peer review and public comment; no formal grading.",
+   "population_and_size": "Adults with suspected or established type 1 diabetes; flowchart based on White European data.",
+   "measure_type": "C-peptide: random (non-fasting) plasma with concurrent glucose within 5 h of eating; urinary C-peptide:creatinine as alternative; not insulin.",
+   "assay_or_platform": "Not specified; plasma preferred, urine confounded by renal impairment.",
+   "quality_note": "Consensus opinion by the authors' own statement; the 'must' sentence is a precaution before stopping insulin, not a trial result. The flowchart is for newly diagnosed adults and White European data. The 11% reclassification figure cannot be traced from the Foteinopoulou paper (6.8% overall).",
+   "rows_affected": [
+    6,
+    31
+   ],
+   "dimensions_affected": [
+    "D1",
+    "D2",
+    "D3",
+    "D5",
+    "D6",
+    "D7",
+    "S"
+   ]
+  },
+  {
+   "id": "C080",
+   "pmid": "35177563",
+   "doi": "10.3343/alm.2022.42.4.428",
+   "text_quality": "partial",
+   "read_level": "full text",
+   "relied_on": "Survey as evidence that insulin and C-peptide assays are not standardised, used to score D4 at 3 (rows 6 and 31) and 2 (row 5), with the figures 'inter-system CV 24.5%, 5.7% after recalibration' quoted from the abstract.",
+   "full_text_shows": "The local text has no abstract or tables; 24.5% and 5.7% are not found in it. It gives, for C-peptide, inter-laboratory CV 13.6-21.8% and inter-measurement-system CV 20.1-31.6% against a desirable 8.3%, worst for the lowest-concentration sample (31.6%); intra-system CV was acceptable (mean 6.6%). After recalibration all C-peptide inter-system CVs met 8.3%. For insulin inter-system CV was 10.7-58.3% (44.1% after recalibration at the low sample), and no insulin reference procedure is listed in JCTLM.",
+   "verdict": "adds nuance",
+   "quote": "inter-measurement system %CVs ranging from 10.7% to 58.3% for insulin and from 20.1% to 31.6% for C-peptide",
+   "key_numbers": "94 laboratories, 5 pooled sera; C-peptide inter-lab CV 13.6-21.8%, inter-system 20.1-31.6%, desirable 8.3%; insulin inter-lab 8.4-64.3%, inter-system 10.7-58.3%, desirable 10.6%; 91 laboratories reported insulin, 88 C-peptide.",
+   "role_in_work": "Only non-US assay-standardisation survey behind D4 for rows 5, 6, 31.",
+   "design": "Cross-sectional external-quality style survey with recalibration analysis.",
+   "population_and_size": "94 laboratories in China, 5 pooled leftover serum samples (Siemens-measured at Beijing Hospital), 6 repeats each.",
+   "measure_type": "Serum insulin and C-peptide concentration (analytical study; no post-meal or stimulated protocol).",
+   "assay_or_platform": "Roche, Siemens, Abbott, Beckman, Snibe, Mindray immunoassays.",
+   "quality_note": "Chinese laboratories, so anchor 20 applies (non-US, confidence cap medium); only two samples used for recalibration; sample concentrations not given in the local text; the 24.5% and 5.7% figures could not be verified (text partial). Low-concentration samples were worst for both analytes, which does not fit the V3 statement that the low end is less affected.",
+   "rows_affected": [
+    5,
+    6,
+    31
+   ],
+   "dimensions_affected": [
+    "D4"
+   ]
+  },
+  {
+   "id": "C127",
+   "pmid": "41358893",
+   "doi": "10.2337/dc26-s002",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "ADA Standards 2026 section 2 as guideline source: Figure 2.1 C-peptide note (rows 6, 31), no C-peptide recommendation for MODY (row 7), ketosis-prone diabetes (row 32), slowly progressive autoimmune diabetes (row 47) and staging (row 49); 40% misdiagnosis figure (row 31 D7).",
+   "full_text_shows": "The C-peptide statements are in the footnote to the Figure 2.1 flowchart (web text), copied from Holt 2021; they are not in the numbered graded recommendations (2.5 only says to classify). No numbered recommendation or text names C-peptide for MODY (2.29b is genetic testing), ketosis-prone diabetes (only 'generally transient' insulin need), LADA (term acceptable, no C-peptide criterion) or staging (2.6-2.8b use autoantibodies and glucose). The text says misdiagnosis can occur in up to 40% of adults with new type 1 diabetes. Low C-peptide appears only as a late-stage marker and in fulminant checkpoint-inhibitor diabetes.",
+   "verdict": "confirms",
+   "quote": "Where a person is insulin treated, C-peptide must be measured prior to insulin discontinuation to exclude severe insulin deficiency.",
+   "key_numbers": "600 pmol/L (1.8 ng/mL), 80 pmol/L (0.24 ng/mL), 2-week rule; 40% misdiagnosis; monogenic diabetes in under 5% of diabetes.",
+   "role_in_work": "Second guideline source for D3 on rows 6, 7, 31, 32, 47, 49 and D1 on row 49.",
+   "design": "Annual guideline (Standards of Care), PMC web-page version.",
+   "population_and_size": "Adults and children with or at risk of diabetes; guideline, no sample.",
+   "measure_type": "C-peptide: random non-fasting with concurrent glucose within 5 h of eating (Figure 2.1 note); post-load C-peptide not addressed.",
+   "assay_or_platform": "None named.",
+   "quality_note": "Web text, not verbatim PDF; the C-peptide advice is an ungraded figure note, not a graded recommendation; flowchart is based on White European data and newly diagnosed adults. Duality-of-interest information is only linked.",
+   "rows_affected": [
+    6,
+    7,
+    31,
+    32,
+    47,
+    49
+   ],
+   "dimensions_affected": [
+    "D1",
+    "D3",
+    "D7"
+   ]
+  },
+  {
+   "id": "C169",
+   "pmid": "33131101",
+   "doi": "10.1111/dme.14449",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "Abstract numbers (859 tested, 6.8% reclassified, 1.5% stopped insulin) as the reclassification cohort behind D2 and D8 for row 6.",
+   "full_text_shows": "Single-centre routine clinic programme (Edinburgh) in people with clinician-diagnosed T1D of 3+ years who all started insulin within 3 years. Random non-fasting serum C-peptide on Abbott Architect; a value at or above about 200 pmol/L (symbol lost in extraction) triggered antibodies, T1 genetic risk score and genetic testing. 114 of 859 (13.2%) triggered; yield rose with age at diagnosis (2.5% under 18, 15.4% at 18-30, 25.9% over 30). 58 (6.8%) were reclassified (44 T2D, 14 monogenic); 13 (1.5%) stayed off insulin and 16 (1.9%) gained from co-therapy, with no severe hypoglycaemia or DKA reported. The threshold was pragmatic, and Abbott and Roche values differ (Abbott = 0.8755 x Roche - 40.6, so Abbott 200 is Roche 269).",
+   "verdict": "confirms",
+   "quote": "The cause of diabetes was reclassified in 58 individuals (6.8% of the tested cohort).",
+   "key_numbers": "953 eligible, 859 tested (90%); 114 (13.2%) at or above threshold; 58 reclassified (6.8%); 13 stopped insulin (1.5%); testing programme cost about 27 pounds per person tested.",
+   "role_in_work": "The one implementation cohort behind row 6 D2 (3) and D8 (3, anchor 19 reclassification rate).",
+   "design": "Prospective single-centre observational service evaluation, no control group, no ethics approval (service development).",
+   "population_and_size": "859 adults tested, hospital diabetes clinic, predominantly Caucasian, clinician-diagnosed T1D 3+ years.",
+   "measure_type": "C-peptide: random non-fasting serum with concurrent glucose.",
+   "assay_or_platform": "Abbott ARCHITECT i2000SR (CV 2.9-4.1%); Roche conversion given.",
+   "quality_note": "Reclassification depends on a downstream antibody, genetic-score and sequencing work-up, not C-peptide alone; no comparison with antibody-first testing; authors say the population limits transfer and the cut-off is pragmatic. The 11% figure in Holt is not printed in this text. No conflict related to the work; one author has pharma honoraria.",
+   "rows_affected": [
+    6
+   ],
+   "dimensions_affected": [
+    "D2",
+    "D8"
+   ]
+  },
+  {
+   "id": "C216",
+   "pmid": "27080317",
+   "doi": "10.3399/bjgp16x684961",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "14% misclassification by UK clinical criteria in insulin-treated adults, used as an anchor for the share with unclear type in the row 6 D7 chain.",
+   "full_text_shows": "601 white European insulin-treated adults with 5+ years' diabetes, recruited by letter (volunteers) in three UK centres; 514 (86%) correctly classified by the UK guideline against a urinary C-peptide:creatinine gold standard (2 h after the largest meal). Of 87 misclassified, 57 (66%) were labelled T1D but made substantial insulin and 30 (34%) were labelled T2D but severely deficient. The authors state the 14% would be much lower across all people with diabetes.",
+   "verdict": "adds nuance",
+   "quote": "most (n = 57, 66%, Figure 2) were misclassified as having type 1 diabetes and were producing substantial endogenous insulin",
+   "key_numbers": "601 included; 86% (95% CI 83-88) correct; 87 misclassified; gold standard UCPCR <0.2 nmol/mmol at 5+ years and insulin within 3 years.",
+   "role_in_work": "Epidemiological anchor for the unclear-type share in the row 6 D7 chain (V7).",
+   "design": "Cross-sectional diagnostic accuracy study of clinical criteria against C-peptide.",
+   "population_and_size": "601 white European (and 30 Asian) insulin-treated adults, 5+ years' duration, UK.",
+   "measure_type": "C-peptide: post-meal (2 h) urinary C-peptide:creatinine ratio; not serum random, not insulin.",
+   "assay_or_platform": "Exeter biochemistry laboratory UCPCR assay (not detailed in the text read).",
+   "quality_note": "UK, volunteer responders, insulin-treated only, so it fits the insulin-treated denominator but not US practice or all diabetes; 'misclassified' means against the UK algorithm, not 'type uncertain to the clinician'. Supports the D7 share as an assumption, not a measurement.",
+   "rows_affected": [
+    6
+   ],
+   "dimensions_affected": [
+    "D7"
+   ]
+  },
+  {
+   "id": "C231",
+   "pmid": "29596402",
+   "doi": "10.15585/mmwr.mm6712a2",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "2016 NHIS split of diagnosed diabetes by type (5.8% T1, 90.9% T2, 3.3% other) as a US denominator for row 6 D7.",
+   "full_text_shows": "Self-reported, 33,028 adults, response rate 54.3%; 3,519 with diabetes: T1D 0.55% (1.3 million), T2D 8.6% (21.0 million), other 0.31%. T1D means self-reported T1 plus current insulin use; self-reported T1 without insulin (n=182), unknown type and refusals were put in T2D. Type is not validated and the authors say insulin-secretion tests are unsuitable for surveys. It gives no count of insulin-treated adults with unclear type.",
+   "verdict": "confirms",
+   "quote": "the estimated prevalences of diagnosed type 1 and type 2 diabetes were 0.55% (corresponding to 1.3 million U.S. adults)",
+   "key_numbers": "1.3 million T1D adults (2016); 21.0 million T2D; 211 of 3,519 classified T1.",
+   "role_in_work": "Denominator source (type split) for row 6 D7; U1 uses the later CDC 1.8 million figure for T1D.",
+   "design": "Cross-sectional national survey analysis (NHIS 2016).",
+   "population_and_size": "33,028 US adults, 3,519 with diagnosed diabetes.",
+   "measure_type": "Not a measurement study (no insulin or C-peptide test); epidemiology only.",
+   "assay_or_platform": "Not applicable.",
+   "quality_note": "Self-reported, unvalidated type, 2016 data; supports the type split but not the uncertain-type or retest shares.",
+   "rows_affected": [
+    6
+   ],
+   "dimensions_affected": [
+    "D7"
+   ]
+  },
+  {
+   "id": "C239",
+   "pmid": "31558459",
+   "doi": "10.1136/bmjopen-2019-031586",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "Clinical-model study cited as using C-peptide as the reference standard (row 6 D2) and as showing clinical features alone discriminate well (rows 6 and 31 D8).",
+   "full_text_shows": "Models built on 1,352 white European UK adults (179 T1D) diagnosed at 18-50 years; outcome defined by insulin within 3 years plus non-fasting C-peptide <200 pmol/L (T1D) or >600 pmol/L at 5+ years (T2D). Age and BMI alone gave AUC 0.904 in development and 0.865 in external validation (n=582); adding GADA, IA-2A and genetic risk score reached 0.97. In the 71 hardest cases antibodies alone gave 0.72 and genetic risk score alone 0.89. C-peptide is the outcome, never a predictor, so the paper cannot show what C-peptide adds.",
+   "verdict": "confirms",
+   "quote": "Type 1 diabetes: Insulin treatment within ≤3 years of diabetes diagnosis and severe insulin deficiency (non-fasting C-peptide <200 pmol/L).",
+   "key_numbers": "AUC 0.904 clinical, 0.97 five-predictor (development); external 0.865 and 0.930 (clinical, clinical+GADA); 37 (2.7%) undefinable outcome at C-peptide 200-600 pmol/L; 87% of C-peptide samples non-fasting.",
+   "role_in_work": "Shows C-peptide is the reference standard and clinical models approximate it; supports D8 not above 3 and row 31 D8 at 2.",
+   "design": "Diagnostic model development with internal and external validation, cross-sectional.",
+   "population_and_size": "1,352 development, 582 external, white European adults aged 18-50 at diagnosis.",
+   "measure_type": "C-peptide: random non-fasting (87%), some fasting (x2.5) or 90-min mixed-meal, used as outcome definition only.",
+   "assay_or_platform": "Roche electrochemiluminescence immunoassay (development cohort); different assays in the external cohort.",
+   "quality_note": "Circular for the question of what C-peptide adds; white European, 18-50 only; time to insulin self-reported; antibodies and BMI measured about 13 years after diagnosis.",
+   "rows_affected": [
+    6,
+    31
+   ],
+   "dimensions_affected": [
+    "D2",
+    "D8"
+   ]
+  }
+ ],
+ "proposals": [
+  {
+   "row": 31,
+   "dimension": "D4",
+   "current": 3,
+   "proposed": 2,
+   "reason": "C080 full text shows C-peptide inter-measurement-system CV 20.1-31.6% against a desirable 8.3%, worst at the lowest-concentration sample, and no commercially qualified secondary calibrators in JCTLM; this contradicts the V3 reason that the low end is less affected. Jones 2013 also says standardisation has not been achieved and results near thresholds may not be comparable. D4 3 stays defensible if thresholds are far from the cutoffs (thresholds 80, 200, 600 pmol/L are 2.5 to 3 fold apart), so this is a boundary call. Chinese data only (anchor 20: confidence cap medium). Rows 6 and 31 should move together.",
+   "quote": "inter-measurement system %CVs ranging from 10.7% to 58.3% for insulin and from 20.1% to 31.6% for C-peptide",
+   "confidence": "low",
+   "papers": [
+    "C080",
+    "C026"
+   ]
+  },
+  {
+   "row": 6,
+   "dimension": "D4",
+   "current": 3,
+   "proposed": 2,
+   "reason": "Same evidence as row 31 D4 (U3 already called it a 2/3 boundary). The '24.5% and 5.7% after recalibration' figures in U3's correction are not in the local C080 text; the text gives 20.1-31.6% inter-system and, after recalibration, all C-peptide values within 8.3%. Fixable by calibration, but not standardised in routine use.",
+   "quote": "Optimal standardization of C-peptide measurement between laboratories has yet to be achieved",
+   "confidence": "low",
+   "papers": [
+    "C080",
+    "C026"
+   ]
+  },
+  {
+   "row": 5,
+   "dimension": "D4",
+   "current": 2,
+   "proposed": null,
+   "reason": "C080 confirms insulin is less standardised than C-peptide (inter-system CV up to 58.3%; no JCTLM reference procedure for insulin). Score 2 stands.",
+   "quote": "no reference measurement procedure and reference materials are listed in the JCTLM dataset",
+   "confidence": "medium",
+   "papers": [
+    "C080"
+   ]
+  },
+  {
+   "row": 6,
+   "dimension": "D3",
+   "current": 4,
+   "proposed": null,
+   "reason": "Holt and ADA 2026 say 'recommended' for the uncertain-type test and 'must' only before insulin discontinuation. Row 6 names 'can insulin be replaced' as a decision, so 4 stands under clarification 13 (the classification-only part would be 3). No change from the full text.",
+   "quote": "Where a person is insulin treated, C-peptide must be measured prior to insulin discontinuation to exclude severe insulin deficiency.",
+   "confidence": "medium",
+   "papers": [
+    "C074",
+    "C127"
+   ]
+  },
+  {
+   "row": 6,
+   "dimension": "D1",
+   "current": 4,
+   "proposed": null,
+   "reason": "Holt text confirms the result decides whether insulin may be stopped; consistent with clarification 15.",
+   "quote": "this test should always be performed prior to insulin discontinuation",
+   "confidence": "medium",
+   "papers": [
+    "C074",
+    "C127",
+    "C026"
+   ]
+  },
+  {
+   "row": 6,
+   "dimension": "D2",
+   "current": 3,
+   "proposed": null,
+   "reason": "C169 full text confirms an uncontrolled single-centre cohort (6.8% reclassified, 1.5% off insulin) and Holt states it is consensus opinion; consistent with 3 under the U6 correction.",
+   "quote": "The cause of diabetes was reclassified in 58 individuals (6.8% of the tested cohort).",
+   "confidence": "medium",
+   "papers": [
+    "C074",
+    "C169",
+    "C239"
+   ]
+  },
+  {
+   "row": 6,
+   "dimension": "D8",
+   "current": 3,
+   "proposed": null,
+   "reason": "C169 gives a reclassification rate within the population (anchor 19), but reclassification rests on antibodies, genetic score and sequencing after the C-peptide trigger, and no antibody-first comparison exists. C239 cannot show what C-peptide adds. Stays at 3, low confidence.",
+   "quote": "C-peptide threshold for further investigation (200 pmol/L on an Abbott assay) was chosen on a pragmatic basis",
+   "confidence": "low",
+   "papers": [
+    "C169",
+    "C239"
+   ]
+  },
+  {
+   "row": 6,
+   "dimension": "D7",
+   "current": 3,
+   "proposed": null,
+   "reason": "C216 (14%, UK volunteers, insulin-treated 5+ years, UCPCR gold standard; authors say lower for all diabetes) and C231 (5.8% T1 of diagnosed diabetes; no uncertain-type count) fit the chain as assumptions; they do not move the bin-deciding annual testing share.",
+   "quote": "the misclassification rate of 14% is likely to be much lower",
+   "confidence": "low",
+   "papers": [
+    "C216",
+    "C231",
+    "C074"
+   ]
+  },
+  {
+   "row": 6,
+   "dimension": "D5",
+   "current": 3,
+   "proposed": null,
+   "reason": "Holt specifies a single random sample within 5 h of eating, no protocol; who orders it is not stated in Holt. C169 shows it done in a hospital diabetes clinic at routine visits (90% uptake). 3 stands.",
+   "quote": "a random C-peptide measurement (with concurrent glucose) within 5 h of eating is recommended",
+   "confidence": "medium",
+   "papers": [
+    "C074",
+    "C169"
+   ]
+  },
+  {
+   "row": 6,
+   "dimension": "D6",
+   "current": 3,
+   "proposed": null,
+   "reason": "C169 reports no severe hypoglycaemia or DKA among 13 who stopped insulin; Holt rules (repeat if <600 pmol/L with glucose <4 mmol/L, no test within 2 weeks of a hyperglycaemic emergency) limit false-low results. Confirms 3.",
+   "quote": "Do not test C-peptide within 2 weeks of a hyperglycaemic emergency.",
+   "confidence": "medium",
+   "papers": [
+    "C074",
+    "C169"
+   ]
+  },
+  {
+   "row": 28,
+   "dimension": "D3",
+   "current": 1,
+   "proposed": null,
+   "reason": "Jones calls renal correction poorly validated and Holt mentions renal impairment only as a confounder of urine C-peptide:creatinine; neither is guidance on interpreting plasma C-peptide in CKD. Score 1 stands.",
+   "quote": "The latter may be confounded by impaired renal function.",
+   "confidence": "medium",
+   "papers": [
+    "C026",
+    "C074"
+   ]
+  },
+  {
+   "row": 28,
+   "dimension": "D2",
+   "current": 2,
+   "proposed": null,
+   "reason": "Jones (review) gives mechanism and says correction is poorly validated; no outcome data. Confirms 2 or lower.",
+   "quote": "Mechanisms to correct for renal function when measuring C-peptide have been suggested, but are currently poorly validated",
+   "confidence": "medium",
+   "papers": [
+    "C026"
+   ]
+  },
+  {
+   "row": 28,
+   "dimension": "D4",
+   "current": 2,
+   "proposed": null,
+   "reason": "Jones: assay standardisation not achieved; renal clearance is an interpretive confounder no assay removes. Confirms 2.",
+   "quote": "Optimal standardization of C-peptide measurement between laboratories has yet to be achieved",
+   "confidence": "medium",
+   "papers": [
+    "C026"
+   ]
+  },
+  {
+   "row": 28,
+   "dimension": "D1",
+   "current": 1,
+   "proposed": null,
+   "reason": "Jones frames renal clearance as a caution on interpretation; no decision depends on an adjusted value. Confirms 1.",
+   "quote": "C-peptide levels must be interpreted with caution in renal failure.",
+   "confidence": "medium",
+   "papers": [
+    "C026"
+   ]
+  },
+  {
+   "row": 28,
+   "dimension": "D5",
+   "current": 1,
+   "proposed": null,
+   "reason": "Jones states no validated correction method exists. Nothing on who owns interpretation; judgement stands.",
+   "quote": "Mechanisms to correct for renal function when measuring C-peptide have been suggested, but are currently poorly validated",
+   "confidence": "low",
+   "papers": [
+    "C026"
+   ]
+  },
+  {
+   "row": 28,
+   "dimension": "S",
+   "current": 2,
+   "proposed": null,
+   "reason": "V18 cites Jones for S, but Jones has no passage on secretagogue hypoglycaemia in kidney disease (not found in the text); S rests on judgement, keep 2 at low confidence.",
+   "quote": "blood levels of C-peptide can be falsely elevated where there is renal impairment",
+   "confidence": "low",
+   "papers": [
+    "C026"
+   ]
+  },
+  {
+   "row": 31,
+   "dimension": "D1",
+   "current": 4,
+   "proposed": null,
+   "reason": "Holt and ADA 2026 full text require the test before insulin discontinuation: supports 4 under clarification 15.",
+   "quote": "this test should always be performed prior to insulin discontinuation to exclude severe insulin deficiency.",
+   "confidence": "high",
+   "papers": [
+    "C074",
+    "C127"
+   ]
+  },
+  {
+   "row": 31,
+   "dimension": "D2",
+   "current": 3,
+   "proposed": null,
+   "reason": "Jones notes withdrawal studies are short, use lax glycaemic targets and seldom include low C-peptide groups; Holt is consensus opinion. 3 holds for the exclude-deficiency step; the V2 note that stopping insulin itself would be 2 is consistent.",
+   "quote": "It should be noted these studies have a number of limitations",
+   "confidence": "medium",
+   "papers": [
+    "C026",
+    "C074"
+   ]
+  },
+  {
+   "row": 31,
+   "dimension": "D3",
+   "current": 4,
+   "proposed": null,
+   "reason": "ADA 2026 Figure 2.1 note and Holt text carry 'must' before insulin discontinuation: 4 stands for the decision named, with the caveat that it is a figure note in ADA 2026.",
+   "quote": "Where a person is insulin treated, C-peptide must be measured prior to insulin discontinuation to exclude severe insulin deficiency.",
+   "confidence": "high",
+   "papers": [
+    "C127",
+    "C074"
+   ]
+  },
+  {
+   "row": 31,
+   "dimension": "D5",
+   "current": 3,
+   "proposed": null,
+   "reason": "Single random sample within 5 h of eating, no timed protocol (Holt); confirms 3.",
+   "quote": "a random C-peptide measurement (with concurrent glucose) within 5 h of eating is recommended",
+   "confidence": "medium",
+   "papers": [
+    "C074",
+    "C026"
+   ]
+  },
+  {
+   "row": 31,
+   "dimension": "D6",
+   "current": 2,
+   "proposed": null,
+   "reason": "False-high risk (renal impairment per Jones; sulfonylurea and too-soon testing per other sources) can lead to wrongful insulin withdrawal; Holt's 2-week and glucose rules mitigate. Confirms 2.",
+   "quote": "Do not test C-peptide within 2 weeks of a hyperglycaemic emergency.",
+   "confidence": "low",
+   "papers": [
+    "C074",
+    "C026"
+   ]
+  },
+  {
+   "row": 31,
+   "dimension": "S",
+   "current": 1,
+   "proposed": null,
+   "reason": "Jones says the role is mainly to exclude absolute deficiency before attempted withdrawal; default of continuing insulin makes marginal harm low. Confirms 1.",
+   "quote": "to exclude absolute insulin deficiency prior to attempted insulin withdrawal",
+   "confidence": "low",
+   "papers": [
+    "C026"
+   ]
+  },
+  {
+   "row": 31,
+   "dimension": "D8",
+   "current": 2,
+   "proposed": null,
+   "reason": "C239 uses C-peptide as the outcome, so no incremental value is measured: 2 stands.",
+   "quote": "direct measurement of endogenous insulin secretion in long-standing insulin-treated diabetes",
+   "confidence": "medium",
+   "papers": [
+    "C239",
+    "C026"
+   ]
+  },
+  {
+   "row": 32,
+   "dimension": "D1",
+   "current": 3,
+   "proposed": null,
+   "reason": "Jones: preserved C-peptide after ketoacidosis with negative antibodies predicts freedom from insulin at 1 year in about 50% (one mostly non-Caucasian cohort). Confirms 3.",
+   "quote": "are likely to retain endogenous β-cell function at 1 year",
+   "confidence": "medium",
+   "papers": [
+    "C026"
+   ]
+  },
+  {
+   "row": 32,
+   "dimension": "D2",
+   "current": 2,
+   "proposed": null,
+   "reason": "Jones cites a single cohort for ketosis-prone diabetes; no trial. Confirms 2.",
+   "quote": "are likely to retain endogenous β-cell function at 1 year",
+   "confidence": "medium",
+   "papers": [
+    "C026"
+   ]
+  },
+  {
+   "row": 32,
+   "dimension": "D3",
+   "current": 2,
+   "proposed": null,
+   "reason": "ADA 2026: ketosis-prone insulin need is 'generally transient' and the general C-peptide note includes the 2-week rule after a hyperglycaemic emergency; no KPD-specific C-peptide recommendation. 2 holds.",
+   "quote": "Do not test C-peptide within 2 weeks of a hyperglycemic emergency.",
+   "confidence": "medium",
+   "papers": [
+    "C127",
+    "C074"
+   ]
+  },
+  {
+   "row": 32,
+   "dimension": "D5",
+   "current": 2,
+   "proposed": null,
+   "reason": "Jones gives fasting or glucagon-stimulated thresholds after resolution of ketoacidosis; specialist follow-up. Confirms 2.",
+   "quote": "on resolution of ketoacidosis",
+   "confidence": "low",
+   "papers": [
+    "C026"
+   ]
+  },
+  {
+   "row": 7,
+   "dimension": "D3",
+   "current": 3,
+   "proposed": null,
+   "reason": "Holt full text says those at increased risk should have antibody and C-peptide testing and genetic testing only if antibodies are negative and non-fasting C-peptide >200 pmol/L: C-peptide named as a gate, supporting the corrected 3. ADA 2026 2.29b alone does not name C-peptide (would be 2). Stands.",
+   "quote": "Molecular genetic testing should only be considered if the antibodies are negative and non-fasting C-peptide is >200 pmol/l",
+   "confidence": "medium",
+   "papers": [
+    "C074",
+    "C127"
+   ]
+  },
+  {
+   "row": 47,
+   "dimension": "D3",
+   "current": 1,
+   "proposed": null,
+   "reason": "C127: LADA term acceptable, no C-peptide criterion. Confirms 1.",
+   "quote": "Use of the term LADA is common and acceptable in clinical practice",
+   "confidence": "high",
+   "papers": [
+    "C127"
+   ]
+  },
+  {
+   "row": 49,
+   "dimension": "D3",
+   "current": 1,
+   "proposed": null,
+   "reason": "C127 recommendations 2.6-2.8b use autoantibodies and glucose staging; C-peptide not named. Confirms 1.",
+   "quote": "should be referred to a specialized center for metabolic staging",
+   "confidence": "high",
+   "papers": [
+    "C127"
+   ]
+  }
+ ],
+ "claim_issues": [
+  {
+   "where": "usecases-verified.md row 6 and U4:D5 reason (renal impairment as an invalid condition for the test)",
+   "issue": "Holt 2021 names impaired renal function only as a confounder of the urinary C-peptide:creatinine ratio; the plasma-test caveat comes from Jones and Hattersley 2013, not Holt or ADA 2026 Figure 2.1.",
+   "proposed_wording": "Plasma C-peptide can be falsely raised in renal impairment (Jones and Hattersley 2013; correction methods poorly validated); Holt 2021 mentions renal impairment only as a confounder of the urinary C-peptide:creatinine ratio.",
+   "paper": "C074",
+   "claim_ids": []
+  },
+  {
+   "where": "usecases-verified.md rows 6 and 31 (ADA Standards 2026 as a second consensus source)",
+   "issue": "In C127 the C-peptide advice is a footnote to Figure 2.1 (a copy of the Holt note), not a numbered, graded recommendation; the numbered recommendation 2.5 only says to classify.",
+   "proposed_wording": "ADA Standards 2026 section 2 carries the Holt C-peptide advice in a note to Figure 2.1 (ungraded; based on White European data).",
+   "paper": "C127",
+   "claim_ids": []
+  },
+  {
+   "where": "usecases-verified.md row 6 (6.8% reclassified, abstract level)",
+   "issue": "Full text adds that reclassification followed antibody, genetic-risk-score and sequencing work-up after a C-peptide trigger on Abbott (about 200 pmol/L; Roche equivalent 269), in a clinic of people who all started insulin within 3 years; 13 (1.5%) stayed off insulin, 16 (1.9%) added co-therapy, none had severe hypoglycaemia or DKA; yield rose with age at diagnosis (2.5%, 15.4%, 25.9%). The 11% in Holt is not printed in this paper.",
+   "proposed_wording": "In one uncontrolled Edinburgh clinic (859 tested), random C-peptide followed by antibody, genetic-score and genetic testing reclassified 58 people (6.8%); 13 (1.5%) stopped insulin.",
+   "paper": "C169",
+   "claim_ids": []
+  },
+  {
+   "where": "usecases/scoring/U3.json row 6 D4 and V3.json row 31 D4",
+   "issue": "'Inter-system CV 24.5%, 5.7% after recalibration' is not in the local C080 text (partial text, no abstract or tables). The text gives C-peptide inter-system CV 20.1-31.6% and says low-concentration samples were worst, which conflicts with V3's statement that the low end is less affected (Jones 2013 says disagreement is mainly at higher concentrations).",
+   "proposed_wording": "In a survey of 94 Chinese laboratories, C-peptide inter-measurement-system CV was 20.1-31.6% (worst at the lowest concentration) against a desirable 8.3%; after recalibration all met 8.3%.",
+   "paper": "C080",
+   "claim_ids": []
+  },
+  {
+   "where": "usecases/scoring/V7.json row 6 D7 (14% misclassified used as an anchor)",
+   "issue": "C216 says 14% applies to insulin-treated adults with 5+ years' diabetes who volunteered in UK centres and would be much lower across all diabetes; 'misclassified' is against a UK algorithm, with 66% labelled T1D but insulin-producing and 34% labelled T2D but deficient.",
+   "proposed_wording": "In 601 UK insulin-treated adults (5+ years, volunteers), 14% were misclassified by UK clinical criteria against urinary C-peptide:creatinine; the authors expect a lower rate across all diabetes.",
+   "paper": "C216",
+   "claim_ids": []
+  },
+  {
+   "where": "usecases/scoring/U1.json row 6 D7",
+   "issue": "C231 gives 1.3 million adults with T1D in 2016 (self-report plus insulin use), not 1.8 million (that is a later CDC figure); the 5.8%/90.9%/3.3% split is confirmed. Self-reported T1D without insulin was reclassified to T2D, so the survey cannot size an uncertain-type pool.",
+   "proposed_wording": "NHIS 2016: 5.8% of diagnosed diabetes was type 1 (1.3 million adults), 90.9% type 2; type is self-reported and unvalidated.",
+   "paper": "C231",
+   "claim_ids": []
+  },
+  {
+   "where": "usecases-verified.md row 28 (Jones 2013)",
+   "issue": "Jones is a narrative review and supports the renal-clearance caveat (about half cleared; poorly validated correction) but has no statement on secretagogue hypoglycaemia in kidney disease.",
+   "proposed_wording": "Jones and Hattersley 2013 (review): about half of C-peptide is cleared by the kidney, so blood values are falsely raised in renal impairment; correction methods are poorly validated.",
+   "paper": "C026",
+   "claim_ids": []
+  }
+ ],
+ "notes": "Only two proposals change a score (row 6 D4 and row 31 D4, 3 to 2, low confidence, together); everything else is confirmation or null. Row 6 and 31 path to viability: an agreed assay calibration is supported as a small assay-type step by C080 (recalibration removed most C-peptide discordance); row 28 path unchanged. Assumptions: the lost symbol in the C169 threshold ('C-peptide 200 pmol/L') is read as 'at or above'; C169 is an accepted-manuscript PDF extraction. C080 text lacks abstract and tables, so 24.5% and 5.7% were not verified. Several score entries (U4/U5 D5 and D6 ordering and consequence claims, V18 D5) rest on judgement; the texts do not say who orders the test beyond C169 (hospital diabetes clinic). Current scores were read from the entries in usecases/scoring/*.json; entries with original_score and correction were taken at their corrected value. Tool calls used: 30."
+}
