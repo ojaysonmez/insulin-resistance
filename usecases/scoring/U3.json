@@ -5,7 +5,7 @@
   {
    "row": 6,
    "dimension": "D4",
-   "score": 3,
+   "score": 2,
    "reason": "Random plasma C-peptide with a concurrent glucose is a routine automated immunoassay on all major platforms with no timed protocol, and the decision thresholds (80, 200, 600 pmol/L) are wide relative to assay disagreement. It is not fully standardized (inter-system CV 24.5% in one 94-laboratory Chinese survey, 5.7% after recalibration; a JCTLM-listed ID-LC-MS/MS procedure and WHO reagent 13/146 exist), so it sits on the 2/3 boundary; scored 3 because the values are used far from the cutoffs for most patients and sampling is simple. Measure type: C-peptide, random (non-fasting) with concurrent glucose.",
    "sources": [
     "PMID 35177563 DOI 10.3343/alm.2022.42.4.428 abstract and project-file full-text read",
@@ -21,7 +21,8 @@
    "confidence": "low",
    "origin": "both",
    "original_confidence": "medium",
-   "correction": "Revised 2026-10-20 after the pilot skeptic review (U6). Score kept at 3, confidence lowered to low. The sentence that decision values are far from the cutoffs for most patients has no cited distribution and is withdrawn. The assay evidence is a Chinese survey (PMID 35177563: inter-system CV 24.5%, 5.7% after recalibration), not US platforms (anchor 20: non-US data, say so; under the strict reading of anchors 2 and 3 a 2 is arguable)."
+   "correction": "Revised 2026-10-20 after the pilot skeptic review (U6). Score kept at 3, confidence lowered to low. The sentence that decision values are far from the cutoffs for most patients has no cited distribution and is withdrawn. The assay evidence is a Chinese survey (PMID 35177563: inter-system CV 24.5%, 5.7% after recalibration), not US platforms (anchor 20: non-US data, say so; under the strict reading of anchors 2 and 3 a 2 is arguable). | Full-text review FT12 (2026-10-26; skeptic-checked in usecases/scoring/ft-review/skeptic-FT11-12.md; applied with the user's approval): D4 3 to 2. Zhou 2022 (PMID 35177563, DOI 10.3343/alm.2022.42.4.428; full text, partial): C-peptide inter-system CV 20.1 to 31.6% against a desirable 8.3%, worst at the lowest concentrations; Jones 2013 (PMID 23413806, DOI 10.1111/dme.12159) says standardisation is not achieved; consistent with rows 28 and 29 already at 2.",
+   "original_score": 3
   },
   {
    "row": 5,

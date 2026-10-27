@@ -4,3 +4,4 @@ date	window	records	candidates	entries	urgent	subagent_tokens	subagent_tool_uses
 2026-10-24	auto (2026-10-22 to 2026-10-24; manual run in cloud session)	15	8	0	no	41426	4	54096	none (registry stale: NCT05760339)
 2026-10-24	auto (2026-10-22 to 2026-10-24; second run same day, cloud)	0	0	0	no	0	0	0	none (no triage needed; candidates in 2026-10-24b-candidates.md)
 2026-10-26	auto (2026-10-23 to 2026-10-26)	12	6	1	no	45596	5	69702	none (registry stale: NCT05760339)
+2026-10-27	auto (2026-10-25 to 2026-10-27)	6	2	0	no	40332	5	44390	none (registry stale: NCT05760339)

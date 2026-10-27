@@ -1,2 +1,11 @@
 date	unit	row	dimension	current	proposed	action	note
 2026-10-26	FT1	8	D8	3	2	applied (manual, user-approved)	Greenbaum 2008 full text: fasting vs stimulated C-peptide
+2026-10-26	FT11	1	D1	3	4	applied (manual, user-approved; skeptic-accepted)	Cryer 2009 (PMID 19088155, DOI 10.1210/jc.2008-1410; full text): the diagnosis of an insulinoma requires convincing clinical and biochemical evidence before any
+2026-10-26	FT11	1	D3	3	4	applied (manual, user-approved; skeptic-accepted)	Same Cryer 2009 sentence; D1 and D3 rest on one sentence and move together (low to medium confidence).
+2026-10-26	FT12	6	D4	3	2	applied (manual, user-approved; skeptic-accepted)	Zhou 2022 (PMID 35177563, DOI 10.3343/alm.2022.42.4.428; full text, partial): C-peptide inter-system CV 20.1 to 31.6% against a desirable 8.3%, worst at the low
+2026-10-26	FT12	31	D4	3	2	applied (manual, user-approved; skeptic-accepted)	Same assay-standardisation evidence as row 6 D4 (Zhou 2022, PMID 35177563; Jones 2013, PMID 23413806); consistent with rows 28 and 29 at 2.
+2026-10-26	FT14	10	D1	3	4	applied (manual, user-approved; skeptic-accepted)	Rickels 2018, Igls (PMID 29453879, DOI 10.1111/tri.13138; full text): every non-failed graft tier requires documentation of a C-peptide increase over the pretra
+2026-10-26	FT15	24	D3	3	2	applied (manual, user-approved; skeptic-accepted)	De Leon 2024 hyperinsulinism guideline (PMID 37454648, DOI 10.1159/000531766; full text without tables): Rec 1.4 names the condition but no test (clarification 
+2026-10-26	FT15	24	D8	3	2	applied (manual, user-approved; skeptic-accepted)	De Leon 2024 (PMID 37454648): Rec 1.1 says to focus on markers of insulin action, not the insulin level itself, when markers disagree; no reclassification data 
+2026-10-26	FT16	32	D8	3	2	applied (manual, user-approved; skeptic-accepted)	Balasubramanyam 2006 (PMID 17130187, DOI 10.2337/dc06-0749; full text): the AUC 0.972 is partly circular (the outcome is the same glucagon C-peptide test that d
+2026-10-26	FT17	47	D3	1	3	applied (manual, user-approved; skeptic-accepted)	Buzzetti 2020 LADA consensus (PMID 32847960, DOI 10.2337/dbi20-0017; full text): international expert panel recommends C-peptide in autoantibody-positive patien
