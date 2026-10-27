@@ -269,6 +269,8 @@ Format: date, time (if known), what changed, why.
 
 - Open decisions closed (2026-10-27, user: go by your recommendations; D-49 in `DECISIONS.md`): row 28 D2 lowered from 2 to 1 (low confidence; original 2 kept with a correction note in `V15.json`); row 48 D2 stays 1; clarification 5 stays, so rows 5, 11, 13 and 45 D3 stay at 2. `tools/scoring_aggregate.py` re-run: row 28 moves down the tier C list (still tier C); no other tier changed. Nothing committed.
 
+- Weight sensitivity check added (2026-10-27, user: ok, start with the weight sensitivity check): new `tools/scoring_weight_sensitivity.py` (no model; reads the same score files as `scoring_aggregate.py`) writes `usecases/scoring/weight-sensitivity.md`: 5,000 uniform random weight sets, 5,000 weight sets centred on the default (Dirichlet, concentration 20), and a one-bin D7 shift, per row. Result: only rows 1 (tier A), 33 and 27 hold their default tier in 90% or more of the uniform draws; row 1 is the only tier A row that never leaves A. Nothing in `ranking.md` or any score changed. Nothing committed.
+
 ## Not yet run or done
 - Specialty reviewers: done for all six specialties (D-44, D-45). Still to do: the summary editor pass on `summary.md`, and scoring row 50 if wanted.
 - Use-case scoring: done (stage 1 to 3, 32 rows ranked, row 48 unranked, 18 rows not candidates; D-32 to D-46). Scores stay preliminary judgements.
