@@ -28,11 +28,11 @@ Tiers (D-39): A composite 0.60 or more, B 0.50 to 0.59, C 0.40 to 0.49, D below 
 | 20 | 14 | routine care | 0.25 | 0.62 | 1.00 | 0.12 | 0.469 | C | no | weak evidence (D2 of 0 or 1) | A liver-outcome cohort or trial showing that HOMA-IR in suspected MASLD changes risk stratification beyond FIB-4, elastography and glucose/HbA1c (delta C-statistic, NRI) and then changes management, plus a standardised insulin assay. (evidence, medium); Trial or cohort showing HOMA-IR or OGTT-derived estimates change management beyond FIB-4 and elastography, with an agreed assay cut-off. (evidence, large) |
 | 21 | 50 | routine care, specialist outpatient | 0.33 | 0.56 | 0.80 | 0.25 | 0.468 | C | no | weak evidence (D2 of 0 or 1) | A cohort of SGA-treated children and youth testing whether fasting insulin adds to fasting glucose, HbA1c and BMI for detecting dysglycaemia on OGTT (incremental detection or reclassification), followed by a US guideline position (evidence, medium) |
 | 22 | 22 | inpatient or procedural | 0.58 | 0.31 | 0.20 | 0.62 | 0.455 | C | no | - | Comparison of hepatic venous insulin gradient sampling with GLP-1 receptor PET/CT in imaging-negative insulinoma, to define when sampling is still needed. (evidence, medium); A head-to-head cohort of calcium-stimulated venous sampling against exendin PET/CT in negative-imaging patients, with surgical cure as the outcome. (evidence, medium) |
-| 23 | 28 | specialist outpatient | 0.33 | 0.38 | 0.60 | 0.50 | 0.440 | C | no | - | External validation of eGFR-adjusted serum C-peptide or UCPCR cutoffs for insulin deficiency, with a guideline statement on CKD interpretation. (evidence, small); Validated eGFR-adjusted C-peptide or UCPCR thresholds in a US CKD cohort, and a guideline note. (evidence, medium) |
-| 24 | 23 | specialist outpatient | 0.42 | 0.31 | 0.40 | 0.62 | 0.439 | C | no | - | Prospective validation of OGTT or mixed-meal insulin/glucose criteria for insulinoma against reactive hypoglycaemia, and a guideline recommendation for one standard protocol. (evidence, medium); A prospective study of OGTT or mixed-meal insulin and C-peptide ratios in patients with postprandial symptoms and a negative fast, with an external validation cohort. (evidence, medium) |
-| 25 | 46 | inpatient or procedural | 0.50 | 0.50 | 0.40 | 0.25 | 0.425 | C | no | weak evidence (D2 of 0 or 1) | Non-Japanese cohort validating the C-peptide criterion with sensitivity and specificity against clinical course, and adoption by a US or international body. (guideline, medium); Accuracy study of the C-peptide cut-offs in a non-Japanese population and a Western guideline recognising fulminant T1D. (evidence, medium) |
-| 26 | 25 | inpatient or procedural | 0.50 | 0.31 | 0.20 | 0.62 | 0.422 | C | no | weak evidence (D2 of 0 or 1) | A case series or registry giving the rate of antibody-caused spurious hyperinsulinism in neonates and the effect of PEG/platform checks on work-up (evidence, medium); A validated neonatal workflow: small-volume PEG recovery with defined cutoffs and an interference screen for IgM and non-IAA antibodies. (workflow, medium); Validation of an interpretation algorithm with PEG precipitation in infant hypoglycaemia on a larger cohort, and a routine PEG assay. (assay, medium) |
-| 27 | 11 | specialist outpatient | 0.33 | 0.53 | 0.60 | 0.25 | 0.413 | C | no | - | Head-to-head external validation showing C-peptide adds to duration, HbA1c and medications in the same cohort, with a durable-remission outcome (evidence, small); Harmonized C-peptide results (common calibrator or LC-MS/MS reference) and a validated cutoff across US assays. (assay, medium); Analysis of whether C-peptide adds to diabetes duration, BMI and age in remission prediction, with external validation of a cutoff on a standard assay. (evidence, small) |
+| 23 | 23 | specialist outpatient | 0.42 | 0.31 | 0.40 | 0.62 | 0.439 | C | no | - | Prospective validation of OGTT or mixed-meal insulin/glucose criteria for insulinoma against reactive hypoglycaemia, and a guideline recommendation for one standard protocol. (evidence, medium); A prospective study of OGTT or mixed-meal insulin and C-peptide ratios in patients with postprandial symptoms and a negative fast, with an external validation cohort. (evidence, medium) |
+| 24 | 46 | inpatient or procedural | 0.50 | 0.50 | 0.40 | 0.25 | 0.425 | C | no | weak evidence (D2 of 0 or 1) | Non-Japanese cohort validating the C-peptide criterion with sensitivity and specificity against clinical course, and adoption by a US or international body. (guideline, medium); Accuracy study of the C-peptide cut-offs in a non-Japanese population and a Western guideline recognising fulminant T1D. (evidence, medium) |
+| 25 | 25 | inpatient or procedural | 0.50 | 0.31 | 0.20 | 0.62 | 0.422 | C | no | weak evidence (D2 of 0 or 1) | A case series or registry giving the rate of antibody-caused spurious hyperinsulinism in neonates and the effect of PEG/platform checks on work-up (evidence, medium); A validated neonatal workflow: small-volume PEG recovery with defined cutoffs and an interference screen for IgM and non-IAA antibodies. (workflow, medium); Validation of an interpretation algorithm with PEG precipitation in infant hypoglycaemia on a larger cohort, and a routine PEG assay. (assay, medium) |
+| 26 | 11 | specialist outpatient | 0.33 | 0.53 | 0.60 | 0.25 | 0.413 | C | no | - | Head-to-head external validation showing C-peptide adds to duration, HbA1c and medications in the same cohort, with a durable-remission outcome (evidence, small); Harmonized C-peptide results (common calibrator or LC-MS/MS reference) and a validated cutoff across US assays. (assay, medium); Analysis of whether C-peptide adds to diabetes duration, BMI and age in remission prediction, with external validation of a cutoff on a standard assay. (evidence, small) |
+| 27 | 28 | specialist outpatient | 0.25 | 0.38 | 0.60 | 0.50 | 0.406 | C | no | weak evidence (D2 of 0 or 1) | External validation of eGFR-adjusted serum C-peptide or UCPCR cutoffs for insulin deficiency, with a guideline statement on CKD interpretation. (evidence, small); Validated eGFR-adjusted C-peptide or UCPCR thresholds in a US CKD cohort, and a guideline note. (evidence, medium) |
 | 28 | 45 | routine care | 0.08 | 0.62 | 1.00 | 0.12 | 0.402 | C | no | weak evidence (D2 of 0 or 1) | Cohort analysis in women with prior GDM testing whether HOMA-IR adds to OGTT/A1C for conversion to diabetes, plus a trial of IR-guided prevention (evidence, medium); Evidence that fasting insulin or HOMA-IR adds to OGTT and A1C after gestational diabetes, using a standardized insulin assay. (evidence, medium); A cohort showing postpartum fasting insulin or HOMA-IR adds to OGTT, A1C and BMI for predicting type 2 diabetes after gestational diabetes, and a trial choosing prevention by it. (evidence, large) |
 | 29 | 49 | specialist outpatient | 0.42 | 0.38 | 0.40 | 0.38 | 0.398 | D | no | - | Incremental-value analysis (C-statistic, NRI, calibration, decision curve) of OGTT C-peptide over antibody count, OGTT glucose, age and BMI in existing TrialNet data, with a reduced-sample protocol. (evidence, small); External validation of Index60 or AUC C-peptide thresholds with a test of incremental value over OGTT glucose, autoantibody number and age, and a reduced-sample protocol. (evidence, medium); External validation of simplified C-peptide scores in a large antibody-positive cohort, plus a trial showing C-peptide-guided monitoring changes outcomes such as ketoacidosis at onset. (evidence, large) |
 | 30 | 9 | specialist outpatient | 0.33 | 0.50 | 0.20 | 0.50 | 0.358 | D | no | weak evidence (D2 of 0 or 1) | Prospective cohort in post-pancreatitis or pancreatectomy diabetes giving C-peptide cutoffs (fasting and stimulated) for insulin deficiency and TPIAT outcome, validated externally. (evidence, medium); Published C-peptide cut-offs for type 3c and for TPIAT outcome prediction, validated prospectively. (evidence, medium) |
@@ -60,7 +60,7 @@ Tiers (D-39): A composite 0.60 or more, B 0.50 to 0.59, C 0.40 to 0.49, D below 
 | 20 | 11 | 9 | 12 | 8 |
 | 21 | 12 | 11 | 13 | 11 |
 | 24 | 13 | 15 | 9 | 21 |
-| 32 | 14 | 20 | 10 | 20 |
+| 32 | 14 | 20 | 10 | 19 |
 | 12 | 15 | 16 | 15 | 13 |
 | 3 | 16 | 12 | 18 | 15 |
 | 13 | 17 | 18 | 20 | 12 |
@@ -69,14 +69,14 @@ Tiers (D-39): A composite 0.60 or more, B 0.50 to 0.59, C 0.40 to 0.49, D below 
 | 14 | 20 | 17 | 28 | 6 |
 | 50 | 21 | 19 | 23 | 16 |
 | 22 | 22 | 25 | 14 | 26 |
-| 28 | 23 | 23 | 29 | 19 |
-| 23 | 24 | 24 | 24 | 23 |
-| 46 | 25 | 27 | 19 | 29 |
-| 25 | 26 | 28 | 21 | 27 |
-| 11 | 27 | 26 | 27 | 25 |
+| 23 | 23 | 23 | 24 | 23 |
+| 46 | 24 | 27 | 19 | 29 |
+| 25 | 25 | 28 | 21 | 27 |
+| 11 | 26 | 26 | 27 | 25 |
+| 28 | 27 | 24 | 30 | 20 |
 | 45 | 28 | 22 | 32 | 17 |
 | 49 | 29 | 29 | 25 | 28 |
-| 9 | 30 | 30 | 30 | 30 |
+| 9 | 30 | 30 | 29 | 30 |
 | 8 | 31 | 32 | 22 | 32 |
 | 27 | 32 | 31 | 31 | 31 |
 
