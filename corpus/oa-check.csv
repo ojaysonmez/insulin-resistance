@@ -76,58 +76,59 @@ C179,38185282,10.1016/j.cca.2023.117753,2026-10-26,2026-10-26,closed,,,,,,inacce
 C183,39808164,10.1158/1055-9965.epi-24-1304,2026-10-26,2026-10-26,closed,,,,,,inaccessible,tried by hand: not reachable or not found online; request through a colleague
 C185,40916719,10.1002/ejhf.70034,2026-10-26,2026-10-26,hybrid,https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/ejhf.70034,journal,publishedVersion,cc-by-nc,https://research.rug.nl/files/1480350958/European_J_of_Heart_Fail_-_2025_-_Ostrominski_-_Finerenone_according_to_insulin_resistance_in_heart_failure_Insights_from.pdf | https://hal.univ-lorraine.fr/hal-05247281,refused,HTTP 403 at https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/ejhf.7; HTTP 403 at https://research.rug.nl/files/1480350958/European_J_of_Heart; <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self- at https://hal.univ-l
 C186,41086125,10.2337/dc25-1029,2026-10-26,2026-10-26,green,https://discovery.dundee.ac.uk/ws/files/162843924/Monogenic_diabetes_calculator_with_biomarkers.pdf,repository,submittedVersion,cc-by,https://figshare.com/articles/journal_contribution/Updating_a_clinical_prediction_model_for_identifying_monogenic_diabetes_to_include_both_clinical_features_and_biomarkers_/30471293,downloaded,PDF from https://discovery.dundee.ac.uk/ws/files/162843924/Monogenic_diabetes_calculator_with_bioma (522 KB)
-C190,1677058,10.1016/s0025-6196(12)62083-7,2026-10-26,2026-10-26,closed,,,,,,supply-pdf,
-C191,12882860,10.2337/diacare.26.8.2345,2026-10-26,2026-10-26,closed,,,,,,supply-pdf,
-C192,15026285,10.1016/j.cccn.2003.12.023,2026-10-26,2026-10-26,closed,,,,,,supply-pdf,
-C193,15049960,10.1111/j.1365-2265.2004.01989.x,2026-10-26,2026-10-26,closed,,,,,,supply-pdf,
-C194,16306343,10.2337/diabetes.54.suppl_2.s68,2026-10-26,2026-10-26,closed,,,,,,supply-pdf,
-C195,17332147,10.1373/clinchem.2006.081570,2026-10-26,2026-10-26,closed,,,,,,supply-pdf,
-C196,18420730,10.1373/clinchem.2007.101287,2026-10-26,2026-10-26,closed,,,,,,supply-pdf,
-C197,19141587,10.1210/jc.2008-2031,2026-10-26,2026-10-26,closed,,,,,,supply-pdf,
-C198,22285385,10.1016/j.clinbiochem.2012.01.012,2026-10-26,2026-10-26,closed,,,,,,supply-pdf,
-C200,22767115,10.1007/978-1-61779-934-1_13,2026-10-26,2026-10-26,closed,,,,,,supply-pdf,
-C203,23999222,10.1016/j.ijpharm.2013.08.028,2026-10-26,2026-10-26,closed,,,,,,supply-pdf,
-C206,24993381,10.1159/000360810,2026-10-26,2026-10-26,bronze,https://karger.com/ced/article-pdf/37/6/393/2352278/000360810.pdf,journal,publishedVersion,,,open,
-C207,25319986,10.1309/ajcpx56jqbjhubgj,2026-10-26,2026-10-26,bronze,https://academic.oup.com/ajcp/article-pdf/142/5/689/24998667/ajcpath142-0689.pdf,journal,publishedVersion,,,open,
-C211,26132724,10.1001/jamapsychiatry.2015.0500,2026-10-26,2026-10-26,bronze,https://jamanetwork.com/journals/jamapsychiatry/articlepdf/2339963/yoi150021.pdf,journal,publishedVersion,,,open,
-C212,26490124,10.1016/j.jpeds.2015.09.045,2026-10-26,2026-10-26,closed,,,,,,supply-pdf,
-C213,26577133,10.1007/s40618-015-0406-4,2026-10-26,2026-10-26,closed,,,,,,supply-pdf,
-C214,26790752,10.1016/j.cca.2016.01.007,2026-10-26,2026-10-26,closed,,,,,,supply-pdf,
-C217,27209421,10.1007/s00787-016-0866-x,2026-10-26,2026-10-26,closed,,,,,,supply-pdf,
-C222,27613582,10.1212/wnl.0000000000003200,2026-10-26,2026-10-26,closed,,,,,,supply-pdf,
-C232,30365409,10.1097/pec.0000000000001634,2026-10-26,2026-10-26,closed,,,,,,supply-pdf,
-C234,30946239,10.1097/mpa.0000000000001275,2026-10-26,2026-10-26,closed,,,,,,supply-pdf,
-C235,30978327,10.1016/j.cca.2019.04.057,2026-10-26,2026-10-26,closed,,,,,,supply-pdf,
-C237,31369096,10.1210/jc.2019-01204,2026-10-26,2026-10-26,closed,,,,,,supply-pdf,
-C243,31858390,10.1007/s12020-019-02155-w,2026-10-26,2026-10-26,closed,,,,,,supply-pdf,
-C249,32529519,10.1007/s10620-020-06379-z,2026-10-26,2026-10-26,closed,,,,,,supply-pdf,
-C254,33333040,10.1016/j.cca.2020.12.012,2026-10-26,2026-10-26,closed,,,,,,supply-pdf,
-C257,34413033,10.1136/bcr-2021-242447,2026-10-26,2026-10-26,green,https://www.ncbi.nlm.nih.gov/pmc/articles/8378376,repository,submittedVersion,,http://hdl.handle.net/1959.4/unsworks_77447,open,
-C258,34431750,10.1080/08039488.2021.1968489,2026-10-26,2026-10-26,hybrid,https://doi.org/10.1080/08039488.2021.1968489,journal,publishedVersion,cc-by-nc-nd,https://trepo.tuni.fi/handle/10024/221193,open,
-C259,34593612,10.2337/dci21-0043,2026-10-26,2026-10-26,bronze,https://diabetesjournals.org/care/article-pdf/44/11/2589/642921/dci210043.pdf,journal,publishedVersion,,https://pure.amsterdamumc.nl/en/publications/fd15b111-125a-4e89-946f-0fc039f91e98 | https://research.vumc.nl/en/publications/6a9d0aa5-93d8-495c-82f1-27ce5ad935f5 | https://ruj.uj.edu.pl/xmlui/handle/item/284137,open,
-C261,34996067,10.1093/jalm/jfab113,2026-10-26,2026-10-26,bronze,https://academic.oup.com/jalm/article-pdf/7/1/197/42083994/jfab113.pdf,journal,publishedVersion,,,open,
-C265,36280539,10.1016/j.soard.2022.08.013,2026-10-26,2026-10-26,hybrid,http://www.soard.org/article/S1550728922006414/pdf,journal,publishedVersion,cc-by-nc-nd,,open,
-C268,36368478,10.1016/j.jclinepi.2022.10.022,2026-10-26,2026-10-26,hybrid,http://www.jclinepi.com/article/S0895435622002724/pdf,journal,publishedVersion,cc-by,https://rde.dspace-express.com/handle/11287/622742,open,
-C270,36655570,10.1161/str.0000000000000418,2026-10-26,2026-10-26,bronze,https://www.ahajournals.org/doi/pdf/10.1161/STR.0000000000000418,journal,publishedVersion,,,open,
-C276,36965853,10.1016/j.ando.2023.03.015,2026-10-26,2026-10-26,bronze,https://doi.org/10.1016/j.ando.2023.03.015,journal,acceptedVersion,,https://hal.science/hal-04046517v1/file/2023%20Galvez%20et%20al.%2C%20Factitious%20hypoglycemia.pdf,open,
-C277,37141618,10.1515/cclm-2023-0215,2026-10-26,2026-10-26,closed,,,,,,supply-pdf,
-C280,37409980,10.1515/cclm-2023-0339,2026-10-26,2026-10-26,hybrid,https://www.degruyter.com/document/doi/10.1515/cclm-2023-0339/pdf,journal,publishedVersion,cc-by,,open,
-C281,37861217,10.1056/nejmoa2308743,2026-10-26,2026-10-26,green,http://hdl.handle.net/2078.1/282893,repository,submittedVersion,other-oa,,open,
-C282,37888894,10.1002/dmrr.3743,2026-10-26,2026-10-26,hybrid,https://doi.org/10.1002/dmrr.3743,journal,publishedVersion,cc-by,,open,
-C284,38448343,10.1016/j.soard.2024.01.012,2026-10-26,2026-10-26,hybrid,https://doi.org/10.1016/j.soard.2024.01.012,journal,publishedVersion,cc-by,,open,
-C287,38766827,10.2174/0118715303322628240509094537,2026-10-26,2026-10-26,closed,,,,,,supply-pdf,
-C294,39360602,10.1111/cen.15137,2026-10-26,2026-10-26,closed,,,,,,supply-pdf,
-C301,39840847,10.1097/xcs.0000000000001294,2026-10-26,2026-10-26,closed,,,,,,supply-pdf,
-C304,40174859,10.1016/j.ando.2025.101730,2026-10-26,2026-10-26,hybrid,https://doi.org/10.1016/j.ando.2025.101730,journal,publishedVersion,cc-by-nc,https://hal.sorbonne-universite.fr/hal-05019681,open,
-C305,40328026,10.1016/j.compbiomed.2025.110314,2026-10-26,2026-10-26,closed,,,,,,supply-pdf,
-C307,40518063,10.1016/j.cgh.2025.05.011,2026-10-26,2026-10-26,hybrid,https://doi.org/10.1016/j.cgh.2025.05.011,journal,publishedVersion,cc-by,https://pure.amsterdamumc.nl/ws/files/155854947/Alt-is-an-effective-screening-tool-for-advanced-metabolic-dysfunction-associated-steatotic-liver-disease-in-children-wit.pdf,open,
-C314,41152002,10.1093/ejendo/lvaf214,2026-10-26,2026-10-26,hybrid,https://doi.org/10.1093/ejendo/lvaf214,journal,publishedVersion,cc-by-nc,http://publicatio.bibl.u-szeged.hu/38374/1/Ceccarini.pdf | https://pure.amsterdamumc.nl/files/163846927/Epidemiological-and-clinical-data-from-the-european-lipodystrophy-registry.pdf | https://academic.oup.com/ejendo/article-pdf/193/5/585/65007397/lvaf214.pdf,open,
-C318,41966914,10.1016/j.soard.2026.03.013,2026-10-26,2026-10-26,closed,,,,,,supply-pdf,
-C319,42138126,10.1210/clinem/dgag200,2026-10-26,2026-10-26,closed,,,,,,supply-pdf,
-C320,42143009,10.1016/j.disamonth.2026.102146,2026-10-26,2026-10-26,closed,,,,,,supply-pdf,
-C325,42276696,10.1016/j.ajt.2026.05.720,2026-10-26,2026-10-26,bronze,https://www.amjtransplant.org/article/S1600-6135(26)00986-X/pdf,journal,publishedVersion,,,open,
-C327,42396735,10.1515/jpem-2026-0122,2026-10-26,2026-10-26,closed,,,,,,supply-pdf,
-C330,42720752,10.1007/s00125-026-06849-5,2026-10-26,2026-10-26,hybrid,https://link.springer.com/content/pdf/10.1007/s00125-026-06849-5.pdf,journal,publishedVersion,cc-by,,open,
-C332,42810406,10.1055/a-2961-6659,2026-10-26,2026-10-26,closed,,,,,,supply-pdf,
-C333,42849663,10.1016/j.eprac.2026.09.119,2026-10-26,2026-10-26,closed,,,,,,supply-pdf,
-C334,42893716,10.1016/j.cca.2026.122908,2026-10-26,2026-10-26,closed,,,,,,supply-pdf,
+C190,1677058,10.1016/s0025-6196(12)62083-7,2026-10-26,2026-10-26,closed,,,,,,downloaded,stored locally
+C191,12882860,10.2337/diacare.26.8.2345,2026-10-26,2026-10-26,closed,,,,,,downloaded,stored locally
+C192,15026285,10.1016/j.cccn.2003.12.023,2026-10-26,2026-10-26,closed,,,,,,downloaded,stored locally
+C193,15049960,10.1111/j.1365-2265.2004.01989.x,2026-10-26,2026-10-26,closed,,,,,,downloaded,stored locally
+C194,16306343,10.2337/diabetes.54.suppl_2.s68,2026-10-26,2026-10-26,closed,,,,,,downloaded,stored locally
+C195,17332147,10.1373/clinchem.2006.081570,2026-10-26,2026-10-26,closed,,,,,,downloaded,stored locally
+C196,18420730,10.1373/clinchem.2007.101287,2026-10-26,2026-10-26,closed,,,,,,downloaded,stored locally
+C197,19141587,10.1210/jc.2008-2031,2026-10-26,2026-10-26,closed,,,,,,downloaded,stored locally
+C198,22285385,10.1016/j.clinbiochem.2012.01.012,2026-10-26,2026-10-26,closed,,,,,,downloaded,stored locally
+C200,22767115,10.1007/978-1-61779-934-1_13,2026-10-26,2026-10-26,closed,,,,,,downloaded,stored locally
+C202,23865326,,,,,,,,,,inaccessible,tried by hand: not reachable or not found online; request through a colleague
+C203,23999222,10.1016/j.ijpharm.2013.08.028,2026-10-26,2026-10-26,closed,,,,,,downloaded,stored locally
+C206,24993381,10.1159/000360810,2026-10-26,2026-10-26,bronze,https://karger.com/ced/article-pdf/37/6/393/2352278/000360810.pdf,journal,publishedVersion,,,downloaded,stored locally
+C207,25319986,10.1309/ajcpx56jqbjhubgj,2026-10-26,2026-10-26,bronze,https://academic.oup.com/ajcp/article-pdf/142/5/689/24998667/ajcpath142-0689.pdf,journal,publishedVersion,,,downloaded,stored locally
+C211,26132724,10.1001/jamapsychiatry.2015.0500,2026-10-26,2026-10-26,bronze,https://jamanetwork.com/journals/jamapsychiatry/articlepdf/2339963/yoi150021.pdf,journal,publishedVersion,,,downloaded,stored locally
+C212,26490124,10.1016/j.jpeds.2015.09.045,2026-10-26,2026-10-26,closed,,,,,,downloaded,stored locally
+C213,26577133,10.1007/s40618-015-0406-4,2026-10-26,2026-10-26,closed,,,,,,downloaded,stored locally
+C214,26790752,10.1016/j.cca.2016.01.007,2026-10-26,2026-10-26,closed,,,,,,downloaded,stored locally
+C217,27209421,10.1007/s00787-016-0866-x,2026-10-26,2026-10-26,closed,,,,,,downloaded,stored locally
+C222,27613582,10.1212/wnl.0000000000003200,2026-10-26,2026-10-26,closed,,,,,,downloaded,stored locally
+C232,30365409,10.1097/pec.0000000000001634,2026-10-26,2026-10-26,closed,,,,,,downloaded,stored locally
+C234,30946239,10.1097/mpa.0000000000001275,2026-10-26,2026-10-26,closed,,,,,,downloaded,stored locally
+C235,30978327,10.1016/j.cca.2019.04.057,2026-10-26,2026-10-26,closed,,,,,,downloaded,stored locally
+C237,31369096,10.1210/jc.2019-01204,2026-10-26,2026-10-26,closed,,,,,,downloaded,stored locally
+C243,31858390,10.1007/s12020-019-02155-w,2026-10-26,2026-10-26,closed,,,,,,downloaded,stored locally
+C249,32529519,10.1007/s10620-020-06379-z,2026-10-26,2026-10-26,closed,,,,,,downloaded,stored locally
+C254,33333040,10.1016/j.cca.2020.12.012,2026-10-26,2026-10-26,closed,,,,,,downloaded,stored locally
+C257,34413033,10.1136/bcr-2021-242447,2026-10-26,2026-10-26,green,https://www.ncbi.nlm.nih.gov/pmc/articles/8378376,repository,submittedVersion,,http://hdl.handle.net/1959.4/unsworks_77447,downloaded,stored locally
+C258,34431750,10.1080/08039488.2021.1968489,2026-10-26,2026-10-26,hybrid,https://doi.org/10.1080/08039488.2021.1968489,journal,publishedVersion,cc-by-nc-nd,https://trepo.tuni.fi/handle/10024/221193,downloaded,stored locally
+C259,34593612,10.2337/dci21-0043,2026-10-26,2026-10-26,bronze,https://diabetesjournals.org/care/article-pdf/44/11/2589/642921/dci210043.pdf,journal,publishedVersion,,https://pure.amsterdamumc.nl/en/publications/fd15b111-125a-4e89-946f-0fc039f91e98 | https://research.vumc.nl/en/publications/6a9d0aa5-93d8-495c-82f1-27ce5ad935f5 | https://ruj.uj.edu.pl/xmlui/handle/item/284137,downloaded,stored locally
+C261,34996067,10.1093/jalm/jfab113,2026-10-26,2026-10-26,bronze,https://academic.oup.com/jalm/article-pdf/7/1/197/42083994/jfab113.pdf,journal,publishedVersion,,,downloaded,stored locally
+C265,36280539,10.1016/j.soard.2022.08.013,2026-10-26,2026-10-26,hybrid,http://www.soard.org/article/S1550728922006414/pdf,journal,publishedVersion,cc-by-nc-nd,,downloaded,stored locally
+C268,36368478,10.1016/j.jclinepi.2022.10.022,2026-10-26,2026-10-26,hybrid,http://www.jclinepi.com/article/S0895435622002724/pdf,journal,publishedVersion,cc-by,https://rde.dspace-express.com/handle/11287/622742,downloaded,stored locally
+C270,36655570,10.1161/str.0000000000000418,2026-10-26,2026-10-26,bronze,https://www.ahajournals.org/doi/pdf/10.1161/STR.0000000000000418,journal,publishedVersion,,,downloaded,stored locally
+C276,36965853,10.1016/j.ando.2023.03.015,2026-10-26,2026-10-26,bronze,https://doi.org/10.1016/j.ando.2023.03.015,journal,acceptedVersion,,https://hal.science/hal-04046517v1/file/2023%20Galvez%20et%20al.%2C%20Factitious%20hypoglycemia.pdf,downloaded,stored locally
+C277,37141618,10.1515/cclm-2023-0215,2026-10-26,2026-10-26,closed,,,,,,inaccessible,tried by hand: not reachable or not found online; request through a colleague
+C280,37409980,10.1515/cclm-2023-0339,2026-10-26,2026-10-26,hybrid,https://www.degruyter.com/document/doi/10.1515/cclm-2023-0339/pdf,journal,publishedVersion,cc-by,,downloaded,stored locally
+C281,37861217,10.1056/nejmoa2308743,2026-10-26,2026-10-26,green,http://hdl.handle.net/2078.1/282893,repository,submittedVersion,other-oa,,downloaded,stored locally
+C282,37888894,10.1002/dmrr.3743,2026-10-26,2026-10-26,hybrid,https://doi.org/10.1002/dmrr.3743,journal,publishedVersion,cc-by,,downloaded,stored locally
+C284,38448343,10.1016/j.soard.2024.01.012,2026-10-26,2026-10-26,hybrid,https://doi.org/10.1016/j.soard.2024.01.012,journal,publishedVersion,cc-by,,downloaded,stored locally
+C287,38766827,10.2174/0118715303322628240509094537,2026-10-26,2026-10-26,closed,,,,,,inaccessible,tried by hand: not reachable or not found online; request through a colleague
+C294,39360602,10.1111/cen.15137,2026-10-26,2026-10-26,closed,,,,,,inaccessible,tried by hand: not reachable or not found online; request through a colleague
+C301,39840847,10.1097/xcs.0000000000001294,2026-10-26,2026-10-26,closed,,,,,,inaccessible,tried by hand: not reachable or not found online; request through a colleague
+C304,40174859,10.1016/j.ando.2025.101730,2026-10-26,2026-10-26,hybrid,https://doi.org/10.1016/j.ando.2025.101730,journal,publishedVersion,cc-by-nc,https://hal.sorbonne-universite.fr/hal-05019681,downloaded,stored locally
+C305,40328026,10.1016/j.compbiomed.2025.110314,2026-10-26,2026-10-26,closed,,,,,,inaccessible,tried by hand: not reachable or not found online; request through a colleague
+C307,40518063,10.1016/j.cgh.2025.05.011,2026-10-26,2026-10-26,hybrid,https://doi.org/10.1016/j.cgh.2025.05.011,journal,publishedVersion,cc-by,https://pure.amsterdamumc.nl/ws/files/155854947/Alt-is-an-effective-screening-tool-for-advanced-metabolic-dysfunction-associated-steatotic-liver-disease-in-children-wit.pdf,downloaded,stored locally
+C314,41152002,10.1093/ejendo/lvaf214,2026-10-26,2026-10-26,hybrid,https://doi.org/10.1093/ejendo/lvaf214,journal,publishedVersion,cc-by-nc,http://publicatio.bibl.u-szeged.hu/38374/1/Ceccarini.pdf | https://pure.amsterdamumc.nl/files/163846927/Epidemiological-and-clinical-data-from-the-european-lipodystrophy-registry.pdf | https://academic.oup.com/ejendo/article-pdf/193/5/585/65007397/lvaf214.pdf,downloaded,stored locally
+C318,41966914,10.1016/j.soard.2026.03.013,2026-10-26,2026-10-26,closed,,,,,,inaccessible,tried by hand: not reachable or not found online; request through a colleague
+C319,42138126,10.1210/clinem/dgag200,2026-10-26,2026-10-26,closed,,,,,,inaccessible,tried by hand: not reachable or not found online; request through a colleague
+C320,42143009,10.1016/j.disamonth.2026.102146,2026-10-26,2026-10-26,closed,,,,,,inaccessible,tried by hand: not reachable or not found online; request through a colleague
+C325,42276696,10.1016/j.ajt.2026.05.720,2026-10-26,2026-10-26,bronze,https://www.amjtransplant.org/article/S1600-6135(26)00986-X/pdf,journal,publishedVersion,,,downloaded,stored locally
+C327,42396735,10.1515/jpem-2026-0122,2026-10-26,2026-10-26,closed,,,,,,inaccessible,tried by hand: not reachable or not found online; request through a colleague
+C330,42720752,10.1007/s00125-026-06849-5,2026-10-26,2026-10-26,hybrid,https://link.springer.com/content/pdf/10.1007/s00125-026-06849-5.pdf,journal,publishedVersion,cc-by,,downloaded,stored locally
+C332,42810406,10.1055/a-2961-6659,2026-10-26,2026-10-26,closed,,,,,,inaccessible,tried by hand: not reachable or not found online; request through a colleague
+C333,42849663,10.1016/j.eprac.2026.09.119,2026-10-26,2026-10-26,closed,,,,,,inaccessible,tried by hand: not reachable or not found online; request through a colleague
+C334,42893716,10.1016/j.cca.2026.122908,2026-10-26,2026-10-26,closed,,,,,,inaccessible,tried by hand: not reachable or not found online; request through a colleague
