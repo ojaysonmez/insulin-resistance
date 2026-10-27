@@ -74,7 +74,7 @@ Flow: searcher, then analysts, then skeptic and steelman, then a merged conclusi
 | `summary.md` | Start here: a one-page brief of the viable uses of insulin and C-peptide measurement and what would unlock more (preliminary; scores not yet run) |
 | `summary-detailed.md` | The longer plain-language summary with a glossary and a trace of each sentence to its source (not yet skeptic-reviewed) |
 | `merged-conclusion.md` | The main findings, with confidence figures, caveats and open gaps |
-| `usecases-verified.md` | Uses of insulin and C-peptide measurement by patient type (50 rows) |
+| `usecases-verified.md` | Uses of insulin and C-peptide measurement by patient type (54 rows) |
 | `CHANGELOG.md` | What changed, when and why |
 | `DECISIONS.md` | Why the project is the way it is: each decision, the alternatives and who decided |
 | `HANDOFF.md` | Where things stand and the next step, for picking the work up in a new session |
