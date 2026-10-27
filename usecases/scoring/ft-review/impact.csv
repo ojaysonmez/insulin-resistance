@@ -155,6 +155,16 @@ FT3,C137,42649063,adds nuance,21,D2,0,"partial (PDF extraction; table and figure
 FT30,C208,25458644,confirms,13,,0,good
 FT30,C219,27465265,adds nuance,13,"D2,D8",0,good
 FT30,C316,41358882,confirms,5,D3,0,good
+FT31,C190,1677058,adds nuance,"1,22,23,24",D7,0,good
+FT31,C194,16306343,adds nuance,47,D7,0,good
+FT31,C196,18420730,adds nuance,"31,47,49",D4,1,"good (about 2,700 words; the whole 4-page paper is present, so the short length is not a loss)"
+FT31,C197,19141587,adds nuance,"1,22,23,24",D7,0,good
+FT31,C235,30978327,adds nuance,6,D4,0,"good (about 2,500 words; the whole short report is present, so brevity is not a loss; the unit symbol is lost in the extraction and read here as ug/L)"
+FT31,C259,34593612,confirms,31,D2,0,good
+FT31,C268,36368478,adds nuance,6,D8,0,good
+FT32,C276,36965853,confirms,2,D4,0,"good (about 2,400 words; the whole short article including references; some accented characters garbled, nothing relevant lost)"
+FT32,C282,37888894,adds nuance,32,D7,0,"good (about 6,800 words; two-column layout interleaves lines; tables and supplementary figures not in the text)"
+FT32,C325,42276696,adds nuance,10,D7,0,"good (about 13,000 words; registry chapter with figure captions; two-column interleaving)"
 FT4,C113,39013634,adds nuance,18,,0,good
 FT4,C117,39963280,adds nuance,18,,0,good
 FT4,C018,19937225,confirms,45,,0,good

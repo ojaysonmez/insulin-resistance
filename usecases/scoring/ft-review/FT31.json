@@ -1,0 +1,245 @@
+{
+ "unit": "FT31",
+ "role": "full-text reader",
+ "papers": [
+  {
+   "id": "C190",
+   "pmid": "1677058",
+   "doi": "10.1016/s0025-6196(12)62083-7",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "V8 took 4 insulinomas per million per year and MEN1 7.6% from a journal-page excerpt and used them as the base of the D7 chains for rows 1, 22, 23 and 24.",
+   "full_text_shows": "Both figures are in the full text (224 surgically proven cases 1927-1986; 17 with MEN1 = 7.6%). The incidence rests on only 8 Olmsted County residents (none before 1960; 4 cases 1967-1976, 3 cases 1977-1986); the stable-period rate is 0.396 per 100,000 person-years with a 95% CI of 0.16 to 0.82, i.e. 1.6 to 8.2 per million, and only histologically confirmed cases were counted. Applied to about 340 million residents [recall] the CI gives about 540 to 2,800 new insulinomas per year against the point 1,360, a width the V8 reasons do not carry.",
+   "verdict": "adds nuance",
+   "quote": "0.396 per 100,000 person-years in Olmsted County (95% confidence interval, 0.16 to 0.82)",
+   "key_numbers": "224 cases; 8 Olmsted County cases; 0.396 per 100,000 person-years (CI 0.16-0.82) for 1967-1986; MEN1 17/224 (7.6%); malignant 13/224 (5.8%); median age 47 (range 8-82); recurrence 5-7% (no MEN1) vs 21% (MEN1) at 10-20 years. The age-by-sex Table 1 is garbled in the extraction, so no paediatric count could be read.",
+   "role_in_work": "Source of the population incidence of insulinoma used as the epidemiological base for D7 (rows 1, 22, 23, 24).",
+   "design": "Retrospective population-based incidence study plus single-institution cohort with Kaplan-Meier follow-up.",
+   "population_and_size": "224 histologically confirmed insulinoma patients at the Mayo Clinic, 1927-1986; 8 Olmsted County, Minnesota residents for incidence.",
+   "measure_type": "Not a test study: describes patients with symptomatic hypoglycaemia and histologically proven insulinoma; no insulin or C-peptide threshold is evaluated.",
+   "assay_or_platform": "Not applicable.",
+   "quality_note": "Old data (1927-1986), small numerator, one mostly White Midwestern county, tertiary-centre cohort with referral bias acknowledged by the authors. The 4 per million figure is a point value with a wide CI. Funding: NIH grant; no commercial conflict stated.",
+   "rows_affected": [
+    1,
+    22,
+    23,
+    24
+   ],
+   "dimensions_affected": [
+    "D7"
+   ]
+  },
+  {
+   "id": "C194",
+   "pmid": "16306343",
+   "doi": "10.2337/diabetes.54.suppl_2.s68",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "V1 used it (as an excerpt) for LADA prevalence, including '10.2% in African-Americans in one older report', as support for the LADA share of adult-onset diabetes in row 47 D7.",
+   "full_text_shows": "The text gives about 10% LADA among incident type 2-phenotype diabetes aged 40-75 and among non-insulin-requiring patients over 35 (Swedish and UKPDS data), 25% below age 35, with LADA defined as type 2 phenotype plus islet antibodies. The word 'African' and the figure 10.2 are not in the stored text (searched), and no US data appear. It also reports a 12-year Swedish follow-up where two or three antibodies predicted severe C-peptide loss within 5 years, using IV glucose plus glucagon stimulation in small groups (11 antibody-positive type 2 patients in the figure) and fasting C-peptide in the rest.",
+   "verdict": "adds nuance",
+   "quote": "No comparison between oral versus intravenous responses of insulin secretion in LADA patients has been published",
+   "key_numbers": "LADA about 10% of incident adult diabetes aged 40-75; 25% under age 35 at diagnosis; beta-cell failure (unmeasurable fasting C-peptide) up to 12 years; 233 adult-onset patients followed since 1985-1987; ICA+ type 2 group n=11 and type 1 n=17 in the stimulation figure.",
+   "role_in_work": "Background for the prevalence share in the D7 chain of row 47 and for the idea that C-peptide tracks progression of slowly progressive autoimmune diabetes.",
+   "design": "Narrative symposium review (unrestricted educational grant from Servier) summarising the authors' own prospective cohort.",
+   "population_and_size": "Swedish adult-onset diabetes cohort (233 followed); US data absent.",
+   "measure_type": "Stimulated C-peptide (IV glucose plus 1 mg IV glucagon) and fasting C-peptide; not a post-meal or mixed-meal test (the paper says oral or meal responses are unknown).",
+   "assay_or_platform": "Not stated in the text.",
+   "quality_note": "Narrative review, 2005, old definition (ICA-based), small stimulation subgroups, non-US population. Prevalence about 10% is consistent with the 2-12% range V1 used, so the D7 chain is not weakened by this paper.",
+   "rows_affected": [
+    47
+   ],
+   "dimensions_affected": [
+    "D7"
+   ]
+  },
+  {
+   "id": "C196",
+   "pmid": "18420730",
+   "doi": "10.1373/clinchem.2007.101287",
+   "text_quality": "good (about 2,700 words; the whole 4-page paper is present, so the short length is not a loss)",
+   "read_level": "full text",
+   "relied_on": "V3 assumed (from the abstract) that a reference measurement system exists, that methods disagree mainly at higher concentrations, and that the low end near 0.2 nmol/L is less affected; rows 31, 47 and 49 D4.",
+   "full_text_shows": "The study tested 40 serum samples from 24 healthy non-diabetic volunteers (fasting and 60 min after a standard liquid meal) in 15 laboratories using 9 methods; the calibrators covered only 0.43-1.81 nmol/L by LC-MS, so values near 0.2 nmol/L (0.6 ng/mL) or 80 pmol/L were not tested. Before normalisation the laboratory means differed (least-squares means 1.55-1.95 against a reference mean of 0.99 nmol/L, P<0.0001); after normalisation to LC-MS they agreed (0.93-1.02, P=0.24). The reference LC-MS method is a research-laboratory method validated only for EDTA plasma with aprotinin, and the authors say comparability between laboratories must be addressed before multicentre trials.",
+   "verdict": "adds nuance",
+   "quote": "improved the comparability among laboratories",
+   "key_numbers": "Within-run CV 2-10%; between-run CV 2-18% (two methods above 15%, others 5-11%); best methods CV 4% or less (Fujirebio Lumipulse, PerkinElmer TRFIA, Tosoh AIA-600II); pre-normalisation means 1.55-1.95 vs 0.99 nmol/L; 1 ug/L = 0.331 nmol/L. 0.6 ng/mL = 0.2 nmol/L, below the tested 0.43 nmol/L (calculated).",
+   "role_in_work": "Assay-standardisation evidence for D4 (random, fasting and post-load C-peptide, rows 31, 47, 49).",
+   "design": "Inter-laboratory method-comparison and calibration study (CDC and NIDDK funded; no financial disclosures).",
+   "population_and_size": "40 serum samples from 24 healthy volunteers; 15 laboratories in 5 countries, 17 laboratory/method combinations (text also says 18 laboratories; internal inconsistency).",
+   "measure_type": "C-peptide (fasting and 60-min post-meal samples from healthy people, serum); no patient with diabetes or hypoglycaemia.",
+   "assay_or_platform": "9 routine methods of 2007 (RIA, Immulite 2000, Tosoh AIA-600II, Lumipulse, PerkinElmer FIA, Dako ELISA, in-house assay); reference 2-D LC-MS isotope dilution (Missouri/Einstein). No current US platform can be identified from the text.",
+   "quality_note": "Healthy-volunteer samples, pre-2008 assays, calibrator range excludes the low decision thresholds. It supports 'not standardised in routine use, fixable by calibration', not any statement about the low end.",
+   "rows_affected": [
+    31,
+    47,
+    49
+   ],
+   "dimensions_affected": [
+    "D4"
+   ]
+  },
+  {
+   "id": "C197",
+   "pmid": "19141587",
+   "doi": "10.1210/jc.2008-2031",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "V8 used '6% postprandial-only of 237' (abstract) for row 23 and the general insulinoma work-up context for row 1.",
+   "full_text_shows": "The 6% is 13 of 214 patients with a reliable symptom history (not of 237). Of those 13, 8 had biochemical confirmation (mixed-meal test or labs during a spontaneous postprandial episode); 3 had a negative 72-h fast and 5 a positive one, so fast-negative postprandial-only insulinoma was about 3 of 214 (1.4%) at Mayo. Noninvasive imaging found the tumour in 71-80% of patients (CT 55%, US 61%, MRI 42% accuracy), EUS/SACST were used in 21-39% of patients in 1993-2007, and MEN1 was 14 of 237 (6%). Diagnostic accuracy was tested in 69 insulinoma patients against 20 women with a normal 72-h fast.",
+   "verdict": "adds nuance",
+   "quote": "Hypoglycemia was reported solely in the fasting state in 73%, the fasting and postprandial state in 21%, and exclusively postprandially in 6%.",
+   "key_numbers": "237 insulinomas 1987-2007; postprandial-only 13/214 (6%), fasting plus postprandial 21%, fasting only 73%; sensitivity/specificity insulin >=3 uU/mL 93%/95%, C-peptide >=0.6 ng/mL 100%/60%, proinsulin >=5 pmol/L 100%/68%, BOHB 100%/100%, glucagon response >=25 mg/dL 91%/95% (controls: glucose <=60 mg/dL at end of fast); blind exploration 26, 21, 2, 0% by quartile.",
+   "role_in_work": "Supports row 1 (accuracy of the hypoglycaemia work-up panel) and gives the postprandial-presentation and imaging-failure shares used in the D7 chains of rows 1, 22, 23.",
+   "design": "Retrospective single-institution cohort of consecutive surgically confirmed insulinoma, with a diagnostic-accuracy sub-study (1999-2007).",
+   "population_and_size": "237 adults (57% women), 214 with a reliable history; 69 with complete biochemical data; 20 control women.",
+   "measure_type": "Fasting or spontaneous-hypoglycaemia insulin, C-peptide, proinsulin, BOHB and IV glucagon response (secretion measures); mixed-meal testing only mentioned for some postprandial patients.",
+   "assay_or_platform": "Not stated in the text (Mayo laboratory assays).",
+   "quality_note": "Single tertiary centre, retrospective; controls are healthy women at the end of a 72-h fast (not patients with other causes of hypoglycaemia), so spectrum bias is likely; authors have nothing to declare. Thresholds are Mayo's own, so assay-specific.",
+   "rows_affected": [
+    1,
+    22,
+    23,
+    24
+   ],
+   "dimensions_affected": [
+    "D7"
+   ]
+  },
+  {
+   "id": "C235",
+   "pmid": "30978327",
+   "doi": "10.1016/j.cca.2019.04.057",
+   "text_quality": "good (about 2,500 words; the whole short report is present, so brevity is not a loss; the unit symbol is lost in the extraction and read here as ug/L)",
+   "read_level": "full text",
+   "relied_on": "U3 cited the abstract as one of several assay-harmonisation papers for row 6 D4, current score 2 after FT12.",
+   "full_text_shows": "Single-centre Italian evaluation of the Mindray CL-2000i (precision CVs 1.4-4.65% for C-peptide and 1.2-2.3% for insulin) and 165 sera compared with Tosoh AIA-CL2400 and Siemens Immulite 2000. C-peptide Bland-Altman bias was -4.0% to -8.6% across the three pairs (Mindray vs Tosoh -4.0%, inside a 7.1% desirable bias), but Passing-Bablok gave an intercept of -0.23 ug/L (CI -0.34 to -0.14) for that pair even though the text lists it as an exception to 'constant and proportional bias', and manufacturer reference intervals for C-peptide (1-4.8, 0.74-3.18, 0.9-7.1 ug/L) overlap only partly. The authors conclude harmonisation is still needed.",
+   "verdict": "adds nuance",
+   "quote": "Overall, results emphasize the need for standardization/harmonization efforts for both C-peptide and IRI measurement.",
+   "key_numbers": "C-peptide repeatability 1.67% and 1.35%, intermediate 2.58% and 4.65% (level 2 above the manufacturer's claim); 165 sera, 0.25-16.4 ug/L (about 83-5,430 pmol/L, calculated); Mindray vs Tosoh slope 1.01 (0.98-1.04), intercept -0.23; insulin bias +4.77% to -7.33%.",
+   "role_in_work": "Platform-agreement evidence for D4 of random C-peptide (row 6).",
+   "design": "Analytical precision (CLSI EP15-A3) and method-comparison study.",
+   "population_and_size": "165 serum specimens; 15 replicates per control level over 5 days.",
+   "measure_type": "C-peptide and immunoreactive insulin, random serum samples (laboratory comparison only; no clinical decision studied).",
+   "assay_or_platform": "Mindray CL-2000i, Tosoh AIA-CL2400, Siemens Immulite 2000 (WHO 84/510 and 66/304 traceability claimed).",
+   "quality_note": "One laboratory, Italy, no patient outcomes; US regulatory status of the Mindray system is not stated in the paper. Agreement among three platforms is better than the Chinese multi-system survey (inter-system CV 20-32%) behind the FT12 change, but the intercept inconsistency and different reference intervals keep it from showing standardisation at the 80 and 200 pmol/L thresholds.",
+   "rows_affected": [
+    6
+   ],
+   "dimensions_affected": [
+    "D4"
+   ]
+  },
+  {
+   "id": "C259",
+   "pmid": "34593612",
+   "doi": "10.2337/dci21-0043",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "V2 took the C-peptide content of this ADA/EASD consensus from the project file (abstract-level) to support D2 = 3 for random C-peptide classification and the insulin-discontinuation check in row 31.",
+   "full_text_shows": "The consensus text recommends a random C-peptide with concurrent glucose within 5 h of eating beyond 3 years where type is uncertain and, for insulin-treated people, before discontinuing insulin. The flowchart footnote gives thresholds (>=600 pmol/L: circumstances do not matter; <80 pmol/L: no repeat; 200-600 indeterminate; not within 2 weeks of a hyperglycaemic emergency) and the flowchart is stated to be based on White European data. The report says its recommendations are the authors' consensus opinion, shows no evidence grading, and the cited support for replacing insulin is small older work (refs 27-30) plus the 11% reclassification statement from ref 31 (the Edinburgh cohort reports 6.8%).",
+   "verdict": "confirms",
+   "quote": "represent the consensus opinion of the authors",
+   "key_numbers": "Reclassification 'in 11% of those with adult-onset diabetes (31)'; thresholds 80, 200, 600 pmol/L; test within 5 h of eating; no test within 2 weeks of DKA; plasma preferred to urine C-peptide:creatinine (urine value <0.2 nmol/mmol defines severe deficiency).",
+   "role_in_work": "Consensus text for classification and the never-stop-insulin-without-C-peptide rule (rows 6, 31).",
+   "design": "ADA/EASD consensus report by a writing group (no systematic review or grading described).",
+   "population_and_size": "Adults with type 1 diabetes; classification section based on mostly White European data.",
+   "measure_type": "Random (non-fasting) plasma C-peptide with concurrent glucose; said to replace a formal stimulation test for classification.",
+   "assay_or_platform": "Not specified; thresholds are assay-agnostic.",
+   "quality_note": "Consensus opinion; several authors report industry ties (insulin and device companies), none related to C-peptide assays. Same content as the Diabetologia-indexed copy (PMID 34590174) read in FT12.",
+   "rows_affected": [
+    31
+   ],
+   "dimensions_affected": [
+    "D2"
+   ]
+  },
+  {
+   "id": "C268",
+   "pmid": "36368478",
+   "doi": "10.1016/j.jclinepi.2022.10.022",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "U2 used the abstract's '68-88% accuracy vs C-peptide or genetic definitions' to argue that clinical features only approximate insulin deficiency, supporting row 6 D8 = 3.",
+   "full_text_shows": "The paper ranks 10 published approaches for labelling insulin-treated diabetes in research datasets that lack biomarkers; C-peptide (non-fasting <200 pmol/L at more than 3 years, DARE, n=1,296 insulin-treated) and a type 1 genetic risk score method (UK Biobank, n=26,399) are the reference standards, never a tested comparator. Best approaches reached 85-88% accuracy; crude single cut-offs about 68-82%. The aim is to help researchers, not clinicians, and one author helped develop two of the evaluated models.",
+   "verdict": "adds nuance",
+   "quote": "classifying insulin-treated diabetes within research datasets without measured classification biomarkers",
+   "key_numbers": "Accuracy 71-88% (UKBB), 68-88% (DARE); best 87% (UKBB) and 85-88% (DARE); age-at-diagnosis cut-off alone 82% (UKBB) and 79% (DARE); 99% White in DARE; C-peptide measured on stored non-fasting EDTA samples.",
+   "role_in_work": "Comparator evidence (clinical classification vs a C-peptide-defined reference) for D8 of row 6.",
+   "design": "Cross-sectional accuracy comparison in two cohorts.",
+   "population_and_size": "UK Biobank 16,619 White European (3,534 insulin-treated); DARE 1,296 insulin-treated adults with diabetes duration over 3 years.",
+   "measure_type": "Non-fasting random C-peptide used as the reference standard (DARE); no C-peptide test is evaluated.",
+   "assay_or_platform": "C-peptide assay not named in the main text (given in the electronic supplement).",
+   "quality_note": "Reference-standard circularity: the study cannot show what C-peptide adds, only how close clinical labels come to a C-peptide definition. One declared conflict (model co-developer). UK, mostly White.",
+   "rows_affected": [
+    6
+   ],
+   "dimensions_affected": [
+    "D8"
+   ]
+  }
+ ],
+ "proposals": [
+  {
+   "row": 47,
+   "dimension": "D4",
+   "current": 3,
+   "proposed": 2,
+   "reason": "C196 shows routine C-peptide methods read about 1.5 to 2 times the LC-MS reference mean before calibration (least-squares means 1.55-1.95 vs 0.99 nmol/L) and that comparability must still be addressed; the cutoff in row 47 (0.6 ng/mL = 0.2 nmol/L, calculated) lies below the tested range (0.43-1.81 nmol/L), so nothing in the paper shows it transfers. Under clarification 25 (score the assay only) that is 'unstandardised', and rows 6 and 31 (same assay) were already moved to 2 in FT12. Boundary call; the paper is 2008 healthy-volunteer data, not current US platforms.",
+   "quote": "improved the comparability among laboratories",
+   "confidence": "low",
+   "papers": [
+    "C196"
+   ]
+  }
+ ],
+ "claim_issues": [
+  {
+   "where": "usecases/scoring/V3.json row 31 D4 reason (and the row 47 and 49 D4 reasons citing the same abstract)",
+   "issue": "The reason says the low end near 0.2 nmol/L is less affected than the high end and that a reference measurement system exists. C196 tested calibrators of 0.43-1.81 nmol/L only and used a research-laboratory LC-MS method, so it gives no information about the low end or about a listed reference system. (The row 31 score is already 2 after FT12.)",
+   "proposed_wording": "Little 2008 (healthy-volunteer samples, 0.43-1.81 nmol/L, 2007 methods) found routine C-peptide methods disagreed before calibration, mostly at higher concentrations, and agreed after calibration to an LC-MS reference; concentrations near 0.2 nmol/L were not tested.",
+   "paper": "C196",
+   "claim_ids": []
+  },
+  {
+   "where": "usecases/scoring/V1.json row 47 D7 sources and reason ('10.2% in African-Americans in one older report', attributed to PMID 16306343)",
+   "issue": "The stored full text of Stenstrom 2005 contains no African-American figure and no 10.2% (searched); it gives about 10% for Swedish and UKPDS type 2-phenotype patients and 25% under age 35. The attribution is not supported by this paper.",
+   "proposed_wording": "Stenstrom 2005 (PMID 16306343, narrative review of Swedish and UKPDS data) gives LADA as about 10% of adult-onset type 2-phenotype diabetes and 25% below age 35; no US figure is given in this paper.",
+   "paper": "C194",
+   "claim_ids": []
+  },
+  {
+   "where": "usecases/scoring/V8.json row 23 D7 reason ('6% of 237 surgically confirmed insulinomas at Mayo') and usecases-verified.md row 1 (Placzkowski 6% and 73%)",
+   "issue": "The percentages are of the 214 patients with a reliable history, not of 237 (13/214 postprandial-only, 157/214 fasting-only). Of the 13, only 3 had a negative 72-h fast and 5 a positive one, so postprandial-only presentation does not mean a negative fast. The row 23 tested-count chain does not rest on the 6%, so the score is unaffected.",
+   "proposed_wording": "Placzkowski 2009 (PMID 19141587): of 214 patients with a reliable history, 73% had fasting-only, 21% fasting plus postprandial and 6% (13) postprandial-only symptoms; 3 of the 13 had a negative 72-h fast.",
+   "paper": "C197",
+   "claim_ids": [
+    "UC-01"
+   ]
+  },
+  {
+   "where": "usecases/scoring/V8.json rows 1, 22, 23 D7 reasons (4 per million per year)",
+   "issue": "The incidence is stated as a point value; the paper's own 95% CI for 1967-1986 is 0.16-0.82 per 100,000 person-years (8 cases in one county). The chains give ranges from the yield shares only, so the stated ranges understate the uncertainty (bins stay 3, 1 and 2 at the point estimates).",
+   "proposed_wording": "Incidence 4 per million person-years (Olmsted County 1967-1986; 0.396 per 100,000, 95% CI 0.16-0.82, from 8 cases; Service 1991).",
+   "paper": "C190",
+   "claim_ids": []
+  },
+  {
+   "where": "usecases/scoring/V8.json row 22 D7 reason (conventional imaging negative in under 5 to 10%, ENETS)",
+   "issue": "C197 reports noninvasive imaging localising 71-80% of tumours in the Mayo series (so 20-29% not found) and EUS/SACST used in 21-39% of patients in 1993-2007. This is a tertiary-referral rate and does not change the bin (about 270-520 per year on 1,360 insulinomas, calculated), but it is higher than the 5-10% used.",
+   "proposed_wording": "At Mayo 1987-2007 noninvasive imaging found the tumour in 71-80% and EUS or SACST were used in 21-39% of patients (Placzkowski 2009; tertiary centre).",
+   "paper": "C197",
+   "claim_ids": []
+  },
+  {
+   "where": "usecases-verified.md row 6 (Thomas 2023 described as a comparator for random C-peptide)",
+   "issue": "Thomas 2023 uses C-peptide (DARE) and a genetic risk score (UK Biobank) as the reference standards for classification approaches built for research datasets; it does not test C-peptide against clinical models, and its accuracy figures (68-88%) are for research-dataset labels, not clinical decisions.",
+   "proposed_wording": "Thomas 2023 (PMID 36368478) ranks 10 classification approaches for research datasets against C-peptide (DARE) or a genetic risk score (UK Biobank); C-peptide is the reference, so it cannot show added value.",
+   "paper": "C268",
+   "claim_ids": [
+    "UC-06"
+   ]
+  }
+ ],
+ "notes": "Read only local files; no web. All quotes checked by script against whitespace-normalised stored text. Current scores taken from the score files after corrections: V3 row 31 D4 = 2 (FT12), row 47 D4 = 3, row 49 D4 = 2; U3 row 6 D4 = 2 (FT12); V2 row 31 D2 = 3; U2 row 6 D8 = 3; V1 row 47 D7 = 3; V8 D7 row 1 = 3, row 22 = 1, row 23 = 2, row 24 = 1. No proposals for the V8 D7 rows: with the Olmsted CI the point-estimate bins stay and confidence is already low. Row 24 D7: C190 Table 1 (age by sex) is garbled in the extraction (minimum age in the cohort 8 years), so no paediatric count could be read; null. Row 31 D2: null (C259 confirms the consensus text, read in full; evidence behind it is thin but V2 already scored 3 as consensus and said stopping insulin itself is 2). Row 6 D8: null (C268 uses C-peptide as reference). Row 6 D4 (C235): null; it does not reverse the FT12 change and does not show US-platform standardisation at the low thresholds. Row 49 D4 and row 31 D4 (C196): null, already 2. C235 unit symbol assumed to be ug/L. C196 text says both 15 and 18 laboratories. Quotes for C196 are short fragments because the two-column extraction interleaves lines; the full sentence in the Discussion reads that, until a more generalized standardization program is implemented, the comparability of C-peptide results between laboratories must be addressed (abstract: results do not always agree, especially at higher concentrations). Path to viability: rows 6 and 31 unchanged by these papers (C235 is one three-platform comparison, not at the 80/200/600 pmol/L thresholds, so the cross-platform check on US-marketed assays is still missing). Row 47: Stenstrom 2005 supports that C-peptide declines over 5 to 12 years in antibody-positive adults, but with IV glucose plus glucagon, and says meal-based responses are unknown, so a meal-based progression study remains the missing piece. Rows 1, 22, 23, 24: path unaffected."
+}

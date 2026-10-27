@@ -19,7 +19,7 @@
    "row": 2,
    "dimension": "D4",
    "score": 2,
-   "reason": "The pattern needs an insulin assay that detects the analogue in use; Atellica recovered 92-121% of five analogues while LC-MS/MS detected only glargine at 10 ng/mL, and one infant case went undetected until the local assay changed. Reviews advise two assays with different cross-reactivity, so the test is available but needs assay-specific knowledge or send-out. Evidence is from non-US-specific platforms and spiked samples (CV and recovery, not clinical sensitivity); confidence capped at medium. Measure type: insulin plus C-peptide at hypoglycaemia.",
+   "reason": "The pattern needs an insulin assay that detects the analogue in use; Atellica recovered 92-121% of five analogues while LC-MS/MS detected only glargine at 10 ng/mL, and one infant case went undetected until the local assay changed. A narrative review (Galvez 2023; case-report evidence) describes an emerging trend to combine two assays with different cross-reactivity, so the test is available but needs assay-specific knowledge or send-out. Evidence is from non-US-specific platforms and spiked samples (CV and recovery, not clinical sensitivity); confidence capped at medium. Measure type: insulin plus C-peptide at hypoglycaemia.",
    "sources": [
     "PMID 39030378 DOI 10.1007/s12020-024-03970-6 abstract",
     "PMID 36965853 DOI 10.1016/j.ando.2023.03.015 abstract",

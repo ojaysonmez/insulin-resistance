@@ -11,8 +11,8 @@ Tiers (D-39): A composite 0.60 or more, B 0.50 to 0.59, C 0.40 to 0.49, D below 
 | 3 | 31 | routine care, specialist outpatient | 0.75 | 0.69 | 0.60 | 0.25 | 0.603 | A | no | - | Prospective study or trial of C-peptide-guided insulin de-escalation in adults with doubtful type, reporting glycaemic control and ketoacidosis safety, with a harmonised random C-peptide cutoff by concurrent glucose. (evidence, medium); A prospective study of C-peptide-guided insulin withdrawal or de-escalation in adults of doubtful type, with safety outcomes and a stated cutoff and timing. (evidence, medium); Prospective validation of a C-peptide threshold (with glucose, duration and antibody status) for safe insulin withdrawal in doubtful-type adult diabetes. (evidence, medium) |
 | 4 | 10 | specialist outpatient | 0.75 | 0.59 | 0.40 | 0.50 | 0.589 | B | no | - | Igls 2.0 consensus with numeric, assay-specified C-peptide thresholds and CITR-based validation of incremental value over HbA1c, insulin dose and CGM. (guideline, small); A published Igls 2.0 revision with numeric C-peptide thresholds and handling of renal function. (guideline, medium); A published Igls 2.0-type document with explicit C-peptide thresholds by assay, and adjustment for kidney function. (guideline, small) |
 | 5 | 2 | specialist outpatient | 0.58 | 0.56 | 0.40 | 0.75 | 0.568 | B | yes | - | Insulin assay (or companion test) that detects insulin analogues so that low insulin plus low C-peptide can exclude exogenous analogue use, with published accuracy of the high-insulin/low-C-peptide pattern. (assay, medium); Report analogue cross-reactivity per assay with a validated cutoff pattern, and a cohort accuracy study of insulin plus C-peptide against drug screen or LC-MS/MS. (assay, medium) |
-| 6 | 47 | specialist outpatient | 0.58 | 0.69 | 0.60 | 0.38 | 0.561 | B | yes | - | Validation of the 0.6 ng/mL fasting C-peptide criterion against clinical insulin dependence outside Japan, and adoption of the entity by a US or international body. (evidence, medium); Adoption of the criteria, or an equivalent C-peptide threshold, by a US or international body, with evidence that the label changes treatment. (guideline, small); Adoption or validation of the fasting C-peptide threshold by a US or international body in non-Japanese cohorts. (guideline, medium) |
-| 7 | 7 | specialist outpatient | 0.67 | 0.62 | 0.60 | 0.25 | 0.560 | B | no | - | External validation of C-peptide or UCPCR thresholds in a US multiethnic population plus a prospective pathway study of genetic-test yield and treatment change versus clinical criteria alone. (evidence, medium); External validation of C-peptide/UCPCR in a US multi-ethnic triage cohort, with the test's added yield over antibodies and age/BMI criteria. (evidence, medium); External validation of a UCPCR or C-peptide pathway with a sourced positive predictive value and a US-available assay and collection protocol. (assay, medium) |
+| 6 | 7 | specialist outpatient | 0.67 | 0.62 | 0.60 | 0.25 | 0.560 | B | no | - | External validation of C-peptide or UCPCR thresholds in a US multiethnic population plus a prospective pathway study of genetic-test yield and treatment change versus clinical criteria alone. (evidence, medium); External validation of C-peptide/UCPCR in a US multi-ethnic triage cohort, with the test's added yield over antibodies and age/BMI criteria. (evidence, medium); External validation of a UCPCR or C-peptide pathway with a sourced positive predictive value and a US-available assay and collection protocol. (assay, medium) |
+| 7 | 47 | specialist outpatient | 0.58 | 0.62 | 0.60 | 0.38 | 0.552 | B | no | - | Validation of the 0.6 ng/mL fasting C-peptide criterion against clinical insulin dependence outside Japan, and adoption of the entity by a US or international body. (evidence, medium); Adoption of the criteria, or an equivalent C-peptide threshold, by a US or international body, with evidence that the label changes treatment. (guideline, small); Adoption or validation of the fasting C-peptide threshold by a US or international body in non-Japanese cohorts. (guideline, medium) |
 | 8 | 5 | specialist outpatient | 0.42 | 0.44 | 0.60 | 0.75 | 0.532 | B | no | weak evidence (D2 of 0 or 1) | A diagnostic-accuracy study in post-bariatric patients with symptoms, comparing insulin and C-peptide at documented hypoglycaemia (or mixed-meal nadir) against a reference standard including CGM and clinical course, from which an agreed threshold is derived and then externally validated. (evidence, medium); An assay-specific, validated insulin threshold for post-bariatric hypoglycaemia from a standardized mixed-meal protocol, on insulin assays traceable to a commutable reference material. (assay, medium); An accepted insulin or C-peptide threshold during a standardised mixed-meal test, validated against symptoms and CGM (evidence, medium) |
 | 9 | 29 | specialist outpatient | 0.67 | 0.59 | 0.40 | 0.38 | 0.531 | B | no | - | Confirmatory trial showing clinical benefit (not just C-peptide preservation) of teplizumab in Stage 3 T1D, and ADA/ISPAD guideline endorsement of C-peptide-based selection. (evidence, large); Clinical-outcome follow-up of PROTECT (HbA1c, insulin dose, hypoglycaemia) and a subgroup analysis by baseline C-peptide showing selection adds to antibody status. (evidence, large) |
 | 10 | 4 | inpatient or procedural | 0.50 | 0.53 | 0.40 | 0.75 | 0.530 | B | no | - | Multi-centre diagnostic accuracy study of insulin and C-peptide thresholds against BOHB, FFA and glucagon response using harmonised, low-range-validated paediatric assays. (evidence, medium); A higher-sensitivity insulin assay with paediatric reference limits and reported agreement across US laboratories. (assay, medium); A guideline-adopted high-sensitivity insulin assay with a defined detection limit and a standard critical-sample set across US hospitals. (assay, small) |
@@ -49,15 +49,15 @@ Tiers (D-39): A composite 0.60 or more, B 0.50 to 0.59, C 0.40 to 0.49, D below 
 |---|---|---|---|---|
 | 1 | 1 | 1 | 2 | 1 |
 | 6 | 2 | 2 | 1 | 5 |
-| 31 | 3 | 4 | 3 | 10 |
-| 10 | 4 | 6 | 4 | 14 |
-| 2 | 5 | 3 | 8 | 4 |
-| 47 | 6 | 5 | 7 | 8 |
-| 7 | 7 | 10 | 5 | 18 |
-| 5 | 8 | 7 | 17 | 2 |
+| 31 | 3 | 4 | 3 | 9 |
+| 10 | 4 | 5 | 4 | 14 |
+| 2 | 5 | 3 | 7 | 4 |
+| 7 | 6 | 10 | 5 | 18 |
+| 47 | 7 | 7 | 8 | 10 |
+| 5 | 8 | 6 | 17 | 2 |
 | 29 | 9 | 14 | 6 | 22 |
 | 4 | 10 | 8 | 11 | 7 |
-| 20 | 11 | 9 | 12 | 9 |
+| 20 | 11 | 9 | 12 | 8 |
 | 21 | 12 | 11 | 13 | 11 |
 | 24 | 13 | 15 | 9 | 21 |
 | 32 | 14 | 20 | 10 | 20 |
@@ -90,11 +90,11 @@ Rows whose D7 rests on an assumed share: the default-weight rank if D7 took the 
 | 5 | 8 | 3 | 2 | 0.482 | 18 |
 | 6 | 2 | 3 | 2 | 0.596 | 3 |
 | 6 | 2 | 3 | 4 | 0.696 | 1 |
-| 7 | 7 | 3 | 2 | 0.510 | 12 |
+| 7 | 6 | 3 | 2 | 0.510 | 12 |
 | 21 | 12 | 2 | 3 | 0.566 | 6 |
 | 29 | 9 | 2 | 3 | 0.581 | 5 |
 | 31 | 3 | 3 | 4 | 0.653 | 2 |
-| 47 | 6 | 3 | 2 | 0.511 | 12 |
+| 47 | 7 | 3 | 2 | 0.502 | 15 |
 | 49 | 29 | 2 | 3 | 0.448 | 23 |
 
 ## Anchor issues reported by the units

@@ -16,7 +16,7 @@ The current state and the next step, written by hand at the end of a working ses
 
 ## Next step
 Run these from a fresh chat (this one is long and expensive), after the 5-hour usage window allows it. Each batch costs about 60,000 to 110,000 tokens; ask the user before starting.
-1. **Wave 1b (10 papers):** C190 C194 C196 C197 C235 C259 C268 C276 C282 C325 (texts behind rows 1, 2, 6, 7, 10, 24, 31, 32, 47). Readers (ir-usecase-scout, local texts only), then a skeptic (ir-row-skeptic); proposals only.
+1. **Wave 1b is reviewed (FT31, FT32, 2026-10-27).** Row 47 D4 is now 2 (original 3 kept with a note) and the accepted wording fixes are applied (not committed); row 47 moved from rank 6 to 7 in `ranking.md`, still tier B.
 2. **Wave 2a is done (FT18 to FT25, 2026-10-27, 49 papers + 2).** No score changed (both reader proposals rejected by the skeptics). Accepted claim-wording fixes are applied to `claims/claims.csv`, `usecases-verified.md` and `merged-conclusion.md` (not committed). The same fixes are applied inside the score-file reasons (V1, V2, V8, V14, V15, V16, V20 to V22, V24, V26; reasons only, no score changed). Waiting on the user: row 28 D2 (2 or 1), row 48 D2 reason, and one decision on rule-5 rows 11 and 45 D3 for `DECISIONS.md`.
 3. **Wave 2b is done (FT26 to FT30, 31 papers, 2026-10-27).** No score changed (row 5 D1 and D8 proposals rejected). The skeptic-accepted claim-wording fixes are applied to the ledger, `usecases-verified.md`, `merged-conclusion.md` and `U2.json` (not committed). The rule-5 question now covers rows 5, 11, 13 and 45 D3.
 4. **Score rows 51 to 54** on the rubric (search-heavy; ask first), then add them to the ranking.
