@@ -114,7 +114,7 @@
    "row": 27,
    "dimension": "D7",
    "score": 1,
-   "reason": "Measure: MMTT C-peptide (beta-cell reserve) around TPIAT. US National Inpatient Sample: TPIAT rose from 53 cases (2002) to 155 (2012); 830 TPIAT in 2002 to 2013 in a second NIS analysis. Current volume not found; point estimate about 250 per year (assumption: continued growth to 1.5 to 2 times the 2012 figure, with extra candidates evaluated who do not proceed), range 150 to 500. Bin 1 (100 to 1,000). Confidence medium: the base figure is sourced, the growth is an assumption.",
+   "reason": "Measure: MMTT C-peptide (beta-cell reserve) around TPIAT. US National Inpatient Sample: TPIAT rose from 53 cases (2002) to 155 (2012); 830 adult TPIAT for pancreatitis in 2002 to 2013 in a second NIS analysis (a 12-year weighted total, about 70 a year on average; neoplasia and under-18 excluded). Current volume not found; point estimate about 250 per year (assumption: continued growth to 1.5 to 2 times the 2012 figure, with extra candidates evaluated who do not proceed), range 150 to 500. Bin 1 (100 to 1,000). Confidence medium: the base figure is sourced, the growth is an assumption.",
    "sources": [
     "PMID 27011922 DOI 10.5500/wjt.v6.i1.233 abstract (via search excerpt)",
     "PMID 31593020 DOI 10.1097/MPA.0000000000001405 search excerpt (830 TPIAT 2002 to 2013; PMC7952005)",

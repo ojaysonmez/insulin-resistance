@@ -6,7 +6,7 @@
    "row": 14,
    "dimension": "D7",
    "score": 5,
-   "reason": "Point estimate about 3,000,000 adults per year (range 650,000 to 6,500,000): MASLD 86.3 million US adults in 2020 (model, PMID 39821400); share without T2D about 75 percent [assumption, about 65 million]; share newly suspected or evaluated each year about 5 percent [assumption, range 1 to 10 percent]. Fasting-based (HOMA-IR) in the guideline population (adults with suspected MASLD, no T2D). Alternative bin 4 if fewer than about 1.5 percent of this pool (under 1,000,000) are evaluated in a year; that share decides it.",
+   "reason": "Point estimate about 3,000,000 adults per year (range 650,000 to 6,500,000): MASLD 86.3 million US adults in 2020 (model output, PMID 39821400; the paper gives no share with type 2 diabetes); share without T2D about 75 percent [assumption, about 65 million]; share newly suspected or evaluated each year about 5 percent [assumption, range 1 to 10 percent]. Fasting-based (HOMA-IR) in the guideline population (adults with suspected MASLD, no T2D). Alternative bin 4 if fewer than about 1.5 percent of this pool (under 1,000,000) are evaluated in a year; that share decides it.",
    "sources": [
     "PMID 39821400 DOI 10.1001/jamanetworkopen.2024.54707 abstract"
    ],
@@ -29,7 +29,7 @@
    "row": 9,
    "dimension": "D7",
    "score": 1,
-   "reason": "Narrowest population (clarification 2): evaluation of beta-cell reserve in candidates for total pancreatectomy with islet autotransplantation (TPIAT), where PancreasFest applies C-peptide. TP+IAT procedures in the US rose from 53 (2002) to 155 (2012) per year (NIS, PMID 27011922); no later count was found. Assume 250 to 400 procedures now and 2 to 3 candidates evaluated per operation: point estimate about 800 (range 300 to 1,500). C-peptide, fasting or stimulated. Alternative bin 2 if evaluated candidates exceed 1,000, i.e. more than about 3 evaluations per procedure. Broader note: new pancreatogenic diabetes (classification use) is about 5,000 to 30,000 a year (chronic pancreatitis incidence 4 to 12 per 100,000 per year, AAFP 2018 page; diabetes in about 30 percent over time, PMID 42488134; acute pancreatitis about 82 per 100,000 adults per year, PMID 30946239), bin 3, not scored.",
+   "reason": "Narrowest population (clarification 2): evaluation of beta-cell reserve in candidates for total pancreatectomy with islet autotransplantation (TPIAT), where PancreasFest applies C-peptide. TP+IAT procedures in the US rose from 53 (2002) to 155 (2012) per year (NIS, PMID 27011922); no later count was found. Assume 250 to 400 procedures now and 2 to 3 candidates evaluated per operation: point estimate about 800 (range 300 to 1,500). C-peptide, fasting or stimulated. Alternative bin 2 if evaluated candidates exceed 1,000, i.e. more than about 3 evaluations per procedure. Broader note: new pancreatogenic diabetes (classification use) is about 5,000 to 30,000 a year (chronic pancreatitis incidence 4 to 12 per 100,000 per year, AAFP 2018 page; pooled cumulative incidence of any diabetes about 30 percent over follow-up, PMID 42488134 (18 percent under 5 years, 44 percent over 10; not confirmed type 3c and not an annual share); acute pancreatitis about 82 per 100,000 adults per year, PMID 30946239), bin 3, not scored.",
    "sources": [
     "PMID 27011922 DOI 10.5500/wjt.v6.i1.233 abstract (as returned by web search)",
     "PMID 30946239 DOI 10.1097/mpa.0000000000001275 abstract",

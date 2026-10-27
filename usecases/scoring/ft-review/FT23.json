@@ -1,0 +1,178 @@
+{
+ "unit": "FT23",
+ "role": "full-text reader",
+ "papers": [
+  {
+   "id": "C284",
+   "pmid": "38448343",
+   "doi": "10.1016/j.soard.2024.01.012",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "V20 D7 row 11 used the abstract only (2022 estimate 280,000) as the first link of a volume chain; the 2023 and 2024 totals came from web excerpts, not this paper.",
+   "full_text_shows": "The paper is the ASMBS Numbers Taskforce estimate for 2022 only: 280,000 procedures (262,893 in 2021), built from MBSAQIP, industry device sales (5% reduction for unused devices) and state data. The total counts procedures, including revisions (about 11 percent of cases) and endoscopic procedures (about 4,600 ESG, 4,358 balloons, about 2,500 bands); it holds no diabetes share and no 2023 or 2024 figure.",
+   "verdict": "adds nuance",
+   "quote": "approximately 1% of all qualified patients undergo surgery",
+   "key_numbers": "2022 total 280,000 (2021: 262,893; +6.5%); sleeve 57.4%, bypass 22.2%; revisions about 11% of cases; accredited centres 230,707; about 1% of qualified patients operated",
+   "role_in_work": "Source for the US bariatric procedure count in the D7 chain for row 11 (also V25 text).",
+   "design": "Society task force estimate from registry, industry and state data (not a study)",
+   "population_and_size": "US metabolic and bariatric procedures, 2022: 280,000",
+   "measure_type": "None (no insulin or C-peptide measure); procedure volume only",
+   "assay_or_platform": "Not applicable",
+   "quality_note": "Estimate counts procedures (incl. revisions and endoscopic), not patients; the 2023 (270,089) and 2024 (200,667) totals are not in this paper and stay at web-excerpt level. Supports the order of magnitude of 200,000 to 280,000.",
+   "rows_affected": [
+    11
+   ],
+   "dimensions_affected": [
+    "D7"
+   ]
+  },
+  {
+   "id": "C289",
+   "pmid": "38902405",
+   "doi": "10.1007/s00464-024-10985-7",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "V20 D7 row 11 took a baseline diabetes share of 28 to 37 percent from a search excerpt and said the all-procedure share was not read.",
+   "full_text_shows": "Table 1 gives diabetes at baseline by procedure: lap RYGB 37.1%, SG 28.6%, open RYGB 30.65%, band 27.4%, BPD/DS 37.5%, VBG 23.94% (diabetes from ICD codes in the 6 months before surgery). Summing the table gives 109,476 of 343,727 = about 31.9% for all procedures (my calculation from the table counts). The cohort is commercial claims only, 2000-2020, age 18 and over; the authors note volume fell from 2018 in this database, unlike MBSAQIP.",
+   "verdict": "adds nuance",
+   "quote": "Laparoscopic RYGB and BPD/DS patients had a higher prevalence of diabetes mellitus at baseline when compared to SG (37.1% and 37.5% vs. 28.6%, respectively)",
+   "key_numbers": "N=343,727; diabetes 7,244+42,386+40,104+18,671+272+799=109,476 (about 31.9% computed); SG 28.6%, lap RYGB 37.1%",
+   "role_in_work": "Source for the diabetes share in the D7 chain for row 11 (also V25 text).",
+   "design": "Retrospective cohort, IBM MarketScan commercial claims, 2000-2020",
+   "population_and_size": "343,727 adults with a bariatric CPT code; mean age 43.5; 78.9% female",
+   "measure_type": "None (no insulin or C-peptide measure); claims-coded diabetes at baseline",
+   "assay_or_platform": "Claims codes (ICD-9/10, CPT); no laboratory data",
+   "quality_note": "Claims-coded diabetes in a privately insured working-age sample, so the US-wide share may differ (Medicaid and Medicare patients not included). It fills the gap V20 noted; about 32 percent sits inside V20's 28 to 37 percent range, so the chain is unchanged.",
+   "rows_affected": [
+    11
+   ],
+   "dimensions_affected": [
+    "D7"
+   ]
+  },
+  {
+   "id": "C290",
+   "pmid": "38950997",
+   "doi": "10.1136/bmjopen-2024-084808",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "V22 D4 row 8 used the abstract to say 2-h MMTT C-peptide is the primary endpoint in current trial protocols, a research protocol with a timed multi-sample draw.",
+   "full_text_shows": "The protocol confirms a 2-h MMTT with samples at -10, 15, 30, 60, 90 and 120 min after an overnight fast, done in a research unit or outpatient clinic, with sera stored at -80 C for later analysis and urine C-peptide/creatinine also collected. Primary endpoint is change in 2-h C-peptide AUC at 12 months (100 participants, 85% power). The paper names no assay or platform. Box 1 labels the primary endpoint as fasting C-peptide, which conflicts with the text (internal inconsistency).",
+   "verdict": "confirms",
+   "quote": "The MMTT is the gold standard test to determine residual β-cell function by measurement of stimulated C-peptide.",
+   "key_numbers": "100 children and adolescents (50 per arm, 10% dropout allowed; no children under 7); 6 timed samples over 120 min; 50% effect size assumed",
+   "role_in_work": "Example of a current trial protocol using stimulated C-peptide (MMTT AUC) as primary endpoint, cited for row 8 D4.",
+   "design": "Protocol of a randomised, double-blind, placebo-controlled trial (influenza vaccine, recent-onset T1D); no results",
+   "population_and_size": "Planned 100 children and adolescents with recent-onset T1D",
+   "measure_type": "C-peptide, stimulated (mixed-meal, 2-h AUC)",
+   "assay_or_platform": "Not stated in the text; batch analysis of frozen samples",
+   "quality_note": "Protocol only, no data. Supports D4=2 (timed protocol, batch analysis), but the paper says nothing on assay standardisation, so D4 rests on the other sources.",
+   "rows_affected": [
+    8
+   ],
+   "dimensions_affected": [
+    "D4"
+   ]
+  },
+  {
+   "id": "C293",
+   "pmid": "39219958",
+   "doi": "10.7759/cureus.65825",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "V15 D2 row 21 used the abstract as case-report-level evidence that suppressed insulin and C-peptide steer to IGF-II testing.",
+   "full_text_shows": "Single case (55-year-old woman, ovarian carcinosarcoma): lowest glucose 24 mg/dL, insulin <0.4 uU/mL, C-peptide 0.1 ng/mL (the table value is blank in the extraction), negative sulfonylurea screen, IGF-I 26, IGF-II 842 ng/mL (inside the quoted range 333-967), IGF-II/IGF-I >32. The diagnosis rested on exclusion plus the ratio; no big IGF-II assay. The statement that evaluation includes insulin, proinsulin and C-peptide at hypoglycaemia carries no citation, and no proinsulin value is reported. The patient died two days after chemotherapy.",
+   "verdict": "confirms",
+   "quote": "patients with IGF-induced hypoglycemia typically demonstrate depressed levels of serum insulin and C-peptide during hypoglycemia",
+   "key_numbers": "insulin <0.4 uU/mL; C-peptide 0.1 ng/mL; IGF-II 842 ng/mL (normal range 333-967); IGF-I 26 ng/mL; ratio >32; n=1",
+   "role_in_work": "Case report illustrating the insulin/C-peptide-then-IGF-II work-up for row 21.",
+   "design": "Case report",
+   "population_and_size": "1 patient",
+   "measure_type": "Insulin and C-peptide, random/critical sample during spontaneous hypoglycaemia (timing relative to the glucose of 24 mg/dL not stated)",
+   "assay_or_platform": "Not stated",
+   "quality_note": "n=1, no accuracy data; IGF-II was within range, so the ratio did the work. Keeps D2 at 1.",
+   "rows_affected": [
+    21
+   ],
+   "dimensions_affected": [
+    "D2"
+   ]
+  },
+  {
+   "id": "C295",
+   "pmid": "39390979",
+   "doi": "10.3892/ol.2024.14701",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "No score entry cites it; corpus.csv lists it as V16 text (row 21 NICTH assays).",
+   "full_text_shows": "Single-centre retrospective study (Keio): 195 GIST patients, 8 with glucose <70 mg/dL (4.1%); 5 of 35 with unresectable or metastatic GIST (14.2%); recurrent hypoglycaemia (2 of 35, 5.7%) had shorter survival (P=0.007). One recurrent case was NICTH, shown by big IGF-II on Western blot of autopsy liver tissue. IGF-II was measured by a Mayo Clinic Laboratories RIA and IGF-I by Elecsys ECLIA. Insulin and C-peptide are not reported in the text I read; insulin appears only as a diabetes drug causing one transient episode.",
+   "verdict": "not relevant",
+   "quote": "Eight patients out of 195 patients met this criteria (4.1%).",
+   "key_numbers": "195 GIST; 8 hypoglycaemia; 35 metastatic; 2 recurrent; P=0.007 survival; 1 NICTH case",
+   "role_in_work": "NICTH-in-GIST background for row 21; shows IGF-II is a send-out (Mayo RIA).",
+   "design": "Retrospective single-centre case series with autopsy genomics",
+   "population_and_size": "195 GIST patients; 2 recurrent-hypoglycaemia cases studied in detail",
+   "measure_type": "None for insulin or C-peptide; IGF-II and IGF-I are non-insulin surrogates",
+   "assay_or_platform": "IGF-II: Mayo Clinic Laboratories RIA; IGF-I: Elecsys ECLIA; big IGF-II: Western blot of tissue",
+   "quality_note": "Tiny numbers; no insulin/C-peptide data, so it cannot support the insulin/C-peptide step. Only use: IGF-II is a US send-out, consistent with limiting assay 1 on D4.",
+   "rows_affected": [
+    21
+   ],
+   "dimensions_affected": [
+    "D4"
+   ]
+  },
+  {
+   "id": "C296",
+   "pmid": "39510599",
+   "doi": "10.1136/bmjdrc-2024-004471",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "V8 D7 row 33 took 38 of 680 (5.6%) autoantibody-negative T1D among new-onset cases at one US children's hospital as the key share for the pool of youth with a T1D label in whom a non-T1D type is suspected.",
+   "full_text_shows": "The 5.6% is confirmed: 38 of 680 new-onset T1D patients were negative for GAD, IA-2 and IAA (Texas Children's). The authors note the prevalence reported in children is as high as 19%. The paper does not say these 38 had C-peptide measured; C-peptide appears only for the 6 questionnaire cases (3.66, 1.44, 1.04, 0.46 ng/mL, two missing; timing not stated). Also 68 'unknown type' cases (1%) of 6,676 and 64 T2D under age 10 (6.6% of 1,142); of the 68, suspected MODY 41% and over 80% had no MODY test.",
+   "verdict": "confirms",
+   "quote": "Out of 680 patients with new-onset T1D, 38 (5.6%) were negative for islet autoantibodies (GAD, IA-2 and IAA)",
+   "key_numbers": "38/680 = 5.6% (cited upper value 19%); 68/6,676 = 1%; 64/1,142 = 6.6%; 6 of 100 questionnaire cases atypical",
+   "role_in_work": "Source of the antibody-negative share in the D7 chain for row 33 (also V13 text).",
+   "design": "Retrospective EMR study, two case-finding strategies",
+   "population_and_size": "Clinic sample of 100 youth (questionnaire) and 6,676 youth with diabetes under 21 (EMR query), Houston",
+   "measure_type": "C-peptide (reported for 6 cases only, timing not stated); main variable is islet autoantibody status",
+   "assay_or_platform": "Not stated",
+   "quality_note": "Single centre, Hispanic-majority sample; antibody-negative status at onset is not the same as a persistent T1D label after 2 years. At 19% the pool would be about 52,000 and the 25% evaluation assumption would give about 14,000 per year (bin 3, my arithmetic on V8's chain); V8 already marks low confidence.",
+   "rows_affected": [
+    33
+   ],
+   "dimensions_affected": [
+    "D7"
+   ]
+  },
+  {
+   "id": "C297",
+   "pmid": "39689018",
+   "doi": "10.1210/clinem/dgae879",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "V16 D4 row 21 cited the abstract for big IGF-II by Western blot and ELISA as research-type methods, with IGF-II a send-out limiting the assay.",
+   "full_text_shows": "145 sera from 110 Japanese sites; Western blot showed big IGF-II in 100 (NICTH) and not in 45. The text says no clinically validated IGF-II assay exists and the ELISA is for research use and cannot tell big from mature IGF-II. Against Western blot as reference, AUC: IGF-II 0.73, IGF-II/IGF-I 0.70, miR-483-5p 0.85 (0.88 in the IGF-I subset). Insulin and C-peptide came from the treating physicians' local labs: C-peptide median 0.033 vs 0.123 nmol/L (P<0.0001), insulin 2.4 vs 3.1 pmol/L (P=0.080). Suppressed insulin or C-peptide was assumed for entry; it was not tested as a classifier.",
+   "verdict": "adds nuance",
+   "quote": "no clinically validated IGF-II assay is available; therefore, the measurement must be performed with an ELISA kit for research use",
+   "key_numbers": "n=145 (100 big IGF-II); AUC IGF-II 0.73 (0.63-0.83), IGF-II/IGF-I 0.70 (0.58-0.83), miR-483-5p 0.85/0.88; C-peptide 0.033 vs 0.123 nmol/L; glucose median 36 vs 43 mg/dL",
+   "role_in_work": "Cohort showing the weakness of the IGF-II confirmatory step in the NICTH work-up (row 21); also V19 text.",
+   "design": "Retrospective diagnostic-accuracy cohort with stored sera (reference: Western blot for big IGF-II)",
+   "population_and_size": "145 suspected NICTH cases (hypoglycaemia confirmed, hyperinsulinism and drug causes excluded); 25 paired pre/post-surgery",
+   "measure_type": "Random/critical-sample insulin and C-peptide (local labs, suppressed); IGF-II and IGF-II/IGF-I as non-insulin surrogates",
+   "assay_or_platform": "IGF-II: Alpco ELISA (research use); big IGF-II: Western blot; miR-483: TaqMan qPCR; insulin and C-peptide platforms not stated (multi-site local assays)",
+   "quality_note": "Selection: only cases sent for Western blot; insulin and C-peptide values partly missing (n=25 insulin, n=67 C-peptide in Table 1). Japanese setting; US IGF-II is a Mayo send-out (see C295). The paper is about miR-483, not the insulin/C-peptide step.",
+   "rows_affected": [
+    21
+   ],
+   "dimensions_affected": [
+    "D4",
+    "D2"
+   ]
+  }
+ ],
+ "proposals": [],
+ "claim_issues": [],
+ "notes": "All seven texts read (good extraction; C284 is PDF-extracted with column breaks, the others XML). No proposals: current scores in force are V20 row 11 D7=3, V22 row 8 D4=2, V15 row 21 D2=1 (S2 also 1), V8 row 33 D7=2, V16 row 21 D4=1 (corrected from 2 by RS-D4). A grep of claims/claims.csv, usecases-verified.md and merged-conclusion.md found none of these PMIDs, so there is no claim text to check. usecases-verified row 21 could add that the IGF-II ELISA is research-use only (C297) and that the Mayo IGF-II is a send-out (C295), but that is an optional note, not a correction. The 31.9% overall diabetes share in C289 is my sum of Table 1 counts. Rows 11 and 33 D7 chains stay in their bins: 2022 volume 280,000 x 0.32 = about 90,000 is still bin 3 and the 100,000 boundary needs a share near 37% at 270,000. Tool calls used: 22."
+}

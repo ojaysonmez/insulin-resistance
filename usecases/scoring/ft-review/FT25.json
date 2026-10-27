@@ -1,0 +1,85 @@
+{
+  "unit": "FT25",
+  "role": "full-text reader",
+  "papers": [
+    {
+      "id": "C322",
+      "pmid": "42168767",
+      "doi": "10.1210/clinem/dgag214",
+      "text_quality": "good",
+      "read_level": "full text",
+      "relied_on": "V8 path to viability for row 22 (title and search record only) took this study to suggest that exendin-4 imaging may replace calcium-stimulated hepatic venous insulin sampling in imaging-negative insulinoma.",
+      "full_text_shows": "In 58 patients with negative or inconclusive conventional imaging, 68Ga-DOTA-exendin-4 PET/CT was positive in 42 (detection rate 72 percent) and, in the 32 with histology, had sensitivity 93.8 percent with no false positives; the two misses were diffuse nesidioblastosis. The study did not compare PET with arterial calcium stimulation and venous sampling (ASVS); the statement that PET could obviate ASVS is the authors' inference, and 28 percent of the imaging-negative group stayed negative. Insulin was used only to define the cohort (fasting test or Whipple's triad), not evaluated.",
+      "verdict": "adds nuance",
+      "quote": "has the potential to reduce the need for invasive diagnostic procedures",
+      "key_numbers": "101 consecutive patients (2017-2024), primary cohort n = 58 with negative or inconclusive conventional imaging; positive PET 42, negative 16, detection rate 72% (95% CI 59-83); histology in 32, sensitivity 93.8% (95% CI 79-99), no false positives; lesion-directed surgery in 30 of 58 (52%), 29 solitary insulinoma and 1 nesidioblastosis; 72-h fasting test available in 81 of 101 (80%); ASVS sensitivity above 85% quoted from earlier series.",
+      "role_in_work": "Imaging alternative to the hepatic venous insulin gradient (row 22): relevant to D8 (added value over alternatives) and to the path to viability, not evidence for an insulin or C-peptide test.",
+      "design": "International dual-centre retrospective real-world imaging cohort (Freiburg, Basel), exact Clopper-Pearson CIs.",
+      "population_and_size": "101 adults with endogenous hyperinsulinaemic hypoglycaemia (fasting test and/or Whipple's triad); 58 with negative or inconclusive conventional imaging; median age 57.",
+      "measure_type": "No insulin or C-peptide measure evaluated; the cohort entry used a fasting (72-h) test with inappropriately high insulin, or Whipple's triad alone (random/fasting-induced insulin).",
+      "assay_or_platform": "68Ga-DOTA-exendin-4 PET/CT on Philips GEMINI TF 64 or Vereos (Freiburg) and Siemens Discovery ST (Basel); insulin assay not specified.",
+      "quality_note": "Retrospective, referral-selected (conventional imaging underperformed published figures), some patients had no fasting test, histology in only 32 of 58, no ASVS comparator. No conflict-of-interest statement was present in the local text copy, so none could be assessed.",
+      "rows_affected": [22],
+      "dimensions_affected": ["D8"]
+    },
+    {
+      "id": "C328",
+      "pmid": "42488134",
+      "doi": "10.1177/20420188261469942",
+      "text_quality": "good",
+      "read_level": "full text",
+      "relied_on": "V14 row 9 D7 used 'diabetes in about 30 percent over time' as a note (not scored) for the number of new pancreatogenic diabetes cases per year.",
+      "full_text_shows": "A PROSPERO-registered random-effects meta-analysis of 19 cohorts (11,585 adults with chronic pancreatitis, no diabetes at baseline) found a pooled cumulative incidence of diabetes of 30 percent, rising with follow-up (18, 25 and 44 percent at under 60, 60-120 and over 120 months); heterogeneity was very high and diabetes was defined by varied glycaemic criteria. It counts all new diabetes after chronic pancreatitis, not type 3c confirmed by exocrine or imaging criteria, and measures no C-peptide or insulin.",
+      "verdict": "adds nuance",
+      "quote": "The pooled incidence was 30% (95% CI: 27-34)",
+      "key_numbers": "19 studies, 11,585 participants; pooled incidence 30% (95% CI 27-34), I2 = 94.8%, prediction interval 15-49%; by follow-up 18% (14-22), 25% (15-35), 44% (24-66); 59% (46-71) of those with diabetes needed insulin (7 studies, 968 participants, I2 = 91.7%, prediction interval 19-93%); Egger P = 0.715.",
+      "role_in_work": "Epidemiological source for the broader note on row 9 (pancreatogenic diabetes after chronic pancreatitis); also cited as text in the row 9 / row 27 ranking notes (V19). Not evidence for a C-peptide test.",
+      "design": "Systematic review and random-effects meta-analysis of cohort studies; adapted Newcastle-Ottawa scale; single-arm proportions.",
+      "population_and_size": "Adults with confirmed chronic pancreatitis without baseline diabetes, 19 cohorts, 11,585 patients (largely male, mean age 25-62.8 across studies).",
+      "measure_type": "None (no insulin or C-peptide measure); diabetes defined by fasting glucose, OGTT or HbA1c in the included studies.",
+      "assay_or_platform": "Not applicable.",
+      "quality_note": "Very high heterogeneity, observational cohorts with limited confounder adjustment, varied definitions; the follow-up analysis is exploratory; the pooled figure is cumulative over follow-up (median follow-up not a fixed year), not an annual rate. The paper restates that consensus minor criteria for type 3c include assessment of beta-cell function.",
+      "rows_affected": [9],
+      "dimensions_affected": ["D7"]
+    }
+  ],
+  "proposals": [
+    {
+      "row": 22,
+      "dimension": "D8",
+      "current": 2,
+      "proposed": null,
+      "reason": "V9 scored D8 = 2 and noted that no head-to-head with exendin PET was screened. C322 is still not a head-to-head: it gives detection 72 percent in imaging-negative patients and no ASVS comparison, so it neither shows that PET makes the insulin gradient redundant nor that the gradient adds beyond PET. Keep 2; the evidence points to a possible downward risk (to 1) if a comparison shows PET replaces sampling, which is a path-to-viability item, not a change now. This paper is not cited in any score entry; the proposal is recorded because it bears on the dimension.",
+      "quote": "has the potential to reduce the need for invasive diagnostic procedures",
+      "confidence": "medium",
+      "papers": ["C322"]
+    },
+    {
+      "row": 9,
+      "dimension": "D7",
+      "current": 1,
+      "proposed": null,
+      "reason": "The scored count is TPIAT beta-cell reserve evaluations (bin 1, about 800), not new pancreatogenic diabetes; the 30 percent figure appears only in the broader note. The full text does not change the scored population, but the wording of that note needs care (cumulative, not annual).",
+      "quote": "The pooled incidence was 30% (95% CI: 27-34)",
+      "confidence": "medium",
+      "papers": ["C328"]
+    }
+  ],
+  "claim_issues": [
+    {
+      "where": "usecases/scoring/V8.json path_to_viability for row 22, 'basis' field",
+      "issue": "Says the '2026 multicentre exendin-4 PET study PMID 42168767 (title/search record only) ... suggest[s] imaging may replace sampling'. The full text is a retrospective dual-centre study (Freiburg and Basel), with no ASVS comparator; it states PET 'has the potential to reduce the need' for invasive procedures and quotes ASVS sensitivity above 85 percent from other series; 28 percent of imaging-negative patients had a negative PET.",
+      "proposed_wording": "Retrospective dual-centre study PMID 42168767 (DOI 10.1210/clinem/dgag214, full text): 68Ga-DOTA-exendin-4 PET/CT detected a lesion in 72 percent (42 of 58) of patients with negative or inconclusive conventional imaging and had sensitivity 93.8 percent in 32 with histology; no comparison with calcium-stimulated hepatic venous sampling was made, so replacement of sampling is the authors' projection, not a result.",
+      "paper": "C322",
+      "claim_ids": []
+    },
+    {
+      "where": "usecases/scoring/V14.json row 9 D7 reason, broader note: 'diabetes in about 30 percent over time, PMID 42488134'",
+      "issue": "The 30 percent is a pooled cumulative incidence of any diabetes after chronic pancreatitis across studies with different follow-up (18 percent under 5 years, 44 percent over 10 years; prediction interval 15-49 percent), not a share of annual new chronic pancreatitis cases and not confirmed type 3c. Applying it to yearly new cases would overstate the annual number of new pancreatogenic diabetes cases. The note is unscored, so no score changes.",
+      "proposed_wording": "Pooled cumulative incidence of diabetes after chronic pancreatitis was 30 percent (95% CI 27-34; 19 cohorts, 11,585 patients; 18 percent under 60 months, 44 percent over 120 months; PMID 42488134); the share per year is lower and the diabetes is not all confirmed type 3c.",
+      "paper": "C328",
+      "claim_ids": []
+    }
+  ],
+  "notes": "Scores in force read from the unit JSON files: row 9 D7 = 1 (V14, low confidence); row 22 D8 = 2 (V9), no original_score or correction keys seen on them. C328 has no stored score citing it other than the unscored note inside the row 9 D7 reason; C322 is cited by no score entry (only the V8 path to viability for row 22, which is a field and not a score). No claims in claims/claims.csv, usecases-verified.md or merged-conclusion.md cite either PMID. C322 local text lacks a conflict-of-interest or funding statement (extraction from XML front matter), so conflicts could not be assessed. Both papers are not about insulin or C-peptide measurement; neither supports a post-meal, post-load or stimulated test. No web access used. Tool calls used in this unit: 7 before writing, 3 with the two writes and validation (about 10)."
+}

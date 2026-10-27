@@ -160,7 +160,7 @@
    "row": 48,
    "dimension": "D2",
    "score": 1,
-   "reason": "Measure type: post-load (5-h OGTT) and mixed-meal glucose with insulin. Two small single-centre studies (40 adults; 69 adults with obesity) rest the diagnosis on glucose and symptoms; insulin was collected but not used as a criterion, and no outcome of insulin-guided management was found. Cryer 2009 guideline not read.",
+   "reason": "Measure type: post-load (5-h OGTT) and mixed-meal glucose with insulin. Two small single-centre studies (40 adults; 69 healthy adults with obesity) rest the diagnosis on glucose (and, in the first, symptoms; symptoms were not recorded in the second); insulin was measured but not used as a criterion (in the first it did not separate cases from controls, hyperinsulinaemia 40% vs 31%, p=0.440), and no outcome of insulin-guided management was found. Cryer 2009 guideline not read.",
    "sources": [
     "PMID 33916952 DOI 10.3390/jpm11040276 via project row 48",
     "PMID 41829992 DOI 10.3390/nu18050822 via project row 48",

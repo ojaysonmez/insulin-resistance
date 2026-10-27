@@ -1,0 +1,517 @@
+{
+ "unit": "FT20",
+ "role": "full-text reader",
+ "papers": [
+  {
+   "id": "C096",
+   "pmid": "36727674",
+   "doi": "10.1097/hep.0000000000000323",
+   "text_quality": "partial",
+   "read_level": "full text",
+   "relied_on": "Score entries rely on the project result that AASLD 2023 has no HOMA-IR, fasting insulin or C-peptide recommendation (D3 2 for row 14 rests on EASL, not AASLD).",
+   "full_text_shows": "The local text is body text only (about 70,000 characters, 174 lines; Tables 1 to 3 and the reference list are not in the extraction). In that text there is no mention of HOMA-IR, fasting insulin, C-peptide, OGTT, Matsuda or QUICKI. Insulin resistance appears as pathogenesis, and the only glycaemia test advice is screening NAFLD patients for T2DM, with physical examination for 'signs of insulin resistance'. It is a Guidance, not a GRADE guideline.",
+   "verdict": "confirms",
+   "quote": "patients with NAFLD should be screened for the presence of T2DM (Table 1)",
+   "key_numbers": "NAFLD associated with 2- to 5-fold risk of incident diabetes; no insulin or C-peptide cut-off or test named in the body text",
+   "role_in_work": "US negative comparator for row 14 (D3, D1, D2, S).",
+   "design": "Practice guidance (expert panel; actionable statements, not GRADE-graded)",
+   "population_and_size": "Adults with NAFLD (now MASLD); no study population",
+   "measure_type": "None (no fasting-based, post-load, mixed-meal or C-peptide measure recommended; glucose-based T2DM screening only)",
+   "assay_or_platform": "Not applicable",
+   "quality_note": "Negative is limited to the body text in the local file (tables not extracted); the skeptic's whole-article search of PMC10735173 is a separate, wider check and is not contradicted.",
+   "rows_affected": [
+    14
+   ],
+   "dimensions_affected": [
+    "D3",
+    "D1",
+    "D2",
+    "S"
+   ]
+  },
+  {
+   "id": "C103",
+   "pmid": "38017369",
+   "doi": "10.1186/s12884-023-06113-3",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "Row 35 scores treated it as one of four first-trimester fasting HOMA-IR cohorts read at abstract level: association and in-sample discrimination, no decision impact (D2 2, D1 0 or 1).",
+   "full_text_shows": "Prospective cohort in Qazvin, Iran (583 women, GDM 15.4%), fasting HOMA-IR at 14 weeks or less, GDM by 75 g OGTT at 24 to 28 weeks. Overall AUC was only 0.642 (cut-off 2.71, sensitivity 61.1%, specificity 63.9%); AUC 0.638 (cut-off 2.06) for BMI under 25 and 0.622 (cut-off 3.13) for BMI 25 or more; in women 35 years or older HOMA-IR did not differ (P=0.873). Nothing tests added value over age, GDM history or glucose, and cut-offs are in-sample.",
+   "verdict": "adds nuance",
+   "quote": "In women ≥ 35 years old, there is no yield of HOMA-IR for GDM prediction.",
+   "key_numbers": "n=583; GDM 90 (15.4%); HOMA-IR median 3.1 (GDM) vs 2.2; AUC 0.642 total, 0.680 age<35, 0.638 BMI<25, 0.622 BMI>=25; tertile 3 RR 3.2 (1.6-6.2) adjusted for age, GDM history, BMI; age>=35 GDM rate 28.4%, HOMA-IR 2.2 vs 2.3 P=0.873",
+   "role_in_work": "Row 35 (b) cohort evidence that HOMA-IR is a weak predictor and cut-offs differ by BMI; the advanced-age null.",
+   "design": "Prospective observational cohort (sub-study of QMNMS), convenience sampling, ROC with best cut-off in the same data, no external validation; about 19% of the parent cohort lost before final analysis",
+   "population_and_size": "583 pregnant women aged 18+, gestational age 14 weeks or less, without pre-gestational or overt diabetes; 285 BMI<25, 272 BMI>=25, 102 aged 35+",
+   "measure_type": "Fasting-based (fasting insulin with fasting glucose, HOMA-IR); not post-load",
+   "assay_or_platform": "Roche/Hitachi Cobas 6000 electrochemiluminescence insulin immunoassay; sera frozen at -80 C and assayed together at study end (inter-assay CV 1.2%, intra-assay 4.5%)",
+   "quality_note": "Single centre, single region, batch-assayed stored samples (not a real-time clinical workflow); outcome by OGTT at 24 to 28 weeks. Discrimination is weaker than 'moderate' as used in the ledger text.",
+   "rows_affected": [
+    35
+   ],
+   "dimensions_affected": [
+    "D2",
+    "D1"
+   ]
+  },
+  {
+   "id": "C108",
+   "pmid": "38851997",
+   "doi": "10.1016/j.jhep.2024.04.031",
+   "text_quality": "partial",
+   "read_level": "full text",
+   "relied_on": "Row 14 scores relied on keyword windows: a weak 'may be considered' recommendation (LoE 3, consensus) to assess insulin resistance by HOMA-IR or OGTT-derived estimates, with no link to FIB-4, elastography or therapy.",
+   "full_text_shows": "Wording confirmed in this copy (PDF text extraction, two columns, garbled layout but the passages are readable). The level of evidence and grade (LoE 3, weak recommendation, consensus) are visible here, unlike in the PMC copy described in the row. Table 7 sits under a separate LoE 2 strong recommendation and lists fasting insulin and/or C-peptide and HOMA-IR in the main list for 'Type 2 diabetes or insulin resistance'; OGTT or mixed-meal indices are under 'Further investigations*' (according to clinical evaluation and a priori probability). The text says HOMA-IR can use fasting insulin or C-peptide (not on insulin treatment) and that interpretation needs standardised insulin or C-peptide measurement; no management step follows from the result.",
+   "verdict": "adds nuance",
+   "quote": "may be considered to clarify metabolic dysfunction in adults with (suspected) MASLD and without an established diagnosis of type 2 diabetes",
+   "key_numbers": "LoE 3, weak recommendation, consensus; agreement 92% (C109 recommendation list; 100% for the LoE 2 strong 'tests recommended (Table 7)' statement); guideline LoE 3 = non-randomised controlled cohort/follow-up study",
+   "role_in_work": "Primary US-relevant source for row 14 status (D3 2) and the basis of D1, D2, D4, D5, D6 and S reasoning.",
+   "design": "Clinical practice guideline (Delphi consensus, LoE-graded)",
+   "population_and_size": "Adults with (suspected) MASLD without established T2D; no own study population",
+   "measure_type": "Fasting-based HOMA-IR (fasting insulin or fasting C-peptide with glucose); OGTT-derived (post-load) and mixed-meal-derived indices as further investigations",
+   "assay_or_platform": "Not specified; guideline states standardised insulin and/or C-peptide measurement is required for interpretation",
+   "quality_note": "Official guideline text. The HOMA-IR statement is specific to 'clarify metabolic dysfunction', not to a treatment or work-up decision; the Table 7 inclusion creates an interpretation tension with 'may be considered'. PDF layout garbling does not affect the quoted passages.",
+   "rows_affected": [
+    14
+   ],
+   "dimensions_affected": [
+    "D3",
+    "D2",
+    "D1",
+    "D4",
+    "D5",
+    "D6",
+    "S"
+   ]
+  },
+  {
+   "id": "C109",
+   "pmid": "38852583",
+   "doi": "10.1159/000539371",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "Row 14 scores relied on keyword windows: a weak 'may be considered' recommendation (LoE 3, consensus) to assess insulin resistance by HOMA-IR or OGTT-derived estimates, with no link to FIB-4, elastography or therapy.",
+   "full_text_shows": "Wording confirmed in this copy (XML full text). The level of evidence and grade (LoE 3, weak recommendation, consensus) are visible here, unlike in the PMC copy described in the row. Table 7 sits under a separate LoE 2 strong recommendation and lists fasting insulin and/or C-peptide and HOMA-IR in the main list for 'Type 2 diabetes or insulin resistance'; OGTT or mixed-meal indices are under 'Further investigations*' (according to clinical evaluation and a priori probability). The text says HOMA-IR can use fasting insulin or C-peptide (not on insulin treatment) and that interpretation needs standardised insulin or C-peptide measurement; no management step follows from the result.",
+   "verdict": "adds nuance",
+   "quote": "may be considered to clarify metabolic dysfunction in adults with (suspected) MASLD and without an established diagnosis of type 2 diabetes",
+   "key_numbers": "LoE 3, weak recommendation, consensus; agreement 92% (C109 recommendation list; 100% for the LoE 2 strong 'tests recommended (Table 7)' statement); guideline LoE 3 = non-randomised controlled cohort/follow-up study",
+   "role_in_work": "Primary US-relevant source for row 14 status (D3 2) and the basis of D1, D2, D4, D5, D6 and S reasoning.",
+   "design": "Clinical practice guideline (Delphi consensus, LoE-graded)",
+   "population_and_size": "Adults with (suspected) MASLD without established T2D; no own study population",
+   "measure_type": "Fasting-based HOMA-IR (fasting insulin or fasting C-peptide with glucose); OGTT-derived (post-load) and mixed-meal-derived indices as further investigations",
+   "assay_or_platform": "Not specified; guideline states standardised insulin and/or C-peptide measurement is required for interpretation",
+   "quality_note": "Official guideline text. The HOMA-IR statement is specific to 'clarify metabolic dysfunction', not to a treatment or work-up decision; the Table 7 inclusion creates an interpretation tension with 'may be considered'.",
+   "rows_affected": [
+    14
+   ],
+   "dimensions_affected": [
+    "D3",
+    "D2",
+    "D1",
+    "D4",
+    "D5",
+    "D6",
+    "S"
+   ]
+  },
+  {
+   "id": "C110",
+   "pmid": "38869512",
+   "doi": "10.1007/s00125-024-06196-3",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "Row 14 scores relied on keyword windows: a weak 'may be considered' recommendation (LoE 3, consensus) to assess insulin resistance by HOMA-IR or OGTT-derived estimates, with no link to FIB-4, elastography or therapy.",
+   "full_text_shows": "Wording confirmed in this copy (XML full text, Executive Summary). The level of evidence and grade (LoE 3, weak recommendation, consensus) are visible here, unlike in the PMC copy described in the row. Table 7 sits under a separate LoE 2 strong recommendation and lists fasting insulin and/or C-peptide and HOMA-IR in the main list for 'Type 2 diabetes or insulin resistance'; OGTT or mixed-meal indices are under 'Further investigations*' (according to clinical evaluation and a priori probability). The text says HOMA-IR can use fasting insulin or C-peptide (not on insulin treatment) and that interpretation needs standardised insulin or C-peptide measurement; no management step follows from the result. This executive summary carries the same recommendation and Table 7.",
+   "verdict": "adds nuance",
+   "quote": "may be considered to clarify metabolic dysfunction in adults with (suspected) MASLD and without an established diagnosis of type 2 diabetes",
+   "key_numbers": "LoE 3, weak recommendation, consensus; agreement 92% (C109 recommendation list; 100% for the LoE 2 strong 'tests recommended (Table 7)' statement); guideline LoE 3 = non-randomised controlled cohort/follow-up study",
+   "role_in_work": "Primary US-relevant source for row 14 status (D3 2) and the basis of D1, D2, D4, D5, D6 and S reasoning.",
+   "design": "Clinical practice guideline (Delphi consensus, LoE-graded)",
+   "population_and_size": "Adults with (suspected) MASLD without established T2D; no own study population",
+   "measure_type": "Fasting-based HOMA-IR (fasting insulin or fasting C-peptide with glucose); OGTT-derived (post-load) and mixed-meal-derived indices as further investigations",
+   "assay_or_platform": "Not specified; guideline states standardised insulin and/or C-peptide measurement is required for interpretation",
+   "quality_note": "Official guideline text. The HOMA-IR statement is specific to 'clarify metabolic dysfunction', not to a treatment or work-up decision; the Table 7 inclusion creates an interpretation tension with 'may be considered'.",
+   "rows_affected": [
+    14
+   ],
+   "dimensions_affected": [
+    "D3",
+    "D2",
+    "D1",
+    "D4",
+    "D5",
+    "D6",
+    "S"
+   ]
+  },
+  {
+   "id": "C118",
+   "pmid": "39992257",
+   "doi": "10.1210/clinem/dgaf086",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "Row 49 scores used it for: cohort-only prognostic evidence with AUC C-peptide not significant in a 57-person model (D2, D8, D6), 5 to 9 timed samples and non-reportable indices (D4), and prognosis that sets monitoring only (D1).",
+   "full_text_shows": "TrialNet Milan cohort (n=57: 30 Stage 1, 27 Stage 2), 5-point OGTT with glucose, insulin and C-peptide. Progression in 16 of 57 over a median 19 +/- 15 months. In a logistic model with 7 covariates, only oral-minimal-model phi total was significant (OR 0.922, 0.863-0.985, P=.016); AUC C-peptide was not (0.999, P=.330). DPTRS and Index60 were higher in Stage 2 (14 of 16 with DPTRS above 7.00 were Stage 2) and in progressors, but their prognostic accuracy was not tested here. Stated limits: short follow-up, small size, no healthy controls, no 10 and 20 minute samples. The paper is mainly a trial-endpoint (research) study.",
+   "verdict": "confirms",
+   "quote": "Other variables, including age, BMI, sex, AUC C-peptide, OMM-derived insulin sensitivity, and stage, did not show significant associations with progression risk.",
+   "key_numbers": "n=57; progressors 16 (5/30 Stage 1, 11/27 Stage 2); phi total OR 0.922 (0.863-0.985) P=.016; AUC C-peptide OR 0.999 P=.330; Stage 1 vs 2 AUC C-peptide P=.362; phi total 66.9 vs 35.0 P<.001; DPTRS 5.89 vs 7.25; Index60 0.13 vs 1.3; power 0.90 (phi total) vs 0.32 (AUC C-peptide) at 10 participants",
+   "role_in_work": "Row 49 supporting cohort: negative for AUC C-peptide as an independent progression marker; supports a research-endpoint reading of model-based measures.",
+   "design": "Single-centre longitudinal observational cohort within TrialNet Pathway to Prevention, exploratory analysis; 16 events for 7 covariates",
+   "population_and_size": "57 autoantibody-positive relatives (2 or more autoantibodies), median age 13.8, Stage 1 n=30, Stage 2 n=27",
+   "measure_type": "Post-load (5-point OGTT) C-peptide and insulin with glucose: AUC C-peptide, DPTRS, Index60, oral minimal model; HOMA-IR and Matsuda (fasting and post-load insulin) did not differ by stage",
+   "assay_or_platform": "Insulin by Linco radioimmunoassay; C-peptide by Diagnostic Products assay (older generation); minimal model run in SAAM II",
+   "quality_note": "No conflict-of-interest or funding text in the extraction. The text states the per-10-unit effect as an '8-fold reduction' while reporting OR 0.92; the unit of the OR is not stated.",
+   "rows_affected": [
+    49
+   ],
+   "dimensions_affected": [
+    "D2",
+    "D3",
+    "D4",
+    "D1",
+    "D6",
+    "D8"
+   ]
+  },
+  {
+   "id": "C119",
+   "pmid": "39994886",
+   "doi": "10.1177/09636897251317048",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "Row 27 scores (D2 1, D1 1) treated it as abstract-level, small-cohort support for MMTT C-peptide around total pancreatectomy with islet autotransplant.",
+   "full_text_shows": "It is a laminin alpha 5 (LAMA5) tissue and plasma biomarker study in 29 TPIAT patients. Pretransplant 'glucose-stimulated C-peptide' is only listed among recorded assessments; no stimulated C-peptide result, no MMTT and no C-peptide correlation with outcomes is reported. Table 1 gives basal (fasting) C-peptide (1.0 to 2.8 ng/mL by aetiology) and a basal SUITO index. Outcomes correlated with LAMA5 were fasting glucose, HbA1c and islet yield (IEQ), not C-peptide.",
+   "verdict": "not relevant",
+   "quote": "Pretransplant assessments including age, gender, BMI, duration of symptoms, fasting blood glucose, hemoglobin A1c (HbA1c), glucose-stimulated C-peptide",
+   "key_numbers": "n=29 (12 men, 17 women); LAMA5 vs fasting glucose p=0.0018, vs HbA1c p=0.0039, vs IEQ infused p=0.02, vs insulin dose no correlation; basal C-peptide 1.0-2.8 ng/mL; follow-up not beyond 1 year",
+   "role_in_work": "Listed as a source for row 27 (MMTT C-peptide) but does not report the measure as a predictor.",
+   "design": "Retrospective single-centre cohort with tissue immunofluorescence and plasma ELISA",
+   "population_and_size": "29 chronic pancreatitis patients undergoing TPIAT at Baylor, Dallas; healthy donor pancreas controls",
+   "measure_type": "C-peptide: fasting (basal) and a recorded but unreported glucose-stimulated value; not an MMTT result",
+   "assay_or_platform": "C-peptide assay not named; LAMA5 by LifeSpan BioSciences ELISA",
+   "quality_note": "Small, exploratory; the index test is LAMA5, not insulin or C-peptide. No conflict-of-interest text seen in the extraction.",
+   "rows_affected": [
+    27
+   ],
+   "dimensions_affected": [
+    "D2",
+    "D1"
+   ]
+  }
+ ],
+ "proposals": [
+  {
+   "row": 14,
+   "dimension": "D3",
+   "current": 2,
+   "proposed": null,
+   "reason": "Keep 2. The specific recommendation is weak ('may be considered', LoE 3, consensus) and covers this population explicitly. Table 7 (LoE 2 strong) lists fasting insulin and/or C-peptide and HOMA-IR in its main list, which could be read as 3, but the specific statement governs; flagged as an interpretation risk, not a change. AASLD body text (partial) has no such statement.",
+   "quote": "may be considered to clarify metabolic dysfunction in adults with (suspected) MASLD",
+   "confidence": "medium",
+   "papers": [
+    "C096",
+    "C108",
+    "C109",
+    "C110"
+   ]
+  },
+  {
+   "row": 14,
+   "dimension": "D2",
+   "current": 1,
+   "proposed": null,
+   "reason": "Keep 1. The guideline's LoE 3 is its own grade (non-randomised cohort) for the recommendation, but nothing in the text links the result to a decision or outcome; the text says only 'clarify metabolic dysfunction'. The V15 wording 'expert opinion only' understates the guideline's grade, though not decision-impact evidence.",
+   "quote": "However, the interpretation of HOMA-IR and Adipo-IR requires standardised measurement of insulin and/or C-peptide concentrations.",
+   "confidence": "medium",
+   "papers": [
+    "C108",
+    "C109",
+    "C110"
+   ]
+  },
+  {
+   "row": 14,
+   "dimension": "D1",
+   "current": 1,
+   "proposed": null,
+   "reason": "Keep 1. No management step follows from the result in the full text; 'possible MASLD' calls for further tests of insulin resistance, a label not a decision.",
+   "quote": "requiring further tests of insulin-resistance",
+   "confidence": "medium",
+   "papers": [
+    "C108",
+    "C109",
+    "C110"
+   ]
+  },
+  {
+   "row": 14,
+   "dimension": "D4",
+   "current": 2,
+   "proposed": null,
+   "reason": "Keep 2. The guideline itself states standardised measurement is needed (confirmed).",
+   "quote": "requires standardised measurement of insulin and/or C-peptide concentrations",
+   "confidence": "medium",
+   "papers": [
+    "C108",
+    "C109",
+    "C110"
+   ]
+  },
+  {
+   "row": 14,
+   "dimension": "D5",
+   "current": 3,
+   "proposed": null,
+   "reason": "Keep 3. Fasting insulin and/or C-peptide and HOMA-IR are in the unasterisked part of Table 7 for the T2D or insulin resistance block, consistent with a routine laboratory order; the guideline does not say who orders it.",
+   "quote": "Fasting plasma insulin and/or C-peptide",
+   "confidence": "low",
+   "papers": [
+    "C108",
+    "C109",
+    "C110"
+   ]
+  },
+  {
+   "row": 14,
+   "dimension": "D6",
+   "current": 3,
+   "proposed": null,
+   "reason": "Keep 3. Nothing in the full text on burden or false-result harm; the text supplies the standardisation caveat.",
+   "quote": "requires standardised measurement of insulin and/or C-peptide concentrations",
+   "confidence": "low",
+   "papers": [
+    "C108",
+    "C109",
+    "C110"
+   ]
+  },
+  {
+   "row": 14,
+   "dimension": "S",
+   "current": 1,
+   "proposed": null,
+   "reason": "Keep as scored (V18 1, S1 2). The full text shows no pathway step depending on the test; AASLD body text has none either.",
+   "quote": "patients with NAFLD should be screened for the presence of T2DM (Table 1)",
+   "confidence": "low",
+   "papers": [
+    "C096"
+   ]
+  },
+  {
+   "row": 35,
+   "dimension": "D2",
+   "current": 2,
+   "proposed": null,
+   "reason": "Keep 2 (V15). C103 gives observational accuracy data but weak (AUC 0.642; 0.62 to 0.68 in subgroups), in-sample cut-offs and a null in women 35 or older: anchor 2 at its low end, not decision-impact evidence. S3 left the score undetermined from titles; C103 alone would support 2.",
+   "quote": "the best HOMA-IR cut-off was 2.06 (sensitivity 67.5%, specificity 61.1%) in the normal-BMI group",
+   "confidence": "medium",
+   "papers": [
+    "C103"
+   ]
+  },
+  {
+   "row": 35,
+   "dimension": "D1",
+   "current": 0,
+   "proposed": null,
+   "reason": "Keep V17 0 (V18 1). The authors conclude only that baseline risk should be considered when using HOMA-IR; no action follows.",
+   "quote": "The present study revealed the necessity of considering baseline GDM risk groups when using the HOMA-IR index for GDM prediction.",
+   "confidence": "low",
+   "papers": [
+    "C103"
+   ]
+  },
+  {
+   "row": 49,
+   "dimension": "D2",
+   "current": 2,
+   "proposed": null,
+   "reason": "Keep 2. C118 gives no tested prognostic accuracy for DPTRS or Index60 (only group differences by stage) and shows AUC C-peptide not independently significant in a small model; consistent with cohort-only evidence.",
+   "quote": "Other variables, including age, BMI, sex, AUC C-peptide, OMM-derived insulin sensitivity, and stage, did not show significant associations with progression risk.",
+   "confidence": "medium",
+   "papers": [
+    "C118"
+   ]
+  },
+  {
+   "row": 49,
+   "dimension": "D8",
+   "current": 2,
+   "proposed": null,
+   "reason": "Keep 2. The nonsignificant AUC C-peptide term does not test the glucose-plus-C-peptide scores (DPTRS and Index60 were not in the model), so it neither supports nor weakens the D8 reasoning; 16 events for 7 covariates limits it.",
+   "quote": "the AUC C-peptide and the HOMA2-B did not differ between Stage 1 and Stage 2 T1D",
+   "confidence": "low",
+   "papers": [
+    "C118"
+   ]
+  },
+  {
+   "row": 49,
+   "dimension": "D6",
+   "current": 2,
+   "proposed": null,
+   "reason": "Keep 2. The paper states limited generalisability (short follow-up) but says nothing on burden or false-result consequences; it supports only the not-validated part of the reason.",
+   "quote": "thus limiting the generalizability of our findings",
+   "confidence": "low",
+   "papers": [
+    "C118"
+   ]
+  },
+  {
+   "row": 49,
+   "dimension": "D4",
+   "current": 2,
+   "proposed": null,
+   "reason": "Keep 2. Confirms 5-point OGTT, minimal-model software and older radioimmunoassays; adds no standardisation fact.",
+   "quote": "Minimal model parameters were estimated by implementing the model of C-peptide secretion in SAAM-II 2.3 software",
+   "confidence": "low",
+   "papers": [
+    "C118"
+   ]
+  },
+  {
+   "row": 49,
+   "dimension": "D3",
+   "current": 1,
+   "proposed": null,
+   "reason": "No change; C118 is not a guideline and does not recommend testing.",
+   "quote": "Currently we lack surrogate endpoints for prevention trials in Stage 1 or 2",
+   "confidence": "low",
+   "papers": [
+    "C118"
+   ]
+  },
+  {
+   "row": 49,
+   "dimension": "D1",
+   "current": 1,
+   "proposed": null,
+   "reason": "No change; the text frames phi total, DPTRS and Index60 as risk markers or trial endpoints, not as selecting treatment.",
+   "quote": "Our results suggest the need for testing model-based measures in existing clinical trials",
+   "confidence": "low",
+   "papers": [
+    "C118"
+   ]
+  },
+  {
+   "row": 27,
+   "dimension": "D2",
+   "current": 1,
+   "proposed": null,
+   "reason": "Keep 1. C119 contributes no C-peptide predictor evidence; remove it as support in the reason rather than change the number (the score rests on the other sources).",
+   "quote": "There was no correlation between LAMA5 area expression and insulin dosage posttransplant",
+   "confidence": "medium",
+   "papers": [
+    "C119"
+   ]
+  },
+  {
+   "row": 27,
+   "dimension": "D1",
+   "current": 1,
+   "proposed": null,
+   "reason": "Keep 1 on the other sources; C119 adds no support for MMTT C-peptide before TPIAT and should not be cited as such.",
+   "quote": "Pretransplant assessments including age, gender, BMI, duration of symptoms, fasting blood glucose, hemoglobin A1c (HbA1c), glucose-stimulated C-peptide",
+   "confidence": "low",
+   "papers": [
+    "C119"
+   ]
+  }
+ ],
+ "claim_issues": [
+  {
+   "where": "usecases-verified.md row 14 (and claims GL-29, UC-14)",
+   "issue": "The text says the Table 7 wording 'according to clinical evaluation and [a priori] probability' attaches to lipoprotein(a) and introduces the insulin tests. In the full text the asterisk marks only the 'Further investigations*' lines in each block. For type 2 diabetes or insulin resistance, fasting insulin and/or C-peptide and HOMA-IR are in the main list (no asterisk); only 'Insulin resistance indices from oral glucose tolerance test or mixed meal tests' is under 'Further investigations*'. Lipoprotein(a) is in the main list ('Once in a lifetime').",
+   "proposed_wording": "Table 7 (attached to a 100%-agreement, LoE 2 strong recommendation that comorbidity tests are recommended at diagnosis and follow-up) lists, for type 2 diabetes or insulin resistance, fasting glucose, HbA1c, OGTT 2-h glucose, fasting insulin and/or C-peptide and HOMA-IR; OGTT- or mixed-meal-derived insulin-resistance indices are listed as 'Further investigations*' (*according to clinical evaluation and a priori probability).",
+   "paper": "C109",
+   "claim_ids": [
+    "GL-29",
+    "UC-14"
+   ]
+  },
+  {
+   "where": "usecases-verified.md row 14 caveat 'level of evidence not visible in PMC'; claim GL-27",
+   "issue": "Level of evidence and grade are visible in the stored copies of all three EASL documents (C108 PDF text, C109 and C110 XML text): LoE 3, weak recommendation, consensus; 92% agreement is in C109.",
+   "proposed_wording": "LoE 3, weak recommendation, consensus, 92% agreement (read in the full text of PMIDs 38851997, 38852583 and 38869512).",
+   "paper": "C109",
+   "claim_ids": [
+    "GL-27"
+   ]
+  },
+  {
+   "where": "usecases-verified.md row 14 status Limited and the Table 7 tension",
+   "issue": "Two statements in one guideline: a strong (LoE 2, 100% agreement) recommendation that Table 7 tests, which include fasting insulin and/or C-peptide and HOMA-IR, are recommended at diagnosis; and a weak 'may be considered' for HOMA-IR or OGTT-derived estimates. Row 14 reports only the weak one. Limited stays right for the specific population, but the row should say the table sits under a strong recommendation.",
+   "proposed_wording": "The guideline lists fasting insulin and/or C-peptide and HOMA-IR in Table 7 under a strong recommendation to test for comorbidities, and separately says assessment of insulin resistance 'may be considered' (weak) to clarify metabolic dysfunction; neither is linked to a management step.",
+   "paper": "C109",
+   "claim_ids": [
+    "GL-29",
+    "GL-27"
+   ]
+  },
+  {
+   "where": "usecases-verified.md row 14 / claim GL-44 (AASLD negative)",
+   "issue": "The local AASLD file is body text of about 70,000 characters without tables or references; it confirms the negative only for that text. The skeptic's whole-article search is a separate source and was not repeated.",
+   "proposed_wording": "No HOMA-IR, fasting insulin or C-peptide recommendation was found in the AASLD 2023 body text read here (tables not in the extraction); the earlier whole-article search also found none.",
+   "paper": "C096",
+   "claim_ids": [
+    "GL-44"
+   ]
+  },
+  {
+   "where": "usecases-verified.md row 35, claims UC-35 and EV-45 ('moderate in-sample discrimination'; 'AUCs of 0.62-0.81'; 'measured at 6-14 weeks')",
+   "issue": "For PMID 38017369 the full text gives AUC 0.642 overall (0.622 to 0.680 in subgroups), a null result in women 35 or older, and an inclusion rule of gestational age 14 weeks or less (no lower bound, so '6-14 weeks' is not stated for this study). The authors call it a moderate predictor, but the AUCs are low.",
+   "proposed_wording": "PMID 38017369 (full text): fasting HOMA-IR at 14 weeks or less, AUC 0.642 overall (0.622 to 0.680 in subgroups), in-sample cut-offs 2.06 to 3.13 by BMI, no discrimination in women 35 or older (P=0.873), no test of added value over age, history or BMI.",
+   "paper": "C103",
+   "claim_ids": [
+    "EV-45",
+    "UC-35"
+   ]
+  },
+  {
+   "where": "V15 D2 reason for row 35",
+   "issue": "The V15 reason lists AUC 0.73 and 0.81 and cut-offs 1.43 to 2.27, 2.08 and 1.52; none of these belong to PMID 38017369, which has AUC 0.642 and cut-offs 2.71, 2.69, 2.06 and 3.13. The reason should say which paper gives which number.",
+   "proposed_wording": "Add: PMID 38017369 (full text) AUC 0.642, cut-offs 2.06 (BMI<25) and 3.13 (BMI>=25).",
+   "paper": "C103",
+   "claim_ids": [
+    "EV-45"
+   ]
+  },
+  {
+   "where": "usecases-verified.md row 49 caveat 'Progressors had lower AUC C-peptide in a univariate comparison (Table S1, not read)'",
+   "issue": "The main text says progressors had lower insulin secretion metrics, including phi total and AUC C-peptide, but gives no numbers or P values; Table S1 is not in the stored text, so significance of the AUC C-peptide difference is still unverified.",
+   "proposed_wording": "The text says progressors had lower phi total and AUC C-peptide (Table S1 not in the stored text; no values or P values seen); AUC C-peptide did not differ between Stage 1 and Stage 2 (P=.362).",
+   "paper": "C118",
+   "claim_ids": [
+    "UC-49"
+   ]
+  },
+  {
+   "where": "usecases-verified.md row 49 caveat on the '8-fold reduction per 10 units' text",
+   "issue": "Confirmed that the discussion says '8 times lower odds' while Table 3 shows OR 0.922 (0.863-0.985). The row's check (0.92 to the 10th power, about 2.3-fold) assumes the OR is per 1 unit, which the paper does not state.",
+   "proposed_wording": "The text's '8-fold lower odds per 10 units of phi total' does not match its Table 3 OR of 0.922 (95% CI 0.863-0.985); the unit of the OR is not stated, so the effect size is not quoted.",
+   "paper": "C118",
+   "claim_ids": [
+    "UC-49"
+   ]
+  },
+  {
+   "where": "usecases-verified.md row 49 evidence list (Galderisi 2025)",
+   "issue": "Confirmed: n=30 Stage 1 and 27 Stage 2, phi total the only significant variable. Not stated in the row: median follow-up 19 +/- 15 months, 16 progressors (5 from Stage 1, 11 from Stage 2) against 7 covariates, and DPTRS and Index60 were not in the model.",
+   "proposed_wording": "Galderisi 2025: 16 progressors (5 of 30 Stage 1, 11 of 27 Stage 2) over a median 19 +/- 15 months; 7-covariate model without DPTRS or Index60.",
+   "paper": "C118",
+   "claim_ids": [
+    "UC-49"
+   ]
+  },
+  {
+   "where": "usecases-verified.md row 27 source list and claim UC-27 (PMID 39994886 as support for MMTT C-peptide)",
+   "issue": "The full text of PMID 39994886 is a LAMA5 biomarker study. A 'glucose-stimulated C-peptide' is named among recorded pretransplant assessments, but no stimulated or MMTT C-peptide result or correlation is reported; Table 1 shows only basal C-peptide and a basal SUITO index. It does not support MMTT C-peptide before TPIAT.",
+   "proposed_wording": "PMID 39994886 (full text): pretransplant glucose-stimulated C-peptide was recorded but not analysed; only basal C-peptide is reported; the paper's markers were LAMA5 and tissue matrix proteins. Not a source for MMTT C-peptide.",
+   "paper": "C119",
+   "claim_ids": [
+    "UC-27"
+   ]
+  }
+ ],
+ "notes": "Tool calls used: 30 in total, including the failed first write attempt and this writing step. Assumptions: current scores taken from the unit files (only V20 row 27 D3 carries a correction, not concerning these papers). All proposals are null: no full text moves a score by a whole point; the C119 finding is a citation problem (claim issue), not a score change. C096 text is partial (tables not extracted), C108 is PDF-extracted. C103, C118 and C119 extractions contain no conflict-of-interest text. Paths to viability: row 14 unchanged (standardised assays and a decision rule linking the result to FIB-4/elastography or therapy are still needed; the guideline itself states the standardisation need). Row 49: C118 supports the research-endpoint route (phi total, power estimate) and says retrospective validation in trials is needed; the clinical-test route stays unvalidated. Row 27: no C-peptide threshold in C119. Row 35: C103 suggests BMI- and age-specific cut-offs and external validation would be needed, with no yield in women 35 or older. Scores for D5/D6/S in row 14 are judgement entries that the guideline text neither supports nor contradicts."
+}

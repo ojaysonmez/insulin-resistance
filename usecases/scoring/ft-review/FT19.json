@@ -1,0 +1,472 @@
+{
+ "unit": "FT19",
+ "role": "full-text reader",
+ "papers": [
+  {
+   "id": "C044",
+   "pmid": "27710244",
+   "doi": "10.1210/jc.2016-2466",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "Row 12 scores assumed the guideline names no insulin assay or threshold and uses insulin requirement only as a clinical clue; D3 2 (V14) rests on the 'metabolic workup for insulin resistance' sentence.",
+   "full_text_shows": "The text has no occurrence of hyperinsulinaemia, fasting insulin or C-peptide (0 hits). Diagnosis rests on history, examination, body composition and metabolic status, with genetic testing graded Class I Level A. The sentence 'All patients should undergo a metabolic workup for insulin resistance...' sits in the legend of the diagnostic-approach figure and has no class or level. Insulin dose (>=200 U/d, >=2 U/kg/d, U-500) is a suspicion clue in Table 3; metreleptin criteria for partial lipodystrophy use leptin <4 ng/mL with HbA1c >8% and/or triglycerides >500 mg/dL. Anti-insulin-receptor antibody (type B) syndrome is not covered; insulin receptor mutations appear once, as a differential diagnosis.",
+   "verdict": "confirms",
+   "quote": "All patients should undergo a metabolic workup for insulin resistance, diabetes, dyslipidemia, and fatty liver disease.",
+   "key_numbers": "Insulin requirement clue >=200 U/d or >=2 U/kg/d; leptin <4 ng/mL, HbA1c >8% and/or TG >500 mg/dL for metreleptin in partial lipodystrophy (Class IIb, Level B); no insulin or C-peptide threshold.",
+   "role_in_work": "US-endorsed multisociety guideline used to show that no guideline recommends an insulin measurement for lipodystrophy or severe IR (D3, D2) and as a clue source for D1 and S.",
+   "design": "Multi-society practice guideline (Endocrine Society and others), graded recommendations.",
+   "population_and_size": "Patients with lipodystrophy syndromes (excludes HIV-related and localized forms); no patient numbers.",
+   "measure_type": "No insulin or C-peptide measure is named; the 'insulin resistance' workup is unspecified (not fasting-based, post-load or C-peptide).",
+   "assay_or_platform": "None named for insulin; HbA1c, TG, leptin, genetics.",
+   "quality_note": "Text complete (XML). Clinical-grade guideline; the metabolic-workup sentence is not a graded recommendation.",
+   "rows_affected": [
+    12
+   ],
+   "dimensions_affected": [
+    "D2",
+    "D3",
+    "D1",
+    "S"
+   ]
+  },
+  {
+   "id": "C056",
+   "pmid": "30794834",
+   "doi": "10.1016/j.diabres.2019.02.015",
+   "text_quality": "partial",
+   "read_level": "full text",
+   "relied_on": "Row 28 scores (and row 9 D6) assumed this paper shows the glucose/C-peptide ratio varies with renal function and that this is a hypoglycaemia-relevant interpretation limit.",
+   "full_text_shows": "Retrospective single-centre chart review of 87 T2D patients; the glucose/C-peptide ratio is a mean over years of random (untimed) draws per patient. Ratio was about 65 (eGFR >=60) vs 45 (eGFR <60); across eGFR quartiles the ratio was 44, 75, 71, 53 with p = 0.08 (Table 2a), while in ratio quartiles the lowest-ratio quartile had lower eGFR (59.6 vs 73 to 83, p = 0.032). Hypoglycaemia events were not measured; the link to hypoglycaemia is the authors' hypothesis. Authors state timing of food and medication was not standardised and results may not apply in unstable patients. The paper is not about type 3c diabetes (row 9).",
+   "verdict": "adds nuance",
+   "quote": "This is a small, single center retrospective series from a tertiary referral center.",
+   "key_numbers": "n=87 (67 M); age 67.1; eGFR 73 +/- 27; ratio 60.7 +/- 46.4 mg/dL per ng/mL; about 45 vs 65 for eGFR <60 vs >=60; eGFR-quartile ratios 44.2, 75.0, 71.4, 52.9 (p=0.08); 59% on secretagogues.",
+   "role_in_work": "Observational support for C-peptide read in CKD as an interpretation limit (row 28 D1, D2, D6, S); cited for row 9 D6.",
+   "design": "Retrospective single-centre chart review, Joslin kidney/hypertension clinic.",
+   "population_and_size": "87 adults with T2D on glucose-lowering drugs and at least 4 simultaneous C-peptide, HbA1c, creatinine and glucose values.",
+   "measure_type": "C-peptide (random, untimed serum) with simultaneous glucose; glucose/C-peptide ratio. Not stimulated, not post-meal.",
+   "assay_or_platform": "Roche Elecsys (Cobas E170) electrochemiluminescence sandwich assay.",
+   "quality_note": "PDF text is two-column and partly garbled (some symbols lost); numbers cross-checked in tables. Small, retrospective, means over years, no hypoglycaemia outcome, no external validation.",
+   "rows_affected": [
+    28,
+    9
+   ],
+   "dimensions_affected": [
+    "D2",
+    "D8",
+    "D1",
+    "D6",
+    "S"
+   ]
+  },
+  {
+   "id": "C067",
+   "pmid": "33916952",
+   "doi": "10.3390/jpm11040276",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "Row 48 scores assumed insulin was collected but not used and that diagnosis rests on glucose and symptoms with a glucose cut-off the authors set themselves (D1 0-1, D2 1, D8 0).",
+   "full_text_shows": "Insulin was measured hourly for 5 h of the 75 g OGTT and analysed: hyperinsulinaemia (about tenfold rise) was found in 40% of symptomatic vs 31% of control adults (p=0.440), and the 12 adults with confirmed RH had lower 2-h insulin (22.7 vs 43.4 uIU/mL, p<0.001), so insulin did not discriminate. The 55 mg/dL cut-off is attributed to the authors' reference 18 and described as not standardised. 8 of 35 asymptomatic controls (23%) reached the cut-off and 10 of 40 symptomatic adults had symptoms without glucose decline. MMTT (symptomatic group only) showed no hypoglycaemia; glucose was drawn only at symptoms (17 of 40) and the authors list missing insulin and glucose sampling through the MMTT as a limitation. 15 of 90 enrolled were excluded for IFG/IGT before analysis.",
+   "verdict": "adds nuance",
+   "quote": "reactive hypoglycemia is not associated with any metabolic disturbance",
+   "key_numbers": "n=75 analysed (40 symptomatic, 35 control); RH 12/40 (30%); control biochemical hypoglycaemia 8/35 (23%); hyperinsulinaemia 16/40 (40%) vs 11/35 (31%), p=0.440; OGTT first-hour glucose ROC cut-off 101 mg/dL, sensitivity 33%, specificity 33%; MMTT sensitivity 75%, specificity 71% (small n).",
+   "role_in_work": "Main evidence for row 48 (research-only): post-load insulin did not separate reactive hypoglycaemia from controls; underlies D1, D2, D8, D4, D5, D6, S entries.",
+   "design": "Single-centre hospital cross-sectional study with control group (Warsaw, 2019-2020).",
+   "population_and_size": "Non-diabetic adults 18-75 with postprandial hypoglycaemia-like symptoms, no gastric surgery; 75 analysed.",
+   "measure_type": "Post-load (5-h 75 g OGTT) insulin with glucose; fasting insulin and HOMA-IR (>=2); post-meal MMTT glucose (no MMTT insulin result reported). Insulin, not C-peptide.",
+   "assay_or_platform": "Insulin assay platform not named in the text read; reference range 2.6-24.9 uIU/mL.",
+   "quality_note": "Complete text. Small, single centre; no reference list in the stored text so reference 18 could not be checked; the abstract-level reading missed that insulin was analysed and negative.",
+   "rows_affected": [
+    48
+   ],
+   "dimensions_affected": [
+    "D1",
+    "D2",
+    "D8",
+    "D4",
+    "D5",
+    "D6",
+    "S"
+   ]
+  },
+  {
+   "id": "C082",
+   "pmid": "35416981",
+   "doi": "10.2337/dc21-2009",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "Row 4 V5:D1 cites it only as a drug-trial endpoint note (protein-test insulin AUC nearly twofold higher), not as support for insulin as a diagnostic.",
+   "full_text_shows": "Open-label four-period crossover of exendin-(9-39) in children with HI; 16 enrolled, 8 completed all periods. Insulin AUC rose almost twofold on the oral protein test, but C-peptide AUC and modelled insulin secretion rate were not significantly changed and insulin fractional clearance fell about 30%, so the insulin rise reflects clearance, not secretion. Oral protein glucose AUC rose from 698 to 1,030 mmol min/L (about 48% by my arithmetic, P=0.010); the row's '30%' appears to mix this with the 30% clearance and insulin-sensitivity figures.",
+   "verdict": "adds nuance",
+   "quote": "the AUC of C-peptide (surrogate indicator of insulin secretion) was not significantly changed",
+   "key_numbers": "MMTT glucose AUC +28% (P<=0.001); insulin AUC unchanged on MMTT (P=0.827); OPTT insulin AUC about 2x (P=0.004); OPTT C-peptide P=0.059; insulin FCR -30% on OPTT (P=0.017).",
+   "role_in_work": "Context for the row 4 caveat on drug-trial challenge tests; D1 for row 4 does not depend on it.",
+   "design": "Open-label crossover trial (NCT00897676).",
+   "population_and_size": "16 children (10 months to 15 years) with HI; 8 completed MMTT and OPTT.",
+   "measure_type": "Post-meal (MMTT) and post-protein-load insulin and C-peptide in a drug trial; not a diagnostic test.",
+   "assay_or_platform": "Insulin ELISA (ALPCO); C-peptide radioimmunoassay (Millipore/Linco HCP-20K); glucose Nova StatStrip.",
+   "quality_note": "Complete text; small trial; the stored copy starts at the Introduction (no abstract).",
+   "rows_affected": [
+    4
+   ],
+   "dimensions_affected": [
+    "D1"
+   ]
+  },
+  {
+   "id": "C087",
+   "pmid": "35998266",
+   "doi": "10.2337/dc22-0167",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "Row 49 scores assumed OGTT glucose plus C-peptide (Index60, AUC C-peptide) gives cohort-level prognosis with thresholds that are cohort medians and not externally validated, needing 5 to 9 timed samples, with no recommendation to test.",
+   "full_text_shows": "Longitudinal OGTT analysis of progressors (DPT-1 n=72, TrialNet n=82). AUC C-peptide rose until 1.5 years before diagnosis then fell (P=0.017 DPT-1; P=0.093 TrialNet). Progressor median Index60 at that point was applied to the baseline OGTT of the full cohorts (5-year risk 0.75 and 0.79 with TrialNet thresholds in TrialNet and DPT-1; 0.88 with the DPT-1 threshold in DPT-1). This cross-application is a form of replication, not independent validation, and AUC glucose alone gave nearly the same 5-year risk (0.72 and 0.79). C-peptide assays differed: radioimmunoassay in DPT-1, Tosoh in TrialNet. The authors frame use as selecting people for prevention trials and state limits on generalisability.",
+   "verdict": "adds nuance",
+   "quote": "the 5-year risks for T1D among those above the TNPTP thresholds at baseline were similar between AUC glucose and Index60",
+   "key_numbers": "Index60 median 1.44 (DPT-1) and 1.05 (TrialNet); 5-year risk 74.7% (HR 12.2) in TrialNet and 78.8% (HR 4.7) in DPT-1 with the TrialNet threshold; 87.5% (HR 5.06) in DPT-1 with the DPT-1 threshold; AUC glucose 71.5% (HR 9.8) and 78.8% (HR 4.1); baseline cohorts n=6,567 and 711 (6,485 and 639 after removing progressors).",
+   "role_in_work": "Cohort evidence for the prognostic use (row 49 D1, D2, D4, D5, D6).",
+   "design": "Secondary analysis of two prospective cohort studies (DPT-1, TrialNet Pathway to Prevention).",
+   "population_and_size": "Autoantibody-positive relatives of people with T1D; 154 progressors with serial OGTTs; baseline cohorts 7,278.",
+   "measure_type": "Post-load (OGTT) C-peptide combined with glucose (Index60, AUC C-peptide); C-peptide, not insulin.",
+   "assay_or_platform": "C-peptide by radioimmunoassay (DPT-1) and Tosoh (TrialNet); glucose oxidase for glucose.",
+   "quality_note": "Complete text; assay heterogeneity; thresholds derived in progressors only; benefit over glucose-only measures is small in the TrialNet analysis.",
+   "rows_affected": [
+    49
+   ],
+   "dimensions_affected": [
+    "D1",
+    "D2",
+    "D3",
+    "D4",
+    "D5",
+    "D6"
+   ]
+  },
+  {
+   "id": "C090",
+   "pmid": "36465621",
+   "doi": "10.3389/fendo.2022.1052794",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "Row 28 scores assumed UCPCR <=1.13 nmol/g (AUC 0.978, n=85) is a usable accuracy result for severe insulin deficiency across renal function.",
+   "full_text_shows": "The reference standard for the cut-off is fasting serum C-peptide (stated 'FCP < 0.3'; unit printed as mmol/l, probably a typo for nmol/L), the same serum value that kidney function distorts. Mean UCPCR differed by group (0.89 for eGFR <=60 vs 1.67 for >60, P<0.001) and mean fasting C-peptide was 0.20 vs 0.39 nmol/L, so the single cut-off largely separates the CKD group; sensitivity 88.37% and specificity 95.24% imply about 43 positives and 42 negatives of 85 (my arithmetic), and performance within eGFR strata is not reported. The CKD group had higher HbA1c (10.1 vs 8.5%) and longer duration. The authors' statement that UCPCR is not affected by renal function does not match their Table 1. Limits: single centre, one urine sample, no post-meal C-peptide, cut-off by renal function not determined.",
+   "verdict": "adds nuance",
+   "quote": "UCPCR cut-off ≤1.13 nmol/g had the highest Youden index for detecting FCP < 0.3mmol/l",
+   "key_numbers": "n=85 (45 eGFR >60, 40 eGFR <=60); AUC 0.978 (95% CI 0.919-0.997); sensitivity 88.37%, specificity 95.24%; UCPCR 0.89 vs 1.67 nmol/g; FCP 0.20 vs 0.39; UCPCR vs FCP r=0.698 (eGFR <=60) and 0.455 (>60); 24-h urine C-peptide not related to FCP when eGFR <=60 (P=0.243).",
+   "role_in_work": "Only quantitative accuracy datum for a CKD-robust C-peptide alternative (row 28 D2, D8, D4, D5).",
+   "design": "Single-centre inpatient cross-sectional study with ROC analysis (Hefei, 2020-2021).",
+   "population_and_size": "85 inpatients with T2D on drugs other than secretagogues.",
+   "measure_type": "Fasting serum C-peptide and urinary C-peptide/creatinine ratio (single morning and 24-h urine); C-peptide, unstimulated.",
+   "assay_or_platform": "Chemiluminescence immunoassay (platform detail not extracted); Hitachi 7600-120 for chemistry.",
+   "quality_note": "Complete text. Derivation and test in the same sample; circular reference standard; very small SDs in Table 1 (possibly SE).",
+   "rows_affected": [
+    28
+   ],
+   "dimensions_affected": [
+    "D2",
+    "D8",
+    "D1",
+    "D4",
+    "D5",
+    "D6"
+   ]
+  },
+  {
+   "id": "C095",
+   "pmid": "36675721",
+   "doi": "10.3390/jpm13010060",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "Row 35 scores assumed fasting first-trimester HOMA-IR gives association and moderate in-sample discrimination (AUC 0.73, n=1343), cut-offs varying by BMI, and no incremental-value or decision study.",
+   "full_text_shows": "Prospective two-centre Beijing cohort; GDM 22.3% (300/1343). HOMA-IR was independently associated with GDM after adjustment (OR 2.97, 95% CI 2.31-3.81). ROC cut-offs were derived in the same sample: 1.52 overall (sensitivity 63%, specificity 71%, AUC 0.733), then 1.43, 2.27 and 2.31 by BMI group (AUC 0.69, 0.76, 0.80; obese n=67). No external validation, C-statistic gain or reclassification analysis is reported. The insulin assay is not named and the authors say a standardised insulin assay was not available. The authors still write that reaching the cut-off lets GDM be confirmed, which the sensitivity and specificity do not support.",
+   "verdict": "confirms",
+   "quote": "there is no commonly accepted HOMA-IR cutoff value",
+   "key_numbers": "n=1343 (1066 BMI<24; 210 overweight; 67 obese); GDM 17.9%, 34.8%, 53.7% by group; cut-offs 1.52/1.43/2.27/2.31; AUC 0.733/0.691/0.760/0.801.",
+   "role_in_work": "Prediction cohort for row 35 part (b) (D2, D8, D1).",
+   "design": "Prospective two-centre observational cohort.",
+   "population_and_size": "1343 singleton pregnancies enrolled at 6-12 weeks, no prior diabetes, with 75 g OGTT at 24-28 weeks.",
+   "measure_type": "Fasting-based HOMA-IR (fasting insulin and glucose); fasting C-peptide also measured; outcome is the post-load OGTT at 24-28 weeks.",
+   "assay_or_platform": "Not named in the text read.",
+   "quality_note": "Complete text. Same-sample cut-offs, 17% loss to delivery follow-up (GDM status was known at 24-28 weeks), small obese subgroup, authors' conclusion overstated.",
+   "rows_affected": [
+    35
+   ],
+   "dimensions_affected": [
+    "D2",
+    "D8",
+    "D1"
+   ]
+  }
+ ],
+ "proposals": [
+  {
+   "row": 12,
+   "dimension": "D3",
+   "current": 2,
+   "proposed": null,
+   "reason": "No change: the guideline text names the condition and a metabolic workup but no insulin test, so clarification 5 still gives 2 (S1:D3 has 1; V14:D3 at 2 is the later entry and stands).",
+   "quote": "All patients should undergo a metabolic workup for insulin resistance",
+   "confidence": "high",
+   "papers": [
+    "C044"
+   ]
+  },
+  {
+   "row": 12,
+   "dimension": "D2",
+   "current": 1,
+   "proposed": null,
+   "reason": "No change: no insulin threshold or accuracy data in the guideline.",
+   "quote": "There are no defined serum leptin levels that establish or rule out the diagnosis of lipodystrophy.",
+   "confidence": "high",
+   "papers": [
+    "C044"
+   ]
+  },
+  {
+   "row": 28,
+   "dimension": "D2",
+   "current": 2,
+   "proposed": null,
+   "reason": "No change from this evidence alone: the C090 accuracy figure uses a circular reference standard and is confounded by renal group, and the C056 quartile test is p=0.08, so the data are weaker than the abstract reading suggested; cohort-level data and the review still fit anchor 2. The main session may consider 1 if it also doubts the review evidence. Applies to S3:D2 and V15:D2.",
+   "quote": "Diminished renal function and advanced age are associated with the lowest glucose/C-peptide ratios",
+   "confidence": "low",
+   "papers": [
+    "C056",
+    "C090"
+   ]
+  },
+  {
+   "row": 28,
+   "dimension": "D8",
+   "current": 1,
+   "proposed": null,
+   "reason": "No change: C090 gives no head-to-head with eGFR-adjusted serum C-peptide.",
+   "quote": "future studies also need to determine the cut-off point value of UCPCR in identifying differences in renal function",
+   "confidence": "low",
+   "papers": [
+    "C090"
+   ]
+  },
+  {
+   "row": 28,
+   "dimension": "D1",
+   "current": 1,
+   "proposed": null,
+   "reason": "No change: no patient decision is tested; the link to hypoglycaemia is a hypothesis.",
+   "quote": "likely are associated with a higher risk of hypoglycemia events",
+   "confidence": "medium",
+   "papers": [
+    "C056"
+   ]
+  },
+  {
+   "row": 9,
+   "dimension": "D6",
+   "current": 2,
+   "proposed": null,
+   "reason": "No change: C056 is a T2D cohort and says nothing about pancreatogenic diabetes; it is weak support for this row.",
+   "quote": "This is a small, single center retrospective series",
+   "confidence": "low",
+   "papers": [
+    "C056"
+   ]
+  },
+  {
+   "row": 48,
+   "dimension": "D1",
+   "current": 1,
+   "proposed": null,
+   "reason": "No change (V23:D1 is 0, V24:D1 and S3:D1 are 1; the later V24 reading stands): insulin was analysed and did not discriminate, which is no reason to raise D1.",
+   "quote": "hyperinsulinemia is not responsible for glycemic declines",
+   "confidence": "medium",
+   "papers": [
+    "C067"
+   ]
+  },
+  {
+   "row": 48,
+   "dimension": "D2",
+   "current": 1,
+   "proposed": null,
+   "reason": "No change: Hall finds no insulin difference between reactive hypoglycaemia and controls (evidence against, not for). The 1 can stand only because the second cited series (PMID 41829992, not read here) adds insulin phenotypes; if that series is judged not to support insulin, 0 would be defensible.",
+   "quote": "There was no significant difference (p = 0.440) in hyperinsulinemia occurrence in SG and CG",
+   "confidence": "low",
+   "papers": [
+    "C067"
+   ]
+  },
+  {
+   "row": 48,
+   "dimension": "D8",
+   "current": 0,
+   "proposed": null,
+   "reason": "Confirms 0: insulin did not separate cases from controls.",
+   "quote": "the occurrence of insulin resistance and hyperinsulinemia were similar in the study and control groups",
+   "confidence": "medium",
+   "papers": [
+    "C067"
+   ]
+  },
+  {
+   "row": 48,
+   "dimension": "D6",
+   "current": 2,
+   "proposed": null,
+   "reason": "No change: control data support the false-positive consequence (8 of 35 asymptomatic controls reached the cut-off). The reasons should say the cut-off was taken from a cited source.",
+   "quote": "23% of patients from the CG had hypoglycemia during OGTT but did not manifest any hypoglycemic symptoms",
+   "confidence": "medium",
+   "papers": [
+    "C067"
+   ]
+  },
+  {
+   "row": 4,
+   "dimension": "D1",
+   "current": 2,
+   "proposed": null,
+   "reason": "No change: C082 is a drug trial and does not bear on D1.",
+   "quote": "the AUC of C-peptide (surrogate indicator of insulin secretion) was not significantly changed",
+   "confidence": "high",
+   "papers": [
+    "C082"
+   ]
+  },
+  {
+   "row": 49,
+   "dimension": "D2",
+   "current": 2,
+   "proposed": null,
+   "reason": "No change: cohort evidence with cross-cohort application of medians; C-peptide adds little over glucose in the TrialNet analysis.",
+   "quote": "similar between AUC glucose and Index60",
+   "confidence": "medium",
+   "papers": [
+    "C087"
+   ]
+  },
+  {
+   "row": 49,
+   "dimension": "D4",
+   "current": 2,
+   "proposed": null,
+   "reason": "No change: the full text adds that the two cohorts used different C-peptide assays, consistent with no cross-assay calibration.",
+   "quote": "C-peptide was measured with radioimmunoassay in DPT-1 and Tosoh assay in TNPTP",
+   "confidence": "medium",
+   "papers": [
+    "C087"
+   ]
+  },
+  {
+   "row": 49,
+   "dimension": "D1",
+   "current": 1,
+   "proposed": null,
+   "reason": "No change: the authors frame use as selecting people for prevention trials, not a treatment choice.",
+   "quote": "This could enhance the selection of individuals who would be more likely to respond to specific preventive treatments.",
+   "confidence": "medium",
+   "papers": [
+    "C087"
+   ]
+  },
+  {
+   "row": 35,
+   "dimension": "D2",
+   "current": 2,
+   "proposed": null,
+   "reason": "No change: prospective cohort with in-sample cut-offs and no decision study.",
+   "quote": "there is no commonly accepted HOMA-IR cutoff value",
+   "confidence": "medium",
+   "papers": [
+    "C095"
+   ]
+  },
+  {
+   "row": 35,
+   "dimension": "D1",
+   "current": 0,
+   "proposed": null,
+   "reason": "No change (V17 has 0, V18 has 1): nothing in C095 states an action beyond appropriate strategies.",
+   "quote": "appropriate strategies should be taken to reduce GDM and other perinatal complications",
+   "confidence": "low",
+   "papers": [
+    "C095"
+   ]
+  }
+ ],
+ "claim_issues": [
+  {
+   "where": "usecases-verified.md row 12 (patient type) and V14:D3 reason",
+   "issue": "Row 12 pairs type B IR with 'lipodystrophy in the guideline', but the Brown 2016 guideline does not cover anti-insulin-receptor antibody (type B) syndrome; insulin receptor mutation appears once, as a differential diagnosis. The 'metabolic workup for insulin resistance' sentence is in a figure legend with no class or level.",
+   "proposed_wording": "Severe or syndromic IR: genetic IR syndromes and lipodystrophy (the guideline covers lipodystrophy only; type B IR is not addressed by it). Brown 2016 states in the diagnostic-approach figure legend that all patients should undergo a metabolic workup for insulin resistance; no test, assay or threshold is named.",
+   "paper": "C044",
+   "claim_ids": [
+    "UC-12",
+    "GL-10"
+   ]
+  },
+  {
+   "where": "claims/claims.csv GL-10 (merged-conclusion Bottom line)",
+   "issue": "Supported by the full text. Precision: metreleptin criteria with leptin, HbA1c and triglycerides apply to partial lipodystrophy (Class IIb, Level B); generalized lipodystrophy has no biochemical entry criterion.",
+   "proposed_wording": "The guideline names no insulin or C-peptide assay; metreleptin in partial lipodystrophy may be considered at leptin <4 ng/mL with HbA1c >8% and/or triglycerides >500 mg/dL, and a high insulin dose requirement (>=200 U/day, >=2 U/kg/day, U-500) is listed as a suspicion clue.",
+   "paper": "C044",
+   "claim_ids": [
+    "GL-10"
+   ]
+  },
+  {
+   "where": "usecases-verified.md row 28 and V15:D2 reason ('glucose/C-peptide ratio varies with eGFR')",
+   "issue": "D'Elia is a retrospective single-centre series using per-patient means over years of untimed draws; the ratio across eGFR quartiles gave p=0.08 (reverse grouping p=0.032); hypoglycaemia was not measured.",
+   "proposed_wording": "D'Elia 2019 (n=87, retrospective, mean of untimed draws) found a lower glucose/C-peptide ratio at eGFR <60 (about 45 vs 65), with p=0.08 across eGFR quartiles; hypoglycaemia events were not measured.",
+   "paper": "C056",
+   "claim_ids": [
+    "UC-28"
+   ]
+  },
+  {
+   "where": "usecases-verified.md row 28 (UCPCR sentence)",
+   "issue": "The UCPCR cut-off used fasting serum C-peptide <0.3 as the reference, and mean UCPCR itself differed by renal group (0.89 vs 1.67 nmol/g), so the cut-off partly separates the CKD group; the paper's claim that UCPCR is not affected by renal function does not match its Table 1.",
+   "proposed_wording": "Zhou 2022 (n=85, single centre): UCPCR <=1.13 nmol/g identified fasting serum C-peptide <0.3 (unit as printed) with sensitivity 88.4% and specificity 95.2% (AUC 0.978); the reference is the same serum measure that renal function distorts, the cut-off was derived in the same sample, and mean UCPCR was lower at eGFR <=60 (0.89 vs 1.67).",
+   "paper": "C090",
+   "claim_ids": [
+    "UC-28"
+   ]
+  },
+  {
+   "where": "usecases-verified.md row 48 and V21/V22/V24 reasons",
+   "issue": "Three statements need change: (1) 'insulin was collected but not used as a criterion' omits that insulin was analysed and did not discriminate; (2) 'the authors set the 55 mg/dL value themselves' - the text attributes the cut-off to a cited reference [18] and calls it unstandardised; (3) MMTT arm: glucose was drawn only at symptoms (17 of 40) and no MMTT insulin result is reported.",
+   "proposed_wording": "Hall 2021 (n=75 analysed): the 55 mg/dL OGTT cut-off came from a cited source and is described as unstandardised; insulin was measured hourly during the OGTT and did not separate reactive hypoglycaemia from controls (hyperinsulinaemia 40% vs 31%, p=0.440; 2-h insulin lower in confirmed cases); 8 of 35 asymptomatic controls (23%) also reached the cut-off; MMTT glucose was sampled only at symptoms and no MMTT insulin is reported.",
+   "paper": "C067",
+   "claim_ids": [
+    "UC-48"
+   ]
+  },
+  {
+   "where": "usecases-verified.md row 4 (added 2026-10-19, Stefanovski 2022)",
+   "issue": "The 'nearly twofold' insulin AUC rise on the protein test is given without the C-peptide AUC (not significantly changed, P=0.059) and the about 30% fall in insulin clearance that explains it; the protein-test glucose AUC rise is about 48% (698 to 1,030 mmol min/L), not 30% [my arithmetic].",
+   "proposed_wording": "Stefanovski 2022: exendin-(9-39) raised glucose AUC 28% on the MMTT; on the oral protein test glucose AUC rose from 698 to 1,030 mmol min/L (P=0.010) and insulin AUC about doubled while C-peptide AUC and modelled secretion did not change significantly and insulin clearance fell about 30%; 16 children enrolled, 8 completed all periods.",
+   "paper": "C082",
+   "claim_ids": [
+    "UC-04"
+   ]
+  },
+  {
+   "where": "usecases-verified.md row 49",
+   "issue": "'Index60 thresholds are cohort-specific medians, not externally validated': the thresholds came from progressors' medians and were then applied to the baseline of the full cohorts (cross-application), a replication but not independent validation. The full text also reports that AUC glucose alone gave similar 5-year risk to Index60 with TrialNet thresholds, and the two cohorts used different C-peptide assays.",
+   "proposed_wording": "Index60 thresholds are medians from progressors in one cohort, applied to the full baseline cohorts of both studies (5-year risk 0.75-0.88 above them); AUC glucose alone gave similar risk with TrialNet thresholds (0.72 vs 0.75); C-peptide was measured by radioimmunoassay in DPT-1 and Tosoh in TrialNet; no independent third-cohort validation was found.",
+   "paper": "C087",
+   "claim_ids": [
+    "UC-49"
+   ]
+  },
+  {
+   "where": "claims EV-45 / ABS-03 (row 35 part b)",
+   "issue": "Supported at full-text level for this cohort. Add: prospective two-centre cohort, adjusted OR 2.97, sensitivity 56-75% and specificity 71-83% by BMI group, no insulin assay named, and the authors say no standardised cut-off exists. The authors' statement that GDM diagnosis 'can be confirmed' at the cut-off is not supported by these figures.",
+   "proposed_wording": "First-trimester HOMA-IR (fasting-based) in 1343 women: AUC 0.733 overall (0.69-0.80 by BMI group), sensitivity 56-75% and specificity 71-83% at in-sample cut-offs of 1.43-2.31; no external validation or incremental-value analysis reported.",
+   "paper": "C095",
+   "claim_ids": [
+    "EV-45",
+    "ABS-03"
+   ]
+  }
+ ],
+ "notes": "No score is proposed to change; every proposal is null with a reason. C056 is PDF-derived (two-column, partly garbled; numbers checked in tables); the other six are XML or PMC text. The C067 reference list is absent from the stored text, so the source of the 55 mg/dL cut-off could not be checked. The Zhou 2022 unit 'mmol/l' for fasting C-peptide 0.3 is probably a typo and was not corrected. Percentages marked as my arithmetic (C082 protein-test glucose, C090 case counts) are computed from printed values. Where S and V entries differ the later V entry was taken as current; V16:D4 for row 12 is 0 after RS-D4. Sweatt 2026 (PMID 41829992) and the JDS 2022 criteria were not read here. Tool calls used: 28 including the two write steps."
+}
