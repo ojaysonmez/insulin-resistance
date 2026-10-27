@@ -1,0 +1,233 @@
+{
+  "unit": "FT29",
+  "role": "full-text reader",
+  "papers": [
+    {
+      "id": "C106",
+      "pmid": "38264233",
+      "doi": "10.1007/s13340-023-00679-1",
+      "text_quality": "good",
+      "read_level": "full text",
+      "relied_on": "S2 scored row 47 D3 = 2 from the abstract of the sister copy (PMID 38184802) and did not read this Diabetol Int copy; the score now in force is 3 (V1, correction FT17, based on the Buzzetti 2020 LADA consensus).",
+      "full_text_shows": "Short national criteria report (about 12,000 characters): SPIDDM (definite) needs islet autoantibody, no ketosis at diagnosis, and insulin need beyond 3 months with fasting serum C-peptide below 0.6 ng/mL at the last observed time point. It is a Japan Diabetes Society document, jointly published with the JDI copy, and says it is the English version of the Japanese report. It names no stimulated or post-meal test and contains no sensitivity, specificity or outcome data for the cut-off; it says the cut-off is the same as for acute-onset type 1 diabetes.",
+      "verdict": "confirms",
+      "quote": "severe endogenous insulin deficiency (fasting serum C-peptide immunoreactivity < 0.6 ng/mL) at the last observed time point",
+      "key_numbers": "Fasting C-peptide < 0.6 ng/mL; insulin treatment needed > 3 months (> 6 months in a typical case); 3 required criteria for definite, criteria 1 and 2 only for probable; therapeutic advice deferred to a later statement.",
+      "role_in_work": "Primary source for the national criterion in use-case row 47 (usecases-verified.md); a second published copy of PMID 38184802.",
+      "design": "Expert committee report (national diagnostic criteria); no new data.",
+      "population_and_size": "Not applicable; adults and youth with islet autoantibody-positive diabetes in Japan.",
+      "measure_type": "Fasting C-peptide (serum) as a threshold for insulin dependence; no stimulated or post-meal measure.",
+      "assay_or_platform": "Not specified (immunoreactivity, ng/mL).",
+      "quality_note": "Funded by the Japan Diabetes Society; several authors declare lecture fees from insulin makers (Sanofi, Novo, Lilly). Table 1 reference items were omitted in this English version. A correction notice exists (10.1007/s13340-024-00702-z) and its content was not seen.",
+      "rows_affected": [
+        47
+      ],
+      "dimensions_affected": [
+        "D3"
+      ]
+    },
+    {
+      "id": "C115",
+      "pmid": "39380079",
+      "doi": "10.1186/s13052-024-01767-x",
+      "text_quality": "good",
+      "read_level": "full text",
+      "relied_on": "Claims in merged-conclusion.md and usecases-verified.md rows 36 and the paediatric MASLD conflict item state that the position paper calls HOMA-IR clinically valuable in suspected MASLD and recommends no insulin testing for dysglycaemia.",
+      "full_text_shows": "The sentence is there: after describing the Delphi MASLD nomenclature (ref 76) it says estimates of IR such as HOMA-IR are clinically valuable in suspected MASLD that meets none of the 5 criteria. It is a descriptive sentence with no recommendation grade or action. For prediabetes and type 2 diabetes the screening table lists fasting glucose, HbA1c and OGTT only, with no insulin or C-peptide. The only other insulin mention is for adolescent PCOS: 'Regular monitoring of glucose, insulin, and lipids' (ref 92).",
+      "verdict": "confirms",
+      "quote": "Estimates of IR such as HOMA-IR come to be clinically valuable in patients with suspected MASLD",
+      "key_numbers": "Prediabetes prevalence 17% (95% CI 13-22) and T2D 1.3% in children with obesity (cited meta-analysis); screening from age 10 years or puberty with risk factors, by fasting glucose, 2-h OGTT glucose or HbA1c; no insulin or C-peptide threshold anywhere.",
+      "role_in_work": "Source for the paediatric MASLD conflict item and row 36 (children with obesity, fasting insulin/HOMA-IR for dysglycaemia).",
+      "design": "Society position paper (narrative, panel recommendations).",
+      "population_and_size": "Children and adolescents with obesity; no study population.",
+      "measure_type": "Fasting-based (HOMA-IR as an IR estimate); OGTT used for glucose only.",
+      "assay_or_platform": "None specified.",
+      "quality_note": "Narrative position paper; no grading of the HOMA-IR statement. The Delphi source (PMID 37364790) was not in this file, so the 'overstates its source' point stays a comparison with another document, not shown by this paper.",
+      "rows_affected": [
+        36,
+        14,
+        16
+      ],
+      "dimensions_affected": []
+    },
+    {
+      "id": "C128",
+      "pmid": "41752170",
+      "doi": "10.3390/ijms27042035",
+      "text_quality": "good",
+      "read_level": "full text",
+      "relied_on": "Row 6 (added text) cites it as glucagon-stimulated C-peptide in 393 adults, 1.35 ng/mL in the type 1 group (LADA pooled) against 4.6 in type 2, with group means overlapping.",
+      "full_text_shows": "Single-centre prospective exploratory cohort (Bialystok, 2010-2022): 393 newly diagnosed adults (T1DM 104 including 23 LADA; T2DM 289), 89 re-examined at about 7 years. Groups were defined by antibodies and by insulin need (LADA = antibody-positive and no insulin for 6 months), so the C-peptide contrast with type 2 is partly built into the grouping; no ROC curves, cut-offs, or individual-level classification accuracy are given. The conclusion that GST can 'identify individuals at risk of rapid beta-cell failure' rests on group medians.",
+      "verdict": "adds nuance",
+      "quote": "Higher fasting and glucagon-stimulated C-peptide identified patients with lower insulin resistance and more favorable anthropometric and biochemical profiles.",
+      "key_numbers": "At diagnosis fasting C-peptide 0.87 (T1DM) vs 2.64 (T2DM) ng/mL; 6 min after 1 mg glucagon 1.35 vs 4.6 ng/mL; LADA 1.53 fasting and 1.86 stimulated; at about 7 years T1DM fasting C-peptide 0.10 ng/mL. No statistically significant difference between LADA and T1DM at diagnosis. Follow-up count is given as 96 in one place and 89 in another.",
+      "role_in_work": "Supporting source for the LADA/stimulated C-peptide sub-use of row 6.",
+      "design": "Prospective single-centre observational cohort (described as case-control), exploratory, no power calculation.",
+      "population_and_size": "393 adults with newly diagnosed diabetes; 89 followed to about 7 years (T1DM 30 including 9 LADA, T2DM 59).",
+      "measure_type": "Stimulated C-peptide (glucagon 1 mg IV, fasting and 6 min) plus fasting C-peptide and fasting insulin/HOMA-IR.",
+      "assay_or_platform": "Roche E411 ECLIA for hormones (C-peptide, insulin); autoantibodies by ELISA (Euroimmun, Medipan); glucagon by RIA.",
+      "quality_note": "Exploratory, no sample size calculation; sampling after metabolic stabilisation with insulin in some severe cases (can lower C-peptide); LADA group small (23, 9 at follow-up); only 6-minute post-glucagon sample, not the MMTT reference; internal count inconsistency (96 vs 89).",
+      "rows_affected": [
+        6
+      ],
+      "dimensions_affected": []
+    },
+    {
+      "id": "C163",
+      "pmid": "29084736",
+      "doi": "10.1161/circulationaha.117.030458",
+      "text_quality": "partial",
+      "read_level": "full text",
+      "relied_on": "Claims TRI-05 and TRI-10 and row 13 were built from publisher-page excerpts: baseline HOMA-IR, and a HOMA subgroup whose interaction P value 'was not seen'.",
+      "full_text_shows": "The accepted-manuscript PDF contains Table 1 (HOMA-IR 4.7 (3.8, 6.2) vs 4.6 (3.7, 6.2)) and the supplement Figure 2 with the HOMA-above-median subgroup: stroke HR 0.95 (0.69-1.31) above the median and 0.69 (0.49-0.98) below, P for interaction 0.19. So the missing P value is now visible, and within the enrolled range (HOMA-IR above 3.0) higher HOMA-IR did not show a larger pioglitazone effect on stroke. Stroke HR is 0.75 (0.60-0.94), 8.0% vs 10.7% at 5 years. Prior stroke interaction P 0.02 and index event type P 0.05 are confirmed, unadjusted for multiplicity.",
+      "verdict": "adds nuance",
+      "quote": "Pioglitazone was associated with a reduced risk for any stroke at 5-years",
+      "key_numbers": "3876 participants, 377 stroke events in 319 participants, median follow-up 4.8 years; any stroke HR 0.75 (95% CI 0.60-0.94); ischemic stroke HR 0.72 (0.57-0.91); HOMA above median interaction P 0.19; HbA1c strata (5.7-6.4%, <5.7%) interaction P 0.96; TIA entry HR 1.40 (0.71-2.73).",
+      "role_in_work": "Source of the IRIS baseline HOMA-IR and stroke-subgroup claims (merged-conclusion, claims TRI-05, TRI-10); relevant to row 13 D8 although no score entry cites it.",
+      "design": "Planned secondary analysis of a double-blind randomised trial (IRIS).",
+      "population_and_size": "3876 non-diabetic adults with ischemic stroke or TIA within 180 days and insulin resistance.",
+      "measure_type": "Fasting-based (HOMA-IR as an entry criterion and as a median-split subgroup).",
+      "assay_or_platform": "Not given in this text (central laboratory per other IRIS reports).",
+      "quality_note": "Accepted-manuscript PDF with some garbled characters; the supplement figure is flattened text. Subgroup P values unadjusted for multiplicity. First author is Yaghi (Viscoli is third author); the project texts say 'Viscoli 2017'. Not the primary outcome (stroke or MI).",
+      "rows_affected": [
+        13
+      ],
+      "dimensions_affected": [
+        "D8"
+      ]
+    },
+    {
+      "id": "C173",
+      "pmid": "36272764",
+      "doi": "10.1016/j.kint.2022.06.008",
+      "text_quality": "good",
+      "read_level": "full text",
+      "relied_on": "Claims GL-25 and GL-37 and row 28: the whole PDF was term-scanned and no insulin or C-peptide measurement recommendation was found.",
+      "full_text_shows": "The extracted PDF (about 805,000 characters, references included) has zero C-peptide matches, zero HOMA, QUICKI, TyG, Matsuda, insulinogenic or proinsulin matches, and zero fasting insulin. The only 'insulin resistance' hits are two reference titles. The 'peptide' hits are all glucagon-like or GIP peptide. The scan confirms the negative; it is a term scan and not a reading end to end.",
+      "verdict": "confirms",
+      "quote": "KDIGO 2022 CLINICAL PRACTICE GUIDELINE FOR DIABETES MANAGEMENT IN CHRONIC KIDNEY DISEASE",
+      "key_numbers": "C-peptide 0; HOMA/QUICKI/TyG 0; fasting insulin 0; 'insulin resistance' 2 (reference titles only).",
+      "role_in_work": "Negative evidence for kidney disease (merged-conclusion; row 28 interpretation limit).",
+      "design": "Clinical practice guideline.",
+      "population_and_size": "Adults and children with diabetes and CKD.",
+      "measure_type": "None named (no fasting-based, post-load, surrogate or C-peptide measure).",
+      "assay_or_platform": "Not applicable.",
+      "quality_note": "Term scan of an extracted PDF; page layout is interleaved in columns, so a phrase split across columns could be missed, but the specific terms are absent.",
+      "rows_affected": [
+        28
+      ],
+      "dimensions_affected": []
+    },
+    {
+      "id": "C178",
+      "pmid": "38171510",
+      "doi": "10.1093/ndt/gfad258",
+      "text_quality": "good",
+      "read_level": "full text",
+      "relied_on": "merged-conclusion states the consensus has no recommendation to measure fasting insulin, HOMA-IR or C-peptide, recommends a glucose OGTT from the waiting list, and that its authors judged GRADE 'flawed'.",
+      "full_text_shows": "All three statements hold. Opinion Statement 1 recommends an OGTT for diagnosis and screening starting on the waiting list because HbA1c lacks sensitivity. The authors write that making GRADE recommendations would be flawed. C-peptide, fasting insulin and insulin secretion appear only inside a table summarising published drug studies (study endpoints) and in the mechanism paragraph on beta-cell dysfunction and insulin resistance, not in any opinion statement. HOMA and Matsuda do not occur.",
+      "verdict": "confirms",
+      "quote": "OPINION STATEMENT 1: PERFORM AN ORAL GLUCOSE TOLERANCE TEST FOR DIAGNOSIS AND SCREENING; START ON THE WAITING LIST",
+      "key_numbers": "OGTT 22 mentions; C-peptide 2 (both inside the study table); fasting insulin 3 (study table); HOMA 0.",
+      "role_in_work": "Negative evidence for post-transplant diabetes in merged-conclusion.",
+      "design": "International expert consensus (opinion statements, no GRADE).",
+      "population_and_size": "Solid organ transplant recipients; no study population.",
+      "measure_type": "Post-load glucose (OGTT glucose only); no insulin or C-peptide measure recommended.",
+      "assay_or_platform": "Not applicable.",
+      "quality_note": "Opinion statements; authors state GRADE was not applicable. Supplementary tables were not in the file.",
+      "rows_affected": [],
+      "dimensions_affected": []
+    },
+    {
+      "id": "C182",
+      "pmid": "39726936",
+      "doi": "10.1155/2024/2136173",
+      "text_quality": "partial",
+      "read_level": "full text",
+      "relied_on": "MEAS-40 and MEAS-44 describe it as showing WBISI more reproducible than HOMA-IR and QUICKI in 257 children, 'the paper's own formula was not seen' and 'ICC table not read'.",
+      "full_text_shows": "The text gives the WBISI formula (garbled in extraction but readable): 10000 divided by the square root of G0 x I0 x the mean of G0 and G120 x the mean of I0 and I120, so it uses only the 0 and 120 minute values although samples were taken every 30 minutes. The ICC and Spearman tables (Tables 1 to 3) are not in the extracted text; the text states only that WBISI was more reproducible than HOMA-IR, QUICKI, FGIR and 1/fasting insulin overall and in overweight/obese children, but not versus FGIR or 1/fasting insulin in normal-weight children. No significant differences in secretion indices or between subgroups after Bonferroni (p < 0.001). The authors call the result surprising and give no explanation.",
+      "verdict": "adds nuance",
+      "quote": "postchallenge insulin measures of sensitivity were generally more reproducible than fasting insulin sensitivity measures",
+      "key_numbers": "257 youth aged 8-17 (186 overweight/obese, 71 normal weight); two OGTT visits a median 14 days apart (IQR 7-28); 8% (21) had dysglycaemia; Bonferroni threshold p < 0.001 across 50 comparisons; insulin RIA with inter-assay CV 3.8% and intra-assay 2.7% at 25 uU/mL; no ICC values in the extracted text.",
+      "role_in_work": "Evidence on reproducibility of insulin-based indices in children (merged-conclusion, measurement section; claims MEAS-40, MEAS-44).",
+      "design": "Test-retest cross-sectional study of two OGTT visits.",
+      "population_and_size": "257 children and adolescents without known diabetes, southeast Michigan clinics.",
+      "measure_type": "Fasting-based (HOMA-IR, QUICKI, 1/fasting insulin, FGIR) and post-load OGTT-derived (WBISI as 0/120-minute variant, insulinogenic index, disposition index) insulin indices.",
+      "assay_or_platform": "In-house double-antibody radioimmunoassay for insulin (Linco tracer, guinea pig anti-porcine antibody with 68.5% proinsulin cross-reaction); hexokinase glucose on Randox Daytona.",
+      "quality_note": "Few children with prediabetes; pubertal status by age proxy, not Tanner stage; insulin RIA not a US-marketed clinical immunoassay; tables missing from the text so effect sizes cannot be checked.",
+      "rows_affected": [],
+      "dimensions_affected": []
+    }
+  ],
+  "proposals": [
+    {
+      "row": 47,
+      "dimension": "D3",
+      "current": 3,
+      "proposed": null,
+      "reason": "The Diabetol Int copy is the same Japan Diabetes Society criteria as PMID 38184802, so the full text adds nothing new on status. It is a national criterion from outside the US, fasting C-peptide only. The current 3 (V1, FT17) rests on the Buzzetti 2020 international LADA consensus, not on this paper; read alone this paper would support only the national-criteria reading (clarification 6), so the 3 stays an FT17 judgement and is not changed here.",
+      "quote": "severe endogenous insulin deficiency (fasting serum C-peptide immunoreactivity < 0.6 ng/mL) at the last observed time point",
+      "confidence": "high",
+      "papers": [
+        "C106"
+      ]
+    }
+  ],
+  "claim_issues": [
+    {
+      "where": "usecases-verified.md row 47, sources column",
+      "issue": "States 'Diabetol Int copy PMID 38264233 not read'. It has now been read in full; it is the same criteria text and adds nothing beyond PMID 38184802 except the funding and conflict statements and a correction notice (10.1007/s13340-024-00702-z) whose content was not seen.",
+      "proposed_wording": "Diabetol Int copy (PMID 38264233, DOI 10.1007/s13340-023-00679-1) read in full: same criteria and wording as the JDI copy; a published correction exists and was not seen.",
+      "paper": "C106",
+      "claim_ids": []
+    },
+    {
+      "where": "usecases-verified.md row 13 and claims TRI-10 ('HOMA interaction P not seen')",
+      "issue": "The HOMA subgroup is in the supplement Figure 2 of the accepted manuscript: above the median HOMA stroke HR 0.95 (0.69-1.31), below the median 0.69 (0.49-0.98), P for interaction 0.19. Inside the enrolled range (HOMA-IR above 3.0) a higher HOMA-IR did not predict a larger pioglitazone effect on stroke; this is a stroke outcome, unadjusted subgroup, and does not test a measurement-guided strategy.",
+      "proposed_wording": "In the IRIS stroke analysis the HOMA-above-median subgroup showed HR 0.95 (0.69-1.31) above and 0.69 (0.49-0.98) below the median, interaction P 0.19 (unadjusted; stroke outcome; enrolled range HOMA-IR above 3.0 only).",
+      "paper": "C163",
+      "claim_ids": [
+        "TRI-10"
+      ]
+    },
+    {
+      "where": "merged-conclusion.md line on IRIS and claim TRI-05; usecases-verified.md row 13 ('Viscoli 2017')",
+      "issue": "PMID 29084736 is Yaghi S et al., Circulation 2018 (epub 2017); Viscoli is the third author. The data are from Table 1 of the full text, not only 'publisher-page excerpts'.",
+      "proposed_wording": "Yaghi 2018 (PMID 29084736, DOI 10.1161/CIRCULATIONAHA.117.030458, full text, Table 1): baseline HOMA-IR median 4.7 (IQR 3.8-6.2) with pioglitazone and 4.6 (3.7-6.2) with placebo.",
+      "paper": "C163",
+      "claim_ids": [
+        "TRI-05",
+        "TRI-10"
+      ]
+    },
+    {
+      "where": "usecases/scoring/U2.json row 13 D8 reason ('No analysis in the screened records tests whether HOMA-IR adds ...')",
+      "issue": "Not a contradiction of the score of 1 but the sentence is now incomplete: the HOMA median-split in IRIS (P 0.19) exists. It points to no extra benefit at higher HOMA-IR within the enrolled range; the score is not changed here because C163 has no score entry and the subgroup is unadjusted.",
+      "proposed_wording": "IRIS reports a HOMA-above-median subgroup (interaction P 0.19, unadjusted) but no contrast with patients below the entry threshold.",
+      "paper": "C163",
+      "claim_ids": []
+    },
+    {
+      "where": "merged-conclusion.md measurement paragraph (Hani 2024) and claim MEAS-40",
+      "issue": "States the paper's own WBISI formula 'was not seen'. The formula is given in the text (0 and 120 minute values only), so WBISI here is not the five-point Matsuda index; the ICC table is absent from the stored text, so 'ICC table not read' remains true.",
+      "proposed_wording": "WBISI as defined in the paper uses the 0 and 120 minute glucose and insulin values only; it was more reproducible than HOMA-IR and QUICKI in 257 children (Spearman comparison; ICC values not in the stored text).",
+      "paper": "C182",
+      "claim_ids": [
+        "MEAS-40",
+        "MEAS-44"
+      ]
+    },
+    {
+      "where": "merged-conclusion.md paediatric MASLD paragraph; usecases-verified.md row 36",
+      "issue": "Accurate as written, with one addition: the same paper recommends 'regular monitoring of glucose, insulin, and lipids' for adolescent girls with PCOS (citing ref 92), which row 36 and the paragraph do not mention. The 'overstates its source' comparison to the Delphi statement cannot be checked from this paper.",
+      "proposed_wording": "The position paper also suggests regular monitoring of glucose, insulin and lipids in adolescent PCOS, without a threshold or a named decision.",
+      "paper": "C115",
+      "claim_ids": [
+        "GL-32",
+        "GL-33",
+        "UC-36"
+      ]
+    }
+  ],
+  "notes": "Row 47 D3 was read at its current value of 3 (V1 correction FT17), not the S2 value of 2. Row 6 and row 36 have no score entries tied to these papers in the task list, so proposals for them are null by design. The C173 quote is the guideline title because the finding is an absence; term counts come from regex over the stored PDF text. claim_ids come from claims.csv; the row 47 issue has none because no ledger id was checked. Python Unicode output needed -X utf8; no files other than FT29.md and FT29.json were written. Tool calls used: about 27 (including the 2 reads of the unit files and this validation)."
+}

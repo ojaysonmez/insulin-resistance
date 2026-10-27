@@ -1,0 +1,154 @@
+{
+  "unit": "FT30",
+  "role": "full-text reader",
+  "papers": [
+    {
+      "id": "C208",
+      "pmid": "25458644",
+      "doi": "10.1016/j.ahj.2014.07.016",
+      "text_quality": "good",
+      "read_level": "full text",
+      "relied_on": "U1 listed it only as a search hit for row 13 ('relevant, not read'); row 13 text relies on it second-hand for the HOMA-IR threshold, the 14-day rule and the assay.",
+      "full_text_shows": "IRIS design paper (about 18,700 characters; Table 1 and the Appendix are not in the stored text). HOMA-IR above 3.0 was the entry criterion, chosen because it represented the highest quartile in non-diabetic populations; screening was at least 14 days after the event; insulin was measured centrally, with the Linco RIA in North America and Australia and a different Linco ELISA converted by an internal equation in Europe and Israel. HOMA-IR is listed among the prespecified subgroup variables (13 variables). The trial tests a drug in selected patients, not a measurement-guided strategy.",
+      "verdict": "confirms",
+      "quote": "A HOMA-IR threshold of > 3.0 was chosen to define insulin resistance",
+      "key_numbers": "Planned n 3136 for 90% power to detect a 20% relative reduction in the 4-year stroke/MI rate (assumed 27% in placebo); final n 3876; entry HOMA-IR > 3.0; screening >= 14 days after index event; conversion equation insulin RIA = 1.1056 x ELISA + 2.1494.",
+      "role_in_work": "Protocol source for row 13 (stroke or TIA with IR: pioglitazone selection) and the IRIS threshold origin.",
+      "design": "Rationale and design paper of a randomised, double-blind, placebo-controlled trial.",
+      "population_and_size": "3876 insulin-resistant, non-diabetic adults (age 40 or older) with recent ischemic stroke or TIA.",
+      "measure_type": "Fasting-based (HOMA-IR from fasting insulin and glucose).",
+      "assay_or_platform": "Linco Human Insulin Specific RIA (North America, Australia); Linco Animal Serum Free ELISA with conversion (Europe, Israel); central laboratory Esoterix or affiliate.",
+      "quality_note": "Protocol-stage text; funded by NINDS, study drug supplied by Takeda (Takeda also funds blood storage for a subgroup). Eligibility was changed several times during the trial (TIA, heart failure, bladder cancer rules), so the enrolled population is not a single fixed definition.",
+      "rows_affected": [
+        13
+      ],
+      "dimensions_affected": []
+    },
+    {
+      "id": "C219",
+      "pmid": "27465265",
+      "doi": "10.2337/dc16-0798",
+      "text_quality": "good",
+      "read_level": "full text",
+      "relied_on": "U2 D2 and D8 (row 13) used the abstract: HR 0.76 for stroke/MI, and a diabetes-prevention effect 'concentrated in people with impaired fasting glucose or raised HbA1c'; D8 correction already says this paper is a different outcome and not support for D8.",
+      "full_text_shows": "Diabetes occurred in 3.8% vs 7.7% (HR 0.48, 0.33-0.69). In Table 2 the effect was larger in higher-risk strata of every variable, including HOMA-IR at or above the cohort median 4.6 (HR 0.40, 0.29-0.57) versus below (0.66, 0.40-1.08), but no interaction was significant (HOMA P 0.10, ADA IFG P 0.11, HbA1c P 0.57). Subgroup analyses were not prespecified and are not adjusted for multiplicity. So HOMA-IR did not separate responders any better than fasting glucose or HbA1c, and fasting glucose, HbA1c and HOMA were all merely markers of higher absolute risk.",
+      "verdict": "adds nuance",
+      "quote": "there was no significant modification of the effect of pioglitazone on progression to diabetes according to other baseline metabolic subgroups examined",
+      "key_numbers": "n 3876; mean baseline insulin 22.4 uIU/mL, HOMA-IR 5.4 (SD 2.7), FPG 98.2 mg/dL, HbA1c 5.8%; 41.6% had ADA impaired fasting glucose, 64.9% HbA1c 5.7% or higher, so 58% had FPG below 100 mg/dL; stroke/MI HR 0.76 (0.62-0.93); diabetes HR 0.48; HOMA >= 4.6 HR 0.40, < 4.6 HR 0.66, interaction P 0.10; IFG present HR 0.41, absent 0.69 (0.39-1.23), P 0.11; HbA1c >= 5.7% HR 0.46, < 5.7% 0.58, P 0.57; adherence interaction P 0.0002.",
+      "role_in_work": "Secondary-outcome source for row 13 D2 and D8 in U2; shows how a fasting-insulin-based IR label and glucose-based labels overlap in IRIS.",
+      "design": "Prespecified secondary analysis (diabetes prevention) of the IRIS randomised trial; subgroup analyses post hoc.",
+      "population_and_size": "3876 non-diabetic adults with recent ischemic stroke or TIA and HOMA-IR above 3.0.",
+      "measure_type": "Fasting-based (HOMA-IR, fasting insulin); diabetes outcome by fasting glucose, no OGTT.",
+      "assay_or_platform": "Fasting insulin by the trial's central laboratory (see C208); insulin and glucose drawn at baseline and year 1 only; FPG annually; HbA1c at screening only.",
+      "quality_note": "No OGTT done, so some participants likely had mild diabetes at entry and conversions were under-detected; diabetes definition included physician diagnosis and capillary meters; adherence only 60% to 67% at the end; Takeda supplied drug but had no role stated in design or analysis.",
+      "rows_affected": [
+        13
+      ],
+      "dimensions_affected": [
+        "D2",
+        "D8"
+      ]
+    },
+    {
+      "id": "C316",
+      "pmid": "41358882",
+      "doi": "10.2337/dc26-s008",
+      "text_quality": "good",
+      "read_level": "full text",
+      "relied_on": "U1 row 5 D3 = 2: rec 8.26 says exclude other disorders and use CGM, with no assay named; measurement part of accepted evaluation text elsewhere.",
+      "full_text_shows": "Rec 8.26 (grade A for evaluation and management, C for CGM) says that if post metabolic surgery hypoglycemia is suspected, clinical evaluation should exclude other disorders, and CGM should be used. The narrative says diagnosis is primarily by history, food records, symptom patterns and exclusion of other causes (malnutrition, drugs, dumping, insulinoma). Insulin, C-peptide, mixed-meal and OGTT tests are not mentioned anywhere (zero matches for C-peptide, mixed meal, OGTT, HOMA, insulin level). The mechanism paragraph says overstimulation of insulin release occurs 1 to 3 hours after a high-carbohydrate meal.",
+      "verdict": "confirms",
+      "quote": "Diagnosis is primarily made by a thorough examination of history, detailed records of food intake, physical activity, and symptom patterns",
+      "key_numbers": "Rec 8.26 (A and C); hypoglycemia typically more than 1 year after surgery; 1-3 h after a high-carbohydrate meal; insulin, C-peptide and mixed-meal test: 0 mentions.",
+      "role_in_work": "Guideline source for row 5 D3 (hypoglycaemia after bariatric surgery).",
+      "design": "Clinical practice guideline (ADA Standards of Care 2026, section 8).",
+      "population_and_size": "Adults with obesity or diabetes; no study population.",
+      "measure_type": "None named (no insulin or C-peptide, fasting-based, post-meal or stimulated); CGM is the named tool.",
+      "assay_or_platform": "Not applicable.",
+      "quality_note": "PMC copy; read by keyword windows for rec 8.26 and the surgery narrative, not end to end (72,000 characters).",
+      "rows_affected": [
+        5
+      ],
+      "dimensions_affected": [
+        "D3"
+      ]
+    }
+  ],
+  "proposals": [
+    {
+      "row": 5,
+      "dimension": "D3",
+      "current": 2,
+      "proposed": null,
+      "reason": "The guideline names the condition and tells clinicians to exclude other causes (including insulinoma) but names no insulin or C-peptide measurement, which is the clarification 5 pattern that scores 2. The text makes the point sharper (diagnosis is 'primarily' clinical) but does not recommend against measurement, so nothing moves.",
+      "quote": "Diagnosis is primarily made by a thorough examination of history, detailed records of food intake, physical activity, and symptom patterns",
+      "confidence": "medium",
+      "papers": [
+        "C316"
+      ]
+    },
+    {
+      "row": 13,
+      "dimension": "D2",
+      "current": 2,
+      "proposed": null,
+      "reason": "Full text confirms HOMA-IR above 3.0 was an entry criterion only (C208, C219); the HR 0.76 (0.62-0.93) is quoted correctly; no measurement-guided comparison exists. Cap of 2 under clarification 8 stands.",
+      "quote": "A HOMA-IR threshold of > 3.0 was chosen to define insulin resistance",
+      "confidence": "high",
+      "papers": [
+        "C208",
+        "C219"
+      ]
+    },
+    {
+      "row": 13,
+      "dimension": "D8",
+      "current": 1,
+      "proposed": null,
+      "reason": "In the diabetes-prevention analysis, strata by HOMA-IR, fasting glucose and HbA1c each showed larger effects in the higher-risk group and no significant interaction (HOMA P 0.10, IFG P 0.11, HbA1c P 0.57; not prespecified, unadjusted). HOMA-IR therefore adds no visible separation beyond glucose measures, which fits a score of 1; the outcome is diabetes, not stroke or MI, so it cannot lift or lower D8 for the pioglitazone decision on its own.",
+      "quote": "there was no significant modification of the effect of pioglitazone on progression to diabetes according to other baseline metabolic subgroups examined",
+      "confidence": "medium",
+      "papers": [
+        "C219"
+      ]
+    }
+  ],
+  "claim_issues": [
+    {
+      "where": "usecases-verified.md row 13 ('13 prespecified subgroups, no heterogeneity (whether HOMA-IR strata included is not stated)')",
+      "issue": "The IRIS design paper states the prespecified subgroup variables, and HOMA-IR is one of the 13 (age, sex, race, Hispanic ethnicity, hypertension, coronary heart disease, BMI, fasting plasma glucose, HDL cholesterol, triglyceride, HOMA-IR, HbA1c, adherence). Whether the primary-outcome result for HOMA-IR strata showed heterogeneity is not in this paper.",
+      "proposed_wording": "The IRIS design paper (Viscoli 2014, PMID 25458644, DOI 10.1016/j.ahj.2014.07.016, full text) lists HOMA-IR among the prespecified subgroup variables; the HOMA-IR subgroup result for the primary outcome is not in that paper.",
+      "paper": "C208",
+      "claim_ids": []
+    },
+    {
+      "where": "usecases-verified.md row 13 ('central laboratories because insulin not standardised')",
+      "issue": "The design paper says insulin was processed centrally and describes two different assays (Linco RIA in North America and Australia, Linco ELISA converted with an internal equation in Europe and Israel). It does not state that central testing was chosen because insulin is unstandardised; the two-assay conversion does support the point that insulin assays differ.",
+      "proposed_wording": "Insulin was measured in central laboratories; the Linco RIA was used in North America and Australia and a Linco ELISA, converted by an internal equation, in Europe and Israel (PMID 25458644).",
+      "paper": "C208",
+      "claim_ids": []
+    },
+    {
+      "where": "usecases/scoring/U2.json row 13 D8 reason ('the IRIS diabetes-prevention benefit was concentrated in people with impaired fasting glucose or raised HbA1c')",
+      "issue": "Incomplete: the paper says the effect was driven by all higher-risk groups, including HOMA-IR at or above 4.6, and that no interaction was significant (HOMA P 0.10, IFG P 0.11, HbA1c P 0.57; subgroup analyses not prespecified, unadjusted). It also says the effect may reach normoglycaemic insulin-resistant people but the absolute reduction there is small.",
+      "proposed_wording": "In IRIS the diabetes-prevention effect was larger in people with impaired fasting glucose, HbA1c 5.7% or higher, or HOMA-IR at or above the cohort median 4.6, with no significant interaction for any of them (PMID 27465265, unadjusted subgroups).",
+      "paper": "C219",
+      "claim_ids": []
+    },
+    {
+      "where": "usecases-verified.md row 13 (IRIS population described as prediabetes or insulin resistance)",
+      "issue": "Supports the existing note that IRIS did not require prediabetes. Table 1 of C219 shows 58% had fasting glucose below 100 mg/dL and 35% HbA1c below 5.7%, while 41.6% had ADA impaired fasting glucose.",
+      "proposed_wording": "In IRIS, 41.6% had impaired fasting glucose (ADA) and 64.9% HbA1c of 5.7% or higher at baseline (PMID 27465265, full text).",
+      "paper": "C219",
+      "claim_ids": []
+    },
+    {
+      "where": "usecases-verified.md row 5 (no ADA guideline cited)",
+      "issue": "Row 5 says no international consensus on diagnosis was found and does not cite ADA 2026 section 8, which says diagnosis is primarily clinical with exclusion of other causes and names no insulin test. Citation can be added; status 'Limited' is unaffected.",
+      "proposed_wording": "ADA Standards of Care 2026 section 8 (PMID 41358882, DOI 10.2337/dc26-s008, full text, rec 8.26): evaluation should exclude other disorders and CGM should be used; no insulin, C-peptide or mixed-meal test is named.",
+      "paper": "C316",
+      "claim_ids": []
+    }
+  ],
+  "notes": "Row 5 D3 and row 13 D2 and D8 were read at the current values (2, 2, 1; the U2 D8 correction keeps 1). Only these three papers were used, so evidence from other papers (the IRIS stroke secondary analysis, the NEJM paper) was not compared here. C316 was read by keyword windows, not end to end. C208 lacks its Table 1 and appendix in the stored text. Path to viability for row 13: not affected; the full text supports the existing path (a trial comparing HOMA-IR-guided versus glucose-guided pioglitazone selection). Tool calls used: about 11 for this unit (the unit-file reads and early score-file checks were shared with FT29)."
+}

@@ -1,0 +1,217 @@
+{
+ "unit": "FT28",
+ "role": "full-text reader",
+ "papers": [
+  {
+   "id": "C077",
+   "pmid": "34802853",
+   "doi": "10.1016/j.numecd.2021.08.047",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "Row 5 entries cited the abstract for CGM-detected post-bariatric hypoglycaemia (54.3%) and for the absence of an accepted insulin threshold.",
+   "full_text_shows": "All 8 studies (16 datasets, 280 non-diabetic patients, at least 1 year after surgery) measured hypoglycaemia by CGM; none measured insulin or C-peptide. The authors state there is no general consensus on diagnostic modalities and no uniform cut-off, report that provocative tests (OGTT, mixed meal) show hypoglycaemia also in healthy volunteers, cite one study where CGM (sensitivity 90%, specificity 50%) beat a mixed-meal test (33% and 40%), and say the CGM rate may be overestimated because no study paired CGM with serial plasma glucose, insulin and C-peptide.",
+   "verdict": "adds nuance",
+   "quote": "no uniformly established cut-off values exist for diagnosis of PBH",
+   "key_numbers": "Weighted mean prevalence 54.3% (95% CI 44.5-63.8), I2 62.8%; RYGB vs SG OR 1.62 (95% CI 0.71-3.7); nocturnal 16.4% (7.0-34); similar at 70, 60 and 55 mg/dL cut-offs; prevalence rises with time since surgery (meta-regression P<0.001); no conflict of interest declared.",
+   "role_in_work": "Prevalence evidence for row 5 and the source of the 'CGM-detected hypoglycaemia common' caveat; not a test-accuracy or decision-impact study for insulin.",
+   "design": "Systematic review and random-effects meta-analysis of prevalence with meta-regression (PRISMA, Newcastle-Ottawa scale).",
+   "population_and_size": "8 studies, 16 datasets, 280 bariatric patients without diabetes (RYGB, SG and others), mean BMI about 29.6.",
+   "measure_type": "Non-insulin surrogate (CGM glucose); no insulin or C-peptide measurement in any included study.",
+   "assay_or_platform": "Medtronic and Dexcom CGM devices; glucose cut-offs 70, 60, 55 mg/dL.",
+   "quality_note": "Heterogeneous inclusion criteria and devices; CGM accuracy in the hypoglycaemic range uncertain; prevalence not a work-up or treatment rate. Two-column PDF text with some column interleaving and a hyphen split in the quote; numbers read from the Results.",
+   "rows_affected": [
+    5
+   ],
+   "dimensions_affected": [
+    "D1",
+    "D2",
+    "D8",
+    "D7"
+   ]
+  },
+  {
+   "id": "C078",
+   "pmid": "34984504",
+   "doi": "10.1007/s00268-021-06394-9",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "Row 37 text says the ERAS bariatric guideline 'recommends carbohydrate loading, not measuring insulin or HOMA'. No score entry (row 37 is research-only and not scored).",
+   "full_text_shows": "The guideline makes no recommendation to measure insulin, C-peptide or HOMA. On preoperative carbohydrate loading it does not recommend it: Table 2 item 7 reads 'insufficient evidence to make a recommendation' (low evidence, weak grade), and the text says there is insufficient evidence for routine use in bariatric surgery. The row wording is therefore wrong on the carbohydrate point.",
+   "verdict": "adds nuance",
+   "quote": "Currently, there is insufficient evidence to support routine use of preoperative carbohydrate loading in bariatric surgery (Table 2).",
+   "key_numbers": "Item 7: evidence Low, grade Weak. Cited background: one 20-patient sleeve gastrectomy RCT reduced length of stay; compliance with carbohydrate drink 15% in one ERAS RCT.",
+   "role_in_work": "Source for the statement that no guideline asks for insulin or HOMA after surgery (row 37).",
+   "design": "ERAS Society consensus guideline update with graded recommendations.",
+   "population_and_size": "Adults having bariatric surgery; no patient numbers.",
+   "measure_type": "None (no insulin, C-peptide or HOMA measurement is recommended); postoperative insulin resistance is mentioned only as a physiological effect.",
+   "assay_or_platform": "Not applicable.",
+   "quality_note": "Clean XML-derived text. Conflict-of-interest statements not examined.",
+   "rows_affected": [
+    37
+   ],
+   "dimensions_affected": []
+  },
+  {
+   "id": "C086",
+   "pmid": "35963508",
+   "doi": "10.1016/j.eprac.2022.08.002",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "Row 13 entries took AACE R 9.4 as a guideline that endorses pioglitazone after stroke or TIA in insulin resistance or prediabetes without naming an assay or threshold (D3), and as showing the benefit reaches non-IR triggers (D8).",
+   "full_text_shows": "R 9.4 is Grade A, BEL 1 and reads 'should be considered' for insulin resistance, prediabetes or T2D with prior TIA or stroke. The evidence text describes IRIS as 'persons with insulin resistance but not DM', never mentions HOMA-IR, a threshold or any insulin assay, and adds a post hoc IRIS prediabetes subgroup (HR 0.64 for stroke) and a pooled analysis in IR, prediabetes or DM without heterogeneity.",
+   "verdict": "confirms",
+   "quote": "In persons with insulin resistance, prediabetes, or T2D and a prior transient ischemic attack or stroke, pioglitazone should be considered to reduce the risk of recurrent stroke.",
+   "key_numbers": "IRIS 3876 persons, 4.8 years, HR 0.76 (0.62-0.93); post hoc prediabetes subset N=1454, stroke HR 0.64 (0.42-0.99), stroke/MI HR 0.57 (0.39-0.84); meta-analysis N=4980 recurrent stroke HR 0.68 (0.50-0.92); PROactive HR 0.84 (0.72-0.98).",
+   "role_in_work": "Guideline source for the row 13 D3 score and for the 'glucose-based triggers are accepted' argument in D8.",
+   "design": "AACE clinical practice guideline with graded recommendations (grade and best evidence level).",
+   "population_and_size": "Adults with diabetes and its comorbidities; R 9.4 covers insulin resistance, prediabetes or T2D with prior stroke or TIA.",
+   "measure_type": "Fasting-based concept only (the term 'insulin resistance' without assay); no measure type is specified.",
+   "assay_or_platform": "None named.",
+   "quality_note": "Full guideline text available locally (about 486,000 characters), more than the first 100,000 the row says were read. Conflict-of-interest statements not examined.",
+   "rows_affected": [
+    13
+   ],
+   "dimensions_affected": [
+    "D3",
+    "D2",
+    "D8",
+    "D1"
+   ]
+  },
+  {
+   "id": "C089",
+   "pmid": "36464132",
+   "doi": "10.1016/j.eprac.2022.11.010",
+   "text_quality": "partial",
+   "read_level": "full text",
+   "relied_on": "Row 48 cited this paper at abstract level only, as context. No score entry.",
+   "full_text_shows": "A narrative review (not a guideline) that restates the Endocrine Society 2009 approach: Whipple triad first, then insulin, C-peptide, proinsulin and beta-hydroxybutyrate on a sample taken during hypoglycaemia; a mixed-meal test 'should be considered' for suspected postprandial hypoglycaemia and is interpreted like the fasting or spontaneous pattern in its Table 3. It does not discuss idiopathic (reactive) postprandial hypoglycaemia in people without gastric surgery or give a separate meal-test insulin threshold, and says mixed-meal tests alone cannot separate insulinoma from non-insulinoma pancreatogenous hypoglycaemia. Table 3 symbols (greater-than-or-equal signs) were lost in extraction.",
+   "verdict": "adds nuance",
+   "quote": "A mixed-meal test should be considered to provoke hypoglycemia in patients with a history suggestive of postprandial hypoglycemia.",
+   "key_numbers": "Table 3 (from Endocrine Society, symbols lost in extraction): glucose below 55 mg/dL with insulin 3 mU/mL, C-peptide 0.2 nmol/L, proinsulin 5 pmol/L (read as 'or more' from context) indicates endogenous hyperinsulinism (insulinoma, NIPHS, post-gastric-bypass hypoglycaemia); end-of-fast insulin 3 mU/mL and proinsulin 5 pmol/L suggested as insulinoma cut-offs; insulinoma history fasting only 73%, fasting plus postprandial 21%, postprandial only 6% (214 patients).",
+   "role_in_work": "Context review for rows 48 and 5 (diagnostic approach, Table 3 interpretation); not decision-impact evidence.",
+   "design": "Narrative review (Endocrine Practice 2023).",
+   "population_and_size": "Adults without diabetes with hypoglycaemia; no new patient data.",
+   "measure_type": "Mixed: spontaneous-episode or end-of-fast insulin, C-peptide, proinsulin; post-meal (mixed-meal test) with the same insulin and C-peptide criteria.",
+   "assay_or_platform": "Not specified; thresholds taken from Endocrine Society 2009.",
+   "quality_note": "PDF extraction with interleaved columns; table symbols lost, so the direction of Table 3 thresholds is inferred from the text. Review, not systematic.",
+   "rows_affected": [
+    48,
+    5
+   ],
+   "dimensions_affected": []
+  },
+  {
+   "id": "C092",
+   "pmid": "36537525",
+   "doi": "10.1111/pedi.13453",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "Row 19 says insulin is not part of CFRD screening or diagnosis; the glucose-only OGTT is the established test. No score entry.",
+   "full_text_shows": "Confirms row 19. Screening is the 2-h 75 g OGTT yearly from age 10, glucose at least fasting and 2 h; HbA1c is not recommended; 1-h glucose has insufficient evidence. Diagnosis uses ADA glucose criteria. Insulin appears only as pathophysiology (early-phase insulin loss in the first 30 minutes, delayed secretion and late hypoglycaemia). The word C-peptide does not occur in the text.",
+   "verdict": "confirms",
+   "quote": "Screening for CFRD should be performed using the 2‐h 75 g (1.75 g/kg) OGTT.",
+   "key_numbers": "Yearly OGTT from age 10; CFRD prevalence about 20% at age 20 and about 30% at age 30 (US registry); OGTT screening below 50% of eligible adults in North America.",
+   "role_in_work": "Guideline source showing no insulin or C-peptide test in CFRD screening or diagnosis (row 19).",
+   "design": "ISPAD consensus guideline.",
+   "population_and_size": "Children and adolescents with cystic fibrosis; no patient numbers.",
+   "measure_type": "Post-load glucose only (OGTT); insulin and C-peptide not recommended or mentioned as tests.",
+   "assay_or_platform": "Plasma glucose, HbA1c; CGM discussed.",
+   "quality_note": "Clean XML-derived text. Conflict-of-interest statements not examined.",
+   "rows_affected": [
+    19
+   ],
+   "dimensions_affected": []
+  },
+  {
+   "id": "C094",
+   "pmid": "36622115",
+   "doi": "10.1542/peds.2022-060640",
+   "text_quality": "partial",
+   "read_level": "full text",
+   "relied_on": "Row 16 and the source-gaps list say AAP 2023 could not be retrieved and 'no insulin' is [recall]. No score entry.",
+   "full_text_shows": "The guideline is now readable (PDF extract, columns interleaved). Key action statement 6 recommends fasting plasma glucose, 2-h OGTT glucose or HbA1c for prediabetes and diabetes in children with obesity, and its exclusions line says fasting insulin is not a reliable measure of insulin resistance; the text says fasting insulin is not recommended for diagnosing prediabetes or T2DM because levels are highly variable and do not reliably correlate with insulin resistance. No C-peptide or HOMA-IR test is recommended.",
+   "verdict": "adds nuance",
+   "quote": "Fasting insulin test is not reliable measure of insulin resistance.",
+   "key_numbers": "KAS 6: aggregate evidence Grade B, strength Moderate; diabetes cut-offs FPG 126, 2-h 200, HbA1c 6.5%; prediabetes FPG 100-125, 2-h 140-199, HbA1c 5.7-6.4%.",
+   "role_in_work": "Closes the AAP 2023 source gap for row 16 (paediatric obesity, fasting insulin) and gives a second guideline against fasting insulin.",
+   "design": "AAP clinical practice guideline with key action statements and evidence grades.",
+   "population_and_size": "Children and adolescents with overweight or obesity; screening for glucose abnormality from age 10; no patient numbers.",
+   "measure_type": "Fasting-based insulin (not recommended); post-load glucose (OGTT) recommended; no C-peptide.",
+   "assay_or_platform": "Not applicable.",
+   "quality_note": "Long PDF extract with interleaved columns; the fasting insulin sentence is split across columns but reads continuously. Found by keyword search for insulin, HOMA and C-peptide, not read end to end.",
+   "rows_affected": [
+    16
+   ],
+   "dimensions_affected": []
+  },
+  {
+   "id": "C099",
+   "pmid": "37580314",
+   "doi": "10.1210/clinem/dgad463",
+   "text_quality": "good",
+   "read_level": "full text",
+   "relied_on": "Row 15 and merged-conclusion say the 2023 PCOS guideline does not recommend insulin assays in routine care and recommends the 75-g OGTT. No score entry.",
+   "full_text_shows": "Confirms. Practice points 1.9.12 and 3.1.10 say clinically available insulin assays are of limited clinical relevance and are not recommended (1.9.12) or should not be used (3.1.10) in routine care. Recommendation 1.9.9 recommends the 75-g OGTT as the most accurate glycaemic test. Practice points are defined as 'Evidence not sought', as the merged conclusion says; the Discussion adds that routinely available measures of insulin resistance are inaccurate.",
+   "verdict": "confirms",
+   "quote": "clinically available insulin assays are of limited clinical relevance and should not be used in routine care",
+   "key_numbers": "55 prioritised clinical questions, 52 systematic reviews; 1.9.9 evidence-based recommendation for the 75-g OGTT regardless of BMI; glycaemic status assessed at diagnosis in all adults and adolescents (1.9.2).",
+   "role_in_work": "Guideline source against routine insulin assays in PCOS (row 15, merged-conclusion 'What is well supported').",
+   "design": "International evidence-based and consensus guideline.",
+   "population_and_size": "Women and adolescents with PCOS; no patient numbers.",
+   "measure_type": "Fasting-based insulin and insulin-resistance measures (not recommended); post-load OGTT glucose (recommended); no C-peptide.",
+   "assay_or_platform": "Insulin assays described as of limited relevance; no index or assay named.",
+   "quality_note": "Good XML-derived text. Conflict-of-interest declarations are in online material, not examined.",
+   "rows_affected": [
+    15
+   ],
+   "dimensions_affected": []
+  }
+ ],
+ "proposals": [],
+ "claim_issues": [
+  {
+   "where": "usecases-verified.md row 37 (and claims/claims.csv UC-37)",
+   "issue": "'ERAS recommends carbohydrate loading' is not what the guideline says: it states insufficient evidence for a recommendation on carbohydrate loading in bariatric surgery (low evidence, weak grade).",
+   "proposed_wording": "ERAS bariatric guideline: no recommendation to measure insulin or HOMA; on preoperative carbohydrate loading it finds insufficient evidence to make a recommendation (low evidence, weak grade).",
+   "paper": "C078",
+   "claim_ids": [
+    "UC-37"
+   ]
+  },
+  {
+   "where": "usecases-verified.md row 16 caveat and section 4 source gaps (AAP 2023 obesity guideline, 403); claims/claims.csv UC-ABS-01, UC-GAP-09, GL-46",
+   "issue": "AAP 2023 (PMID 36622115) was marked not retrievable and 'no insulin' [recall]. The full text is now read and says more than 'no insulin testing': fasting insulin is explicitly not recommended for diagnosing prediabetes or T2DM and is not a reliable measure of insulin resistance.",
+   "proposed_wording": "AAP 2023 (PMID 36622115, DOI 10.1542/peds.2022-060640, full text, keyword search): KAS 6 recommends fasting glucose, 2-h OGTT glucose or HbA1c; its exclusions line says 'Fasting insulin test is not reliable measure of insulin resistance', and the text says fasting insulin is not recommended for diagnosis of prediabetes or T2DM. No C-peptide or HOMA-IR test is recommended. Remove the [recall] tag and the 403 gap.",
+   "paper": "C094",
+   "claim_ids": [
+    "UC-ABS-01",
+    "UC-GAP-09",
+    "GL-46",
+    "UC-16"
+   ]
+  },
+  {
+   "where": "usecases-verified.md row 5 caveat 'CGM-detected hypoglycaemia common (54.3%)'",
+   "issue": "Accurate but incomplete: the 54.3% is a weighted mean prevalence from CGM glucose only in 280 non-diabetic patients at least 1 year after surgery, with I2 62.8% and no insulin or C-peptide measured; the authors say it may be overestimated and that provocative tests also show hypoglycaemia in healthy volunteers. It is not a rate of patients needing a work-up.",
+   "proposed_wording": "CGM-detected low glucose in 54.3% (95% CI 44.5-63.8; 8 studies, 280 patients, I2 62.8%); no included study measured insulin or C-peptide; the authors state no uniform diagnostic cut-off exists and the CGM rate may be overestimated.",
+   "paper": "C077",
+   "claim_ids": []
+  },
+  {
+   "where": "usecases-verified.md row 48 (Palani 2023 'abstract only (context)')",
+   "issue": "Read level can be raised to full text. The review is narrative, says a mixed-meal test should be considered for suspected postprandial hypoglycaemia and applies the fasting-pattern table (insulin, C-peptide, proinsulin at glucose below 55 mg/dL) to it, but does not address idiopathic postprandial hypoglycaemia without gastric surgery, so it neither supports nor contradicts the research-only status.",
+   "proposed_wording": "Palani 2023, PMID 36464132, DOI 10.1016/j.eprac.2022.11.010, full text (narrative review, PDF extract): a mixed-meal test should be considered for suspected postprandial hypoglycaemia and is interpreted with the same insulin, C-peptide and proinsulin pattern as a fast; it does not address reactive hypoglycaemia in people without gastric surgery.",
+   "paper": "C089",
+   "claim_ids": []
+  },
+  {
+   "where": "usecases-verified.md row 13 source note ('AACE 2022 ... first 100k of 678k chars')",
+   "issue": "The local full text (about 486,000 characters) confirms R 9.4 (Grade A, BEL 1) and shows the AACE evidence text never mentions HOMA-IR or a threshold; it calls IRIS participants 'persons with insulin resistance but not DM'. It also reports a post hoc IRIS prediabetes subgroup (HR 0.64 for stroke) and pooled benefit across IR, prediabetes and diabetes, which supports that glucose-based triggers are accepted.",
+   "proposed_wording": "AACE 2022 (PMID 35963508, DOI 10.1016/j.eprac.2022.08.002), local full text, keyword search: R 9.4 (Grade A, BEL 1) 'should be considered' in insulin resistance, prediabetes or T2D with prior TIA or stroke; no insulin assay, HOMA-IR or threshold is named in the text found.",
+   "paper": "C086",
+   "claim_ids": []
+  }
+ ],
+ "notes": "No score change is proposed for any paper. Current scores were read from the unit files and ranking.json: row 5 D1 2, D2 1 (U2 in force over S1 D2=2), D8 2, D7 3 (V7 supersedes U1 D7), D6 2, S 3; row 13 D3 2, D2 2, D8 1, D1 2. Row 5 D2: S1 gave 2 and U2 gave 1; C077 contains no insulin data, so it supports 1 and cannot support 2. Row 5 D8 2: C077 gives CGM sensitivity 90% and specificity 50% against 33% and 40% for a mixed-meal test, but those are glucose-based tests, so the insulin-specific subgroup argument is neither raised nor lowered; clarification 19 caps mechanism-only at 2. Row 5 D7: the 54.3% is not a work-up rate and V7 does not use it. Row 5 D6: C077 notes provocative tests give hypoglycaemia in healthy volunteers, a false-positive nuance already within the score of 2. Row 13 D3 confirmed at 2 under clarification 5 (drug recommendation, no measurement named). Row 13 D8 stays 1: AACE shows benefit in prediabetes and diabetes, so an IR measure is not needed to qualify. Rows 13 D1 and D2 unchanged. Path to viability is not affected for rows 5 and 13. C089 and C094 PDF extractions interleave columns; C094 was searched by keyword only. No web access was used. About 33 tool calls were used before writing."
+}

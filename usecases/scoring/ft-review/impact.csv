@@ -120,10 +120,41 @@ FT24,C313,41049521,confirms,46,D2,0,good
 FT24,C317,41358891,confirms,"13,45",D3,0,good
 FT25,C322,42168767,adds nuance,22,D8,0,good
 FT25,C328,42488134,adds nuance,9,D7,0,good
+FT26,C017,19805654,confirms,42,,0,partial
+FT26,C022,21945562,adds nuance,,,0,partial
+FT26,C023,22743620,confirms,19,,0,partial
+FT26,C028,24757230,adds nuance,8,,0,good
+FT26,C031,25356808,confirms,39,,0,good
+FT26,C032,25572256,adds nuance,6,,0,good
+FT26,C042,26908106,confirms,4,,0,good
+FT27,C046,28264826,confirms,41,,0,good
+FT27,C047,28359099,confirms,16,,0,good
+FT27,C054,30101281,adds nuance,5,"D1,D2,D3,D5,D6,D8,S",2,good
+FT27,C057,31180194,confirms,30,,0,good
+FT27,C065,33079318,adds nuance,39,,0,good
+FT27,C066,33225349,confirms,44,,0,partial
+FT27,C069,34123348,confirms,41,,0,good
+FT28,C077,34802853,adds nuance,5,"D1,D2,D8,D7",0,good
+FT28,C078,34984504,adds nuance,37,,0,good
+FT28,C086,35963508,confirms,13,"D3,D2,D8,D1",0,good
+FT28,C089,36464132,adds nuance,"48,5",,0,partial
+FT28,C092,36537525,confirms,19,,0,good
+FT28,C094,36622115,adds nuance,16,,0,partial
+FT28,C099,37580314,confirms,15,,0,good
+FT29,C106,38264233,confirms,47,D3,0,good
+FT29,C115,39380079,confirms,"36,14,16",,0,good
+FT29,C128,41752170,adds nuance,6,,0,good
+FT29,C163,29084736,adds nuance,13,D8,0,partial
+FT29,C173,36272764,confirms,28,,0,good
+FT29,C178,38171510,confirms,,,0,good
+FT29,C182,39726936,adds nuance,,,0,partial
 FT3,C134,42318218,adds nuance,20,,0,good
 FT3,C139,42662728,confirms,20,"D2,D3",0,good
 FT3,C141,42697708,adds nuance,"20,25","D2,D3,D8",0,"good (two-column PDF extraction, some hyphenation)"
 FT3,C137,42649063,adds nuance,21,D2,0,"partial (PDF extraction; table and figure text partly garbled, numbers readable)"
+FT30,C208,25458644,confirms,13,,0,good
+FT30,C219,27465265,adds nuance,13,"D2,D8",0,good
+FT30,C316,41358882,confirms,5,D3,0,good
 FT4,C113,39013634,adds nuance,18,,0,good
 FT4,C117,39963280,adds nuance,18,,0,good
 FT4,C018,19937225,confirms,45,,0,good
