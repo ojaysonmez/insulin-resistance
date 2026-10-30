@@ -1,6 +1,6 @@
 # Handoff
 
-Updated: 2026-10-27 (full-text waves, corpus extension, discovery pass and rows 51 to 54 added; stale cloud-watch and corpus bullets replaced)
+Updated: 2026-10-29 (rows 51 to 54 scored; full-text waves, corpus extension, discovery pass and rows 51 to 54 added; stale cloud-watch and corpus bullets replaced)
 
 The current state and the next step, written by hand at the end of a working session. It is overwritten each time (history lives in `CHANGELOG.md` and git). `tools/session_start_context.py` prints this note's main sections at the start of each session. Update it at the end of every working session. Local and cloud sessions cannot see each other's chats (D-36), so anything a later session needs goes here, in `DECISIONS.md`, `CHANGELOG.md` or `memory/`.
 
@@ -19,7 +19,7 @@ Run these from a fresh chat (this one is long and expensive), after the 5-hour u
 1. **Wave 1b is reviewed (FT31, FT32, 2026-10-27).** Row 47 D4 is now 2 (original 3 kept with a note) and the accepted wording fixes are applied (not committed); row 47 moved from rank 6 to 7 in `ranking.md`, still tier B.
 2. **Wave 2a is done (FT18 to FT25, 2026-10-27, 49 papers + 2).** No score changed (both reader proposals rejected by the skeptics). Accepted claim-wording fixes are applied to `claims/claims.csv`, `usecases-verified.md` and `merged-conclusion.md` (not committed). The same fixes are applied inside the score-file reasons (V1, V2, V8, V14, V15, V16, V20 to V22, V24, V26; reasons only, no score changed). The three open decisions are closed (D-49): row 28 D2 is now 1, row 48 D2 stays 1, clarification 5 stays (rows 5, 11, 13, 45 D3 stay 2).
 3. **Wave 2b is done (FT26 to FT30, 31 papers, 2026-10-27).** No score changed (row 5 D1 and D8 proposals rejected). The skeptic-accepted claim-wording fixes are applied to the ledger, `usecases-verified.md`, `merged-conclusion.md` and `U2.json` (not committed). The rule-5 question is closed (D-49).
-4. **Score rows 51 to 54** on the rubric (search-heavy; ask first), then add them to the ranking.
+4. **Rows 51 to 54 are scored (2026-10-29, V28 to V31, skeptic fixes applied, not committed).** Row 51 rank 9 tier B (0.532), row 52 rank 23 tier C, row 53 rank 32 tier D, row 54 unranked (D8 not determinable). Still open: read the guideline full texts for D3 of rows 51 to 54, verify the CDC and ACS counts and source the row 53 count, decide on the V31 anchor rewrites (`usecases/scoring/V31.json`), and the unrun R2 rescore for row 11.
 5. Optional: short extractions may be partial (C022 C036 C043 C137 C192 C196 C200 C207 C235 C276 under 3,000 words); check before relying on them. Unread items from the skeptic: C318, C333, C166, C207, C220, C164, C309.
 6. Open from earlier handoffs: search-string logs for 5 ledger absence rows; an ID-consistency script; retrieval of the ISPAD monogenic chapter (PMID 36537518); Gavigan numbers in `usecases/scoring/dossiers/row-31.md`; PRINCESS (NCT05760339) stale and four non-NCT registry IDs to check by hand; the summary editor pass on `summary.md`; row 7 D4 versus row 33 D4 inconsistency (clarification 25); row 24 status "Established" (only Rec 1.1 names a test).
 7. Decide whether to start harmonisation or accuracy-study planning for pathway 1 (rows 6 and 31).

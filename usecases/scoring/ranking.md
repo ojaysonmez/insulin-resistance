@@ -14,71 +14,78 @@ Tiers (D-39): A composite 0.60 or more, B 0.50 to 0.59, C 0.40 to 0.49, D below 
 | 6 | 7 | specialist outpatient | 0.67 | 0.62 | 0.60 | 0.25 | 0.560 | B | no | - | External validation of C-peptide or UCPCR thresholds in a US multiethnic population plus a prospective pathway study of genetic-test yield and treatment change versus clinical criteria alone. (evidence, medium); External validation of C-peptide/UCPCR in a US multi-ethnic triage cohort, with the test's added yield over antibodies and age/BMI criteria. (evidence, medium); External validation of a UCPCR or C-peptide pathway with a sourced positive predictive value and a US-available assay and collection protocol. (assay, medium) |
 | 7 | 47 | specialist outpatient | 0.58 | 0.62 | 0.60 | 0.38 | 0.552 | B | no | - | Validation of the 0.6 ng/mL fasting C-peptide criterion against clinical insulin dependence outside Japan, and adoption of the entity by a US or international body. (evidence, medium); Adoption of the criteria, or an equivalent C-peptide threshold, by a US or international body, with evidence that the label changes treatment. (guideline, small); Adoption or validation of the fasting C-peptide threshold by a US or international body in non-Japanese cohorts. (guideline, medium) |
 | 8 | 5 | specialist outpatient | 0.42 | 0.44 | 0.60 | 0.75 | 0.532 | B | no | weak evidence (D2 of 0 or 1) | A diagnostic-accuracy study in post-bariatric patients with symptoms, comparing insulin and C-peptide at documented hypoglycaemia (or mixed-meal nadir) against a reference standard including CGM and clinical course, from which an agreed threshold is derived and then externally validated. (evidence, medium); An assay-specific, validated insulin threshold for post-bariatric hypoglycaemia from a standardized mixed-meal protocol, on insulin assays traceable to a commutable reference material. (assay, medium); An accepted insulin or C-peptide threshold during a standardised mixed-meal test, validated against symptoms and CGM (evidence, medium) |
-| 9 | 29 | specialist outpatient | 0.67 | 0.59 | 0.40 | 0.38 | 0.531 | B | no | - | Confirmatory trial showing clinical benefit (not just C-peptide preservation) of teplizumab in Stage 3 T1D, and ADA/ISPAD guideline endorsement of C-peptide-based selection. (evidence, large); Clinical-outcome follow-up of PROTECT (HbA1c, insulin dose, hypoglycaemia) and a subgroup analysis by baseline C-peptide showing selection adds to antibody status. (evidence, large) |
-| 10 | 4 | inpatient or procedural | 0.50 | 0.53 | 0.40 | 0.75 | 0.530 | B | no | - | Multi-centre diagnostic accuracy study of insulin and C-peptide thresholds against BOHB, FFA and glucagon response using harmonised, low-range-validated paediatric assays. (evidence, medium); A higher-sensitivity insulin assay with paediatric reference limits and reported agreement across US laboratories. (assay, medium); A guideline-adopted high-sensitivity insulin assay with a defined detection limit and a standard critical-sample set across US hospitals. (assay, small) |
-| 11 | 20 | specialist outpatient | 0.50 | 0.50 | 0.40 | 0.75 | 0.525 | B | no | weak evidence (D2 of 0 or 1) | A diagnostic-accuracy series (cases vs insulinoma/exogenous insulin) giving insulin, IAA and PEG-recovery cutoffs with an assay-specific reference range (evidence, medium); A published, assay-specific PEG recovery protocol and cutoff for US platforms, with named reference laboratories for insulin autoantibody testing. (assay, medium); A guideline or consensus text that states which insulin, antibody and PEG results define insulin autoimmune syndrome, with a harmonised assay-specific cut-off. (guideline, medium) |
-| 12 | 21 | inpatient or procedural | 0.50 | 0.44 | 0.40 | 0.75 | 0.516 | B | no | weak evidence (D2 of 0 or 1) | A guideline algorithm that names insulin and C-peptide suppression as the required step before IGF-II and imaging, supported by a case series with accuracy data. (guideline, small); Guideline or review text stating the insulin and C-peptide pattern as the first step before IGF-II testing. (guideline, small) |
-| 13 | 24 | specialist outpatient | 0.58 | 0.50 | 0.20 | 0.75 | 0.508 | B | no | - | Paediatric-specific insulin/C-peptide/BOHB thresholds separating insulinoma from congenital HI and other acquired HI, validated beyond one centre. (evidence, medium); A paediatric series of insulin and C-peptide at hypoglycaemia in children over 2 years with confirmed insulinoma or MEN1, with age-specific cutoffs. (evidence, medium) |
-| 14 | 32 | specialist outpatient | 0.58 | 0.50 | 0.60 | 0.25 | 0.508 | B | no | - | Multi-centre, multi-ethnic prospective validation of the post-DKA C-peptide cutoff (fasting above 0.33 nmol/L or glucagon-stimulated above 0.5 nmol/L) against sustained insulin independence, with a defined withdrawal protocol. (evidence, medium); Prospective validation of the post-DKA C-peptide cutoffs in US cohorts and a stated timing window, with a supervised insulin-withdrawal protocol. (evidence, medium); A multi-centre prospective cohort in a US population testing C-peptide-guided insulin withdrawal and relapse. (evidence, medium) |
-| 15 | 12 | specialist outpatient | 0.50 | 0.38 | 0.40 | 0.75 | 0.506 | B | no | weak evidence (D2 of 0 or 1) | Multi-ethnic diagnostic accuracy study of fasting insulin (and a US-adopted threshold) against genetic or antibody-confirmed severe IR, including patients on exogenous insulin. (evidence, medium); Diagnostic accuracy study of fasting insulin thresholds in severe IR and type B IR with standardised assay and US adoption. (evidence, medium) |
-| 16 | 3 | inpatient or procedural | 0.42 | 0.50 | 0.40 | 0.75 | 0.492 | C | no | - | Diagnostic accuracy cohort of the full hypoglycaemia panel (insulin, C-peptide, proinsulin, BOHB, broad secretagogue screen including newer agents) in unselected adults with Whipple triad, with rapid turnaround drug screen. (evidence, medium); Accuracy data for the insulin/C-peptide pattern plus a rapid broad sulfonylurea/meglitinide screen available in US hospital laboratories. (workflow, small); Accuracy data and an up-to-date drug screen covering newer agents, with a stated insulin and C-peptide threshold during hypoglycaemia. (assay, small) |
-| 17 | 13 | routine care, specialist outpatient | 0.42 | 0.50 | 0.80 | 0.25 | 0.492 | C | no | - | Re-analysis of IRIS (or a pooled pioglitazone dataset) testing HOMA-IR, and non-insulin alternatives such as fasting glucose, HbA1c or triglyceride-to-HDL ratio, as effect modifiers of the pioglitazone benefit on stroke and myocardial infarction, followed by a trial in patients with stroke and prediabetes but low HOMA-IR. (evidence, small); An assay-harmonized HOMA-IR (or insulin) threshold, with the IRIS 3.0 value mapped to current assays, or a guideline wording that names the assay requirement. (assay, medium); Analysis or trial showing whether pioglitazone benefit differs by baseline HOMA-IR, with a standardised insulin assay (evidence, small) |
-| 18 | 35 | routine care | 0.29 | 0.50 | 1.00 | 0.25 | 0.492 | C | no | - | Pre-specified model-development study with external validation showing first-trimester HOMA-IR adds to clinical risk factors (delta C-statistic, NRI, calibration), then a trial of risk-guided early intervention. (evidence, large); Prospective study showing first-trimester HOMA-IR adds to risk-factor screening for GDM, then a trial of early intervention guided by it. (evidence, large) |
-| 19 | 33 | specialist outpatient | 0.50 | 0.47 | 0.40 | 0.50 | 0.470 | C | no | - | Prospective US validation of post-meal UCPCR or MMTT C-peptide cut-offs against genetic diagnosis in youth with diabetes over 2 years, and a guideline statement naming the test for this population. (evidence, medium); A multi-centre validation of a single UCPCR cutoff against genetic and autoantibody-defined type, with a comparison to autoantibody testing alone. (evidence, medium) |
-| 20 | 14 | routine care | 0.25 | 0.62 | 1.00 | 0.12 | 0.469 | C | no | weak evidence (D2 of 0 or 1) | A liver-outcome cohort or trial showing that HOMA-IR in suspected MASLD changes risk stratification beyond FIB-4, elastography and glucose/HbA1c (delta C-statistic, NRI) and then changes management, plus a standardised insulin assay. (evidence, medium); Trial or cohort showing HOMA-IR or OGTT-derived estimates change management beyond FIB-4 and elastography, with an agreed assay cut-off. (evidence, large) |
-| 21 | 50 | routine care, specialist outpatient | 0.33 | 0.56 | 0.80 | 0.25 | 0.468 | C | no | weak evidence (D2 of 0 or 1) | A cohort of SGA-treated children and youth testing whether fasting insulin adds to fasting glucose, HbA1c and BMI for detecting dysglycaemia on OGTT (incremental detection or reclassification), followed by a US guideline position (evidence, medium) |
-| 22 | 22 | inpatient or procedural | 0.58 | 0.31 | 0.20 | 0.62 | 0.455 | C | no | - | Comparison of hepatic venous insulin gradient sampling with GLP-1 receptor PET/CT in imaging-negative insulinoma, to define when sampling is still needed. (evidence, medium); A head-to-head cohort of calcium-stimulated venous sampling against exendin PET/CT in negative-imaging patients, with surgical cure as the outcome. (evidence, medium) |
-| 23 | 23 | specialist outpatient | 0.42 | 0.31 | 0.40 | 0.62 | 0.439 | C | no | - | Prospective validation of OGTT or mixed-meal insulin/glucose criteria for insulinoma against reactive hypoglycaemia, and a guideline recommendation for one standard protocol. (evidence, medium); A prospective study of OGTT or mixed-meal insulin and C-peptide ratios in patients with postprandial symptoms and a negative fast, with an external validation cohort. (evidence, medium) |
-| 24 | 46 | inpatient or procedural | 0.50 | 0.50 | 0.40 | 0.25 | 0.425 | C | no | weak evidence (D2 of 0 or 1) | Non-Japanese cohort validating the C-peptide criterion with sensitivity and specificity against clinical course, and adoption by a US or international body. (guideline, medium); Accuracy study of the C-peptide cut-offs in a non-Japanese population and a Western guideline recognising fulminant T1D. (evidence, medium) |
-| 25 | 25 | inpatient or procedural | 0.50 | 0.31 | 0.20 | 0.62 | 0.422 | C | no | weak evidence (D2 of 0 or 1) | A case series or registry giving the rate of antibody-caused spurious hyperinsulinism in neonates and the effect of PEG/platform checks on work-up (evidence, medium); A validated neonatal workflow: small-volume PEG recovery with defined cutoffs and an interference screen for IgM and non-IAA antibodies. (workflow, medium); Validation of an interpretation algorithm with PEG precipitation in infant hypoglycaemia on a larger cohort, and a routine PEG assay. (assay, medium) |
-| 26 | 11 | specialist outpatient | 0.33 | 0.53 | 0.60 | 0.25 | 0.413 | C | no | - | Head-to-head external validation showing C-peptide adds to duration, HbA1c and medications in the same cohort, with a durable-remission outcome (evidence, small); Harmonized C-peptide results (common calibrator or LC-MS/MS reference) and a validated cutoff across US assays. (assay, medium); Analysis of whether C-peptide adds to diabetes duration, BMI and age in remission prediction, with external validation of a cutoff on a standard assay. (evidence, small) |
-| 27 | 28 | specialist outpatient | 0.25 | 0.38 | 0.60 | 0.50 | 0.406 | C | no | weak evidence (D2 of 0 or 1) | External validation of eGFR-adjusted serum C-peptide or UCPCR cutoffs for insulin deficiency, with a guideline statement on CKD interpretation. (evidence, small); Validated eGFR-adjusted C-peptide or UCPCR thresholds in a US CKD cohort, and a guideline note. (evidence, medium) |
-| 28 | 45 | routine care | 0.08 | 0.62 | 1.00 | 0.12 | 0.402 | C | no | weak evidence (D2 of 0 or 1) | Cohort analysis in women with prior GDM testing whether HOMA-IR adds to OGTT/A1C for conversion to diabetes, plus a trial of IR-guided prevention (evidence, medium); Evidence that fasting insulin or HOMA-IR adds to OGTT and A1C after gestational diabetes, using a standardized insulin assay. (evidence, medium); A cohort showing postpartum fasting insulin or HOMA-IR adds to OGTT, A1C and BMI for predicting type 2 diabetes after gestational diabetes, and a trial choosing prevention by it. (evidence, large) |
-| 29 | 49 | specialist outpatient | 0.42 | 0.38 | 0.40 | 0.38 | 0.398 | D | no | - | Incremental-value analysis (C-statistic, NRI, calibration, decision curve) of OGTT C-peptide over antibody count, OGTT glucose, age and BMI in existing TrialNet data, with a reduced-sample protocol. (evidence, small); External validation of Index60 or AUC C-peptide thresholds with a test of incremental value over OGTT glucose, autoantibody number and age, and a reduced-sample protocol. (evidence, medium); External validation of simplified C-peptide scores in a large antibody-positive cohort, plus a trial showing C-peptide-guided monitoring changes outcomes such as ketoacidosis at onset. (evidence, large) |
-| 30 | 9 | specialist outpatient | 0.33 | 0.50 | 0.20 | 0.50 | 0.358 | D | no | weak evidence (D2 of 0 or 1) | Prospective cohort in post-pancreatitis or pancreatectomy diabetes giving C-peptide cutoffs (fasting and stimulated) for insulin deficiency and TPIAT outcome, validated externally. (evidence, medium); Published C-peptide cut-offs for type 3c and for TPIAT outcome prediction, validated prospectively. (evidence, medium) |
-| 31 | 8 | specialist outpatient | 0.50 | 0.44 | 0.20 | 0.12 | 0.341 | D | no | - | A regulator or consensus statement stating the standardized MMTT C-peptide protocol and the change that counts as preserved function, with a US-marketed assay harmonized across sites (guideline, small); Common calibration for C-peptide across trial laboratories (central lab or reference method); routine MMTT is not needed for care. (assay, small); Regulatory-accepted use of stimulated C-peptide to select or monitor an individual patient, plus a shorter validated meal-test protocol. (workflow, medium) |
-| 32 | 27 | inpatient or procedural | 0.25 | 0.47 | 0.20 | 0.38 | 0.295 | D | no | weak evidence (D2 of 0 or 1) | A cohort of TPIAT candidates relating preoperative MMTT C-peptide to postoperative insulin need, tested against HbA1c/CGM, with a threshold validated in a second centre (evidence, medium); A standardized MMTT protocol and a preoperative C-peptide threshold validated against post-transplant insulin independence. (evidence, medium); A prospective TPIAT cohort testing whether preoperative MMTT C-peptide predicts insulin independence beyond islet yield and glucose measures. (evidence, medium) |
+| 9 | 51 | specialist outpatient | 0.42 | 0.44 | 1.00 | 0.25 | 0.532 | B | no | - | Test a simplified phenotype (OGTT-based or fasting indices without MR spectroscopy) in the existing PLIS data; the larger step after that is replication with a hard outcome such as incident diabetes. (evidence, small) |
+| 10 | 29 | specialist outpatient | 0.67 | 0.59 | 0.40 | 0.38 | 0.531 | B | no | - | Confirmatory trial showing clinical benefit (not just C-peptide preservation) of teplizumab in Stage 3 T1D, and ADA/ISPAD guideline endorsement of C-peptide-based selection. (evidence, large); Clinical-outcome follow-up of PROTECT (HbA1c, insulin dose, hypoglycaemia) and a subgroup analysis by baseline C-peptide showing selection adds to antibody status. (evidence, large) |
+| 11 | 4 | inpatient or procedural | 0.50 | 0.53 | 0.40 | 0.75 | 0.530 | B | no | - | Multi-centre diagnostic accuracy study of insulin and C-peptide thresholds against BOHB, FFA and glucagon response using harmonised, low-range-validated paediatric assays. (evidence, medium); A higher-sensitivity insulin assay with paediatric reference limits and reported agreement across US laboratories. (assay, medium); A guideline-adopted high-sensitivity insulin assay with a defined detection limit and a standard critical-sample set across US hospitals. (assay, small) |
+| 12 | 20 | specialist outpatient | 0.50 | 0.50 | 0.40 | 0.75 | 0.525 | B | no | weak evidence (D2 of 0 or 1) | A diagnostic-accuracy series (cases vs insulinoma/exogenous insulin) giving insulin, IAA and PEG-recovery cutoffs with an assay-specific reference range (evidence, medium); A published, assay-specific PEG recovery protocol and cutoff for US platforms, with named reference laboratories for insulin autoantibody testing. (assay, medium); A guideline or consensus text that states which insulin, antibody and PEG results define insulin autoimmune syndrome, with a harmonised assay-specific cut-off. (guideline, medium) |
+| 13 | 21 | inpatient or procedural | 0.50 | 0.44 | 0.40 | 0.75 | 0.516 | B | no | weak evidence (D2 of 0 or 1) | A guideline algorithm that names insulin and C-peptide suppression as the required step before IGF-II and imaging, supported by a case series with accuracy data. (guideline, small); Guideline or review text stating the insulin and C-peptide pattern as the first step before IGF-II testing. (guideline, small) |
+| 14 | 24 | specialist outpatient | 0.58 | 0.50 | 0.20 | 0.75 | 0.508 | B | no | - | Paediatric-specific insulin/C-peptide/BOHB thresholds separating insulinoma from congenital HI and other acquired HI, validated beyond one centre. (evidence, medium); A paediatric series of insulin and C-peptide at hypoglycaemia in children over 2 years with confirmed insulinoma or MEN1, with age-specific cutoffs. (evidence, medium) |
+| 15 | 32 | specialist outpatient | 0.58 | 0.50 | 0.60 | 0.25 | 0.508 | B | no | - | Multi-centre, multi-ethnic prospective validation of the post-DKA C-peptide cutoff (fasting above 0.33 nmol/L or glucagon-stimulated above 0.5 nmol/L) against sustained insulin independence, with a defined withdrawal protocol. (evidence, medium); Prospective validation of the post-DKA C-peptide cutoffs in US cohorts and a stated timing window, with a supervised insulin-withdrawal protocol. (evidence, medium); A multi-centre prospective cohort in a US population testing C-peptide-guided insulin withdrawal and relapse. (evidence, medium) |
+| 16 | 12 | specialist outpatient | 0.50 | 0.38 | 0.40 | 0.75 | 0.506 | B | no | weak evidence (D2 of 0 or 1) | Multi-ethnic diagnostic accuracy study of fasting insulin (and a US-adopted threshold) against genetic or antibody-confirmed severe IR, including patients on exogenous insulin. (evidence, medium); Diagnostic accuracy study of fasting insulin thresholds in severe IR and type B IR with standardised assay and US adoption. (evidence, medium) |
+| 17 | 3 | inpatient or procedural | 0.42 | 0.50 | 0.40 | 0.75 | 0.492 | C | no | - | Diagnostic accuracy cohort of the full hypoglycaemia panel (insulin, C-peptide, proinsulin, BOHB, broad secretagogue screen including newer agents) in unselected adults with Whipple triad, with rapid turnaround drug screen. (evidence, medium); Accuracy data for the insulin/C-peptide pattern plus a rapid broad sulfonylurea/meglitinide screen available in US hospital laboratories. (workflow, small); Accuracy data and an up-to-date drug screen covering newer agents, with a stated insulin and C-peptide threshold during hypoglycaemia. (assay, small) |
+| 18 | 13 | routine care, specialist outpatient | 0.42 | 0.50 | 0.80 | 0.25 | 0.492 | C | no | - | Re-analysis of IRIS (or a pooled pioglitazone dataset) testing HOMA-IR, and non-insulin alternatives such as fasting glucose, HbA1c or triglyceride-to-HDL ratio, as effect modifiers of the pioglitazone benefit on stroke and myocardial infarction, followed by a trial in patients with stroke and prediabetes but low HOMA-IR. (evidence, small); An assay-harmonized HOMA-IR (or insulin) threshold, with the IRIS 3.0 value mapped to current assays, or a guideline wording that names the assay requirement. (assay, medium); Analysis or trial showing whether pioglitazone benefit differs by baseline HOMA-IR, with a standardised insulin assay (evidence, small) |
+| 19 | 35 | routine care | 0.29 | 0.50 | 1.00 | 0.25 | 0.492 | C | no | - | Pre-specified model-development study with external validation showing first-trimester HOMA-IR adds to clinical risk factors (delta C-statistic, NRI, calibration), then a trial of risk-guided early intervention. (evidence, large); Prospective study showing first-trimester HOMA-IR adds to risk-factor screening for GDM, then a trial of early intervention guided by it. (evidence, large) |
+| 20 | 33 | specialist outpatient | 0.50 | 0.47 | 0.40 | 0.50 | 0.470 | C | no | - | Prospective US validation of post-meal UCPCR or MMTT C-peptide cut-offs against genetic diagnosis in youth with diabetes over 2 years, and a guideline statement naming the test for this population. (evidence, medium); A multi-centre validation of a single UCPCR cutoff against genetic and autoantibody-defined type, with a comparison to autoantibody testing alone. (evidence, medium) |
+| 21 | 14 | routine care | 0.25 | 0.62 | 1.00 | 0.12 | 0.469 | C | no | weak evidence (D2 of 0 or 1) | A liver-outcome cohort or trial showing that HOMA-IR in suspected MASLD changes risk stratification beyond FIB-4, elastography and glucose/HbA1c (delta C-statistic, NRI) and then changes management, plus a standardised insulin assay. (evidence, medium); Trial or cohort showing HOMA-IR or OGTT-derived estimates change management beyond FIB-4 and elastography, with an agreed assay cut-off. (evidence, large) |
+| 22 | 50 | routine care, specialist outpatient | 0.33 | 0.56 | 0.80 | 0.25 | 0.468 | C | no | weak evidence (D2 of 0 or 1) | A cohort of SGA-treated children and youth testing whether fasting insulin adds to fasting glucose, HbA1c and BMI for detecting dysglycaemia on OGTT (incremental detection or reclassification), followed by a US guideline position (evidence, medium) |
+| 23 | 52 | specialist outpatient | 0.25 | 0.44 | 1.00 | 0.25 | 0.466 | C | no | weak evidence (D2 of 0 or 1) | Randomised trial of an insulin sensitiser (metformin; pioglitazone as a separate arm because its risks differ) in mood-disorder patients stratified by IR status (IR versus non-IR arms with the same cutoff), with a clinical mood outcome (evidence, large) |
+| 24 | 22 | inpatient or procedural | 0.58 | 0.31 | 0.20 | 0.62 | 0.455 | C | no | - | Comparison of hepatic venous insulin gradient sampling with GLP-1 receptor PET/CT in imaging-negative insulinoma, to define when sampling is still needed. (evidence, medium); A head-to-head cohort of calcium-stimulated venous sampling against exendin PET/CT in negative-imaging patients, with surgical cure as the outcome. (evidence, medium) |
+| 25 | 23 | specialist outpatient | 0.42 | 0.31 | 0.40 | 0.62 | 0.439 | C | no | - | Prospective validation of OGTT or mixed-meal insulin/glucose criteria for insulinoma against reactive hypoglycaemia, and a guideline recommendation for one standard protocol. (evidence, medium); A prospective study of OGTT or mixed-meal insulin and C-peptide ratios in patients with postprandial symptoms and a negative fast, with an external validation cohort. (evidence, medium) |
+| 26 | 46 | inpatient or procedural | 0.50 | 0.50 | 0.40 | 0.25 | 0.425 | C | no | weak evidence (D2 of 0 or 1) | Non-Japanese cohort validating the C-peptide criterion with sensitivity and specificity against clinical course, and adoption by a US or international body. (guideline, medium); Accuracy study of the C-peptide cut-offs in a non-Japanese population and a Western guideline recognising fulminant T1D. (evidence, medium) |
+| 27 | 25 | inpatient or procedural | 0.50 | 0.31 | 0.20 | 0.62 | 0.422 | C | no | weak evidence (D2 of 0 or 1) | A case series or registry giving the rate of antibody-caused spurious hyperinsulinism in neonates and the effect of PEG/platform checks on work-up (evidence, medium); A validated neonatal workflow: small-volume PEG recovery with defined cutoffs and an interference screen for IgM and non-IAA antibodies. (workflow, medium); Validation of an interpretation algorithm with PEG precipitation in infant hypoglycaemia on a larger cohort, and a routine PEG assay. (assay, medium) |
+| 28 | 11 | specialist outpatient | 0.33 | 0.53 | 0.60 | 0.25 | 0.413 | C | no | - | Head-to-head external validation showing C-peptide adds to duration, HbA1c and medications in the same cohort, with a durable-remission outcome (evidence, small); Harmonized C-peptide results (common calibrator or LC-MS/MS reference) and a validated cutoff across US assays. (assay, medium); Analysis of whether C-peptide adds to diabetes duration, BMI and age in remission prediction, with external validation of a cutoff on a standard assay. (evidence, small) |
+| 29 | 28 | specialist outpatient | 0.25 | 0.38 | 0.60 | 0.50 | 0.406 | C | no | weak evidence (D2 of 0 or 1) | External validation of eGFR-adjusted serum C-peptide or UCPCR cutoffs for insulin deficiency, with a guideline statement on CKD interpretation. (evidence, small); Validated eGFR-adjusted C-peptide or UCPCR thresholds in a US CKD cohort, and a guideline note. (evidence, medium) |
+| 30 | 45 | routine care | 0.08 | 0.62 | 1.00 | 0.12 | 0.402 | C | no | weak evidence (D2 of 0 or 1) | Cohort analysis in women with prior GDM testing whether HOMA-IR adds to OGTT/A1C for conversion to diabetes, plus a trial of IR-guided prevention (evidence, medium); Evidence that fasting insulin or HOMA-IR adds to OGTT and A1C after gestational diabetes, using a standardized insulin assay. (evidence, medium); A cohort showing postpartum fasting insulin or HOMA-IR adds to OGTT, A1C and BMI for predicting type 2 diabetes after gestational diabetes, and a trial choosing prevention by it. (evidence, large) |
+| 31 | 49 | specialist outpatient | 0.42 | 0.38 | 0.40 | 0.38 | 0.398 | D | no | - | Incremental-value analysis (C-statistic, NRI, calibration, decision curve) of OGTT C-peptide over antibody count, OGTT glucose, age and BMI in existing TrialNet data, with a reduced-sample protocol. (evidence, small); External validation of Index60 or AUC C-peptide thresholds with a test of incremental value over OGTT glucose, autoantibody number and age, and a reduced-sample protocol. (evidence, medium); External validation of simplified C-peptide scores in a large antibody-positive cohort, plus a trial showing C-peptide-guided monitoring changes outcomes such as ketoacidosis at onset. (evidence, large) |
+| 32 | 53 | specialist outpatient | 0.17 | 0.50 | 1.00 | 0.00 | 0.392 | D | no | weak evidence (D2 of 0 or 1) | None; the use stays closed unless contradicting evidence appears (a second adequately powered trial or a pooled interaction analysis showing diet response differs by post-load insulin). (evidence, large) |
+| 33 | 9 | specialist outpatient | 0.33 | 0.50 | 0.20 | 0.50 | 0.358 | D | no | weak evidence (D2 of 0 or 1) | Prospective cohort in post-pancreatitis or pancreatectomy diabetes giving C-peptide cutoffs (fasting and stimulated) for insulin deficiency and TPIAT outcome, validated externally. (evidence, medium); Published C-peptide cut-offs for type 3c and for TPIAT outcome prediction, validated prospectively. (evidence, medium) |
+| 34 | 8 | specialist outpatient | 0.50 | 0.44 | 0.20 | 0.12 | 0.341 | D | no | - | A regulator or consensus statement stating the standardized MMTT C-peptide protocol and the change that counts as preserved function, with a US-marketed assay harmonized across sites (guideline, small); Common calibration for C-peptide across trial laboratories (central lab or reference method); routine MMTT is not needed for care. (assay, small); Regulatory-accepted use of stimulated C-peptide to select or monitor an individual patient, plus a shorter validated meal-test protocol. (workflow, medium) |
+| 35 | 27 | inpatient or procedural | 0.25 | 0.47 | 0.20 | 0.38 | 0.295 | D | no | weak evidence (D2 of 0 or 1) | A cohort of TPIAT candidates relating preoperative MMTT C-peptide to postoperative insulin need, tested against HbA1c/CGM, with a threshold validated in a second centre (evidence, medium); A standardized MMTT protocol and a preoperative C-peptide threshold validated against post-transplant insulin independence. (evidence, medium); A prospective TPIAT cohort testing whether preoperative MMTT C-peptide predicts insulin independence beyond islet yield and glucose measures. (evidence, medium) |
 
 ## Incomplete rows (not ranked)
 
 - Row 48: missing C; flags: weak evidence (D2 of 0 or 1)
+- Row 54: missing UQ; flags: weak evidence (D2 of 0 or 1)
 
-## Sensitivity (top group = best 8 of 32)
+## Sensitivity (top group = best 9 of 35)
 
 | Row | default | equal | utility-heavy | need-heavy |
 |---|---|---|---|---|
 | 1 | 1 | 1 | 2 | 1 |
-| 6 | 2 | 2 | 1 | 5 |
-| 31 | 3 | 4 | 3 | 9 |
-| 10 | 4 | 5 | 4 | 14 |
-| 2 | 5 | 3 | 7 | 4 |
-| 7 | 6 | 10 | 5 | 18 |
-| 47 | 7 | 7 | 8 | 10 |
-| 5 | 8 | 6 | 17 | 2 |
-| 29 | 9 | 14 | 6 | 22 |
-| 4 | 10 | 8 | 11 | 7 |
-| 20 | 11 | 9 | 12 | 8 |
-| 21 | 12 | 11 | 13 | 11 |
-| 24 | 13 | 15 | 9 | 21 |
-| 32 | 14 | 20 | 10 | 19 |
-| 12 | 15 | 16 | 15 | 13 |
-| 3 | 16 | 12 | 18 | 15 |
-| 13 | 17 | 18 | 20 | 12 |
-| 35 | 18 | 13 | 26 | 3 |
-| 33 | 19 | 21 | 16 | 24 |
-| 14 | 20 | 17 | 28 | 6 |
-| 50 | 21 | 19 | 23 | 16 |
-| 22 | 22 | 25 | 14 | 26 |
-| 23 | 23 | 23 | 24 | 23 |
-| 46 | 24 | 27 | 19 | 29 |
-| 25 | 25 | 28 | 21 | 27 |
-| 11 | 26 | 26 | 27 | 25 |
-| 28 | 27 | 24 | 30 | 20 |
-| 45 | 28 | 22 | 32 | 17 |
-| 49 | 29 | 29 | 25 | 28 |
-| 9 | 30 | 30 | 29 | 30 |
-| 8 | 31 | 32 | 22 | 32 |
-| 27 | 32 | 31 | 31 | 31 |
+| 6 | 2 | 2 | 1 | 7 |
+| 31 | 3 | 4 | 3 | 11 |
+| 10 | 4 | 5 | 4 | 16 |
+| 2 | 5 | 3 | 7 | 6 |
+| 7 | 6 | 10 | 5 | 20 |
+| 47 | 7 | 7 | 8 | 12 |
+| 5 | 8 | 6 | 17 | 3 |
+| 51 | 9 | 11 | 20 | 2 |
+| 29 | 10 | 15 | 6 | 25 |
+| 4 | 11 | 8 | 11 | 9 |
+| 20 | 12 | 9 | 12 | 10 |
+| 21 | 13 | 12 | 13 | 13 |
+| 24 | 14 | 16 | 9 | 24 |
+| 32 | 15 | 22 | 10 | 22 |
+| 12 | 16 | 17 | 15 | 15 |
+| 3 | 17 | 13 | 18 | 17 |
+| 13 | 18 | 19 | 21 | 14 |
+| 35 | 19 | 14 | 27 | 4 |
+| 33 | 20 | 23 | 16 | 27 |
+| 14 | 21 | 18 | 29 | 8 |
+| 50 | 22 | 20 | 24 | 18 |
+| 52 | 23 | 21 | 31 | 5 |
+| 22 | 24 | 27 | 14 | 29 |
+| 23 | 25 | 25 | 25 | 26 |
+| 46 | 26 | 30 | 19 | 32 |
+| 25 | 27 | 31 | 22 | 30 |
+| 11 | 28 | 28 | 28 | 28 |
+| 28 | 29 | 26 | 32 | 23 |
+| 45 | 30 | 24 | 35 | 19 |
+| 49 | 31 | 32 | 26 | 31 |
+| 53 | 32 | 29 | 34 | 21 |
+| 9 | 33 | 33 | 30 | 33 |
+| 8 | 34 | 35 | 23 | 35 |
+| 27 | 35 | 34 | 33 | 34 |
 
 ## Sensitivity to an unsourced D7 share (rule 24, D-37)
 
@@ -86,16 +93,16 @@ Rows whose D7 rests on an assumed share: the default-weight rank if D7 took the 
 
 | Row | Default rank | D7 now | Alternative D7 | Composite then | Rank then |
 |---|---|---|---|---|---|
-| 3 | 16 | 2 | 3 | 0.542 | 8 |
-| 5 | 8 | 3 | 2 | 0.482 | 18 |
+| 3 | 17 | 2 | 3 | 0.542 | 8 |
+| 5 | 8 | 3 | 2 | 0.482 | 19 |
 | 6 | 2 | 3 | 2 | 0.596 | 3 |
 | 6 | 2 | 3 | 4 | 0.696 | 1 |
-| 7 | 6 | 3 | 2 | 0.510 | 12 |
-| 21 | 12 | 2 | 3 | 0.566 | 6 |
-| 29 | 9 | 2 | 3 | 0.581 | 5 |
+| 7 | 6 | 3 | 2 | 0.510 | 13 |
+| 21 | 13 | 2 | 3 | 0.566 | 6 |
+| 29 | 10 | 2 | 3 | 0.581 | 5 |
 | 31 | 3 | 3 | 4 | 0.653 | 2 |
-| 47 | 7 | 3 | 2 | 0.502 | 15 |
-| 49 | 29 | 2 | 3 | 0.448 | 23 |
+| 47 | 7 | 3 | 2 | 0.502 | 16 |
+| 49 | 31 | 2 | 3 | 0.448 | 25 |
 
 ## Anchor issues reported by the units
 
@@ -208,11 +215,21 @@ Rows whose D7 rests on an assumed share: the default-weight rank if D7 took the 
 - V27.json: Row 50 D5: anchor 4 ('fits an existing routine visit or panel') depends on whether the existing draw is fasting; chose 3 for the US setting where non-fasting HbA1c is allowed, alternative 4.
 - V27.json: Row 50 setting tag: the pathway owner is the SGA prescriber, who may be a child psychiatrist (specialist outpatient) or a paediatrician or family physician; tagged routine care because the test is part of scheduled prescriber monitoring, not a specialist protocol.
 - V27.json: Row 50 S: the anchor between 1 (reversible) and 2 (delayed harm) is unclear for delayed detection of dysglycaemia; chose 1, low confidence.
+- V28.json: Rows 51 to 54 D3: clarification 5 (names condition but not test scores 2) could read as 2 for prediabetes lifestyle advice or breast cancer therapy; I chose 1 because the guideline concerns neither the test nor a condition the test identifies.
+- V28.json: D7 rows 51 and 52: the narrowest-population rule (clarification 2) gives much smaller counts than the disease pool; I scored the situation of choosing the treatment and recorded shares as assumptions.
+- V29.json: Row 51 D2: a single stratified RCT on a surrogate endpoint with no guideline fits neither 2 (observational) nor 3 (guideline-backed). Chose 2; 3 is the alternative.
+- V29.json: Row 53 D2/D8: a negative entry has no anchor for evidence against a decision effect. Chose 0 for both.
+- V29.json: Row 54 D2: prognosis-only cohort evidence with no decision named; chose 1 (not 2) because D2 is evidence for decision impact. Row 54 D8 set to null (no comparator data).
+- V29.json: Row 51: the exposure bundles insulin-based indices with MRS liver fat; D8 cannot isolate the insulin contribution.
 - V3.json: D4 row 3: the use case bundles two measurements of different standing (insulin/C-peptide immunoassay = 3; drug screen send-out = 1). Chose 2 as the limiting combination.
 - V3.json: D4 rows 49, 32, 10: anchor 2 combines 'unstandardized' and 'needs a timed protocol', but the rubric (rule 20) says protocol burden belongs to D5. Scored 2 for timed-protocol rows because the anchor names it; D5 should not double-count.
 - V3.json: D4 row 49: derived indices (Index60, minimal model) sit between 'research only' (0/1) and a timed protocol (2); chose 2 with low confidence.
 - V3.json: D4 row 7: blood C-peptide (3) and urine C-peptide:creatinine ratio (specialised, 1-2) differ; scored the evidence-backed UCPCR form as 2.
 - V3.json: D4 general: anchors 3 and 2 do not say how to treat a standard test whose results differ by method and whose cutoffs are assay-specific; chose 3 when a single value is read against a fixed cutoff at a non-critical concentration range and 2 when a protocol is also required.
+- V30.json: Row 51: the use bundles OGTT insulin/C-peptide with MR liver fat; D4 scored on the insulin assay only, MR fat treated as D5 burden (clarifications 25, 27).
+- V30.json: Row 52: D1 anchor 2 ('accepted options') is awkward because the sensitiser add-on is off-label for mood disorders; chose 2 on the basis that a clinician would choose among options, not that the option is accepted.
+- V30.json: Row 53: a negative entry; D1 scored as the decision the test would inform, not as evidence of no effect (that goes to D2); S scored 0 under clarification 18.
+- V30.json: Row 54: prognosis versus treatment selection (clarification 11) chosen as 1 because no treatment selection is supported; D6 'lower of two' gives little discrimination for fasting draws.
 - V4.json: Row 7 D1: the C-peptide result is one component of a triage rule. Anchor 15 distinguishes 'determines but others substitute' (3) from 'supports' (2); I chose 2 because C-peptide never decides the gene-panel order alone.
 - V4.json: Row 4 D1 and S: the use case is the whole critical sample, but the score concerns insulin and C-peptide, which the guideline calls less definitive. I scored the insulin component (D1 2) and gave S 3 rather than 4; a reader scoring the whole work-up would give S 4.
 - V4.json: Row 47 D1: clarification 12 (national criteria elsewhere = 3) conflicts with clarification 15 and the US setting, where the insulin decision follows glycaemia; I applied 12 and noted the smaller US effect.
@@ -247,3 +264,4 @@ Rows whose D7 rests on an assumed share: the default-weight rank if D7 took the 
 ## Notes
 
 - V20.json: row 48 D7 not determinable
+- V29.json: row 54 D8 not determinable

@@ -1085,6 +1085,110 @@
         "usecases/scoring/R2.md",
         "usecases/scoring/R2.json"
       ]
+    },
+    {
+      "id": "V28",
+      "phase": "stage2",
+      "agent": "ir-evidence-searcher",
+      "dims": "D7 (United States patients per year; give the number, its source and a range) and D3 (guideline or regulatory status, from guideline full text where possible)",
+      "rows": [
+        51,
+        52,
+        53,
+        54
+      ],
+      "template": "score",
+      "needs": [],
+      "inputs": [],
+      "extra": "Rows 51 to 54 were added on 2026-10-27 (discovery pass, tier D first pass, not yet scored); read their text and sources in usecases-verified.md. Apply all anchor clarifications 1 to 29 and rules 21 to 24 of the rubric. Score the US setting. Patient counts must be RESEARCHED, not recalled: at least two searches per row with python tools/pubmed_search.py and public statistics pages; label a figure [recall] only if no source was found, and then mark the score low confidence. Row 53 is a negative entry (a trial found no benefit): score the use as stated in the row.",
+      "pause_after": false,
+      "state": "done",
+      "attempts": 0,
+      "prompt": "usecases/scoring/units/V28.md",
+      "outputs": [
+        "usecases/scoring/V28.md",
+        "usecases/scoring/V28.json"
+      ]
+    },
+    {
+      "id": "V29",
+      "phase": "stage2",
+      "agent": "ir-biostatistician",
+      "dims": "D2 (evidence that the result changes decisions or outcomes) and D8 (added value over alternatives such as clinical features, HbA1c, glucose, other tests)",
+      "rows": [
+        51,
+        52,
+        53,
+        54
+      ],
+      "template": "score",
+      "needs": [],
+      "inputs": [],
+      "extra": "Rows 51 to 54 were added on 2026-10-27 (discovery pass, tier D first pass, not yet scored); read their text and sources in usecases-verified.md. Apply all anchor clarifications 1 to 29 and rules 21 to 24 of the rubric. Score the US setting. Also write a path to viability for EVERY row in path_to_viability (the one missing piece of evidence, assay, guideline or workflow that would move the use to the next tier; type; effort small, medium or large; basis). Use the sources listed in each row; search only to fill a gap.",
+      "pause_after": false,
+      "state": "done",
+      "attempts": 0,
+      "prompt": "usecases/scoring/units/V29.md",
+      "outputs": [
+        "usecases/scoring/V29.md",
+        "usecases/scoring/V29.json"
+      ]
+    },
+    {
+      "id": "V30",
+      "phase": "stage2",
+      "agent": "ir-endocrinologist",
+      "dims": "D1 (decision change), D4 (analytical feasibility), D5 (workflow fit), D6 (safety and burden, higher = safer) and S (stakes)",
+      "rows": [
+        51,
+        52,
+        53,
+        54
+      ],
+      "template": "score",
+      "needs": [],
+      "inputs": [],
+      "extra": "Rows 51 to 54 were added on 2026-10-27 (discovery pass, tier D first pass, not yet scored); read their text and sources in usecases-verified.md. Apply all anchor clarifications 1 to 29 and rules 21 to 24 of the rubric. Score the US setting. Also give the setting tag for every row in settings. No searches needed.",
+      "pause_after": false,
+      "state": "done",
+      "attempts": 0,
+      "prompt": "usecases/scoring/units/V30.md",
+      "outputs": [
+        "usecases/scoring/V30.md",
+        "usecases/scoring/V30.json"
+      ]
+    },
+    {
+      "id": "V31",
+      "phase": "stage2",
+      "agent": "ir-skeptic",
+      "dims": "",
+      "rows": [
+        51,
+        52,
+        53,
+        54
+      ],
+      "template": "review",
+      "needs": [
+        "V28",
+        "V29",
+        "V30"
+      ],
+      "inputs": [
+        "V28",
+        "V29",
+        "V30"
+      ],
+      "extra": "Also check that the clarified anchors and rules 21 to 24 were applied, that each D7 chain share has a source or is labelled an assumption, and that D2 reasons do not rest on the scout wording that the row-51-to-54 skeptic already corrected (skeptic-rows51-54.md in ft-review).",
+      "pause_after": false,
+      "state": "done",
+      "attempts": 0,
+      "prompt": "usecases/scoring/units/V31.md",
+      "outputs": [
+        "usecases/scoring/V31.md",
+        "usecases/scoring/V31.json"
+      ]
     }
   ]
 }
