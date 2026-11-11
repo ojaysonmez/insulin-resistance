@@ -1,3 +1,4 @@
 date	type	rows	dimensions	pmid	doi	status	queued_unit	note
 2026-10-22	S2	11	D2	42900776	10.2337/dc26-1070	rescore queued	R1	ARMMS-T2D lists higher fasting C-peptide and insulin among univariate predictors of T2D remission after bariatric surgery; multivariate role not seen in the truncated abstract.
 2026-10-26	S2	11	D2,S	42928427	10.1111/dom.71455	rescore queued	R2	Small retrospective cohort (n=70) where fasting C-peptide predicted stringent but not consensus-defined remission after metabolic surgery and ABCD/IMS scores were re-tested with internal cross-validation only, so row 11 may need a second lo
+2026-11-11	S2	30,49,8	D2	43005908	10.3389/fendo.2026.1985205	rescore queued	R3	Single-case report of OGTT, MMTT stimulated C-peptide and CGM monitoring after teplizumab in stage 2 T1D; weak, minor citation-level signal only.

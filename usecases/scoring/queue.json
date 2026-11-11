@@ -1189,6 +1189,29 @@
         "usecases/scoring/V31.md",
         "usecases/scoring/V31.json"
       ]
+    },
+    {
+      "id": "R3",
+      "phase": "rescore",
+      "agent": "ir-usecase-scout",
+      "dims": "D2",
+      "rows": [
+        30,
+        49,
+        8
+      ],
+      "template": "rescore",
+      "needs": [],
+      "inputs": [],
+      "extra": "Signal type S2 found by the watch on 2026-11-11. Paper: PMID 43005908, DOI 10.3389/fendo.2026.1985205 (read level when flagged: abstract). Why the watch flagged it: Single-case report of OGTT, MMTT stimulated C-peptide and CGM monitoring after teplizumab in stage 2 T1D; weak, minor citation-level signal only.",
+      "pause_after": false,
+      "state": "pending",
+      "attempts": 0,
+      "prompt": "usecases/scoring/units/R3.md",
+      "outputs": [
+        "usecases/scoring/R3.md",
+        "usecases/scoring/R3.json"
+      ]
     }
   ]
 }
