@@ -1234,6 +1234,27 @@
         "usecases/scoring/R4.md",
         "usecases/scoring/R4.json"
       ]
+    },
+    {
+      "id": "R5",
+      "phase": "rescore",
+      "agent": "ir-usecase-scout",
+      "dims": "D2",
+      "rows": [
+        5
+      ],
+      "template": "rescore",
+      "needs": [],
+      "inputs": [],
+      "extra": "Signal type S2 found by the watch on 2026-11-20. Paper: PMID 43053530, DOI 10.1111/dom.71569 (read level when flagged: abstract). Why the watch flagged it: Weak signal: mixed-meal insulin and C-peptide secretion modelling in post-RYGB hypoglycaemia (n=20 vs 18 vs 11 controls) characterises pathophysiology but reports no diagnostic threshold or accuracy.",
+      "pause_after": false,
+      "state": "pending",
+      "attempts": 0,
+      "prompt": "usecases/scoring/units/R5.md",
+      "outputs": [
+        "usecases/scoring/R5.md",
+        "usecases/scoring/R5.json"
+      ]
     }
   ]
 }
